@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Links
+   http://developers.whatwg.org/links.html
+   ========================================================================== */
+
+a {
+    color: #17d;
+    text-decoration: none;
+    /*border-bottom: 1px solid;*/
+    -moz-text-decoration-color: rgba(17, 119, 221, 0.33);
+    }
+    a:focus {
+    /*  Address `outline` inconsistency between Chrome and other browsers */
+        outline: thin dotted;
+    }
+    a:active,
+    a:hover {
+        color: #14a;
+        -moz-text-decoration-color: rgba(17, 68, 170, 0.33);
+    /*  Improve readability when focused and also mouse hovered in all browsers */
+        outline: 0;
+    }
+    a:link,
+    a:visited,
+    a:hover {
+        transition: all 0.2s ease;
+    }
+    a:active {
+        color: #71a;
+        -moz-text-decoration-color: rgba(119, 17, 170, 0.33);
+        transition: none;
+    }

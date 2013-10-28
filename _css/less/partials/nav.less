@@ -1,0 +1,97 @@
+/* All navigation */
+.nav {
+    margin: 1em 0; /* 16px 0 */
+}
+.nav .list {
+    margin: 0;
+}
+.nav li {
+    margin: 0 -0.25em 0 0; /* 0 -4px 0 0 */
+    display: inline;
+}
+.nav li a {
+    border-bottom: 0;
+    border-right: thin solid lightgrey;
+    padding: 0.5em 1em; /* 8px 16px */
+    display: inline-block;
+    }
+    .nav li a:hover {
+        background-color: whitesmoke;
+    }
+    .nav li:last-child a {
+        border-right: 0;
+    }
+.nav .is-active {
+    color: #333;
+    font-weight: 700;
+}
+
+
+/* Pagination nav */
+.nav-page {
+    text-align: center;
+}
+.nav-page .is-active {
+    background-color: white;
+    margin-left: -1px;
+    border: thin solid lightgrey;
+    box-shadow: 2px 2px rgba(0,0,0,0.05);
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Horizontal nav */
+.nav-h {
+    border-bottom: thin solid lightgrey;
+    padding: 0;
+}
+.nav-h .is-active {
+    background-color: white;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    border: thin solid lightgrey;
+    border-bottom-color: white;
+    box-shadow: 2px 0 rgba(0,0,0,0.05);
+    position: relative;
+    z-index: 1;
+    cursor: default;
+}
+
+
+/* Vertical nav */
+.nav-v {
+    border-top: 1px solid lightgrey;
+}
+.nav-v li {
+    margin: 0;
+    display: block;
+}
+.nav-v li a {
+    border-right: 0;
+    border-bottom: 1px solid lightgrey;
+    display: block;
+}
+.nav-v .is-active {
+    background-color: white;
+    margin-top: -1px;
+    border: thin solid lightgrey;
+    box-shadow: 2px 2px rgba(0,0,0,0.05);
+    position: relative;
+    z-index: 1;
+    }
+    .nav-v .is-active::after {
+        content: "\25B6";
+        color: grey;
+        font-size: 12px;
+        font-size: 0.75rem;
+        line-height: 2; /* 24px */
+        position: absolute;
+        right: 1em;
+    }
+
+
+/* Breadcrumb nav */
+.nav-breadcrumb {
+    color: grey;
+}

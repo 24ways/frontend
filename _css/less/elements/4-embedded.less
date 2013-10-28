@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Embedded content
+   http://developers.whatwg.org/embedded-content-1
+   ========================================================================== */
+
+img {
+/*  Remove border when inside `a` element in IE 8/9 */
+    border: 0;
+}
+
+svg:not(:root) {
+/*  Correct overflow displayed oddly in IE 9 */
+    overflow: hidden;
+}
+
+audio,
+canvas,
+video {
+/*  Correct `inline-block` display not defined in IE 8/9 */
+    display: inline-block;
+}
+audio:not([controls]) {
+/*  Prevent modern browsers from displaying `audio` without controls. Remove excess height in iOS 5 devices */
+    display: none;
+    height: 0;
+}
+
+video {
+    max-width: 100%;
+}
