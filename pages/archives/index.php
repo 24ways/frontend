@@ -1,34 +1,34 @@
 <? include_once($_SERVER['DOCUMENT_ROOT'].'/_inc/functions.php'); ?>
 <? lesscss('/_css/less/styles.less', '/_css/styles.css'); ?>
-<? $title = "Topics"; ?>
+<? $title = "Archives"; ?>
 <? inc('partial','head') ?>
 <? inc('partial','banner') ?>
 
     <main role="main">
         <header class="preface">
-            <h1 class="preface--title">Topics</h1>
+            <h1 class="preface--title">Archives</h1>
         </header><!--/.preface-->
 
-        <ul class="list list-topics">
+        <ul class="list list-years">
             <li>
-<?              inc('partial','summary-topic') ?>
+<?              inc('partial','summary-year') ?>
             </li>
             <li>
-<?              inc('partial','summary-topic') ?>
+<?              inc('partial','summary-year') ?>
             </li>
             <li>
-<?              inc('partial','summary-topic') ?>
+<?              inc('partial','summary-year') ?>
             </li>
             <li>
-<?              inc('partial','summary-topic') ?>
+<?              inc('partial','summary-year') ?>
             </li>
             <li>
-<?              inc('partial','summary-topic') ?>
+<?              inc('partial','summary-year') ?>
             </li>
             <li>
-<?              inc('partial','summary-topic') ?>
+<?              inc('partial','summary-year') ?>
             </li>
-        </ul><!--/.list-topics-->
+        </ul><!--/.list-years-->
     </main><!--/@main-->
 
 <?  inc('partial','navigation') ?>

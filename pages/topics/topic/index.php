@@ -7,10 +7,12 @@
     <main role="main">
         <header class="preface">
             <h1 class="preface--title">Design</h1>
-            <p class="lede">Visual communication, art direction. Web layouts and typography. Graphic design, interface design, user experience design, illustration, photography, artwork. Creative, strategic, and technical approaches to crafting great interfaces. Visual styles, influences, and trends.</p>
-        </header>
+            <div class="preface--main">
+                <p class="lede">Visual communication, art direction. Web layouts and typography. Graphic design, interface design, user experience design, illustration, photography, artwork. Creative, strategic, and technical approaches to crafting great interfaces. Visual styles, influences, and trends.</p>
+            </div>
+        </header><!--/.preface-->
 
-        <ol class="list articles">
+        <ol class="list list-articles">
             <li>
 <?              inc('partial','summary-article') ?>
             </li>
@@ -83,7 +85,7 @@
             <li>
 <?              inc('partial','summary-article') ?>
             </li>
-        </ol>
+        </ol><!--/.list-articles-->
         <a class="button button-more" href="?page=2">Show me another 24 ways</a>
     </main><!--/@main-->
 

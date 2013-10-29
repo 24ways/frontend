@@ -7,18 +7,22 @@
     <main role="main">
         <header class="preface">
             <h1 class="preface--title">2013</h1>
-            <p class="lede"><cite>24 ways</cite> is the advent calendar for web geeks. Each day throughout December we publish a daily dose of web design and development goodness to bring you all a little Christmas cheer. <a href="/pages/about/">Learn more</a></p>
-        </header>
+            <div class="preface--content">
+                <p class="lede"><cite>24 ways</cite> is the advent calendar for web geeks. Each day throughout December we publish a daily dose of web design and development goodness to bring you all a little Christmas cheer. <a href="/pages/about/">Learn more</a></p>
+            </div>
+        </header><!--/.preface-->
 
-        <ol class="list articles">
+        <ol class="list list-articles">
             <li>
                 <article class="summary summary-article h-entry" data-href="/pages/YYYY/article/">
                     <header class="summary--header">
                         <h1 class="summary--title p-name"><a href="/pages/YYYY/article/">Ignorance Is Bliss</a></h1>
                         <time class="summary--meta dt-published" class="pubdate" datetime="2010-12-15T00:00:00-00:00">1 December 2010</time>
                     </header>
-                    <p class="summary--content p-summary"><a href="http://stuffandnonsense.co.uk/">Andy Clarke</a> shares a case study highlighting the benefits of progressively enhanced web design.</p>
-                    <footer>
+                    <div class="summary--main">
+                        <p class="p-summary"><a href="http://stuffandnonsense.co.uk/">Andy Clarke</a> shares a case study highlighting the benefits of progressively enhanced web design.</p>
+                    </div>
+                    <footer class="summary--header">
                         <a class="p-author h-card" href="/pages/authors/firstname-lastname/"><img src="http://media.24ways.org/authors/andyclarke160.jpg" alt=""/></a>
                     </footer>
                 </article>
@@ -33,66 +37,66 @@
 <?              inc('partial','summary-article') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
             <li>
-<?              inc('partial','summary-hidden') ?>
+<?              inc('partial','summary-day') ?>
             </li>
-        </ol>
+        </ol><!--/.list-articles-->
     </main><!--/@main-->
 
 <?  inc('partial','navigation') ?>

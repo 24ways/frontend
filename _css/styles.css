@@ -414,8 +414,8 @@ input[disabled] {
 }
 .preface {
   background-color: #999;
-  min-height: 12em;
-  padding: 1em;
+  min-height: 12rem;
+  padding: 1rem;
 }
 .preface .preface--title {
   font-family: 'Merriweather', serif;
@@ -425,24 +425,29 @@ input[disabled] {
   line-height: 1.1667;
   letter-spacing: -0.041666667em;
 }
+.section .section--title {
+  background-color: #ddd;
+  margin: 0;
+  padding: 1rem;
+}
 .article {
-  padding-top: 9em;
+  padding-top: 9rem;
   max-width: 80em;
 }
 .article .article--header {
   border-top: 1px solid #ccc;
   padding-left: 20%;
-  padding-bottom: 1em;
-  min-height: 16em;
+  padding-bottom: 1rem;
+  min-height: 16rem;
   position: relative;
 }
 .article .article--header .p-photo {
-  margin-left: -1em;
+  margin-left: -1rem;
   height: auto;
   width: 20%;
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
 }
 .article .article--title {
   font-family: 'Merriweather', serif;
@@ -451,23 +456,20 @@ input[disabled] {
   font-weight: 500;
   line-height: 1.1667;
   letter-spacing: -0.041666667em;
-  margin: 16px 0 8px;
   margin: 1rem 0 0.5rem;
-  padding-left: 72px;
   padding-left: 4.5rem;
 }
 .article .article--byline {
-  padding-left: 72px;
   padding-left: 4.5rem;
 }
 .article .article--footer {
   text-align: right;
-  margin-left: -1em;
+  margin-left: -1rem;
   width: 20%;
   float: left;
 }
 .article .article--footer ul {
-  margin: 0.5em 0;
+  margin: 0.5rem 0;
 }
 .article .article--footer li {
   color: dimgrey;
@@ -476,11 +478,9 @@ input[disabled] {
   font-weight: 400;
   line-height: 1.2308;
   border-top: 1px solid #ccc;
-  padding: 8px 0 16px 0;
   padding: 0.5rem 0 1rem 0;
 }
 .article .article--content {
-  padding-left: 72px;
   padding-left: 4.5rem;
   width: 75%;
   margin-left: 20%;
@@ -491,22 +491,29 @@ input[disabled] {
   font-size: 1.25rem;
   line-height: 1.6;
 }
-.list.topics li,
-.list.articles li,
-.list.authors li {
+.list-years li,
+.list-topics li,
+.list-articles li,
+.list-authors li,
+.list-comments li {
   padding: 1px 1px 0 0;
   float: left;
 }
-.list.topics li {
+.list-years li,
+.list-topics li {
   width: 33.333%;
 }
-.list.articles li {
+.list-articles li {
   width: 25%;
 }
-.list.authors li {
+.list-authors li {
   width: 20%;
 }
+.list-comments li {
+  float: none;
+}
 .summary {
+  background-color: #eee;
   padding: 1em;
 }
 .summary .summary--title {
@@ -517,26 +524,18 @@ input[disabled] {
   line-height: 1.2;
   margin: 0;
 }
-.summary .summary--content a {
+.summary .summary--main a {
   color: inherit;
   font-weight: 700;
 }
-.summary .summary--meta {
+.summary .summary--footer {
   color: dimgrey;
   font-size: 13px;
   font-size: 0.8125rem;
   font-weight: 400;
   line-height: 1.2308;
 }
-.summary .summary--day {
-  font-family: 'Merriweather', serif;
-  font-size: 3em;
-  line-height: 6;
-  text-align: center;
-  opacity: 0.2;
-}
 .summary-article {
-  background-color: #eee;
   min-height: 22em;
 }
 .summary-article .summary--header {
@@ -544,6 +543,13 @@ input[disabled] {
 }
 .summary-article .p-author {
   display: none;
+}
+.summary-day p {
+  font-family: 'Merriweather', serif;
+  font-size: 3em;
+  line-height: 6;
+  text-align: center;
+  opacity: 0.2;
 }
 .summary-author {
   background-color: #eee;
@@ -796,20 +802,31 @@ input[disabled] {
   opacity: 0.3;
 }
 .banner .banner--menu {
+  font: 0/0 a;
   position: absolute;
-  background-color: green;
+  outline: 1px solid green;
   z-index: 3;
   top: 0;
   right: 0;
-  width: 4.5em;
-  height: 4.5em;
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 1.5rem;
+}
+.banner .banner--menu:before {
+  content: " ";
+  display: block;
+  border-top: 0.5625rem double red;
+  padding-bottom: 0.1875rem;
+  border-bottom: 0.5625rem double blue;
+  height: 1.3125rem;
+  width: 1.5rem;
 }
 .enhanced .banner--menu {
   position: fixed;
 }
 [role="main"] {
   background-color: #f3f3f3;
-  padding: 0 4.5em 0 0;
+  padding: 0 4.5rem 0 0;
   -webkit-transition: all .25s;
   -moz-transition: all .25s;
   -ms-transition: all .25s;

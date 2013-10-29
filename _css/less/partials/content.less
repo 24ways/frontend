@@ -1,66 +1,74 @@
-/* Preface */
+/* ==========================================================================
+   Preface
+   ========================================================================== */
 .preface {
     background-color: #999;
-    min-height: 12em;
-    padding: 1em;
+    min-height: 12rem;
+    padding: 1rem;
     .preface--title {
         .heading();
     }
 }
 
-/* Article */
+
+/* ==========================================================================
+   Section
+   ========================================================================== */
+.section {
+    .section--title {
+        background-color: #ddd;
+        margin: 0;
+        padding: 1rem;
+    }
+}
+
+
+/* ==========================================================================
+   Article
+   ========================================================================== */
 .article {
-    padding-top: 9em;
+    padding-top: 9rem;
     max-width: 80em;
 
     .article--header {
         border-top: 1px solid #ccc;
         padding-left: 20%;
-        padding-bottom: 1em;
-        min-height: 16em;
+        padding-bottom: 1rem;
+        min-height: 16rem;
         position: relative;
 
         .p-photo {
-            margin-left: -1em;
+            margin-left: -1rem;
             height: auto;
             width: 20%;
             position: absolute;
-            left: 0;
             top: 0;
+            left: 0;
         }
     }
-
     .article--title {
         .heading();
-        margin: 16px 0 8px;
         margin: 1rem 0 0.5rem;
-        padding-left: 72px;
         padding-left: 4.5rem;
     }
-
     .article--byline {
-        padding-left: 72px;
         padding-left: 4.5rem;
     }
-
     .article--footer {
         text-align: right;
-        margin-left: -1em;
+        margin-left: -1rem;
         width: 20%;
         float: left;
         ul {
-            margin: 0.5em 0;
+            margin: 0.5rem 0;
         }
         li {
             .caption();
             border-top: 1px solid #ccc;
-            padding: 8px 0 16px 0;
             padding: 0.5rem 0 1rem 0;
         }
     }
-
     .article--content {
-        padding-left: 72px;
         padding-left: 4.5rem;
         width: 75%;
         margin-left: 20%;
@@ -74,29 +82,42 @@
     }
 }
 
-/* Summaries */
-.list.topics,
-.list.articles,
-.list.authors {
-    //margin: 0 -1em 0;
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+.list-years,
+.list-topics,
+.list-articles,
+.list-authors,
+.list-comments {
     li {
         padding: 1px 1px 0 0;
         float: left
     }
 }
-
-.list.topics li {
+.list-years li,
+.list-topics li {
     width: 33.333%;
 }
-.list.articles li {
+.list-articles li {
     width: 25%;
 }
-.list.authors li {
+.list-authors li {
     width: 20%;
 }
+.list-comments {
+    li {
+        float: none;
+    }
+}
 
-/* Summary */
+
+/* ==========================================================================
+   Summary
+   ========================================================================== */
 .summary {
+    background-color: #eee;
     padding: 1em;
     .summary--title {
         font-family: 'Merriweather', serif;
@@ -106,27 +127,19 @@
         line-height: 1.2; /* 16px */
         margin: 0;
     }
-    .summary--content {
+    .summary--main {
         a {
             color: inherit;
             font-weight: 700;
         }
     }
-    .summary--meta {
+    .summary--footer {
         .caption();
-    }
-    .summary--day {
-        font-family: 'Merriweather', serif;
-        font-size: 3em;
-        line-height: 6;
-        text-align: center;
-        opacity: 0.2;
     }
 }
 
 /* Summary > Article */
 .summary-article {
-    background-color: #eee;
     min-height: 22em;
 
     .summary--header {
@@ -134,6 +147,17 @@
     }
     .p-author {
         display: none;
+    }
+}
+
+/* Summary > Day */
+.summary-day {
+    p {
+        font-family: 'Merriweather', serif;
+        font-size: 3em;
+        line-height: 6;
+        text-align: center;
+        opacity: 0.2;
     }
 }
 

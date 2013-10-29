@@ -15,13 +15,24 @@
     }
     
     .banner--menu {
+        font: 0/0 a;
         position: absolute;
-        background-color: green;
+        outline: 1px solid green;
         z-index: 3;
         top: 0;
         right: 0;
-        width: 4.5em;
-        height: 4.5em;
+        width: 4.5rem;
+        height: 4.5rem;
+        padding: 1.5rem;
+        &:before {
+            content: " ";
+            display: block;
+            border-top: 0.5625rem double red;
+            padding-bottom: 0.1875rem;
+            border-bottom: 0.5625rem double blue;
+            height: 1.3125rem;
+            width: 1.5rem;
+        }
     }
 }
 .enhanced {
@@ -33,8 +44,7 @@
 /* Main */
 [role="main"] {
     background-color: #f3f3f3;
-    //margin-right: 4.5em;
-    padding: 0 4.5em 0 0;
+    padding: 0 4.5rem 0 0;
     -webkit-transition: all .25s;
     -moz-transition: all .25s;
     -ms-transition: all .25s;
