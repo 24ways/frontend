@@ -1,23 +1,25 @@
-/* Banner */
+/* ==========================================================================
+   Banner
+   ========================================================================== */
 .banner {
     text-transform: uppercase;
     background-color: #ccc;
-    padding: 1em;
+    padding: 1em 1em 1em 25%;
     height: 4.5em;
     
     .banner--logo {
         font-size: 1.5em;
+        margin-left: 1rem;
         span {
             font-size: 0.6667em;
             text-transform: lowercase;
             opacity: 0.3
         }
     }
-    
     .banner--menu {
         font: 0/0 a;
         position: absolute;
-        outline: 1px solid green;
+        border-bottom: 1px solid #eee;
         z-index: 3;
         top: 0;
         right: 0;
@@ -27,9 +29,9 @@
         &:before {
             content: " ";
             display: block;
-            border-top: 0.5625rem double red;
+            border-top: 0.5625rem double #ccc;
             padding-bottom: 0.1875rem;
-            border-bottom: 0.5625rem double blue;
+            border-bottom: 0.5625rem double #ccc;
             height: 1.3125rem;
             width: 1.5rem;
         }
@@ -41,10 +43,13 @@
     }
 }
 
-/* Main */
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
 [role="main"] {
     background-color: #f3f3f3;
-    padding: 0 4.5rem 0 0;
+    //padding: 0 4.5rem 0 0;
     -webkit-transition: all .25s;
     -moz-transition: all .25s;
     -ms-transition: all .25s;
@@ -54,10 +59,13 @@
 .active [role="main"] {
     opacity: 0.75;
 }
-/* Navigation */
+
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
 .navigation {
     background-color: #fff;
-    background-color: rgba(255,255,255,0.9);
     a {
         .caption();
         text-transform: uppercase;
@@ -153,10 +161,27 @@
 
 }
 
-/* Content Info */
+
+/* ==========================================================================
+   Content Info
+   ========================================================================== */
 .contentinfo {
+    .caption();
     background-color: #ccc;
-    padding-right: 4.5em;
-    padding: 0.5em 1em;
+    padding: 0.75rem 1rem;
     clear: left;
+    overflow: hidden;
+    small {
+        font-size: 100%;
+    }
+    
+    .contentinfo--copyright {
+        margin: 0;
+        float: left;
+    }
+    .contentinfo--social {
+        margin: 0;
+        float: right;
+        display: none;
+    }
 }

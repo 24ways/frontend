@@ -16,15 +16,22 @@
             </header>
 
             <footer class="article--footer">
-                <ul class="list">
+                <ul>
                     <li><time class="dt-published" datetime="2012-12-01T00:00:00-00:00">1 December 2012</time></li>
                     <li>Published in <a href="/pages/topics/topic/">Code</a></li>
                     <li><a href="#comments">3 comments</a></li>
                 </ul>
+                <nav>
+                    <ul>
+                        <li><a href="#" rel="prev">Previous article</a></li>
+                        <li><a href="#" rel="next">Next article</a></li>
+                    </ul>
+                </nav>
             </footer>
 
             <div class="article--content">
                 <p class="lede">Video is a bigger part of the web experience than ever before. With native browser support for <abbr>HTML5</abbr> video elements freeing us from the tyranny of plugins, and the availability of faster internet connections to the workplace, home and mobile networks, it&#8217;s now pretty straightforward to publish video in a way that can be consumed in all sorts of ways on all sorts of different web devices.</p>
+
                 <p>I recently worked on a project where the client had shot some dedicated video shorts to publish on their site. They also had some five-second motion graphics produced to top and tail the videos with context and branding. This pretty common requirement is a great idea on the web, where a user might land at your video having followed a link and be viewing a page without much context.</p>
                 <p>Known as <em>bumpers</em>, these short introduction clips help brand a video and make it look a lot more professional.</p>
                 <figure>
@@ -187,30 +194,36 @@
             </div>
         </div><!--/.article-->
 
-        <section id="author">
-            <h1>About the author</h1>
-            <p><strong>Drew McLellan</strong> is lead developer on your favourite small <span class="caps">CMS</span>, <a href="http://grabaperch.com/">Perch</a>. He is Director and Senior Developer at UK-based web development agency edgeofmyseat.com, and formerly Group Lead at the Web Standards Project. When not publishing 24 ways, Drew keeps a <a href="http://allinthehead.com/">personal site</a> covering web development issues and themes, <a href="http://flickr.com/drewm/">takes photos</a> and <a href="http://twitter.com/drewm">tweets a lot</a>.</p>
-        </section>
+        <section class="section" id="author">
+            <h1 class="section--title">About the author</h1>
+            <div class="section--main">
+                <p><strong>Drew McLellan</strong> is lead developer on your favourite small <span class="caps">CMS</span>, <a href="http://grabaperch.com/">Perch</a>. He is Director and Senior Developer at UK-based web development agency edgeofmyseat.com, and formerly Group Lead at the Web Standards Project. When not publishing 24 ways, Drew keeps a <a href="http://allinthehead.com/">personal site</a> covering web development issues and themes, <a href="http://flickr.com/drewm/">takes photos</a> and <a href="http://twitter.com/drewm">tweets a lot</a>.</p>
+            </div>
+        </section><!--/.section-->
 
-        <section id="comments">
-            <h1>Comments</h1>
-            <a href="comments.php">View 11 reader comments</a>
-        </section>
+        <section class="section" id="comments">
+            <h1 class="section--title">Comments</h1>
+            <div class="section--main">
+                <p><a href="comments.php">View 11 reader comments</a></p>
+            </div>
+        </section><!--/.section-->
 
-        <section id="related">
-            <h1>Related articles</h1>
-            <ul class="list list-articles">
-                <li>
-<?                  inc('partial','summary-article') ?>
-                </li>
-                <li>
-<?                  inc('partial','summary-article') ?>
-                </li>
-                <li>
-<?                  inc('partial','summary-article') ?>
-                </li>
-            </ul><!--/.list-articles-->
-        </section>
+        <section class="section" id="related">
+            <h1 class="section--title">Related articles</h1>
+            <div class="section--main">
+                <ul class="list list-related">
+                    <li>
+<?                      inc('partial','summary-article') ?>
+                    </li>
+                    <li>
+<?                      inc('partial','summary-article') ?>
+                    </li>
+                    <li>
+<?                      inc('partial','summary-article') ?>
+                    </li>
+                </ul><!--/.list-articles-->
+            </div>
+        </section><!--/.section-->
     </main><!--/@main-->
 
 <?  inc('partial','navigation') ?>

@@ -1,5 +1,5 @@
     <nav class="navigation" role="navigation" id="menu">
-        <ul class="list navigation--topics">
+        <ul class="navigation--topics">
             <li><a href="/pages/topics/topic">Design</a></li>
             <li><a href="/pages/topics/topic">Code</a></li>
             <li><a href="/pages/topics/topic">Process</a></li>
@@ -7,7 +7,7 @@
             <li><a href="/pages/topics/topic">Content</a></li>
             <li><a href="/pages/topics/topic">Business</a></li>
         </ul>
-        <ul class="list navigation--site">
+        <ul class="navigation--site">
             <li><a href="/pages/archives/">Archives</a></li>
             <li><a href="/pages/topics/">Topics</a></li>
             <li><a href="/pages/authors/">Authors</a></li>
