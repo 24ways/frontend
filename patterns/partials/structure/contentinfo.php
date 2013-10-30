@@ -1,6 +1,6 @@
     <footer class="contentinfo" role="contentinfo">
         <p class="contentnfo--copyright">
-            <small>&#169; 2005-2013 24 Ways and our authors. <a href="/colophon/">Colophon</a></small>
+            <small>&#169; 2005-2013 24 Ways and our authors. <a href="/pages/about/#colophon">Colophon</a></small>
         </p>
         <p class="contentinfo--social">
             <a href="http://feeds.feedburner.com/24ways" rel="alternate">Grab our RSS feed</a>
