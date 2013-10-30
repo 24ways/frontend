@@ -7,7 +7,7 @@
     <main role="main">
         <header class="preface">
             <h1 class="preface--title">YYYY</h1>
-            <div class="preface--content">
+            <div class="preface--main">
                 <p class="lede">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat, elit nec malesuada interdum, nibh erat convallis turpis, vel mollis mi sem ac arcu.</p>
             </div>
         </header><!--/.preface-->
