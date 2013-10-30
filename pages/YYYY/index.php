@@ -13,7 +13,7 @@
         </header><!--/.preface-->
 
         <ol class="list list-articles">
-            <li>
+            <li class="list--item">
                 <article class="summary summary-article h-entry" data-href="/pages/YYYY/article/">
                     <header class="summary--header">
                         <h1 class="summary--title p-name"><a href="/pages/YYYY/article/">Ignorance Is Bliss</a></h1>
@@ -27,73 +27,73 @@
                     </footer>
                 </article>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
         </ol><!--/.list-articles-->

@@ -18,9 +18,11 @@ body {
   font-weight: 400;
   font-size: 1em;
   line-height: 1.5;
-  background-color: #333;
   margin: 0 4.5rem 0 0;
   height: 100%;
+}
+.is--enhanced body {
+  background-color: #333;
 }
 article,
 aside,
@@ -420,6 +422,8 @@ input[disabled] {
   background-color: #999;
   min-height: 12rem;
   padding: 1em 1em 1em 25%;
+  position: relative;
+  overflow: hidden;
 }
 .preface .preface--title {
   font-family: 'Merriweather', serif;
@@ -433,24 +437,34 @@ input[disabled] {
 .preface .preface--main {
   margin-left: 1rem;
 }
-.section {
-  padding-bottom: 4rem;
-  max-width: 80em;
-  position: relative;
-}
-.section .section--title {
-  font-size: 1rem;
-  font-weight: line-height 1.5;
-  text-align: right;
-  text-transform: uppercase;
-  letter-spacing: 0.0625em;
-  border-top: 1px solid #ddd;
-  margin: 0;
-  padding: 1.1875rem 0 1.25rem 1rem;
+.preface .preface--image {
+  height: auto;
   width: 20%;
   position: absolute;
   top: 0;
   left: 0;
+}
+.section {
+  padding: 2rem 0 2rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.section .section--header {
+  text-align: right;
+  border-top: 1px solid #ddd;
+  padding: 1.1875rem 0 1.25rem 1rem;
+  width: 20%;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+}
+.section .section--title {
+  font-size: 1rem;
+  font-weight: line-height 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+  margin: 0;
+  display: block;
 }
 .section .section--main {
   border-top: 1px solid #ddd;
@@ -461,15 +475,26 @@ input[disabled] {
 .section .section--main .list {
   margin-top: -0.5rem;
 }
+.section .section--meta {
+  color: dimgrey;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.2308;
+}
+.section .section--image {
+  margin-right: 1rem;
+  float: left;
+}
 .article {
   padding: 9rem 0 4rem;
-  max-width: 80em;
 }
 .article .article--header {
   border-top: 1px solid #ccc;
   padding: 0 5% 1rem 25%;
   min-height: 16rem;
   position: relative;
+  overflow: hidden;
 }
 .article .article--header .p-photo {
   margin-left: -1rem;
@@ -487,6 +512,21 @@ input[disabled] {
   line-height: 1.1667;
   letter-spacing: -0.041666667em;
   margin: 1rem 0 0.5rem;
+  padding-left: 1rem;
+}
+.article .article--byline {
+  padding-left: 1rem;
+}
+.article .article--main {
+  margin-left: 25%;
+  padding-left: 1rem;
+  width: 70%;
+}
+.article .article--main p,
+.article .article--main li {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.6;
 }
 .article .article--footer {
   text-align: right;
@@ -506,33 +546,24 @@ input[disabled] {
   border-top: 1px solid #ccc;
   padding: 0.5rem 0 1rem 0;
 }
-.article .article--content {
-  width: 70%;
-  margin-left: 25%;
-}
-.article .article--content p,
-.article .article--content li {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.6;
-}
-.list li {
+.list .list--item {
   padding: 1px 1px 0 0;
   width: 100%;
 }
-.list-years li,
-.list-topics li,
-.list-related li {
+.list-years .list--item {
   width: 33.333%;
   float: left;
 }
-.list-articles li {
+.list-articles .list--item {
   width: 25%;
   float: left;
 }
-.list-authors li {
+.list-authors .list--item {
   width: 20%;
   float: left;
+}
+.section .list-articles .list--item {
+  width: 33.333%;
 }
 .summary {
   background-color: #eee;
@@ -579,10 +610,10 @@ input[disabled] {
   position: relative;
   display: block;
 }
-.summary-author .p-name {
+.summary-author .summary--meta {
   color: #fff;
   background-color: #000;
-  padding: 2% 5%;
+  padding: 0.25rem 0.5rem;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -605,6 +636,7 @@ input[disabled] {
   text-align: center;
   text-transform: uppercase;
   background-color: #333;
+  border: 0 none;
   padding: 1em 1.5em;
   display: block;
 }
@@ -822,7 +854,7 @@ input[disabled] {
 .banner .banner--logo span {
   font-size: 0.6667em;
   text-transform: lowercase;
-  opacity: 0.3;
+  opacity: 0.6;
 }
 .banner .banner--menu {
   font: 0/0 a;
@@ -844,18 +876,20 @@ input[disabled] {
   height: 1.3125rem;
   width: 1.5rem;
 }
-.enhanced .banner--menu {
+.is--enhanced .banner--menu {
   position: fixed;
 }
 [role="main"] {
   background-color: #f3f3f3;
+}
+.is--enhanced [role="main"] {
   -webkit-transition: all .25s;
   -moz-transition: all .25s;
   -ms-transition: all .25s;
   -o-transition: all .25s;
   transition: all .25s;
 }
-.active [role="main"] {
+.has--active-menu [role="main"] {
   opacity: 0.75;
 }
 .navigation {
@@ -912,7 +946,7 @@ input[disabled] {
   width: 9rem;
   display: block;
 }
-.enhanced .navigation {
+.is--enhanced .navigation {
   padding: 4.5em 0 0 4.5em;
   width: 22.5em;
   position: fixed;
@@ -925,18 +959,18 @@ input[disabled] {
   -o-transition: all .25s;
   transition: all .25s;
 }
-.enhanced .navigation .navigation--site {
+.is--enhanced .navigation .navigation--site {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 4.5em;
 }
-.enhanced .navigation .navigation--site li {
+.is--enhanced .navigation .navigation--site li {
   float: left;
   border-right: 0;
   border-top: 1px solid #eee;
 }
-.enhanced .navigation .navigation--site a {
+.is--enhanced .navigation .navigation--site a {
   font-size: 12px;
   font-size: 0.75em;
   text-align: left;
@@ -946,10 +980,10 @@ input[disabled] {
   width: 4.5rem;
   display: block;
 }
-.enhanced .navigation .navigation--site a[href="#top"] {
+.is--enhanced .navigation .navigation--site a[href="#top"] {
   display: none;
 }
-.enhanced .active .navigation {
+.is--enhanced .has--active-menu .navigation {
   right: 0;
   box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
 }

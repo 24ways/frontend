@@ -9,26 +9,15 @@
             <h1 class="preface--title">Archives</h1>
         </header><!--/.preface-->
 
-        <ul class="list list-years">
-            <li>
-<?              inc('partial','summary-year') ?>
-            </li>
-            <li>
-<?              inc('partial','summary-year') ?>
-            </li>
-            <li>
-<?              inc('partial','summary-year') ?>
-            </li>
-            <li>
-<?              inc('partial','summary-year') ?>
-            </li>
-            <li>
-<?              inc('partial','summary-year') ?>
-            </li>
-            <li>
-<?              inc('partial','summary-year') ?>
-            </li>
-        </ul><!--/.list-years-->
+<?      inc('partial','section-year') ?>
+<?      inc('partial','section-year') ?>
+<?      inc('partial','section-year') ?>
+<?      inc('partial','section-year') ?>
+<?      inc('partial','section-year') ?>
+<?      inc('partial','section-year') ?>
+<?      inc('partial','section-year') ?>
+<?      inc('partial','section-year') ?>
+<?      inc('partial','section-year') ?>
     </main><!--/@main-->
 
 <?  inc('partial','navigation') ?>

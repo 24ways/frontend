@@ -9,80 +9,81 @@
             <h1 class="preface--title">Design</h1>
             <div class="preface--main">
                 <p class="lede">Visual communication, art direction. Web layouts and typography. Graphic design, interface design, user experience design, illustration, photography, artwork. Creative, strategic, and technical approaches to crafting great interfaces. Visual styles, influences, and trends.</p>
+                <img class="preface--image" src="http://dummyimage.com/280x280/333/666.png" width="280" height="280" alt="Drew McLellan"/>
             </div>
         </header><!--/.preface-->
 
         <ol class="list list-articles">
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
         </ol><!--/.list-articles-->

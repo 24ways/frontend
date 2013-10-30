@@ -23,13 +23,13 @@
                 </ul>
                 <nav>
                     <ul>
-                        <li><a href="#" rel="prev">Previous article</a></li>
-                        <li><a href="#" rel="next">Next article</a></li>
+                        <li><a href="/pages/YYYY/article/" rel="prev">Previous article</a></li>
+                        <li><a href="/pages/YYYY/article/" rel="next">Next article</a></li>
                     </ul>
                 </nav>
             </footer>
 
-            <div class="article--content">
+            <div class="article--main">
                 <p class="lede">Video is a bigger part of the web experience than ever before. With native browser support for <abbr>HTML5</abbr> video elements freeing us from the tyranny of plugins, and the availability of faster internet connections to the workplace, home and mobile networks, it&#8217;s now pretty straightforward to publish video in a way that can be consumed in all sorts of ways on all sorts of different web devices.</p>
 
                 <p>I recently worked on a project where the client had shot some dedicated video shorts to publish on their site. They also had some five-second motion graphics produced to top and tail the videos with context and branding. This pretty common requirement is a great idea on the web, where a user might land at your video having followed a link and be viewing a page without much context.</p>
@@ -195,30 +195,36 @@
         </div><!--/.article-->
 
         <section class="section" id="author">
-            <h1 class="section--title">About the author</h1>
+            <header class="section--header">
+                <h1 class="section--title">About the author</h1>
+            </header>
             <div class="section--main">
                 <p><strong>Drew McLellan</strong> is lead developer on your favourite small <span class="caps">CMS</span>, <a href="http://grabaperch.com/">Perch</a>. He is Director and Senior Developer at UK-based web development agency edgeofmyseat.com, and formerly Group Lead at the Web Standards Project. When not publishing 24 ways, Drew keeps a <a href="http://allinthehead.com/">personal site</a> covering web development issues and themes, <a href="http://flickr.com/drewm/">takes photos</a> and <a href="http://twitter.com/drewm">tweets a lot</a>.</p>
             </div>
         </section><!--/.section-->
 
         <section class="section" id="comments">
-            <h1 class="section--title">Comments</h1>
+            <header class="section--header">
+                <h1 class="section--title">Comments</h1>
+            </header>
             <div class="section--main">
-                <p><a href="comments.php">View 11 reader comments</a></p>
+                <p><a href="comments.php" data-replace="comments.php">View 11 reader comments</a></p>
             </div>
         </section><!--/.section-->
 
         <section class="section" id="related">
-            <h1 class="section--title">Related articles</h1>
+            <header class="section--header">
+                <h1 class="section--title">Related articles</h1>
+            </header>
             <div class="section--main">
-                <ul class="list list-related">
-                    <li>
+                <ul class="list list-articles">
+                    <li class="list--item">
 <?                      inc('partial','summary-article') ?>
                     </li>
-                    <li>
+                    <li class="list--item">
 <?                      inc('partial','summary-article') ?>
                     </li>
-                    <li>
+                    <li class="list--item">
 <?                      inc('partial','summary-article') ?>
                     </li>
                 </ul><!--/.list-articles-->

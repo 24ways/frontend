@@ -16,72 +16,80 @@
         </div>
 
         <section class="section" id="comments">
-            <h1 class="section--title">11 Comments</h1>
-            <p>Comments are ordered by helpfulness, as indicated by you. Help us pick out the gems and discourage asshattery by voting on notable comments.</p>
-            <p>Got something to add? You can leave a comment below.</p>
-            <ol class="list list-comments">
-                <li>
-<?                  inc('partial','summary-comment') ?>
-                </li>
-                <li>
-<?                  inc('partial','summary-comment') ?>
-                </li>
-                <li>
-<?                  inc('partial','summary-comment') ?>
-                </li>
-                <li>
-<?                  inc('partial','summary-comment') ?>
-                </li>
-                <li>
-<?                  inc('partial','summary-comment') ?>
-                </li>
-                <li>
-<?                  inc('partial','summary-comment') ?>
-                </li>
-                <li>
-<?                  inc('partial','summary-comment') ?>
-                </li>
-                <li>
-<?                  inc('partial','summary-comment') ?>
-                </li>
-                <li>
-<?                  inc('partial','summary-comment') ?>
-                </li>
-                <li>
-<?                  inc('partial','summary-comment') ?>
-                </li>
-                <li>
-<?                  inc('partial','summary-comment') ?>
-                </li>
-            </ol><!--/.list-comments-->
-        </section>
+            <header class="section--header">
+                <h1 class="section--title">11 Comments</h1>
+            </header>
+            <div class="section--main">
+                <p>Comments are ordered by helpfulness, as indicated by you. Help us pick out the gems and discourage asshattery by voting on notable comments.</p>
+                <p>Got something to add? You can leave a comment below.</p>
+                <ol class="list list-comments">
+                    <li class="list--item">
+<?                      inc('partial','summary-comment') ?>
+                    </li>
+                    <li class="list--item">
+<?                      inc('partial','summary-comment') ?>
+                    </li>
+                    <li class="list--item">
+<?                      inc('partial','summary-comment') ?>
+                    </li>
+                    <li class="list--item">
+<?                      inc('partial','summary-comment') ?>
+                    </li>
+                    <li class="list--item">
+<?                      inc('partial','summary-comment') ?>
+                    </li>
+                    <li class="list--item">
+<?                      inc('partial','summary-comment') ?>
+                    </li>
+                    <li class="list--item">
+<?                      inc('partial','summary-comment') ?>
+                    </li>
+                    <li class="list--item">
+<?                      inc('partial','summary-comment') ?>
+                    </li>
+                    <li class="list--item">
+<?                      inc('partial','summary-comment') ?>
+                    </li>
+                    <li class="list--item">
+<?                      inc('partial','summary-comment') ?>
+                    </li>
+                    <li class="list--item">
+<?                      inc('partial','summary-comment') ?>
+                    </li>
+                </ol><!--/.list-comments-->
+            </div>
+        </section><!--/section-->
 
         <form id="comment" method="post">
-            <fieldset>
-                <legend>Impress us</legend>
-                <p>Be friendly / use <a href="http://www.textism.com/tools/textile/">Textile</a></p>
-                <p>
-                    <label for="commentName">Name</label>
-                    <input id="commentName" name="commentName" type="text" required="required">
-                </p>
-                <p>
-                    <label for="commentEmail">Email</label>
-                    <input id="commentEmail" name="commentEmail" type="email" required="required">
-                </p>
-                <p>
-                    <label for="commentURL">Website</label>
-                    <input id="commentURL" name="commentURL" type="url" placeholder="http://">
-                </p>
-                <p>
-                    <label for="commentHTML">Message</label>
-                    <textarea id="commentHTML" name="commentHTML" cols="25" rows="5" required="required"></textarea>
-                </p>
-            </fieldset>
-            <p>
-                <input type="hidden" name="parentID" id="parentID" value="289"/>
-                <input type="hidden" name="parentTitle" id="parentTitle" value="HTML5 Video Bumpers"/>
-                <input type="submit" name="submitComment" id="submitComment" value="Submit">
-            </p>
+            <fieldset class="section">
+                <legend class="section--header">
+                    <span class="section--title">Impress us</span>
+                </legend>
+                <div class="section--main">
+                    <p>Be friendly / use <a href="http://www.textism.com/tools/textile/">Textile</a></p>
+                    <p>
+                        <label for="commentName">Name</label>
+                        <input id="commentName" name="commentName" type="text" required="required">
+                    </p>
+                    <p>
+                        <label for="commentEmail">Email</label>
+                        <input id="commentEmail" name="commentEmail" type="email" required="required">
+                    </p>
+                    <p>
+                        <label for="commentURL">Website</label>
+                        <input id="commentURL" name="commentURL" type="url" placeholder="http://">
+                    </p>
+                    <p>
+                        <label for="commentHTML">Message</label>
+                        <textarea id="commentHTML" name="commentHTML" cols="25" rows="5" required="required"></textarea>
+                    </p>
+                    <p>
+                        <input type="hidden" name="parentID" id="parentID" value="289"/>
+                        <input type="hidden" name="parentTitle" id="parentTitle" value="HTML5 Video Bumpers"/>
+                        <input type="submit" class="button button-submit" name="submitComment" id="submitComment" value="Submit"/>
+                    </p>
+                </div>
+            </fieldset><!--/.section-->
         </form>
     </main><!--/@main-->
 

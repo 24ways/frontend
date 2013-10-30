@@ -7,13 +7,13 @@
     <main role="main">
         <header class="preface">
             <h1 class="preface--title">2013</h1>
-            <div class="preface--content">
+            <div class="preface--main">
                 <p class="lede"><cite>24 ways</cite> is the advent calendar for web geeks. Each day throughout December we publish a daily dose of web design and development goodness to bring you all a little Christmas cheer. <a href="/pages/about/">Learn more</a></p>
             </div>
         </header><!--/.preface-->
 
         <ol class="list list-articles">
-            <li>
+            <li class="list--item">
                 <article class="summary summary-article h-entry" data-href="/pages/YYYY/article/">
                     <header class="summary--header">
                         <h1 class="summary--title p-name"><a href="/pages/YYYY/article/">Ignorance Is Bliss</a></h1>
@@ -27,73 +27,73 @@
                     </footer>
                 </article>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-article') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
-            <li>
+            <li class="list--item">
 <?              inc('partial','summary-day') ?>
             </li>
         </ol><!--/.list-articles-->

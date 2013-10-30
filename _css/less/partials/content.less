@@ -5,12 +5,21 @@
     background-color: #999;
     min-height: 12rem;
     padding: 1em 1em 1em 25%;
+    position: relative;
+    overflow: hidden;
     .preface--title {
         .heading();
         margin-left: 1rem;
     }
     .preface--main {
         margin-left: 1rem;
+    }
+    .preface--image {
+        height: auto;
+        width: 20%;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
 
@@ -19,23 +28,27 @@
    Section
    ========================================================================== */
 .section {
-    padding-bottom: 4rem;
-    max-width: 80em;
+    padding: 2rem 0 2rem 1rem;
     position: relative;
+    overflow: hidden;
+
+    .section--header {
+        text-align: right;
+        border-top: 1px solid #ddd;
+        padding: 1.1875rem 0 1.25rem 1rem;
+        width: 20%;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+    }
     .section--title {
         font-size: 1rem;
         font-weight: 
         line-height 1.5;
-        text-align: right;
         text-transform: uppercase;
         letter-spacing: 0.0625em;
-        border-top: 1px solid #ddd;
         margin: 0;
-        padding: 1.1875rem 0 1.25rem 1rem;
-        width: 20%;
-        position: absolute;
-        top: 0;
-        left: 0;
+        display: block;
     }
     .section--main {
         border-top: 1px solid #ddd;
@@ -46,6 +59,13 @@
             margin-top: -0.5rem;
         }
     }
+    .section--meta {
+        .caption();
+    }
+    .section--image {
+        margin-right: 1rem;
+        float: left;
+    }
 }
 
 
@@ -54,13 +74,13 @@
    ========================================================================== */
 .article {
     padding: 9rem 0 4rem;
-    max-width: 80em;
 
     .article--header {
         border-top: 1px solid #ccc;
         padding: 0 5% 1rem 25%;
         min-height: 16rem;
         position: relative;
+        overflow: hidden;
 
         .p-photo {
             margin-left: -1rem;
@@ -74,6 +94,22 @@
     .article--title {
         .heading();
         margin: 1rem 0 0.5rem;
+        padding-left: 1rem;
+    }
+    .article--byline {
+        padding-left: 1rem;
+    }
+    .article--main {
+        margin-left: 25%;
+        padding-left: 1rem;
+        width: 70%;
+
+        p,
+        li {
+            font-size: 20px;
+            font-size: 1.25rem;
+            line-height: 1.6; /* 32px */
+        }
     }
     .article--footer {
         text-align: right;
@@ -89,17 +125,6 @@
             padding: 0.5rem 0 1rem 0;
         }
     }
-    .article--content {
-        width: 70%;
-        margin-left: 25%;
-
-        p,
-        li {
-            font-size: 20px;
-            font-size: 1.25rem;
-            line-height: 1.6; /* 32px */
-        }
-    }
 }
 
 
@@ -107,24 +132,27 @@
    Lists
    ========================================================================== */
 .list {
-    li {
+    .list--item {
         padding: 1px 1px 0 0;
         width: 100%;
     }
 }
-.list-years li,
-.list-topics li,
-.list-related li {
+.list-years .list--item {
     width: 33.333%;
     float: left
 }
-.list-articles li {
+.list-articles .list--item {
     width: 25%;
     float: left
 }
-.list-authors li {
+.list-authors .list--item {
     width: 20%;
     float: left
+}
+.section {
+    .list-articles .list--item {
+        width: 33.333%;
+    }
 }
 
 
@@ -183,10 +211,10 @@
     position: relative;
     display: block;
     
-    .p-name {
+    .summary--meta {
         color: #fff;
         background-color: #000;
-        padding: 2% 5%;
+        padding: 0.25rem 0.5rem;
         position: absolute;
         right: 0;
         bottom: 0;

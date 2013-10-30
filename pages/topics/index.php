@@ -9,26 +9,12 @@
             <h1 class="preface--title">Topics</h1>
         </header><!--/.preface-->
 
-        <ul class="list list-topics">
-            <li>
-<?              inc('partial','summary-topic') ?>
-            </li>
-            <li>
-<?              inc('partial','summary-topic') ?>
-            </li>
-            <li>
-<?              inc('partial','summary-topic') ?>
-            </li>
-            <li>
-<?              inc('partial','summary-topic') ?>
-            </li>
-            <li>
-<?              inc('partial','summary-topic') ?>
-            </li>
-            <li>
-<?              inc('partial','summary-topic') ?>
-            </li>
-        </ul><!--/.list-topics-->
+<?      inc('partial','section-topic') ?>
+<?      inc('partial','section-topic') ?>
+<?      inc('partial','section-topic') ?>
+<?      inc('partial','section-topic') ?>
+<?      inc('partial','section-topic') ?>
+<?      inc('partial','section-topic') ?>
     </main><!--/@main-->
 
 <?  inc('partial','navigation') ?>

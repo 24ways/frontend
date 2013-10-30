@@ -13,7 +13,7 @@
         span {
             font-size: 0.6667em;
             text-transform: lowercase;
-            opacity: 0.3
+            opacity: 0.6;
         }
     }
     .banner--menu {
@@ -37,7 +37,7 @@
         }
     }
 }
-.enhanced {
+.is--enhanced {
     .banner--menu {
         position: fixed;
     }
@@ -49,14 +49,15 @@
    ========================================================================== */
 [role="main"] {
     background-color: #f3f3f3;
-    //padding: 0 4.5rem 0 0;
+}
+.is--enhanced [role="main"] {
     -webkit-transition: all .25s;
     -moz-transition: all .25s;
     -ms-transition: all .25s;
     -o-transition: all .25s;
     transition: all .25s;
 }
-.active [role="main"] {
+.has--active-menu [role="main"] {
     opacity: 0.75;
 }
 
@@ -115,7 +116,7 @@
     }
 }
 
-.enhanced {
+.is--enhanced {
     .navigation {
         padding: 4.5em 0 0 4.5em;
         width: 22.5em;
@@ -154,7 +155,7 @@
             }
         }
     }
-    .active .navigation {
+    .has--active-menu .navigation {
         right: 0;
         box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
     }
