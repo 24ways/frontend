@@ -388,6 +388,9 @@ a:active {
   -moz-text-decoration-color: rgba(119,17,170,0.33);
   transition: none;
 }
+:target {
+  background-color: #ffc;
+}
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -496,14 +499,6 @@ input[disabled] {
   position: relative;
   overflow: hidden;
 }
-.article .article--header .p-photo {
-  margin-left: -1rem;
-  height: auto;
-  width: 20%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 .article .article--title {
   font-family: 'Merriweather', serif;
   font-size: 48px;
@@ -513,6 +508,14 @@ input[disabled] {
   letter-spacing: -0.041666667em;
   margin: 1rem 0 0.5rem;
   padding-left: 1rem;
+}
+.article .article--image {
+  margin-left: -1rem;
+  height: auto;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .article .article--byline {
   padding-left: 1rem;

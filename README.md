@@ -1,14 +1,3 @@
-## Classes
+## Notes
 
-* .list (-articles, -topics, -authors)
-
-* .summary (-article, -topic, -author, -day)
-* .summary--title
-* .summary--meta
-* .summary--content
-
-## Content Needed
-
-* Topic summaries
-* Year summaries
-* 404 copy
+* Add dymanic back-to-top link (appearing in navigation bar)
