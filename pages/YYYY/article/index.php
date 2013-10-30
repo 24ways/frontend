@@ -200,6 +200,7 @@
             </header>
             <div class="section--main h-card">
                 <p class="p-note"><strong class="p-name">Drew McLellan</strong> is lead developer on your favourite small <span class="caps">CMS</span>, <a href="http://grabaperch.com/">Perch</a>. He is Director and Senior Developer at UK-based web development agency edgeofmyseat.com, and formerly Group Lead at the Web Standards Project. When not publishing 24 ways, Drew keeps a <a href="http://allinthehead.com/">personal site</a> covering web development issues and themes, <a href="http://flickr.com/drewm/">takes photos</a> and <a href="http://twitter.com/drewm">tweets a lot</a>.</p>
+                <p><a href="/pages/authors/authorname">More articles by Drew</a></p>
             </div>
         </section><!--/.section-->
 
@@ -208,7 +209,7 @@
                 <h1 class="section--title">Comments</h1>
             </header>
             <div class="section--main">
-                <p><a href="comments.php" data-replace="comments.php">View 11 reader comments</a></p>
+                <p><a href="comments" data-replace="comments">View 11 reader comments</a></p>
             </div>
         </section><!--/.section-->
 

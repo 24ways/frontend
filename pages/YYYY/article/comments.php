@@ -8,8 +8,8 @@
         <div class="article">
             <header class="article--header">
                 <h1 class="article--title p-name">Starting Your <abbr>HTML5</abbr> Project on the Right Foot (and Keeping It There)</h1>
-                <a class="article--byline h-card p-author" href="http://allinthehead.com/">
-                    <img class="p-photo" src="http://media.24ways.org/authors/drewmclellan280.jpg" width="160" height="160" alt="Drew McLellan"/>
+                <a class="article--byline" href="#author">
+                    <img class="article--image" src="http://media.24ways.org/authors/drewmclellan280.jpg" width="160" height="160" alt="Drew McLellan"/>
                     by Drew McLellen
                 </a>
             </header>
