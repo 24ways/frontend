@@ -3,17 +3,17 @@
     margin: 1em 0; /* 16px 0 */
 
     .nav_item {
-        margin: 0 -0.25em 0 0; /* 0 -4px 0 0 */
+        margin: 0 -0.1875em 0 0; /* 0 -3px 0 0 */
         display: inline;
     }
-    .nav_item {
+    .nav_item a {
         border-bottom: 0;
         border-right: thin solid lightgrey;
         padding: 0.5em 1em; /* 8px 16px */
-        display: block;
+        display: inline-block;
     }
     .nav_item a:hover {
-        background-color: whitesmoke;
+        background-color: lightgrey;
     }
     .nav_item:last-child a {
         border-right: 0;
@@ -94,7 +94,9 @@
         box-shadow: 2px 0 rgba(0,0,0,0.05);
         position: relative;
         z-index: 1;
-        cursor: default;
+        &:hover {
+            background-color: white;
+        }
     }
 }
 
@@ -119,6 +121,9 @@
         box-shadow: 2px 2px rgba(0,0,0,0.05);
         position: relative;
         z-index: 1;
+        &:hover {
+            background-color: white;
+        }
     }
     .is-active a::after {
         content: "\25B6";
@@ -136,6 +141,9 @@
 .nav-breadcrumb {
     color: grey;
     
+    .nav_item {
+        margin: 0 0.25em;
+    }
     .is-active {
         font-weight: normal;
     }
