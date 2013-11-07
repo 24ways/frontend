@@ -4,9 +4,9 @@
 <? inc('partial','head') ?>
 <? inc('partial','banner') ?>
 
-    <main role="main">
+    <main class="main" role="main">
         <header class="preface">
-            <h1 class="preface--title">Archives</h1>
+            <h1 class="preface_title">Archives</h1>
         </header><!--/.preface-->
 
 <?      inc('partial','section-year') ?>

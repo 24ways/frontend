@@ -4,16 +4,16 @@
 <? inc('partial','head') ?>
 <? inc('partial','banner') ?>
 
-    <main role="main">
+    <main class="main" role="main">
         <header class="preface">
-            <h1 class="preface--title">About 24 Ways</h1>
+            <h1 class="preface_title">About 24 Ways</h1>
         </header><!--/.preface-->
 
         <section class="section" id="sectionname">
-            <header class="section--header">
-                <h1 class="section--title">Section heading</h1>
+            <header class="section_header">
+                <h1 class="section_title">Section heading</h1>
             </header>
-            <div class="section--main">
+            <div class="section-main">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat, elit nec malesuada interdum, nibh erat convallis turpis, vel mollis mi sem ac arcu.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat, elit nec malesuada interdum, nibh erat convallis turpis, vel mollis mi sem ac arcu.</p>
                 <ul>
@@ -26,10 +26,10 @@
         </section><!--/.section-->
 
         <section class="section" id="colophon">
-            <header class="section--header">
-                <h1 class="section--title">Colophon</h1>
+            <header class="section_header">
+                <h1 class="section_title">Colophon</h1>
             </header>
-            <div class="section--main">
+            <div class="section-main">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat, elit nec malesuada interdum, nibh erat convallis turpis, vel mollis mi sem ac arcu.</p>
                 <ul>
                     <li>Hosted by <a href="http://www.memset.com/">Memset</a> <a href="http://www.memset.com/dedicated-servers/">Dedicated Servers</a>.</li>

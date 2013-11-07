@@ -5,7 +5,7 @@
     <script>
         // Cut the mustard
         if (document.querySelector && window.addEventListener) {
-            document.documentElement.className += ' is--enhanced';
+            document.documentElement.className += ' js-enhanced';
             var enhanced = true;
         } else {
             var enhanced = false;
@@ -13,7 +13,7 @@
 
         // Dectect support for SVG
         if(document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {
-            document.documentElement.className += ' has--svg';
+            document.documentElement.className += ' svg';
         }
     </script>
 

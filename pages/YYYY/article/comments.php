@@ -4,56 +4,56 @@
 <? inc('partial','head') ?>
 <? inc('partial','banner') ?>
 
-    <main role="main">
+    <main class="main" role="main">
         <div class="article">
-            <header class="article--header">
-                <h1 class="article--title p-name">Starting Your <abbr>HTML5</abbr> Project on the Right Foot (and Keeping It There)</h1>
-                <a class="article--byline" href="#author">
-                    <img class="article--image" src="http://media.24ways.org/authors/drewmclellan280.jpg" width="160" height="160" alt="Drew McLellan"/>
+            <header class="article_header">
+                <h1 class="article_title p-name">Starting Your <abbr>HTML5</abbr> Project on the Right Foot (and Keeping It There)</h1>
+                <a class="article_byline" href="#author">
+                    <img class="article_image" src="http://media.24ways.org/authors/drewmclellan280.jpg" width="160" height="160" alt="Drew McLellan"/>
                     by Drew McLellen
                 </a>
             </header>
-        </div>
+        </div><!--/.article-->
 
         <section class="section" id="comments">
-            <header class="section--header">
-                <h1 class="section--title">11 Comments</h1>
+            <header class="section_header">
+                <h1 class="section_title">11 Comments</h1>
             </header>
-            <div class="section--main">
+            <div class="section_main">
                 <p>Comments are ordered by helpfulness, as indicated by you. Help us pick out the gems and discourage asshattery by voting on notable comments.</p>
                 <p>Got something to add? You can leave a comment below.</p>
                 <ol class="list list-comments">
-                    <li class="list--item">
+                    <li class="list_item">
 <?                      inc('partial','summary-comment') ?>
                     </li>
-                    <li class="list--item">
+                    <li class="list_item">
 <?                      inc('partial','summary-comment') ?>
                     </li>
-                    <li class="list--item">
+                    <li class="list_item">
 <?                      inc('partial','summary-comment') ?>
                     </li>
-                    <li class="list--item">
+                    <li class="list_item">
 <?                      inc('partial','summary-comment') ?>
                     </li>
-                    <li class="list--item">
+                    <li class="list_item">
 <?                      inc('partial','summary-comment') ?>
                     </li>
-                    <li class="list--item">
+                    <li class="list_item">
 <?                      inc('partial','summary-comment') ?>
                     </li>
-                    <li class="list--item">
+                    <li class="list_item">
 <?                      inc('partial','summary-comment') ?>
                     </li>
-                    <li class="list--item">
+                    <li class="list_item">
 <?                      inc('partial','summary-comment') ?>
                     </li>
-                    <li class="list--item">
+                    <li class="list_item">
 <?                      inc('partial','summary-comment') ?>
                     </li>
-                    <li class="list--item">
+                    <li class="list_item">
 <?                      inc('partial','summary-comment') ?>
                     </li>
-                    <li class="list--item">
+                    <li class="list_item">
 <?                      inc('partial','summary-comment') ?>
                     </li>
                 </ol><!--/.list-comments-->
@@ -62,10 +62,10 @@
 
         <form id="comment" method="post">
             <fieldset class="section">
-                <legend class="section--header">
-                    <span class="section--title">Impress us</span>
+                <legend class="section_header">
+                    <span class="section_title">Impress us</span>
                 </legend>
-                <div class="section--main">
+                <div class="section_main">
                     <p>Be friendly / use <a href="http://www.textism.com/tools/textile/">Textile</a></p>
                     <p>
                         <label for="commentName">Name</label>

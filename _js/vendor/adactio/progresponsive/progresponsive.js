@@ -12,6 +12,6 @@
 
     doc.querySelector('a[href="#menu"]').addEventListener('click', function(ev) {
         ev.preventDefault();
-        toggleClassName(doc.body, 'has--active-menu');
+        toggleClassName(doc.body, 'js-menu-active');
     });
 }(this, this.document));

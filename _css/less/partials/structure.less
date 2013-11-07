@@ -7,7 +7,7 @@
     padding: 1em 1em 1em 25%;
     height: 4.5em;
     
-    .banner--logo {
+    .banner_logo {
         font-size: 1.5em;
         margin-left: 1rem;
         span {
@@ -16,7 +16,7 @@
             opacity: 0.6;
         }
     }
-    .banner--menu {
+    .banner_menu {
         font: 0/0 a;
         position: absolute;
         border-bottom: 1px solid #eee;
@@ -37,8 +37,8 @@
         }
     }
 }
-.is--enhanced {
-    .banner--menu {
+.js-enhanced {
+    .banner_menu {
         position: fixed;
     }
 }
@@ -50,14 +50,14 @@
 [role="main"] {
     background-color: #f3f3f3;
 }
-.is--enhanced [role="main"] {
     -webkit-transition: all .25s;
     -moz-transition: all .25s;
     -ms-transition: all .25s;
     -o-transition: all .25s;
+.js-enhanced [role="main"] {
     transition: all .25s;
 }
-.has--active-menu [role="main"] {
+.js-menu-active [role="main"] {
     opacity: 0.75;
     -webkit-filter: blur(1px);
     filter: blur(1px);
@@ -73,7 +73,7 @@
         .caption();
         text-transform: uppercase;
     }
-    .navigation--topics {
+    .navigation_topics {
         overflow: hidden;
         li {
             float: left;
@@ -101,7 +101,7 @@
             }
         }
     }
-    .navigation--site {
+    .navigation_site {
         overflow: hidden;
         li {
             float: left;
@@ -118,7 +118,7 @@
     }
 }
 
-.is--enhanced {
+.js-enhanced {
     .navigation {
         padding: 4.5em 0 0 4.5em;
         width: 22.5em;
@@ -132,7 +132,7 @@
         -o-transition: all .25s;
         transition: all .25s;
 
-        .navigation--site {
+        .navigation_site {
             position: absolute;
             bottom: 0;
             left: 0;
@@ -157,7 +157,7 @@
             }
         }
     }
-    .has--active-menu .navigation {
+    .js-menu-active .navigation {
         right: 0;
         box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
     }
@@ -178,11 +178,11 @@
         font-size: 100%;
     }
     
-    .contentinfo--copyright {
+    .contentinfo_copyright {
         margin: 0;
         float: left;
     }
-    .contentinfo--social {
+    .contentinfo_social {
         margin: 0;
         float: right;
         display: none;
