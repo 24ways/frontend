@@ -88,6 +88,14 @@
             </li>
         </ol><!--/.list--articles-->
         <a class="button button-more" href="?page=2">Show me another 24 ways</a>
+
+        <footer class="main_footer">
+            <nav class="nav nav-prevnext">
+                <h1 class="hidden">Browse topics</h1>
+                <a class="nav_item nav_prev" rel="prev" href="/pages/YYYY/article/" title="[Previous Topic Name]">Previous topic</a>
+                <a class="nav_item nav_next" rel="next" href="/pages/YYYY/article/" title="[Next Topic Name]">Next topic</a>
+            </nav><!--/.nav-prevnext-->
+        </footer>
     </main><!--/@main-->
 
 <?  inc('partial','navigation') ?>

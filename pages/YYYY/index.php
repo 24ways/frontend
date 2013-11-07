@@ -97,6 +97,14 @@
 <?              inc('partial','summary-article') ?>
             </li>
         </ol><!--/.list--articles-->
+
+        <footer class="main_footer">
+            <nav class="nav nav-prevnext">
+                <h1 class="hidden">Browse years</h1>
+                <a class="nav_item nav_prev" rel="prev" href="/pages/YYYY/article/" title="[YYYY-1]">Previous year</a>
+                <a class="nav_item nav_next" rel="next" href="/pages/YYYY/article/" title="[YYYY+1]">Next year</a>
+            </nav><!--/.nav-prevnext-->
+        </footer>
     </main><!--/@main-->
 
 <?  inc('partial','navigation') ?>

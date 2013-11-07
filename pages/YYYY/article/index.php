@@ -20,12 +20,6 @@
                     <li>Published in <a href="/pages/topics/topicname/">Code</a></li>
                     <li><a href="#comments">3 comments</a></li>
                 </ul>
-                <nav>
-                    <ul>
-                        <li><a href="/pages/YYYY/article/" rel="prev">Previous article</a></li>
-                        <li><a href="/pages/YYYY/article/" rel="next">Next article</a></li>
-                    </ul>
-                </nav>
             </footer>
 
             <div class="article_main">
@@ -230,6 +224,14 @@
                 </ul><!--/.list-articles-->
             </div>
         </section><!--/.section-->
+        
+        <footer class="main_footer">
+            <nav class="nav nav-prevnext">
+                <h1 class="hidden">Browse articles puplished in 2013</h1>
+                <a class="nav_item nav_prev" rel="prev" href="/pages/YYYY/article/" title="[Previous Article Title]">Previous article</a>
+                <a class="nav_item nav_next" rel="next" href="/pages/YYYY/article/" title="[Next Article Title]">Next article</a>
+            </nav><!--/.nav-prevnext-->
+        </footer>
     </main><!--/@main-->
 
 <?  inc('partial','navigation') ?>
