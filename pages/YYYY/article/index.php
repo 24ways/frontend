@@ -4,18 +4,17 @@
 <? inc('partial','head') ?>
 <? inc('partial','banner') ?>
 
-    <main role="main">
+    <main class="main" role="main">
         <div class="article">
-
-            <header class="article--header">
-                <h1 class="article--title p-name">Starting Your <abbr>HTML5</abbr> Project on the Right Foot (and Keeping It There)</h1>
-                <a class="article--byline" href="#author">
-                    <img class="article--image" src="http://media.24ways.org/authors/drewmclellan280.jpg" width="160" height="160" alt="Drew McLellan"/>
+            <header class="article_header">
+                <h1 class="article_title p-name">Starting Your <abbr>HTML5</abbr> Project on the Right Foot (and Keeping It There)</h1>
+                <a class="article_byline" href="#author">
+                    <img class="article_image" src="http://media.24ways.org/authors/drewmclellan280.jpg" width="160" height="160" alt="Drew McLellan"/>
                     by Drew McLellen
                 </a>
             </header>
 
-            <footer class="article--footer">
+            <footer class="article_footer">
                 <ul>
                     <li><time class="dt-published" datetime="2012-12-01T00:00:00-00:00">1 December 2012</time></li>
                     <li>Published in <a href="/pages/topics/topicname/">Code</a></li>
@@ -29,7 +28,7 @@
                 </nav>
             </footer>
 
-            <div class="article--main">
+            <div class="article_main">
                 <p class="lede">Video is a bigger part of the web experience than ever before. With native browser support for <abbr>HTML5</abbr> video elements freeing us from the tyranny of plugins, and the availability of faster internet connections to the workplace, home and mobile networks, it&#8217;s now pretty straightforward to publish video in a way that can be consumed in all sorts of ways on all sorts of different web devices.</p>
 
                 <p>I recently worked on a project where the client had shot some dedicated video shorts to publish on their site. They also had some five-second motion graphics produced to top and tail the videos with context and branding. This pretty common requirement is a great idea on the web, where a user might land at your video having followed a link and be viewing a page without much context.</p>
@@ -195,37 +194,37 @@
         </div><!--/.article-->
 
         <section class="section" id="author">
-            <header class="section--header">
-                <h1 class="section--title">About the author</h1>
+            <header class="section_header">
+                <h1 class="section_title">About the author</h1>
             </header>
-            <div class="section--main h-card">
+            <div class="section_main h-card">
                 <p class="p-note"><strong class="p-name">Drew McLellan</strong> is lead developer on your favourite small <span class="caps">CMS</span>, <a href="http://grabaperch.com/">Perch</a>. He is Director and Senior Developer at UK-based web development agency edgeofmyseat.com, and formerly Group Lead at the Web Standards Project. When not publishing 24 ways, Drew keeps a <a href="http://allinthehead.com/">personal site</a> covering web development issues and themes, <a href="http://flickr.com/drewm/">takes photos</a> and <a href="http://twitter.com/drewm">tweets a lot</a>.</p>
                 <p><a href="/pages/authors/authorname">More articles by Drew</a></p>
             </div>
         </section><!--/.section-->
 
         <section class="section" id="comments">
-            <header class="section--header">
-                <h1 class="section--title">Comments</h1>
+            <header class="section_header">
+                <h1 class="section_title">Comments</h1>
             </header>
-            <div class="section--main">
-                <p><a href="comments" data-replace="comments">View 11 reader comments</a></p>
+            <div class="section_main">
+                <p><a href="/pages/YYYY/article/comments" data-replace data-target="#comments">View 11 reader comments</a></p>
             </div>
         </section><!--/.section-->
 
         <section class="section" id="related">
-            <header class="section--header">
-                <h1 class="section--title">Related articles</h1>
+            <header class="section_header">
+                <h1 class="section_title">Related articles</h1>
             </header>
-            <div class="section--main">
+            <div class="section_main">
                 <ul class="list list-articles">
-                    <li class="list--item">
+                    <li class="list_item">
 <?                      inc('partial','summary-article') ?>
                     </li>
-                    <li class="list--item">
+                    <li class="list_item">
 <?                      inc('partial','summary-article') ?>
                     </li>
-                    <li class="list--item">
+                    <li class="list_item">
 <?                      inc('partial','summary-article') ?>
                     </li>
                 </ul><!--/.list-articles-->
