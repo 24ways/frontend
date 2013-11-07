@@ -7,6 +7,9 @@
     padding: 1em 1em 1em 25%;
     position: relative;
     overflow: hidden;
+    a {
+        color: white;
+    }
     .preface_title {
         .heading();
         margin-left: 1rem;
@@ -28,7 +31,8 @@
    Section
    ========================================================================== */
 .section {
-    padding: 2rem 0 2rem 1rem;
+    margin: 2rem 0 1rem 0;
+    padding: 0 0 1rem 1rem;
     position: relative;
     overflow: hidden;
 
@@ -38,7 +42,7 @@
         padding: 1.1875rem 0 1.25rem 1rem;
         width: 20%;
         position: absolute;
-        top: 2rem;
+        top: 0;
         left: 0;
     }
     .section_title {
@@ -62,7 +66,7 @@
     .section_meta {
         .caption();
     }
-    .section--image {
+    .section_image {
         margin-right: 1rem;
         float: left;
     }
@@ -74,55 +78,53 @@
    ========================================================================== */
 .article {
     padding: 9rem 0 4rem;
+    margin-top: -1px;
+}
 .article_header {
+    border-top: 1px solid #ccc;
+    padding: 0 5% 1rem 25%;
+    min-height: 16rem;
+    position: relative;
+    overflow: hidden;
+}
 .article_title {
+    .heading();
+    margin: 1rem 0 0.5rem;
+    padding-left: 1rem;
+}
 .article_image {
+    height: auto;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .article_byline {
+    padding-left: 1rem;
+}
 .article_main {
+    margin-left: 25%;
+    padding-left: 1rem;
+    width: 70%;
 
-        border-top: 1px solid #ccc;
-        padding: 0 5% 1rem 25%;
-        min-height: 16rem;
-        position: relative;
-        overflow: hidden;
+    p,
+    li {
+        font-size: 20px;
+        font-size: 1.25rem;
+        line-height: 1.6; /* 32px */
     }
-        .heading();
-        margin: 1rem 0 0.5rem;
-        padding-left: 1rem;
-    }
-        margin-left: -1rem;
-        height: auto;
-        width: 20%;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-        padding-left: 1rem;
-    }
-        margin-left: 25%;
-        padding-left: 1rem;
-        width: 70%;
-
-        p,
-        li {
-            font-size: 20px;
-            font-size: 1.25rem;
-            line-height: 1.6; /* 32px */
-        }
+}
 .article_footer {
+    text-align: right;
+    width: 20%;
+    float: left;
+    ul {
+        margin: 0.5rem 0;
     }
-        text-align: right;
-        margin-left: -1rem;
-        width: 20%;
-        float: left;
-        ul {
-            margin: 0.5rem 0;
-        }
-        li {
-            .caption();
-            border-top: 1px solid #ccc;
-            padding: 0.5rem 0 1rem 0;
-        }
+    li {
+        .caption();
+        border-top: 1px solid #ccc;
+        padding: 0.5rem 0 1rem 0;
     }
 }
 
@@ -165,11 +167,11 @@
         font-family: 'Merriweather', serif;
         font-size: 20px;
         font-size: 1.25rem;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.2; /* 16px */
         margin: 0;
     }
-    .summary--main {
+    .summary_main {
         a {
             color: inherit;
             font-weight: 700;
