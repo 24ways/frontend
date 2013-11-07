@@ -38,8 +38,8 @@
         <footer class="main_footer">
             <nav class="nav nav-prevnext">
                 <h1 class="hidden">Browse authors</h1>
-                <a class="nav_item nav_prev" rel="prev" href="/pages/YYYY/article/" title="[Previous Author Name]">Previous author</a>
-                <a class="nav_item nav_next" rel="next" href="/pages/YYYY/article/" title="[Next Author Name]">Next author</a>
+                <a class="nav_item nav_prev" rel="prev" href="/pages/authors/authorname/" title="[Previous Author Name]">Previous author</a>
+                <a class="nav_item nav_next" rel="next" href="/pages/authors/authorname/" title="[Next Author Name]">Next author</a>
             </nav><!--/.nav-prevnext-->
         </footer>
     </main><!--/@main-->

@@ -5,26 +5,27 @@
     border-radius: 0 0.25em 0.25em 0; /* 0 4px 4px 0 */
     margin: 0;
     padding: 1em 1em 0.75em;
+
+    li {
+        list-style-position: inside
+    }
+    *:last-child {
+        margin-bottom: 0;
+    }
 }
 .alert_title {
     font-size: 16px;
     font-size: 1rem;
     margin: 0;
 }
-.alert *:last-child {
-    margin-bottom: 0;
-}
-.alert li {
-    list-style-position: inside
-}
 
-/* Success */
+/* Alert > Success */
 .alert-success {
     background-color: #f0f6e9;
     border-left-color: #b3d98c;
 }
 
-/* Faliure */
+/* Alert > Faliure */
 .alert-failure {
     background-color: #fcecec;
     border-left-color: #dd6969;
