@@ -13,7 +13,7 @@
             <header class="section_header">
                 <h1 class="section_title">Section heading</h1>
             </header>
-            <div class="section-main">
+            <div class="section_main">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat, elit nec malesuada interdum, nibh erat convallis turpis, vel mollis mi sem ac arcu.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat, elit nec malesuada interdum, nibh erat convallis turpis, vel mollis mi sem ac arcu.</p>
                 <ul>
@@ -29,7 +29,7 @@
             <header class="section_header">
                 <h1 class="section_title">Colophon</h1>
             </header>
-            <div class="section-main">
+            <div class="section_main">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat, elit nec malesuada interdum, nibh erat convallis turpis, vel mollis mi sem ac arcu.</p>
                 <ul>
                     <li>Hosted by <a href="http://www.memset.com/">Memset</a> <a href="http://www.memset.com/dedicated-servers/">Dedicated Servers</a>.</li>
