@@ -15,10 +15,10 @@
             </header>
 
             <footer class="article_footer">
-                <ul>
-                    <li><time class="dt-published" datetime="2012-12-01T00:00:00-00:00">1 December 2012</time></li>
-                    <li>Published in <a href="/pages/topics/topicname/">Code</a></li>
-                    <li><a href="#comments">3 comments</a></li>
+                <ul class="list">
+                    <li class="list_item"><time class="dt-published" datetime="2012-12-01T00:00:00-00:00">1 December 2012</time></li>
+                    <li class="list_item">Published in <a href="/pages/topics/topicname/">Code</a></li>
+                    <li class="list_item"><a href="#comments">3 comments</a></li>
                 </ul>
             </footer>
 
