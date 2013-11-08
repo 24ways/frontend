@@ -28,17 +28,23 @@ blockquote {
     }
 
 ol {
-    list-style-position: outside;
+    list-style-position: inside;
     list-style-type: decimal;
     margin: 1rem 0; /* 16px 0 */
     padding: 0;
 }
 
 ul {
-    list-style-position: outside;
+    list-style-position: inside;
     list-style-type: square;
     margin: 1rem 0; /* 16px 0 */
     padding: 0;
+}
+@media screen and (min-width: 50em) {
+    ol,
+    ul {
+        list-style-position: outside;
+    }
 }
 
 ul li li {
