@@ -4,15 +4,19 @@
 .banner {
     text-transform: uppercase;
     background-color: lightgrey;
-    padding: 1em 1em 1em 25%;
+    padding: 1rem;
     height: 72px;
     height: 4.5rem;
+    @media screen and (min-width: 50em) {
+        padding-left: 25%;
+    }
 }
 .banner_logo {
     font-size: 1.5em;
-    margin-left: 16px;
-    margin-left: 1rem;
-
+    @media screen and (min-width: 50em) {
+        margin-left: 16px;
+        margin-left: 1rem;
+    }
     span {
         font-size: 0.6667em;
         text-transform: lowercase;
