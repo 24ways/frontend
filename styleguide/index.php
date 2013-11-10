@@ -2,7 +2,7 @@
     include_once($_SERVER['DOCUMENT_ROOT'].'/_inc/functions.php');
     
     // Compile LESS CSS
-    lesscss('/_css/less/styles.less', '/_css/styles.css');
+    lesscss('/_assets/css/less/styles.less', '/_assets/css/styles.css');
 
     // Build out URI to reload from form dropdown
     $pageURL = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";

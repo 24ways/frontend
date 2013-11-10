@@ -1,5 +1,4 @@
 <? include_once($_SERVER['DOCUMENT_ROOT'].'/_inc/functions.php'); ?>
-<? lesscss('/_css/less/styles.less', '/_css/styles.css'); ?>
 <? $title = "Starting Your HTML5 Project on the Right Foot (and Keeping It There)"; ?>
 <? inc('partial','head') ?>
 <? inc('partial','banner') ?>

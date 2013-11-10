@@ -12,7 +12,34 @@
 
 /* Helpers */
 .hidden {
-    display: none; // REPLACE WITH ACCESSIBLE RULES!
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+.icon-font {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: icons;
+    font-weight: normal;
+    line-height: 1;
+}
+
+/* Icons */
+@font-face {
+  font-family: icons;
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/icons.ttf") format('truetype');
+}
+[data-icon]::before {
+    content: attr(data-icon);
+    speak: none;
+    .icon-font();
 }
 
 /* Fonts */

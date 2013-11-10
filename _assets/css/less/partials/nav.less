@@ -27,27 +27,52 @@
 /* Previous/next nav */
 .nav-prevnext {
     margin: 0;
+    border-bottom: 1px solid whitesmoke;
     position: fixed;
     right: 0;
     top: 72px;
     top: 4.5rem;
-    z-index: 9;
+    z-index: 999;
+    transition: all .25s;
     
     .nav_item {
+        text-align: center;
         margin: 0;
         border: 0 none;
-        border-bottom: 1px solid whitesmoke;
+        border-top: 1px solid whitesmoke;
         padding: 0;
         height: 72px;
         height: 4.5rem;
         width: 72px;
         width: 4.5rem;
         display: block;
+
+        &:hover {
+            background-color: whitesmoke;
+        }
+    }
+    .nav_prev,
+    .nav_next {
+        font: 0/0 a;
+        
+        &::before {
+            font-size: 48px;
+            font-size: 3rem;
+            line-height: 1.5;
+            display: block;
+        }
+    }
+}
+.js-menu-active {
+    .nav-prevnext {
+        right: 288px;
     }
 }
 
 /* Back to top link */
 .nav-top {
+    font: 0/0 a;
+    text-align: center;
     margin: 0;
     border: 0 none;
     border-top: 1px solid whitesmoke;
@@ -58,8 +83,15 @@
     width: 4.5rem;
     position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: 1px;
     z-index: 9;
+
+    &::before {
+        font-size: 48px;
+        font-size: 3rem;
+        line-height: 1;
+        display: block;
+    }
 }
 
 /* Pagination nav */

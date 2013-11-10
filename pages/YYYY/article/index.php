@@ -1,5 +1,4 @@
 <? include_once($_SERVER['DOCUMENT_ROOT'].'/_inc/functions.php'); ?>
-<? lesscss('/_css/less/styles.less', '/_css/styles.css'); ?>
 <? $title = "Starting Your HTML5 Project on the Right Foot (and Keeping It There)"; ?>
 <? inc('partial','head') ?>
 <? inc('partial','banner') ?>
@@ -228,8 +227,8 @@
         <footer class="main_footer">
             <nav class="nav nav-prevnext">
                 <h1 class="hidden">Browse articles puplished in 2013</h1>
-                <a class="nav_item nav_prev" rel="prev" href="/pages/YYYY/article/" title="[Previous Article Title]">Previous article</a>
-                <a class="nav_item nav_next" rel="next" href="/pages/YYYY/article/" title="[Next Article Title]">Next article</a>
+                <a class="nav_item nav_prev" rel="prev" href="/pages/YYYY/article/" title="[Previous Article Title]" data-icon="&#xe601;">Previous article</a>
+                <a class="nav_item nav_next" rel="next" href="/pages/YYYY/article/" title="[Next Article Title]" data-icon="&#xe602;">Next article</a>
             </nav><!--/.nav-prevnext-->
         </footer>
     </main><!--/@main-->
