@@ -16,8 +16,19 @@
 }
 .preface_title {
     .heading();
+    position: relative;
+    &::before {
+        float: left;
+        margin-right: 0.25em;
+    }
     @media screen and (min-width: 50em) {
         margin-left: 1rem;
+        &::before {
+            font-size: 2em;
+            position: absolute;
+            left: -1.25em;
+            top: 0;
+        }
     }
 }
 .preface_main {

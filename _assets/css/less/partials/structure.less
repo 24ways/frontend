@@ -4,18 +4,29 @@
 .banner {
     text-transform: uppercase;
     background-color: lightgrey;
-    padding: 1rem;
-    height: 72px;
-    height: 4.5rem;
+    padding: 0.5rem 1rem;
+    height: 48px;
+    height: 3rem;
+    @media screen and (max-width: 31.4375em) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 9;
+    }
+    @media screen and (min-width: 31.5em) {
+        padding: 1rem;
+        height: 72px;
+        height: 4.5rem;
+    }
     @media screen and (min-width: 50em) {
         padding-left: 25%;
     }
 }
 .banner_logo {
-    font-size: 1.5em;
-    @media screen and (min-width: 50em) {
-        margin-left: 16px;
-        margin-left: 1rem;
+    font-size: 1.25em;
+    @media screen and (min-width: 31.5em) {
+        font-size: 1.5em;
     }
     span {
         font-size: 0.6667em;
@@ -31,22 +42,24 @@
 .menu {
     color: #fff;
     font: 0/0 a;
-    border: 12px solid;
-    height: 72px;
-    height: 4.5rem;
-    width: 72px;
-    width: 4.5rem;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 99;
     overflow: hidden;
+    @media screen and (min-width: 31.5em) {
+        border: 12px solid;
+        border: 0.75rem solid;
+        height: 72px;
+        height: 4.5rem;
+        width: 72px;
+        width: 4.5rem;
+    }
 
     &::before {
         font-size: 48px;
         font-size: 3rem;
         display: block;
-        height: 49px;
         overflow: hidden;
     }
 }
@@ -63,8 +76,10 @@
    ========================================================================== */
 [role="main"] {
     background-color: #f3f3f3;
-    margin-right: 72px;
-    margin-right: 4.5rem;
+    @media screen and (min-width: 31.5em) {
+        margin-right: 72px;
+        margin-right: 4.5rem;
+    }
 }
 .js-enhanced [role="main"] {
     transition: all .25s;
@@ -81,97 +96,123 @@
    Navigation
    ========================================================================== */
 .navigation {
-    margin-right: 72px;
-    margin-right: 4.5rem;
-
+    @media screen and (min-width: 31.5em) {
+        margin-right: 72px;
+        margin-right: 4.5rem;
+    }
     a {
         .caption();
         text-transform: uppercase;
-        
         &:hover {
             background-color: whitesmoke;
         }
     }
-}
-
-.navigation_topics,
-.navigation_site {
-    overflow: hidden;
-
     li {
         float: left;
         text-align: center;
-        border: solid whitesmoke;
-        border-width: 0 1px 1px 0;
-        margin-right: -1px;
-    }
-    a {
-        padding: 36px 24px;
-        padding: 2.25rem 1.5rem;
-        width: 143px;
-        width: 8.9375rem;
-        display: block;
-
-        &::before {
-            font-size: 48px;
-            font-size: 3rem;
-            line-height: 1;
-            margin-bottom: 8px;
-            margin-bottom: 0.5rem;
+        width: 33.3333%;
+        @media screen and (min-width: 50em) {
+            width: 16.6667%;
+        }
+        a {
+            border: solid whitesmoke;
+            border-width: 0 1px 1px 0;
             display: block;
+            &::before {
+                font-size: 48px;
+                font-size: 3rem;
+                line-height: 1;
+                margin-bottom: 8px;
+                margin-bottom: 0.5rem;
+                display: block;
+            }
         }
     }
 }
 
 .navigation_topics {
+    overflow: hidden;
     a {
-        height: 143px;
-        height: 8.9375rem;
+        padding: 25%;
     }
 }
 
 .navigation_site {
+    overflow: hidden;
     a {
-        font-size: 12px;
-        font-size: 0.75em;
         padding: 8px 0;
         padding: 0.5rem 0;
-        display: block;
+    }
+    li {
+        width: 50%;
+        @media screen and (min-width: 50em) {
+            width: 25%;
+        }
     }
 }
 
 .js-enhanced {
     .navigation {
-        background-color: #fff;
-        margin: 0;
-        padding: 0 0 0 4.5em;
-        width: 22.5em;
-        position: fixed;
-        top: 72px;
-        top: 4.5rem;
-        right: -18em;
-        bottom: 0;
-        transition: all .25s;
+        a {
+            border-width: 0 0 1px 1px;
+        }
+        @media screen and (min-width: 31.5em) {
+            background-color: #fff;
+            margin: 0;
+            padding: 0 0 0 4.5em;
+            width: 22.5em;
+            position: fixed;
+            top: 72px;
+            top: 4.5rem;
+            right: -18em;
+            bottom: 0;
+            transition: all .25s;
+        }
+        li {
+            @media screen and (min-width: 31.5em) {
+                width: 144px;
+                width: 9rem;
+            }
+        }
     }
     .navigation_topics {
-        border: solid whitesmoke;
-        border-width: 1px 0 0 1px;
+        @media screen and (max-width: 31.4375em) {
+            background-color: #fff;
+            position: fixed;
+            top: 3rem;
+            max-height: 0;
+            width: 100%;
+            transition: all .25s;
+        }
     }
     .navigation_site {
-        border: solid whitesmoke;
-        border-width: 1px 0 0 1px;
-        position: absolute;
-        bottom: 48px;
-        bottom: 3rem;
-
+        @media screen and (min-width: 31.5em) {
+            border-top: 1px solid whitesmoke;
+            position: absolute;
+            bottom: 48px;
+            bottom: 3rem;
+        }
         a[href="#top"] {
             display: none;
         }
     }
-    .js-menu-active .navigation {
+}
+
+.js-menu-active {
+    .navigation {
         right: 0;
-        //box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
         z-index: 9;
+        @media screen and (min-width: 31.5em) {
+            box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+        }
+    }
+    .navigation_topics {
+        @media screen and (max-width: 31.4375em) {
+            box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+            max-height: 320px;
+            max-height: 20rem;
+            width: 100%;
+        }
     }
 }
 
@@ -181,12 +222,14 @@
    ========================================================================== */
 .contentinfo {
     .caption();
-    margin-right: 72px;
-    margin-right: 4.5rem;
     padding: 16px;
     padding: 1rem;
     clear: left;
     overflow: hidden;
+    @media screen and (min-width: 31.5em) {
+        margin-right: 72px;
+        margin-right: 4.5rem;
+    }
 
     small {
         font-size: 100%;

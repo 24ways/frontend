@@ -5,10 +5,9 @@
 
     <main class="main" role="main">
         <header class="preface">
-            <h1 class="preface_title">Design</h1>
+            <h1 class="preface_title" data-icon="&#xe607;">Design</h1>
             <div class="preface_main">
                 <p class="lede">Visual communication, art direction. Web layouts and typography. Graphic design, interface design, user experience design, illustration, photography, artwork. Creative, strategic, and technical approaches to crafting great interfaces. Visual styles, influences, and trends.</p>
-                <img class="preface_image" src="http://dummyimage.com/280x280/333/666.png" width="280" height="280" alt="Drew McLellan"/>
             </div>
         </header><!--/.preface-->
 
@@ -91,8 +90,8 @@
         <footer class="main_footer">
             <nav class="nav nav-prevnext">
                 <h1 class="hidden">Browse topics</h1>
-                <a class="nav_item nav_prev" rel="prev" href="/pages/topics/topicname/" title="[Previous Topic Name]">Previous topic</a>
-                <a class="nav_item nav_next" rel="next" href="/pages/topics/topicname/" title="[Next Topic Name]">Next topic</a>
+                <a class="nav_item nav_prev" rel="prev" href="/pages/topics/topicname/" title="[Previous Topic Name]" data-icon="&#xe601;">Previous topic</a>
+                <a class="nav_item nav_next" rel="next" href="/pages/topics/topicname/" title="[Next Topic Name]" data-icon="&#xe602;">Next topic</a>
             </nav><!--/.nav-prevnext-->
         </footer>
     </main><!--/@main-->

@@ -53,6 +53,12 @@ body {
   background-color: #fff;
   margin: 0;
   height: 100%;
+  transition: all .25s;
+}
+@media screen and (max-width: 31.4375em) {
+  body {
+    margin-top: 3em;
+  }
 }
 .js-enhanced body {
   background-color: #e3e3e3;
@@ -485,6 +491,7 @@ input[disabled] {
   font-weight: 400;
   line-height: 1.125;
   letter-spacing: -0.041666667em;
+  position: relative;
 }
 @media screen and (min-width: 40em) {
   .preface_title {
@@ -493,9 +500,19 @@ input[disabled] {
     line-height: 1.1667;
   }
 }
+.preface_title::before {
+  float: left;
+  margin-right: 0.25em;
+}
 @media screen and (min-width: 50em) {
   .preface_title {
     margin-left: 1rem;
+  }
+  .preface_title::before {
+    font-size: 2em;
+    position: absolute;
+    left: -1.25em;
+    top: 0;
   }
 }
 @media screen and (min-width: 50em) {
@@ -996,44 +1013,46 @@ input[disabled] {
   color: #333;
   font-weight: 700;
 }
-.nav-prevnext {
-  margin: 0;
-  border-bottom: 1px solid whitesmoke;
-  position: fixed;
-  right: 0;
-  top: 72px;
-  top: 4.5rem;
-  z-index: 999;
-  transition: all .25s;
-}
-.nav-prevnext .nav_item {
-  text-align: center;
-  margin: 0;
-  border: 0 none;
-  border-top: 1px solid whitesmoke;
-  padding: 0;
-  height: 72px;
-  height: 4.5rem;
-  width: 72px;
-  width: 4.5rem;
-  display: block;
-}
-.nav-prevnext .nav_item:hover {
-  background-color: whitesmoke;
-}
-.nav-prevnext .nav_prev,
-.nav-prevnext .nav_next {
-  font: 0/0 a;
-}
-.nav-prevnext .nav_prev::before,
-.nav-prevnext .nav_next::before {
-  font-size: 48px;
-  font-size: 3rem;
-  line-height: 1.5;
-  display: block;
-}
-.js-menu-active .nav-prevnext {
-  right: 288px;
+@media screen and (min-width: 31.5em) {
+  .nav-prevnext {
+    margin: 0;
+    border-bottom: 1px solid whitesmoke;
+    position: fixed;
+    right: 0;
+    top: 72px;
+    top: 4.5rem;
+    z-index: 999;
+    transition: all .25s;
+  }
+  .nav-prevnext .nav_item {
+    text-align: center;
+    margin: 0;
+    border: 0 none;
+    border-top: 1px solid whitesmoke;
+    padding: 0;
+    height: 72px;
+    height: 4.5rem;
+    width: 72px;
+    width: 4.5rem;
+    display: block;
+  }
+  .nav-prevnext .nav_item:hover {
+    background-color: whitesmoke;
+  }
+  .nav-prevnext .nav_prev,
+  .nav-prevnext .nav_next {
+    font: 0/0 a;
+  }
+  .nav-prevnext .nav_prev::before,
+  .nav-prevnext .nav_next::before {
+    font-size: 48px;
+    font-size: 3rem;
+    line-height: 1.5;
+    display: block;
+  }
+  .js-menu-active .nav-prevnext {
+    right: 288px;
+  }
 }
 .nav-top {
   font: 0/0 a;
@@ -1048,7 +1067,7 @@ input[disabled] {
   width: 4.5rem;
   position: fixed;
   right: 0;
-  bottom: 1px;
+  bottom: 0;
   z-index: 9;
 }
 .nav-top::before {
@@ -1129,9 +1148,25 @@ input[disabled] {
 .banner {
   text-transform: uppercase;
   background-color: lightgrey;
-  padding: 1rem;
-  height: 72px;
-  height: 4.5rem;
+  padding: 0.5rem 1rem;
+  height: 48px;
+  height: 3rem;
+}
+@media screen and (max-width: 31.4375em) {
+  .banner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+  }
+}
+@media screen and (min-width: 31.5em) {
+  .banner {
+    padding: 1rem;
+    height: 72px;
+    height: 4.5rem;
+  }
 }
 @media screen and (min-width: 50em) {
   .banner {
@@ -1139,12 +1174,11 @@ input[disabled] {
   }
 }
 .banner_logo {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 31.5em) {
   .banner_logo {
-    margin-left: 16px;
-    margin-left: 1rem;
+    font-size: 1.5em;
   }
 }
 .banner_logo span {
@@ -1155,22 +1189,26 @@ input[disabled] {
 .menu {
   color: #fff;
   font: 0/0 a;
-  border: 12px solid;
-  height: 72px;
-  height: 4.5rem;
-  width: 72px;
-  width: 4.5rem;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 99;
   overflow: hidden;
 }
+@media screen and (min-width: 31.5em) {
+  .menu {
+    border: 12px solid;
+    border: 0.75rem solid;
+    height: 72px;
+    height: 4.5rem;
+    width: 72px;
+    width: 4.5rem;
+  }
+}
 .menu::before {
   font-size: 48px;
   font-size: 3rem;
   display: block;
-  height: 49px;
   overflow: hidden;
 }
 .js-enhanced .menu {
@@ -1178,15 +1216,21 @@ input[disabled] {
 }
 [role="main"] {
   background-color: #f3f3f3;
-  margin-right: 72px;
-  margin-right: 4.5rem;
+}
+@media screen and (min-width: 31.5em) {
+  [role="main"] {
+    margin-right: 72px;
+    margin-right: 4.5rem;
+  }
 }
 .js-enhanced [role="main"] {
   transition: all .25s;
 }
-.navigation {
-  margin-right: 72px;
-  margin-right: 4.5rem;
+@media screen and (min-width: 31.5em) {
+  .navigation {
+    margin-right: 72px;
+    margin-right: 4.5rem;
+  }
 }
 .navigation a {
   font-size: 12px;
@@ -1209,28 +1253,22 @@ input[disabled] {
 .navigation a:hover {
   background-color: whitesmoke;
 }
-.navigation_topics,
-.navigation_site {
-  overflow: hidden;
-}
-.navigation_topics li,
-.navigation_site li {
+.navigation li {
   float: left;
   text-align: center;
+  width: 33.3333%;
+}
+@media screen and (min-width: 50em) {
+  .navigation li {
+    width: 16.6667%;
+  }
+}
+.navigation li a {
   border: solid whitesmoke;
   border-width: 0 1px 1px 0;
-  margin-right: -1px;
-}
-.navigation_topics a,
-.navigation_site a {
-  padding: 36px 24px;
-  padding: 2.25rem 1.5rem;
-  width: 143px;
-  width: 8.9375rem;
   display: block;
 }
-.navigation_topics a::before,
-.navigation_site a::before {
+.navigation li a::before {
   font-size: 48px;
   font-size: 3rem;
   line-height: 1;
@@ -1238,54 +1276,93 @@ input[disabled] {
   margin-bottom: 0.5rem;
   display: block;
 }
+.navigation_topics {
+  overflow: hidden;
+}
 .navigation_topics a {
-  height: 143px;
-  height: 8.9375rem;
+  padding: 25%;
+}
+.navigation_site {
+  overflow: hidden;
 }
 .navigation_site a {
-  font-size: 12px;
-  font-size: 0.75em;
   padding: 8px 0;
   padding: 0.5rem 0;
-  display: block;
 }
-.js-enhanced .navigation {
-  background-color: #fff;
-  margin: 0;
-  padding: 0 0 0 4.5em;
-  width: 22.5em;
-  position: fixed;
-  top: 72px;
-  top: 4.5rem;
-  right: -18em;
-  bottom: 0;
-  transition: all .25s;
+.navigation_site li {
+  width: 50%;
 }
-.js-enhanced .navigation_topics {
-  border: solid whitesmoke;
-  border-width: 1px 0 0 1px;
+@media screen and (min-width: 50em) {
+  .navigation_site li {
+    width: 25%;
+  }
 }
-.js-enhanced .navigation_site {
-  border: solid whitesmoke;
-  border-width: 1px 0 0 1px;
-  position: absolute;
-  bottom: 48px;
-  bottom: 3rem;
+.js-enhanced .navigation a {
+  border-width: 0 0 1px 1px;
+}
+@media screen and (min-width: 31.5em) {
+  .js-enhanced .navigation {
+    background-color: #fff;
+    margin: 0;
+    padding: 0 0 0 4.5em;
+    width: 22.5em;
+    position: fixed;
+    top: 72px;
+    top: 4.5rem;
+    right: -18em;
+    bottom: 0;
+    transition: all .25s;
+  }
+}
+@media screen and (min-width: 31.5em) {
+  .js-enhanced .navigation li {
+    width: 144px;
+    width: 9rem;
+  }
+}
+@media screen and (max-width: 31.4375em) {
+  .js-enhanced .navigation_topics {
+    background-color: #fff;
+    position: fixed;
+    top: 3rem;
+    max-height: 0;
+    width: 100%;
+    transition: all .25s;
+  }
+}
+@media screen and (min-width: 31.5em) {
+  .js-enhanced .navigation_site {
+    border-top: 1px solid whitesmoke;
+    position: absolute;
+    bottom: 48px;
+    bottom: 3rem;
+  }
 }
 .js-enhanced .navigation_site a[href="#top"] {
   display: none;
 }
-.js-enhanced .js-menu-active .navigation {
+.js-menu-active .navigation {
   right: 0;
   z-index: 9;
+}
+@media screen and (min-width: 31.5em) {
+  .js-menu-active .navigation {
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+  }
+}
+@media screen and (max-width: 31.4375em) {
+  .js-menu-active .navigation_topics {
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+    max-height: 320px;
+    max-height: 20rem;
+    width: 100%;
+  }
 }
 .contentinfo {
   font-size: 12px;
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.3333;
-  margin-right: 72px;
-  margin-right: 4.5rem;
   padding: 16px;
   padding: 1rem;
   clear: left;
@@ -1301,6 +1378,12 @@ input[disabled] {
 .contentinfo strong,
 .contentinfo dt {
   color: #333;
+}
+@media screen and (min-width: 31.5em) {
+  .contentinfo {
+    margin-right: 72px;
+    margin-right: 4.5rem;
+  }
 }
 .contentinfo small {
   font-size: 100%;
