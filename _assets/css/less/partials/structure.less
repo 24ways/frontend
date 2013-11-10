@@ -45,7 +45,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 99;
+    z-index: 999;
     overflow: hidden;
     @media screen and (min-width: 31.5em) {
         border: 12px solid;
@@ -115,8 +115,6 @@
             width: 16.6667%;
         }
         a {
-            border: solid whitesmoke;
-            border-width: 0 1px 1px 0;
             display: block;
             &::before {
                 font-size: 48px;
@@ -139,6 +137,7 @@
 
 .navigation_site {
     overflow: hidden;
+    
     a {
         padding: 8px 0;
         padding: 0.5rem 0;
@@ -153,9 +152,6 @@
 
 .js-enhanced {
     .navigation {
-        a {
-            border-width: 0 0 1px 1px;
-        }
         @media screen and (min-width: 31.5em) {
             background-color: #fff;
             margin: 0;
@@ -187,7 +183,6 @@
     }
     .navigation_site {
         @media screen and (min-width: 31.5em) {
-            border-top: 1px solid whitesmoke;
             position: absolute;
             bottom: 48px;
             bottom: 3rem;

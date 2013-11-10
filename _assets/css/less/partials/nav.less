@@ -25,38 +25,45 @@
 }
 
 /* Previous/next nav */
-@media screen and (min-width: 31.5em) {
 .nav-prevnext {
-        margin: 0;
-        border-bottom: 1px solid whitesmoke;
+    margin: 0;
+    overflow: hidden;
+    transition: all .25s;
+    @media screen and (min-width: 31.5em) {
         position: fixed;
         right: 0;
         top: 72px;
         top: 4.5rem;
         z-index: 999;
-        transition: all .25s;
-    
-        .nav_item {
+    }
+    .nav_item {
+        margin: 0;
+        padding: 0;
+        display: block;
+
+        @media screen and (max-width: 31.4375em) {
+            padding: 0.5em;
+            width: 50%;
+            float: left;
+        }
+        @media screen and (min-width: 31.5em) {
             text-align: center;
-            margin: 0;
-            border: 0 none;
-            border-top: 1px solid whitesmoke;
-            padding: 0;
             height: 72px;
             height: 4.5rem;
             width: 72px;
             width: 4.5rem;
-            display: block;
-
-            &:hover {
-                background-color: whitesmoke;
-            }
         }
-        .nav_prev,
-        .nav_next {
+        &:hover {
+            background-color: whitesmoke;
+        }
+    }
+    .nav_prev,
+    .nav_next {
+        @media screen and (min-width: 31.5em) {
             font: 0/0 a;
-        
-            &::before {
+        }
+        &::before {
+            @media screen and (min-width: 31.5em) {
                 font-size: 48px;
                 font-size: 3rem;
                 line-height: 1.5;
@@ -64,10 +71,16 @@
             }
         }
     }
-    .js-menu-active {
-        .nav-prevnext {
-            right: 288px;
+    .nav_next {
+        @media screen and (max-width: 31.4375em) {
+            text-align: right;
         }
+    }
+}
+
+.js-menu-active {
+    .nav-prevnext {
+        right: 288px;
     }
 }
 
@@ -76,8 +89,6 @@
     font: 0/0 a;
     text-align: center;
     margin: 0;
-    border: 0 none;
-    border-top: 1px solid whitesmoke;
     padding: 0;
     height: 48px;
     height: 3rem;
@@ -87,6 +98,10 @@
     right: 0;
     bottom: 0;
     z-index: 9;
+    display: none;
+    @media screen and (min-width: 31.5em) {
+        display: block;
+    }
 
     &::before {
         font-size: 48px;

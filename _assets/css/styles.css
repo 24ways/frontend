@@ -1013,36 +1013,51 @@ input[disabled] {
   color: #333;
   font-weight: 700;
 }
+.nav-prevnext {
+  margin: 0;
+  overflow: hidden;
+  transition: all .25s;
+}
 @media screen and (min-width: 31.5em) {
   .nav-prevnext {
-    margin: 0;
-    border-bottom: 1px solid whitesmoke;
     position: fixed;
     right: 0;
     top: 72px;
     top: 4.5rem;
     z-index: 999;
-    transition: all .25s;
   }
+}
+.nav-prevnext .nav_item {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+@media screen and (max-width: 31.4375em) {
+  .nav-prevnext .nav_item {
+    padding: 0.5em;
+    width: 50%;
+    float: left;
+  }
+}
+@media screen and (min-width: 31.5em) {
   .nav-prevnext .nav_item {
     text-align: center;
-    margin: 0;
-    border: 0 none;
-    border-top: 1px solid whitesmoke;
-    padding: 0;
     height: 72px;
     height: 4.5rem;
     width: 72px;
     width: 4.5rem;
-    display: block;
   }
-  .nav-prevnext .nav_item:hover {
-    background-color: whitesmoke;
-  }
+}
+.nav-prevnext .nav_item:hover {
+  background-color: whitesmoke;
+}
+@media screen and (min-width: 31.5em) {
   .nav-prevnext .nav_prev,
   .nav-prevnext .nav_next {
     font: 0/0 a;
   }
+}
+@media screen and (min-width: 31.5em) {
   .nav-prevnext .nav_prev::before,
   .nav-prevnext .nav_next::before {
     font-size: 48px;
@@ -1050,16 +1065,19 @@ input[disabled] {
     line-height: 1.5;
     display: block;
   }
-  .js-menu-active .nav-prevnext {
-    right: 288px;
+}
+@media screen and (max-width: 31.4375em) {
+  .nav-prevnext .nav_next {
+    text-align: right;
   }
+}
+.js-menu-active .nav-prevnext {
+  right: 288px;
 }
 .nav-top {
   font: 0/0 a;
   text-align: center;
   margin: 0;
-  border: 0 none;
-  border-top: 1px solid whitesmoke;
   padding: 0;
   height: 48px;
   height: 3rem;
@@ -1069,6 +1087,12 @@ input[disabled] {
   right: 0;
   bottom: 0;
   z-index: 9;
+  display: none;
+}
+@media screen and (min-width: 31.5em) {
+  .nav-top {
+    display: block;
+  }
 }
 .nav-top::before {
   font-size: 48px;
@@ -1192,7 +1216,7 @@ input[disabled] {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 99;
+  z-index: 999;
   overflow: hidden;
 }
 @media screen and (min-width: 31.5em) {
@@ -1264,8 +1288,6 @@ input[disabled] {
   }
 }
 .navigation li a {
-  border: solid whitesmoke;
-  border-width: 0 1px 1px 0;
   display: block;
 }
 .navigation li a::before {
@@ -1296,9 +1318,6 @@ input[disabled] {
   .navigation_site li {
     width: 25%;
   }
-}
-.js-enhanced .navigation a {
-  border-width: 0 0 1px 1px;
 }
 @media screen and (min-width: 31.5em) {
   .js-enhanced .navigation {
@@ -1332,7 +1351,6 @@ input[disabled] {
 }
 @media screen and (min-width: 31.5em) {
   .js-enhanced .navigation_site {
-    border-top: 1px solid whitesmoke;
     position: absolute;
     bottom: 48px;
     bottom: 3rem;
