@@ -6,9 +6,6 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-* {
-    //background-color: rgba(255,0,0,0.1);
-}
 
 /* Helpers */
 .hidden {
@@ -21,12 +18,37 @@
     overflow: hidden;
     position: absolute;
 }
-.icon-font {
+.clear {
+    &::before,
+    &::after {
+        content: " ";
+        display: table;
+    }
+    &::after {
+        clear: both;
+    }
+}
+.antialiased {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+.icon-font {
+    .antialiased();
     font-family: icons;
     font-weight: normal;
     line-height: 1;
+}
+.avatar {
+    -webkit-transform: rotate(45deg);
+    -webkit-transform-origin: 50% 50%;
+    display: block;
+    overflow: hidden;
+    img {
+        margin: -25%;
+        width: 150%;
+        height: auto;
+        -webkit-transform: rotate(-45deg);
+    }
 }
 
 /* Icons */

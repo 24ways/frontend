@@ -2,6 +2,7 @@
    Preface
    ========================================================================== */
 .preface {
+    color: #222;
     background-color: #999;
     min-height: 12rem;
     padding: 1rem;
@@ -14,6 +15,7 @@
         color: white;
     }
 }
+
 .preface_title {
     .heading();
     position: relative;
@@ -31,18 +33,25 @@
         }
     }
 }
+
 .preface_main {
     @media screen and (min-width: 50em) {
         margin-left: 1rem;
     }
-}
-
-.preface_image {
-    height: auto;
-    width: 20%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    .avatar {
+        @media screen and (max-width: 49.9375em) {
+            width: 25%;
+            float: right;
+            margin: 0.5rem -0.5rem 1.5rem 2rem;
+        }
+        @media screen and (min-width: 50em) {
+            width: 20%;
+            max-width: 16rem;
+            position: absolute;
+            top: 2rem;
+            left: 0;
+        }
+    }
 }
 
 
@@ -57,14 +66,12 @@
     @media screen and (min-width: 50em) {
         padding-left: 1rem;
     }
-    &:last-of-type {
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
 }
+
 .section_header {
     border-top: 1px solid #ddd;
     padding: 1.1875rem 0 1.25rem 1rem;
+    width: 100%;
     @media screen and (min-width: 50em) {
         text-align: right;
         width: 20%;
@@ -73,35 +80,53 @@
         left: 0;
     }
 }
+
 .section_title {
     font-size: 1rem;
-    font-weight: 
-    line-height 1.5;
+    line-height: 1;
     text-transform: uppercase;
     letter-spacing: 0.0625em;
     margin: 0;
     display: block;
 }
+
 .section_main {
     border-top: 1px solid #ddd;
     padding-top: 0.5rem;
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
     @media screen and (min-width: 50em) {
         margin-left: 25%;
-        padding: 0.5rem 0;
+        padding-right: 5%;
+        padding-left: 0;
         width: 75%;
+    }
+    @media screen and (min-width: 60em) {
+        padding-right: 15%;
     }
     .list-articles,
     .list-authors {
-        margin: 0 -1rem;
+        margin: -0.5rem -1rem;
         @media screen and (min-width: 50em) {
             margin: -0.5rem 0 0 0;
         }
     }
+    [data-icon] {
+        padding-left: 5.5rem;
+        position: relative;
+        &::before {
+            font-size: 4em;
+            position: absolute;
+            left: 0rem;
+            top: 0;
+            margin: 0.25rem;
+        }
+    }
 }
+
 .section_meta {
     .caption();
 }
+
 .section_image {
     margin-right: 1rem;
     float: left;
@@ -113,133 +138,115 @@
    ========================================================================== */
 .article {
     @media screen and (min-width: 50em) {
-        padding: 9rem 0 4rem;
+        padding: 9rem 0 2rem;
     }
 }
+
 .article_header {
     margin-bottom: 2rem;
     padding: 0 1rem;
     position: relative;
-    overflow: hidden;
+    .clear();
     @media screen and (min-width: 50em) {
         border-top: 1px solid #ccc;
         padding-left: 25%;
+        padding-right: 5%;
         min-height: 16rem;
     }
+    @media screen and (min-width: 60em) {
+        padding-right: 15%;
+    }
 }
+
 .article_title {
+    color: #222;
     .heading();
     margin: 1rem 0 0.5rem;
     @media screen and (min-width: 50em) {
         padding-left: 1rem;
     }
 }
+
 .article_byline {
+    @media screen and (max-width: 49.9375em) {
+        margin-top: 1rem;
+    }
     @media screen and (min-width: 50em) {
         padding-left: 1rem;
     }
+    .avatar {
+        @media screen and (max-width: 49.9375em) {
+            margin-right: 0.75rem;
+            width: 1.75rem;
+            height: 1.75rem;
+            float: left;
+        }
+        @media screen and (min-width: 50em) {
+            width: 20%;
+            max-width: 16rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            display: block;
+        }
+    }
 }
-.article_image {
-    height: auto;
-    width: 20%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+
 .article_main {
     padding: 0 1rem;
     @media screen and (min-width: 50em) {
         margin-left: 25%;
-        width: 70%;
+        padding-right: 5%;
+        width: 75%;
     }
-    @media screen and (min-width: 40em) {
-        p,
-        li {
+    @media screen and (min-width: 60em) {
+        padding-right: 15%;
+    }
+    p,
+    li {
+        @media screen and (min-width: 40em) {
             font-size: 20px;
             font-size: 1.25rem;
             line-height: 1.6; /* 32px */
         }
     }
 }
+
 .article_footer {
-    padding: 1rem;
     @media screen and (min-width: 50em) {
-        text-align: right;
-        padding: 0;
         width: 20%;
         float: left;
     }
-    .list_item {
-        .caption();
-        margin-right: -0.25rem;
-        display: inline;
-        
-        &::after {
-            content: "•";
-            margin: 0 0.5rem;
-        }
-        &:last-child {
-            &::after {
-                content: none;
-            }
+    .list {
+        @media screen and (max-width: 49.9375em) {
+            margin: 1rem;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            padding: 0.5rem 0;
         }
     }
-    @media screen and (min-width: 50em) {
-        .list_item {
+    .list_item {
+        .caption();
+        @media screen and (max-width: 49.9375em) {
+            line-height: 2;
+            margin-right: -0.25rem;
+            display: inline;
+            &::after {
+                content: "•";
+                margin: 0 0.5rem;
+            }
+            &:last-child {
+                &::after {
+                    content: none;
+                }
+            }
+        }
+        @media screen and (min-width: 50em) {
+            text-align: right;
             border-top: 1px solid #ccc;
             padding: 0.4375rem 0 1.5rem 0;
             display: block;
-
-            &::after {
-                content: none;
-            }
-        }
-    }
-}
-
-
-/* ==========================================================================
-   Lists
-   ========================================================================== */
-/* List > Authors */
-.list-authors .list_item {
-    padding: 1px 1px 0 0;
-    width: 33.3333%;
-    float: left;
-    @media screen and (min-width: 40em) {
-        width: 25%;
-    }
-    @media screen and (min-width: 50em) {
-        width: 20%;
-    }
-    @media screen and (min-width: 60em) {
-        width: 16.6667%;
-    }
-}
-
-/* List > Articles */
-.list-articles .list_item {
-    padding: 1px 1px 0 0;
-    @media screen and (min-width: 40em) {
-        width: 50%;
-        float: left
-    }
-    @media screen and (min-width: 50em) {
-        width: 33.3333%;
-    }
-    @media screen and (min-width: 60em) {
-        width: 25%;
-    }
-}
-
-/* List > Articles with section */
-.section {
-    .list-articles .list_item {
-        @media screen and (min-width: 50em) {
-            width: 50%;
-        }
-        @media screen and (min-width: 60em) {
-            width: 33.333%;
         }
     }
 }
@@ -249,9 +256,11 @@
    Summary
    ========================================================================== */
 .summary {
-    background-color: #eee;
+    background-color: white;
     padding: 1em;
+    position: relative;
 }
+
 .summary_title {
     font-family: 'Merriweather', serif;
     font-size: 1em;
@@ -263,7 +272,11 @@
         font-size: 1.25rem;
         line-height: 1.2; /* 16px */
     }
+    .avatar {
+        width: 3em;
+    }
 }
+
 .summary_main {
     font-size: 0.875em; /* 14px */
     line-height: 1.4286; /* 20px */
@@ -277,8 +290,29 @@
         font-weight: 700;
     }
 }
-.summary_meta {
+
+.summary_meta,
+.summary_vote {
     .caption();
+    a {
+        color: grey;
+    }
+}
+
+/* Summary > Comments */
+.summary-comment {
+    margin: 0.5em 0;
+    padding-left: 6em;
+    .avatar {
+        position: absolute;
+        top: 0.6667em;
+        left: 0.6667em;
+    }
+    .summary_meta {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+    }
 }
 
 /* Summary > Article */
@@ -286,10 +320,40 @@
     @media screen and (min-width: 40em) {
         min-height: 20em;
     }
-    .p-author { // FIX ME!
-        display: none;
+    .summary_author {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 9;
+        &::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border: 2.25em solid;
+            border-color: rgba(0,0,0,0.02) rgba(0,0,0,0.02) transparent transparent;
+        }
+        img {
+            width: 4.5em;
+            height: 4.5em;
+            display: none;
+        }
+    }
+    &:hover {
+        .summary_author {
+            &::before {
+                border-color: transparent transparent lightgrey lightgrey;
+            }
+            img {
+                display: block;
+            }
+        }
     }
     .summary_header {
+        position: relative;
+        z-index: 1;
         @media screen and (min-width: 40em) {
             min-height: 6.5em;
         }
@@ -334,4 +398,56 @@
 .summary-topic {
     background-color: #eee;
     min-height: 22em;
+}
+
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/* List > Authors */
+.list-comments .list_item {
+    padding: 1px 1px 0 0;
+}
+
+/* List > Authors */
+.list-authors .list_item {
+    padding: 1px 1px 0 0;
+    width: 33.3334%;
+    float: left;
+    @media screen and (min-width: 40em) {
+        width: 25%;
+    }
+    @media screen and (min-width: 50em) {
+        width: 20%;
+    }
+    @media screen and (min-width: 60em) {
+        width: 16.6667%;
+    }
+}
+
+/* List > Articles */
+.list-articles .list_item {
+    padding: 1px 1px 0 0;
+    @media screen and (min-width: 40em) {
+        width: 50%;
+        float: left
+    }
+    @media screen and (min-width: 50em) {
+        width: 33.3334%;
+    }
+    @media screen and (min-width: 60em) {
+        width: 25%;
+    }
+}
+
+/* List > Articles with section */
+.section {
+    .list-articles .list_item {
+        @media screen and (min-width: 50em) {
+            width: 50%;
+        }
+        @media screen and (min-width: 60em) {
+            width: 33.3334%;
+        }
+    }
 }

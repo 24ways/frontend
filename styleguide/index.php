@@ -19,7 +19,7 @@
     <title>Pattern Primer - Barebones</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="/_css/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="/_assets/css/styles.css" type="text/css"/>
     <style>
         body {
             padding: 4em 0 80em;

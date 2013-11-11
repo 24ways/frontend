@@ -1,3 +1,7 @@
-## Notes
+## Don't forget...
 
-* Add dymanic back-to-top link (appearing in navigation bar)
+* Integrate search form
+* Dymanic back-to-top link (appears in navigation bar only when needed)
+* Favicons
+* Perch promos
+* Animated 'flaps' (authors, comment count, comment feedback...)

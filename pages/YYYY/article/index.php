@@ -7,17 +7,19 @@
         <div class="article">
             <header class="article_header">
                 <h1 class="article_title p-name">Starting Your <abbr>HTML5</abbr> Project on the Right Foot (and Keeping It There)</h1>
-                <a class="article_byline" href="#author">
-                    <img class="article_image" src="http://media.24ways.org/authors/drewmclellan280.jpg" width="160" height="160" alt="Drew McLellan"/>
-                    by Drew McLellen
-                </a>
+                <p class="article_byline">
+                    <a href="#author">
+                        <span class="avatar"><img class="article_image" src="http://media.24ways.org/authors/drewmclellan280.jpg" width="160" height="160" alt="Drew McLellan"/></span>
+                        by Drew McLellen
+                    </a>
+                <p>
             </header>
 
             <footer class="article_footer">
                 <ul class="list">
                     <li class="list_item"><time class="dt-published" datetime="2012-12-01T00:00:00-00:00">1 December 2012</time></li>
                     <li class="list_item">Published in <a href="/pages/topics/topicname/">Code</a></li>
-                    <li class="list_item"><a href="#comments">3 comments</a></li>
+                    <li class="list_item"><a href="#comments">8 comments</a></li>
                 </ul>
             </footer>
 
@@ -201,7 +203,7 @@
                 <h1 class="section_title">Comments</h1>
             </header>
             <div class="section_main">
-                <p><a href="/pages/YYYY/article/comments" data-replace data-target="#comments">View 11 reader comments</a></p>
+                <p><a href="/pages/YYYY/article/comments" data-replace data-target="#comments">View 8 reader comments</a></p>
             </div>
         </section><!--/.section-->
 
@@ -223,16 +225,15 @@
                 </ul><!--/.list-articles-->
             </div>
         </section><!--/.section-->
-        
-        <footer class="main_footer">
-            <nav class="nav nav-prevnext">
-                <h1 class="hidden">Browse articles puplished in 2013</h1>
-                <a class="nav_item nav_prev" rel="prev" href="/pages/YYYY/article/" title="[Previous Article Title]" data-icon="&#xe601;">Previous article</a>
-                <a class="nav_item nav_next" rel="next" href="/pages/YYYY/article/" title="[Next Article Title]" data-icon="&#xe602;">Next article</a>
-            </nav><!--/.nav-prevnext-->
-        </footer>
     </main><!--/@main-->
 
+    <nav class="nav nav-prevnext" role="navigation">
+        <h1 class="hidden">Browse articles puplished in 2013</h1>
+        <a class="nav_item nav_prev" rel="prev" href="/pages/YYYY/article/" title="[Previous Article Title]" data-icon="&#xe601;">Previous article</a>
+        <a class="nav_item nav_next" rel="next" href="/pages/YYYY/article/" title="[Next Article Title]" data-icon="&#xe602;">Next article</a>
+    </nav><!--/.nav-prevnext-->
+
 <?  inc('partial','navigation') ?>
+<?  inc('partial','search') ?>
 <?  inc('partial','contentinfo') ?>
 <?  inc('partial','foot') ?>

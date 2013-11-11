@@ -20,5 +20,6 @@
     </main><!--/@main-->
 
 <?  inc('partial','navigation') ?>
+<?  inc('partial','search') ?>
 <?  inc('partial','contentinfo') ?>
 <?  inc('partial','foot') ?>

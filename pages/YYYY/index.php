@@ -22,7 +22,7 @@
                         <p class="p-summary"><a href="http://stuffandnonsense.co.uk/">Andy Clarke</a> shares a case study highlighting the benefits of progressively enhanced web design.</p>
                     </div>
                     <footer class="summary_footer">
-                        <a class="p-author h-card" href="/pages/authors/firstname-lastname/"><img src="http://media.24ways.org/authors/andyclarke160.jpg" alt=""/></a>
+                        <a class="summary_author p-author h-card" href="/pages/authors/firstname-lastname/"><img src="http://media.24ways.org/authors/andyclarke160.jpg" alt=""/></a>
                     </footer>
                 </article><!--/.summary-article-->
             </li>
@@ -96,16 +96,15 @@
 <?              inc('partial','summary-article') ?>
             </li>
         </ol><!--/.list--articles-->
-
-        <footer class="main_footer">
-            <nav class="nav nav-prevnext">
-                <h1 class="hidden">Browse years</h1>
-                <a class="nav_item nav_prev" rel="prev" href="/pages/YYYY/" title="[YYYY-1]" data-icon="&#xe601;">Previous year</a>
-                <a class="nav_item nav_next" rel="next" href="/pages/YYYY/" title="[YYYY+1]" data-icon="&#xe602;">Next year</a>
-            </nav><!--/.nav-prevnext-->
-        </footer>
     </main><!--/@main-->
 
+    <nav class="nav nav-prevnext" role="navigation">
+        <h1 class="hidden">Browse years</h1>
+        <a class="nav_item nav_prev" rel="prev" href="/pages/YYYY/" title="[YYYY-1]" data-icon="&#xe601;">Previous year</a>
+        <a class="nav_item nav_next" rel="next" href="/pages/YYYY/" title="[YYYY+1]" data-icon="&#xe602;">Next year</a>
+    </nav><!--/.nav-prevnext-->
+
 <?  inc('partial','navigation') ?>
+<?  inc('partial','search') ?>
 <?  inc('partial','contentinfo') ?>
 <?  inc('partial','foot') ?>

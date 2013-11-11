@@ -22,7 +22,7 @@
                         <p class="p-summary"><a href="http://stuffandnonsense.co.uk/">Andy Clarke</a> shares a case study highlighting the benefits of progressively enhanced web design.</p>
                     </div>
                     <footer class="summary_footer">
-                        <a class="p-author h-card" href="/pages/authors/firstname-lastname/"><img src="http://media.24ways.org/authors/andyclarke160.jpg" alt=""/></a>
+                        <p class="summary_author"><a class=" p-author h-card" href="/pages/authors/firstname-lastname/"><img src="http://media.24ways.org/authors/andyclarke160.jpg" alt=""/></a></p>
                     </footer>
                 </article><!--/.summary-article-->
             </li>
@@ -99,5 +99,6 @@
     </main><!--/@main-->
 
 <?  inc('partial','navigation') ?>
+<?  inc('partial','search') ?>
 <?  inc('partial','contentinfo') ?>
 <?  inc('partial','foot') ?>
