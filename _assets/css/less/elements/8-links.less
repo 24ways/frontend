@@ -4,10 +4,10 @@
    ========================================================================== */
 
 a {
-    color: #17d;
+    color: @link;
     text-decoration: none;
     /*border-bottom: 1px solid;*/
-    -moz-text-decoration-color: rgba(17, 119, 221, 0.33);
+    -moz-text-decoration-color: fade(@link, 33%);
     border-color: #17d;
     }
     a:focus {
@@ -16,11 +16,11 @@ a {
     }
     a:active,
     a:hover {
-        color: #14a;
-        -moz-text-decoration-color: rgba(17, 68, 170, 0.33);
+        color: @link-hover;
+        -moz-text-decoration-color: fade(@link-hover, 33%);;
     /*  Improve readability when focused and also mouse hovered in all browsers */
         outline: 0;
-        border-color: #14a;
+        border-color: @link-hover;
     }
     a:link,
     a:visited,
@@ -28,9 +28,9 @@ a {
         transition: all 0.2s ease;
     }
     a:active {
-        color: #71a;
+        color: @link-active;
         -moz-text-decoration-color: rgba(119, 17, 170, 0.33);
-        border-color: #71a;
+        border-color: @link-active;
         transition: none;
     }
 

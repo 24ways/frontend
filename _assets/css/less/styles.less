@@ -7,6 +7,48 @@
     box-sizing: border-box;
 }
 
+/* Variables */
+@signature: #c13;
+
+@link: #17d;
+@link-hover: darken(@link, 10%);
+@link-active: lighten(@link, 10%);
+
+@year-2005: spin(@signature, -000);
+@year-2006: spin(@signature, -004);
+@year-2007: spin(@signature, -008);
+@year-2008: spin(@signature, -012);
+@year-2009: spin(@signature, -016);
+@year-2010: spin(@signature, -020);
+@year-2011: spin(@signature, -024);
+@year-2012: spin(@signature, -028);
+@year-2013: spin(@signature, -032);
+@year-2014: spin(@signature, -036);
+@year-2015: spin(@signature, -040);
+@year-2016: spin(@signature, -044);
+@year-2017: spin(@signature, -048);
+@year-2018: spin(@signature, -052);
+@year-2019: spin(@signature, -056);
+@year-2020: spin(@signature, -060);
+
+/* Colours */
+.bb-swatch.year-2005 { background-color: @year-2005; }
+.bb-swatch.year-2006 { background-color: @year-2006; }
+.bb-swatch.year-2007 { background-color: @year-2007; }
+.bb-swatch.year-2008 { background-color: @year-2008; }
+.bb-swatch.year-2009 { background-color: @year-2009; }
+.bb-swatch.year-2010 { background-color: @year-2010; }
+.bb-swatch.year-2011 { background-color: @year-2011; }
+.bb-swatch.year-2012 { background-color: @year-2012; }
+.bb-swatch.year-2013 { background-color: @year-2013; }
+.bb-swatch.year-2014 { background-color: @year-2014; }
+.bb-swatch.year-2015 { background-color: @year-2015; }
+.bb-swatch.year-2016 { background-color: @year-2016; }
+.bb-swatch.year-2017 { background-color: @year-2017; }
+.bb-swatch.year-2018 { background-color: @year-2018; }
+.bb-swatch.year-2019 { background-color: @year-2019; }
+.bb-swatch.year-2020 { background-color: @year-2020; }
+
 /* Helpers */
 .hidden {
     clip: rect(0 0 0 0);
@@ -88,3 +130,7 @@
 @import url("partials/nav.less");
 @import url("partials/structure.less");
 @import url("partials/type.less");
+
+/* Theme */
+//@import url("theme/colors.less");
+@import url("theme/syntax.less");

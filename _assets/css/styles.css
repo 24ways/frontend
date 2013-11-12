@@ -6,6 +6,54 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.bb-swatch.year-2005 {
+  background-color: #cc1133;
+}
+.bb-swatch.year-2006 {
+  background-color: #cc113f;
+}
+.bb-swatch.year-2007 {
+  background-color: #cc114c;
+}
+.bb-swatch.year-2008 {
+  background-color: #cc1158;
+}
+.bb-swatch.year-2009 {
+  background-color: #cc1165;
+}
+.bb-swatch.year-2010 {
+  background-color: #cc1171;
+}
+.bb-swatch.year-2011 {
+  background-color: #cc117e;
+}
+.bb-swatch.year-2012 {
+  background-color: #cc118a;
+}
+.bb-swatch.year-2013 {
+  background-color: #cc1197;
+}
+.bb-swatch.year-2014 {
+  background-color: #cc11a3;
+}
+.bb-swatch.year-2015 {
+  background-color: #cc11b0;
+}
+.bb-swatch.year-2016 {
+  background-color: #cc11bc;
+}
+.bb-swatch.year-2017 {
+  background-color: #cc11c9;
+}
+.bb-swatch.year-2018 {
+  background-color: #c311cc;
+}
+.bb-swatch.year-2019 {
+  background-color: #b611cc;
+}
+.bb-swatch.year-2020 {
+  background-color: #aa11cc;
+}
 .hidden {
   clip: rect(0 0 0 0);
   margin: -1px;
@@ -283,9 +331,12 @@ code,
 kbd,
 pre,
 samp {
+  color: #666;
   font-family: 'Inconsolata', Consolas, Monaco, monospace, serif;
   font-size: 1em;
-  background-color: #f3f3f3;
+  background-color: #fcfcfc;
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.25rem;
 }
 kbd {
   font-family: inherit;
@@ -456,10 +507,10 @@ a:focus {
 }
 a:active,
 a:hover {
-  color: #14a;
-  -moz-text-decoration-color: rgba(17,68,170,0.33);
+  color: #0d5dae;
+  -moz-text-decoration-color: rgba(13,93,174,0.33);
   outline: 0;
-  border-color: #14a;
+  border-color: #0d5dae;
 }
 a:link,
 a:visited,
@@ -467,9 +518,9 @@ a:hover {
   transition: all 0.2s ease;
 }
 a:active {
-  color: #71a;
+  color: #3291ef;
   -moz-text-decoration-color: rgba(119,17,170,0.33);
-  border-color: #71a;
+  border-color: #3291ef;
   transition: none;
 }
 :target {
@@ -507,10 +558,9 @@ input[disabled] {
 }
 .preface {
   color: #222;
-  background-color: #999;
   min-height: 12rem;
+  background-color: grey;
   padding: 1rem;
-  position: relative;
   overflow: hidden;
 }
 @media screen and (min-width: 50em) {
@@ -522,6 +572,7 @@ input[disabled] {
   color: white;
 }
 .preface_title {
+  color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Merriweather', serif;
@@ -571,7 +622,7 @@ input[disabled] {
     width: 20%;
     max-width: 16rem;
     position: absolute;
-    top: 2rem;
+    top: 6rem;
     left: 0;
   }
 }
@@ -1669,4 +1720,69 @@ input[disabled] {
 .caption strong,
 .caption dt {
   color: #333;
+}
+pre[class*="language-"] {
+  text-align: left;
+  direction: ltr;
+  white-space: pre;
+  word-spacing: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  padding: 1em;
+  overflow: auto;
+}
+.namespace {
+  opacity: .7;
+}
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray;
+}
+.token.punctuation {
+  color: #999;
+}
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol {
+  color: #905;
+}
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.builtin {
+  color: #690;
+}
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: #a67f59;
+  background: rgba(255,255,255,0.5);
+}
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #07a;
+}
+.token.regex,
+.token.important {
+  color: #e90;
+}
+.token.important {
+  font-weight: bold;
+}
+.token.entity {
+  cursor: help;
 }

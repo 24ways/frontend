@@ -41,4 +41,4 @@
     <title><?= $GLOBALS['title'] ?> &#9670; 24 Ways</title>
 </head>
 
-<body>
+<body class="year-<?= $GLOBALS['year'] ?>">

@@ -41,6 +41,17 @@
             letter-spacing: 0;
             margin: 0;
         }
+        .bb-swatch {
+            color: #fff;
+            line-height: 6em;
+            text-align: center;
+            margin: 0 1em 1em 0;
+            border-radius: 100%;
+            width: 6em;
+            height: 6em;
+            display: block;
+            float: left;
+        }
         #pattern {
             position: absolute;
             right: 0;

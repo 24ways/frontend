@@ -1,5 +1,6 @@
 <? include_once($_SERVER['DOCUMENT_ROOT'].'/_inc/functions.php'); ?>
 <? $title = "YYYY"; ?>
+<? $year = "2013"; ?>
 <? inc('partial','head') ?>
 <? inc('partial','banner') ?>
 
