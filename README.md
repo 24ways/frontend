@@ -1,8 +1,10 @@
 ## Don't forget...
 
-* Integrate search form
-* Dymanic back-to-top link (appears in navigation bar only when needed)
+* Refactor navigation (esp. on smaller viewports)
+* Experience for agents that don't support media queries
+* Perch promos (HTML)
+* Animated 'flaps' (authors, comment count, day number, comment feedback...)
 * Favicons
-* Perch promos
-* Animated 'flaps' (authors, comment count, comment feedback...)
 * Height-based media queries
+* Dymanic back-to-top link (appears in navigation bar only when needed)
+* -Integrate search form-
