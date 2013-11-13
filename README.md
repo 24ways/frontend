@@ -1,6 +1,5 @@
 ## Don't forget...
 
-* Content warnings
 * Refactor navigation (esp. on smaller viewports)
 * Experience for agents that don't support media queries
 * Animated 'flaps' (authors, comment count, day number, comment feedback...)
@@ -10,5 +9,6 @@
 * Sanity check microformats
 * Add day/year classes
 
+* -Content warning (**need bespoke copy**)-
 * -Perch promos-
 * -Integrate search form-
