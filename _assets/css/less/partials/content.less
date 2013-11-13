@@ -511,3 +511,20 @@
     .caption();
     margin: 0.25rem 0;
 }
+
+
+/* ==========================================================================
+   Note
+   ========================================================================== */
+.note {
+    line-height: 1.25;
+    margin: 1.5rem 0;
+    border: solid grey;
+    border-width: 1px 0;
+    @media screen and (max-width: 50em) {
+        &:first-of-type {
+            border-top: 0 none;
+            padding-bottom: 0.25rem;
+        }
+    }
+}
