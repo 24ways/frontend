@@ -32,10 +32,10 @@
         </ul><!--/.nav-topics-->
 
         <form class="search" role="search" id="search" action="/pages/search/">
-            <fieldset>
-                <label class="search_label" for="q">Search</label>
-                <input class="search_input input" type="search" name="q" placeholder="e.g. CSS, Design, Research&#8230;"/>
-                <input class="search_button button" type="submit" value="Search"/>
+            <fieldset class="field-search">
+                <label class="field_label label" for="q">Search</label>
+                <input class="field_input input" type="search" name="q" placeholder="e.g. CSS, Design, Research&#8230;"/>
+                <input class="field_button button" type="submit" value="Search"/>
             </fieldset>
         </form><!--/.search-->
 

@@ -88,7 +88,7 @@
 <?                  inc('partial','summary-article') ?>
                 </li>
             </ol><!--/.list-articles-->
-            <a class="button button-more" href="?page=2">Show me another 24 ways&#8230;</a>
+<?          inc('partial','button-more') ?>
         </section><!--/.index-->
     </main><!--/@main-->
 

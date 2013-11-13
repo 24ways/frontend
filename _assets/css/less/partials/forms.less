@@ -8,7 +8,7 @@
     border: 0 none;
     padding: 1em 0.5em;
 }
-input[type="text"] {
+input[type="text"] {  //FIX ME
     height: 3rem;
 }
 
@@ -21,10 +21,12 @@ input[type="text"] {
     background-color: #333;
     border: 0 none;
     padding: 1em 1.5em;
+    display: inline-block;
 }
+
 .button-more {
     width: 100%;
-    display: block;
+    //display: block;
 }
 
 /* Field */
@@ -32,6 +34,7 @@ input[type="text"] {
     margin: 0.75rem 0; /* 12px 0 */
     position: relative;
 }
+
 .field_label {
     line-height: 1;
     padding: 1em 0.5em;
@@ -41,45 +44,38 @@ input[type="text"] {
     left: 0;
     width: 5em;
 }
+
 .field_input {
     padding-left: 6em;
     width: 100%;
 }
 
-/* Options list */
-.select legend {
-    font-weight: 700;
-}
-.select label {
-    font-weight: 400;
-}
-
-/* Search */
-.search {
+/* Field > Search */
+.field-search {
     position: relative;
-}
-.search_label {
-    font: 0/0 a;
-    &::before {
-        color: lightgrey;
-        content: "\e60a";
-        speak: none;
-        .icon-font();
-        font-size: 48px;
-        font-size: 3rem;
-        line-height: 1;
-        position: absolute;
-        left: 0;
-        top: 0;
-        display: block;
+    .field_label {
+        font: 0/0 a;
+        &::before {
+            color: lightgrey;
+            content: "\e60a";
+            speak: none;
+            .icon-font();
+            font-size: 48px;
+            font-size: 3rem;
+            line-height: 1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+        }
     }
-}
-.search_input {
-    padding-left: 3rem;
-    width: 100%;
-}
-.search_button {
-    position: absolute;
-    top: 0;
-    right: 0;
+    .field_input {
+        padding-left: 3rem;
+        width: 100%;
+    }
+    .field_button {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }

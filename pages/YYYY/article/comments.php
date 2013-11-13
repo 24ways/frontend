@@ -95,7 +95,7 @@
                             <label class="field_label label" for="commentHTML">Message</label>
                             <textarea class="field_input input" id="commentHTML" name="commentHTML" cols="25" rows="12" required="required"></textarea>
                         </p>
-                        <p>
+                        <p class="field-buttons">
                             <input type="hidden" name="parentID" id="parentID" value="289"/>
                             <input type="hidden" name="parentTitle" id="parentTitle" value="HTML5 Video Bumpers"/>
                             <input class="button button-submit" type="submit" name="submitComment" id="submitComment" value="Submit"/>

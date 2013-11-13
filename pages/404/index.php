@@ -27,11 +27,7 @@
                         <span class="section_title">Search 24 Ways</span>
                     </legend>
                     <div class="section_main">
-                        <p class="search field">
-                            <label class="search_label field_label label" for="q">Search</label>
-                            <input class="search_input field_input input" type="search" name="q" placeholder="e.g. CSS, Design, Research&#8230;"/>
-                            <input class="search_button field_button button" type="submit" value="Search"/>
-                        </p>
+<?                      inc('partial','field-search') ?>
                     </div>
                 </fieldset><!--/.section-->
             </form>
