@@ -131,11 +131,41 @@
     float: left;
 }
 
+/* Section - Sponsor */
+.section-sponsor {
+    @media screen and (min-width: 50em) {
+        padding: 0;
+        position: absolute;
+        top: 55.5rem;
+        left: 0;
+        width: 100%;
+        .section_header {
+            padding-top: 7px;
+            padding-top: 0.4375rem;
+            position: static;
+        }
+        .section_title {
+            .caption();
+        }
+        .section_main {
+            margin: 0;
+            border-top: 0 none;
+            padding: 0 0 0 1rem;
+            width: 20%;
+        }
+        .promo {
+            .caption();
+            text-align: right;
+        }
+    }
+}
+
 
 /* ==========================================================================
    Article
    ========================================================================== */
 .article {
+    position: relative;
     @media screen and (min-width: 50em) {
         margin-top: -1px;
         padding: 9rem 0 2rem;
@@ -458,4 +488,26 @@
             }
         }
     }
+}
+
+
+/* ==========================================================================
+   Promo
+   ========================================================================== */
+.promo {
+    margin: 0.75rem 0;
+    display: block;
+}
+.promo_image {
+    height: auto;
+    max-width: 100%;
+    display: inline-block;
+}
+.promo_message {
+    color: #444;
+    margin: 0.25rem 0;
+}
+.promo_url {
+    .caption();
+    margin: 0.25rem 0;
 }

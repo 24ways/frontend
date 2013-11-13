@@ -199,6 +199,15 @@
                 </div>
             </section><!--/.section-->
 
+            <section class="section section-sponsor" id="sponsor">
+                <header class="section_header">
+                    <h1 class="section_title">Brought to you by</h1>
+                </header>
+                <div class="section_main">
+<?                  inc('partial','promo') ?>
+                </div>
+            </section><!--/.section-->
+
             <section class="section" id="comments">
                 <header class="section_header">
                     <h1 class="section_title">Comments</h1>
