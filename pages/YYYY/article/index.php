@@ -215,13 +215,13 @@
                 <div class="section_main">
                     <ul class="list list-articles">
                         <li class="list_item">
-    <?                      inc('partial','summary-article') ?>
+<?                          inc('partial','summary-article') ?>
                         </li>
                         <li class="list_item">
-    <?                      inc('partial','summary-article') ?>
+<?                          inc('partial','summary-article') ?>
                         </li>
                         <li class="list_item">
-    <?                      inc('partial','summary-article') ?>
+<?                          inc('partial','summary-article') ?>
                         </li>
                     </ul><!--/.list-articles-->
                 </div>
