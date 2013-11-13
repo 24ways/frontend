@@ -6,9 +6,9 @@
 a {
     color: @link;
     text-decoration: none;
-    /*border-bottom: 1px solid;*/
+    // border-bottom: 1px solid;
     -moz-text-decoration-color: fade(@link, 33%);
-    border-color: #17d;
+    // border-color: #17d;
     }
     a:focus {
     /*  Address `outline` inconsistency between Chrome and other browsers */
@@ -20,20 +20,20 @@ a {
         -moz-text-decoration-color: fade(@link-hover, 33%);;
     /*  Improve readability when focused and also mouse hovered in all browsers */
         outline: 0;
-        border-color: @link-hover;
+        // border-color: @link-hover;
     }
     a:link,
     a:visited,
     a:hover {
-        transition: all 0.2s ease;
+        //transition: all 0.2s ease;
     }
     a:active {
         color: @link-active;
         -moz-text-decoration-color: rgba(119, 17, 170, 0.33);
-        border-color: @link-active;
+        // border-color: @link-active;
         transition: none;
     }
 
 :target {
-    background-color: #ffc;
+    //background-color: #ffc;
 }

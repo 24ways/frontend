@@ -1,6 +1,35 @@
+/* Label */
+.label {
+    
+}
+
+/* Inputs */
+.input {
+    border: 0 none;
+    padding: 1em 0.5em;
+}
+input[type="text"] {
+    height: 3rem;
+}
+
+/* Buttons */
+.button {
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #333;
+    border: 0 none;
+    padding: 1em 1.5em;
+}
+.button-more {
+    width: 100%;
+    display: block;
+}
+
 /* Field */
 .field {
-    margin-bottom: 0.5em; /* 8px */
+    margin: 0.75rem 0; /* 12px 0 */
     position: relative;
 }
 .field_label {
@@ -13,23 +42,7 @@
     width: 5em;
 }
 .field_input {
-    border: 0 none;
-    padding: 1em 0.5em 1em 6em;
-    width: 100%;
-}
-
-/* Buttons */
-.button {
-    color: #fff;
-    line-height: 1;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #333;
-    border: 0 none;
-    padding: 1em 1.5em;
-    display: block;
-}
-.button-more {
+    padding-left: 6em;
     width: 100%;
 }
 
@@ -39,4 +52,34 @@
 }
 .select label {
     font-weight: 400;
+}
+
+/* Search */
+.search {
+    position: relative;
+}
+.search_label {
+    font: 0/0 a;
+    &::before {
+        color: lightgrey;
+        content: "\e60a";
+        speak: none;
+        .icon-font();
+        font-size: 48px;
+        font-size: 3rem;
+        line-height: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+    }
+}
+.search_input {
+    padding-left: 3rem;
+    width: 100%;
+}
+.search_button {
+    position: absolute;
+    top: 0;
+    right: 0;
 }

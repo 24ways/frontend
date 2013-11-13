@@ -1,6 +1,5 @@
 <?
-    // Compile LESS CSS
-    lesscss('/_assets/css/less/styles.less', '/_assets/css/styles.css');
+    lesscss('/_assets/css/less/styles.less', '/_assets/css/styles.css'); // Compile LESS CSS
 ?>
 <!DOCTYPE html>
 <html lang="en-gb">
@@ -41,4 +40,4 @@
     <title><?= $GLOBALS['title'] ?> &#9670; 24 Ways</title>
 </head>
 
-<body class="year-<?= $GLOBALS['year'] ?>">
+<body<? if(isset($GLOBALS['year'])): ?> class="year-<?= $GLOBALS['year']; ?>"<? endif ?>>

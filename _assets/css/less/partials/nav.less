@@ -1,34 +1,31 @@
 /* All navigation */
 .nav {
-    margin: 1em 0; /* 16px 0 */
-
     .nav_item {
-        margin: 0 -0.1875em 0 0; /* 0 -3px 0 0 */
-        display: inline;
+        //margin: 0 -0.1875em 0 0; /* 0 -3px 0 0 */
+        //display: inline;
     }
     .nav_item a {
-        border-bottom: 0;
-        border-right: thin solid lightgrey;
-        padding: 0.5em 1em; /* 8px 16px */
-        display: inline-block;
+        //border-bottom: 0;
+        //padding: 0.5em 1em; /* 8px 16px */
+        //display: inline-block;
     }
     .nav_item a:hover {
-        background-color: lightgrey;
+        background-color: whitesmoke;
     }
-    .nav_item:last-child a {
-        border-right: 0;
-    }
-    .is-active {
-        color: #333;
-        font-weight: 700;
+    .is-active a {
+        // color: #333;
+        // font-weight: 700;
     }
 }
 
-/* Previous/next nav */
-.nav-prevnext {
+/* Traverse */
+.nav-traverse {
     margin: 0;
     overflow: hidden;
-    transition: all .25s;
+    transition: right .2s ease-out;
+    @media screen and (max-width: 31.4375em) {
+        border-top: 1px solid whitesmoke;
+    }
     @media screen and (min-width: 31.5em) {
         position: fixed;
         right: 0;
@@ -37,24 +34,19 @@
         z-index: 999;
     }
     .nav_item {
-        margin: 0;
-        padding: 0;
         display: block;
-
         @media screen and (max-width: 31.4375em) {
-            padding: 0.5em;
+            padding: 1rem 0.5rem;
             width: 50%;
             float: left;
         }
         @media screen and (min-width: 31.5em) {
             text-align: center;
+            border-bottom: 1px solid whitesmoke;
             height: 72px;
             height: 4.5rem;
             width: 72px;
             width: 4.5rem;
-        }
-        &:hover {
-            background-color: whitesmoke;
         }
     }
     .nav_prev,
@@ -79,8 +71,9 @@
 }
 
 .js-menu-active {
-    .nav-prevnext {
+    .nav-traverse {
         right: 288px;
+        right: 18rem;
     }
 }
 
@@ -89,29 +82,36 @@
     font: 0/0 a;
     text-align: center;
     margin: 0;
+    border-top: 1px solid whitesmoke;
     padding: 0;
-    height: 48px;
-    height: 3rem;
+    height: 72px;
+    height: 4.5rem;
     width: 72px;
     width: 4.5rem;
     position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: 8rem;
     z-index: 9;
-    display: none;
-    @media screen and (min-width: 31.5em) {
-        display: block;
-    }
-
+    overflow: hidden;
     &::before {
         font-size: 48px;
         font-size: 3rem;
         line-height: 1;
+        padding: 0.75rem;
         display: block;
     }
 }
 
-/* Pagination nav */
+.js-menu-active {
+    .nav-top {
+        @media screen and (min-width: 31.5em) {
+            right: 288px;
+            right: 18rem;
+        }
+    }
+}
+
+/* Pagination */
 .nav-page {
     text-align: center;
 

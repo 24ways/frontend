@@ -1,10 +1,12 @@
 <? include_once($_SERVER['DOCUMENT_ROOT'].'/_inc/functions.php'); ?>
 <? $title = "Starting Your HTML5 Project on the Right Foot (and Keeping It There)"; ?>
+<? $section = "article"; ?>
+<? $traverse = true; ?>
 <? inc('partial','head') ?>
 <? inc('partial','banner') ?>
 
     <main class="main" role="main">
-        <div class="article">
+        <article class="article">
             <header class="article_header">
                 <h1 class="article_title p-name">Starting Your <abbr>HTML5</abbr> Project on the Right Foot (and Keeping It There)</h1>
                 <p class="article_byline">
@@ -186,54 +188,47 @@
                 </ol>
                 <p>But most of all <strong>play around with it, have fun and build something awesome</strong>.</p>
             </div>
-        </div><!--/.article-->
 
-        <section class="section" id="author">
-            <header class="section_header">
-                <h1 class="section_title">About the author</h1>
-            </header>
-            <div class="section_main h-card">
-                <p class="p-note"><strong class="p-name">Drew McLellan</strong> is lead developer on your favourite small <span class="caps">CMS</span>, <a href="http://grabaperch.com/">Perch</a>. He is Director and Senior Developer at UK-based web development agency edgeofmyseat.com, and formerly Group Lead at the Web Standards Project. When not publishing 24 ways, Drew keeps a <a href="http://allinthehead.com/">personal site</a> covering web development issues and themes, <a href="http://flickr.com/drewm/">takes photos</a> and <a href="http://twitter.com/drewm">tweets a lot</a>.</p>
-                <p><a href="/pages/authors/authorname">More articles by Drew</a></p>
-            </div>
-        </section><!--/.section-->
+            <section class="section" id="author">
+                <header class="section_header">
+                    <h1 class="section_title">About the author</h1>
+                </header>
+                <div class="section_main h-card">
+                    <p class="p-note"><strong class="p-name">Drew McLellan</strong> is lead developer on your favourite small <span class="caps">CMS</span>, <a href="http://grabaperch.com/">Perch</a>. He is Director and Senior Developer at UK-based web development agency edgeofmyseat.com, and formerly Group Lead at the Web Standards Project. When not publishing 24 ways, Drew keeps a <a href="http://allinthehead.com/">personal site</a> covering web development issues and themes, <a href="http://flickr.com/drewm/">takes photos</a> and <a href="http://twitter.com/drewm">tweets a lot</a>.</p>
+                    <p><a href="/pages/authors/authorname">More articles by Drew</a></p>
+                </div>
+            </section><!--/.section-->
 
-        <section class="section" id="comments">
-            <header class="section_header">
-                <h1 class="section_title">Comments</h1>
-            </header>
-            <div class="section_main">
-                <p><a href="/pages/YYYY/article/comments" data-replace data-target="#comments">View 8 reader comments</a></p>
-            </div>
-        </section><!--/.section-->
+            <section class="section" id="comments">
+                <header class="section_header">
+                    <h1 class="section_title">Comments</h1>
+                </header>
+                <div class="section_main">
+                    <p><a href="/pages/YYYY/article/comments" data-replace data-target="#comments">View 8 reader comments</a></p>
+                </div>
+            </section><!--/.section-->
 
-        <section class="section" id="related">
-            <header class="section_header">
-                <h1 class="section_title">Related articles</h1>
-            </header>
-            <div class="section_main">
-                <ul class="list list-articles">
-                    <li class="list_item">
-<?                      inc('partial','summary-article') ?>
-                    </li>
-                    <li class="list_item">
-<?                      inc('partial','summary-article') ?>
-                    </li>
-                    <li class="list_item">
-<?                      inc('partial','summary-article') ?>
-                    </li>
-                </ul><!--/.list-articles-->
-            </div>
-        </section><!--/.section-->
+            <section class="section" id="related">
+                <header class="section_header">
+                    <h1 class="section_title">Related articles</h1>
+                </header>
+                <div class="section_main">
+                    <ul class="list list-articles">
+                        <li class="list_item">
+    <?                      inc('partial','summary-article') ?>
+                        </li>
+                        <li class="list_item">
+    <?                      inc('partial','summary-article') ?>
+                        </li>
+                        <li class="list_item">
+    <?                      inc('partial','summary-article') ?>
+                        </li>
+                    </ul><!--/.list-articles-->
+                </div>
+            </section><!--/.section-->
+        </article><!--/.article-->
     </main><!--/@main-->
 
-    <nav class="nav nav-prevnext" role="navigation">
-        <h1 class="hidden">Browse articles puplished in 2013</h1>
-        <a class="nav_item nav_prev" rel="prev" href="/pages/YYYY/article/" title="[Previous Article Title]" data-icon="&#xe601;">Previous article</a>
-        <a class="nav_item nav_next" rel="next" href="/pages/YYYY/article/" title="[Next Article Title]" data-icon="&#xe602;">Next article</a>
-    </nav><!--/.nav-prevnext-->
-
 <?  inc('partial','navigation') ?>
-<?  inc('partial','search') ?>
 <?  inc('partial','contentinfo') ?>
 <?  inc('partial','foot') ?>
