@@ -5,6 +5,8 @@
 <html lang="en-gb">
 
 <head>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    
     <script>
         // Cut the mustard
         if (document.querySelector && window.addEventListener) {
