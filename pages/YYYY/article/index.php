@@ -10,10 +10,10 @@
         <article class="article h-entry">
             <header class="article_header">
                 <h1 class="article_title p-name">Starting Your <abbr>HTML5</abbr> Project on the Right Foot (and Keeping It There)</h1>
-                <p class="article_byline h-card">
+                <p class="article_byline p-author h-card">
                     <a class="u-url" href="#author">
                         <span class="avatar"><img class="article_image u-photo" src="http://media.24ways.org/authors/drewmclellan280.jpg" width="160" height="160" alt="Drew McLellan"/></span>
-                        by <span class="p-author p-name">Drew McLellen</span>
+                        <span class="p-name">Drew McLellen</span>
                     </a>
                 <p>
             </header>
