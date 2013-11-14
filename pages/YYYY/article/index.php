@@ -26,7 +26,7 @@
                 </ul>
             </footer>
 
-            <div class="article_main">
+            <div class="article_main e-content">
 <?              inc('partial','note') ?>
                 
                 <p class="lede">Video is a bigger part of the web experience than ever before. With native browser support for <abbr>HTML5</abbr> video elements freeing us from the tyranny of plugins, and the availability of faster internet connections to the workplace, home and mobile networks, it&#8217;s now pretty straightforward to publish video in a way that can be consumed in all sorts of ways on all sorts of different web devices.</p>
