@@ -1,5 +1,5 @@
     <nav class="navigation" role="navigation" id="menu">
-        <h1 class="hidden">Browse 24 Ways</h1>
+        <h1 class="hidden">Browse 24 ways</h1>
 <?      if (isset($GLOBALS['traverse'])): ?>
         <div class="nav nav-traverse">
 <?          if ($GLOBALS['section'] == "archives"): ?>

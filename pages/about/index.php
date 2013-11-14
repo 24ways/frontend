@@ -8,7 +8,7 @@
     <main class="main" role="main">
         <article class="article">
             <header class="preface">
-                <h1 class="preface_title">About 24 Ways</h1>
+                <h1 class="preface_title">About 24 ways</h1>
             </header><!--/.preface-->
 
             <section class="section" id="sectionname">

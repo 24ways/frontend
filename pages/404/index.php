@@ -25,7 +25,7 @@
             <form id="comment" method="post">
                 <fieldset class="section">
                     <legend class="section_header">
-                        <span class="section_title">Search 24 Ways</span>
+                        <span class="section_title">Search 24 ways</span>
                     </legend>
                     <div class="section_main">
 <?                      inc('partial','field-search') ?>

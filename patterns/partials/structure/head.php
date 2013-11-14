@@ -37,7 +37,7 @@
     <meta name="twitter:creator" content="@authorname">
     <meta name="twitter:card" content="summary">
 
-    <title><?= $GLOBALS['title'] ?> &#9670; 24 Ways</title>
+    <title><?= $GLOBALS['title'] ?> &#9670; 24 ways</title>
 </head>
 
 <body<? if(isset($GLOBALS['theme'])): ?> class="<?= $GLOBALS['theme']; ?>"<? endif ?>>
