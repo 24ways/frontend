@@ -26,48 +26,28 @@
 
                     <ol class="list list-comments">
                         <li class="list_item">
-                            <article class="summary summary-comment" id="c00000">
-                                <header class="summary_header">
-                                    <h1 class="summary_title">
-                                        <a class="p-name" href="http://paulrobertlloyd.com/">
-                                            <span class="avatar"><img src="//www.gravatar.com/avatar/d208a4fdb8295873194546b31a0ab89f?s=96&#38;d=http%3A%2F%2Fmedia.24ways.org%2Fimg%2Fgravatar.png" width="64" height="64"/></span>
-                                            Paul Robert Lloyd
-                                        </a>
-                                    </h1>
-                                    <p class="summary_meta">
-                                        <a rel="bookmark" href="#c04962" title="Permalink to this comment"><time class="dt-published" datetime="2012-12-01T12:24:48-00:00">1 December 2012</time></a>
-                                    </p>
-                                </header>
-                                <div class="summary_main">
-                                    <p>You&#8217;re an idiot! Everything you have written here is wrong!</p>
-                                </div>
-                                <footer class="summary_footer">
-                                    <p class="summary_vote">
-                                        This comment was <a href="/vote/up/c4962/">helpful</a> / <a href="/vote/down/c4962/">unhelpful</a>
-                                    </p>
-                                </footer>
-                            </article><!--/.summary-comment-->
+<?                          inc('partial','summary-comment-unhelpful') ?>
                         </li>
                         <li class="list_item">
-<?                          inc('partial','summary-comment') ?>
+<?                          inc('partial','summary-comment-helpful') ?>
                         </li>
                         <li class="list_item">
-<?                          inc('partial','summary-comment') ?>
+<?                          inc('partial','summary-comment-helpful') ?>
                         </li>
                         <li class="list_item">
-<?                          inc('partial','summary-comment') ?>
+<?                          inc('partial','summary-comment-helpful') ?>
                         </li>
                         <li class="list_item">
-<?                          inc('partial','summary-comment') ?>
+<?                          inc('partial','summary-comment-helpful') ?>
                         </li>
                         <li class="list_item">
-<?                          inc('partial','summary-comment') ?>
+<?                          inc('partial','summary-comment-helpful') ?>
                         </li>
                         <li class="list_item">
-<?                          inc('partial','summary-comment') ?>
+<?                          inc('partial','summary-comment-helpful') ?>
                         </li>
                         <li class="list_item">
-<?                          inc('partial','summary-comment') ?>
+<?                          inc('partial','summary-comment-helpful') ?>
                         </li>
                     </ol><!--/.list-comments-->
                 </div>
