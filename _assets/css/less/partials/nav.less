@@ -2,7 +2,8 @@
 .nav {
     list-style-type: none;
     margin: 0;
-    .nav_item a:hover {
+    .nav_item a:hover,
+    .nav_item:hover {
         background-color: #ffc;
     }
     .is-active a {
@@ -30,10 +31,10 @@
         padding: 0.4375rem 0.25rem 0.5rem;
         display: block;
         @media screen and (max-width: 31.4375em) {
-            border-right: 1px solid lightgrey;
+            border-right: 1px solid whitesmoke;
         }
         @media screen and (min-width: 31.5em) {
-            border-top: 1px solid lightgrey;
+            border-top: 1px solid whitesmoke;
         }
     }
 }
@@ -43,7 +44,7 @@
    Navigate topics
    ========================================================================== */
 .nav-topics {
-    border-top: 1px solid lightgrey;
+    border-top: 1px solid whitesmoke;
     overflow: hidden;
     .nav_item {
         float: left;
@@ -55,8 +56,8 @@
     a {
         text-align: center;
         text-transform: uppercase;
-        border: solid lightgrey;
-        border-width: 0 0 1px 1px;
+        border: solid whitesmoke;
+        border-width: 0 1px 1px 0;
         padding: 1.9375rem 25% 2rem;
         display: block;
         &::before {
@@ -77,12 +78,10 @@
     font: 0/0 a;
     text-align: center;
     margin: 0;
-    border-top: 1px solid lightgrey;
+    border-top: 1px solid whitesmoke;
     padding: 0;
-    height: 72px;
-    height: 4.5rem;
-    width: 72px;
-    width: 4.5rem;
+    width: 4.5rem; /* 72px */
+    height: 4.5rem; /* 72px */
     overflow: hidden;
     &::before {
         font-size: 48px;
@@ -98,7 +97,7 @@
    Traverse articles and indices
    ========================================================================== */
 .nav-traverse {
-    border-top: 1px solid lightgrey;
+    border-top: 1px solid whitesmoke;
     overflow: hidden;
     @media screen and (min-width: 31.5em) {
         width: 4.5rem;
@@ -112,7 +111,7 @@
         }
         @media screen and (min-width: 31.5em) {
             text-align: center;
-            border-bottom: 1px solid lightgrey;
+            border-bottom: 1px solid whitesmoke;
             height: 4.5rem;
         }
     }

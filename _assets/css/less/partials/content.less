@@ -114,10 +114,10 @@
         position: relative;
         &::before {
             font-size: 4em;
-            position: absolute;
-            left: 0rem;
-            top: 0;
             margin: 0.25rem;
+            position: absolute;
+            left: 0;
+            top: 0;
         }
     }
 }
@@ -140,8 +140,7 @@
         left: 0;
         width: 100%;
         .section_header {
-            padding-top: 7px;
-            padding-top: 0.4375rem;
+            padding-top: 0.4375rem; /* 7px */
             position: static;
         }
         .section_title {
@@ -167,7 +166,7 @@
 .article {
     position: relative;
     @media screen and (min-width: 50em) {
-        padding: 9rem 0 2rem;
+        padding-bottom: 2rem;
     }
 }
 
@@ -177,6 +176,7 @@
     position: relative;
     .clear();
     @media screen and (min-width: 50em) {
+        margin-top: 9rem;
         border-top: 1px solid #ccc;
         padding-left: 25%;
         padding-right: 5%;
@@ -214,7 +214,7 @@
             width: 20%;
             max-width: 16rem;
             position: absolute;
-            top: 0;
+            top: -4rem;
             left: 0;
             z-index: 0;
             display: block;
@@ -235,8 +235,7 @@
     p,
     li {
         @media screen and (min-width: 40em) {
-            font-size: 20px;
-            font-size: 1.25rem;
+            font-size: 1.25rem; /* 20px */
             line-height: 1.6; /* 32px */
         }
     }
@@ -297,7 +296,6 @@
     line-height: 1.25; /* 20px */
     margin: 0;
     @media screen and (min-width: 40em) {
-        font-size: 20px;
         font-size: 1.25rem;
         line-height: 1.2; /* 16px */
     }
@@ -315,8 +313,7 @@
     font-size: 0.875em; /* 14px */
     line-height: 1.4286; /* 20px */
     @media screen and (min-width: 40em) {
-        font-size: 16px;
-        font-size: 1em;
+        font-size: 1em; /* 16px */
         line-height: 1.5; /* 24px */
     }
     a {
@@ -426,8 +423,8 @@
             border-color: rgba(0,0,0,0.02) rgba(0,0,0,0.02) transparent transparent;
         }
         img {
-            width: 4.5em;
             height: 4.5em;
+            width: 4.5em;
             display: none;
         }
         span {
@@ -462,14 +459,14 @@
     
     .summary_meta {
         color: #fff;
-        background-color: #000;
-        padding: 0.25rem 0.5rem;
+        background-color: rgba(0,0,0,0.5);
+        padding: 0.5rem;
         position: absolute;
         right: 0;
         bottom: 0;
         left: 0;
     }
-    .u-photo { // FIX ME!
+    .summary_image { // FIX ME!
         height: auto;
         width: 100%;
         display: block;

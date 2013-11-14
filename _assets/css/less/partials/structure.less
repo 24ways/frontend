@@ -4,10 +4,8 @@
 .banner {
     text-transform: uppercase;
     background-color: lightgrey;
-    padding: 14px 16px;
-    padding: 0.875rem 1rem;
-    height: 48px;
-    height: 3rem;
+    padding: 0.875rem 1rem; /* 14px 16px */
+    height: 3rem; /* 48p */
     @media screen and (max-width: 31.4375em) {
         position: fixed;
         top: 0;
@@ -17,8 +15,7 @@
     }
     @media screen and (min-width: 31.5em) {
         padding: 1.5rem 1rem;
-        height: 72px;
-        height: 4.5rem;
+        height: 4.5rem; /* 72px */
     }
     @media screen and (min-width: 50em) {
         padding-left: 25%;
@@ -56,14 +53,11 @@
     z-index: 999;
     overflow: hidden;
     @media screen and (min-width: 31.5em) {
-        height: 72px;
-        height: 4.5rem;
-        width: 72px;
-        width: 4.5rem;
+        width: 4.5rem; /* 72px */
+        height: 4.5rem; /* 72px */
     }
     &::before {
-        font-size: 48px;
-        font-size: 3rem;
+        font-size: 3rem; /* 48px */
         display: block;
         @media screen and (min-width: 31.5em) {
             line-height: 1.5;
@@ -81,8 +75,7 @@
 .js-menu-active {
     .menu {
         @media screen and (min-width: 31.5em) {
-            right: 288px;
-            right: 18rem;
+            //right: 18rem; /* 288px */
         }
     }
 }
@@ -113,14 +106,14 @@
    Navigation
    ========================================================================== */
 .navigation {
-    transition: right .2s ease-out;
+    transition: width .2s ease-out;
     right: 0;
     z-index: 9;
     position: relative;
     .nav-site {
         transition: right .2s ease-out;
         @media screen and (min-width: 31.5em) {
-            width: 4.5rem;
+            width: 4.5rem; /* 72px */
             position: fixed;
             right: 0;
             bottom: 0;
@@ -128,14 +121,14 @@
     }
     .nav-top {
         position: absolute;
-        left: 0;
-        bottom: 8rem;
+        bottom: 8rem; /* 128px */
+        right: 0;
         z-index: 9;
     }
     .nav-traverse {
         position: absolute;
-        left: 0;
-        top: 4.5rem;
+        right: 0;
+        top: 4.5rem; /* 72px */
         z-index: 9;
     }
 }
@@ -145,20 +138,21 @@
         @media screen and (min-width: 31.5em) {
             background-color: #fff;
             margin: 0;
-            padding: 4.5rem 0 0 4.5rem;
-            width: 22.5em;
+            padding: 4.5rem 4.5rem 0 0; /* 72px 0 0 0 */
+            width: 4.5em; /* 72px */
+            overflow: hidden;
             position: fixed;
             top: 0;
-            right: -18em;
+            right: 0;
             bottom: 0;
         }
         .nav-topics {
             @media screen and (max-width: 31.4375em) {
                 background-color: #fff;
                 position: fixed;
-                top: 3rem;
-                max-height: 0;
+                top: 3rem; /* 48px */
                 width: 100%;
+                max-height: 0;
             }
             .nav_item {
                 @media screen and (min-width: 31.5em) {
@@ -175,18 +169,14 @@
         z-index: 9;
         @media screen and (min-width: 31.5em) {
             box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+            width: 22.5em; /* 360px */
         }
         .nav-topics {
             @media screen and (max-width: 31.4375em) {
                 box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
-                max-height: 320px;
-                max-height: 20rem;
                 width: 100%;
+                max-height: 20rem; /* 320px */
             }
-        }
-        .nav-site {
-            right: 288px;
-            right: 18rem;
         }
     }
 }
@@ -198,17 +188,18 @@
 .search .field_label {
     &::before {
         line-height: 1.5;
-        width: 3rem;
-        height: 4.5rem;
+        width: 3rem; /* 48px */
+        height: 4.5rem; /* 72px */
     }
 }
 .js-enhanced {
     @media screen and (min-width: 31.5em) {
         .navigation .search {
-            width: 18rem;
+            width: 18rem; /* 288px */
+            //width: 100%;
             position: absolute;
             top: 0;
-            right: 0;
+            right: 4.5rem; /* 72px */
         }
     }
 }
@@ -216,8 +207,7 @@
 .search .field_input {
     background-color: whitesmoke;
     width: 100%;
-    height: 72px;
-    height: 4.5rem;
+    height: 4.5rem; /* 72px */
     &:focus {
         outline: 0 none;
         box-shadow: inset 0 0 2px 0 rgba(0,0,0,0.25);
@@ -226,10 +216,8 @@
 .search .field_button {
     font: 0/0 a;
     background: transparent;
-    width: 48px;
-    width: 3rem;
-    height: 72px;
-    height: 4.5rem;
+    width: 3rem; /* 48px */
+    height: 4.5rem; /* 72px */
     position: absolute;
     top: 0;
     left: 0;
@@ -243,8 +231,7 @@
 .contentinfo {
     .caption();
     background-color: #e3e3e3;
-    padding: 16px;
-    padding: 1rem;
+    padding: 1rem; /* 16px */
     clear: left;
     overflow: hidden;
     small {
