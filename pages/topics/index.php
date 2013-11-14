@@ -3,6 +3,7 @@
 <? $section = "topics"; ?>
 <? inc('partial','head') ?>
 <? inc('partial','banner') ?>
+<? inc('partial','menu') ?>
 
     <main class="main" role="main">
         <section class="index">

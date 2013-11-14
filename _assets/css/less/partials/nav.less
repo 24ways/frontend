@@ -3,7 +3,7 @@
     list-style-type: none;
     margin: 0;
     .nav_item a:hover {
-        background-color: whitesmoke;
+        background-color: #ffc;
     }
     .is-active a {
         // color: #333;
@@ -11,21 +11,78 @@
     }
 }
 
-/* Back to top link */
+
+/* ==========================================================================
+   Navigate site
+   ========================================================================== */
+.nav-site {
+    overflow: hidden;
+    .nav_item {
+        @media screen and (max-width: 31.4375em) {
+            text-align: center;
+            float: left;
+            width: 25%;
+        }
+    }
+    a {
+        .caption();
+        padding: 7px 4px 8px;
+        padding: 0.4375rem 0.25rem 0.5rem;
+        display: block;
+        @media screen and (max-width: 31.4375em) {
+            border-right: 1px solid lightgrey;
+        }
+        @media screen and (min-width: 31.5em) {
+            border-top: 1px solid lightgrey;
+        }
+    }
+}
+
+
+/* ==========================================================================
+   Navigate topics
+   ========================================================================== */
+.nav-topics {
+    border-top: 1px solid lightgrey;
+    overflow: hidden;
+    .nav_item {
+        float: left;
+        width: 33.3333%;
+        @media screen and (min-width: 50em) {
+            width: 16.6667%;
+        }
+    }
+    a {
+        text-align: center;
+        text-transform: uppercase;
+        border: solid lightgrey;
+        border-width: 0 0 1px 1px;
+        padding: 1.9375rem 25% 2rem;
+        display: block;
+        &::before {
+            font-size: 48px;
+            font-size: 3rem;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+    }
+}
+
+
+/* ==========================================================================
+   Navigate back to top
+   ========================================================================== */
 .nav-top {
     font: 0/0 a;
     text-align: center;
     margin: 0;
-    border-top: 1px solid whitesmoke;
+    border-top: 1px solid lightgrey;
     padding: 0;
     height: 72px;
     height: 4.5rem;
     width: 72px;
     width: 4.5rem;
-    position: fixed;
-    right: 0;
-    bottom: 8rem;
-    z-index: 9;
     overflow: hidden;
     &::before {
         font-size: 48px;
@@ -36,29 +93,15 @@
     }
 }
 
-.js-menu-active {
-    .nav-top {
-        @media screen and (min-width: 31.5em) {
-            right: 288px;
-            right: 18rem;
-        }
-    }
-}
 
-/* Traverse */
+/* ==========================================================================
+   Traverse articles and indices
+   ========================================================================== */
 .nav-traverse {
-    margin: 0;
+    border-top: 1px solid lightgrey;
     overflow: hidden;
-    transition: right .2s ease-out;
-    @media screen and (max-width: 31.4375em) {
-        border-top: 1px solid whitesmoke;
-    }
     @media screen and (min-width: 31.5em) {
-        position: fixed;
-        right: 0;
-        top: 72px;
-        top: 4.5rem;
-        z-index: 999;
+        width: 4.5rem;
     }
     .nav_item {
         display: block;
@@ -69,11 +112,8 @@
         }
         @media screen and (min-width: 31.5em) {
             text-align: center;
-            border-bottom: 1px solid whitesmoke;
-            height: 72px;
+            border-bottom: 1px solid lightgrey;
             height: 4.5rem;
-            width: 72px;
-            width: 4.5rem;
         }
     }
     .nav_prev,
@@ -94,12 +134,5 @@
         @media screen and (max-width: 31.4375em) {
             text-align: right;
         }
-    }
-}
-
-.js-menu-active {
-    .nav-traverse {
-        right: 288px;
-        right: 18rem;
     }
 }

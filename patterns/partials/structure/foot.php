@@ -1,4 +1,3 @@
-
     <script src="/_assets/js/vendor/adactio/progresponsive/progresponsive.js"></script>
     <script src="/_assets/js/vendor/nathanford/data-href/data-href.js"></script>
     <script src="/_assets/js/vendor/nathanford/widowtamer/widowtamer.js"></script>

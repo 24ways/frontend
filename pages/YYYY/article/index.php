@@ -4,15 +4,16 @@
 <? $traverse = true; ?>
 <? inc('partial','head') ?>
 <? inc('partial','banner') ?>
+<? inc('partial','menu') ?>
 
     <main class="main" role="main">
-        <article class="article">
+        <article class="article h-entry">
             <header class="article_header">
                 <h1 class="article_title p-name">Starting Your <abbr>HTML5</abbr> Project on the Right Foot (and Keeping It There)</h1>
-                <p class="article_byline">
-                    <a href="#author">
-                        <span class="avatar"><img class="article_image" src="http://media.24ways.org/authors/drewmclellan280.jpg" width="160" height="160" alt="Drew McLellan"/></span>
-                        by Drew McLellen
+                <p class="article_byline h-card">
+                    <a class="u-url" href="#author">
+                        <span class="avatar"><img class="article_image u-photo" src="http://media.24ways.org/authors/drewmclellan280.jpg" width="160" height="160" alt="Drew McLellan"/></span>
+                        by <span class="p-author p-name">Drew McLellen</span>
                     </a>
                 <p>
             </header>
@@ -195,8 +196,8 @@
                 <header class="section_header">
                     <h1 class="section_title">About the author</h1>
                 </header>
-                <div class="section_main h-card">
-                    <p class="p-note"><strong class="p-name">Drew McLellan</strong> is lead developer on your favourite small <span class="caps">CMS</span>, <a href="http://grabaperch.com/">Perch</a>. He is Director and Senior Developer at UK-based web development agency edgeofmyseat.com, and formerly Group Lead at the Web Standards Project. When not publishing 24 ways, Drew keeps a <a href="http://allinthehead.com/">personal site</a> covering web development issues and themes, <a href="http://flickr.com/drewm/">takes photos</a> and <a href="http://twitter.com/drewm">tweets a lot</a>.</p>
+                <div class="section_main">
+                    <p><strong>Drew McLellan</strong> is lead developer on your favourite small <span class="caps">CMS</span>, <a href="http://grabaperch.com/">Perch</a>. He is Director and Senior Developer at UK-based web development agency edgeofmyseat.com, and formerly Group Lead at the Web Standards Project. When not publishing 24 ways, Drew keeps a <a href="http://allinthehead.com/">personal site</a> covering web development issues and themes, <a href="http://flickr.com/drewm/">takes photos</a> and <a href="http://twitter.com/drewm">tweets a lot</a>.</p>
                     <p><a href="/pages/authors/authorname">More articles by Drew</a></p>
                 </div>
             </section><!--/.section-->

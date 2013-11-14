@@ -33,6 +33,9 @@
     @media screen and (min-width: 31.5em) {
         font-size: 1.5em;
     }
+    @media screen and (min-width: 50em) {
+        margin-left: 1rem;
+    }
     span {
         font-size: 0.6667em;
         text-transform: lowercase;
@@ -47,14 +50,12 @@
 .menu {
     font: 0/0 a;
     text-align: center;
-    //position: absolute;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 999;
     overflow: hidden;
     @media screen and (min-width: 31.5em) {
-        border-bottom: 1px solid whitesmoke;
         height: 72px;
         height: 4.5rem;
         width: 72px;
@@ -114,20 +115,31 @@
 .navigation {
     transition: right .2s ease-out;
     right: 0;
-    z-index: 99;
-    @media screen and (min-width: 31.5em) {
-        margin-right: 72px;
-        margin-right: 4.5rem;
-    }
-    a {
-        .caption();
-        text-transform: uppercase;
-        display: block;
-        &:hover {
-            background-color: whitesmoke;
+    z-index: 9;
+    position: relative;
+    .nav-site {
+        transition: right .2s ease-out;
+        @media screen and (min-width: 31.5em) {
+            width: 4.5rem;
+            position: fixed;
+            right: 0;
+            bottom: 0;
         }
     }
+    .nav-top {
+        position: absolute;
+        left: 0;
+        bottom: 8rem;
+        z-index: 9;
+    }
+    .nav-traverse {
+        position: absolute;
+        left: 0;
+        top: 4.5rem;
+        z-index: 9;
+    }
 }
+
 .js-enhanced {
     .navigation {
         @media screen and (min-width: 31.5em) {
@@ -136,100 +148,22 @@
             padding: 4.5rem 0 0 4.5rem;
             width: 22.5em;
             position: fixed;
-            top: 72px;
-            top: 4.5rem;
             top: 0;
             right: -18em;
             bottom: 0;
         }
-    }
-}
-
-.nav-topics {
-    overflow: hidden;
-    @media screen and (max-width: 31.4375em) {
-        border-top: 1px solid whitesmoke;
-    }
-    .nav_item {
-        float: left;
-        text-align: center;
-        width: 33.3333%;
-        @media screen and (min-width: 50em) {
-            width: 16.6667%;
-        }
-    }
-    a {
-        padding: 25%;
-        &::before {
-            font-size: 48px;
-            font-size: 3rem;
-            line-height: 1;
-            margin-bottom: 7px;
-            //margin-bottom: 0.5rem;
-            display: block;
-        }
-    }
-}
-
-.nav-site {
-    transition: right .2s ease-out;
-    @media screen and (max-width: 31.4375em) {
-        overflow: hidden;
-    }
-    @media screen and (min-width: 31.5em) {
-        width: 4.5rem;
-        position: fixed;
-        right: 0;
-        bottom: 0;
-    }
-    .nav_item {
-        @media screen and (max-width: 31.4375em) {
-            text-align: center;
-            float: left;
-            width: 25%;
-        }
-    }
-    a {
-        font-size: 0.75rem;
-        line-height: 1.3334;
-        padding: 7px 4px 8px;
-        padding: 0.4375rem 0.25rem 0.5rem;
-        @media screen and (max-width: 31.4375em) {
-            border-right: 1px solid whitesmoke;
-        }
-        @media screen and (min-width: 31.5em) {
-            border-top: 1px solid whitesmoke;
-        }
-    }
-}
-
-.js-enhanced {
-    .navigation {
-        a {
-            color: lightgrey;
-        }
-        &:hover a {
-            color: @link;
-        }
-    }
-    .nav-topics {
-        @media screen and (max-width: 31.4375em) {
-            background-color: #fff;
-            position: fixed;
-            top: 3rem;
-            max-height: 0;
-            width: 100%;
-        }
-        li {
-            @media screen and (min-width: 31.5em) {
-                width: 144px;
-                width: 9rem;
+        .nav-topics {
+            @media screen and (max-width: 31.4375em) {
+                background-color: #fff;
+                position: fixed;
+                top: 3rem;
+                max-height: 0;
+                width: 100%;
             }
-        }
-        a {
-            @media screen and (min-width: 31.5em) {
-                border: solid whitesmoke;
-                border-width: 0 0 1px 1px;
+            .nav_item {
+                @media screen and (min-width: 31.5em) {
+                    width: 50%;
+                }
             }
         }
     }
@@ -242,21 +176,18 @@
         @media screen and (min-width: 31.5em) {
             box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
         }
-        a {
-            color: @link;
+        .nav-topics {
+            @media screen and (max-width: 31.4375em) {
+                box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+                max-height: 320px;
+                max-height: 20rem;
+                width: 100%;
+            }
         }
-    }
-    .nav-topics {
-        @media screen and (max-width: 31.4375em) {
-            box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
-            max-height: 320px;
-            max-height: 20rem;
-            width: 100%;
+        .nav-site {
+            right: 288px;
+            right: 18rem;
         }
-    }
-    .nav-site {
-        right: 288px;
-        right: 18rem;
     }
 }
 
