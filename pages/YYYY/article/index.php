@@ -2,6 +2,7 @@
 <? $title = "Starting Your HTML5 Project on the Right Foot (and Keeping It There)"; ?>
 <? $section = "article"; ?>
 <? $traverse = true; ?>
+<? $theme = "year-2013 day-1"; ?>
 <? inc('partial','head') ?>
 <? inc('partial','banner') ?>
 <? inc('partial','menu') ?>

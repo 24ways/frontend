@@ -40,4 +40,4 @@
     <title><?= $GLOBALS['title'] ?> &#9670; 24 Ways</title>
 </head>
 
-<body<? if(isset($GLOBALS['year'])): ?> class="year-<?= $GLOBALS['year']; ?>"<? endif ?>>
+<body<? if(isset($GLOBALS['theme'])): ?> class="<?= $GLOBALS['theme']; ?>"<? endif ?>>

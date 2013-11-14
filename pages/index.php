@@ -1,7 +1,7 @@
 <? include_once($_SERVER['DOCUMENT_ROOT'].'/_inc/functions.php'); ?>
 <? $title = "2013"; ?>
 <? $section = "home"; ?>
-<? $year = "2013"; ?>
+<? $theme = "year-2013"; ?>
 <? inc('partial','head') ?>
 <? inc('partial','banner') ?>
 <? inc('partial','menu') ?>
@@ -17,18 +17,7 @@
 
             <ol class="list list-articles">
                 <li class="list_item">
-                    <article class="summary summary-article h-entry" data-href="/pages/YYYY/article/">
-                        <header class="summary_header">
-                            <h1 class="summary_title p-name"><a href="/pages/YYYY/article/">Ignorance Is Bliss</a></h1>
-                            <time class="summary_meta dt-published" class="pubdate" datetime="2010-12-15T00:00:00-00:00">1 December 2010</time>
-                        </header>
-                        <div class="summary_main">
-                            <p class="p-summary"><a href="http://stuffandnonsense.co.uk/">Andy Clarke</a> shares a case study highlighting the benefits of progressively enhanced web design.</p>
-                        </div>
-                        <footer class="summary_footer">
-                            <p class="summary_author"><a class=" p-author h-card" href="/pages/authors/firstname-lastname/"><img src="http://media.24ways.org/authors/andyclarke160.jpg" alt=""/></a></p>
-                        </footer>
-                    </article><!--/.summary-article-->
+<?                  inc('partial','summary-article') ?>
                 </li>
                 <li class="list_item">
 <?                  inc('partial','summary-article') ?>

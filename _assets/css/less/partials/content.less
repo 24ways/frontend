@@ -380,6 +380,9 @@
             height: 4.5em;
             display: none;
         }
+        span {
+            .hidden();
+        }
     }
     &:hover {
         .summary_author {
@@ -463,6 +466,7 @@
     margin: 1.5rem 0;
     border: solid grey;
     border-width: 1px 0;
+    padding: 0.25rem 0;
     @media screen and (max-width: 50em) {
         &:first-of-type {
             border-top: 0 none;
