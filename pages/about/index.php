@@ -48,12 +48,11 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat, elit nec malesuada interdum, nibh erat convallis turpis, vel mollis mi sem ac arcu.</p>
                     <ul>
                         <li>Hosted by <a href="http://www.memset.com/">Memset</a> <a href="http://www.memset.com/dedicated-servers/">Dedicated Servers</a>.</li>
-                    </ul>
-                    <p>The following blah:</p>
-                    <ul>
-                        <li><a href="https://github.com/leaverou/prism/">prism.js</a> by <a href="https://github.com/leaverou/">Lea Verou</a>.</li>
-                        <li><a href="https://github.com/nathanford/data-href/">data-href.js</a> and <a href="https://github.com/nathanford/widowtamer/">widowtamer.js</a> by <a href="https://github.com/nathanford/">Nathahn Ford</a>.</li>
-                        <li><a href="https://github.com/filamentgroup/Ajax-Include-Pattern/">AjaxInclude</a> by <a href="https://github.com/filamentgroup/">Filament Group</a>.
+                        <li>Type set in <a href="http://www.latofonts.com/lato-free-fonts/">Lato</a> (by Łukasz Dziedzic) and <a href="http://ebensorkin.wordpress.com">Merriweather</a> (by Eben Sorkin) and served via <a href="http://www.google.com/fonts">Google Fonts</a>.</li>
+                        <li><a href="http://www.webalys.com/minicons/">Minicons</a> by Vincent Le Miogn.</li>
+                        <li><a href="https://github.com/leaverou/prism/">prism.js</a> by Lea Verou.</li>
+                        <li><a href="https://github.com/nathanford/data-href/">data-href.js</a> and <a href="https://github.com/nathanford/widowtamer/">widowtamer.js</a> by Nathan Ford.</li>
+                        <li><a href="https://github.com/filamentgroup/Ajax-Include-Pattern/">AjaxInclude</a> by Filament Group.
                     </ul>
                 </div>
             </section><!--/.section-->

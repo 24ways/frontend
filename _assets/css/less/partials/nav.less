@@ -6,10 +6,6 @@
     .nav_item:hover {
         background-color: #ffc;
     }
-    .is-active a {
-        // color: #333;
-        // font-weight: 700;
-    }
 }
 
 
@@ -26,15 +22,16 @@
         }
     }
     a {
-        .caption();
-        padding: 7px 4px 8px;
-        padding: 0.4375rem 0.25rem 0.5rem;
+        font-size: 0.8125rem; /* 13px */
+        line-height: 1.2308; /* 16px */
+        padding: 0.75rem 0.5rem;
         display: block;
         @media screen and (max-width: 31.4375em) {
             border-right: 1px solid whitesmoke;
         }
         @media screen and (min-width: 31.5em) {
             border-top: 1px solid whitesmoke;
+            padding: 0.5625rem 0.5rem 0.625rem; /* 9px 8px 10px */
         }
     }
 }
