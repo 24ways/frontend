@@ -21,6 +21,9 @@
             document.documentElement.className += ' svg';
         }
     </script>
+<!--[if lt IE 9]>
+    <script src="/_assets/js/html5shiv.min.js"></script>
+<![endif]-->
 
     <link rel="stylesheet" type="text/css" href="/_assets/css/styles.css"/>
     <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/24ways"/>
