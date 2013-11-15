@@ -49,6 +49,12 @@
                     <ul>
                         <li>Hosted by <a href="http://www.memset.com/">Memset</a> <a href="http://www.memset.com/dedicated-servers/">Dedicated Servers</a>.</li>
                     </ul>
+                    <p>The following blah:</p>
+                    <ul>
+                        <li><a href="https://github.com/leaverou/prism/">prism.js</a> by <a href="https://github.com/leaverou/">Lea Verou</a>.</li>
+                        <li><a href="https://github.com/nathanford/data-href/">data-href.js</a> and <a href="https://github.com/nathanford/widowtamer/">widowtamer.js</a> by <a href="https://github.com/nathanford/">Nathahn Ford</a>.</li>
+                        <li><a href="https://github.com/filamentgroup/Ajax-Include-Pattern/">AjaxInclude</a> by <a href="https://github.com/filamentgroup/">Filament Group</a>.
+                    </ul>
                 </div>
             </section><!--/.section-->
         </article><!--/.article-->
