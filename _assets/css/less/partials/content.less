@@ -5,7 +5,7 @@
     color: #222;
     min-height: 12rem;
     background-color: grey;
-    padding: 1rem;
+    padding: 1em;
     overflow: hidden;
     @media screen and (min-width: 50em) {
         padding-left: 25%;
@@ -59,7 +59,7 @@
    Section
    ========================================================================== */
 .section {
-    margin: 2rem 0 0 0;
+    margin: 2em 0 0 0;
     position: relative;
     overflow: hidden;
     @media screen and (min-width: 50em) {
@@ -69,7 +69,7 @@
 
 .section_header {
     border-top: 1px solid #ddd;
-    padding: 1.5rem 0 1.5rem 1rem;
+    padding: 1.5em 0 1.5em 1em;
     width: 100%;
     @media screen and (min-width: 50em) {
         text-align: right;
@@ -81,7 +81,7 @@
 }
 
 .section_title {
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: 0.0625em;
@@ -91,8 +91,7 @@
 
 .section_main {
     border-top: 1px solid #ddd;
-    padding-top: 0.5rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5em 1em;
     @media screen and (min-width: 50em) {
         margin-left: 25%;
         padding-right: 5%;
@@ -104,7 +103,7 @@
     }
     .list-articles,
     .list-authors {
-        margin: -0.5rem -1rem;
+        margin: -0.5em -1em;
         @media screen and (min-width: 50em) {
             margin: -0.5rem 0 0 0;
         }
@@ -172,7 +171,7 @@
 
 .article_header {
     margin-bottom: 2rem;
-    padding: 0 1rem;
+    padding: 0 1em;
     position: relative;
     .clear();
     @media screen and (min-width: 50em) {
@@ -223,7 +222,7 @@
 }
 
 .article_main {
-    padding: 0 1rem 2rem 1rem;
+    padding: 0 1em 2em 1em;
     @media screen and (min-width: 50em) {
         margin-left: 25%;
         padding-right: 5%;
@@ -247,19 +246,23 @@
         float: left;
     }
     .list {
-        @media screen and (max-width: 49.9375em) {
-            margin: 1rem;
-            border-top: 1px solid #ccc;
-            border-bottom: 1px solid #ccc;
-            padding: 0.5rem 0;
+        margin: 1em;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 0.5rem 0;
+        @media screen and (min-width: 50em) {
+            margin: 0;
+            border: 0 none;
+            padding: 0;
         }
     }
     .list_item {
         .caption();
+        line-height: 2;
+        margin-right: 0.5em;
+        display: inline;
         @media screen and (max-width: 49.9375em) {
-            line-height: 2;
-            margin-right: -0.25rem;
-            display: inline;
+            margin-right: -0.25em;
             &::after {
                 content: "•";
                 margin: 0 0.5rem;

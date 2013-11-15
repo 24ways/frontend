@@ -15,16 +15,20 @@
 .nav-site {
     overflow: hidden;
     .nav_item {
-        @media screen and (max-width: 31.4375em) {
-            text-align: center;
-            float: left;
-            width: 25%;
+        text-align: center;
+        float: left;
+        width: 25%;
+        @media screen and (min-width: 31.5em) {
+            text-align: left;
+            float: none;
+            width: auto;
         }
     }
     a {
         font-size: 0.8125rem; /* 13px */
         line-height: 1.2308; /* 16px */
-        padding: 0.75rem 0.5rem;
+        padding: 0.9231em 0.6154em; /* 12px 8px */
+        padding: 0.75rem 0.5rem; /* 12px 8px */
         display: block;
         @media screen and (max-width: 31.4375em) {
             border-right: 1px solid whitesmoke;
@@ -55,7 +59,7 @@
         text-transform: uppercase;
         border: solid whitesmoke;
         border-width: 0 1px 1px 0;
-        padding: 1.9375rem 25% 2rem;
+        padding: 1.9375em 25% 2em;
         display: block;
         &::before {
             font-size: 48px;
@@ -100,16 +104,17 @@
         width: 4.5rem;
     }
     .nav_item {
+        text-align: left;
+        padding: 1em 0.5em;
+        width: 50%;
+        float: left;
         display: block;
-        @media screen and (max-width: 31.4375em) {
-            padding: 1rem 0.5rem;
-            width: 50%;
-            float: left;
-        }
         @media screen and (min-width: 31.5em) {
             text-align: center;
             border-bottom: 1px solid whitesmoke;
+            width: auto;
             height: 4.5rem;
+            float: none;
         }
     }
     .nav_prev,
@@ -121,14 +126,15 @@
             @media screen and (min-width: 31.5em) {
                 font-size: 48px;
                 font-size: 3rem;
-                line-height: 1.5;
+                line-height: 1;
                 display: block;
             }
         }
     }
     .nav_next {
-        @media screen and (max-width: 31.4375em) {
-            text-align: right;
+        text-align: right;
+        @media screen and (min-width: 31.5em) {
+            text-align: center;
         }
     }
 }
