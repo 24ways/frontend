@@ -9,9 +9,9 @@
     <main class="main" role="main">
         <section class="index">
             <header class="preface">
-                <h1 class="preface_title" data-icon="&#xe607;">Design</h1>
+                <h1 class="preface_title" data-icon="&#x2654;">Business</h1>
                 <div class="preface_main">
-                    <p class="lede">Visual communication, art direction. Web layouts and typography. Graphic design, interface design, user experience design, illustration, photography, artwork. Creative, strategic, and technical approaches to crafting great interfaces. Visual styles, influences, and trends.</p>
+                    <p class="lede">Where there&#8217;s muck, there are clients, deliverables and contracts. Occasionally, there&#8217;s brass. Here are articles on developing and improving relationships with clients; managing projects, both business and personal; writing contracts and presenting your work; and encouraging success and avoiding failure.</p>
                 </div>
             </header><!--/.preface-->
 
