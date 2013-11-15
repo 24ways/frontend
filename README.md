@@ -1,11 +1,11 @@
 # Don't forget...
 
 ## HTML
-* Refactor navigation (esp. on smaller viewports, wide screen touch affordances)
-* X-browser experience (i.e. agents that don't support media queries)
+* Refactor navigation for smaller viewports
 * Favicons/metadata review
 
 ## CSS
+* Browsers that don't support media queries
 * Rems v Pixels
 * Height-based media queries
 * Form validation styles
@@ -22,3 +22,4 @@
 * -Content warning (**need bespoke copy**)-
 * -Perch promos-
 * -Integrate search form-
+* -Browsers that don't support icon fonts-
