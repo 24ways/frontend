@@ -1,5 +1,5 @@
 sethrefs = function () {
-    if (document.querySelectorAll) {
+    if (document.querySelector && window.addEventListener) {
         var datahrefs = document.querySelectorAll('[data-href]'),
             dhcount = datahrefs.length;
 
