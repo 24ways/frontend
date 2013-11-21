@@ -2,6 +2,7 @@
 <? $title = "Starting Your HTML5 Project on the Right Foot (and Keeping It There)"; ?>
 <? $section = "article"; ?>
 <? $traverse = true; ?>
+<? if( !$ajax ) : ?>
 <? inc('partial','head') ?>
 <? inc('partial','banner') ?>
 <? inc('partial','menu') ?>
@@ -15,6 +16,7 @@
                     by Drew McLellen
                 </a>
             </header>
+<? endif ?>
 
             <section class="section" id="comments">
                 <header class="section_header">
@@ -85,8 +87,11 @@
                 </fieldset><!--/.section-->
             </form>
         </article><!--/.article-->
+
+<? if( !$ajax ) : ?>
     </main><!--/@main-->
 
 <?  inc('partial','navigation') ?>
 <?  inc('partial','contentinfo') ?>
 <?  inc('partial','foot') ?>
+<? endif ?>

@@ -5,6 +5,8 @@ ini_set('display_errors', 1);
 include_once($_SERVER['DOCUMENT_ROOT'].'/_inc/vendor/paulrobertlloyd/barebones/barebones.inc.php');
 include_once($_SERVER['DOCUMENT_ROOT'].'/_inc/vendor/leafo/lessphp/lessc.inc.php');
 
+$ajax = (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest');
+
 function lesscss($input, $output) {
     // Setup LESS compiler
     $inputFile = $_SERVER['DOCUMENT_ROOT'].$input;

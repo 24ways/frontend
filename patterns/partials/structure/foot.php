@@ -4,14 +4,12 @@
 
     <script src="/_assets/js/vendor/filamentgroup/shoestring/shoestring.js"></script>
     <script>jQuery = shoestring;</script>
+    <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script-->
     <script src="/_assets/js/vendor/filamentgroup/ajaxinclude/ajaxinclude.js"></script>
     <script>
-        $("[data-replace]").bind("click", function(e) {
+        $("a[data-replace]").bind( "click", function(e) {
             e.preventDefault();
-            $(this)
-                .not("[data-interacted]")
-                .ajaxInclude()
-                .attr("data-interacted", "true")
+            $(this).removeAttr("data-interaction").ajaxInclude();
         });
     </script>
 </body>
