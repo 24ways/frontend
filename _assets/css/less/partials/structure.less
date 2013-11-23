@@ -2,50 +2,50 @@
    Banner
    ========================================================================== */
 .banner {
-    text-transform: uppercase;
-    background-color: lightgrey;
-    padding: 0.875em 1em; /* 14px 16px */
-    height: 3rem; /* 48p */
-    transition: background-color .2s ease-out;
-    @media screen and (max-width: 31.4375em) {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 9;
-    }
-    @media screen and (min-width: 31.5em) {
-        padding: 1.5rem 1rem;
-        height: 4.5rem; /* 72px */
-    }
-    @media screen and (min-width: 50em) {
-        padding-left: 25%;
-    }
+	text-transform: uppercase;
+	background-color: lightgrey;
+	padding: 0.875em 1em; /* 14px 16px */
+	height: 3rem; /* 48p */
+	transition: background-color .2s ease-out;
+	@media screen and (max-width: 31.4375em) {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 9;
+	}
+	@media screen and (min-width: 31.5em) {
+		padding: 1.5rem 1rem;
+		height: 4.5rem; /* 72px */
+	}
+	@media screen and (min-width: 50em) {
+		padding-left: 25%;
+	}
 }
 .js-menu-active {
-    .banner {
-        @media screen and (max-width: 31.4375em) {
-            background-color: #fff;
-        }
-    }
+	.banner {
+		@media screen and (max-width: 31.4375em) {
+			background-color: #fff;
+		}
+	}
 }
 
 .banner_logo {
-    font-size: 1.25em;
-    line-height: 1;
-    letter-spacing: 0;
-    margin: 0;
-    @media screen and (min-width: 31.5em) {
-        font-size: 1.5em;
-    }
-    @media screen and (min-width: 50em) {
-        margin-left: 1rem;
-    }
-    span {
-        font-size: 0.6667em;
-        text-transform: lowercase;
-        opacity: 0.6;
-    }
+	font-size: 1.25em;
+	line-height: 1;
+	letter-spacing: 0;
+	margin: 0;
+	@media screen and (min-width: 31.5em) {
+		font-size: 1.5em;
+	}
+	@media screen and (min-width: 50em) {
+		margin-left: 1rem;
+	}
+	span {
+		font-size: 0.6667em;
+		text-transform: lowercase;
+		opacity: 0.6;
+	}
 }
 
 
@@ -53,36 +53,36 @@
    Menu
    ========================================================================== */
 .menu {
-    font: 0/0 a;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 999;
-    overflow: hidden;
-    @media screen and (min-width: 31.5em) {
-        width: 4.5rem; /* 72px */
-        height: 4.5rem; /* 72px */
-    }
-    &::before {
-        font-size: 3rem; /* 48px */
-        display: block;
-        @media screen and (min-width: 31.5em) {
-            line-height: 1.5;
-        }
-    }
+	font: 0/0 a;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 999;
+	overflow: hidden;
+	@media screen and (min-width: 31.5em) {
+		width: 4.5rem; /* 72px */
+		height: 4.5rem; /* 72px */
+	}
+	&::before {
+		font-size: 3rem; /* 48px */
+		display: block;
+		@media screen and (min-width: 31.5em) {
+			line-height: 1.5;
+		}
+	}
 }
 .js-enhanced {
-    .menu {
-        position: fixed;
-    }
+	.menu {
+		position: fixed;
+	}
 }
 .js-menu-active {
-    .menu {
-        &::before {
-            content: "\2573";
-        }
-    }
+	.menu {
+		&::before {
+			content: "\2573";
+		}
+	}
 }
 
 
@@ -90,25 +90,25 @@
    Main
    ========================================================================== */
 [role="main"] {
-    background-color: #f3f3f3;
+	background-color: #f3f3f3;
 }
 
 .js-enhanced [role="banner"],
 .js-enhanced [role="main"],
 .js-enhanced [role="contentinfo"] {
-    transition: all .2s ease-in;
+	transition: all .2s ease-in;
 }
 
 .js-menu-active [role="main"],
 .js-menu-active [role="contentinfo"] {
-    -webkit-filter: brightness(0.75);
-    filter: brightness(0.75);
+	-webkit-filter: brightness(0.75);
+	filter: brightness(0.75);
 }
 @media screen and (min-width: 31.5em) {
-    .js-menu-active [role="banner"] {
-        -webkit-filter: brightness(0.75);
-        filter: brightness(0.75);
-    }
+	.js-menu-active [role="banner"] {
+		-webkit-filter: brightness(0.75);
+		filter: brightness(0.75);
+	}
 }
 
 
@@ -116,84 +116,84 @@
    Navigation
    ========================================================================== */
 .navigation {
-    background-color: #fff;
-    right: 0;
-    z-index: 9;
-    position: relative;
-    @media screen and (max-width: 31.4375em) {
-        transition: max-height .2s ease-out;
-    }
-    @media screen and (min-width: 31.5em) {
-        transition: width .2s ease-out;
-    }
-    .nav-site {
-        @media screen and (min-width: 31.5em) {
-            width: 4.5rem; /* 72px */
-            position: fixed;
-            right: 0;
-            bottom: 0;
-        }
-    }
-    .nav-top {
-        position: fixed;
-        bottom: 9rem; /* 144px */
-        right: 0;
-        z-index: 9;
-        display: none;
-        @media screen and (min-width: 31.5em) {
-            display: block;
-        }
-    }
-    .nav-traverse {
-        @media screen and (min-width: 31.5em) {
-            position: absolute;
-            right: 0;
-            top: 4.5rem; /* 72px */
-            z-index: 9;
-        }
-    }
+	background-color: #fff;
+	right: 0;
+	z-index: 9;
+	position: relative;
+	@media screen and (max-width: 31.4375em) {
+		transition: max-height .2s ease-out;
+	}
+	@media screen and (min-width: 31.5em) {
+		transition: width .2s ease-out;
+	}
+	.nav-site {
+		@media screen and (min-width: 31.5em) {
+			width: 4.5rem; /* 72px */
+			position: fixed;
+			right: 0;
+			bottom: 0;
+		}
+	}
+	.nav-top {
+		position: fixed;
+		bottom: 9rem; /* 144px */
+		right: 0;
+		z-index: 9;
+		display: none;
+		@media screen and (min-width: 31.5em) {
+			display: block;
+		}
+	}
+	.nav-traverse {
+		@media screen and (min-width: 31.5em) {
+			position: absolute;
+			right: 0;
+			top: 4.5rem; /* 72px */
+			z-index: 9;
+		}
+	}
 }
 
 .js-enhanced {
-    .navigation {
-        overflow: hidden;
-        @media screen and (max-width: 31.4375em) {
-            position: fixed;
-            top: 3rem; /* 48px */
-            width: 100%;
-            max-height: 0;
-        }
-        @media screen and (min-width: 31.5em) {
-            margin: 0;
-            padding: 4.5rem 4.5rem 0 0; /* 72px 0 0 0 */
-            width: 4.5em; /* 72px */
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-        }
-        .nav-topics {
-            .nav_item {
-                @media screen and (min-width: 31.5em) {
-                    width: 50%;
-                }
-            }
-        }
-    }
+	.navigation {
+		overflow: hidden;
+		@media screen and (max-width: 31.4375em) {
+			position: fixed;
+			top: 3rem; /* 48px */
+			width: 100%;
+			max-height: 0;
+		}
+		@media screen and (min-width: 31.5em) {
+			margin: 0;
+			padding: 4.5rem 4.5rem 0 0; /* 72px 0 0 0 */
+			width: 4.5em; /* 72px */
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
+		.nav-topics {
+			.nav_item {
+				@media screen and (min-width: 31.5em) {
+					width: 50%;
+				}
+			}
+		}
+	}
 }
 
 .js-menu-active {
-    .navigation {
-        z-index: 9;
-        @media screen and (max-width: 31.4375em) {
-            box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
-            max-height: 30rem; /* 320px */
-        }
-        @media screen and (min-width: 31.5em) {
-            box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
-            width: 22.5em; /* 360px */
-        }
-    }
+	.navigation {
+		z-index: 9;
+		@media screen and (max-width: 31.4375em) {
+			box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+			max-height: 30rem; /* 320px */
+		}
+		@media screen and (min-width: 31.5em) {
+			box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+			width: 22.5em; /* 360px */
+		}
+	}
 }
 
 
@@ -201,44 +201,44 @@
    Search
    ========================================================================== */
 .search .field_label {
-    &::before {
-        line-height: 1.5;
-        text-align: center;
-        width: 4rem; /* 64px */
-        height: 4.5rem; /* 72px */
-    }
+	&::before {
+		line-height: 1.5;
+		text-align: center;
+		width: 4rem; /* 64px */
+		height: 4.5rem; /* 72px */
+	}
 }
 
 .js-enhanced {
-    @media screen and (min-width: 31.5em) {
-        .navigation .search {
-            width: 18rem; /* 288px */
-            position: absolute;
-            top: 0;
-            right: 4.5rem; /* 72px */
-        }
-    }
+	@media screen and (min-width: 31.5em) {
+		.navigation .search {
+			width: 18rem; /* 288px */
+			position: absolute;
+			top: 0;
+			right: 4.5rem; /* 72px */
+		}
+	}
 }
 
 .search .field_input {
-    background-color: whitesmoke;
-    padding-left: 4rem; /* 64px */
-    width: 100%;
-    height: 4.5rem; /* 72px */
-    &:focus {
-        outline: 0 none;
-        box-shadow: inset 0 0 2px 0 rgba(0,0,0,0.25);
-    }
+	background-color: whitesmoke;
+	padding-left: 4rem; /* 64px */
+	width: 100%;
+	height: 4.5rem; /* 72px */
+	&:focus {
+		outline: 0 none;
+		box-shadow: inset 0 0 2px 0 rgba(0,0,0,0.25);
+	}
 }
 .search .field_button {
-    font: 0/0 a;
-    background: transparent;
-    width: 4rem; /* 64px */
-    height: 4.5rem; /* 72px */
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
+	font: 0/0 a;
+	background: transparent;
+	width: 4rem; /* 64px */
+	height: 4.5rem; /* 72px */
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
 }
 
 
@@ -246,33 +246,33 @@
    Content Info
    ========================================================================== */
 .contentinfo {
-    .caption();
-    background-color: #e3e3e3;
-    padding: 0.625rem 1rem; /* 10px 16px */
-    clear: left;
-    overflow: hidden;
-    small {
-        font-size: 100%;
-    }
+	.caption();
+	background-color: #e3e3e3;
+	padding: 0.625rem 1rem; /* 10px 16px */
+	clear: left;
+	overflow: hidden;
+	small {
+		font-size: 100%;
+	}
 }
 
 .contentinfo_copyright {
-    @media screen and (min-width: 37.5em) {
-        margin: 0;
-        float: left;
-    }
+	@media screen and (min-width: 37.5em) {
+		margin: 0;
+		float: left;
+	}
 }
 
 .contentinfo_social {
-    @media screen and (min-width: 37.5em) {
-        margin: 0;
-        float: right;
-    }
-    a {
-        margin: 0 1em 0 0;
-        @media screen and (min-width: 37.5em) {
-            margin: 0 0 0 1em;
-            float: right;
-        }
-    }
+	@media screen and (min-width: 37.5em) {
+		margin: 0;
+		float: right;
+	}
+	a {
+		margin: 0 1em 0 0;
+		@media screen and (min-width: 37.5em) {
+			margin: 0 0 0 1em;
+			float: right;
+		}
+	}
 }

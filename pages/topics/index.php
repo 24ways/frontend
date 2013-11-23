@@ -5,20 +5,20 @@
 <? inc('partial','banner') ?>
 <? inc('partial','menu') ?>
 
-    <main class="main" role="main">
-        <section class="index">
-            <header class="preface">
-                <h1 class="preface_title">Topics</h1>
-            </header><!--/.preface-->
+	<main class="main" role="main">
+		<section class="index">
+			<header class="preface">
+				<h1 class="preface_title">Topics</h1>
+			</header><!--/.preface-->
 
-<?          inc('partial','section-topic') ?>
-<?          inc('partial','section-topic') ?>
-<?          inc('partial','section-topic') ?>
-<?          inc('partial','section-topic') ?>
-<?          inc('partial','section-topic') ?>
-<?          inc('partial','section-topic') ?>
-        </section><!--/.index-->
-    </main><!--/@main-->
+<?		  inc('partial','section-topic') ?>
+<?		  inc('partial','section-topic') ?>
+<?		  inc('partial','section-topic') ?>
+<?		  inc('partial','section-topic') ?>
+<?		  inc('partial','section-topic') ?>
+<?		  inc('partial','section-topic') ?>
+		</section><!--/.index-->
+	</main><!--/@main-->
 
 <?  inc('partial','navigation') ?>
 <?  inc('partial','contentinfo') ?>

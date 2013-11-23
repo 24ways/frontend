@@ -1,11 +1,11 @@
 /* All navigation */
 .nav {
-    list-style-type: none;
-    margin: 0;
-    .nav_item a:hover,
-    .nav_item:hover {
-        background-color: #ffc;
-    }
+	list-style-type: none;
+	margin: 0;
+	.nav_item a:hover,
+	.nav_item:hover {
+		background-color: #ffc;
+	}
 }
 
 
@@ -13,31 +13,31 @@
    Navigate site
    ========================================================================== */
 .nav-site {
-    overflow: hidden;
-    .nav_item {
-        text-align: center;
-        float: left;
-        width: 25%;
-        @media screen and (min-width: 31.5em) {
-            text-align: left;
-            float: none;
-            width: auto;
-        }
-    }
-    a {
-        font-size: 0.8125rem; /* 13px */
-        line-height: 1.2308; /* 16px */
-        padding: 0.9231em 0.6154em; /* 12px 8px */
-        padding: 0.75rem 0.5rem; /* 12px 8px */
-        display: block;
-        @media screen and (max-width: 31.4375em) {
-            border-right: 1px solid whitesmoke;
-        }
-        @media screen and (min-width: 31.5em) {
-            border-top: 1px solid whitesmoke;
-            padding: 0.5625rem 0.5rem 0.625rem; /* 9px 8px 10px */
-        }
-    }
+	overflow: hidden;
+	.nav_item {
+		text-align: center;
+		float: left;
+		width: 25%;
+		@media screen and (min-width: 31.5em) {
+			text-align: left;
+			float: none;
+			width: auto;
+		}
+	}
+	a {
+		font-size: 0.8125rem; /* 13px */
+		line-height: 1.2308; /* 16px */
+		padding: 0.9231em 0.6154em; /* 12px 8px */
+		padding: 0.75rem 0.5rem; /* 12px 8px */
+		display: block;
+		@media screen and (max-width: 31.4375em) {
+			border-right: 1px solid whitesmoke;
+		}
+		@media screen and (min-width: 31.5em) {
+			border-top: 1px solid whitesmoke;
+			padding: 0.5625rem 0.5rem 0.625rem; /* 9px 8px 10px */
+		}
+	}
 }
 
 
@@ -45,30 +45,30 @@
    Navigate topics
    ========================================================================== */
 .nav-topics {
-    border-top: 1px solid whitesmoke;
-    overflow: hidden;
-    .nav_item {
-        float: left;
-        width: 33.3333%;
-        @media screen and (min-width: 50em) {
-            width: 16.6667%;
-        }
-    }
-    a {
-        text-align: center;
-        text-transform: uppercase;
-        border: solid whitesmoke;
-        border-width: 0 1px 1px 0;
-        padding: 1.9375em 25% 2em;
-        display: block;
-        &::before {
-            font-size: 48px;
-            font-size: 3rem;
-            line-height: 1;
-            margin-bottom: 0.5rem;
-            display: block;
-        }
-    }
+	border-top: 1px solid whitesmoke;
+	overflow: hidden;
+	.nav_item {
+		float: left;
+		width: 33.3333%;
+		@media screen and (min-width: 50em) {
+			width: 16.6667%;
+		}
+	}
+	a {
+		text-align: center;
+		text-transform: uppercase;
+		border: solid whitesmoke;
+		border-width: 0 1px 1px 0;
+		padding: 1.9375em 25% 2em;
+		display: block;
+		&::before {
+			font-size: 48px;
+			font-size: 3rem;
+			line-height: 1;
+			margin-bottom: 0.5rem;
+			display: block;
+		}
+	}
 }
 
 
@@ -76,21 +76,21 @@
    Navigate back to top
    ========================================================================== */
 .nav-top {
-    font: 0/0 a;
-    text-align: center;
-    margin: 0;
-    border-top: 1px solid whitesmoke;
-    padding: 0;
-    width: 4.5rem; /* 72px */
-    height: 4.5rem; /* 72px */
-    overflow: hidden;
-    &::before {
-        font-size: 48px;
-        font-size: 3rem;
-        line-height: 1;
-        padding: 0.75rem;
-        display: block;
-    }
+	font: 0/0 a;
+	text-align: center;
+	margin: 0;
+	border-top: 1px solid whitesmoke;
+	padding: 0;
+	width: 4.5rem; /* 72px */
+	height: 4.5rem; /* 72px */
+	overflow: hidden;
+	&::before {
+		font-size: 48px;
+		font-size: 3rem;
+		line-height: 1;
+		padding: 0.75rem;
+		display: block;
+	}
 }
 
 
@@ -98,43 +98,43 @@
    Traverse articles and indices
    ========================================================================== */
 .nav-traverse {
-    border-top: 1px solid whitesmoke;
-    overflow: hidden;
-    @media screen and (min-width: 31.5em) {
-        width: 4.5rem;
-    }
-    .nav_item {
-        text-align: left;
-        padding: 1em 0.5em;
-        width: 50%;
-        float: left;
-        display: block;
-        @media screen and (min-width: 31.5em) {
-            text-align: center;
-            border-bottom: 1px solid whitesmoke;
-            width: auto;
-            height: 4.5rem;
-            float: none;
-        }
-    }
-    .nav_prev,
-    .nav_next {
-        @media screen and (min-width: 31.5em) {
-            font: 0/0 a;
-        }
-        &::before {
-            @media screen and (min-width: 31.5em) {
-                font-size: 48px;
-                font-size: 3rem;
-                line-height: 1;
-                display: block;
-            }
-        }
-    }
-    .nav_next {
-        text-align: right;
-        @media screen and (min-width: 31.5em) {
-            text-align: center;
-        }
-    }
+	border-top: 1px solid whitesmoke;
+	overflow: hidden;
+	@media screen and (min-width: 31.5em) {
+		width: 4.5rem;
+	}
+	.nav_item {
+		text-align: left;
+		padding: 1em 0.5em;
+		width: 50%;
+		float: left;
+		display: block;
+		@media screen and (min-width: 31.5em) {
+			text-align: center;
+			border-bottom: 1px solid whitesmoke;
+			width: auto;
+			height: 4.5rem;
+			float: none;
+		}
+	}
+	.nav_prev,
+	.nav_next {
+		@media screen and (min-width: 31.5em) {
+			font: 0/0 a;
+		}
+		&::before {
+			@media screen and (min-width: 31.5em) {
+				font-size: 48px;
+				font-size: 3rem;
+				line-height: 1;
+				display: block;
+			}
+		}
+	}
+	.nav_next {
+		text-align: right;
+		@media screen and (min-width: 31.5em) {
+			text-align: center;
+		}
+	}
 }
