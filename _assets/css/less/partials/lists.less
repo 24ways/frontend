@@ -1,62 +1,79 @@
 /* All lists: clear floats and remove bullets */
 .list {
-    list-style-type: none;
-    margin: 0;
-    .clear();
+	list-style-type: none;
+	margin: 0;
+	.clear();
+	overflow: hidden;
 }
 
 /* List > Comments */
 .list-comments .list_item {
-    padding: 1px 1px 0 0;
+	padding: 1px 1px 0 0;
 }
 
 /* List > Authors */
 .list-authors .list_item {
-    padding: 1px 1px 0 0;
-    width: 33.3334%;
-    float: left;
-    @media screen and (min-width: 60em) {
-        width: 25%;
-    }
-    @media screen and (min-width: 80em) {
-        width: 20%;
-    }
+	padding: 1px 1px 0 0;
+	width: 33.3334%;
+	float: left;
+	@media screen and (min-width: 60em) {
+		width: 25%;
+	}
+	@media screen and (min-width: 80em) {
+		width: 20%;
+	}
 }
 
 /* List > Articles */
 .list-articles .list_item {
-    padding: 1px 1px 0 0;
-    @media screen and (min-width: 40em) {
-        width: 50%;
-        float: left
-    }
-    @media screen and (min-width: 50em) {
-        width: 33.3334%;
-    }
-    @media screen and (min-width: 60em) {
-        width: 25%;
-    }
+	padding: 1px 1px 0 0;
+	
+	@media screen and (min-width: 40em) and (max-width: 49.9375em) {
+		width: 50%;
+		float: left;
+		&:nth-child(2n+1) {
+			clear: left;
+		}
+	}
+	@media screen and (min-width: 50em) and (max-width: 59.9375em) {
+		width: 33.3334%;
+		float: left;
+		&:nth-child(3n+1) {
+			clear: left;
+		}
+	}
+	@media screen and (min-width: 60em) {
+		width: 25%;
+		float: left;
+		&:nth-child(4n+1) {
+			clear: left;
+		}
+	}
+}
+.list-articles .summary-article {
+	padding-bottom: 10em;
+	margin-bottom: -10em;
 }
 
 /* List > Articles and authors within a section */
 .section {
-    .list-articles,
-    .list-authors {
-        @media screen and (min-width: 50em) {
-            margin-right: -7%;
-        }
-        @media screen and (min-width: 60em) {
-            margin-right: -25%;
-        }
-    }
-    .list-articles {
-        .list_item {
-            @media screen and (min-width: 50em) {
-                width: 50%;
-            }
-            @media screen and (min-width: 60em) {
-                width: 33.3334%;
-            }
-        }
-    }
+	.list-articles,
+	.list-authors {
+		@media screen and (min-width: 50em) {
+			margin-right: -7%;
+		}
+		@media screen and (min-width: 60em) {
+			margin-right: -25%;
+		}
+	}
+	.list-articles {
+		.list_item {
+			@media screen and (min-width: 50em) {
+				width: 50%;
+			}
+			@media screen and (min-width: 60em) {
+				width: 33.3334%;
+			}
+		}
+	}
 }
