@@ -1,17 +1,17 @@
 (function(win, doc) {
-    if (enhanced === false) return;
+	if (enhanced === false) return;
 
-    var toggleClassName = function(element, toggleClass) {
-        var reg = new RegExp('(\\s|^)' + toggleClass + '(\\s|$)');
-        if (!element.className.match(reg)) {
-            element.className += ' ' + toggleClass;
-        } else {
-            element.className = element.className.replace(reg, '');
-        }
-    };
+	var toggleClassName = function(element, toggleClass) {
+		var reg = new RegExp('(\\s|^)' + toggleClass + '(\\s|$)');
+		if (!element.className.match(reg)) {
+			element.className += ' ' + toggleClass;
+		} else {
+			element.className = element.className.replace(reg, '');
+		}
+	};
 
-    doc.querySelector('a[href="#menu"]').addEventListener('click', function(ev) {
-        ev.preventDefault();
-        toggleClassName(doc.body, 'js-menu-active');
-    });
+	doc.querySelector('a[href="#menu"]').addEventListener('click', function(ev) {
+		ev.preventDefault();
+		toggleClassName(doc.body, 'js-menu-active');
+	});
 }(this, this.document));
