@@ -31,31 +31,31 @@
 <?						  inc('partial','summary-comment-unhelpful') ?>
 						</li>
 						<li class="list_item">
-<?						  inc('partial','summary-comment-helpful') ?>
+<?							inc('partial','summary-comment-helpful') ?>
 						</li>
 						<li class="list_item">
-<?						  inc('partial','summary-comment-helpful') ?>
+<?							inc('partial','summary-comment-helpful') ?>
 						</li>
 						<li class="list_item">
-<?						  inc('partial','summary-comment-helpful') ?>
+<?							inc('partial','summary-comment-helpful') ?>
 						</li>
 						<li class="list_item">
-<?						  inc('partial','summary-comment-helpful') ?>
+<?							inc('partial','summary-comment-helpful') ?>
 						</li>
 						<li class="list_item">
-<?						  inc('partial','summary-comment-helpful') ?>
+<?							inc('partial','summary-comment-helpful') ?>
 						</li>
 						<li class="list_item">
-<?						  inc('partial','summary-comment-helpful') ?>
+<?							inc('partial','summary-comment-helpful') ?>
 						</li>
 						<li class="list_item">
-<?						  inc('partial','summary-comment-helpful') ?>
+<?							inc('partial','summary-comment-helpful') ?>
 						</li>
-					</ol><!--/.list-comments-->
+					</ol>
 				</div>
-			</section><!--/section-->
+			</section>
 
-			<form id="comment" method="post">
+			<form id="comment-form" method="post">
 				<fieldset class="section">
 					<legend class="section_header">
 						<span class="section_title">Impress us</span>
@@ -86,9 +86,9 @@
 					</div>
 				</fieldset><!--/.section-->
 			</form>
-		</article><!--/.article-->
 
 <? if( !$ajax ) : ?>
+		</article><!--/.article-->
 	</main><!--/@main-->
 
 <?  inc('partial','navigation') ?>

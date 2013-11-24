@@ -3,7 +3,7 @@
    ========================================================================== */
 .banner {
 	text-transform: uppercase;
-	background-color: lightgrey;
+	background-color: fade(@signature, 50%);
 	padding: 0.875em 1em; /* 14px 16px */
 	height: 3rem; /* 48p */
 	transition: background-color .2s ease-out;
@@ -40,6 +40,9 @@
 	}
 	@media screen and (min-width: 50em) {
 		margin-left: 1rem;
+	}
+	a {
+		color: #fff;
 	}
 	span {
 		font-size: 0.6667em;
@@ -90,7 +93,7 @@
    Main
    ========================================================================== */
 [role="main"] {
-	background-color: #f3f3f3;
+	//background-color: #f3f3f3;
 }
 
 .js-enhanced [role="banner"],
@@ -246,13 +249,17 @@
    Content Info
    ========================================================================== */
 .contentinfo {
+	color: rgba(0,0,0,0.8);
 	.caption();
-	background-color: #e3e3e3;
+	background-color: fade(@signature, 50%);
 	padding: 0.625rem 1rem; /* 10px 16px */
 	clear: left;
 	overflow: hidden;
 	small {
 		font-size: 100%;
+	}
+	a {
+		color: #fff;
 	}
 }
 

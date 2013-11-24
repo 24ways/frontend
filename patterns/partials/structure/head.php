@@ -35,7 +35,7 @@
 	<meta name="robots" content="index, follow"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="application-name" content="24 ways">
-	<meta name="apple-mobile-web-app-title" content="24 ways">
+	<meta name="apple-mobile-web-app-title" content="24 ways"/>
 	<meta name="twitter:site" content="@24ways">
 	<meta name="twitter:title" content="<?= $GLOBALS['title'] ?>"/>
 	<meta name="twitter:description" content="<?= $GLOBALS['description'] ?>"/>
