@@ -419,13 +419,15 @@
 			position: absolute;
 			right: 0;
 			top: 0;
-			border: 2.25em solid;
-			border-color: rgba(0,0,0,0.02) rgba(0,0,0,0.02) transparent transparent;
+
+			height: 4.5em;
+			width: 4.5em;
+			background: url('gfx/corner.svg') -0.5em 0 no-repeat;
+			background-size: 55em 4.5em;
 		}
 		img {
 			height: 4.5em;
 			width: 4.5em;
-			display: none;
 		}
 		span {
 			.hidden();
@@ -434,10 +436,15 @@
 	&:hover {
 		.summary_author {
 			&::before {
-				border-color: transparent transparent lightgrey lightgrey;
+				animation: corner 0.2s steps(10);
+				animation-fill-mode: forwards;
 			}
-			img {
-				display: block;
+		}
+	}
+	&.js-mouseout {
+		.summary_author {
+			&::before {
+				animation: corner-back 0.2s steps(10);
 			}
 		}
 	}
@@ -449,6 +456,15 @@
 		}
 	}
 }
+@keyframes corner {
+	from { background-position:  -0.5em; }
+	to { background-position: -50.5em; }
+}
+@keyframes corner-back {
+	from { background-position: -50.5em; }
+	to { background-position:  -0.5em; }
+}
+
 
 /* Summary > Author */
 .summary-author {
