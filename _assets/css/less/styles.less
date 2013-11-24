@@ -8,29 +8,29 @@
 }
 
 /* Variables */
-@link: #c03;
-@link-hover: darken(@link, 10%);
-@link-active: lighten(@link, 10%);
-
 @signature: #c03;
 
-@year: hsl(0,75%,50%);
-@year-2005: spin(@year, 000);
-@year-2006: spin(@year, 004);
-@year-2007: spin(@year, 008);
-@year-2008: spin(@year, 012);
-@year-2009: spin(@year, 016);
-@year-2010: spin(@year, 020);
-@year-2011: spin(@year, 024);
-@year-2012: spin(@year, 028);
-@year-2013: spin(@year, 032);
-@year-2014: spin(@year, 036);
-@year-2015: spin(@year, 040);
-@year-2016: spin(@year, 044);
-@year-2017: spin(@year, 048);
-@year-2018: spin(@year, 052);
-@year-2019: spin(@year, 056);
-@year-2020: spin(@year, 060);
+@link: @signature;
+@link-hover: lighten(@link, 10%);
+@link-active: darken(@link-hover, 10%);
+
+@year: @signature;
+@year-2005: spin(@year, -000);
+@year-2006: spin(@year, -004);
+@year-2007: spin(@year, -008);
+@year-2008: spin(@year, -012);
+@year-2009: spin(@year, -016);
+@year-2010: spin(@year, -020);
+@year-2011: spin(@year, -024);
+@year-2012: spin(@year, -028);
+@year-2013: spin(@year, -032);
+@year-2014: spin(@year, -036);
+@year-2015: spin(@year, -040);
+@year-2016: spin(@year, -044);
+@year-2017: spin(@year, -048);
+@year-2018: spin(@year, -052);
+@year-2019: spin(@year, -056);
+@year-2020: spin(@year, -060);
 
 @day: hsl(0,75%,50%);
 @day-24: spin(@day, -000);

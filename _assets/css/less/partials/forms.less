@@ -18,10 +18,18 @@
 	line-height: 1;
 	text-align: center;
 	text-transform: uppercase;
-	background-color: #333;
+	background-color: @link;
 	border: 0 none;
 	padding: 1em 1.5em;
 	display: inline-block;
+	&:hover {
+		color: #fff;
+		background-color: @link-hover;
+	}
+	&:active {
+		color: #fff;
+		background-color: @link-active;
+	}
 }
 
 .button-more {

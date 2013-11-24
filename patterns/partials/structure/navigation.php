@@ -7,7 +7,7 @@
 			<a class="nav_item nav_next" rel="next" href="/pages/YYYY/" title="[YYYY+1]" data-icon="&#x2192;">Next year</a>
 <?		  endif ?>
 <?		  if ($GLOBALS['section'] == "authors"): ?>
-			<a class="nav_item nav_prev" rel="prev" href="/pages/authors/authorname/" title="[Previous Author Name]" data-icon="&#x2039;">Previous author</a>
+			<a class="nav_item nav_prev" rel="prev" href="/pages/authors/authorname/" title="[Previous Author Name]" data-icon="&#x2190;">Previous author</a>
 			<a class="nav_item nav_next" rel="next" href="/pages/authors/authorname/" title="[Next Author Name]" data-icon="&#x2192;">Next author</a>
 <?		  endif ?>
 <?		  if ($GLOBALS['section'] == "topics"): ?>
