@@ -4,7 +4,7 @@
 	margin: 0;
 	.nav_item a:hover,
 	.nav_item:hover {
-		background-color: #ffc;
+		background-color: whitesmoke;
 	}
 }
 
@@ -25,10 +25,9 @@
 		}
 	}
 	a {
-		font-size: 0.8125rem; /* 13px */
+		font-size: 0.8125em; /* 13px */
 		line-height: 1.2308; /* 16px */
-		padding: 0.9231em 0.6154em; /* 12px 8px */
-		padding: 0.75rem 0.5rem; /* 12px 8px */
+		padding: 1.2308em 0.6154em; /* 16px 8px */
 		display: block;
 		@media screen and (max-width: 31.4375em) {
 			border-right: 1px solid whitesmoke;
@@ -55,18 +54,24 @@
 		}
 	}
 	a {
+		font-size: 0.8125rem; /* 13px */
+		line-height: 1.2308; /* 16px */
 		text-align: center;
 		text-transform: uppercase;
 		border: solid whitesmoke;
 		border-width: 0 1px 1px 0;
-		padding: 1.9375em 25% 2em;
+		padding: 1.5385em 25% 1.4615em; /* 20px 25% 19px */
 		display: block;
 		&::before {
-			font-size: 48px;
-			font-size: 3rem;
+			font-size: 32px;
+			font-size: 2rem;
 			line-height: 1;
 			margin-bottom: 0.5rem;
 			display: block;
+			@media screen and (min-width: 31.5em) {
+				font-size: 48px;
+				font-size: 3rem;
+			}
 		}
 	}
 }

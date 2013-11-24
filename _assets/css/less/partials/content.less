@@ -2,8 +2,6 @@
    Preface
    ========================================================================== */
 .preface {
-	color: #222;
-	background: url('gfx/quilt.svg') repeat 50% 50%;
 	padding: 1em;
 	min-height: 12rem;
 	overflow: hidden;
@@ -11,12 +9,12 @@
 		padding-left: 25%;
 	}
 	a {
-		color: white;
+		color: #fff;
 	}
 }
 
 .preface_title {
-	color: #fff;
+	color: @text;
 	.heading();
 	position: relative;
 	&::before {
@@ -31,6 +29,12 @@
 			left: -1.25em;
 			top: 0;
 		}
+	}
+}
+[class*="year-"] {
+	.preface_title {
+		color: #fff;
+		color: rgba(255,255,255,0.33);
 	}
 }
 
@@ -51,6 +55,9 @@
 			top: 6rem;
 			left: 0;
 		}
+	}
+	.lede {
+		color: #eee;
 	}
 }
 
@@ -177,7 +184,6 @@
 	.clear();
 	@media screen and (min-width: 50em) {
 		margin-top: 9rem;
-		//border-top: 1px solid #ccc;
 		padding-left: 25%;
 		padding-right: 5%;
 		min-height: 16rem;
@@ -288,16 +294,15 @@
    Summary
    ========================================================================== */
 .summary {
-	background-color: white;
 	padding: 1em;
 	position: relative;
 }
 
 .summary_title {
 	font-family: 'Merriweather', serif;
-	font-size: 1em;
+	font-size: 1.25em; /* 20px */
 	font-weight: 400;
-	line-height: 1.25; /* 20px */
+	line-height: 1.2; /* 24px */
 	margin: 0;
 	@media screen and (min-width: 40em) {
 		font-size: 1.25rem;
@@ -321,8 +326,14 @@
 		line-height: 1.5; /* 24px */
 	}
 	a {
-		color: inherit;
+		color: @text;
 		font-weight: 700;
+		&:hover {
+			color: @color-hover; // FIX ME
+		}
+		&:active {
+			color: @color-active; // FIX ME
+		}
 	}
 }
 
@@ -332,6 +343,88 @@
 	text-transform: uppercase;
 	a {
 		color: grey;
+	}
+}
+
+/* Summary > Article */
+.summary-article {
+	position: relative;
+	.summary_author {
+		display: none;
+		margin: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		&::before {
+			content: " ";
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 4.5em;
+			width: 4.5em;
+			background: url('gfx/corner.svg') -0.5em 0 no-repeat;
+			background-size: 55em 4.5em;
+			z-index: 0;
+		}
+		img {
+			display: block;
+			height: 4.5em;
+			width: 4.5em;
+		}
+		span {
+			.hidden();
+		}
+	}
+	.summary_header {
+		position: relative;
+		z-index: 1;
+	}
+	.summary_meta {
+		.hidden();
+	}
+	&:hover {
+		.summary_header a {
+			color: @link-hover;
+		}
+		.summary_author {
+			&::before {
+				animation: corner 0.2s steps(10);
+				animation-fill-mode: forwards;
+			}
+		}
+	}
+	&.js-mouseout {
+		.summary_author {
+			&::before {
+				animation: corner-back 0.2s steps(10);
+			}
+		}
+	}
+	.summary_header {
+		@media screen and (min-width: 31.5em) {
+			min-height: 5em;
+		}
+	}
+}
+@keyframes corner {
+	from {
+		background-position:  -0.5em;
+		z-index: 0;
+	}
+	to {
+		background-position: -50.5em;
+		z-index: 1;
+	}
+}
+@keyframes corner-back {
+	from {
+		background-position: -50.5em;
+		z-index: 1;
+	}
+	to {
+		background-position:  -0.5em;
+		z-index: 0;
 	}
 }
 
@@ -406,67 +499,6 @@
 		}
 	}
 }
-
-/* Summary > Article */
-.summary-article {
-	.summary_author {
-		margin: 0;
-		position: absolute;
-		top: 0;
-		right: 0;
-		z-index: 1;
-		&::before {
-			content: " ";
-			display: block;
-			position: absolute;
-			right: 0;
-			top: 0;
-
-			height: 4.5em;
-			width: 4.5em;
-			background: url('gfx/corner.svg') -0.5em 0 no-repeat;
-			background-size: 55em 4.5em;
-		}
-		img {
-			height: 4.5em;
-			width: 4.5em;
-		}
-		span {
-			.hidden();
-		}
-	}
-	&:hover {
-		.summary_author {
-			&::before {
-				animation: corner 0.2s steps(10);
-				animation-fill-mode: forwards;
-			}
-		}
-	}
-	&.js-mouseout {
-		.summary_author {
-			&::before {
-				animation: corner-back 0.2s steps(10);
-			}
-		}
-	}
-	.summary_header {
-		position: relative;
-		z-index: 1;
-		@media screen and (min-width: 40em) {
-			min-height: 6.5em;
-		}
-	}
-}
-@keyframes corner {
-	from { background-position:  -0.5em; }
-	to { background-position: -50.5em; }
-}
-@keyframes corner-back {
-	from { background-position: -50.5em; }
-	to { background-position:  -0.5em; }
-}
-
 
 /* Summary > Author */
 .summary-author {

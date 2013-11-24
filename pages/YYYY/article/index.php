@@ -2,13 +2,13 @@
 <? $title = "Starting Your HTML5 Project on the Right Foot (and Keeping It There)"; ?>
 <? $section = "article"; ?>
 <? $traverse = true; ?>
-<? $theme = "year-2013 day-1"; ?>
+<? $theme = "year-2013"; ?>
 <? inc('partial','head') ?>
 <? inc('partial','banner') ?>
 <? inc('partial','menu') ?>
 
 	<main class="main" role="main">
-		<article class="article h-entry">
+		<article class="article h-entry day-01">
 			<header class="article_header">
 				<h1 class="article_title p-name">Starting Your <abbr>HTML5</abbr> Project on the Right Foot (and Keeping It There)</h1>
 				<p class="article_byline p-author h-card">

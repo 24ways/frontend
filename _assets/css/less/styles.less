@@ -10,8 +10,10 @@
 /* Variables */
 @signature: #c03;
 
-@link: @signature;
-@link-hover: lighten(@link, 10%);
+@text: #494949;
+
+@link: #07a;
+@link-hover: lighten(@link, 20%);
 @link-active: darken(@link-hover, 10%);
 
 @year: @signature;
@@ -32,74 +34,31 @@
 @year-2019: spin(@year, -056);
 @year-2020: spin(@year, -060);
 
-@day: hsl(0,75%,50%);
-@day-24: spin(@day, -000);
-@day-23: spin(@day, -007);
-@day-22: spin(@day, -014);
-@day-21: spin(@day, -021);
-@day-20: spin(@day, -028);
-@day-19: spin(@day, -035);
-@day-18: spin(@day, -042);
-@day-17: spin(@day, -049);
-@day-16: spin(@day, -056);
-@day-15: spin(@day, -063);
-@day-14: spin(@day, -070);
-@day-13: spin(@day, -077);
-@day-12: spin(@day, -084);
-@day-11: spin(@day, -091);
-@day-10: spin(@day, -098);
-@day-9: spin(@day, -105);
-@day-8: spin(@day, -112);
-@day-7: spin(@day, -119);
-@day-6: spin(@day, -126);
-@day-5: spin(@day, -133);
-@day-4: spin(@day, -140);
-@day-3: spin(@day, -147);
-@day-2: spin(@day, -154);
-@day-1: spin(@day, -161);
-
-/* Colours */
-.bb-swatch.year-2005 { background-color: @year-2005; }
-.bb-swatch.year-2006 { background-color: @year-2006; }
-.bb-swatch.year-2007 { background-color: @year-2007; }
-.bb-swatch.year-2008 { background-color: @year-2008; }
-.bb-swatch.year-2009 { background-color: @year-2009; }
-.bb-swatch.year-2010 { background-color: @year-2010; }
-.bb-swatch.year-2011 { background-color: @year-2011; }
-.bb-swatch.year-2012 { background-color: @year-2012; }
-.bb-swatch.year-2013 { background-color: @year-2013; }
-.bb-swatch.year-2014 { background-color: @year-2014; }
-.bb-swatch.year-2015 { background-color: @year-2015; }
-.bb-swatch.year-2016 { background-color: @year-2016; }
-.bb-swatch.year-2017 { background-color: @year-2017; }
-.bb-swatch.year-2018 { background-color: @year-2018; }
-.bb-swatch.year-2019 { background-color: @year-2019; }
-.bb-swatch.year-2020 { background-color: @year-2020; }
-
-.bb-swatch.day-24 { background-color: @day-24; }
-.bb-swatch.day-23 { background-color: @day-23; }
-.bb-swatch.day-22 { background-color: @day-22; }
-.bb-swatch.day-21 { background-color: @day-21; }
-.bb-swatch.day-20 { background-color: @day-20; }
-.bb-swatch.day-19 { background-color: @day-19; }
-.bb-swatch.day-18 { background-color: @day-18; }
-.bb-swatch.day-17 { background-color: @day-17; }
-.bb-swatch.day-16 { background-color: @day-16; }
-.bb-swatch.day-15 { background-color: @day-15; }
-.bb-swatch.day-14 { background-color: @day-14; }
-.bb-swatch.day-13 { background-color: @day-13; }
-.bb-swatch.day-12 { background-color: @day-12; }
-.bb-swatch.day-11 { background-color: @day-11; }
-.bb-swatch.day-10 { background-color: @day-10; }
-.bb-swatch.day-9 { background-color: @day-9; }
-.bb-swatch.day-8 { background-color: @day-8; }
-.bb-swatch.day-7 { background-color: @day-7; }
-.bb-swatch.day-6 { background-color: @day-6; }
-.bb-swatch.day-5 { background-color: @day-5; }
-.bb-swatch.day-4 { background-color: @day-4; }
-.bb-swatch.day-3 { background-color: @day-3; }
-.bb-swatch.day-2 { background-color: @day-2; }
-.bb-swatch.day-1 { background-color: @day-1; }
+@day: hsl(199,60%,50%);
+@day-24: spin(@day, 000);
+@day-23: spin(@day, 007);
+@day-22: spin(@day, 014);
+@day-21: spin(@day, 021);
+@day-20: spin(@day, 028);
+@day-19: spin(@day, 035);
+@day-18: spin(@day, 042);
+@day-17: spin(@day, 049);
+@day-16: spin(@day, 056);
+@day-15: spin(@day, 063);
+@day-14: spin(@day, 070);
+@day-13: spin(@day, 077);
+@day-12: spin(@day, 084);
+@day-11: spin(@day, 091);
+@day-10: spin(@day, 098);
+@day-09: spin(@day, 105);
+@day-08: spin(@day, 112);
+@day-07: spin(@day, 119);
+@day-06: spin(@day, 126);
+@day-05: spin(@day, 133);
+@day-04: spin(@day, 140);
+@day-03: spin(@day, 147);
+@day-02: spin(@day, 154);
+@day-01: spin(@day, 161);
 
 /* Helpers */
 .hidden {
@@ -162,6 +121,7 @@
 @import url("elements/9-disabled.less");
 
 /* Partials */
+@import url("partials/theme.less");
 @import url("partials/content.less");
 @import url("partials/forms.less");
 @import url("partials/lists.less");
@@ -169,4 +129,3 @@
 @import url("partials/nav.less");
 @import url("partials/structure.less");
 @import url("partials/type.less");
-@import url("partials/theme.less");

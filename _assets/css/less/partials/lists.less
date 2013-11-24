@@ -26,11 +26,23 @@
 
 /* List > Articles */
 .list-articles {
-	background-color: rgba(255,255,255,0.75);
+	background-color: white;
 }
 .list-articles .list_item {
-	padding: 1px 1px 0 0;
-	@media screen and (min-width: 40em) and (max-width: 49.9375em) {
+	margin-bottom: 1px;
+	@media screen and (min-width: 31.5em) {
+		margin-bottom: 0;
+		min-height: 20em;
+		position: relative;
+		.summary-article {
+			position: absolute;
+			top: 1px;
+			left: 1px;
+			bottom: 0;
+		}
+	}
+	@media screen and (min-width: 31.5em) and (max-width: 49.9375em) {
+		min-height: 24em;
 		width: 50%;
 		float: left;
 		&:nth-child(2n+1) {
@@ -38,6 +50,7 @@
 		}
 	}
 	@media screen and (min-width: 50em) and (max-width: 59.9375em) {
+		min-height: 32em;
 		width: 33.3334%;
 		float: left;
 		&:nth-child(3n+1) {
@@ -51,10 +64,6 @@
 			clear: left;
 		}
 	}
-}
-.list-articles .summary-article {
-	padding-bottom: 10em;
-	margin-bottom: -10em;
 }
 
 /* List > Articles and authors within a section */
