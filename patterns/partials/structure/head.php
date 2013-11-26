@@ -38,7 +38,7 @@
 	<meta name="apple-mobile-web-app-title" content="24 ways"/>
 	<meta name="twitter:site" content="@24ways">
 	<meta name="twitter:title" content="<?= $GLOBALS['title'] ?>"/>
-	<meta name="twitter:description" content="<?= $GLOBALS['description'] ?>"/>
+	<meta name="twitter:description" content="<?//= $GLOBALS['description'] ?>"/>
 	<meta name="twitter:creator" content="@authorname">
 	<meta name="twitter:card" content="summary">
 

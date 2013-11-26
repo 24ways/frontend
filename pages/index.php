@@ -15,7 +15,7 @@
 				</div>
 			</header><!--/.preface-->
 
-			<ol class="list list-articles" reversed>
+			<ol class="list list-articles list-articles-current" reversed>
 				<li class="list_item">
 					<article class="summary summary-article h-entry day-24" data-href="/pages/YYYY/article/">
 						<header class="summary_header">
@@ -23,7 +23,8 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Science!</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-24T00:00:00+00:00">24 December 2012</time>
+								<time class="dt-published" datetime="2012-12-24T00:00:00+00:00">24 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
@@ -43,11 +44,12 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Monkey Business</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-23T00:00:00+00:00">23 December 2012</time>
+								<time class="dt-published" datetime="2012-12-23T00:00:00+00:00">23 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
-							<p><a href="http://stuffandnonsense.co.uk/">Andy Clarke</a> unpicks issues of cost and value, specifically when clients question our prices. It can be uncomfortable, but there’s always wiggle room. Bear left? Monkey right.</p>
+							<p><a href="http://stuffandnonsense.co.uk/">Andy Clarke</a> unpicks issues of cost and value, specifically when clients question our prices. It can be uncomfortable, but there&#8217;s always wiggle room. Bear left? Monkey right.</p>
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
@@ -63,7 +65,8 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Unwrapping the Wii U Browser</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-22T00:00:00+00:00">22 December 2012</time>
+								<time class="dt-published" datetime="2012-12-22T00:00:00+00:00">22 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
@@ -83,7 +86,8 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Infinite Canvas: Moving Beyond the Page</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-21T00:00:00+00:00">21 December 2012</time>
+								<time class="dt-published" datetime="2012-12-21T00:00:00+00:00">21 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
@@ -103,7 +107,8 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Content Planning Demystified</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-20T00:00:00+00:00">20 December 2012</time>
+								<time class="dt-published" datetime="2012-12-20T00:00:00+00:00">20 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
@@ -123,11 +128,12 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Direction, Distance and Destinations</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-19T00:00:00+00:00">19 December 2012</time>
+								<time class="dt-published" datetime="2012-12-19T00:00:00+00:00">19 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
-							<p><a href="http://suda.co.uk/">Brian Suda</a> packs his compass and map (well, his smartphone) to guide us all home for Christmas. And there’ll be one jolly fellow who’ll find this little web app useful on that annual 24-hour world trip.</p>
+							<p><a href="http://suda.co.uk/">Brian Suda</a> packs his compass and map (well, his smartphone) to guide us all home for Christmas. And there&#8217;ll be one jolly fellow who&#8217;ll find this little web app useful on that annual 24-hour world trip.</p>
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
@@ -143,7 +149,8 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Giving Content Priority with CSS3 Grid Layout</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-18T00:00:00+00:00">18 December 2012</time>
+								<time class="dt-published" datetime="2012-12-18T00:00:00+00:00">18 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
@@ -163,7 +170,8 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Cut Copy Paste</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-17T00:00:00+00:00">17 December 2012</time>
+								<time class="dt-published" datetime="2012-12-17T00:00:00+00:00">17 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
@@ -183,7 +191,8 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">How to Make Your Site Look Half-Decent in Half an Hour</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-16T00:00:00+00:00">16 December 2012</time>
+								<time class="dt-published" datetime="2012-12-16T00:00:00+00:00">16 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
@@ -203,7 +212,8 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">A Harder-Working Class</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-15T00:00:00+00:00">15 December 2012</time>
+								<time class="dt-published" datetime="2012-12-15T00:00:00+00:00">15 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
@@ -224,11 +234,12 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Using Questionnaires for Design Research</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-14T00:00:00+00:00">14 December 2012</time>
+								<time class="dt-published" datetime="2012-12-14T00:00:00+00:00">14 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
-							<p><a href="http://markboultondesign.com/">Emma Boulton</a> doesn’t let a good question about designing and using surveys as part of a project’s research activities go unanswered. Q: Have you been good this year? A: Yes|No. Think carefully. Santa knows the answer.</p>
+							<p><a href="http://markboultondesign.com/">Emma Boulton</a> doesn&#8217;t let a good question about designing and using surveys as part of a project&#8217;s research activities go unanswered. Q: Have you been good this year? A: Yes|No. Think carefully. Santa knows the answer.</p>
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
@@ -244,11 +255,12 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Redesigning the Media Query</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-13T00:00:00+00:00">13 December 2012</time>
+								<time class="dt-published" datetime="2012-12-13T00:00:00+00:00">13 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
-							<p><a href="http://lesjames.com/">Les James</a> proposes an alternative to the fully fluid grid as an approach to responsive layout challenges. Sprinkle on some Sass fairy dust and, providing you’ve been good this year, watch your creation spring to life.</p>
+							<p><a href="http://lesjames.com/">Les James</a> proposes an alternative to the fully fluid grid as an approach to responsive layout challenges. Sprinkle on some Sass fairy dust and, providing you&#8217;ve been good this year, watch your creation spring to life.</p>
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
@@ -264,7 +276,8 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Design Systems</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-12T00:00:00+00:00">12 December 2012</time>
+								<time class="dt-published" datetime="2012-12-12T00:00:00+00:00">12 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
@@ -284,11 +297,12 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Responsive Images: What We Thought We Needed</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-11T00:00:00+00:00">11 December 2012</time>
+								<time class="dt-published" datetime="2012-12-11T00:00:00+00:00">11 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
-							<p><a href="http://paulrobertlloyd.com/">Paul Robert Lloyd</a> engages with the two main approaches to the matter of responsive images and finds them wanting. Could “Bah, humbug!” be a reasonable response to markup excess?</p>
+							<p><a href="http://paulrobertlloyd.com/">Paul Robert Lloyd</a> engages with the two main approaches to the matter of responsive images and finds them wanting. Could &#8220;Bah, humbug!&#8221; be a reasonable response to markup excess?</p>
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
@@ -304,7 +318,8 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Fluent Design through Early Prototyping</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-10T00:00:00+00:00">10 December 2012</time>
+								<time class="dt-published" datetime="2012-12-10T00:00:00+00:00">10 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
@@ -324,7 +339,8 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Should We Be Reactive?</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-09T00:00:00+00:00">09 December 2012</time>
+								<time class="dt-published" datetime="2012-12-09T00:00:00+00:00">9 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
@@ -344,7 +360,8 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Giving CSS Animations and Transitions Their Place</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-08T00:00:00+00:00">08 December 2012</time>
+								<time class="dt-published" datetime="2012-12-08T00:00:00+00:00">8 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
@@ -364,7 +381,8 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Think First, Code Later</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-07T00:00:00+00:00">07 December 2012</time>
+								<time class="dt-published" datetime="2012-12-07T00:00:00+00:00">7 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
@@ -384,11 +402,12 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Flashless Animation</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-06T00:00:00+00:00">06 December 2012</time>
+								<time class="dt-published" datetime="2012-12-06T00:00:00+00:00">6 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
-							<p><a href="http://www.rachelnabors.com/">Rachel Nabors</a> brings together the web’s three Magi – <span class="caps">HTML</span>, <span class="caps">CSS</span> and JavaScript – to create seamless, soundtracked animations in the browser.</p>
+							<p><a href="http://www.rachelnabors.com/">Rachel Nabors</a> brings together the web&#8217;s three Magi – <span class="caps">HTML</span>, <span class="caps">CSS</span> and JavaScript – to create seamless, soundtracked animations in the browser.</p>
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
@@ -404,11 +423,12 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Responsive Responsive Design</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-05T00:00:00+00:00">05 December 2012</time>
+								<time class="dt-published" datetime="2012-12-05T00:00:00+00:00">5 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
-							<p><a href="http://timkadlec.com/">Tim Kadlec</a> broadens the scope of responsive web design to include bandwidth and hardware capabilities. Images too big? Another JS library? It’s time to work off the seasonal weight gain from your responsive website.</p>
+							<p><a href="http://timkadlec.com/">Tim Kadlec</a> broadens the scope of responsive web design to include bandwidth and hardware capabilities. Images too big? Another JS library? It&#8217;s time to work off the seasonal weight gain from your responsive website.</p>
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
@@ -424,7 +444,8 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Colour Accessibility</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-04T00:00:00+00:00">04 December 2012</time>
+								<time class="dt-published" datetime="2012-12-04T00:00:00+00:00">4 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
@@ -444,7 +465,8 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Being Prepared To Contribute</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-03T00:00:00+00:00">03 December 2012</time>
+								<time class="dt-published" datetime="2012-12-03T00:00:00+00:00">3 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
@@ -464,11 +486,12 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">Starting Your Project on the Right Foot (and Keeping It There)</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-02T00:00:00+00:00">02 December 2012</time>
+								<time class="dt-published" datetime="2012-12-02T00:00:00+00:00">2 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
-							<p><a href="http://heckhouse.com/">Bethany Heck</a> slips warming cloves and spices into the web designer’s mulled wine by sharing some of the methods she uses to encourage and maintain creative success in new projects.</p>
+							<p><a href="http://heckhouse.com/">Bethany Heck</a> slips warming cloves and spices into the web designer&#8217;s mulled wine by sharing some of the methods she uses to encourage and maintain creative success in new projects.</p>
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
@@ -484,11 +507,12 @@
 								<a class="u-url" rel="bookmark" href="/pages/YYYY/article/">HTML5 Video Bumpers</a>
 							</h1>
 							<p class="summary_meta">
-								<time class="dt-published" datetime="2012-12-01T00:00:00+00:00">01 December 2012</time>
+								<time class="dt-published" datetime="2012-12-01T00:00:00+00:00">1 <abbr>Dec</abbr></time>
+								<a class="summary_comments" href="/pages/YYYY/article/#comments">6 comments</a>
 							</p>
 						</header>
 						<div class="summary_main">
-							<p><a href="http://allinthehead.com/">Drew McLellan</a> invites you to pull up to the 2012 24 ways bumper, baby, with an neat JavaScript solution to an HTML5 &lt;video&gt; branding problem. And that was “24 ways bumper” not “Christmas jumper”. He has enough of those already.</p>
+							<p><a href="http://allinthehead.com/">Drew McLellan</a> invites you to pull up to the 2012 24 ways bumper, baby, with an neat JavaScript solution to an HTML5 &lt;video&gt; branding problem. And that was &#8220;24 ways bumper&#8221; not &#8220;Christmas jumper&#8221;. He has enough of those already.</p>
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">

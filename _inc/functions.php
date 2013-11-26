@@ -2,8 +2,8 @@
 ini_set('error_reporting', -1);
 ini_set('display_errors', 1);
 
-include_once($_SERVER['DOCUMENT_ROOT'].'/_inc/vendor/paulrobertlloyd/barebones/barebones.inc.php');
-include_once($_SERVER['DOCUMENT_ROOT'].'/_inc/vendor/leafo/lessphp/lessc.inc.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/_inc/vendor/paulrobertlloyd/barebones-php/barebones.inc.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/_inc/vendor/leafo/less-php/lessc.inc.php');
 
 $ajax = (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest');
 
