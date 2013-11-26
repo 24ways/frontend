@@ -217,7 +217,7 @@
 					<h1 class="section_title">11 Comments</h1>
 				</header>
 				<div class="section_main">
-					<p><a href="/pages/YYYY/article/comments.php" data-replace data-interaction data-target="#comments">View readers&#8217; comments on this article</a></p>
+					<p><a href="/pages/YYYY/article/comments" data-replace data-interaction data-target="#comments">View readers&#8217; comments on this article</a></p>
 				</div>
 			</section><!--/.section-->
 
