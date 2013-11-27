@@ -84,17 +84,17 @@ dd > * {
 	margin-top: 0;
 }
 
-figure {
-	margin: 1rem 0; /* 16px 0 */
-	}
-	figure img {
+figure,
+p.image {
+	margin: 2em 0 1em; /* 32px 0 16px */
+	img {
 		max-width: 100%;
 	}
-figcaption {
+}
+figcaption,
+p.image span.caption {
 	color: #666; /* $color-caption */
 	font-size: 0.875rem; /* 14px */
 	line-height: 1.1429; /* 16px */
-}
-blockquote + figcaption: before {
-	content: "\2014";
+	border-bottom: 1px solid #ccc;
 }
