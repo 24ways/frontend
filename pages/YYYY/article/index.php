@@ -252,15 +252,6 @@
 						<li class="list_item">
 <?						  inc('partial','summary-article') ?>
 						</li>
-						<li class="list_item">
-<?						  inc('partial','summary-article') ?>
-						</li>
-						<li class="list_item">
-<?						  inc('partial','summary-article') ?>
-						</li>
-						<li class="list_item">
-<?						  inc('partial','summary-article') ?>
-						</li>
 					</ul><!--/.list-articles-->
 				</div>
 			</section><!--/.section-->
