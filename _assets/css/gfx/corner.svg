@@ -2,27 +2,25 @@
 	<defs>
 		<path id="a" d="M8,0 L0,0 L0,80 L80,80 L80,72 L8,0 Z" fill="#FFF"></path>
 	</defs>
-	<!--g transform="scale(1, -1) translate(0, -72)"-->
-		<use x="0" y="0" xlink:href="#a"/>
-		<use x="80" y="0" xlink:href="#a"/>
-		<use x="160" y="0" xlink:href="#a"/>
-		<use x="240" y="0" xlink:href="#a"/>
-		<use x="320" y="0" xlink:href="#a"/>
-		<use x="400" y="0" xlink:href="#a"/>
-		<use x="480" y="0" xlink:href="#a"/>
-		<use x="560" y="0" xlink:href="#a"/>
-		<use x="640" y="0" xlink:href="#a"/>
-		<use x="720" y="0" xlink:href="#a"/>
-		<use x="800" y="0" xlink:href="#a"/>
-		<path d="M7.5,0 L80,0 L80,72.5 L7.5,0 Z" fill="#F9F9F9"></path>
-		<path d="M88,0 L152,8 L160,72 L88,0 Z" fill="#ECECEC"></path>
-		<path d="M168,0 L224,14 L240,72 L168,0 Z" fill="#E3E3E3"></path>
-		<path d="M248,0 L298,22 L320,72 L248,0 Z" fill="#D9D9D9"></path>
-		<path d="M328,0 L371.2,28 L400,72 L328,0 Z" fill="#CCC"></path>
-		<path d="M488,0 L516.8,44 L560,72 L488,0 Z" fill="#900"></path>
-		<path d="M568,0 L589.6,50 L640,72 L568,0 Z" fill="#A5000B"></path>
-		<path d="M648,0 L662.4,58 L720,72 L648,0 Z" fill="#B30019"></path>
-		<path d="M728,0 L736,64 L800,72 L728,0 Z" fill="#BF0026"></path>
-		<path d="M808,0 L808,72 L880,72 L808,0 Z" fill="#C03"></path>
-		<!--/g-->
+	<use x="0" y="0" xlink:href="#a"/>
+	<use x="80" y="0" xlink:href="#a"/>
+	<use x="160" y="0" xlink:href="#a"/>
+	<use x="240" y="0" xlink:href="#a"/>
+	<use x="320" y="0" xlink:href="#a"/>
+	<use x="400" y="0" xlink:href="#a"/>
+	<use x="480" y="0" xlink:href="#a"/>
+	<use x="560" y="0" xlink:href="#a"/>
+	<use x="640" y="0" xlink:href="#a"/>
+	<use x="720" y="0" xlink:href="#a"/>
+	<use x="800" y="0" xlink:href="#a"/>
+	<path d="M7.5,0 L80,0 L80,72.5 L7.5,0 Z" fill="#F9F9F9"></path>
+	<path d="M88,0 L152,8 L160,72 L88,0 Z" fill="#ECECEC"></path>
+	<path d="M168,0 L224,14 L240,72 L168,0 Z" fill="#E3E3E3"></path>
+	<path d="M248,0 L298,22 L320,72 L248,0 Z" fill="#D9D9D9"></path>
+	<path d="M328,0 L371.2,28 L400,72 L328,0 Z" fill="#CCC"></path>
+	<path d="M488,0 L516.8,44 L560,72 L488,0 Z" fill="#900"></path>
+	<path d="M568,0 L589.6,50 L640,72 L568,0 Z" fill="#A5000B"></path>
+	<path d="M648,0 L662.4,58 L720,72 L648,0 Z" fill="#B30019"></path>
+	<path d="M728,0 L736,64 L800,72 L728,0 Z" fill="#BF0026"></path>
+	<path d="M808,0 L808,72 L880,72 L808,0 Z" fill="#C03"></path>
 </svg>

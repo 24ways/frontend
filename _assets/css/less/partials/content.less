@@ -5,7 +5,7 @@
 	padding: 1em;
 	min-height: 12rem;
 	overflow: hidden;
-	background: url('gfx/diamond.svg') repeat 50% 50%;
+	background: url('gfx/diamond.svg') repeat;
 	@media screen and (min-width: 50em) {
 		padding-left: 25%;
 	}
@@ -170,7 +170,6 @@
    Article
    ========================================================================== */
 .article {
-	//background-color: rgba(255,255,255,0.95);
 	position: relative;
 	@media screen and (min-width: 50em) {
 		padding-top: 9rem;
@@ -247,7 +246,9 @@
 		font-size: 125%;
 		padding-right: 15%;
 	}
-
+	li {
+		margin: 0.25em 0; /* 4px 0 */
+	}
 }
 
 .article_footer {

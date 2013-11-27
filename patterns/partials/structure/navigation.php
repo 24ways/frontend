@@ -44,6 +44,4 @@
 			<li class="nav_item<? if ($GLOBALS['section'] == "authors"): ?> is-active<? endif ?>"><a href="/pages/authors/">Authors</a></li>
 			<li class="nav_item<? if ($GLOBALS['section'] == "about"): ?> is-active<? endif ?>"><a href="/pages/about/">About</a></li>
 		</ul><!--/.nav-site-->
-
-		<a class="nav nav-top" href="#top" data-icon="&#x2303;">Return to the top of this page</a>
 	</nav><!--/@navigation-->
