@@ -8,7 +8,8 @@ p, pre, blockquote, ul, ol, dl, figure, table, fieldset, details {
 }
 
 pre {
-	line-height: 1.25; /* 24px */
+	font-size: 0.875rem; /* 14px */
+	line-height: 1.7143; /* 24px */
 	white-space: pre;
 	tab-size: 4;
 	hyphens: none;
@@ -25,10 +26,14 @@ blockquote {
 	p {
 		font-family: 'Merriweather', serif;
 		font-weight: 300;
-		font-size: 1.5em; /* 20px */
-		line-height: 1.5; /* 24px */
+		font-size: 1.25em; /* 20px */
+		line-height: 1.4; /* 28px */
 		letter-spacing: -0.0625rem; /* -1px */
 		margin: 0.5rem 0; /* 8px 0 */
+		@media screen and (min-width: 50em) {
+			//font-size: 1.5em; /* 24px */
+			//line-height: 1.5; /* 36px */
+		}
 	}
 	p cite {
 		font-size: 1rem;
@@ -59,6 +64,10 @@ ul {
 	ul {
 		list-style-position: outside;
 	}
+}
+
+li {
+	margin: 0.25em 0; /* 4px 0 */
 }
 
 ul li li {
