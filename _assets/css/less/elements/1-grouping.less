@@ -18,7 +18,7 @@ pre {
 }
 
 blockquote {
-	border-left: 0.25em solid fade(@text, 20%); /* $color */
+	border-left: 0.25em solid fade(@text, 20%);
 	padding-left: 0.75rem; /* 12px */
 	margin: 2em 0 2em -1em;
 
@@ -96,6 +96,7 @@ p.image span.caption {
 	color: #666; /* $color-caption */
 	font-size: 0.875rem; /* 14px */
 	line-height: 1.1429; /* 16px */
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid fade(@text, 20%);
+	padding-bottom: 0.5714em; /* 8px */
 	display: block;
 }
