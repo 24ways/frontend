@@ -41,6 +41,11 @@
 				<h2>Adding bumpers to a video</h2>
 				<p>The simplest way to add bumpers to a video would be to edit them on to the start and end of the video file itself. Cooking the bumpers into the video file is easy, but should you ever want to update them it can become a real headache. If the branding needs updating, for example, you&#8217;d need to re-edit and re-encode all your videos. Not a fun task.</p>
 				<p>What if the bumpers could be added dynamically? That would enable you to use the same bumper for multiple videos (decreasing download time for users who might watch more than one) and to update the bumpers whenever you wanted. You could change them seasonally, update them for special promotions, run different advertising slots, perform multivariate testing, or even target different bumpers to different users.</p>
+				<blockquote>
+					<p>The responsive projects I&#8217;ve worked on have had a lot of success combining design and development into one hybrid phase, bringing the two teams into one highly collaborative group.</p>
+					<p>A lot of success combining design and development into one hybrid phase, bringing the two teams into one highly collaborative group.</p>
+					<p><cite><a href="http://markdotto.com/2011/09/20/good-design-is-constant-contact/">Mark Otto</a></cite></p>
+				</blockquote>
 				<p>The trade-off, of course, is that if you dynamically add your bumpers, there&#8217;s a chance that a user in a given circumstance might not see the bumper. For example, if the main video feature was uploaded to YouTube, you&#8217;d have no way to control the playback. As always, you need to weigh up the pros and cons and make your choice.</p>
 
 				<h2><abbr>HTML5</abbr> bumpers</h2>
@@ -51,12 +56,14 @@
 				</figure>
 				<p>Now that video is just a native object in the <span class="caps">DOM</span>, just like an image, why not do the same? Stack the videos up with the opening bumper on top, listen for the video&#8217;s <code>onended</code> event, and fade it out to reveal the main feature behind. Good idea, right?</p>
 
-				<h2>Wrong</h2>
+				<h3>Wrong</h3>
 				<p>Remember that this is the web. It&#8217;s never going to be that easy. The problem here is that many non-desktop devices use native, dedicated video players. Think about watching a video on a mobile phone &#8211; when you play the video, the phone often goes full-screen in its native player, leaving the web page behind. There&#8217;s no opportunity to fade or switch <code>z-index</code>, as the video isn&#8217;t being viewed in the page. Your page is left powerless. Powerless!</p>
 				<figure>
 					<img src="http://media.24ways.org/2012/mclellan/media-player.jpg" alt="iOS full-screen media player" />
 				</figure>
 				<p>So what can we do? What can we control?</p>
+				
+				<h3>Right</h3>
 				<p>Those of us with particularly long memories might recall a time before <span class="caps">CSS</span>, when we&#8217;d have to use JavaScript to perform image rollovers. As <span class="caps">CSS</span> background images weren&#8217;t a practical reality, we would use lots of <code>&lt;img&gt;</code> elements, and perform a rollover by modifying the <code>src</code> attribute of the image. </p>
 				<p>Turns out, this old trick of modifying the source can help us out with video, too. In most cases, modifying the <code>src</code> attribute of a <code>&lt;video&gt;</code> element, or perhaps more likely the <code>src</code> attribute of a <code>source</code> element, will swap from one video to another.</p>
 
@@ -217,7 +224,7 @@
 					<h1 class="section_title">11 Comments</h1>
 				</header>
 				<div class="section_main">
-					<p><a href="/pages/YYYY/article/comments" data-replace data-interaction data-target="#comments">View readers&#8217; comments on this article</a></p>
+					<p><a href="/pages/YYYY/article/comments<em></em>" data-replace data-interaction data-target="#comments">View readers&#8217; comments on this article</a></p>
 				</div>
 			</section><!--/.section-->
 
