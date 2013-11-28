@@ -12,12 +12,12 @@ html {
 	position: relative;
 }
 body {
-	color: @text;
+	color: @c-text;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	font-size: 1em; /* 16px */
 	line-height: 1.5; /* 24px */
-	background-color: #fff;
+	background-color: @c-neutral-lightest;
 	margin: 0;
 	height: 100%;
 	@media screen and (max-width: 31.4375em) {
@@ -29,7 +29,7 @@ body {
 }
 
 h1 {
-	.antialiased();
+	.font-smoothing-on();
 	font-size: 2rem; /* 32px */
 	font-weight: 400;
 	line-height: 1.125; /* 36px */
@@ -39,7 +39,7 @@ h1 {
 }
 
 h2 {
-	.antialiased();
+	.font-smoothing-on();
 	font-size: 1.125em; /* 18px */
 	line-height: 1.1111; /* 20px */
 	font-weight: 700;
@@ -54,8 +54,8 @@ h2 {
 }
 
 h3 {
-	color: darken(@text, 20%);
-	.antialiased();
+	color: darken(@c-text, 20%);
+	.font-smoothing-on();
 	font-size: 1em; /* 16px */
 	font-weight: 700;
 	line-height: 1.25; /* 20px */
@@ -64,7 +64,7 @@ h3 {
 }
 
 h4 {
-	.antialiased();
+	.font-smoothing-on();
 	font-size: 1.125em; /* 18px */
 	font-weight: 400;
 	line-height: 1.3334; /* 24px */
@@ -73,7 +73,7 @@ h4 {
 }
 
 h5 {
-	.antialiased();
+	.font-smoothing-on();
 	font-size: 1rem; /* 16px */
 	line-height: 1; /* 16px */
 	text-rendering: optimizeLegibility;
@@ -81,7 +81,7 @@ h5 {
 }
 
 h6 {
-	.antialiased();
+	.font-smoothing-on();
 	font-size: 0.875rem; /* 14px */
 	line-height: 1.1429; /* 16px */
 	text-rendering: optimizeLegibility;

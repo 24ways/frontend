@@ -32,7 +32,7 @@ abbr {
 }
 abbr[title] {
 /*  Address styling not present in IE 8/9, Safari 5, and Chrome */
-	border-bottom: 1px dotted #ccc; /* $color */
+	border-bottom: 1px dotted @c-neutral-light;
 	cursor: help;
 }
 
@@ -40,9 +40,9 @@ code,
 kbd,
 pre,
 samp {
-	color: #666;
+	color: @c-neutral-darker;
 	font-family: 'Inconsolata', Consolas, Monaco, monospace, serif;
-	background-color: rgba(255,255,255,0.6);
+	background-color: rgba(255,255,255,0.75);
 	padding: 0.125rem 0.25rem;
 }
 

@@ -47,7 +47,7 @@
 		color: #fff;
 	}
 	span {
-		color: lighten(@signature, 10%);
+		color: lighten(@c-signature, 10%);
 		font-size: 0.6667em;
 		font-weight: 700;
 		text-transform: lowercase;
@@ -59,6 +59,7 @@
    Menu
    ========================================================================== */
 .menu {
+	color: @c-neutral-light;
 	font: 0/0 a;
 	text-align: center;
 	position: fixed;
@@ -67,11 +68,15 @@
 	z-index: 999;
 	overflow: hidden;
 	@media screen and (max-width: 31.4375em) {
-		//color: #fff;
+		color: #fff;
 	}
 	@media screen and (min-width: 31.5em) {
 		width: 4.5rem; /* 72px */
 		height: 4.5rem; /* 72px */
+		&:hover {
+			color: @c-neutral;
+			background-color: lighten(@c-link-hover, 45%);
+		}
 	}
 	&::before {
 		font-size: 3rem; /* 48px */
@@ -88,6 +93,9 @@
 }
 .js-menu-active {
 	.menu {
+		@media screen and (max-width: 31.4375em) {
+			color: @c-neutral;
+		}
 		&::before {
 			content: "\2573";
 		}
@@ -233,7 +241,7 @@
 }
 
 .search .field_input {
-	background-color: whitesmoke;
+	background-color: @c-neutral-lightest;
 	width: 100%;
 	@media screen and (min-width: 31.5em) {
 		padding-left: 4rem; /* 64px */

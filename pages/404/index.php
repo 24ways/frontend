@@ -6,7 +6,7 @@
 <? inc('partial','menu') ?>
 
 	<main class="main" role="main">
-		<article class="article">
+		<article>
 			<header class="preface">
 				<h1 class="preface_title">404</h1>
 			</header><!--/.preface-->

@@ -6,7 +6,7 @@
 <? inc('partial','menu') ?>
 
 	<main class="main" role="main">
-		<article class="article">
+		<article>
 			<header class="preface">
 				<h1 class="preface_title">About 24 ways</h1>
 			</header><!--/.preface-->
