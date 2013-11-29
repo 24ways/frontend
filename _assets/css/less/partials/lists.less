@@ -56,7 +56,9 @@
 /* List > Articles within a section */
 .section {
 	.list-articles {
-		margin-right: -7%;
+		@media screen and (min-width: 50em) {
+			margin-right: -7%;
+		}
 		@media screen and (min-width: 60em) {
 			margin-right: -25%;
 		}
