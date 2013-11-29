@@ -100,7 +100,7 @@
 }
 
 .section_header {
-	padding: 1.25em 0 1.25em 1em; /* 20px 0 20px 16px */
+	padding: 1.5em 0 1.5em 1em; /* 24px 0 24px 16px */
 	width: 100%;
 	@media screen and (min-width: 50em) {
 		text-align: right;
@@ -282,6 +282,9 @@
 	li {
 		margin: 0.25em 0; /* 4px 0 */
 	}
+	a {
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
 }
 
 .article_footer {
@@ -362,12 +365,6 @@
 	a {
 		color: @c-text;
 		font-weight: 700;
-		&:hover {
-			color: @c-link-hover; // FIX ME
-		}
-		&:active {
-			color: @c-link-active; // FIX ME
-		}
 	}
 }
 
@@ -415,17 +412,19 @@
 		z-index: 1;
 	}
 	.summary_meta {
-		color: grey;
+		color: @c-neutral;
 		position: absolute;
 		bottom: 0;
 		.dt-published {
 			margin-right: 1em;
 		}
 	}
-	&:hover {
-		.summary_header a {
-			color: @c-link-hover;
+	.summary_main {
+		.p-summary a {
+			color: @c-text;
 		}
+	}
+	&:hover {
 		.summary_author {
 			&::before {
 				animation: corner 0.2s steps(10);

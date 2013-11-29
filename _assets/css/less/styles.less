@@ -11,8 +11,8 @@
 
 @c-text: @c-neutral-darkest;
 @c-link: #37a;
-@c-link-hover: lighten(@c-link, 10%);
-@c-link-active: darken(@c-link-hover, 10%);
+@c-link-hover: darken(@c-link, 10%);
+@c-link-active: @c-link;
 
 @c-year: @c-signature;
 @c-year-2005: spin(@c-year, -000);
@@ -135,7 +135,6 @@
 @import url("elements/9-disabled.less");
 
 /* Partials */
-@import url("partials/theme.less");
 @import url("partials/content.less");
 @import url("partials/forms.less");
 @import url("partials/lists.less");
@@ -143,3 +142,4 @@
 @import url("partials/nav.less");
 @import url("partials/structure.less");
 @import url("partials/type.less");
+@import url("partials/theme.less");
