@@ -26,21 +26,14 @@
 
 /* List > Articles */
 .list-articles {
+	background-color: rgba(0,0,0,0.033);
 	.list_item {
 		padding: 0 1px 1px 0;
-	}
-}
-
-/* List > Articles within an index */
-.list-articles {
-	background-color: rgba(255,255,255,0.75);
-	.list_item {
 		@media screen and (min-width: 40em) and (max-width: 54.9375em) {
 			width: 50%;
 			float: left;
 			&:nth-child(2n+1) {
 				clear: left;
-				//outline: 2px solid red;
 			}
 		}
 		@media screen and (min-width: 55em) and (max-width: 64.9375em) {
@@ -48,7 +41,6 @@
 			float: left;
 			&:nth-child(3n+1) {
 				clear: left;
-				//outline: 2px solid blue;
 			}
 		}
 		@media screen and (min-width: 65em) {
@@ -56,12 +48,10 @@
 			float: left;
 			&:nth-child(4n+1) {
 				clear: left;
-				//outline: 2px solid yellow;
 			}
 		}
 	}
 }
-
 
 /* List > Articles within a section */
 .section {
@@ -76,7 +66,9 @@
 				float: left;
 				&:nth-child(2n+1) {
 					clear: left;
-					//outline: 2px solid purple;
+				}
+				&:nth-child(3n+1) {
+					clear: none;
 				}
 			}
 			@media screen and (min-width: 65em) {
@@ -84,7 +76,9 @@
 				float: left;
 				&:nth-child(3n+1) {
 					clear: left;
-					//outline: 2px solid aqua;
+				}
+				&:nth-child(4n+1) {
+					clear: none;
 				}
 			}
 		}

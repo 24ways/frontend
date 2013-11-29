@@ -13,7 +13,7 @@ html {
 }
 body {
 	color: @c-text;
-	font-family: 'Lato', sans-serif;
+	font-family: @f-sans;
 	font-weight: 400;
 	font-size: 1em; /* 16px */
 	line-height: 1.5; /* 24px */
@@ -39,6 +39,7 @@ h1 {
 }
 
 h2 {
+	color: darken(@c-signature, 20%);
 	.font-smoothing-on();
 	font-size: 1.125em; /* 18px */
 	line-height: 1.1111; /* 20px */

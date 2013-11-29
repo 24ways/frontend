@@ -3,6 +3,7 @@
    ========================================================================== */
 .banner {
 	text-transform: uppercase;
+	background-color: darken(@c-signature, 20%);
 	padding: 0.875em 1em; /* 14px 16px */
 	height: 3rem; /* 48p */
 	transition: background-color .2s ease-out;
@@ -49,7 +50,6 @@
 	span {
 		color: lighten(@c-signature, 10%);
 		font-size: 0.6667em;
-		font-weight: 700;
 		text-transform: lowercase;
 	}
 }
@@ -270,16 +270,13 @@
    Content Info
    ========================================================================== */
 .contentinfo {
-	color: #fff;
 	.caption();
-	padding: 0.625rem 1rem; /* 10px 16px */
+	background-color: #fff;
+	padding: 0.625rem 1rem 0.5625rem; /* 10px 16px 9px */
 	clear: left;
 	overflow: hidden;
 	small {
 		font-size: 100%;
-	}
-	a {
-		color: #fff;
 	}
 }
 
