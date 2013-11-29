@@ -20,13 +20,15 @@ pre {
 }
 
 blockquote {
-	border-left: 0.25em solid fade(@c-text, 20%);
+	border-left: 0.25em solid fade(@c-text, 15%);
 	padding-left: 0.75rem; /* 12px */
 	margin: 2em 0 2em -1em;
 
 	p {
+		color: lighten(@c-text, 15%);
+		.font-smoothing-on();
 		font-family: 'Merriweather', serif;
-		font-weight: 300;
+		font-weight: 400;
 		font-size: 1.25em; /* 20px */
 		line-height: 1.4; /* 28px */
 		letter-spacing: -0.0625rem; /* -1px */
