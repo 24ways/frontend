@@ -1,13 +1,11 @@
 # Don't forget...
 
 ## Design
+* Refine comment layout
 * Default avatar
 * Twitter profile design
-* Favicon
+* -Favicon-
 * -iOS Bookmark icon-
-
-## Content
-* (Drew, Anna, Owen) Add Twitter card meta data
 
 ## CSS
 * Height-based media queries
