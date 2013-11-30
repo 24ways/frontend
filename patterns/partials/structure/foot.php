@@ -9,6 +9,7 @@
 		$("a[data-interaction]").addClass("continue-ajax");
 		$("a[data-interaction]").bind( "click", function(e) {
 			e.preventDefault();
+			$("#comments").addClass("section-loading");
 			$(this).removeAttr("data-interaction").ajaxInclude();
 		});
 
