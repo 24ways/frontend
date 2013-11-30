@@ -3,20 +3,20 @@
 <?	  if (isset($GLOBALS['traverse'])): ?>
 		<div class="nav nav-traverse">
 <?		  if ($GLOBALS['section'] == "archives"): ?>
-			<a class="nav_item nav_prev" rel="prev" href="/pages/YYYY/" title="[YYYY-1]" data-icon="&#x2190;">Previous year</a>
-			<a class="nav_item nav_next" rel="next" href="/pages/YYYY/" title="[YYYY+1]" data-icon="&#x2192;">Next year</a>
+			<a class="nav_item nav_prev" rel="prev" href="/pages/YYYY/" data-sequence-title="[YYYY-1]" data-icon="&#x2190;">Previous year</a>
+			<a class="nav_item nav_next" rel="next" href="/pages/YYYY/" data-sequence-title="[YYYY+1]" data-icon="&#x2192;">Next year</a>
 <?		  endif ?>
 <?		  if ($GLOBALS['section'] == "authors"): ?>
-			<a class="nav_item nav_prev" rel="prev" href="/pages/authors/authorname/" title="[Previous Author Name]" data-icon="&#x2190;">Previous author</a>
-			<a class="nav_item nav_next" rel="next" href="/pages/authors/authorname/" title="[Next Author Name]" data-icon="&#x2192;">Next author</a>
+			<a class="nav_item nav_prev" rel="prev" href="/pages/authors/authorname/" data-sequence-title="[Previous Author Name]" data-icon="&#x2190;">Previous author</a>
+			<a class="nav_item nav_next" rel="next" href="/pages/authors/authorname/" data-sequence-title="[Next Author Name]" data-icon="&#x2192;">Next author</a>
 <?		  endif ?>
 <?		  if ($GLOBALS['section'] == "topics"): ?>
-			<a class="nav_item nav_prev" rel="prev" href="/pages/topics/topicname/" title="[Previous Topic Name]" data-icon="&#x2190;">Previous topic</a>
-			<a class="nav_item nav_next" rel="next" href="/pages/topics/topicname/" title="[Next Topic Name]" data-icon="&#x2192;">Next topic</a>
+			<a class="nav_item nav_prev" rel="prev" href="/pages/topics/topicname/" data-sequence-title="[Previous Topic Name]" data-icon="&#x2190;">Previous topic</a>
+			<a class="nav_item nav_next" rel="next" href="/pages/topics/topicname/" data-sequence-title="[Next Topic Name]" data-icon="&#x2192;">Next topic</a>
 <?		  endif ?>
 <?		  if ($GLOBALS['section'] == "article"): ?>
-			<a class="nav_item nav_prev" rel="prev" href="/pages/YYYY/article/" title="[Previous Article Title]" data-icon="&#x2190;">Previous article</a>
-			<a class="nav_item nav_next" rel="next" href="/pages/YYYY/article/" title="[Next Article Title]" data-icon="&#x2192;">Next article</a>
+			<a class="nav_item nav_prev" rel="prev" href="/pages/YYYY/article/" data-sequence-title="[Previous Article Title]" data-icon="&#x2190;">Previous article</a>
+			<a class="nav_item nav_next" rel="next" href="/pages/YYYY/article/" data-sequence-title="[Next Article Title]" data-icon="&#x2192;">Next article</a>
 <?		  endif ?>
 		</div><!--/.nav-traverse-->
 <?	  endif ?>

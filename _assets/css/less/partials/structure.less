@@ -74,6 +74,7 @@
 		}
 	}
 	@media screen and (min-width: 31.5em) {
+		box-shadow: inset 0 -1px 0 @c-neutral-lightest;
 		width: 4.5rem; /* 72px */
 		height: 4.5rem; /* 72px */
 		&:hover {
@@ -140,18 +141,17 @@
 	right: 0;
 	z-index: 9;
 	position: relative;
-	@media screen and (max-width: 31.4375em) {
-		transition: max-height .2s ease-out;
-	}
-	@media screen and (min-width: 31.5em) {
-		transition: width .2s ease-out;
-	}
 	.nav-site {
 		@media screen and (min-width: 31.5em) {
 			width: 4.5rem; /* 72px */
 			position: fixed;
 			right: 0;
 			bottom: 0;
+		}
+	}
+	.nav-topics {
+		@media screen and (max-width: 31.4375em) {
+			border-top: 1px solid @c-neutral-lightest;
 		}
 	}
 	.nav-top {
@@ -166,7 +166,9 @@
 		}
 	}
 	.nav-traverse {
+		display: none;
 		@media screen and (min-width: 31.5em) {
+			display: block;
 			position: absolute;
 			right: 0;
 			top: 4.5rem; /* 72px */
@@ -177,12 +179,13 @@
 
 .js-enhanced {
 	.navigation {
-		overflow: hidden;
 		@media screen and (max-width: 31.4375em) {
+			overflow: hidden;
 			position: fixed;
 			top: 3rem; /* 48px */
 			width: 100%;
 			max-height: 0;
+			transition: max-height .2s ease-out;
 		}
 		@media screen and (min-width: 31.5em) {
 			margin: 0;
@@ -192,12 +195,24 @@
 			top: 0;
 			right: 0;
 			bottom: 0;
+			transition: width .2s ease-out;
 		}
 		.nav-topics {
+			overflow: hidden;
 			.nav_item {
 				@media screen and (min-width: 31.5em) {
 					width: 50%;
 				}
+			}
+		}
+		.search {
+			@media screen and (min-width: 31.5em) {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 4.5rem; /* 72px */
+				overflow: hidden;
+				transition: width .2s ease-out;
 			}
 		}
 	}
@@ -232,19 +247,9 @@
 	}
 }
 
-.js-enhanced {
-	@media screen and (min-width: 31.5em) {
-		.navigation .search {
-			width: 18rem; /* 288px */
-			position: absolute;
-			top: 0;
-			right: 4.5rem; /* 72px */
-		}
-	}
-}
-
 .search .field_input {
 	background-color: @c-neutral-lightest;
+	box-shadow: none;
 	width: 100%;
 	@media screen and (min-width: 31.5em) {
 		padding-left: 4rem; /* 64px */
@@ -254,6 +259,7 @@
 		box-shadow: inset 0 0 0 2px fade(@c-neutral-lighter, 50%);
 	}
 }
+
 .search .field_button {
 	font: 0/0 a;
 	background: transparent;
