@@ -2,8 +2,8 @@
 
 ## Design
 * Refine comment layout
-* Default avatar
-* Twitter profile design
+* -Default avatar-
+* -Twitter profile design-
 * -Favicon-
 * -iOS Bookmark icon-
 
