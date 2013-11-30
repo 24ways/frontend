@@ -6,6 +6,7 @@
 	<script src="/_assets/js/vendor/filamentgroup/ajaxinclude/ajaxinclude.js"></script>
 	<script>
 		// AJAX include comments
+		$("a[data-interaction]").addClass("continue-ajax");
 		$("a[data-interaction]").bind( "click", function(e) {
 			e.preventDefault();
 			$(this).removeAttr("data-interaction").ajaxInclude();
