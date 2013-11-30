@@ -8,6 +8,9 @@
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	
 	<script>
+		// Flag support for JS
+		document.documentElement.className += ' js';
+	
 		// Cut the mustard
 		if (document.querySelector && window.addEventListener) {
 			document.documentElement.className += ' js-enhanced';
