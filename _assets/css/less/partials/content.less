@@ -423,7 +423,9 @@
 	&:hover {
 		.summary_author {
 			&::before {
+				-webkit-animation: corner 0.2s steps(10);
 				animation: corner 0.2s steps(10);
+				-webkit-animation-fill-mode: forwards;
 				animation-fill-mode: forwards;
 			}
 		}
@@ -431,6 +433,7 @@
 	&.js-mouseout {
 		.summary_author {
 			&::before {
+				-webkit-animation: corner-back 0.2s steps(10);
 				animation: corner-back 0.2s steps(10);
 			}
 		}
@@ -444,6 +447,16 @@
 		}
 	}
 }
+@-webkit-keyframes corner {
+	from {
+		background-position:  -0.5em;
+		z-index: 0;
+	}
+	to {
+		background-position: -50.5em;
+		z-index: 1;
+	}
+}
 @keyframes corner {
 	from {
 		background-position:  -0.5em;
@@ -452,6 +465,16 @@
 	to {
 		background-position: -50.5em;
 		z-index: 1;
+	}
+}
+@-webkit-keyframes corner-back {
+	from {
+		background-position: -50.5em;
+		z-index: 1;
+	}
+	to {
+		background-position:  -0.5em;
+		z-index: 0;
 	}
 }
 @keyframes corner-back {
