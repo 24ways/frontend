@@ -4,12 +4,13 @@
    ========================================================================== */
 
 table {
+	font-size: 1rem;
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 caption {
-	color: #666; /* $color-caption */
+	color: @c-neutral;
 	caption-side: bottom;
 	font-size: 0.875rem; /* 14px */
 	line-height: 1.1429; /* 16px */
@@ -21,6 +22,6 @@ td,
 th {
 	text-align: left;
 	vertical-align: top;
-	border-bottom: 1px solid @c-neutral-light; /* $color */
+	border-bottom: 1px solid rgba(0,0,0,0.25);
 	padding: 0.25rem 2rem 0.25rem 0; /* 4px 32px 4px 0 */
 }
