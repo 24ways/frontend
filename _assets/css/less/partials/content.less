@@ -369,7 +369,7 @@
 .summary_vote {
 	.caption();
 	a {
-		color: @c-neutral-light;
+		color: @c-neutral;
 	}
 }
 
@@ -414,6 +414,9 @@
 		bottom: 0;
 		.dt-published {
 			margin-right: 1em;
+		}
+		a {
+			color: @c-neutral;
 		}
 	}
 	.summary_main {
@@ -537,10 +540,13 @@
 	}
 	.summary_meta {
 		margin: 0.5rem 0;
-		@media screen and (min-width: 20em) {
+		@media screen and (min-width: 30em) {
 			position: absolute;
-			top: 1em;
+			top: 1.1667em; /* 14px */
 			right: 1em;
+		}
+		a {
+			color: @c-neutral;
 		}
 	}
 	.summary_vote {
@@ -550,45 +556,9 @@
 
 /* Summary > Comment > Unhelpful */
 .summary-comment.summary-unhelpful {
-	.summary_main {
-		margin: 1rem -1rem 0 -5.5rem;
-		padding: 0.75rem 1rem 0.75rem 5.5rem;
-		max-height: 2rem;
-		position: relative;
-		overflow: hidden;
-		transition: max-height 1s;
-		&::before,
-		&::after {
-			content: " ";
-			border: 0.5rem solid;
-			border-color: lightgrey #f3f3f3 whitesmoke;
-			width 100%;
-			height: 1rem;
-			display: block;
-			position: absolute;
-			left: 0;
-			right: 0;
-		}
-		&::before {
-			top: 0;
-		}
-		&::after {
-			bottom: 0;
-		}
-	}
-	.summary_footer {
-		max-height: 0;
-		overflow: hidden;
-		transition: max-height 1s;
-	}
-	&:hover {
-		.summary_main {
-			max-height: 200em;
-		}
-		.summary_footer {
-			max-height: 10rem
-		}
-	}
+	background-color: transparent;
+	box-shadow: none;
+	border: 1px dotted fade(@c-neutral, 20%);
 }
 
 /* Summary > Author */
@@ -607,7 +577,6 @@
 		left: 0;
 	}
 	.summary_image {
-		//filter: grayscale(100%);
 		height: auto;
 		width: 100%;
 		display: block;
