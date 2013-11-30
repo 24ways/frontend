@@ -27,7 +27,7 @@
 
 	<link rel="stylesheet" type="text/css" href="/_assets/css/styles.css"/>
 	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/24ways"/>
-	<link rel="icon" href="/_assets/icons/favicon.png" type="image/png"/>
+	<link rel="icon" href="/_assets/icons/favicon.ico" type="image/x-icon"/>
 	<link rel="apple-touch-icon-precomposed" href="/_assets/icons/apple-touch-icon.png"/>
 	<link rel="author" href="/humans.txt"/>
 
