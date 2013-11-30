@@ -18,76 +18,76 @@
 
 			<ol class="list list-articles list-articles-countdown" reversed>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 				<li class="list_item">
-<?				  inc('partial','summary-article') ?>
+<?				  inc('partial','summary-countdown-article') ?>
 				</li>
 			</ol><!--/.list-articles-->
 		</section><!--/.index-->
