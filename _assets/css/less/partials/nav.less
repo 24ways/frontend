@@ -147,30 +147,6 @@
 				position: relative;
 				z-index: 1;
 			}
-			&::after {
-				content: "Previous: \A"attr(data-sequence-title);
-				color: #fff;
-				.font-smoothing-on();
-				font: 0.875rem/1.2857 @f-sans; /* 14px/18px */
-				text-align: left;
-				white-space: pre-wrap;
-				background-color: fade(@c-neutral-darkest, 90%);
-				padding: 0.5rem 0.75rem;
-				display: block;
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				width: 18rem;
-				z-index: 0;
-				overflow: hidden;
-				transition: all .3s ease-out;
-			}
-			&:hover {
-				&::after {
-					left: -18rem;
-				}
-			}
 		}
 	}
 	.nav_next {
@@ -179,6 +155,44 @@
 			text-align: center;
 			&::after {
 				content: "Next: \A"attr(data-sequence-title);
+			}
+		}
+	}
+}
+.js-enhanced {
+	.nav-traverse {
+		@media screen and (min-width: 31.5em) {
+			.nav_prev,
+			.nav_next {
+				&::after {
+					content: "Previous: \A"attr(data-sequence-title);
+					color: #fff;
+					.font-smoothing-on();
+					font: 0.875rem/1.2857 @f-sans; /* 14px/18px */
+					text-align: left;
+					white-space: pre-wrap;
+					background-color: fade(@c-neutral-darkest, 90%);
+					padding: 0.5rem 0.75rem;
+					display: block;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					width: 18rem;
+					z-index: 0;
+					overflow: hidden;
+					transition: all .3s ease-out;
+				}
+				&:hover {
+					&::after {
+						left: -18rem;
+					}
+				}
+			}
+			.nav_next {
+				&::after {
+					content: "Next: \A"attr(data-sequence-title);
+				}
 			}
 		}
 	}
