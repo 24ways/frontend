@@ -21,7 +21,7 @@
 
 			<footer class="article_footer">
 				<ul class="list">
-					<li class="list_item"><time class="dt-published" datetime="2012-12-01T00:00:00-00:00">1 December 2012</time></li>
+					<li class="list_item"><time class="dt-published" datetime="2012-12-01T00:00:00-00:00">1 Dec<span>ember</span> 2012</time></li>
 					<li class="list_item">Published in <a href="/pages/topics/topicname/">Code</a></li>
 					<li class="list_item"><a href="#comments">8 comments</a></li>
 				</ul>

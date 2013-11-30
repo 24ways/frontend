@@ -308,11 +308,17 @@
 		line-height: 2;
 		margin-right: 0.5em;
 		display: inline;
+		@media screen and (max-width: 24.9375em) {
+			.dt-published span {
+				display: none;
+			}
+		}
 		@media screen and (max-width: 49.9375em) {
 			margin-right: -0.25em;
 			&::after {
 				content: "•";
-				margin: 0 0.5rem;
+				margin: 0 0.3334rem;
+				opacity: 0.5;
 			}
 			&:last-child {
 				&::after {
@@ -326,6 +332,7 @@
 			padding: 0.4375rem 0 1.5rem 0;
 			display: block;
 		}
+
 	}
 }
 
@@ -370,6 +377,9 @@
 	.caption();
 	a {
 		color: @c-neutral;
+		&:hover {
+			color: @c-link-hover;
+		}
 	}
 }
 
@@ -417,6 +427,9 @@
 		}
 		a {
 			color: @c-neutral;
+			&:hover {
+				color: @c-link-hover;
+			}
 		}
 	}
 	.summary_main {
