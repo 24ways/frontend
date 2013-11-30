@@ -16,7 +16,7 @@
 				</div>
 			</header><!--/.preface-->
 
-			<ol class="list list-articles">
+			<ol class="list list-articles list-articles-countdown" reversed>
 				<li class="list_item">
 <?				  inc('partial','summary-article') ?>
 				</li>

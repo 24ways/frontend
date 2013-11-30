@@ -15,7 +15,7 @@
 				</div>
 			</header><!--/.preface-->
 
-			<ol class="list list-articles list-articles-current" reversed>
+			<ol class="list list-articles list-articles-countdown" reversed>
 				<li class="list_item">
 					<article class="summary summary-article h-entry day-24" data-href="/pages/YYYY/article/">
 						<header class="summary_header">
