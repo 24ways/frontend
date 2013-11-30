@@ -9,13 +9,17 @@ p, pre, blockquote, ul, ol, dl, figure, table, fieldset, details {
 
 pre {
 	font-size: 0.875em; /* 14px */
-	line-height: 1.7143; /* 24px */
+	line-height: 1.4286; /* 20px */
 	white-space: pre;
 	tab-size: 4;
 	hyphens: none;
-	margin: 1em -0.5rem;
-	padding: 0.25rem;
+	margin: 1em -1rem;
+	padding: 0 0.5em;
 	overflow: auto;
+	@media screen and (min-width: 40em) {
+		// Base font size now 20px within article body
+		line-height: 1.5; /* 24px */
+	}
 }
 
 blockquote {
