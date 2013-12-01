@@ -33,7 +33,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/jontan/"><img class="u-photo" src="http://cloud.24ways.org/authors/jontan160.jpg" alt=""><span class="p-name">jontan</span></a>
+								<a class="u-url" href="/authors/jontan/"><img class="u-photo" src="http://cloud.24ways.org/authors/jontan160.jpg" alt=""><span class="p-name">Jon Tan</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -55,7 +55,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/andyclarke/"><img class="u-photo" src="http://cloud.24ways.org/authors/andyclarke160.jpg" alt=""><span class="p-name">andyclarke</span></a>
+								<a class="u-url" href="/authors/andyclarke/"><img class="u-photo" src="http://cloud.24ways.org/authors/andyclarke160.jpg" alt=""><span class="p-name">Andy Clarke</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -77,7 +77,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/annadebenham/"><img class="u-photo" src="http://cloud.24ways.org/authors/annadebenham160.jpg" alt=""><span class="p-name">annadebenham</span></a>
+								<a class="u-url" href="/authors/annadebenham/"><img class="u-photo" src="http://cloud.24ways.org/authors/annadebenham160.jpg" alt=""><span class="p-name">Anna Debenham</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -99,7 +99,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/nathanperetic/"><img class="u-photo" src="http://cloud.24ways.org/authors/nathanperetic160.jpg" alt=""><span class="p-name">nathanperetic</span></a>
+								<a class="u-url" href="/authors/nathanperetic/"><img class="u-photo" src="http://cloud.24ways.org/authors/nathanperetic160.jpg" alt=""><span class="p-name">Nathan Peretic</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -121,7 +121,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/erinkissane/"><img class="u-photo" src="http://cloud.24ways.org/authors/erinkissane160.jpg" alt=""><span class="p-name">erinkissane</span></a>
+								<a class="u-url" href="/authors/erinkissane/"><img class="u-photo" src="http://cloud.24ways.org/authors/erinkissane160.jpg" alt=""><span class="p-name">Erin Kissane</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -143,7 +143,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/briansuda/"><img class="u-photo" src="http://cloud.24ways.org/authors/briansuda160.jpg" alt=""><span class="p-name">briansuda</span></a>
+								<a class="u-url" href="/authors/briansuda/"><img class="u-photo" src="http://cloud.24ways.org/authors/briansuda160.jpg" alt=""><span class="p-name">Brian Suda</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -165,7 +165,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/rachelandrew/"><img class="u-photo" src="http://cloud.24ways.org/authors/rachelandrew160.jpg" alt=""><span class="p-name">rachelandrew</span></a>
+								<a class="u-url" href="/authors/rachelandrew/"><img class="u-photo" src="http://cloud.24ways.org/authors/rachelandrew160.jpg" alt=""><span class="p-name">Rachel Andrew</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -187,7 +187,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/brendandawes/"><img class="u-photo" src="http://cloud.24ways.org/authors/brendandawes160.jpg" alt=""><span class="p-name">brendandawes</span></a>
+								<a class="u-url" href="/authors/brendandawes/"><img class="u-photo" src="http://cloud.24ways.org/authors/brendandawes160.jpg" alt=""><span class="p-name">Brendan Dawes</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -209,7 +209,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/annapowellsmith/"><img class="u-photo" src="http://cloud.24ways.org/authors/annapowellsmith160.jpg" alt=""><span class="p-name">annapowellsmith</span></a>
+								<a class="u-url" href="/authors/annapowellsmith/"><img class="u-photo" src="http://cloud.24ways.org/authors/annapowellsmith160.jpg" alt=""><span class="p-name">Anna Powell-Smith</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -231,7 +231,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/nathanford/"><img class="u-photo" src="http://cloud.24ways.org/authors/nathanford160.jpg" alt=""><span class="p-name">nathanford</span></a>
+								<a class="u-url" href="/authors/nathanford/"><img class="u-photo" src="http://cloud.24ways.org/authors/nathanford160.jpg" alt=""><span class="p-name">Nathan Ford</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -254,7 +254,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/emmaboulton/"><img class="u-photo" src="http://cloud.24ways.org/authors/emmaboulton160.jpg" alt=""><span class="p-name">emmaboulton</span></a>
+								<a class="u-url" href="/authors/emmaboulton/"><img class="u-photo" src="http://cloud.24ways.org/authors/emmaboulton160.jpg" alt=""><span class="p-name">Emma Boulton</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -276,7 +276,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/lesjames/"><img class="u-photo" src="http://cloud.24ways.org/authors/lesjames160.jpg" alt=""><span class="p-name">lesjames</span></a>
+								<a class="u-url" href="/authors/lesjames/"><img class="u-photo" src="http://cloud.24ways.org/authors/lesjames160.jpg" alt=""><span class="p-name">Les James</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -298,7 +298,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/laurakalbag/"><img class="u-photo" src="http://cloud.24ways.org/authors/laurakalbag160.jpg" alt=""><span class="p-name">laurakalbag</span></a>
+								<a class="u-url" href="/authors/laurakalbag/"><img class="u-photo" src="http://cloud.24ways.org/authors/laurakalbag160.jpg" alt=""><span class="p-name">Laura Kalbag</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -320,7 +320,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/paulrobertlloyd/"><img class="u-photo" src="http://cloud.24ways.org/authors/paulrobertlloyd160.jpg" alt=""><span class="p-name">paulrobertlloyd</span></a>
+								<a class="u-url" href="/authors/paulrobertlloyd/"><img class="u-photo" src="http://cloud.24ways.org/authors/paulrobertlloyd160.jpg" alt=""><span class="p-name">Paul Robert Lloyd</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -342,7 +342,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/rebeccacottrell/"><img class="u-photo" src="http://cloud.24ways.org/authors/rebeccacottrell160.jpg" alt=""><span class="p-name">rebeccacottrell</span></a>
+								<a class="u-url" href="/authors/rebeccacottrell/"><img class="u-photo" src="http://cloud.24ways.org/authors/rebeccacottrell160.jpg" alt=""><span class="p-name">Rebecca Cottrell</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -364,7 +364,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/dandonald/"><img class="u-photo" src="http://cloud.24ways.org/authors/dandonald160.jpg" alt=""><span class="p-name">dandonald</span></a>
+								<a class="u-url" href="/authors/dandonald/"><img class="u-photo" src="http://cloud.24ways.org/authors/dandonald160.jpg" alt=""><span class="p-name">Dan Donald</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -386,7 +386,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/valhead/"><img class="u-photo" src="http://cloud.24ways.org/authors/valhead160.jpg" alt=""><span class="p-name">valhead</span></a>
+								<a class="u-url" href="/authors/valhead/"><img class="u-photo" src="http://cloud.24ways.org/authors/valhead160.jpg" alt=""><span class="p-name">Val Head</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -408,7 +408,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/stephenfulljames/"><img class="u-photo" src="http://cloud.24ways.org/authors/stephenfulljames160.jpg" alt=""><span class="p-name">stephenfulljames</span></a>
+								<a class="u-url" href="/authors/stephenfulljames/"><img class="u-photo" src="http://cloud.24ways.org/authors/stephenfulljames160.jpg" alt=""><span class="p-name">Stephen Fulljames</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -430,7 +430,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/rachelnabors/"><img class="u-photo" src="http://cloud.24ways.org/authors/rachelnabors160.jpg" alt=""><span class="p-name">rachelnabors</span></a>
+								<a class="u-url" href="/authors/rachelnabors/"><img class="u-photo" src="http://cloud.24ways.org/authors/rachelnabors160.jpg" alt=""><span class="p-name">Rachel Nabors</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -452,7 +452,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/timkadlec/"><img class="u-photo" src="http://cloud.24ways.org/authors/timkadlec160.jpg" alt=""><span class="p-name">timkadlec</span></a>
+								<a class="u-url" href="/authors/timkadlec/"><img class="u-photo" src="http://cloud.24ways.org/authors/timkadlec160.jpg" alt=""><span class="p-name">Tim Kadlec</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -474,7 +474,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/gericoady/"><img class="u-photo" src="http://cloud.24ways.org/authors/gericoady160.jpg" alt=""><span class="p-name">gericoady</span></a>
+								<a class="u-url" href="/authors/gericoady/"><img class="u-photo" src="http://cloud.24ways.org/authors/gericoady160.jpg" alt=""><span class="p-name">Geri Coady</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -496,7 +496,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/trentwalton/"><img class="u-photo" src="http://cloud.24ways.org/authors/trentwalton160.jpg" alt=""><span class="p-name">trentwalton</span></a>
+								<a class="u-url" href="/authors/trentwalton/"><img class="u-photo" src="http://cloud.24ways.org/authors/trentwalton160.jpg" alt=""><span class="p-name">Trent Walton</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -518,7 +518,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/bethanyheck/"><img class="u-photo" src="http://cloud.24ways.org/authors/bethanyheck160.jpg" alt=""><span class="p-name">bethanyheck</span></a>
+								<a class="u-url" href="/authors/bethanyheck/"><img class="u-photo" src="http://cloud.24ways.org/authors/bethanyheck160.jpg" alt=""><span class="p-name">Bethany Heck</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
@@ -540,7 +540,7 @@
 						</div>
 						<footer class="summary_footer">
 							<p class="summary_author p-author h-card">
-								<a class="u-url" href="/authors/drewmclellan/"><img class="u-photo" src="http://cloud.24ways.org/authors/drewmclellan160.jpg" alt=""><span class="p-name">drewmclellan</span></a>
+								<a class="u-url" href="/authors/drewmclellan/"><img class="u-photo" src="http://cloud.24ways.org/authors/drewmclellan160.jpg" alt=""><span class="p-name">Drew McLellan</span></a>
 							</p>
 						</footer>
 					</article><!--/.summary-article-->
