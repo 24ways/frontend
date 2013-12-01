@@ -30,7 +30,7 @@
 
     JavaScript assistance: Scott Jehl
     URL: http://scottjehl.com
-    Twitter: @scottjehl‎
+    Twitter: @scottjehl
 
 
 /* SITE */
