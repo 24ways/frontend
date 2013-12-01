@@ -6,6 +6,7 @@
 
 <head>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//themes.googleusercontent.com">
 	
 	<script>
 		// Flag support for JS
@@ -24,6 +25,7 @@
 
 		// Add a script element as a child of the body
 		function downloadJSAtOnload() {
+			var element = document.createElement("script");
 			element.src = "//static.24ways.org/js/scripts_v18.js";
 			document.body.appendChild(element);
 		}
