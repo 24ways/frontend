@@ -163,11 +163,11 @@
 		@media screen and (min-width: 31.5em) {
 			.nav_prev,
 			.nav_next {
-				&:before {
+				&::before {
 					background-color: #fff;
 				}
-				&:after {
-					content: "Previous: \A" attr(data-sequence-title);
+				&::after {
+					content: "Previous: \A"attr(data-sequence-title);
 					color: #fff;
 					.font-smoothing-on();
 					font: 0.875rem/1.2857 @f-sans; /* 14px/18px */
@@ -186,10 +186,10 @@
 					transition: all .3s ease-out;
 				}
 				&:hover {
-					&:before {
+					&::before {
 						background-color: lighten(@c-neutral-lightest, 1%);
 					}
-					&:after {
+					&::after {
 						left: -18rem;
 					}
 				}
