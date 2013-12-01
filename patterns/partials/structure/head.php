@@ -10,8 +10,6 @@
 	<script>
 		// Flag support for JS
 		document.documentElement.className += ' js';
-	
-		// Cut the mustard
 		if (document.querySelector && window.addEventListener) {
 			document.documentElement.className += ' js-enhanced';
 			var enhanced = true;
@@ -22,6 +20,21 @@
 		// Flag support for SVG
 		if(document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {
 			document.documentElement.className += ' svg';
+		}
+
+		// Add a script element as a child of the body
+		function downloadJSAtOnload() {
+			element.src = "//static.24ways.org/js/scripts_v18.js";
+			document.body.appendChild(element);
+		}
+
+		// Check for browser support of event handling capability
+		if (window.addEventListener) {
+			window.addEventListener("load", downloadJSAtOnload, false);
+		} else if (window.attachEvent) {
+			window.attachEvent("onload", downloadJSAtOnload);
+		} else {
+			window.onload = downloadJSAtOnload;
 		}
 	</script>
 <!--[if lt IE 9]>

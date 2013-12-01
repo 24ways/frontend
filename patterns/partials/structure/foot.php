@@ -1,3 +1,4 @@
+<!--
 	<script src="/_assets/js/vendor/madrobby/zepto/zepto.js"></script>
 	<script>jQuery = Zepto;</script>
 	<script src="/_assets/js/vendor/adactio/progresponsive/progresponsive.js"></script>
@@ -101,5 +102,6 @@
 			});
 		}
 	</script>
+-->
 </body>
 </html>
