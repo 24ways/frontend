@@ -2,14 +2,15 @@
 .nav {
 	list-style-type: none;
 	margin: 0;
-	.nav_item a:hover,
-	.nav_item:hover {
-		background-color: lighten(@c-neutral-lightest, 1%);
-	}
 	a {
 		color: @c-neutral-light;
 		&:hover {
 			color: @c-neutral;
+			background-color: lighten(@c-neutral-lightest, 1%);
+		}
+		&:active {
+			color: @c-neutral-dark;
+			background-color: darken(@c-neutral-lightest, 1%);
 		}
 	}
 }
@@ -109,6 +110,10 @@
 		color: @c-neutral;
 		background-color: lighten(@c-neutral-lightest, 1%);
 	}
+	&:active {
+		color: @c-neutral-dark;
+		background-color: darken(@c-neutral-lightest, 1%);
+	}
 }
 
 
@@ -181,16 +186,22 @@
 					bottom: 0;
 					left: 0;
 					width: 18rem;
-					z-index: 0;
 					overflow: hidden;
 					transition: all .3s ease-out;
 				}
 				&:hover {
 					&::before {
+						color: @c-neutral;
 						background-color: lighten(@c-neutral-lightest, 1%);
 					}
 					&::after {
 						left: -18rem;
+					}
+				}
+				&:active {
+					&::before {
+						color: @c-neutral-dark;
+						background-color: darken(@c-neutral-lightest, 1%);
 					}
 				}
 			}
