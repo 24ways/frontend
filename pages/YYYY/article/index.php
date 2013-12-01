@@ -31,8 +31,13 @@
 <?			  inc('partial','note') ?>
 				
 				<p class="lede">Video is a bigger part of the web experience than ever before. With native browser support for <abbr>HTML5</abbr> video elements freeing us from the tyranny of plugins, and the availability of faster internet connections to the workplace, home and mobile networks, it&#8217;s now pretty straightforward to publish video in a way that can be consumed in all sorts of ways on all sorts of different web devices.</p>
-
 				<p>I recently worked on a project where the client had shot some dedicated video shorts to publish on their site. They also had some five-second motion graphics produced to top and tail the videos with context and branding. This pretty common requirement is a great idea on the web, where a user might land at your video having followed a link and be viewing a page without much context.</p>
+
+				<blockquote>
+					<p>[I]t appears probable that the progenitors of man, either the males or females or both sexes, before acquiring the power of expressing their mutual love in articulate language, endeavoured to charm each other with musical notes and rhythm.</p>
+					<footer>—Charles <span class="caps">DARWIN</span>, <cite>The Descent of Man, and Selection in Relation to Sex</cite>, 1871</footer>
+				</blockquote>
+
 				<p>Known as <em>bumpers</em>, these short introduction clips help brand a video and make it look a lot more professional.</p>
 				<figure>
 					<img src="http://media.24ways.org/2012/mclellan/timeline.png" alt="Video timeline" />

@@ -36,16 +36,19 @@ blockquote {
 		line-height: 1.4; /* 28px */
 		letter-spacing: -0.0625rem; /* -1px */
 		margin: 0.75rem 0; /* 12px 0 */
+		@media screen and (min-width: 40em) {
+			// Base font size now 20px within article body
+			font-size: 1.2em; /* 24px */
+			line-height: 1.5; /* 36px */
+		}
 	}
+	footer,
 	cite {
 		font-size: 1rem;
 		font-family: 'Lato', sans-serif;
 		font-weight: 400;
-		font-style: normal;
 		line-height: 1;
 		letter-spacing: normal;
-		margin: 0.5rem 0; /* 8px 0 */
-		display: block;
 	}
 }
 
