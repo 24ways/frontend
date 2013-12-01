@@ -4,15 +4,15 @@
     Twitter: @drewm
 
     Production: Brian Suda
-    URL: http://suda.co.uk/
+    URL: http://suda.co.uk
     Twitter: @briansuda
 
     Production: Anna Debenham
-    URL: http://maban.co.uk/
+    URL: http://maban.co.uk
     Twitter: @anna_debenham
     
     Editing and production: Owen Gregory
-    URL: http://fullcreammilk.co.uk/
+    URL: http://fullcreammilk.co.uk
     Twitter: @fullcreammilk
 
     Design and front-end development: Paul Robert Lloyd
@@ -22,14 +22,14 @@
 
 /* THANKS */
     Made possible only with the help and dedication of our authors.
-    URL: http://24ways.org/authors/
+    URL: http://24ways.org/authors
 
     Animation assistance: Josh Emerson
     URL: http://joshemerson.co.uk
     Twitter: @joshje
 
     JavaScript assistance: Scott Jehl
-    URL: http://scottjehl.com/
+    URL: http://scottjehl.com
     Twitter: @scottjehl‎
 
 
