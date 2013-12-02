@@ -121,27 +121,21 @@
    Traverse articles and indices
    ========================================================================== */
 .nav-traverse {
+	display: none;
 	@media screen and (min-width: 31.5em) {
 		width: 4.5rem;
-	}
-	.nav_item {
-		text-align: left;
-		padding: 1em 0.5em;
-		width: 50%;
-		float: left;
 		display: block;
-		@media screen and (min-width: 31.5em) {
+		.nav_item {
 			text-align: center;
 			width: auto;
 			height: 4.5rem;
 			float: none;
+			display: block;
 		}
-	}
-	.nav_prev,
-	.nav_next {
-		position: relative;
-		@media screen and (min-width: 31.5em) {
+		.nav_prev,
+		.nav_next {
 			font: 0/0 a;
+			position: relative;
 			&::before {
 				font-size: 48px;
 				font-size: 3rem;
@@ -150,15 +144,6 @@
 				display: block;
 				position: relative;
 				z-index: 1000;
-			}
-		}
-	}
-	.nav_next {
-		text-align: right;
-		@media screen and (min-width: 31.5em) {
-			text-align: center;
-			&::after {
-				content: "Next: \A"attr(data-sequence-title);
 			}
 		}
 	}
@@ -213,7 +198,16 @@
 		}
 	}
 }
-
+.js-menu-active {
+	.nav-traverse {
+		.nav_prev,
+		.nav_next {
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
 
 /* ==========================================================================
    Continue link
