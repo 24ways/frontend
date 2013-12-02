@@ -1,5 +1,6 @@
 /* ==========================================================================
    Banner
+   z-index: 100
    ========================================================================== */
 .banner {
 	text-transform: uppercase;
@@ -12,7 +13,7 @@
 		top: 0;
 		right: 0;
 		left: 0;
-		z-index: 99;
+		z-index: 100;
 	}
 	@media screen and (min-width: 31.5em) {
 		padding: 1.5rem 1rem;
@@ -57,6 +58,7 @@
 
 /* ==========================================================================
    Menu
+   z-index: 10000
    ========================================================================== */
 .menu {
 	color: @c-neutral-light;
@@ -65,7 +67,7 @@
 	position: fixed;
 	top: 0;
 	right: 0;
-	z-index: 999;
+	z-index: 10000;
 	overflow: hidden;
 	@media screen and (max-width: 31.4375em) {
 		color: #fff;
@@ -139,11 +141,12 @@
 
 /* ==========================================================================
    Navigation
+   z-index: 1000
    ========================================================================== */
 .navigation {
 	background-color: #fff;
 	right: 0;
-	z-index: 9;
+	z-index: 1000;
 	position: relative;
 	.nav-site {
 		@media screen and (min-width: 31.5em) {
@@ -163,7 +166,7 @@
 		position: fixed;
 		bottom: 9rem; /* 144px */
 		right: 0;
-		z-index: 9;
+		z-index: 1000;
 		display: none;
 		@media screen and (min-width: 31.5em) and (min-height: 26.9375em) {
 			display: block;
@@ -176,7 +179,7 @@
 			position: fixed;
 			right: 0;
 			top: 4.5rem; /* 72px */
-			z-index: 9;
+			z-index: 1000;
 		}
 	}
 }
@@ -224,7 +227,7 @@
 
 .js-menu-active {
 	.navigation {
-		z-index: 9;
+		z-index: 1000;
 		@media screen and (max-width: 31.4375em) {
 			box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
 			max-height: 30rem; /* 320px */
