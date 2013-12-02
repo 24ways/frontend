@@ -97,7 +97,7 @@
 	&:target {
 		.section_header,
 		.section_main {
-			border-top: 1px solid rgba(0,0,0,0.33);
+			border-color: rgba(0,0,0,0.33);
 		}
 	}
 }
@@ -468,6 +468,9 @@
 		}
 		a {
 			color: @c-neutral;
+			&:hover {
+				color: @c-neutral-dark;
+			}
 		}
 	}
 	.summary_link {
@@ -606,6 +609,9 @@
 		}
 		a {
 			color: @c-neutral;
+			&:hover {
+				color: @c-neutral-dark;
+			}
 		}
 	}
 	.summary_title {
