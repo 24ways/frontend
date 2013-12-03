@@ -7,7 +7,7 @@
 	background-color: darken(@c-signature, 20%);
 	padding: 0.875em 1em; /* 14px 16px */
 	height: 3rem; /* 48p */
-	transition: background-color .2s ease-out;
+	transition: background-color .1s ease-out;
 	@media screen and (max-width: 31.4375em) {
 		position: fixed;
 		top: 0;
@@ -22,13 +22,16 @@
 	@media screen and (min-width: 50em) {
 		padding-left: 25%;
 	}
+	a {
+		transition: color .1s ease-out;
+	}
 }
 .js-menu-active {
 	.banner {
 		@media screen and (max-width: 31.4375em) {
 			background-color: #fff;
 			a {
-				color: grey;
+				color: @c-neutral;
 			}
 		}
 	}
@@ -116,23 +119,23 @@
 /* ==========================================================================
    Main
    ========================================================================== */
-[role="main"] {
+.main {
 	background-color: @c-neutral-lightest;
 }
 
-.js-enhanced [role="banner"],
-.js-enhanced [role="main"],
-.js-enhanced [role="contentinfo"] {
-	transition: all .2s ease-in;
+.js-enhanced .banner,
+.js-enhanced .main,
+.js-enhanced .contentinfo {
+	transition: -webkit-filter .2s ease-in, filter .2s ease-in;
 }
 
-.js-menu-active [role="main"],
-.js-menu-active [role="contentinfo"] {
+.js-menu-active .main,
+.js-menu-active .contentinfo {
 	-webkit-filter: brightness(0.75);
 	filter: brightness(0.75);
 }
 @media screen and (min-width: 31.5em) {
-	.js-menu-active [role="banner"] {
+	.js-menu-active .banner {
 		-webkit-filter: brightness(0.75);
 		filter: brightness(0.75);
 	}
