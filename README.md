@@ -4,7 +4,7 @@
 * Test print styles
 * Can I use & selector in LESS?
 * Re-organize modules
-* Quote styles (default, and blockquote)
+* -Quote styles (default, and blockquote)-
 
 ## JS
 * Use custom Zepto build to reduce JS overhead
