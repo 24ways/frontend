@@ -19,8 +19,12 @@ pre {
 	padding: 0 0.5em;
 	overflow: auto;
 	@media screen and (min-width: 40em) {
+		// Base font size now 18px within article body
+		line-height: 1.3334; /* 24px */
+	}
+	@media screen and (min-width: 40em) {
 		// Base font size now 20px within article body
-		line-height: 1.5; /* 24px */
+		line-height: 1.4; /* 28px */
 	}
 }
 
@@ -32,17 +36,20 @@ blockquote {
 		page-break-inside: avoid;
 	}
 	p {
-		color: lighten(@c-text, 15%);
+		//color: @c-neutral-darker;
 		.font-smoothing-on();
 		font-family: 'Merriweather', serif;
 		font-weight: 400;
-		font-size: 1.25em; /* 20px */
-		line-height: 1.4; /* 28px */
+		font-size: 1.125em; /* 18px */
+		line-height: 1.5556; /* 28px */
 		letter-spacing: -0.0625rem; /* -1px */
 		margin: 0.75rem 0; /* 12px 0 */
 		@media screen and (min-width: 40em) {
-			// Base font size now 20px within article body
-			font-size: 1.2em; /* 24px */
+			font-size: 1.25rem; /* 20px */
+			line-height: 1.6; /* 32px */
+		}
+		@media screen and (min-width: 60em) {
+			font-size: 1.5rem; /* 24px */
 			line-height: 1.5; /* 36px */
 		}
 	}
