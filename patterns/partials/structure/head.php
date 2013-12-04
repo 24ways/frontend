@@ -26,7 +26,7 @@
 		// Add a script element as a child of the body
 		function downloadJSAtOnload() {
 			var element = document.createElement("script");
-			element.src = "//static.24ways.org/js/scripts_v18.js";
+			element.src = "//static.24ways.org/js/scripts_v22.js";
 			document.body.appendChild(element);
 		}
 
