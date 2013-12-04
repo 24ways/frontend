@@ -66,6 +66,17 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+@media print {
+	@page {
+		margin: 2cm;
+	}
+	* {
+		background: transparent !important;
+		color: #000 !important;
+		text-shadow: none !important;
+		box-shadow: none;
+	}
+}
 
 /* Helpers */
 .hidden {

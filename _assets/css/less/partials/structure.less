@@ -91,6 +91,9 @@
 			background-color: darken(@c-neutral-lightest, 1%);
 		}
 	}
+	@media print {
+		display: none;
+	}
 	&::before {
 		font-size: 3rem; /* 48px */
 		display: block;
@@ -151,6 +154,9 @@
 	right: 0;
 	z-index: 1000;
 	position: relative;
+	@media print {
+		display: none;
+	}
 	.nav-site {
 		@media screen and (min-width: 31.5em) {
 			width: 4.5rem; /* 72px */
@@ -294,6 +300,11 @@
 	overflow: hidden;
 	small {
 		font-size: 100%;
+	}
+	a {
+		@media print {
+			display: none;
+		}
 	}
 }
 

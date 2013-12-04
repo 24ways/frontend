@@ -160,7 +160,7 @@
 
 /* Section - Sponsor */
 .section-sponsor {
-	@media screen and (min-width: 50em) {
+	@media screen and (min-width: 50em), not print {
 		pointer-events: none;
 		padding: 0;
 		position: absolute;
@@ -367,7 +367,9 @@
 	background-color: white;
 	padding: 1em;
 	position: relative;
-	box-shadow: 1px 1px 0 fade(@c-neutral, 15%);
+	@media screen {
+		box-shadow: 1px 1px 0 fade(@c-neutral, 15%);
+	}
 }
 
 .summary_title {
@@ -412,11 +414,17 @@
 .summary-article {
 	padding-bottom: 2.5em;
 	position: relative;
+	@media print {
+		height: auto;
+	}
 	a {
 		position: relative;
 		z-index: 1;
 	}
 	.summary_author {
+		@media print {
+			display: none;
+		}
 		margin: 0;
 		position: absolute;
 		top: 0;

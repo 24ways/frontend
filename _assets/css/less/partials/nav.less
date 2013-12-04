@@ -126,15 +126,12 @@
 		width: 4.5rem;
 		display: block;
 		.nav_item {
+			font: 0/0 a;
 			text-align: center;
 			width: auto;
 			height: 4.5rem;
 			float: none;
 			display: block;
-		}
-		.nav_prev,
-		.nav_next {
-			font: 0/0 a;
 			position: relative;
 			&::before {
 				font-size: 48px;
@@ -150,9 +147,8 @@
 }
 .js-enhanced {
 	.nav-traverse {
-		@media screen and (min-width: 31.5em) {
-			.nav_prev,
-			.nav_next {
+		@media screen and (min-width: 31.5em), not print {
+			.nav_item {
 				&::before {
 					background-color: #fff;
 				}

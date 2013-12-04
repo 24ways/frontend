@@ -26,6 +26,9 @@ body {
 	@media screen and (min-width: 31.5em) {
 		margin-right: 4.5rem; /* 72px */
 	}
+	@media print {
+		margin-right: 0;
+	}
 }
 
 h1 {
@@ -115,3 +118,8 @@ hr {
 		letter-spacing: 0.75rem; /* 12px */
 		height: 0;
 	}
+@media print {
+	h1, h2, h3, h4 {
+		page-break-after: avoid;
+	}
+}

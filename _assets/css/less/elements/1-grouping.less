@@ -3,7 +3,9 @@
    http://developers.whatwg.org/grouping-content.html
    ========================================================================== */
 
-p, pre, blockquote, ul, ol, dl, figure, table, fieldset, details {
+p, pre, blockquote, ul, ol, dl, figure, table, fieldset {
+	orphans: 3;
+	widows: 3;
 	margin: 0.75em 0; /* 12px 0 */
 }
 
@@ -26,7 +28,9 @@ blockquote {
 	border-left: 0.25rem solid fade(@c-text, 15%);
 	margin: 1.5em 0 1.5em -1rem; /* 24px 0 24px -16px */
 	padding-left: 0.75rem; /* 12px */
-
+	@media print {
+		page-break-inside: avoid;
+	}
 	p {
 		color: lighten(@c-text, 15%);
 		.font-smoothing-on();

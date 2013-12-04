@@ -23,3 +23,10 @@ a {
 		-moz-text-decoration-color: fade(@c-link-active, 33%);
 	}
 }
+
+@media print {
+	a, a:visited {
+		color: #000 !important;
+		border-bottom: 1px dotted #999;
+	}
+}
