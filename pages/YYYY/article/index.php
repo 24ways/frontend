@@ -68,6 +68,8 @@
 				</figure>
 				<p>So what can we do? What can we control?</p>
 				
+				<hr/>
+				
 				<h3>Right</h3>
 				<p>Those of us with particularly long memories might recall a time before <span class="caps">CSS</span>, when we&#8217;d have to use JavaScript to perform image rollovers. As <span class="caps">CSS</span> background images weren&#8217;t a practical reality, we would use lots of <code>&lt;img&gt;</code> elements, and perform a rollover by modifying the <code>src</code> attribute of the image. </p>
 				<p>Turns out, this old trick of modifying the source can help us out with video, too. In most cases, modifying the <code>src</code> attribute of a <code>&lt;video&gt;</code> element, or perhaps more likely the <code>src</code> attribute of a <code>source</code> element, will swap from one video to another.</p>
@@ -110,6 +112,10 @@
 				<p><a href="http://media.24ways.org/2012/mclellan/examples/2.html">See the code in action</a>, this time in a wider range of browsers.</p>
 
 				<h2>But, my video!</h2>
+				<ul>
+					<li>Store the original <code>src</code> in a <code>data-</code> attribute so we can access it later</li>
+					<li>Add an event listener so we can detect the end of the bumper playing, and load the original video back in</li>
+				</ul>
 				<p>I guess we should get the original video playing again. Keeping the same markup, we need to modify the script to do two things:</p>
 				<ol>
 					<li>Store the original <code>src</code> in a <code>data-</code> attribute so we can access it later</li>

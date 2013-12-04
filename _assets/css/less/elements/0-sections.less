@@ -104,20 +104,19 @@ h6 {
 }
 
 hr {
-	font-size: 2rem; /* 32px */
 	line-height: 0;
 	text-align: center;
-	margin: 2rem 0; /* 32px 0 */
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
+	margin: 2em 0; /* 32px 0 */
 	border: 0;
 	height: 0;
-	}
-	hr::after {
-		content: "···";
+	&::after {
+		color: fade(@c-text, 25%);
+		content: "\2B29 \25C6 \2B25 \25C6 \2B29";
 		letter-spacing: 0.75rem; /* 12px */
 		height: 0;
 	}
+}
+
 @media print {
 	h1, h2, h3, h4 {
 		page-break-after: avoid;

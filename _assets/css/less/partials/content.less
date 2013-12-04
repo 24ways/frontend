@@ -305,6 +305,19 @@
 	li {
 		margin: 0.25em 0; /* 4px 0 */
 	}
+	ul li {
+		list-style: none outside;
+		position: relative;
+		&::before {
+			color: fade(@c-text, 75%);
+			content: "\2B29";
+			margin-right: 0.5em;
+			@media screen and (min-width: 50em) {
+				position: absolute;
+				left: -1.125em;
+			}
+		}
+	}
 	a {
 		border-bottom: 1px solid rgba(0,0,0,0.1);
 	}
