@@ -2,9 +2,7 @@
 
 ## CSS
 * Test print styles
-* Can I use & selector in LESS?
-* Re-organize modules
-* -Quote styles (default, and blockquote)-
+* Test device styles
 
 ## JS
 * Use custom Zepto build to reduce JS overhead
