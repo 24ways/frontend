@@ -25,14 +25,17 @@
 	a {
 		transition: color .1s ease-out;
 	}
-}
-.js-menu-active {
-	.banner {
+
+	.js-menu-active & {
 		@media screen and (max-width: 31.4375em) {
 			background-color: #fff;
 			a {
 				color: @c-neutral;
 			}
+		}
+		@media screen and (min-width: 31.5em) {
+			-webkit-filter: brightness(0.75);
+			filter: brightness(0.75);
 		}
 	}
 }
@@ -101,14 +104,12 @@
 			line-height: 1.5;
 		}
 	}
-}
-.js-enhanced {
-	.menu {
+
+	.js-enhanced & {
 		position: fixed;
 	}
-}
-.js-menu-active {
-	.menu {
+
+	.js-menu-active & {
 		@media screen and (max-width: 31.4375em) {
 			color: @c-neutral;
 		}
@@ -136,12 +137,6 @@
 .js-menu-active .contentinfo {
 	-webkit-filter: brightness(0.75);
 	filter: brightness(0.75);
-}
-@media screen and (min-width: 31.5em) {
-	.js-menu-active .banner {
-		-webkit-filter: brightness(0.75);
-		filter: brightness(0.75);
-	}
 }
 
 
@@ -190,10 +185,8 @@
 			z-index: 1000;
 		}
 	}
-}
 
-.js-enhanced {
-	.navigation {
+	.js-enhanced & {
 		@media screen and (max-width: 31.4375em) {
 			overflow: hidden;
 			position: fixed;
@@ -231,10 +224,8 @@
 			}
 		}
 	}
-}
 
-.js-menu-active {
-	.navigation {
+	.js-menu-active & {
 		z-index: 1000;
 		@media screen and (max-width: 31.4375em) {
 			box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);

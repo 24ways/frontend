@@ -1,4 +1,6 @@
-/* All navigation */
+/* ==========================================================================
+   All
+   ========================================================================== */
 .nav {
 	list-style-type: none;
 	margin: 0;
@@ -144,10 +146,9 @@
 			}
 		}
 	}
-}
-.js-enhanced {
-	.nav-traverse {
-		@media screen and (min-width: 31.5em), not print {
+
+	.js-enhanced & {
+		@media screen and (min-width: 31.5em) {
 			.nav_item {
 				&::before {
 					background-color: #fff;
@@ -193,9 +194,8 @@
 			}
 		}
 	}
-}
-.js-menu-active {
-	.nav-traverse {
+
+	.js-menu-active & {
 		.nav_prev,
 		.nav_next {
 			&::after {
@@ -204,6 +204,7 @@
 		}
 	}
 }
+
 
 /* ==========================================================================
    Continue link
