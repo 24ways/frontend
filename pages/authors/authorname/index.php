@@ -15,7 +15,7 @@
 						<span class="avatar"><img class="preface_image u-photo" src="http://cloud.24ways.org/authors/rachelandrew280.jpg" width="280" height="280" alt="Rachel Andrew"></span>
 						<p><strong class="fn n">Rachel Andrew</strong> is a Director of edgeofmyseat.com, a UK web development consultancy and creators of the small content management system, <a href="http://grabaperch.com">Perch</a>. She is the author of a number of web design and development books including The CSS3 Anthology for SitePoint and the <a href="http://www.fivesimplesteps.com/pages/pocket-guides">CSS3 Layout Modules Pocket Guide</a> to be published by Five Simple Steps in January 2013.</p>
 						<p>When not writing about business and technology on her blog at <a href="http://rachelandrew.co.uk">rachelandrew.co.uk</a> or <a href="http://lanyrd.com/profile/rachelandrew/">speaking at conferences</a>, you will usually find Rachel out for a run, as she has a London Marathon place for 2013.</p>
-						<p class="photo-credit">Photo: <a href="http://duncandavidson.com/">James Duncan Davidson</a><br></p>
+						<p class="photo-credit">Photo: <a href="http://duncandavidson.com/">James Duncan Davidson</a></p>
 					</div>
 				</div>
 			</header><!--/.preface-->
