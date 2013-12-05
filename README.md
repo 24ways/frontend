@@ -3,6 +3,7 @@
 ## CSS
 * Test print styles
 * Test device styles
+* Refine print styles for comments
 
 ## JS
 * Use custom Zepto build to reduce JS overhead
