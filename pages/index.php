@@ -11,7 +11,7 @@
 			<header class="preface">
 				<h1 class="preface_title">2013</h1>
 				<div class="preface_main">
-					<p class="lede"><cite>24 ways</cite> is the advent calendar for web geeks. Each day throughout December we publish a daily dose of web design and development goodness to bring you all a little Christmas cheer. <a href="/pages/about/">Learn more</a></p>
+					<p class="lede"><cite>24 ways</cite> is the advent calendar for web geeks. Each day throughout December we publish a daily dose of web design and development goodness to bring you all a little Christmas cheer. <a class="continue" href="/pages/about/">Learn more</a></p>
 				</div>
 			</header><!--/.preface-->
 
