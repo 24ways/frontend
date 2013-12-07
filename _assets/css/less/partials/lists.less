@@ -18,7 +18,7 @@
 	@media screen and (min-width: 60em) {
 		width: 25%;
 	}
-	@media screen and (min-width: 80em) {
+	@media screen and (min-width: 80em), print {
 		width: 20%;
 	}
 }
@@ -95,6 +95,11 @@
 					clear: none;
 				}
 			}
+		}
+	}
+	.list-authors {
+		@media print {
+			margin: 0;
 		}
 	}
 }
