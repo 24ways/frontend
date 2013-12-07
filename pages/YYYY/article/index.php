@@ -40,7 +40,10 @@
 
 				<p>Known as <em>bumpers</em>, these short introduction clips help brand a video and make it look a lot more professional.</p>
 				<figure>
-					<img src="http://media.24ways.org/2012/mclellan/timeline.png" alt="Video timeline" />
+					<img src="http://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
+					<figcaption>
+						Caption
+					</figcaption>
 				</figure>
 
 				<h2>Adding bumpers to a video</h2>

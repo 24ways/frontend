@@ -284,18 +284,10 @@
 		margin-left: 25%;
 		padding-right: 5%;
 		width: 75%;
-		figure,
-		p.image {
-			margin-right: -7.6667%;
-		}
 	}
 	@media screen and (min-width: 60em) {
 		font-size: 125%;
 		padding-right: 15%;
-		figure,
-		p.image {
-			margin-right: -25.8334%;
-		}
 	}
 	@media screen and (min-width: 80em) {
 		padding-right: 25%;
@@ -324,6 +316,24 @@
 				font-size: 0.75em;
 				content: " ["attr(href)"]";
 			}
+		}
+	}
+	figure,
+	p.image {
+		margin: 0 -1rem;
+		@media screen and (min-width: 50em) {
+			margin-left: 0;
+			margin-right: -7.6667%;
+		}
+		@media screen and (min-width: 60em) {
+			margin-right: -25.8334%;
+		}
+	}
+	figcaption,
+	p.image span.caption {
+		margin: 0 1rem;
+		@media screen and (min-width: 50em) {
+			margin: 0;
 		}
 	}
 }
