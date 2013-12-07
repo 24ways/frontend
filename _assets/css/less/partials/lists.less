@@ -55,8 +55,15 @@
 	}
 }
 
-/* List > Articles within a section */
+/* Lists within a section */
 .section {
+	.list-articles,
+	.list-authors {
+		margin: -0.5em -1em;
+		@media screen and (min-width: 50em) {
+			margin: -0.5rem 0 0 0;
+		}
+	}
 	.list-articles {
 		@media screen and (min-width: 50em) {
 			margin-right: -7%;
