@@ -1,13 +1,10 @@
 # Still to do…
 
 ## CSS
-* Test print styles
 * Test device styles
-* Refine print styles for comments
 
 ## JS
 * Use custom Zepto build to reduce JS overhead
-* Disable hover effects on scroll
 
 ## Content
 * Don't show view more articles from this author if only has one article
