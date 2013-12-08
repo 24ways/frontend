@@ -32,8 +32,9 @@
 
 		<form class="search" role="search" id="search" action="/pages/search/">
 			<fieldset class="field-search">
-				<label class="field_label label" for="q">Search</label>
-				<input class="field_input input" type="search" name="q" placeholder="e.g. CSS, Design, Research&#8230;"/>
+				<legend class="hidden">Search 24 ways</legend>
+				<label class="field_label label" for="q">Keywords</label>
+				<input class="field_input input" type="search" id="q" name="q" placeholder="e.g. CSS, Design, Research&#8230;"/>
 				<input class="field_button button" type="submit" value="Search"/>
 			</fieldset>
 		</form><!--/.search-->
