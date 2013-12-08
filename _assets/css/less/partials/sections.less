@@ -444,7 +444,7 @@
 	.caption();
 	margin: 0.75rem 0;
 	a {
-		color: @c-neutral;
+		//color: @c-neutral;
 	}
 }
 .summary_vote {
@@ -512,6 +512,9 @@
 	}
 	.summary_main {
 		margin-bottom: 1.25rem;
+		a {
+			color: inherit;
+		}
 	}
 	.summary_meta {
 		color: @c-neutral;
@@ -521,12 +524,6 @@
 		}
 		.dt-published {
 			margin-right: 1.5em;
-		}
-		a {
-			color: @c-neutral;
-			&:hover {
-				color: @c-neutral-dark;
-			}
 		}
 	}
 	.summary_link {
