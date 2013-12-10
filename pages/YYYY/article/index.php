@@ -45,6 +45,12 @@
 						Caption
 					</figcaption>
 				</figure>
+				<figure>
+					<img src="http://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
+					<figcaption>
+						Caption
+					</figcaption>
+				</figure>
 
 				<h2>Adding bumpers to a video</h2>
 				<p>The simplest way to add bumpers to a video would be to edit them on to the start and end of the video file itself. Cooking the bumpers into the video file is easy, but should you ever want to update them it can become a real headache. If the branding needs updating, for example, you&#8217;d need to re-edit and re-encode all your videos. Not a fun task.</p>
