@@ -1,7 +1,7 @@
 <? include_once($_SERVER['DOCUMENT_ROOT'].'/_inc/functions.php'); ?>
 <? $title = "2013"; ?>
 <? $section = "home"; ?>
-<? $theme = "year-2013"; ?>
+<? $theme = "year-2015"; ?>
 <? inc('partial','head') ?>
 <? inc('partial','banner') ?>
 <? inc('partial','menu') ?>
