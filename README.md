@@ -9,7 +9,7 @@ This project is built upon [Fractal](https://github.com/frctl/fractal), a tool t
 To get the project up and running, and view components in the browser, complete the following steps:
 
 1. Download and install Node: <https://nodejs.org/>
-2. Clone this repo: `git clone git@github.com:paulrobertlloyd/24ways-frontend.git`
+2. Clone this repo: `git clone git@github.com:24ways/frontend.git`
 3. [Optional] Install Gulp globally: `npm install gulp -g`
 4. [Optional] Install Fractal globally: `npm install fractal -g`
 5. Install project dependancies: `npm install`
