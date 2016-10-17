@@ -1,6 +1,6 @@
 # 24 ways front-end component library
 
-> **Note:** This project is in the early stages of development
+> **Note:** This project is in the early stages of (re-)development
 
 ## Requirements
 This project is built upon [Fractal](https://github.com/frctl/fractal), a tool that enables the rapid development of components, templates and pages. Fractal uses a number of ES6 features, so this project requires [Node.js](https://nodejs.org/) v4.0+ to be installed locally. A global install of Gulp is also recommended.
@@ -9,7 +9,7 @@ This project is built upon [Fractal](https://github.com/frctl/fractal), a tool t
 To get the project up and running, and view components in the browser, complete the following steps:
 
 1. Download and install Node: <https://nodejs.org/>
-2. Clone this repo: `git clone git@github.com:paulrobertlloyd/24ways-fronten.git`
+2. Clone this repo: `git clone git@github.com:paulrobertlloyd/24ways-frontend.git`
 3. [Optional] Install Gulp globally: `npm install gulp -g`
 4. [Optional] Install Fractal globally: `npm install fractal -g`
 5. Install project dependancies: `npm install`
