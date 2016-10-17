@@ -7,13 +7,13 @@
     "patterns",
     "library"
   ],
-  "homepage": "https://24ways.org",
-  "bugs": "https://github.com/24ways-frontend/pick/issues",
+  "homepage": "https://build.24ways.org",
+  "bugs": "https://github.com/24ways/frontend/issues",
   "license": "SEE LICENSE IN LICENSE",
   "author": "Paul Robert Lloyd",
   "repository": {
     "type": "git",
-    "url": "https://github.com/paulrobertlloyd/24ways-frontend.git"
+    "url": "https://github.com/24ways/frontend.git"
   },
   "main": "fractal.js",
   "scripts": {
