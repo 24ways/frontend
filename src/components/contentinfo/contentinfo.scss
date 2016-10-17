@@ -1,0 +1,40 @@
+.contentinfo {
+  @include caption();
+  background-color: #fff;
+  padding: 0.625rem 1rem 0.5625rem; /* 10px 16px 9px */
+  clear: left;
+  overflow: hidden;
+
+  small {
+    font-size: 100%;
+  }
+
+  a {
+    @media print {
+      display: none;
+    }
+  }
+}
+
+.contentinfo_copyright {
+  @media screen and (min-width: 37.5em) {
+    margin: 0;
+    float: left;
+  }
+}
+
+.contentinfo_social {
+  @media screen and (min-width: 37.5em) {
+    margin: 0;
+    float: right;
+  }
+
+  a {
+    margin: 0 1em 0 0;
+
+    @media screen and (min-width: 37.5em) {
+      margin: 0 0 0 1em;
+      float: right;
+    }
+  }
+}

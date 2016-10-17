@@ -1,0 +1,7 @@
+context:
+  title: "YYYY"
+  content: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat, elit nec malesuada interdum, nibh erat convallis turpis, vel mollis mi sem ac arcu.
+  section: archives
+  theme: year-2013
+  traverse: true

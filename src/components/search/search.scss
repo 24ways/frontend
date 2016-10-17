@@ -1,0 +1,39 @@
+.search .field_label {
+  @media screen and (min-width: 31.5em) {
+    &::before {
+      line-height: 1.5;
+      text-align: center;
+      width: 4rem; /* 64px */
+      height: 4.5rem; /* 72px */
+    }
+  }
+}
+
+.search .field_input {
+  background-color: $c-neutral-lightest;
+  box-shadow: none;
+  width: 100%;
+
+  @media screen and (min-width: 31.5em) {
+    padding-left: 4rem; /* 64px */
+    height: 4.5rem; /* 72px */
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 0 2px fade($c-neutral-lighter, 50%);
+  }
+}
+
+.search .field_button {
+  font: 0/0 a;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  @media screen and (min-width: 31.5em) {
+    width: 4rem; /* 64px */
+    height: 4.5rem; /* 72px */
+  }
+}

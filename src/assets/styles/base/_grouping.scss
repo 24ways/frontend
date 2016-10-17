@@ -1,0 +1,126 @@
+// =========================================================
+// Grouping content
+// w3c.github.io/html/grouping-content.html
+// =========================================================
+
+p, pre, blockquote, ul, ol, dl, figure, table, fieldset {
+  orphans: 3;
+  widows: 3;
+  margin: 0.75em 0; /* 12px 0 */
+}
+
+pre {
+  font-size: 0.875em; /* 14px */
+  line-height: 1.4286; /* 20px */
+  white-space: pre;
+  tab-size: 4;
+  hyphens: none;
+  margin: 1em -0.5em;
+  padding: 0 0.5em;
+  overflow: auto;
+  @media screen and (min-width: 40em) {
+    // Base font size now 18px within article body
+    line-height: 1.3334; /* 24px */
+  }
+  @media screen and (min-width: 40em) {
+    // Base font size now 20px within article body
+    line-height: 1.4; /* 28px */
+  }
+  @media print {
+    overflow: visible;
+  }
+}
+
+blockquote {
+  border-left: 0.25rem solid fade($c-text, 15%);
+  margin: 1.5em 0 1.5em -1rem; /* 24px 0 24px -16px */
+  padding-left: 0.75rem; /* 12px */
+  @media print {
+    page-break-inside: avoid;
+  }
+  p {
+    @include font-smoothing-on();
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 1.125em; /* 18px */
+    line-height: 1.5556; /* 28px */
+    letter-spacing: -0.0625rem; /* -1px */
+    margin: 0.75rem 0; /* 12px 0 */
+    @media screen and (min-width: 40em) {
+      font-size: 1.25rem; /* 20px */
+      line-height: 1.6; /* 32px */
+    }
+    @media screen and (min-width: 60em) {
+      font-size: 1.3125rem; /* 21px */
+      line-height: 1.5238; /* 32px */
+    }
+  }
+  footer,
+  cite {
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: normal;
+  }
+}
+
+ol {
+  list-style-position: inside;
+  list-style-type: decimal;
+  margin: 1rem 0; /* 16px 0 */
+  padding: 0;
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: square;
+  margin: 1rem 0; /* 16px 0 */
+  padding: 0;
+}
+@media screen and (min-width: 50em) {
+  ol,
+  ul {
+    list-style-position: outside;
+  }
+}
+
+ul li li {
+  list-style-type: circle;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+dt {
+  font-weight: 700;
+}
+
+li li,
+dd {
+  margin-left: 2rem;
+}
+
+li > *,
+dd > * {
+  margin-top: 0;
+}
+
+figure,
+p.image {
+  margin: 1.5em 0; /* 24px 0 */
+  img {
+    max-width: 100%;
+  }
+}
+figcaption,
+p.image span.caption {
+  color: #666; /* $color-caption */
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.1429; /* 16px */
+  border-bottom: 1px solid fade($c-text, 20%);
+  padding: 0.5714em 0; /* 8px 0 */
+  display: block;
+}

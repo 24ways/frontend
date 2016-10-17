@@ -1,0 +1,43 @@
+{
+  "name": "24ways-frontend",
+  "version": "2016.0.0",
+  "description": "Front-end deliverables for 24 ways.",
+  "keywords": [
+    "styleguide",
+    "patterns",
+    "library"
+  ],
+  "homepage": "https://24ways.org",
+  "bugs": "https://github.com/24ways-frontend/pick/issues",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Paul Robert Lloyd",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulrobertlloyd/24ways-frontend.git"
+  },
+  "main": "fractal.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node_modules/.bin/gulp start",
+    "build": "node_modules/.bin/gulp build",
+    "deploy": "node_modules/.bin/gulp deploy",
+    "dev": "node_modules/.bin/gulp dev"
+  },
+  "dependencies": {
+    "@frctl/fractal": "frctl/fractal.git#1.1",
+    "@frctl/mandelbrot": "latest",
+    "@frctl/nunjucks": "latest",
+    "autoprefixer": "latest",
+    "del": "latest",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-gh-pages": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-postcss": "latest",
+    "gulp-sass": "latest",
+    "gulp-sass-glob": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "latest",
+    "marked": "latest",
+    "node-sass-json-importer": "latest"
+  }
+}

@@ -1,0 +1,15 @@
+// =========================================================
+// Embedded content
+// w3c.github.io/html/edits.html
+// =========================================================
+
+mark,
+ins {
+  background-color: #ffc;
+  padding: 0 0.125rem; /* 0 2px */
+}
+
+ins {
+  text-decoration: none;
+  background-color: lighten($c-link, 60%);
+}

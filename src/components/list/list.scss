@@ -1,0 +1,126 @@
+/* All lists: clear floats and remove bullets */
+.list {
+  list-style-type: none;
+  margin: 0;
+  @include clear();
+}
+
+/* List > Comments */
+.list-comments .list_item {
+  padding: 1px 1px 0 0;
+}
+
+/* List > Authors */
+.list-authors .list_item {
+  padding: 1px 1px 0 0;
+  width: 33.3334%;
+  float: left;
+
+  @media screen and (min-width: 60em) {
+    width: 25%;
+  }
+
+  @media screen and (min-width: 80em), print {
+    width: 20%;
+  }
+}
+
+/* List > Articles */
+.list-articles {
+  padding: 0.25em 0 0 0.25em;
+
+  @media print {
+    padding: 0;
+  }
+
+  .list_item {
+    padding: 0 0.25em 0.25em 0;
+
+    @media screen and (min-width: 40em) and (max-width: 54.9375em), print {
+      width: 50%;
+      float: left;
+
+      &:nth-child(2n+1) {
+        clear: left;
+      }
+    }
+
+    @media screen and (min-width: 55em) and (max-width: 64.9375em) {
+      width: 33.3334%;
+      float: left;
+
+      &:nth-child(3n+1) {
+        clear: left;
+      }
+    }
+
+    @media screen and (min-width: 65em) {
+      width: 25%;
+      float: left;
+
+      &:nth-child(4n+1) {
+        clear: left;
+      }
+    }
+  }
+}
+
+/* Lists within a section */
+.section {
+  .list-articles,
+  .list-authors {
+    margin: -0.5em -1em;
+
+    @media screen and (min-width: 50em) {
+      margin: -0.5rem 0 0 0;
+    }
+  }
+
+  .list-articles {
+    @media screen and (min-width: 50em) {
+      margin-right: -7%;
+    }
+
+    @media screen and (min-width: 60em) {
+      margin-right: -25%;
+    }
+
+    @media screen and (min-width: 80em) {
+      margin-right: -50%;
+    }
+
+    .list_item {
+      @media screen and (min-width: 55em) and (max-width: 64.9375em) {
+        width: 50%;
+        float: left;
+
+        &:nth-child(2n+1) {
+          clear: left;
+        }
+
+        &:nth-child(3n+1) {
+          clear: none;
+        }
+      }
+
+      @media screen and (min-width: 65em) {
+        width: 33.3334%;
+        float: left;
+
+        &:nth-child(3n+1) {
+          clear: left;
+        }
+
+        &:nth-child(4n+1) {
+          clear: none;
+        }
+      }
+    }
+  }
+
+  .list-authors {
+    @media print {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{% if traverse %}
+<div class="nav nav-traverse">
+  {% if section == 'archives' %}
+  <a class="nav_item nav_prev" rel="prev" href="/pages/YYYY/" data-sequence-title="[YYYY-1]" data-icon="&#x2190;">Previous year</a>
+  <a class="nav_item nav_next" rel="next" href="/pages/YYYY/" data-sequence-title="[YYYY+1]" data-icon="&#x2192;">Next year</a>
+  {% endif %}
+  {% if section == 'authors' %}
+  <a class="nav_item nav_prev" rel="prev" href="/pages/authors/authorname/" data-sequence-title="[Previous Author Name]" data-icon="&#x2190;">Previous author</a>
+  <a class="nav_item nav_next" rel="next" href="/pages/authors/authorname/" data-sequence-title="[Next Author Name]" data-icon="&#x2192;">Next author</a>
+  {% endif %}
+  {% if section == 'topics' %}
+  <a class="nav_item nav_prev" rel="prev" href="/pages/topics/topicname/" data-sequence-title="[Previous Topic Name]" data-icon="&#x2190;">Previous topic</a>
+  <a class="nav_item nav_next" rel="next" href="/pages/topics/topicname/" data-sequence-title="[Next Topic Name]" data-icon="&#x2192;">Next topic</a>
+  {% endif %}
+  {% if section == 'articles' %}
+  <a class="nav_item nav_prev" rel="prev" href="/pages/YYYY/article/" data-sequence-title="[Previous Article Title]" data-icon="&#x2190;">Previous article</a>
+  <a class="nav_item nav_next" rel="next" href="/pages/YYYY/article/" data-sequence-title="[Next Article Title]" data-icon="&#x2192;">Next article</a>
+  {% endif %}
+</div>
+{% endif %}

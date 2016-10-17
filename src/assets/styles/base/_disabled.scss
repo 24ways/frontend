@@ -1,0 +1,10 @@
+// =========================================================
+// Disabled elements
+// w3c.github.io/html/disabled-elements.html
+// =========================================================
+
+// Restore the default cursor to disabled elements unset by the previous rule.
+[disabled] {
+  cursor: default;
+  opacity: 0.75;
+}

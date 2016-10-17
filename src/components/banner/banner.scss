@@ -1,0 +1,75 @@
+.banner {
+  text-transform: uppercase;
+  background-color: darken($c-signature, 20%);
+  padding: 0.875em 1em; /* 14px 16px */
+  height: 3rem; /* 48p */
+
+  @media screen and (max-width: 31.4375em) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    transition: background-color .1s ease-out;
+  }
+
+  @media screen and (min-width: 31.5em) {
+    padding: 1.5rem 1rem;
+    height: 4.5rem; /* 72px */
+  }
+
+  @media screen and (min-width: 50em) {
+    padding-left: 25%;
+  }
+
+  .js-enhanced & {
+    @media screen and (min-width: 31.5em) {
+      filter: brightness(1.0);
+
+      a {
+        transition: color .1s ease-out;
+      }
+    }
+  }
+
+  .js-menu-active & {
+    @media screen and (max-width: 31.4375em) {
+      background-color: #fff;
+      transition: background-color .1s ease-out;
+
+      a {
+        color: $c-neutral;
+        transition: color .1s ease-out;
+      }
+    }
+
+    @media screen and (min-width: 31.5em) {
+      filter: brightness(0.75);
+    }
+  }
+}
+
+.banner_logo {
+  font-size: 1.25em;
+  line-height: 1;
+  letter-spacing: 0;
+  margin: 0;
+
+  @media screen and (min-width: 31.5em) {
+    font-size: 1.5em;
+  }
+
+  @media screen and (min-width: 50em) {
+    margin-left: 1rem;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  span {
+    color: lighten($c-signature, 10%);
+    font-size: 0.6667em;
+    text-transform: lowercase;
+  }
+}

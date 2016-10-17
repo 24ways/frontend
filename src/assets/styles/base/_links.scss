@@ -1,0 +1,31 @@
+// =========================================================
+// Links
+// w3c.github.io/html/links.html
+// =========================================================
+
+a {
+  color: $c-link;
+  text-decoration: none;
+  -moz-text-decoration-color: fade($c-link, 33%);
+  &:focus {
+  /*  Address `outline` inconsistency between Chrome and other browsers */
+    outline: thin dotted;
+  }
+  &:active,
+  &:hover {
+    color: $c-link-hover;
+    -moz-text-decoration-color: fade($c-link-hover, 33%);
+  /*  Improve readability when focused and also mouse hovered in all browsers */
+    outline: 0;
+  }
+  &:active {
+    color: $c-link-active;
+    -moz-text-decoration-color: fade($c-link-active, 33%);
+  }
+}
+
+@media print {
+  a, a:visited {
+    color: #000 !important;
+  }
+}

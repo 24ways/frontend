@@ -1,0 +1,45 @@
+// =========================================================
+// Tablular data
+// w3c.github.io/html/tabular-data.html
+// =========================================================
+
+table {
+  font-size: 1rem;
+  margin: 1.5em 0 1.5em -0.5em; /* 24px 0 24px -8px */
+  border-collapse: collapse;
+  border-spacing: 0;
+  ol,
+  ul {
+    margin-left: 1.5em;
+  }
+}
+
+caption {
+  color: $c-neutral;
+  caption-side: bottom;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.1429; /* 16px */
+  text-align: left;
+  margin: 1rem 0; /* 16px 0 */
+}
+
+td,
+th {
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 0.25rem 2rem 0.25rem 0.5rem; /* 4px 32px 4px 4px */
+}
+th {
+  line-height: 1.25;
+  background-color: rgba(0,0,0,0.05);
+}
+
+@media print {
+  thead {
+    display: table-header-group;
+  }
+  tr, img {
+    page-break-inside: avoid;
+  }
+}

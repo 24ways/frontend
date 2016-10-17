@@ -1,0 +1,16 @@
+.main {
+  background-color: $c-neutral-lightest;
+}
+
+.js-enhanced .main,
+.js-enhanced .contentinfo {
+  filter: brightness(1.0);
+  transition: filter .2s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+
+.js-menu-active .main,
+.js-menu-active .contentinfo {
+  filter: brightness(0.75);
+  transition: filter .2s ease-in;
+}

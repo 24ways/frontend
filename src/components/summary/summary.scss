@@ -1,0 +1,340 @@
+/* ==========================================================================
+   Summary
+   ========================================================================== */
+.summary {
+  background-color: white;
+  padding: 1em;
+  position: relative;
+
+  @media screen {
+    box-shadow: 1px 1px 0 fade($c-neutral, 15%);
+  }
+}
+
+.summary_header {
+  @media print {
+    border-top: 1px solid #000;
+    padding-top: 0.5rem;
+  }
+}
+
+.summary_title {
+  font-family: $f-serif;
+  font-size: 1.25em; /* 20px */
+  font-weight: 400;
+  line-height: 1.2; /* 24px */
+  margin: 0;
+
+  .avatar {
+    width: 1.75rem;
+    height: 1.75rem;
+
+    @media screen and (min-width: 40em) {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
+.summary_main {
+  font-size: 0.875em; /* 14px */
+  line-height: 1.4286; /* 20px */
+
+  a {
+    font-weight: 700;
+  }
+}
+
+.summary_meta,
+.summary_vote {
+  @include caption();
+  margin: 0.75rem 0;
+}
+
+.summary_vote {
+  text-align: right;
+  border-top: 1px solid $c-neutral-lightest;
+  padding-top: 0.75rem;
+}
+
+/* Summary > Article */
+.summary-article {
+  padding-bottom: 2.5em;
+  position: relative;
+
+  @media print {
+    padding-bottom: 0;
+    height: auto !important;
+    min-height: 12em;
+    page-break-inside: avoid;
+  }
+
+  a {
+    position: relative;
+    z-index: 1;
+  }
+
+  .summary_author {
+    @media print {
+      display: none;
+    }
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: solid 2.25em;
+      border-color: transparent transparent #fff #fff;
+    }
+
+    &::after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 4.5em;
+      width: 4.5em;
+      background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgwIiBoZWlnaHQ9IjcyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik03IDBoNzN2NzNsLTczLTczeiIgZmlsbD0iI0Y2RjZGNiIvPjxwYXRoIGQ9Ik04NyAwbDY1LjggNy4yIDcuMiA2NS44LTczLTczeiIgZmlsbD0iI0U5RTlFOSIvPjxwYXRoIGQ9Ik0xNjcgMGw1Ny44OCAxNC40IDE1LjEyIDU4LjYtNzMtNzN6IiBmaWxsPSIjRTBFMEUwIi8+PHBhdGggZD0iTTI0NyAwbDUwLjY4IDIxLjYgMjIuMzIgNTEuNC03My03M3oiIGZpbGw9IiNENkQ2RDYiLz48cGF0aCBkPSJNMzI3IDBsNDQuMiAyOC44IDI4LjggNDQuMi03My03M3oiIGZpbGw9IiNjY2MiLz48cGF0aCBkPSJNNDg4LTFsMjguOCA0NC4yIDQ0LjIgMjguOC03My03M3oiIGZpbGw9IiM5MDAiLz48cGF0aCBkPSJNNTY4LTFsMjEuNiA1MS40IDUxLjQgMjEuNi03My03M3oiIGZpbGw9IiNBNTAwMEIiLz48cGF0aCBkPSJNNjQ4LTFsMTQuNCA1OC42IDU4LjYgMTQuNC03My03M3oiIGZpbGw9IiNCMzAwMTkiLz48cGF0aCBkPSJNNzI4LTFsNy4yIDY1LjggNjUuOCA3LjItNzMtNzN6IiBmaWxsPSIjQkYwMDI2Ii8+PHBhdGggZD0iTTgwOC0xdjczaDczbC03My03M3oiIGZpbGw9IiNjMDMiLz48L3N2Zz4=') -0.5em 0 no-repeat;
+      background-size: 55em 4.5em;
+    }
+
+    a {
+      position: static;
+    }
+
+    img {
+      display: block;
+      height: 4.5em;
+      width: 4.5em;
+    }
+
+    span {
+      @include hidden();
+    }
+  }
+
+  .summary_title {
+    padding-right: 2.5rem;
+  }
+
+  .summary_main {
+    margin-bottom: 1.25rem;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  .summary_meta {
+    color: $c-neutral;
+
+    @media screen {
+      position: absolute;
+      bottom: 0;
+    }
+    .dt-published {
+      margin-right: 1.5em;
+    }
+  }
+  .summary_link {
+    text-indent: 200%;
+    white-space: nowrap;
+    background: rgba(0,0,0,0);
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &:hover {
+    .summary_author {
+      &::after {
+        -webkit-animation: corner-forward .15s steps(10);
+        animation: corner-forward .15s steps(10);
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        z-index: 2;
+      }
+    }
+  }
+
+  &.js-mouseout {
+    .summary_author {
+      &::before {
+        -webkit-animation: corner-reverse .15s steps(10);
+        animation: corner-reverse .15s steps(10);
+        z-index: 0;
+      }
+    }
+  }
+
+  .summary_header {
+    min-height: 2.5em;
+
+    @media screen and (min-width: 55em) {
+      min-height: 4.5em;
+    }
+  }
+}
+
+@keyframes corner-forward {
+  from {
+    background-position: -0.5em;
+    z-index: 0;
+  }
+  to {
+    background-position: -50.5em;
+    z-index: 2;
+  }
+}
+
+@keyframes corner-reverse {
+  from {
+    background-position: -50.5em;
+    z-index: 2;
+  }
+  to {
+    background-position: -0.5em;
+    z-index: 0;
+  }
+}
+
+
+/* Summary > Article with day number */
+.list-articles-countdown {
+  .summary-article {
+    .summary_header {
+      padding-left: 2rem;
+    }
+
+    .summary_meta {
+      position: static;
+    }
+
+    .dt-published {
+      @include font-smoothing-on();
+      font-family: $f-serif;
+      font-size: 1.25rem; /* 20px */
+      font-weight: 400;
+      line-height: 1.2; /* 24px */
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+
+      @media print {
+        top: 1.5rem;
+      }
+
+      abbr {
+        @include hidden();
+      }
+    }
+
+    .summary_comments {
+      @media screen {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+      }
+    }
+  }
+}
+
+/* Summary > Comment */
+.summary-comment {
+  margin: 0.5em 0;
+  padding-left: 2.5rem;
+
+  @media screen and (min-width: 40em) {
+    padding-left: 5.5rem;
+  }
+
+  .avatar {
+    position: absolute;
+    top: 0.6667em;
+    left: 0;
+
+    @media screen and (min-width: 40em) {
+      left: 0.6667em;
+    }
+  }
+
+  .summary_meta {
+    margin: 0.5rem 0;
+
+    @media screen and (min-width: 30em) {
+      position: absolute;
+      top: 1.1667em; /* 14px */
+      right: 1em;
+    }
+
+    a {
+      color: $c-neutral;
+
+      &:hover {
+        color: $c-neutral-dark;
+      }
+    }
+  }
+
+  .summary_title {
+    text-transform: capitalize;
+  }
+
+  .summary_vote {
+    margin-bottom: 0;
+  }
+}
+
+/* Summary > Comment > Unhelpful */
+.summary-comment.summary-unhelpful {
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px dotted fade($c-neutral, 20%);
+}
+
+/* Summary > Author */
+.summary-author {
+  padding: 0;
+  position: relative;
+  display: block;
+
+  .summary_meta {
+    color: #fff;
+    background-color: fade($c-neutral-darkest, 75%);
+    margin: 0;
+    padding: 0.5rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    @media print {
+      color: #fff !important;
+      background-color: #000 !important;
+    }
+  }
+
+  .summary_image {
+    height: auto;
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Summary > Topic */
+.summary-topic {
+  background-color: #eee;
+  min-height: 22em;
+}
