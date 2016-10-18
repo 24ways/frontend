@@ -1,3 +1,11 @@
 context:
-  title: "Drew McLellan"
+  title: "Rachel Andrew"
   section: authors
+  traverse:
+    type: author
+    prev:
+      url: /authors/johnallsopp/
+      title: "John Allsopp"
+    next:
+      url: /authors/paulannett/
+      title: "Paul Annett"

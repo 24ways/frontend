@@ -1,5 +1,10 @@
 <header class="preface">
-  <h1 class="preface_title"{{ " data-icon=\"&#"+titleIcon+"\"" if titleIcon }}>{{ title }}</h1>
+  <h1 class="preface_title">
+    {% if titleIcon %}
+      {% include titleIcon + ".svg" %}
+    {% endif %}
+    {{ title }}
+  </h1>
   {% if content %}
   <div class="preface_main">
     <div class="lede">

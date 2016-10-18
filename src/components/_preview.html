@@ -38,27 +38,27 @@
       }
     </script>
 
-    <link rel="stylesheet" href="/assets/styles/app.css"/>
+    <link rel="stylesheet" href="{{ '/assets/styles/app.css' | path }}"/>
     <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/24ways"/>
-    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico"/>
-    <link rel="apple-touch-icon-precomposed" href="/assets/icons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/x-icon" href="{{ '/assets/icons/favicon.ico' | path }}"/>
+    <link rel="apple-touch-icon-precomposed" href="{{ '/assets/icons/apple-touch-icon.png' | path }}"/>
     <link rel="author" href="/humans.txt"/>
 
     <meta charset="utf-8"/>
     <meta name="robots" content="index, follow"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="application-name" content="{{ site_title }}">
+    <meta name="application-name" content="{{ site_title }}"/>
     <meta name="apple-mobile-web-app-title" content="{{ site_title }}"/>
-    <meta name="twitter:site" content="@{{ site_handle }}">
+    <meta name="twitter:site" content="@{{ site_handle }}"/>
     <meta name="twitter:title" content="{{ site_title }}"/>
     <meta name="twitter:description" content="{{ site_description }}"/>
-    <meta name="twitter:creator" content="@{{ site_handle }}">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@{{ site_handle }}"/>
+    <meta name="twitter:card" content="summary"/>
 
-    <title>{{ _target.label }} &#9670; 24 ways</title>
+    <title>{{ _target.context.title }} &#9670; 24 ways</title>
   </head>
 
-  <body>
+  <body{{ ' class="' + _target.context.theme + '"' if _target.context.theme }}>
     {{ yield }}
   </body>
 
@@ -134,7 +134,7 @@
 
     // Show back to top link when we've scrolled down the page
     if (window.innerWidth > 504) {
-      $('.navigation').append('<a class="nav nav-top" href="#top" data-icon="&#x2303;">Return to the top of this page</a>');
+      $('.navigation').append('<a class="nav nav-top" href="#top">Return to the top of this page</a>');
       $(function () {
         $(window).scroll(function () {
           if ($(this).scrollTop() > 400) {

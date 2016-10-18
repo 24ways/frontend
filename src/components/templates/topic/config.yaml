@@ -1,7 +1,11 @@
 context:
   title: "Business"
-  titleIcon: x2655
+  titleIcon: topic-business
   content: |
     Where there’s muck, there are clients, deliverables and contracts. Occasionally, there’s brass. Here are articles on developing and improving relationships with clients; managing projects, both business and personal; writing contracts and presenting your work; and encouraging success and avoiding failure.
   section: topics
-  traverse: true
+  traverse:
+    type: topic
+    next:
+      url: /topics/code/
+      title: "Code"

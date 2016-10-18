@@ -22,20 +22,7 @@
   position: relative;
 
   .field_label {
-    font: 0/0 a;
-
-    &::before {
-      @include icon-font();
-      color: $c-neutral;
-      content: "\26B2";
-      speak: none;
-      font-size: 3rem; /* 48px */
-      line-height: 1;
-      position: absolute;
-      left: 0;
-      top: 0;
-      display: block;
-    }
+    font: 0/0 sans;
   }
 
   .field_input {

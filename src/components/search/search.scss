@@ -1,6 +1,6 @@
 .search .field_label {
   @media screen and (min-width: 31.5em) {
-    &::before {
+    svg {
       line-height: 1.5;
       text-align: center;
       width: 4rem; /* 64px */

@@ -121,19 +121,17 @@
 .section-topic {
   .section_main {
     min-height: 6em;
-  }
-
-  [data-icon] {
     padding-left: 5.5rem;
     position: relative;
+  }
 
-    &::before {
-      font-size: 4em;
-      margin: 0.25rem;
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
+  svg {
+    width: 4em;
+    height: 4em;
+    margin: 0.25rem;
+    position: absolute;
+    left: 0.5em;
+    top: 1em;
   }
 }
 

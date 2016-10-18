@@ -12,7 +12,7 @@ const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 const sassGlob = require('gulp-sass-glob');
 const sassData = require('node-sass-json-importer');
-const sourcemaps = require('gulp-sourcemaps');
+//const sourcemaps = require('gulp-sourcemaps');
 const logger = fractal.cli.console;
 
 const paths = {
@@ -81,10 +81,16 @@ function images() {
     .pipe(gulp.dest(paths.dest + '/assets/images'));
 };
 
+// Vectors
+function vectors() {
+  return gulp.src(paths.src + '/assets/vectors/**/*')
+    .pipe(gulp.dest(paths.dest + '/assets/vectors'));
+};
+
 // Styles
 function styles() {
   return gulp.src(paths.src + '/assets/styles/*.scss')
-    .pipe(sourcemaps.init())
+    //.pipe(sourcemaps.init())
     .pipe(sassGlob())
     .pipe(sass({
       outputStyle: 'expanded'
@@ -94,7 +100,7 @@ function styles() {
         browsers: ['> 2%']
       })
     ]))
-    .pipe(sourcemaps.write('./'))
+    //.pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.dest + '/assets/styles'));
 };
 
@@ -103,12 +109,13 @@ function watch(done) {
   serve();
   gulp.watch(paths.src + '/assets/icons', icons);
   gulp.watch(paths.src + '/assets/images', images);
+  gulp.watch(paths.src + '/assets/vectors', images);
   // gulp.watch(paths.src + '/**/*.js', bundle(true, done));
-  gulp.watch(paths.src + '/**/*.css', styles);
+  gulp.watch(paths.src + '/**/*.scss', styles);
 };
 
 // Task sets
-const compile = gulp.series(clean, gulp.parallel(images, icons, styles));
+const compile = gulp.series(clean, gulp.parallel(icons, images, vectors, styles));
 
 gulp.task('start', gulp.series(compile, serve));
 gulp.task('build', gulp.series(compile, build));
