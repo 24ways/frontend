@@ -1,4 +1,4 @@
-.preface {
+.c-preface {
   background-color: darken($c-signature, 5%);
   padding: 1em;
   overflow: hidden;
@@ -21,7 +21,7 @@
   }
 }
 
-.preface__title {
+.c-preface__title {
   color: #fff;
   @include heading();
   margin-bottom: 0;
@@ -45,7 +45,7 @@
   }
 }
 
-.preface__main {
+.c-preface__main {
   position: relative;
 
   @media screen and (min-width: 50em) {
@@ -84,13 +84,13 @@
 }
 
 [class*="year-"] {
-  .preface {
+  .c-preface {
     &::before {
       opacity: 1;
     }
   }
 
-  .preface__title {
+  .c-preface__title {
     color: lighten($c-signature, 10%);
   }
 }

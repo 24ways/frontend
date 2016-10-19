@@ -4,7 +4,7 @@
   text-align: center;
   text-transform: uppercase;
   background-color: $c-link;
-  box-shadow: 1px 1px 0 fade($c-neutral, 15%);
+  box-shadow: 1px 1px 0 rgba($c-neutral, 0.15);
   border: 0 none;
   border-radius: 0;
   padding: 1em 1.5em;

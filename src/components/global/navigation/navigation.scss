@@ -1,4 +1,4 @@
-.navigation {
+.c-navigation {
   background-color: #fff;
   right: 0;
   z-index: 1000;
@@ -77,7 +77,7 @@
       }
     }
 
-    .search {
+    .c-search {
       @media screen and (min-width: 31.5em) {
         position: absolute;
         top: 0;

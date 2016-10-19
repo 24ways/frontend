@@ -38,6 +38,7 @@
     "gulp-sourcemaps": "latest",
     "gulp-uglify": "latest",
     "markdown-it": "latest",
-    "node-sass-json-importer": "latest"
+    "node-sass-json-importer": "latest",
+    "nunjucks-date": "latest"
   }
 }

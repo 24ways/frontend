@@ -1,0 +1,7 @@
+<ol class="comments-list">
+{% for comment in comments %}
+  <li class="comments-list__item">
+    {% render "@comment", comment %}
+  </li>
+{% endfor %}
+</ol>

@@ -1,0 +1,31 @@
+<form id="comment-form" method="post">
+  <fieldset class="section">
+    <legend class="section__header">
+      <span class="section__title">Impress us</span>
+    </legend>
+    <div class="section__main">
+      <p>Be friendly / use <a href="http://www.textism.com/tools/textile/">Textile</a></p>
+      <p class="field">
+        <label class="field__label" for="commentName">Name</label>
+        <input class="field__input" id="commentName" name="commentName" type="text" autocorrect="off" required="required"/>
+      </p>
+      <p class="field">
+        <label class="field__label" for="commentEmail">Email</label>
+        <input class="field__input" id="commentEmail" name="commentEmail" type="email" autocorrect="off" required="required"/>
+      </p>
+      <p class="field">
+        <label class="field__label" for="commentURL">Website</label>
+        <input class="field__input" id="commentURL" name="commentURL" type="url" autocorrect="off" placeholder="http://"/>
+      </p>
+      <p class="field">
+        <label class="field__label" for="commentHTML">Message</label>
+        <textarea class="field__input" id="commentHTML" name="commentHTML" cols="25" rows="12" required="required"></textarea>
+      </p>
+      <p class="field">
+        <input type="hidden" name="parentID" id="parentID" value="289"/>
+        <input type="hidden" name="parentTitle" id="parentTitle" value="HTML5 Video Bumpers"/>
+        <input class="button button-submit" type="submit" name="submitComment" id="submitComment" value="Submit"/>
+      </p>
+    </div>
+  </fieldset>
+</form>

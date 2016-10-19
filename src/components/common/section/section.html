@@ -1,8 +1,8 @@
-<section class="section{% for mod in mods %} section--{{ mod }}{% endfor %}" id="{{ id }}">
-  <header class="section__header">
-    <h1 class="section__title">{{ title | markdownInline }}</h1>
+<section class="c-section{% for mod in mods %} c-section--{{ mod }}{% endfor %}" id="{{ id }}">
+  <header class="c-section__header">
+    <h1 class="c-section__title">{{ title | markdownInline }}</h1>
   </header>
-  <div class="section__main">
+  <div class="c-section__main">
     {%- if component -%}
       {% render "@" + component, config %}
     {%- else -%}

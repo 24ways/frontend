@@ -6,7 +6,7 @@
 a {
   color: $c-link;
   text-decoration: none;
-  -moz-text-decoration-color: fade($c-link, 33%);
+  -moz-text-decoration-color: rgba($c-link, 0.33);
   &:focus {
   /*  Address `outline` inconsistency between Chrome and other browsers */
     outline: thin dotted;
@@ -14,13 +14,13 @@ a {
   &:active,
   &:hover {
     color: $c-link-hover;
-    -moz-text-decoration-color: fade($c-link-hover, 33%);
+    -moz-text-decoration-color: rgba($c-link-hover, 0.33);
   /*  Improve readability when focused and also mouse hovered in all browsers */
     outline: 0;
   }
   &:active {
     color: $c-link-active;
-    -moz-text-decoration-color: fade($c-link-active, 33%);
+    -moz-text-decoration-color: rgba($c-link-active, 0.33);
   }
 }
 

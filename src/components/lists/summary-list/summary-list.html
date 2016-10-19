@@ -1,0 +1,7 @@
+<{{ "ol" if ordered else "ul" }} class="summary-list{{ " reversed" if reversed }}">
+{% for summary in summaries %}
+  <li class="summary-list__item">
+    {% render "@summary", summary %}
+  </li>
+{% endfor %}
+</{{ "ol" if ordered else "ul" }}>

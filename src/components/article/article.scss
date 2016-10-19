@@ -105,9 +105,9 @@
 
     &::before {
       content: " ";
-      color: fade($c-text, 80%);
+      color: rgba($c-text, 0.8);
       line-height: 1.5;
-      background-color: fade($c-text, 80%);
+      background-color: rgba($c-text, 0.8);
       width: 0.4375em;
       height: 0.4375em;
       position: absolute;

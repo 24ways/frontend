@@ -1,11 +1,11 @@
-/* ==========================================================================
-   LESS Variables
-   ========================================================================== */
+// =========================================================
+// Variables
+// =========================================================
 
-/* Brand */
+// Palette: Brand
 $c-signature: #c03;
 
-/* Shades */
+// Palette: Shades
 $c-neutral: #778;
 $c-neutral-lightest: lighten($c-neutral, 44%);
 $c-neutral-lighter: lighten($c-neutral, 24%);
@@ -14,59 +14,63 @@ $c-neutral-dark: darken($c-neutral, 8%);
 $c-neutral-darker: darken($c-neutral, 24%);
 $c-neutral-darkest: darken($c-neutral, 44%);
 
-/* Interaction */
+// Palette: Interaction
 $c-text: $c-neutral-darker;
 $c-link: #37a;
 $c-link-hover: darken($c-link, 10%);
 $c-link-active: $c-link;
 
-/* Years */
+// Palette: Years
 $c-year: $c-signature;
-$c-year-2005: adjust-hue($c-year, -000);
-$c-year-2006: adjust-hue($c-year, -004);
-$c-year-2007: adjust-hue($c-year, -008);
-$c-year-2008: adjust-hue($c-year, -012);
-$c-year-2009: adjust-hue($c-year, -016);
-$c-year-2010: adjust-hue($c-year, -020);
-$c-year-2011: adjust-hue($c-year, -024);
-$c-year-2012: adjust-hue($c-year, -028);
-$c-year-2013: adjust-hue($c-year, -032);
-$c-year-2014: adjust-hue($c-year, -036);
-$c-year-2015: adjust-hue($c-year, -040);
-$c-year-2016: adjust-hue($c-year, -044);
-$c-year-2017: adjust-hue($c-year, -048);
-$c-year-2018: adjust-hue($c-year, -052);
-$c-year-2019: adjust-hue($c-year, -056);
-$c-year-2020: adjust-hue($c-year, -060);
+$c-years: (
+  year-2005: adjust-hue($c-year, -000),
+  year-2006: adjust-hue($c-year, -004),
+  year-2007: adjust-hue($c-year, -008),
+  year-2008: adjust-hue($c-year, -012),
+  year-2009: adjust-hue($c-year, -016),
+  year-2010: adjust-hue($c-year, -020),
+  year-2011: adjust-hue($c-year, -024),
+  year-2012: adjust-hue($c-year, -028),
+  year-2013: adjust-hue($c-year, -032),
+  year-2014: adjust-hue($c-year, -036),
+  year-2015: adjust-hue($c-year, -040),
+  year-2016: adjust-hue($c-year, -044),
+  year-2017: adjust-hue($c-year, -048),
+  year-2018: adjust-hue($c-year, -052),
+  year-2019: adjust-hue($c-year, -056),
+  year-2020: adjust-hue($c-year, -060)
+);
 
-/* Days */
-$c-day: hsl(199,60%,50%);
-$c-day-24: adjust-hue($c-day, 000);
-$c-day-23: adjust-hue($c-day, 007);
-$c-day-22: adjust-hue($c-day, 014);
-$c-day-21: adjust-hue($c-day, 021);
-$c-day-20: adjust-hue($c-day, 028);
-$c-day-19: adjust-hue($c-day, 035);
-$c-day-18: adjust-hue($c-day, 042);
-$c-day-17: adjust-hue($c-day, 049);
-$c-day-16: adjust-hue($c-day, 056);
-$c-day-15: adjust-hue($c-day, 063);
-$c-day-14: adjust-hue($c-day, 070);
-$c-day-13: adjust-hue($c-day, 077);
-$c-day-12: adjust-hue($c-day, 084);
-$c-day-11: adjust-hue($c-day, 091);
-$c-day-10: adjust-hue($c-day, 098);
-$c-day-09: adjust-hue($c-day, 105);
-$c-day-08: adjust-hue($c-day, 112);
-$c-day-07: adjust-hue($c-day, 119);
-$c-day-06: adjust-hue($c-day, 126);
-$c-day-05: adjust-hue($c-day, 133);
-$c-day-04: adjust-hue($c-day, 140);
-$c-day-03: adjust-hue($c-day, 147);
-$c-day-02: adjust-hue($c-day, 154);
-$c-day-01: adjust-hue($c-day, 161);
+// Palette: Days
+$c-day: hsl(199, 60%, 50%);
+$c-days: (
+  day-24: adjust-hue($c-day, 000),
+  day-23: adjust-hue($c-day, 007),
+  day-22: adjust-hue($c-day, 014),
+  day-21: adjust-hue($c-day, 021),
+  day-20: adjust-hue($c-day, 028),
+  day-19: adjust-hue($c-day, 035),
+  day-18: adjust-hue($c-day, 042),
+  day-17: adjust-hue($c-day, 049),
+  day-16: adjust-hue($c-day, 056),
+  day-15: adjust-hue($c-day, 063),
+  day-14: adjust-hue($c-day, 070),
+  day-13: adjust-hue($c-day, 077),
+  day-12: adjust-hue($c-day, 084),
+  day-11: adjust-hue($c-day, 091),
+  day-10: adjust-hue($c-day, 098),
+  day-09: adjust-hue($c-day, 105),
+  day-08: adjust-hue($c-day, 112),
+  day-07: adjust-hue($c-day, 119),
+  day-06: adjust-hue($c-day, 126),
+  day-05: adjust-hue($c-day, 133),
+  day-04: adjust-hue($c-day, 140),
+  day-03: adjust-hue($c-day, 147),
+  day-02: adjust-hue($c-day, 154),
+  day-01: adjust-hue($c-day, 161)
+);
 
-/* Fonts */
+// Fonts
 $f-serif: "Merriweather", serif;
 $f-sans: "Lato", sans-serif;
 $f-code: "Inconsolata", Consolas, Monaco, monospace, serif;

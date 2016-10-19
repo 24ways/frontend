@@ -1,0 +1,27 @@
+.c-author {
+  padding: 0;
+  position: relative;
+  display: block;
+}
+
+.c-author__meta {
+  color: #fff;
+  background-color: rgba($c-neutral-darkest, 0.75);
+  margin: 0;
+  padding: 0.5rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  @media print {
+    color: #fff !important;
+    background-color: #000 !important;
+  }
+}
+
+.c-author__image {
+  height: auto;
+  width: 100%;
+  display: block;
+}

@@ -1,0 +1,23 @@
+<article class="c-summary{% for mod in mods %} c-summary--{{ mod }}{% endfor %} h-entry {{ theme if theme }}">
+  <header class="c-summary__header">
+    <h1 class="c-summary__title p-name">
+      <a class="u-url" rel="bookmark" href="{{ href }}">{{ title }}</a>
+    </h1>
+    <p class="c-summary__meta">
+      <time class="dt-published" datetime="{{ datetime }}">
+        {{ datetime | date('D') }}
+        <span>{{ datetime | date('MMM YYYY') }}</span>
+      </time>
+      <a class="c-summary__comments" href="{{ href }}#comments">{{ comments if comments else "No" }} comments</a>
+    </p>
+  </header>
+  <div class="c-summary__main">
+    <p class="p-summary">{{ content | markdownInline }}</p>
+    <a class="c-summary__link" href="{{ href }}">Impress your friends with &#8216;{{ title }}&#8217;</a>
+  </div>
+  <footer class="c-summary__footer">
+    <p class="c-summary__author p-author h-card">
+      <a class="u-url" href="/authors/{{ author | slugify }}/"><img class="u-photo" src="http://media.24ways.org/authors/{{ author | slugify }}160.jpg" alt=""/><span class="p-name">{{ author | slugify }}</span></a>
+    </p>
+  </footer>
+</article>

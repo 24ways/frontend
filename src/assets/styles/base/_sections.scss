@@ -129,7 +129,7 @@ hr {
   border: 0;
   height: 0;
   &::after {
-    color: fade($c-text, 25%);
+    color: rgba($c-text, 0.25);
     content: "\25C6 \25C6 \25C6";
     letter-spacing: 0.75rem; /* 12px */
     height: 0;

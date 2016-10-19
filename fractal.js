@@ -23,6 +23,7 @@ const mandelbrot = require('@frctl/mandelbrot')({
 
 const nunjucks = require('@frctl/nunjucks')({
   filters: {
+    date: require('nunjucks-date'),
     markdown: function(str) {
       return markdown.render(str);
     },

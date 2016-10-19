@@ -32,7 +32,7 @@ pre {
 }
 
 blockquote {
-  border-left: 0.25rem solid fade($c-text, 15%);
+  border-left: 0.25rem solid rgba($c-text, 0.15);
   margin: 1.5em 0 1.5em -1rem; /* 24px 0 24px -16px */
   padding-left: 0.75rem; /* 12px */
   @media print {
@@ -120,7 +120,7 @@ p.image span.caption {
   color: #666; /* $color-caption */
   font-size: 0.875rem; /* 14px */
   line-height: 1.1429; /* 16px */
-  border-bottom: 1px solid fade($c-text, 20%);
+  border-bottom: 1px solid rgba($c-text, 0.2);
   padding: 0.5714em 0; /* 8px 0 */
   display: block;
 }

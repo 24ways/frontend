@@ -1,0 +1,82 @@
+.c-comment {
+  background-color: white;
+  padding: 1rem 1rem 1rem 2.5rem;
+  position: relative;
+  margin: 0.5rem 0;
+
+  @media screen {
+    box-shadow: 1px 1px 0 rgba($c-neutral, 0.15);
+  }
+
+  @media screen and (min-width: 40em) {
+    padding-left: 5.5rem;
+  }
+
+  .c-avatar {
+    position: absolute;
+    top: 0.6667em;
+    left: 0;
+
+    @media screen and (min-width: 40em) {
+      left: 0.6667em;
+    }
+  }
+
+  &[class="summary--unhelpful"] {
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px dotted rgba($c-neutral, 0.2);
+  }
+}
+
+.c-comment__header {
+  @media print {
+    border-top: 1px solid #000;
+    padding-top: 0.5rem;
+  }
+}
+
+.c-comment__title {
+  @include title();
+
+  .c-avatar {
+    width: 1.75rem;
+    height: 1.75rem;
+
+    @media screen and (min-width: 40em) {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
+.c-comment__main {
+  @include prose();
+}
+
+.c-comment__meta {
+  @include caption();
+  margin: 0.5rem 0;
+
+  @media screen and (min-width: 30em) {
+    position: absolute;
+    top: 1.1667em; /* 14px */
+    right: 1em;
+  }
+
+  a {
+    color: $c-neutral;
+
+    &:hover {
+      color: $c-neutral-dark;
+    }
+  }
+}
+
+.c-comment__vote {
+  @include caption();
+  margin-bottom: 0;
+  text-align: right;
+  border-top: 1px solid $c-neutral-lightest;
+  padding-top: 0.75rem;
+}

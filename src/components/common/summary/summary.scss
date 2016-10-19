@@ -1,0 +1,217 @@
+/* ==========================================================================
+   Summary
+   ========================================================================== */
+.c-summary {
+  background-color: white;
+  padding: 1em 1em 2.5em 1em;
+  position: relative;
+
+  @media print {
+    padding-bottom: 0;
+    height: auto !important;
+    min-height: 12em;
+    page-break-inside: avoid;
+  }
+
+  @media screen {
+    box-shadow: 1px 1px 0 rgba($c-neutral, 0.15);
+  }
+
+  a {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.c-summary__header {
+  min-height: 2.5em;
+
+  @media screen and (min-width: 55em) {
+    min-height: 4.5em;
+  }
+
+  @media print {
+    border-top: 1px solid #000;
+    padding-top: 0.5rem;
+  }
+}
+
+.c-summary__title {
+  @include title();
+  padding-right: 2.5rem;
+
+  .c-avatar {
+    width: 1.75rem;
+    height: 1.75rem;
+
+    @media screen and (min-width: 40em) {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
+.c-summary__main {
+  @include prose();
+  margin-bottom: 1.25rem;
+
+  a {
+    color: inherit;
+  }
+}
+
+.c-summary__meta {
+  @include caption();
+  margin: 0.75rem 0;
+  color: $c-neutral;
+
+  @media screen {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .dt-published {
+    margin-right: 1.5em;
+  }
+}
+
+.c-summary__link {
+  text-indent: 200%;
+  white-space: nowrap;
+  background: rgba(0,0,0,0);
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.c-summary__author {
+  @media print {
+    display: none;
+  }
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: solid 2.25em;
+    border-color: transparent transparent #fff #fff;
+  }
+
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 4.5em;
+    width: 4.5em;
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgwIiBoZWlnaHQ9IjcyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik03IDBoNzN2NzNsLTczLTczeiIgZmlsbD0iI0Y2RjZGNiIvPjxwYXRoIGQ9Ik04NyAwbDY1LjggNy4yIDcuMiA2NS44LTczLTczeiIgZmlsbD0iI0U5RTlFOSIvPjxwYXRoIGQ9Ik0xNjcgMGw1Ny44OCAxNC40IDE1LjEyIDU4LjYtNzMtNzN6IiBmaWxsPSIjRTBFMEUwIi8+PHBhdGggZD0iTTI0NyAwbDUwLjY4IDIxLjYgMjIuMzIgNTEuNC03My03M3oiIGZpbGw9IiNENkQ2RDYiLz48cGF0aCBkPSJNMzI3IDBsNDQuMiAyOC44IDI4LjggNDQuMi03My03M3oiIGZpbGw9IiNjY2MiLz48cGF0aCBkPSJNNDg4LTFsMjguOCA0NC4yIDQ0LjIgMjguOC03My03M3oiIGZpbGw9IiM5MDAiLz48cGF0aCBkPSJNNTY4LTFsMjEuNiA1MS40IDUxLjQgMjEuNi03My03M3oiIGZpbGw9IiNBNTAwMEIiLz48cGF0aCBkPSJNNjQ4LTFsMTQuNCA1OC42IDU4LjYgMTQuNC03My03M3oiIGZpbGw9IiNCMzAwMTkiLz48cGF0aCBkPSJNNzI4LTFsNy4yIDY1LjggNjUuOCA3LjItNzMtNzN6IiBmaWxsPSIjQkYwMDI2Ii8+PHBhdGggZD0iTTgwOC0xdjczaDczbC03My03M3oiIGZpbGw9IiNjMDMiLz48L3N2Zz4=') -0.5em 0 no-repeat;
+    background-size: 55em 4.5em;
+  }
+
+  a {
+    position: static;
+  }
+
+  img {
+    display: block;
+    height: 4.5em;
+    width: 4.5em;
+  }
+
+  span {
+    @include hidden();
+  }
+}
+
+.c-summary:hover {
+  .c-summary__author {
+    &::after {
+      -webkit-animation: corner-forward .15s steps(10);
+      animation: corner-forward .15s steps(10);
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      z-index: 2;
+    }
+  }
+}
+
+&.js-mouseout {
+  .c-summary__author {
+    &::before {
+      -webkit-animation: corner-reverse .15s steps(10);
+      animation: corner-reverse .15s steps(10);
+      z-index: 0;
+    }
+  }
+}
+
+@keyframes corner-forward {
+  from {
+    background-position: -0.5em;
+    z-index: 0;
+  }
+  to {
+    background-position: -50.5em;
+    z-index: 2;
+  }
+}
+
+@keyframes corner-reverse {
+  from {
+    background-position: -50.5em;
+    z-index: 2;
+  }
+  to {
+    background-position: -0.5em;
+    z-index: 0;
+  }
+}
+
+.c-summary--countdown {
+  .c-summary__header {
+    padding-left: 2rem;
+  }
+
+  .c-summary__meta {
+    position: static;
+  }
+
+  .dt-published {
+    @include font-smoothing-on();
+    font-family: $f-serif;
+    font-size: 1.25rem; /* 20px */
+    font-weight: 400;
+    line-height: 1.2; /* 24px */
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+    @media print {
+      top: 1.5rem;
+    }
+
+    span {
+      @include hidden();
+    }
+  }
+
+  .c-summary__comments {
+    @media screen {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+    }
+  }
+}
