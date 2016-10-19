@@ -1,0 +1,30 @@
+.c-button {
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $c-link;
+  box-shadow: 1px 1px 0 fade($c-neutral, 15%);
+  border: 0 none;
+  border-radius: 0;
+  padding: 1em 1.5em;
+  display: inline-block;
+
+  &:hover {
+    color: #fff;
+    background-color: $c-link-hover;
+  }
+
+  &:active {
+    color: #fff;
+    background-color: $c-link-active;
+  }
+
+  @media print {
+    display: none;
+  }
+}
+
+.c-button--more {
+  width: 100%;
+}

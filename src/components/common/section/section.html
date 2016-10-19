@@ -1,0 +1,16 @@
+<section class="section{% for mod in mods %} section--{{ mod }}{% endfor %}" id="{{ id }}">
+  <header class="section__header">
+    <h1 class="section__title">{{ title | markdownInline }}</h1>
+  </header>
+  <div class="section__main">
+    {%- if component -%}
+      {% render "@" + component, config %}
+    {%- else -%}
+      {%- if icon -%}
+        {% include icon + ".svg" %}
+      {%- endif -%}
+      {{ '<p class="lede">' + lede + '</p>' if lede }}
+      {{ content | markdown }}
+    {%- endif -%}
+  </div>
+</section>

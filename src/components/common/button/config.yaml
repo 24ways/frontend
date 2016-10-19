@@ -1,0 +1,14 @@
+collated: true
+variants:
+- name: default
+  context:
+    label: Button
+- name: disabled
+  context:
+    label: Disabled button
+    disabled: true
+- name: more
+  context:
+    label: Show me another 24 ways…
+    href: ?page=2
+    mods: [more]

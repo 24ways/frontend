@@ -1,0 +1,26 @@
+collated: true
+context:
+  title: Preface title
+  content: Preface content
+variants:
+- name: topic
+  context:
+    title: 2013
+    titleIcon: topic-business
+    content: |
+      <cite>24 ways</cite> is the advent calendar for web geeks. Each day throughout December we publish a daily dose of web design and development goodness to bring you all a little Christmas cheer. [Learn more](/pages/about/)
+- name: author
+  context:
+    title: Rachel Andrew
+    avatar:
+      img:
+        src: /authors/rachelandrew280.jpg
+        size: 280
+    content: |
+      <span class="fn n">Rachel Andrew</span> is a Director of edgeofmyseat.com, a UK web development consultancy and creators of the small content management system, [Perch](http://grabaperch.com/). She is the author of a number of [books](http://rachelandrew.co.uk/books), and is a regular columnist for [A List Apart](http://alistapart.com/author/rachelandrew).
+
+      She curates a popular [email newsletter on CSS Layout](http://csslayout.news/), and will be launching a [CSS Layout online workshop](https://thecssworkshop.com/) in early 2016.
+
+      When not writing about business and technology on her blog at [rachelandrew.co.uk](https://rachelandrew.co.uk) or [speaking at conferences](http://lanyrd.com/profile/rachelandrew/), you will usually find Rachel running up and down one of the giant hills in Bristol.
+
+      <span class="photo-credit">Photo: [James Duncan Davidson](http://duncandavidson.com/)</span>

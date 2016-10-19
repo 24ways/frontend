@@ -1,6 +1,11 @@
 'use strict';
 
 const fractal = require('@frctl/fractal').create();
+const markdown = require('markdown-it')({
+  html: true,
+  xhtmlOut: true,
+  typographer: true
+});
 
 const paths = {
   build: __dirname + '/www',
@@ -18,9 +23,14 @@ const mandelbrot = require('@frctl/mandelbrot')({
 
 const nunjucks = require('@frctl/nunjucks')({
   filters: {
-    markdown: require('marked'),
-    is_string: function(obj) {
-      return typeof obj === 'string';
+    markdown: function(str) {
+      return markdown.render(str);
+    },
+    markdownInline: function(str) {
+      return markdown.renderInline(str);
+    },
+    slugify: function(str) {
+      return str.toLowerCase().replace(/[^\w]+/g, '');
     }
   },
   paths: [paths.static + '/assets/vectors']

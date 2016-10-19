@@ -1,0 +1,17 @@
+.authors-list {
+  @include list();
+}
+
+.authors-list__item {
+  padding: 1px 1px 0 0;
+  width: percentage(1/3);
+  float: left;
+
+  @media screen and (min-width: 60em) {
+    width: percentage(1/4);
+  }
+
+  @media screen and (min-width: 80em), print {
+    width: percentage(1/5);
+  }
+}

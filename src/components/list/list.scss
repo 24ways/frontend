@@ -1,28 +1,6 @@
-/* All lists: clear floats and remove bullets */
-.list {
-  list-style-type: none;
-  margin: 0;
-  @include clear();
-}
-
 /* List > Comments */
 .list-comments .list_item {
   padding: 1px 1px 0 0;
-}
-
-/* List > Authors */
-.list-authors .list_item {
-  padding: 1px 1px 0 0;
-  width: 33.3334%;
-  float: left;
-
-  @media screen and (min-width: 60em) {
-    width: 25%;
-  }
-
-  @media screen and (min-width: 80em), print {
-    width: 20%;
-  }
 }
 
 /* List > Articles */

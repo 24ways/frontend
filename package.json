@@ -37,7 +37,7 @@
     "gulp-sass-glob": "latest",
     "gulp-sourcemaps": "latest",
     "gulp-uglify": "latest",
-    "marked": "latest",
+    "markdown-it": "latest",
     "node-sass-json-importer": "latest"
   }
 }

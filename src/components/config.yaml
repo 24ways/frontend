@@ -2,7 +2,6 @@ context:
   site_title: 24 ways
   site_handle: 24ways
   site_description: 24 ways is the advent calendar for web geeks. Each day throughout December we publish a daily dose of web design and development goodness to bring you all a little Christmas cheer.
-  media_cdn: http://media.24ways.org
   topics:
   - title: Business
     url: /topics/business/

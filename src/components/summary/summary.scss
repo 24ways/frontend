@@ -25,7 +25,7 @@
   line-height: 1.2; /* 24px */
   margin: 0;
 
-  .avatar {
+  .c-avatar {
     width: 1.75rem;
     height: 1.75rem;
 
@@ -260,7 +260,7 @@
     padding-left: 5.5rem;
   }
 
-  .avatar {
+  .c-avatar {
     position: absolute;
     top: 0.6667em;
     left: 0;
@@ -301,36 +301,7 @@
 .summary-comment.summary-unhelpful {
   background-color: transparent;
   box-shadow: none;
-  border: 1px dotted fade($c-neutral, 20%);
-}
-
-/* Summary > Author */
-.summary-author {
-  padding: 0;
-  position: relative;
-  display: block;
-
-  .summary_meta {
-    color: #fff;
-    background-color: fade($c-neutral-darkest, 75%);
-    margin: 0;
-    padding: 0.5rem;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    @media print {
-      color: #fff !important;
-      background-color: #000 !important;
-    }
-  }
-
-  .summary_image {
-    height: auto;
-    width: 100%;
-    display: block;
-  }
+  border: 1px dotted rgba($c-neutral, 20%);
 }
 
 /* Summary > Topic */

@@ -29,6 +29,12 @@
   }
 }
 
+@mixin list {
+  list-style-type: none;
+  margin: 0;
+  @include clear();
+}
+
 /* Web fonts */
 @import url("http://fonts.googleapis.com/css?family=Inconsolata|Lato:400,400italic,700|Merriweather:400");
 

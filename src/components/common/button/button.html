@@ -1,0 +1,5 @@
+{%- if href -%}
+<a class="c-button{% for mod in mods %} c-button--{{ mod }}{% endfor %}" href="{{ href }}">{{ label }}</a>
+{%- else -%}
+<button class="c-button{% for mod in mods %} c-button--{{ mod }}{% endfor %}"{{ " type=\"submit\"" if submit }}{{ " disabled" if disabled }}>{{ label }}</button>
+{%- endif -%}

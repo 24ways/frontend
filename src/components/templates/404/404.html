@@ -1,33 +1,9 @@
-{% include "@banner" %}
-{% include "@menu" %}
-
-<main class="main" role="main">
-  <article>
-    {% include "@preface" %}
-
-    <section class="section" id="sectionname">
-      <header class="section_header">
-        <h1 class="section_title">Page not found</h1>
-      </header>
-      <div class="section_main">
-        <p class="lede">Sorry, but we can&#8217;t find that page.</p>
-        <p>The page you requested wasn&#8217;t found in the location specified. You may have an incorrect <abbr title="Uniform Resouce Locator">URL</abbr>, or the file could have been moved or renamed.</p>
-        <p>If you&#8217;re having problems finding a particular page, try searching the site or return to the homepage.</p>
-      </div>
-    </section>
-
-    <form id="comment" method="post">
-      <fieldset class="section">
-        <legend class="section_header">
-          <span class="section_title">Search 24 ways</span>
-        </legend>
-        <div class="section_main">
-          {% include "@field-search" %}
-        </div>
-      </fieldset>
-    </form>
-  </article>
-</main>
-
-{% include "@navigation" %}
-{% include "@contentinfo" %}
+{% extends "@page" %}
+{% block main %}
+<article>
+  {% include "@preface" %}
+  {% for section in sections %}
+    {% render "@section", section %}
+  {% endfor %}
+</article>
+{% endblock %}
