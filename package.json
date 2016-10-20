@@ -24,8 +24,8 @@
     "dev": "node_modules/.bin/gulp dev"
   },
   "dependencies": {
-    "@frctl/fractal": "frctl/fractal.git#1.1",
-    "@frctl/mandelbrot": "latest",
+    "@frctl/fractal": "frctl/fractal.git#next",
+    "@frctl/mandelbrot": "frctl/mandelbrot.git#next",
     "@frctl/nunjucks": "latest",
     "autoprefixer": "latest",
     "del": "latest",

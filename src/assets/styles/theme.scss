@@ -1,0 +1,15 @@
+// Sass config
+@import 'vars';
+
+* {
+  font-family: $f-sans !important;
+}
+
+.Code * {
+  font-family: $f-code !important;
+}
+
+.Header {
+  background-color: darken(map-get($c-years, year-2016), 30%);
+  color: #ff0040;
+}
