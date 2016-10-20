@@ -104,18 +104,24 @@ function styles() {
     .pipe(gulp.dest(paths.dest + '/assets/styles'));
 };
 
+// Scripts
+function scripts() {
+  return gulp.src(paths.src + '/assets/scripts/**/*.js')
+    .pipe(gulp.dest(paths.dest + '/assets/scripts'));
+};
+
 // Watch
 function watch(done) {
   serve();
   gulp.watch(paths.src + '/assets/icons', icons);
   gulp.watch(paths.src + '/assets/images', images);
   gulp.watch(paths.src + '/assets/vectors', images);
-  // gulp.watch(paths.src + '/**/*.js', bundle(true, done));
+  gulp.watch(paths.src + '/**/*.js', scripts);
   gulp.watch(paths.src + '/**/*.scss', styles);
 };
 
 // Task sets
-const compile = gulp.series(clean, gulp.parallel(icons, images, vectors, styles));
+const compile = gulp.series(clean, gulp.parallel(icons, images, vectors, scripts, styles));
 
 gulp.task('start', gulp.series(compile, serve));
 gulp.task('build', gulp.series(compile, build));

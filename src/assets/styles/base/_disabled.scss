@@ -8,3 +8,8 @@
   cursor: default;
   opacity: 0.75;
 }
+
+// Add the correct display in IE 10-.
+[hidden] {
+  display: none;
+}

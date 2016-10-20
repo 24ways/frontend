@@ -31,8 +31,23 @@
   @include clear();
 }
 
-@mixin palette {
+@mixin nav {
+  list-style-type: none;
+  margin: 0;
 
+  a {
+    color: $c-neutral;
+
+    &:hover {
+      color: $c-neutral-dark;
+      background-color: lighten($c-neutral-lightest, 1%);
+    }
+
+    &:active {
+      color: $c-neutral-darker;
+      background-color: darken($c-neutral-lightest, 1%);
+    }
+  }
 }
 
 // Web fonts
@@ -50,32 +65,32 @@
 // Typography
 @mixin heading {
   font-family: $f-serif;
-  font-size: 2rem; /* 32px */
+  font-size: 2rem; // 32px
   font-weight: 400;
-  line-height: 1.125; /* 36px */
-  letter-spacing: -0.0625rem; /* -1px */
+  line-height: 1.125; // 36px
+  letter-spacing: -0.0625rem; // -1px
 
   @media screen and (min-width: 31.5em) {
-    font-size: 2.5rem; /* 40px */
-    line-height: 1.1; /* 44px */
+    font-size: 2.5rem; // 40px
+    line-height: 1.1; // 44px
   }
 
   @media screen and (min-width: 50em) {
-    font-size: 3rem; /* 48px */
-    line-height: 1.1667; /* 56px */
+    font-size: 3rem; // 48px
+    line-height: 1.1667; // 56px
   }
 }
 
 @mixin title {
   font-family: $f-serif;
-  font-size: 1.25em; /* 20px */
+  font-size: 1.25em; // 20px
   font-weight: 400;
-  line-height: 1.2; /* 24px */
+  line-height: 1.2; // 24px
 }
 
 @mixin prose {
-  font-size: 0.875em; /* 14px */
-  line-height: 1.4286; /* 20px */
+  font-size: 0.875em; // 14px
+  line-height: 1.4286; // 20px
 
   a {
     font-weight: 700;
@@ -83,14 +98,14 @@
 }
 
 @mixin caption {
-  font-size: 0.75rem; /* 12px */
+  font-size: 0.75rem; // 12px
   font-weight: 400;
-  line-height: 1.3334; /* 16px */
+  line-height: 1.3334; // 16px
   letter-spacing: 0;
 
   @media screen and (min-width: 40em) {
-    font-size: 0.8125rem; /* 13px */
-    line-height: 1.2308; /* 16px */
+    font-size: 0.8125rem; // 13px
+    line-height: 1.2308; // 16px
   }
 
   strong,

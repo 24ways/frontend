@@ -1,9 +1,11 @@
 .c-field {
-  margin: 0.75rem 0; /* 12px 0 */
+  margin-bottom: 0.75rem; // 12px
   position: relative;
 }
 
 .c-field__label {
+  display: block;
+  font-weight: 700;
   line-height: 1;
   padding: 1em 0.5em;
   position: absolute;

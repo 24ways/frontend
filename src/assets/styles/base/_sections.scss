@@ -3,10 +3,18 @@
 // w3c.github.io/html/sections.html
 // =========================================================
 
-*,
-*:before,
-*:after {
+// 1. Prevent adjustment of font size on orientation change.
+html {
   box-sizing: border-box;
+  height: 100%;
+  text-size-adjust: 100%; // 1
+  position: relative;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 @media print {
@@ -22,122 +30,62 @@
   }
 }
 
-html {
-  text-rendering: optimizeLegibility;
-/*  Prevent iOS text size adjust after orientation change, without disabling user zoom. */
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  height: 100%;
-  position: relative;
-}
 body {
   color: $c-text;
   font-family: $f-sans;
-  font-weight: 400;
-  font-size: 1em; /* 16px */
-  line-height: 1.5; /* 24px */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5; // 24px
   background-color: #fff;
   margin: 0;
   height: 100%;
+
   @media screen and (max-width: 31.4375em) {
-    margin-top: 3em;
+    margin-top: 3em; // 48px
   }
+
   @media screen and (min-width: 31.5em) {
-    margin-right: 4.5rem; /* 72px */
+    margin-right: 4.5rem; // 72px
   }
+
   @media print {
     margin-right: 0;
   }
 }
 
-h1 {
-  @include font-smoothing-on();
-  font-size: 2rem; /* 32px */
-  font-weight: 400;
-  line-height: 1.125; /* 36px */
-  letter-spacing: -0.0625rem;
-  text-rendering: optimizeLegibility;
-  margin: 1.5em 0 0.5em; /* 24px 0 8px */
+// Add the correct display in IE 9-.
+article,
+aside,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
 }
 
-h2 {
-  color: darken($c-signature, 20%);
-  @include font-smoothing-on();
-  font-size: 1.125em; /* 18px */
-  line-height: 1.1111; /* 20px */
-  font-weight: 700;
-  letter-spacing: 0.05rem; /* 1px */
-  text-rendering: optimizeLegibility;
-  text-transform: uppercase;
-  margin: 1.7778em 0 0; /* 32px 0 0 */
-  @media screen and (min-width: 40em) {
-    // Base font size now 20px within article body
-    font-size: 1.2em; /* 24px */
-    line-height: 1.2; /* 28px */
-    margin: 2em 0 0; /* 48px 0 0 */
-  }
-}
-
-h3 {
-  color: darken($c-text, 25%);
-  @include font-smoothing-on();
-  font-size: 1em; /* 16px */
-  font-weight: 700;
-  line-height: 1.25; /* 20px */
-  text-rendering: optimizeLegibility;
-  margin: 2em 0 0; /* 32px 0 0 */
-  @media screen and (min-width: 40em) {
-    // Base font size now 20px within article body
-    font-size: 1em; /* 20px */
-    line-height: 1.2; /* 24px */
-    margin: 1.6em 0 0; /* 32px 0 0 */
-  }
-}
-
-h4 {
-  @include font-smoothing-on();
-  font-size: 1em; /* 16px */
-  font-weight: 400;
-  line-height: 1.25; /* 20px */
-  text-rendering: optimizeLegibility;
-  margin: 2rem 0 0.5em; /* 32px 0 8px */
-  opacity: 0.9;
-}
-
-h5 {
-  @include font-smoothing-on();
-  font-size: 1rem; /* 16px */
-  line-height: 1; /* 16px */
-  text-rendering: optimizeLegibility;
-  margin: 1.5rem 0 0.5em; /* 24px 0 8px */
-}
-
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
-  @include font-smoothing-on();
-  font-size: 0.875rem; /* 14px */
-  line-height: 1.1429; /* 16px */
+  margin: 0;
   text-rendering: optimizeLegibility;
-  text-transform: uppercase;
-  letter-spacing: 0.125rem; /* 2px */
-  margin: 1.5rem 0 0.5em; /* 24px 0 8px */
-}
+  font-size: inherit;
+  font-weight: inherit;
 
-hr {
-  line-height: 0;
-  text-align: center;
-  margin: 2em 0; /* 32px 0 */
-  border: 0;
-  height: 0;
-  &::after {
-    color: rgba($c-text, 0.25);
-    content: "\25C6 \25C6 \25C6";
-    letter-spacing: 0.75rem; /* 12px */
-    height: 0;
-  }
-}
-
-@media print {
-  h1, h2, h3, h4 {
+  @media print {
     page-break-after: avoid;
   }
+}
+
+// 1. Add the correct box sizing in Firefox.
+// 2. Show the overflow in Edge and IE.
+hr {
+  box-sizing: content-box; // 1
+  height: 0; // 1
+  overflow: visible; // 2
+  border: 0;
+  font: 0/0 normal;
 }

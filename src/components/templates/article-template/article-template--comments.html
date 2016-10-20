@@ -1,0 +1,28 @@
+{% extends "@page" %}
+{% block main %}
+<article class="article day-01">
+  <header class="article_header">
+    <h1 class="article_title p-name"><a href="{{ href }}">{{ title }}</h1>
+    <p class="article_byline p-author h-card">
+      <a class="u-url" href="#author">
+        {% render "@avatar", avatar %}
+        <span class="p-name">{{ author }}</span>
+      </a>
+    <p>
+  </header>
+
+  <section class="c-section" id="comments">
+    <header class="c-section__header">
+      <h1 class="c-section__title">11 Comments</h1>
+    </header>
+    <div class="c-section__main">
+      <p>Comments are ordered by helpfulness, as indicated by you. Help us pick out the gems and discourage asshattery by voting on notable comments.</p>
+      <p>Got something to add? You can leave a comment below.</p>
+
+      {% render "@comments-list" %}
+    </div>
+  </section>
+
+  {% render "@comment-form" %}
+</article>
+{% endblock %}

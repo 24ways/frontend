@@ -1,39 +1,53 @@
-.search .field__label {
-  @media screen and (min-width: 31.5em) {
-    svg {
-      line-height: 1.5;
-      text-align: center;
-      width: 4rem; /* 64px */
-      height: 4.5rem; /* 72px */
+.c-search {
+  .js-enhanced & {
+    @media screen and (min-width: 31.5em) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 4.5rem; // 72px
+      overflow: hidden;
+      transition: width .2s ease-out;
     }
   }
-}
 
-.search .field__input {
-  background-color: $c-neutral-lightest;
-  box-shadow: none;
-  width: 100%;
-
-  @media screen and (min-width: 31.5em) {
-    padding-left: 4rem; /* 64px */
-    height: 4.5rem; /* 72px */
+  .c-field__label {
+    @media screen and (min-width: 31.5em) {
+      svg {
+        line-height: 1.5;
+        text-align: center;
+        width: 4rem; // 64px
+        height: 4.5rem; // 72px
+      }
+    }
   }
 
-  &:focus {
-    box-shadow: inset 0 0 0 2px rgba($c-neutral-lighter, 0.5);
+  .c-field__input {
+    background-color: $c-neutral-lightest;
+    box-shadow: none;
+    width: 100%;
+
+    @media screen and (min-width: 31.5em) {
+      padding-left: 4rem; // 64px
+      height: 4.5rem; // 72px
+    }
+
+    &:focus {
+      box-shadow: inset 0 0 0 2px rgba($c-neutral-lighter, 0.5);
+    }
   }
-}
 
-.search .field_button {
-  font: 0/0 a;
-  background: transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
+  .c-field__button {
+    font: 0/0 sans;
+    background: transparent;
+    position: absolute;
+    border: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
 
-  @media screen and (min-width: 31.5em) {
-    width: 4rem; /* 64px */
-    height: 4.5rem; /* 72px */
+    @media screen and (min-width: 31.5em) {
+      width: 4rem; // 64px
+      height: 4.5rem; // 72px
+    }
   }
 }

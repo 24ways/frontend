@@ -1,6 +1,6 @@
-<ul class="nav nav-topics">
+<ul class="c-topics-nav">
 {% for topic in topics %}
-  <li class="nav_item">
+  <li class="c-topics-nav__item">
     <a href="{{ topic.url }}">
       {% include "topic-" + topic.title | lower + ".svg" %}
       {{ topic.title }}

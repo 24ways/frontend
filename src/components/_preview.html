@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-gb" dir="ltr">
   <head>
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//themes.googleusercontent.com">
-    <link rel="dns-prefetch" href="//cloud.24ways.org">
-    <link rel="dns-prefetch" href="//media.24ways.org">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+    <link rel="dns-prefetch" href="//themes.googleusercontent.com"/>
+    <link rel="dns-prefetch" href="//cloud.24ways.org"/>
+    <link rel="dns-prefetch" href="//media.24ways.org"/>
 
     <script>
       // Flag support for JS
@@ -16,26 +16,21 @@
         var enhanced = false;
       }
 
-      // Flag support for SVG
-      if(document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {
-        document.documentElement.className += ' svg';
-      }
-
-      // Add a script element as a child of the body
-      function downloadJSAtOnload() {
-        var element = document.createElement("script");
-        element.src = "//24ways.org/_assets/js/scripts_v37.js";
-        document.body.appendChild(element);
-      }
-
-      // Check for browser support of event handling capability
-      if (window.addEventListener) {
-        window.addEventListener("load", downloadJSAtOnload, false);
-      } else if (window.attachEvent) {
-        window.attachEvent("onload", downloadJSAtOnload);
-      } else {
-        window.onload = downloadJSAtOnload;
-      }
+      // // Add a script element as a child of the body
+      // function downloadJSAtOnload() {
+      //   var element = document.createElement("script");
+      //   element.src = "//24ways.org/_assets/js/scripts_v37.js";
+      //   document.body.appendChild(element);
+      // }
+      //
+      // // Check for browser support of event handling capability
+      // if (window.addEventListener) {
+      //   window.addEventListener("load", downloadJSAtOnload, false);
+      // } else if (window.attachEvent) {
+      //   window.attachEvent("onload", downloadJSAtOnload);
+      // } else {
+      //   window.onload = downloadJSAtOnload;
+      // }
     </script>
 
     <link rel="stylesheet" href="{{ '/assets/styles/app.css' | path }}"/>
@@ -62,18 +57,17 @@
     {{ yield }}
   </body>
 
-<!--
-  <script src="/_assets/js/vendor/madrobby/zepto/zepto.js"></script>
+  <script src="/assets/scripts/vendor/madrobby/zepto/zepto.js"></script>
   <script>jQuery = Zepto;</script>
-  <script src="/_assets/js/vendor/adactio/progresponsive/progresponsive.js"></script>
-  <script src="/_assets/js/vendor/leaverou/prismjs/prism.js"></script>
-  <script src="/_assets/js/vendor/filamentgroup/ajaxinclude/ajaxinclude.js"></script>
+  <script src="/assets/scripts/vendor/adactio/progresponsive/progresponsive.js"></script>
+  <script src="/assets/scripts/vendor/leaverou/prismjs/prism.js"></script>
+  <script src="/assets/scripts/vendor/filamentgroup/ajaxinclude/ajaxinclude.js"></script>
   <script>
     // AJAX include comments
     $("a[data-interaction]").addClass("c-continue-ajax");
     $("a[data-interaction]").bind( "click", function(e) {
       e.preventDefault();
-      $("#comments").addClass("section-loading");
+      $("#comments").addClass("c-section-loading");
       $(this).removeAttr("data-interaction").ajaxInclude();
     });
 
@@ -84,7 +78,7 @@
     var cornerOut = function(){
       this.className += ' js-mouseout';
     };
-    var corners = document.querySelectorAll('.summary-article');
+    var corners = document.querySelectorAll('.c-summary');
     for (var i = corners.length - 1; i >= 0; i--) {
       corners[i].addEventListener('js-mouseover', cornerOver, false);
       corners[i].addEventListener('js-mouseout', cornerOut, false);
@@ -124,23 +118,23 @@
       }
 
       $(document).ready(function() {
-        equalheight('.list_item .summary-article');
+        equalheight('.c-summary-list .c-summary');
       });
 
       $(window).resize(function(){
-        equalheight('.list_item .summary-article');
+        equalheight('.c-summary-list .c-summary');
       });
     }
 
     // Show back to top link when we've scrolled down the page
     if (window.innerWidth > 504) {
-      $('.navigation').append('<a class="nav nav-top" href="#top">Return to the top of this page</a>');
+      $('.c-navigation').append('<a class="c-top-nav" href="#top">Return to the top of this page</a>');
       $(function () {
         $(window).scroll(function () {
           if ($(this).scrollTop() > 400) {
-            $('.nav-top').animate({ opacity: 1 }, 500, 'ease-in')
+            $('.c-top-nav').animate({ opacity: 1 }, 500, 'ease-in')
           } else {
-            $('.nav-top').animate({ opacity: 0 }, 500, 'ease-out')
+            $('.c-top-nav').animate({ opacity: 0 }, 500, 'ease-out')
           }
         });
 
@@ -159,12 +153,11 @@
           }.bind(this), 10);
         }
 
-        $('.nav-top').on('click', function(e) {
+        $('.c-top-nav').on('click', function(e) {
           e.preventDefault();
           smoothScroll($(window), $($(e.currentTarget).attr('href')).offset().top, 500);
         });
       });
     }
   </script>
--->
 </html>

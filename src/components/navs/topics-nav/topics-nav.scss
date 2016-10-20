@@ -1,0 +1,47 @@
+.c-topics-nav {
+  @include nav();
+
+  @media screen and (max-width: 31.4375em) {
+    border-top: 1px solid $c-neutral-lightest;
+  }
+
+  a {
+    font-size: 0.8125rem; // 13px
+    line-height: 1.2308; // 16px
+    text-align: center;
+    text-transform: uppercase;
+    border: solid $c-neutral-lightest;
+    border-width: 0 1px 1px 0;
+    padding: 1.5385em 25% 1.4615em; // 20px 25% 19px
+    display: block;
+  }
+
+  svg {
+    margin: 0 auto 0.5rem;
+    display: block;
+
+    @media screen and (max-width: 32em) {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  .js-enhanced & {
+    overflow: hidden;
+  }
+}
+
+.c-topics-nav__item {
+  float: left;
+  width: 33.3333%;
+
+  @media screen and (min-width: 50em) {
+    width: 16.6667%;
+  }
+
+  .js-enhanced & {
+    @media screen and (min-width: 31.5em) {
+      width: 50%;
+    }
+  }
+}

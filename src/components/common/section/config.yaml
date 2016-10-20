@@ -15,12 +15,31 @@ variants:
     title: "[2013](/2013/)"
     content: |
       Scourge of browser vendors everywhere, WaSP buzzed its last in March. Dave Shea's CSS Zen Garden celebrated its tenth anniversary in May, and Google Glass was released. Ever broad in its interests, 24 ways tamed Grunt, URLs and GitHub Pages, encouraged readers to write and publish books, and leavened all that with goodies on project management, web typography and SVG.
+- name: author
+  context:
+    id: author
+    title: "About the author"
+    content: |
+      Drew McLellan is lead developer on your favourite content management systems, [Perch and Perch Runway](https://grabaperch.com/). He is Director and Senior Developer at edgeofmyseat.com in Bristol, England, and is formerly Group Lead at the Web Standards Project. When not publishing 24 ways, Drew keeps a [personal site](http://allinthehead.com/) covering web development issues and themes, [takes photos](http://flickr.com/drewm/), [tweets a lot](http://twitter.com/drewm) and tries to stay upright on his bicycle.
+
+      <a class="c-continue" href="/authors/drewmclellan/">More articles by Drew</a>
 - name: sponsor
   context:
     id: sponsor
-    title: "Brought to you by"
+    title: "Brought to you&nbsp;by"
     mods: [sponsor]
     component: promo
+- name: comments
+  context:
+    id: comments
+    title: "Comments"
+    content: |
+      <a class="c-continue" href="/YYYY/article-slug/comments" data-replace data-interaction data-target="#comments">View 11 readers’ comments</a>
+- name: related
+  context:
+    id: related
+    title: "Related articles"
+    component: summary-list
 - name: authors
   context:
     id: a

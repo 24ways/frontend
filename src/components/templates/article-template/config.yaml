@@ -1,0 +1,18 @@
+context:
+  title: "Starting Your <abbr>HTML5</abbr> Project on the Right Foot (and Keeping It There)"
+  href: /year/article-slug/
+  author: Drew McLellan
+  avatar:
+    img:
+      size: 160
+      src: https://cloud.24ways.org/authors/drewmclellan280.jpg
+  section: article
+  theme: year-2013
+  traverse:
+    type: article
+    prev:
+      url: /2015/how-tabs-should-work/
+      title: "How Tabs Should Work"
+    next:
+      url: /2015/solve-the-hard-problems/
+      title: "Solve the Hard Problems"

@@ -3,97 +3,55 @@
 // w3c.github.io/html/textlevel-semantics.html
 // =========================================================
 
-b,
-strong {
-/*  Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome */
-  font-weight: 700;
-}
-
+// Add the correct font size in all browsers.
 small {
-/*  Address inconsistent and variable font size in all browsers */
   font-size: 100%;
 }
 
-:lang(en-gb)>q {
-/*  Set consistent quote types */
-  quotes: "\2018" "\2019" "\201c" "\201d";
+// Set consistent quote types
+:lang(en-gb) > q {
+  quotes: '\2018' '\2019' '\201c' '\201d';
 }
 
-dfn {
-/*  Address styling not present in Safari 5 and Chrome */
-  font-style: italic;
-}
-
-abbr {
-  font-feature-settings: "c2sc" 1;
-}
-
+// Remove the bottom border in Firefox 39-.
 abbr[title] {
-/*  Address styling not present in IE 8/9, Safari 5, and Chrome */
   border-bottom: 1px dotted $c-neutral-light;
-  cursor: help;
+
+  &:hover {
+    cursor: help;
+  }
 }
 
-pre,
+// 1. Correct the inheritance and scaling of font size in all browsers.
+// 2. Correct the odd `em` font sizing in all browsers.
 code,
 samp {
-  color: $c-neutral-darker;
-  font-family: $f-code;
-  background-color: rgba(255,255,255,0.75);
-}
-
-code,
-samp {
-  padding: 0.125rem 0.25rem;
-}
-
-pre code {
-  background-color: transparent;
-  padding: 0;
+  font-family: $f-code; // 1
+  font-size: 1em; // 2
 }
 
 kbd {
   font-family: $f-system;
 }
 
-kbd > kbd {
-/*  Represents key press within user input sequence */
-  font-size: 0.875em; /* 14px */
-  line-height: 1.1429; /* 16px */
-  background-color: #fff;
-  margin: 0 0.125rem;
-  border: 1px solid rgba(0,0,0,0.15);
-  border-radius: 0.25rem; /* 4px */
-  padding: 0.125rem 0.5rem; /* 4px 8px */
-  box-shadow: 0 2px 0 rgba(0,0,0,0.1);
-}
-
-kbd > samp {
-/*  Represents menu selection within user input sequence */
-  font-family: inherit;
-  background-color: #fff;
-  margin: -0.375rem -0.625rem; /* -6px -10px */
-  border-radius: 0;
-  padding: 0.375rem 0.625rem; /* 6px 10px */
-  box-shadow: none;
-}
-
+// Prevent `sub` and `sup` elements from affecting line height in all browsers.
 sub,
 sup {
-/*  Prevent `sub` and `sup` affecting `line-height` in all browsers */
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
-  }
-  sub {
-    bottom: -0.25em;
-  }
-  sup {
-    top: -0.5em;
-  }
+}
 
+sub {
+  bottom: -0.25rem;
+}
+
+sup {
+  top: -0.5rem;
+}
+
+// Address styling not present in IE 8/9
 mark {
-/*  Address styling not present in IE 8/9 */
   background: #ffc;
 }

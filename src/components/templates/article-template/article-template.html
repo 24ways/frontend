@@ -2,11 +2,11 @@
 {% block main %}
 <article class="article h-entry day-01">
   <header class="article_header">
-    <h1 class="article_title p-name">Starting Your <abbr>HTML5</abbr> Project on the Right Foot (and Keeping It There)</h1>
+    <h1 class="article_title p-name">{{ title }}</h1>
     <p class="article_byline p-author h-card">
       <a class="u-url" href="#author">
-        <span class="c-avatar"><img class="article_image u-photo" src="http://media.24ways.org/authors/drewmclellan280.jpg" width="160" height="160" alt="Drew McLellan"/></span>
-        <span class="p-name">Drew McLellen</span>
+        {% render "@avatar", avatar %}
+        <span class="p-name">{{ author }}</span>
       </a>
     <p>
   </header>
@@ -212,34 +212,12 @@ videos[i].addEventListener(&#39;ended&#39;, function(){
     <p>But most of all <strong>play around with it, have fun and build something awesome</strong>.</p>
   </div>
 
-  <section class="c-section" id="author">
-    <header class="c-section__header">
-      <h1 class="c-section__title">About the author</h1>
-    </header>
-    <div class="c-section__main">
-      <p><strong>Drew McLellan</strong> is lead developer on your favourite small <span class="caps">CMS</span>, <a href="http://grabaperch.com/">Perch</a>. He is Director and Senior Developer at UK-based web development agency edgeofmyseat.com, and formerly Group Lead at the Web Standards Project. When not publishing 24 ways, Drew keeps a <a href="http://allinthehead.com/">personal site</a> covering web development issues and themes, <a href="http://flickr.com/drewm/">takes photos</a> and <a href="http://twitter.com/drewm">tweets a lot</a>.</p>
-      <p><a class="continue" href="/pages/authors/authorname">More articles by Drew</a></p>
-    </div>
-  </section>
+  {% render "@section--author" %}
 
   {% render "@section--sponsor" %}
 
-  <section class="c-section" id="comments">
-    <header class="c-section__header">
-      <h1 class="c-section__title">11 Comments</h1>
-    </header>
-    <div class="c-section__main">
-      <p><a class="continue" href="/pages/YYYY/article/comments" data-replace data-interaction data-target="#comments">View readers&#8217; comments on this article</a></p>
-    </div>
-  </section>
+  {% render "@section--comments" %}
 
-  <section class="c-section" id="related">
-    <header class="c-section__header">
-      <h1 class="c-section__title">Related articles</h1>
-    </header>
-    <div class="c-section__main">
-      {% render "@summary-list" %}
-    </div>
-  </section>
+  {% render "@section--related" %}
 </article>
 {% endblock %}

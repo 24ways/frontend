@@ -1,0 +1,41 @@
+.c-site-nav {
+  @include nav();
+  overflow: hidden;
+
+  @media screen and (min-width: 31.5em) {
+    width: 4.5rem; // 72px
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+
+  a {
+    font-size: 0.8125em; // 13px
+    line-height: 1.2308; // 16px
+    padding: 1.2308em 0.6154em; // 16px 8px
+    display: block;
+
+    @media screen and (min-width: 31.5em) {
+      padding: 0.5625rem 0.5rem 0.625rem; // 9px 8px 10px
+    }
+  }
+}
+
+.c-site-nav__item {
+  text-align: center;
+  border: solid $c-neutral-lightest;
+  border-width: 0 1px 0 0;
+  float: left;
+  width: 25%;
+
+  @media screen and (min-width: 31.5em) {
+    text-align: left;
+    border-width: 1px 0 0 0;
+    float: none;
+    width: auto;
+  }
+
+  &:last-child {
+    border-right: 0 none;
+  }
+}
