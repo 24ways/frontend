@@ -5,6 +5,22 @@
   font-family: $f-sans !important;
 }
 
+a {
+  color: $c-link;
+
+  &:hover {
+    color: $c-link-hover;
+  }
+
+  &:active {
+    color: $c-link-active;
+  }
+}
+
+.Pen-previewLink svg {
+  fill: currentColor;
+}
+
 .Code * {
   font-family: $f-code !important;
 }
