@@ -1,8 +1,8 @@
-.authors-list {
+.c-authors-list {
   @include list();
 }
 
-.authors-list__item {
+.c-authors-list__item {
   padding: 1px 1px 0 0;
   width: percentage(1/3);
   float: left;

@@ -1,0 +1,5 @@
+context:
+  items:
+  - "<time class=\"dt-published\" datetime=\"2012-12-01T00:00:00-00:00\">1 Dec<span>ember</span> 2012</time>"
+  - "Published in [Code](/topics/code/)"
+  - "[8 comments](#comments)"

@@ -1,7 +1,7 @@
-.comments-list {
+.c-comments-list {
   @include list();
 }
 
-.comments-list__item {
+.c-comments-list__item {
   padding: 1px 1px 0 0;
 }

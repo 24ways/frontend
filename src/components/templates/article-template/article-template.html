@@ -1,9 +1,9 @@
 {% extends "@page" %}
 {% block main %}
-<article class="article h-entry day-01">
-  <header class="article_header">
-    <h1 class="article_title p-name">{{ title }}</h1>
-    <p class="article_byline p-author h-card">
+<article class="c-article h-entry day-01">
+  <header class="c-article__header">
+    <h1 class="c-article__title p-name">{{ title }}</h1>
+    <p class="c-article__byline p-author h-card">
       <a class="u-url" href="#author">
         {% render "@avatar", avatar %}
         <span class="p-name">{{ author }}</span>
@@ -11,25 +11,18 @@
     <p>
   </header>
 
-  <footer class="article_footer">
-    <ul class="list">
-      <li class="list_item"><time class="dt-published" datetime="2012-12-01T00:00:00-00:00">1 Dec<span>ember</span> 2012</time></li>
-      <li class="list_item">Published in <a href="/pages/topics/topicname/">Code</a></li>
-      <li class="list_item"><a href="#comments">8 comments</a></li>
-    </ul>
+  <footer class="c-article__footer">
+    {% render "@meta" %}
   </footer>
 
-  <div class="article_main e-content">
-    {% include "@note" %}
-    {% include "@prose" %}
+  <div class="c-article__main e-content">
+    {% render "@note" %}
+    {% render "@prose" %}
   </div>
 
   {% render "@section--author" %}
-
   {% render "@section--sponsor" %}
-
   {% render "@section--comments" %}
-
   {% render "@section--related" %}
 </article>
 {% endblock %}

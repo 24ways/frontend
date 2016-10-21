@@ -1,0 +1,48 @@
+.c-meta {
+  margin: 1em;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 0.5rem 0;
+
+  @media screen and (min-width: 50em) {
+    margin: 0;
+    border: 0 none;
+    padding: 0;
+  }
+}
+
+.c-meta__item {
+  @include caption();
+  line-height: 2;
+  margin-right: 0.5em;
+  display: inline;
+
+  @media screen and (max-width: 24.9375em) {
+    .dt-published span {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 49.9375em) {
+    margin-right: -0.25em;
+
+    &::after {
+      content: "•";
+      margin: 0 0.3334rem;
+      opacity: 0.5;
+    }
+
+    &:last-child {
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  @media screen and (min-width: 50em) {
+    text-align: right;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding: 0.4375rem 0 1.5rem 0;
+    display: block;
+  }
+}
