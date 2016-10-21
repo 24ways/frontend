@@ -2,6 +2,7 @@ context:
   site_title: 24 ways
   site_handle: 24ways
   site_description: 24 ways is the advent calendar for web geeks. Each day throughout December we publish a daily dose of web design and development goodness to bring you all a little Christmas cheer.
+  site_feed: https://feeds.feedburner.com/24ways
   topics:
   - title: Business
     url: /topics/business/
