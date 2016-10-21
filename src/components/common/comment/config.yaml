@@ -5,8 +5,9 @@ context:
   author: Jeremy Keith
   datetime: "2012-12-01T12:24:48-00:00"
   avatar:
-    img: https://www.gravatar.com/avatar/5ad82c5ba0264363974af89deb743c20?s=96&d=https%3A%2F%2F24ways.org%2F_assets%2Fimages%2Fgravatar.png
-    size: 64
+    img:
+      src: https://www.gravatar.com/avatar/5ad82c5ba0264363974af89deb743c20?s=96&d=https%3A%2F%2F24ways.org%2F_assets%2Fimages%2Fgravatar.png
+      size: 64
   content: |
     This is great stuff! I'm terrible at regular expressions—my brain just doesn't seem to want to remember any of it—but this article contains the clearest description of regular expressions I've come across.
 
@@ -40,7 +41,8 @@ variants:
     datetime: "2012-12-12T12:24:48-00:00"
     mods: [unhelpful]
     avatar:
-      img: https://www.gravatar.com/avatar/15091a37bacfa4bdd011282627eaca2b?s=96&d=https%3A%2F%2F24ways.org%2F_assets%2Fimages%2Fgravatar.png
-      size: 64
+      img:
+        src: https://www.gravatar.com/avatar/15091a37bacfa4bdd011282627eaca2b?s=96&d=https%3A%2F%2F24ways.org%2F_assets%2Fimages%2Fgravatar.png
+        size: 64
     content: |
       You’re an idiot! Everything you have written here is wrong!
