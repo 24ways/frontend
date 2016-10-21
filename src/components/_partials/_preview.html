@@ -83,48 +83,6 @@
       corners[i].addEventListener('js-mouseout', cornerOut, false);
     };
 
-    // Equal height grid cells
-    // http://css-tricks.com/equal-height-blocks-in-rows/
-    if (window.innerWidth > 640) {
-      equalheight = function(container){
-        var currentTallest = 0,
-          currentRowStart = 0,
-          rowDivs = new Array(),
-          $el,
-          topPosition = 0;
-
-        $(container).each(function() {
-          $el = $(this);
-          $($el).height('auto')
-          topPostion = $el.position().top;
-
-          if (currentRowStart != topPostion) {
-            for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-              rowDivs[currentDiv].height(currentTallest);
-            }
-            rowDivs.length = 0; // empty the array
-            currentRowStart = topPostion;
-            currentTallest = $el.height();
-            rowDivs.push($el);
-          } else {
-            rowDivs.push($el);
-            currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
-          }
-          for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-            rowDivs[currentDiv].height(currentTallest);
-          }
-        });
-      }
-
-      $(document).ready(function() {
-        equalheight('.c-summary-list .c-summary');
-      });
-
-      $(window).resize(function(){
-        equalheight('.c-summary-list .c-summary');
-      });
-    }
-
     // Show back to top link when we've scrolled down the page
     if (window.innerWidth > 504) {
       $('.c-navigation').append('<a class="c-top-nav" href="#top">Return to the top of this page</a>');

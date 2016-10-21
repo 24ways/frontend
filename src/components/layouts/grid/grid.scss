@@ -1,0 +1,21 @@
+.c-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.125em;
+}
+
+.c-grid__item {
+  display: flex;
+  margin: 0.125em;
+  flex-shrink: 0;
+
+  .c-grid--ways & {
+    flex-basis: 16em;
+    flex-grow: 1;
+  }
+
+  .c-grid--authors & {
+    flex-basis: 12em;
+    flex-grow: 0;
+  }
+}

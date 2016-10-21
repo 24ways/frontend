@@ -97,16 +97,43 @@ variants:
     sections:
     - id: a
       title: "A"
-      component: authors-list
+      component: grid--authors
       config:
-        authors: [John Allsopp, Rachel Andrew, Paul Annett]
+        component: author
+        items:
+        - author: John Allsopp
+        - author: Rachel Andrew
+        - author: Paul Annett
     - id: b
       title: "B"
-      component: authors-list
+      component: grid--authors
       config:
-        authors: [Ashley Baxter, Darren Beale, Gavin Bell, Frances Berriman, Kimberly Blessing, Paul Boag, Ben Bodien, Jina Bolton, Mark Boulton, Cennydd Bowles, Ross Bruniges, Andy Budd, Heather Burns]
+        component: author
+        items:
+        - author: Ashley Baxter
+        - author: Darren Beale
+        - author: Gavin Bell
+        - author: Frances Berriman
+        - author: Kimberly Blessing
+        - author: Paul Boag
+        - author: Ben Bodien
+        - author: Jina Bolton
+        - author: Mark Boulton
+        - author: Cennydd Bowles
+        - author: Ross Bruniges
+        - author: Andy Budd
+        - author: Heather Burns
     - id: c
       title: "C"
-      component: authors-list
+      component: grid--authors
       config:
-        authors: [Dan Cederholm, Andy Clarke, Geri Coady, Dave Collins, Simon Collison, Rebecca Cottrell, Chris Coyier, Matt Curry]
+        component: author
+        items:
+        - author: Dan Cederholm
+        - author: Andy Clarke
+        - author: Geri Coady
+        - author: Dave Collins
+        - author: Simon Collison
+        - author: Rebecca Cottrell
+        - author: Chris Coyier
+        - author: Matt Curry

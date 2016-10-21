@@ -1,0 +1,7 @@
+<{{ "ol" if ordered else "ul" }} class="c-grid{% for mod in mods %} c-grid--{{ mod }}{% endfor %}"{{ " reversed" if reversed }}>
+{% for item in items %}
+  <li class="c-grid__item">
+    {% render "@" + component , item %}
+  </li>
+{% endfor %}
+</{{ "ol" if ordered else "ul" }}>

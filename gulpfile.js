@@ -94,7 +94,7 @@ function styles() {
     .pipe(sassGlob())
     .pipe(sass({
       outputStyle: 'expanded',
-      includePaths: ['./node_modules', paths.src + '/tokens/'],
+      includePaths: [paths.src + '/tokens/'],
       importer: sassJson
     }).on('error', sass.logError))
     .pipe(postcss([

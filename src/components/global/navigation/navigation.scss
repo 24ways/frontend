@@ -32,13 +32,13 @@
 
   .js-menu-active & {
     @media screen and (max-width: 31.4375em) {
-      box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+      box-shadow: 0 8px 8px 0 $color-neutral--alpha-2;
       max-height: 20rem; // 320px
       transition: max-height .2s ease-out;
     }
 
     @media screen and (min-width: 31.5em) {
-      box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+      box-shadow: 0 0 8px 0 $color-neutral--alpha-2;
       width: 22.5em; // 360px
       transition: width .2s ease-out;
     }

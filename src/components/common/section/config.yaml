@@ -41,12 +41,13 @@ variants:
   context:
     id: related
     title: "Related articles"
-    component: summary-list
+    mods: [related]
+    component: grid--ways
 - name: authors
   context:
     id: a
     title: "A"
-    component: authors-list
+    component: grid--authors
     config:
       authors:
       - John Allsopp

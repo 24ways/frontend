@@ -1,7 +1,0 @@
-<{{ "ol" if ordered else "ul" }} class="c-summary-list{{ " reversed" if reversed }}">
-{% for summary in summaries %}
-  <li class="c-summary-list__item">
-    {% render "@summary", summary %}
-  </li>
-{% endfor %}
-</{{ "ol" if ordered else "ul" }}>

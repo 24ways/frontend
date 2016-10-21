@@ -27,12 +27,6 @@
   }
 }
 
-@mixin list {
-  list-style-type: none;
-  margin: 0;
-  @include clear();
-}
-
 @mixin nav {
   list-style-type: none;
   margin: 0;

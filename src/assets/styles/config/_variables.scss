@@ -22,6 +22,9 @@ $color-neutral--dark: darken($color-neutral, 8%);
 $color-neutral--darker: darken($color-neutral, 24%);
 $color-neutral--darkest: darken($color-neutral, 44%);
 
+$color-neutral--alpha-1: rgba($color-neutral, 0.1);
+$color-neutral--alpha-2: rgba($color-neutral, 0.2);
+
 $color-link: palette(secondary);
 $color-link--hover: palette(secondary, dark);
 $color-link--active: palette(secondary, light);

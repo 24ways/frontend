@@ -1,6 +1,6 @@
 <article class="c-comment{% for mod in mods %} c-comment--{{ mod }}{% endfor %} h-entry" id="{{ id }}">
   <header class="c-comment__header">
-    <h1 class="c-comment__title p-name h-card">
+    <h1 class="c-comment__title  p-name h-card">
       <a class="p-author u-url" href="{{ href }}">
         {% render "@avatar", avatar %}
         {{ author | title }}
@@ -10,7 +10,7 @@
       <a rel="bookmark" href="#{{ id }}" title="Permalink to this comment"><time class="dt-published" datetime="{{ datetime }}">{{ datetime | date('D MMMM YYYY') }}</time></a>
     </p>
   </header>
-  <div class="c-comment__main e-content">
+  <div class="c-comment__main  e-content">
     {{ content | markdown }}
   </div>
   <footer class="c-comment__footer">

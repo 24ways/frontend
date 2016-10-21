@@ -1,11 +1,9 @@
 {
-  "mq-breakpoints": {
-    "min": "280px",
-    "xsmall": "360px",
-    "small": "480px",
-    "medium": "560px",
-    "large": "720px",
-    "xlarge": "960px",
-    "max": "1140px"
-  }
+  "mq-min": "280px",
+  "mq-xsmall": "360px",
+  "mq-small": "480px",
+  "mq-medium": "504px",
+  "mq-large": "800px",
+  "mq-xlarge": "960px",
+  "mq-max": "1280px"
 }

@@ -22,7 +22,7 @@
   @media screen and (min-width: 50em) {
     text-align: right;
     padding: 1.5em 0 1.5em 1em; // 24px 0 24px 16px
-    border-top: 1px solid rgba(0,0,0,0.1);
+    border-top: 1px solid $color-neutral--alpha-1;
     width: 20%;
     position: absolute;
     top: 0;
@@ -49,7 +49,7 @@
 }
 
 .c-section__main {
-  border-top: 1px solid rgba(0,0,0,0.1);
+  border-top: 1px solid $color-neutral--alpha-1;
   padding: 0.5em 1em;
 
   @media screen and (min-width: 50em) {
@@ -122,6 +122,13 @@
     position: absolute;
     left: 0.5em;
     top: 1em;
+  }
+}
+
+// Section - Related
+.c-section--related {
+  .c-section__main {
+    padding-right: 0;
   }
 }
 

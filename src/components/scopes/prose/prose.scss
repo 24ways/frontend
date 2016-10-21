@@ -188,7 +188,7 @@
   }
 
   a {
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid $color-neutral--alpha-1;
 
     @media print {
       border-bottom: 1px dotted #999;
@@ -295,7 +295,7 @@
 
   td,
   th {
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid $color-neutral--alpha-1;
     padding: 0.25rem 2rem 0.25rem 0.5rem; // 4px 32px 4px 4px
   }
 
@@ -313,7 +313,7 @@
     border: 1px solid rgba(0,0,0,0.15);
     border-radius: 0.25rem; // 4px
     padding: 0.125rem 0.5rem; // 4px 8px
-    box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 2px 0 $color-neutral--alpha-1;
   }
 
   // Represents menu selection within user input sequence

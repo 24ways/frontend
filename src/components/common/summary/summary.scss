@@ -2,6 +2,7 @@
   background-color: white;
   padding: 1em 1em 2.5em 1em;
   position: relative;
+  flex: 1;
 
   @media print {
     padding-bottom: 0;
@@ -136,9 +137,7 @@
 .c-summary:hover {
   .c-summary__author {
     &::after {
-      -webkit-animation: corner-forward .15s steps(10);
       animation: corner-forward .15s steps(10);
-      -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
       z-index: ($z-index-default + 1);
     }
@@ -148,9 +147,8 @@
 &.js-mouseout {
   .c-summary__author {
     &::before {
-      -webkit-animation: corner-reverse .15s steps(10);
       animation: corner-reverse .15s steps(10);
-      z-index: $z-index-neutral;
+      z-index: $z-index-default;
     }
   }
 }
