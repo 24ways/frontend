@@ -1,11 +1,6 @@
 'use strict';
 
 const fractal = require('@frctl/fractal').create();
-const markdown = require('markdown-it')({
-  html: true,
-  xhtmlOut: true,
-  typographer: true
-});
 
 const paths = {
   build: __dirname + '/www',
@@ -22,20 +17,36 @@ const mandelbrot = require('@frctl/mandelbrot')({
   }
 });
 
+const md_abbr = require('markdown-it-abbr');
+const md_prism = require('markdown-it-prism');
+const md = require('markdown-it')({
+  html: true,
+  xhtmlOut: true,
+  typographer: true
+}).use(md_abbr).use(md_prism, {
+  plugins: [
+    'highlight-keywords',
+    'show-language'
+  ]
+});
+
 const nunjucks = require('@frctl/nunjucks')({
   filters: {
     date: require('nunjucks-date'),
     markdown: function(str) {
-      return markdown.render(str);
+      return md.render(str);
     },
     markdownInline: function(str) {
-      return markdown.renderInline(str);
+      return md.renderInline(str);
     },
     slugify: function(str) {
       return str.toLowerCase().replace(/[^\w]+/g, '');
     }
   },
-  paths: [paths.static + '/assets/vectors']
+  paths: [
+    paths.static + '/assets/vectors',
+    paths.static + '/components'
+  ]
 });
 
 // Project config

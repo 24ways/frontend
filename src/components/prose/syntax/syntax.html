@@ -1,4 +1,15 @@
-<pre><code class="language-javascript">
+{% set syntax %}
+```html
+<video src="mycat.webm" controls>no fallback coz i is lame, innit.</video>
+```
+
+```css
+selector {
+  property: value;
+}
+```
+
+```js
 import express from 'express';
 import http from 'http';
 
@@ -18,4 +29,6 @@ server.listen(3003);
 server.on('listening', () => {
   console.log('Listening on 3003');
 });
-</code></pre>
+```
+{% endset %}
+{{ syntax | markdown }}

@@ -1,4 +1,4 @@
-.note {
+.c-note {
   line-height: 1.25;
   margin: 1.5rem 0;
   border: solid rgba(0,0,0,0.33);
@@ -11,10 +11,10 @@
       padding-bottom: 0.25rem;
     }
   }
-}
 
-p.note {
-  color: lighten($c-text, 10%);
-  font-size: 1rem;
-  padding: 0.75rem 0;
+  p {
+    color: lighten($c-text, 10%);
+    font-size: 1rem;
+    padding: 0.75rem 0;
+  }
 }
