@@ -1,22 +1,24 @@
 @each $name, $color in $c-years {
   .#{$name} {
-    h2 {
-      color: darken($color, 20%);
-    }
-    .article_main .lede {
-      color: darken($color, 30%);
-    }
     .c-preface {
       background-color: darken($color, 25%);
     }
+
     .c-banner {
       background-color: darken($color, 30%);
     }
-    .c-traverse-nav {
-      .c-traverse-nav__item {
-        &::after {
-          background-color: rgba(darken($color, 30%), 0.75);
-        }
+
+    .c-traverse-nav__item::after {
+      background-color: rgba(darken($color, 30%), 0.75);
+    }
+
+    .s-prose {
+      h2 {
+        color: darken($color, 20%);
+      }
+
+      .lede {
+        color: darken($color, 30%);
       }
     }
   }

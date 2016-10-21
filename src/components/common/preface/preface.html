@@ -1,19 +1,17 @@
 <!-- TODO: Review use of microformats for author preface -->
-<header class="c-preface h-card">
-  <h1 class="c-preface__title p-name">
+<header class="c-preface  h-card">
+  <h1 class="c-preface__title  p-name">
     {%- if titleIcon -%}
       {% include titleIcon + ".svg" %}
     {%- endif -%}
     {{ title }}
   </h1>
   {%- if content -%}
-  <div class="c-preface__main">
-    <div class="lede p-note">
-      {%- if avatar -%}
-        {% render "@avatar", { img: avatar.img } %}
-      {%- endif -%}
-      {{ content | markdown }}
-    </div>
+  <div class="c-preface__main  p-note">
+    {%- if avatar -%}
+      {% render "@avatar", { img: avatar.img } %}
+    {%- endif -%}
+    {{ content | markdown }}
   </div>
   {%- endif -%}
 </header>

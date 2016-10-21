@@ -1,5 +1,5 @@
 @each $name, $color in $c-days {
-  .article.#{$name} {
+  .c-article.#{$name} {
     background-color: lighten($color, 48%);
 
     a {

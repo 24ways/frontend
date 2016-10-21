@@ -22,6 +22,8 @@ variants:
     content: |
       Drew McLellan is lead developer on your favourite content management systems, [Perch and Perch Runway](https://grabaperch.com/). He is Director and Senior Developer at edgeofmyseat.com in Bristol, England, and is formerly Group Lead at the Web Standards Project. When not publishing 24 ways, Drew keeps a [personal site](http://allinthehead.com/) covering web development issues and themes, [takes photos](http://flickr.com/drewm/), [tweets a lot](http://twitter.com/drewm) and tries to stay upright on his bicycle.
 
+      <span class="photo-credit">Photo: [James Duncan Davidson](http://duncandavidson.com/)</span>
+
       <a class="c-continue" href="/authors/drewmclellan/">More articles by Drew</a>
 - name: sponsor
   context:

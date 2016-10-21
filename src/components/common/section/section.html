@@ -9,7 +9,6 @@
       {%- if icon -%}
         {% include icon + ".svg" %}
       {%- endif -%}
-      {{ '<p class="lede">' + lede + '</p>' if lede }}
       {{ content | markdown }}
     {%- endif -%}
   </div>

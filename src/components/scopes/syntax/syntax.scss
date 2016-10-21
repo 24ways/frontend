@@ -1,12 +1,7 @@
 pre[class*="language-"] {
   text-align: left;
   direction: ltr;
-  white-space: pre;
-  word-spacing: normal;
-  tab-size: 4;
-  hyphens: none;
   padding: 1em;
-  overflow: auto;
 
   code {
     background-color: transparent;
@@ -14,7 +9,7 @@ pre[class*="language-"] {
 }
 
 .namespace {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .token.comment,

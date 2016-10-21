@@ -1,4 +1,30 @@
 .s-prose {
+  .caps {
+    letter-spacing: 0.0625rem; // 1px
+  }
+
+  .caption {
+    @include caption;
+  }
+
+  .lede {
+    @include lede();
+    color: $c-neutral-darkest;
+  }
+
+  // TODO: appears on more than one type of scope construct
+  .photo-credit {
+    font-family: $f-sans;
+    @include caption();
+  }
+
+  pre,
+  code,
+  samp {
+    color: $c-neutral-darker;
+    background-color: rgba(255,255,255,0.75);
+  }
+
   pre {
     font-size: 0.875em; // 14px
     line-height: 1.4286; // 20px
@@ -14,6 +40,16 @@
       // Base font size now 20px within article body
       line-height: 1.4; // 28px
     }
+
+    code {
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+
+  code,
+  samp {
+    padding: 0.125rem 0.25rem;
   }
 
   blockquote {
@@ -50,65 +86,19 @@
     }
   }
 
-  ol {
-    list-style-position: inside;
-    list-style-type: decimal;
-    margin: 1rem 0; // 16px 0
-    padding: 0;
-  }
-
+  ol,
   ul {
     list-style-position: inside;
-    list-style-type: square;
     margin: 1rem 0; // 16px 0
     padding: 0;
-  }
-  @media screen and (min-width: 50em) {
-    ol,
-    ul {
+
+    @media screen and (min-width: 50em) {
       list-style-position: outside;
     }
   }
 
-  ul li li {
-    list-style-type: circle;
-  }
-
-  dt {
-    font-weight: 700;
-  }
-
-  li li,
-  dd {
-    margin-left: 2rem;
-  }
-
-  li > *,
-  dd > * {
-    margin-top: 0;
-  }
-
-  figure,
-  p.image {
-    margin: 1.5em 0; // 24px 0
-    img {
-      max-width: 100%;
-    }
-  }
-
-  figcaption,
-  p.image span.caption {
-    color: #666; // $color-caption
-    font-size: 0.875rem; // 14px
-    line-height: 1.1429; // 16px
-    border-bottom: 1px solid rgba($c-text, 0.2);
-    padding: 0.5714em 0; // 8px 0
-    display: block;
-  }
-
-  li {
-    margin-top: 0.25em; // 4px
-    margin-bottom: 0.25em; // 4px
+  ol li {
+    list-style-type: decimal;
   }
 
   ul li {
@@ -139,6 +129,62 @@
         top: 0.5em;
       }
     }
+
+    li {
+      list-style-type: circle;
+    }
+  }
+
+  dt {
+    font-weight: 700;
+  }
+
+  li {
+    margin-top: 0.25em; // 4px
+    margin-bottom: 0.25em; // 4px
+  }
+
+  li li,
+  dd {
+    margin-left: 2rem;
+  }
+
+  li > *,
+  dd > * {
+    margin-top: 0;
+  }
+
+  figure,
+  p.image {
+    margin: 1.5em -1em; // 24px -16px
+
+    @media screen and (min-width: 50em) {
+      margin-left: 0;
+      margin-right: -7.6667%;
+    }
+
+    @media screen and (min-width: 60em) {
+      margin-right: -25.8334%;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  figcaption,
+  p.image span.caption {
+    color: #666; // $color-caption
+    font-size: 0.875rem; // 14px
+    line-height: 1.1429; // 16px
+    border-bottom: 1px solid rgba($c-text, 0.2);
+    padding: 0.5714em 0; // 8px 0
+    margin: 0 1rem;
+    display: block;
+
+    @media screen and (min-width: 50em) {
+      margin: 0;
+    }
   }
 
   a {
@@ -151,30 +197,6 @@
         font-size: 0.75em;
         content: " ["attr(href)"]";
       }
-    }
-  }
-
-  figure,
-  p.image {
-    margin-left: -1em;
-    margin-right: -1em;
-
-    @media screen and (min-width: 50em) {
-      margin-left: 0;
-      margin-right: -7.6667%;
-    }
-
-    @media screen and (min-width: 60em) {
-      margin-right: -25.8334%;
-    }
-  }
-
-  figcaption,
-  p.image span.caption {
-    margin: 0 1rem;
-
-    @media screen and (min-width: 50em) {
-      margin: 0;
     }
   }
 
@@ -280,23 +302,6 @@
   th {
     line-height: 1.25;
     background-color: rgba(0,0,0,0.05);
-  }
-
-  pre,
-  code,
-  samp {
-    color: $c-neutral-darker;
-    background-color: rgba(255,255,255,0.75);
-  }
-
-  code,
-  samp {
-    padding: 0.125rem 0.25rem;
-  }
-
-  pre code {
-    background-color: transparent;
-    padding: 0;
   }
 
   // Represents key press within user input sequence

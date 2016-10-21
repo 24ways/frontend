@@ -7,8 +7,9 @@ variants:
     sections:
     - id: background
       title: Background
-      lede: 24 ways is the advent calendar for web geeks. For twenty-four days each December we publish a daily dose of web design and development goodness to bring you all a little Christmas cheer.
       content: |
+        <p class="lede">24 ways is the advent calendar for web geeks. For twenty-four days each December we publish a daily dose of web design and development goodness to bring you all a little Christmas cheer.</p>
+
         Back in December 2005, Drew McLellan set up what he called "a festive blog" with a new article each day written by experts sharing their knowledge. Articles present ideas, techniques or experiences that you can take and apply to your own work. Code snippets, advice about business and clients, workflow and workshopping, design inspiration: 24 ways has it all.
 
         With over one hundred authors and almost two hundred articles, 24 ways is very proud to have become an annual fixture in the calendars of web geeks. Since 2005, 24 ways has always combined learning and sharing, both vital aspects of the continued strength of the web community. As Drew wrote, ‘There’s a lot of fun to be had in learning something that will impress those you work with – especially if then you can share what you know to everyone’s benefit.’
@@ -37,8 +38,9 @@ variants:
     sections:
     - id: error
       title: Page not found
-      lede: Sorry, but we can't find that page.
       content: |
+        <p class="lede">Sorry, but we can't find that page.</p>
+
         The page you requested wasn't found in the location specified. You may have an incorrect URL, or the file could have been moved or renamed.
 
         If you're having problems finding a particular page, try searching the site or return to the homepage.
