@@ -12,9 +12,8 @@
     .c-banner {
       background-color: darken($color, 30%);
     }
-    .nav-traverse {
-      .nav_item.nav_prev,
-      .nav_item.nav_next {
+    .c-traverse-nav {
+      .c-traverse-nav__item {
         &::after {
           background-color: rgba(darken($color, 30%), 0.75);
         }
