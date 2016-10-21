@@ -66,6 +66,21 @@ button::-moz-focus-inner,
   outline: 1px dotted ButtonText;
 }
 
+// 1. Hide native progress element in IE
+// 2. Hide native progress element in Gecko
+// 3. Hide native progress element in WebKit
+progress {
+  color: transparent; // 1
+
+  &::-moz-progress-bar {
+    background: none; // 2
+  }
+
+  &::-webkit-progress-bar {
+    background: none; // 3
+  }
+}
+
 // http://thatemil.com/blog/2015/01/03/reset-your-fieldset/
 // 1. Reset minimum width based on content inside fieldset in
 //    WebKit/Blink/Firefox

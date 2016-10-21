@@ -1,0 +1,23 @@
+@keyframes loading {
+  0% {
+    border-top-color: $color-brand;
+  }
+  25% {
+    border-right-color: $color-brand;
+  }
+  50% {
+    border-bottom-color: $color-brand;
+  }
+  75% {
+    border-left-color: $color-brand;
+  }
+}
+
+.c-activity {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  border: $border-width-thicker double $color-neutral--alpha-2;
+  animation: 2s loading infinite;
+  transform: rotate(45deg);
+}

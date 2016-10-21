@@ -49,7 +49,15 @@ variants:
     title: "A"
     component: grid--authors
     config:
-      authors:
-      - John Allsopp
-      - Rachel Andrew
-      - Paul Annett
+      mods: [authors]
+      component: author
+      items:
+      - author: John Allsopp
+      - author: Rachel Andrew
+      - author: Paul Annett
+- name: loading
+  context:
+    id: loading
+    title: "Loading"
+    mods: [loading]
+    component: activity
