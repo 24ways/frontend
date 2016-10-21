@@ -1,0 +1,75 @@
+// ========================================================
+//
+// Variables
+//
+// ========================================================
+
+// Import design tokens (from ./src/assets/tokens)
+@import 'borders.json';
+@import 'breakpoints.json';
+@import 'colors.json';
+@import 'fonts.json';
+@import 'layers.json';
+
+// Color assignments
+$color-brand: palette(primary);
+
+$color-neutral: palette(neutral);
+$color-neutral--lightest: lighten($color-neutral, 44%);
+$color-neutral--lighter: lighten($color-neutral, 24%);
+$color-neutral--light: lighten($color-neutral, 8%);
+$color-neutral--dark: darken($color-neutral, 8%);
+$color-neutral--darker: darken($color-neutral, 24%);
+$color-neutral--darkest: darken($color-neutral, 44%);
+
+$color-link: palette(secondary);
+$color-link--hover: palette(secondary, dark);
+$color-link--active: palette(secondary, light);
+
+$color-text: $color-neutral--darker;
+
+$color-years: (
+  year-2005: adjust-hue(palette(primary), -000),
+  year-2006: adjust-hue(palette(primary), -004),
+  year-2007: adjust-hue(palette(primary), -008),
+  year-2008: adjust-hue(palette(primary), -012),
+  year-2009: adjust-hue(palette(primary), -016),
+  year-2010: adjust-hue(palette(primary), -020),
+  year-2011: adjust-hue(palette(primary), -024),
+  year-2012: adjust-hue(palette(primary), -028),
+  year-2013: adjust-hue(palette(primary), -032),
+  year-2014: adjust-hue(palette(primary), -036),
+  year-2015: adjust-hue(palette(primary), -040),
+  year-2016: adjust-hue(palette(primary), -044),
+  year-2017: adjust-hue(palette(primary), -048),
+  year-2018: adjust-hue(palette(primary), -052),
+  year-2019: adjust-hue(palette(primary), -056),
+  year-2020: adjust-hue(palette(primary), -060)
+);
+
+$color-days: (
+  day-24: adjust-hue(palette(secondary, light), 000),
+  day-23: adjust-hue(palette(secondary, light), 007),
+  day-22: adjust-hue(palette(secondary, light), 014),
+  day-21: adjust-hue(palette(secondary, light), 021),
+  day-20: adjust-hue(palette(secondary, light), 028),
+  day-19: adjust-hue(palette(secondary, light), 035),
+  day-18: adjust-hue(palette(secondary, light), 042),
+  day-17: adjust-hue(palette(secondary, light), 049),
+  day-16: adjust-hue(palette(secondary, light), 056),
+  day-15: adjust-hue(palette(secondary, light), 063),
+  day-14: adjust-hue(palette(secondary, light), 070),
+  day-13: adjust-hue(palette(secondary, light), 077),
+  day-12: adjust-hue(palette(secondary, light), 084),
+  day-11: adjust-hue(palette(secondary, light), 091),
+  day-10: adjust-hue(palette(secondary, light), 098),
+  day-09: adjust-hue(palette(secondary, light), 105),
+  day-08: adjust-hue(palette(secondary, light), 112),
+  day-07: adjust-hue(palette(secondary, light), 119),
+  day-06: adjust-hue(palette(secondary, light), 126),
+  day-05: adjust-hue(palette(secondary, light), 133),
+  day-04: adjust-hue(palette(secondary, light), 140),
+  day-03: adjust-hue(palette(secondary, light), 147),
+  day-02: adjust-hue(palette(secondary, light), 154),
+  day-01: adjust-hue(palette(secondary, light), 161)
+);

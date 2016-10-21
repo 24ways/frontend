@@ -5,7 +5,7 @@
   margin: 0.5rem 0;
 
   @media screen {
-    box-shadow: 1px 1px 0 rgba($c-neutral, 0.15);
+    box-shadow: 1px 1px 0 rgba($color-neutral, 0.15);
   }
 
   @media screen and (min-width: 40em) {
@@ -25,7 +25,7 @@
   &[class="summary--unhelpful"] {
     background-color: transparent;
     box-shadow: none;
-    border: 1px dotted rgba($c-neutral, 0.2);
+    border: 1px dotted rgba($color-neutral, 0.2);
   }
 }
 
@@ -65,10 +65,10 @@
   }
 
   a {
-    color: $c-neutral;
+    color: $color-neutral;
 
     &:hover {
-      color: $c-neutral-dark;
+      color: $color-neutral--dark;
     }
   }
 }
@@ -77,6 +77,6 @@
   @include caption();
   margin-bottom: 0;
   text-align: right;
-  border-top: 1px solid $c-neutral-lightest;
+  border-top: 1px solid $color-neutral--lightest;
   padding-top: 0.75rem;
 }

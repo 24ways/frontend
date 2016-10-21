@@ -27,7 +27,7 @@
 }
 
 .c-article__title {
-  color: $c-neutral-darkest;
+  color: $color-neutral--darkest;
   @include heading();
   margin: 1rem 0 0.5rem;
 
@@ -36,7 +36,7 @@
   }
 
   a {
-    color: $c-neutral-darkest;
+    color: $color-neutral--darkest;
   }
 }
 

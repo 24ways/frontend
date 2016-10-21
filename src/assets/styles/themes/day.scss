@@ -1,4 +1,4 @@
-@each $name, $color in $c-days {
+@each $name, $color in $color-days {
   .c-article.#{$name} {
     background-color: lighten($color, 48%);
 

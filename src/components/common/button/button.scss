@@ -3,8 +3,8 @@
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
-  background-color: $c-link;
-  box-shadow: 1px 1px 0 rgba($c-neutral, 0.15);
+  background-color: $color-link;
+  box-shadow: 1px 1px 0 rgba($color-neutral, 0.15);
   border: 0 none;
   border-radius: 0;
   padding: 1em 1.5em;
@@ -12,12 +12,12 @@
 
   &:hover {
     color: #fff;
-    background-color: $c-link-hover;
+    background-color: $color-link--hover;
   }
 
   &:active {
     color: #fff;
-    background-color: $c-link-active;
+    background-color: $color-link--active;
   }
 
   @media print {

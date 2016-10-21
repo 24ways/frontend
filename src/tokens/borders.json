@@ -1,0 +1,9 @@
+{
+  "border-width-thin": "1px",
+  "border-width-thick": "2px",
+  "border-width-thicker": "4px",
+  "border-width-thickest": "8px",
+  "border-radius-small": "0.125rem",
+  "border-radius-default": "0.25rem",
+  "border-radius-circle": "50%"
+}

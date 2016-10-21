@@ -1,5 +1,5 @@
 .c-preface {
-  background-color: darken($c-signature, 5%);
+  background-color: darken($color-brand, 5%);
   padding: 1em;
   overflow: hidden;
   position: relative;
@@ -88,6 +88,6 @@
   }
 
   .c-preface__title {
-    color: lighten($c-signature, 10%);
+    color: lighten($color-brand, 10%);
   }
 }

@@ -1,70 +1,11 @@
 // =========================================================
-// Mixins
+//
+// Typography mixins
+//
 // =========================================================
 
-// Helpers
-@mixin hidden {
-  clip: rect(0 0 0 0);
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-}
-
-@mixin clear {
-  &::before,
-  &::after {
-    content: " ";
-    display: table;
-  }
-  &::after {
-    clear: both;
-  }
-}
-
-@mixin list {
-  list-style-type: none;
-  margin: 0;
-  @include clear();
-}
-
-@mixin nav {
-  list-style-type: none;
-  margin: 0;
-
-  a {
-    color: $c-neutral;
-
-    &:hover {
-      color: $c-neutral-dark;
-      background-color: lighten($c-neutral-lightest, 1%);
-    }
-
-    &:active {
-      color: $c-neutral-darker;
-      background-color: darken($c-neutral-lightest, 1%);
-    }
-  }
-}
-
-// Web fonts
-@import url("http://fonts.googleapis.com/css?family=Inconsolata|Lato:400,400italic,700|Merriweather:400");
-
-@mixin font-smoothing-on {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-@mixin font-smoothing-off {
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: auto;
-}
-
-// Typography
 @mixin heading {
-  font-family: $f-serif;
+  font-family: $font-family-serif;
   font-size: 2rem; // 32px
   font-weight: 400;
   line-height: 1.125; // 36px
@@ -82,14 +23,14 @@
 }
 
 @mixin title {
-  font-family: $f-serif;
+  font-family: $font-family-serif;
   font-size: 1.25em; // 20px
   font-weight: 400;
   line-height: 1.2; // 24px
 }
 
 @mixin lede {
-  font-family: $f-serif;
+  font-family: $font-family-serif;
   font-weight: 400;
   font-size: 1.125em; // 18px
   line-height: 1.3334; // 24px

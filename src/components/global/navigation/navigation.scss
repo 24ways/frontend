@@ -1,7 +1,7 @@
 .c-navigation {
   background-color: #fff;
   right: 0;
-  z-index: 1000;
+  z-index: $z-index-default;
   position: relative;
 
   @media print {
@@ -31,8 +31,6 @@
   }
 
   .js-menu-active & {
-    z-index: 1000;
-
     @media screen and (max-width: 31.4375em) {
       box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
       max-height: 20rem; // 320px

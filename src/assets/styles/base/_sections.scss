@@ -31,8 +31,8 @@ html {
 }
 
 body {
-  color: $c-text;
-  font-family: $f-sans;
+  color: $color-text;
+  font-family: $font-family-sans;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5; // 24px

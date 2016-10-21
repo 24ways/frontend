@@ -1,0 +1,53 @@
+// =========================================================
+//
+// General mixins
+//
+// =========================================================
+
+@mixin hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+@mixin clear {
+  &::before,
+  &::after {
+    content: " ";
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+
+@mixin list {
+  list-style-type: none;
+  margin: 0;
+  @include clear();
+}
+
+@mixin nav {
+  list-style-type: none;
+  margin: 0;
+
+  a {
+    color: $color-neutral;
+
+    &:hover {
+      color: $color-neutral--dark;
+      background-color: lighten($color-neutral--lightest, 1%);
+    }
+
+    &:active {
+      color: $color-neutral--darker;
+      background-color: darken($color-neutral--lightest, 1%);
+    }
+  }
+}

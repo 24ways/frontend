@@ -1,19 +1,23 @@
-// Sass config
-@import 'vars';
+// ========================================================
+//
+// Application styles
+//
+// ========================================================
 
-// Sass helpers
-@import 'mixins';
+// Functions
+@import 'functions/**/*.scss';
+
+// Config
+@import 'config/**/*.scss';
+
+// Helpers
+@import 'helpers/**/*.scss';
 
 // Base HTML element resets and styling
-@import 'base/sections';
-@import 'base/grouping';
-@import 'base/text';
-@import 'base/edits';
-@import 'base/embedded';
-@import 'base/tables';
-@import 'base/forms';
-@import 'base/links';
-@import 'base/disabled';
+@import 'base/**/*.scss';
 
 // Components
 @import '../../components/**/*.scss';
+
+// Themes
+@import 'themes/**/*.scss';

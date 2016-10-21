@@ -11,12 +11,27 @@
   }
 
   @media screen {
-    box-shadow: 1px 1px 0 rgba($c-neutral, 0.15);
+    box-shadow: 1px 1px 0 rgba($color-neutral, 0.15);
   }
 
   a {
     position: relative;
-    z-index: 1;
+    z-index: ($z-index-default + 1);
+  }
+
+  a.c-summary__link {
+    text-indent: 200%;
+    white-space: nowrap;
+    background: rgba(0,0,0,0);
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: $z-index-default;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    outline: 1px solid red;
   }
 }
 
@@ -60,7 +75,7 @@
 .c-summary__meta {
   @include caption();
   margin: 0.75rem 0;
-  color: $c-neutral;
+  color: $color-neutral;
 
   @media screen {
     position: absolute;
@@ -70,20 +85,6 @@
   .dt-published {
     margin-right: 1.5em;
   }
-}
-
-.c-summary__link {
-  text-indent: 200%;
-  white-space: nowrap;
-  background: rgba(0,0,0,0);
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 .c-summary__author {
@@ -139,7 +140,7 @@
       animation: corner-forward .15s steps(10);
       -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
-      z-index: 2;
+      z-index: ($z-index-default + 1);
     }
   }
 }
@@ -149,7 +150,7 @@
     &::before {
       -webkit-animation: corner-reverse .15s steps(10);
       animation: corner-reverse .15s steps(10);
-      z-index: 0;
+      z-index: $z-index-neutral;
     }
   }
 }
@@ -157,22 +158,22 @@
 @keyframes corner-forward {
   from {
     background-position: -0.5em;
-    z-index: 0;
+    z-index: $z-index-default;
   }
   to {
     background-position: -50.5em;
-    z-index: 2;
+    z-index: ($z-index-default + 1);
   }
 }
 
 @keyframes corner-reverse {
   from {
     background-position: -50.5em;
-    z-index: 2;
+    z-index: ($z-index-default + 1);
   }
   to {
     background-position: -0.5em;
-    z-index: 0;
+    z-index: $z-index-default;
   }
 }
 
@@ -186,7 +187,7 @@
   }
 
   .dt-published {
-    font-family: $f-serif;
+    font-family: $font-family-serif;
     font-size: 1.25rem; // 20px
     font-weight: 400;
     line-height: 1.2; // 24px

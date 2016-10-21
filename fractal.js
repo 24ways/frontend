@@ -41,12 +41,12 @@ const nunjucks = require('@frctl/nunjucks')({
     },
     slugify: function(str) {
       return str.toLowerCase().replace(/[^\w]+/g, '');
+    },
+    stringify: function () {
+      return JSON.stringify(this, null, "\t");
     }
   },
-  paths: [
-    paths.static + '/assets/vectors',
-    paths.static + '/components'
-  ]
+  paths: [paths.static + '/assets/vectors']
 });
 
 // Project config

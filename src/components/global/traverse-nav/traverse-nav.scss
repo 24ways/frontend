@@ -8,7 +8,6 @@
     position: fixed;
     right: 0;
     top: 4.5rem; // 72px
-    z-index: 1000;
   }
 }
 
@@ -32,10 +31,10 @@
     @media screen and (min-width: 31.5em) {
       &::after {
         color: #fff;
-        font: 0.875rem/1.2857 $f-sans; // 14px/18px
+        font: 0.875rem/1.2857 $font-family-sans; // 14px/18px
         text-align: left;
         white-space: pre-wrap;
-        background-color: rgba(darken($c-signature, 20%), 0.75);
+        background-color: rgba(darken($color-brand, 20%), 0.75);
         padding: 0.5rem 0.75rem;
         display: block;
         position: absolute;
@@ -49,8 +48,8 @@
 
       &:hover {
         .c-traverse-nav__icon {
-          color: $c-neutral;
-          background-color: lighten($c-neutral-lightest, 1%);
+          color: $color-neutral;
+          background-color: lighten($color-neutral--lightest, 1%);
         }
 
         &::after {
@@ -60,8 +59,8 @@
 
       &:active {
         .c-traverse-nav__icon {
-          color: $c-neutral-dark;
-          background-color: darken($c-neutral-lightest, 1%);
+          color: $color-neutral--dark;
+          background-color: darken($color-neutral--lightest, 1%);
         }
       }
     }
@@ -77,10 +76,10 @@
 .c-traverse-nav__icon {
   background-color: #fff;
   padding: 0.75rem;
-  box-shadow: inset 0 -1px 0 $c-neutral-lightest;
+  box-shadow: inset 0 -1px 0 $color-neutral--lightest;
   display: block;
   position: relative;
-  z-index: 1000;
+  z-index: $z-index-default;
 
   svg {
     display: block;

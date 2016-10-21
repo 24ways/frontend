@@ -11,8 +11,8 @@ const imagemin = require('gulp-imagemin');
 const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 const sassGlob = require('gulp-sass-glob');
-const sassData = require('node-sass-json-importer');
-//const sourcemaps = require('gulp-sourcemaps');
+const sassJson = require('node-sass-json-importer');
+const sourcemaps = require('gulp-sourcemaps');
 const logger = fractal.cli.console;
 
 const paths = {
@@ -90,17 +90,19 @@ function vectors() {
 // Styles
 function styles() {
   return gulp.src(paths.src + '/assets/styles/*.scss')
-    //.pipe(sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(sassGlob())
     .pipe(sass({
-      outputStyle: 'expanded'
+      outputStyle: 'expanded',
+      includePaths: ['./node_modules', paths.src + '/tokens/'],
+      importer: sassJson
     }).on('error', sass.logError))
     .pipe(postcss([
       autoprefixer({
         browsers: ['> 2%']
       })
     ]))
-    //.pipe(sourcemaps.write('./'))
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.dest + '/assets/styles'));
 };
 

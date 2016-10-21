@@ -1,0 +1,15 @@
+{
+  "palettes": {
+    "primary": {
+      "base": "#c03"
+    },
+    "secondary": {
+      "light": "#39c",
+      "base": "#37a",
+      "dark": "#265980"
+    },
+    "neutral": {
+      "base": "#778"
+    }
+  }
+}

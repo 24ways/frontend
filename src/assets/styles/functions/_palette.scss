@@ -1,0 +1,26 @@
+// ========================================================
+//
+// Palette function
+//
+// ========================================================
+//
+// Get colour value from a palette map.
+//
+// EXAMPLE: Pick a colour from $palettes
+//
+// .red {
+//   color: palette(red);
+// }
+//
+// EXAMPLE: Pick a colour with preset shade from $palettes
+//
+// .red {
+//   color: palette(red, dark);
+// }
+//
+
+@function palette($palette: primary, $tone: base) {
+  $color: map-get(map-get($palettes, $palette), $tone);
+
+  @return $color;
+}

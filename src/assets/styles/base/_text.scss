@@ -15,7 +15,7 @@ small {
 
 // Remove the bottom border in Firefox 39-.
 abbr[title] {
-  border-bottom: 1px dotted $c-neutral-light;
+  border-bottom: 1px dotted $color-neutral--light;
 
   &:hover {
     cursor: help;
@@ -26,12 +26,12 @@ abbr[title] {
 // 2. Correct the odd `em` font sizing in all browsers.
 code,
 samp {
-  font-family: $f-code; // 1
+  font-family: $font-family-monospace; // 1
   font-size: 1em; // 2
 }
 
 kbd {
-  font-family: $f-system;
+  font-family: $font-family-system;
 }
 
 // Prevent `sub` and `sup` elements from affecting line height in all browsers.

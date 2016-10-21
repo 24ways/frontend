@@ -1,17 +1,15 @@
 .c-top-nav {
   @include nav();
-  color: $c-neutral-light;
-  border-top: 1px solid $c-neutral-lightest;
+  color: $color-neutral--light;
+  border-top: 1px solid $color-neutral--lightest;
   padding: 0;
   width: 4.5rem; // 72px
   height: 4.5rem; // 72px
-  display: block;
-
   opacity: 0;
   position: fixed;
   bottom: 9rem; // 144px
   right: 0;
-  z-index: 1000;
+  z-index: $z-index-overlay;
   display: none;
 
   @media screen and (min-width: 31.5em) and (min-height: 26.9375em) {
@@ -19,13 +17,13 @@
   }
 
   &:hover {
-    color: $c-neutral;
-    background-color: lighten($c-neutral-lightest, 1%);
+    color: $color-neutral;
+    background-color: lighten($color-neutral--lightest, 1%);
   }
 
   &:active {
-    color: $c-neutral-dark;
-    background-color: darken($c-neutral-lightest, 1%);
+    color: $color-neutral--dark;
+    background-color: darken($color-neutral--lightest, 1%);
   }
 }
 

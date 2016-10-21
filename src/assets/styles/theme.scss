@@ -1,19 +1,28 @@
-// Sass config
-@import 'vars';
+// ========================================================
+//
+// Fractal theme styles
+//
+// ========================================================
 
-* {
-  font-family: $f-sans !important;
-}
+// Functions
+@import 'functions/**/*.scss';
 
+// Config
+@import 'config/**/*.scss';
+
+// Documentation styles
+@import 'docs/**/*.scss';
+
+// Theme overrides
 a {
-  color: $c-link;
+  color: $color-link;
 
   &:hover {
-    color: $c-link-hover;
+    color: $color-link--hover;
   }
 
   &:active {
-    color: $c-link-active;
+    color: $color-link--active;
   }
 }
 
@@ -21,11 +30,7 @@ a {
   fill: currentColor;
 }
 
-.Code * {
-  font-family: $f-code !important;
-}
-
 .Header {
-  background-color: darken(map-get($c-years, year-2016), 30%);
+  background-color: darken(map-get($color-years, year-2016), 30%);
   color: #ff0040;
 }
