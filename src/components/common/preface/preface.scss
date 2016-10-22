@@ -48,7 +48,7 @@
 .c-preface__main {
   @include lede();
   position: relative;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255, 255, 255, 0.75);
 
   @media screen and (min-width: 50em) {
     margin-left: 1rem;
@@ -72,10 +72,10 @@
 
   a {
     color: #fff;
-    border-bottom: 1px solid rgba(255,255,255,0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 
     &:hover {
-      border-bottom-color: rgba(255,255,255,0.75);
+      border-bottom-color: rgba(255, 255, 255, 0.75);
     }
   }
 }

@@ -19,7 +19,9 @@ th {
   thead {
     display: table-header-group;
   }
-  tr, img {
+
+  tr,
+  img {
     page-break-inside: avoid;
   }
 }

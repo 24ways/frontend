@@ -27,7 +27,7 @@
   code,
   samp {
     color: $color-neutral--darker;
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(255, 255, 255, 0.75);
   }
 
   pre {
@@ -306,7 +306,7 @@
 
   th {
     line-height: 1.25;
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0, 0, 0, 0.05);
   }
 
   // Represents key press within user input sequence
@@ -315,7 +315,7 @@
     line-height: 1.1429; // 16px
     background-color: #fff;
     margin: 0 0.125rem;
-    border: 1px solid rgba(0,0,0,0.15);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0.25rem; // 4px
     padding: 0.125rem 0.5rem; // 4px 8px
     box-shadow: 0 2px 0 $color-neutral--alpha-1;

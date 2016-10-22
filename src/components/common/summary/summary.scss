@@ -1,6 +1,6 @@
 .c-summary {
   background-color: white;
-  padding: 1em 1em 2.5em 1em;
+  padding: 1em 1em 2.5em;
   position: relative;
   flex: 1;
 
@@ -23,7 +23,6 @@
   a.c-summary__link {
     text-indent: 200%;
     white-space: nowrap;
-    background: rgba(0,0,0,0);
     opacity: 0;
     overflow: hidden;
     position: absolute;
@@ -138,7 +137,7 @@
 .c-summary:hover {
   .c-summary__author {
     &::after {
-      animation: corner-forward .15s steps(10);
+      animation: corner-forward 0.15s steps(10);
       animation-fill-mode: forwards;
       z-index: ($z-index-default + 1);
     }
@@ -148,7 +147,7 @@
 &.js-mouseout {
   .c-summary__author {
     &::before {
-      animation: corner-reverse .15s steps(10);
+      animation: corner-reverse 0.15s steps(10);
       z-index: $z-index-default;
     }
   }
@@ -159,6 +158,7 @@
     background-position: -0.5em;
     z-index: $z-index-default;
   }
+
   to {
     background-position: -50.5em;
     z-index: ($z-index-default + 1);
@@ -170,6 +170,7 @@
     background-position: -50.5em;
     z-index: ($z-index-default + 1);
   }
+
   to {
     background-position: -0.5em;
     z-index: $z-index-default;

@@ -1,5 +1,5 @@
 .c-section {
-  margin: 2em 0 0 0;
+  margin: 2em 0 0;
   position: relative;
   overflow: hidden;
 
@@ -10,7 +10,7 @@
   &:target {
     .c-section__header,
     .c-section__main {
-      border-color: rgba(0,0,0,0.33);
+      border-color: rgba(0, 0, 0, 0.33);
     }
   }
 }
@@ -137,12 +137,15 @@
   0% {
     border-top-color: $color-brand;
   }
+
   25% {
     border-right-color: $color-brand;
   }
+
   50% {
     border-bottom-color: $color-brand;
   }
+
   75% {
     border-left-color: $color-brand;
   }

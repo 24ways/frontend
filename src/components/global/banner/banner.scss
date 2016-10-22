@@ -10,7 +10,7 @@
     right: 0;
     left: 0;
     z-index: $z-index-default;
-    transition: background-color .1s ease-out;
+    transition: background-color 0.1s ease-out;
   }
 
   @media screen and (min-width: 31.5em) {
@@ -24,10 +24,10 @@
 
   .js-enhanced & {
     @media screen and (min-width: 31.5em) {
-      filter: brightness(1.0);
+      filter: brightness(1);
 
       a {
-        transition: color .1s ease-out;
+        transition: color 0.1s ease-out;
       }
     }
   }
@@ -35,11 +35,11 @@
   body.js-menu-active & {
     @media screen and (max-width: 31.4375em) {
       background-color: #fff;
-      transition: background-color .1s ease-out;
+      transition: background-color 0.1s ease-out;
 
       a {
         color: $color-neutral;
-        transition: color .1s ease-out;
+        transition: color 0.1s ease-out;
       }
     }
 

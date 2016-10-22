@@ -5,7 +5,7 @@
 .c-main,
 .c-contentinfo {
   .js-enhanced & {
-    filter: brightness(1.0);
+    filter: brightness(1);
     transition: filter 0.2s ease-in;
     transform: translate3d(0, 0, 0);
   }
