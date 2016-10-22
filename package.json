@@ -20,8 +20,8 @@
     "prestart": "npm install",
     "start": "node_modules/.bin/gulp start",
     "build": "node_modules/.bin/gulp build",
-    "deploy": "node_modules/.bin/gulp deploy",
-    "dev": "node_modules/.bin/gulp dev"
+    "dev": "node_modules/.bin/gulp dev",
+    "publish": "node_modules/.bin/gulp publish"
   },
   "dependencies": {
     "@frctl/fractal": "frctl/fractal.git#next",
@@ -36,6 +36,7 @@
     "gulp-postcss": "latest",
     "gulp-sass": "latest",
     "gulp-sass-glob": "latest",
+    "gulp-stylelint": "latest",
     "gulp-sourcemaps": "latest",
     "gulp-uglify": "latest",
     "markdown-it": "latest",

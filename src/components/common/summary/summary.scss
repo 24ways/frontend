@@ -99,7 +99,7 @@
   right: 0;
 
   &::before {
-    content: " ";
+    content: '';
     display: block;
     position: absolute;
     top: 0;
@@ -109,7 +109,7 @@
   }
 
   &::after {
-    content: " ";
+    content: '';
     display: block;
     position: absolute;
     top: 0;

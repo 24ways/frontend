@@ -16,12 +16,12 @@
   display: block;
   position: relative;
 
-  &[rel="prev"]::after {
-    content: "Previously: \A"attr(data-sequence-title);
+  &[rel=prev]::after {
+    content: 'Previously: \A' attr(data-sequence-title);
   }
 
-  &[rel="next"]::after {
-    content: "Next: \A"attr(data-sequence-title);
+  &[rel=next]::after {
+    content: 'Next: \A' attr(data-sequence-title);
   }
 
   .js-enhanced & {

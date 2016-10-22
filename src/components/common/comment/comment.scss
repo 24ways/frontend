@@ -22,7 +22,7 @@
     }
   }
 
-  &[class="summary--unhelpful"] {
+  &[class=summary--unhelpful] {
     background-color: transparent;
     box-shadow: none;
     border: 1px dotted rgba($color-neutral, 0.2);

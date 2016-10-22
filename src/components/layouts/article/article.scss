@@ -26,8 +26,8 @@
 }
 
 .c-article__title {
-  color: $color-neutral--darkest;
   @include heading();
+  color: $color-neutral--darkest;
   margin: 1rem 0 0.5rem;
 
   @media screen and (min-width: 50em) {

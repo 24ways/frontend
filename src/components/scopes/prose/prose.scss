@@ -19,8 +19,8 @@
 
   // TODO: appears on more than one type of scope construct
   .photo-credit {
-    font-family: $font-family-sans;
     @include caption();
+    font-family: $font-family-sans;
   }
 
   pre,
@@ -116,7 +116,7 @@
     }
 
     &::before {
-      content: " ";
+      content: '';
       color: rgba($color-text, 0.8);
       line-height: 1.5;
       background-color: rgba($color-text, 0.8);
@@ -200,7 +200,7 @@
 
       &::after {
         font-size: 0.75em;
-        content: " ["attr(href)"]";
+        content: ' [' attr(href) ']';
       }
     }
   }
@@ -273,7 +273,7 @@
 
     &::after {
       color: rgba($color-text, 0.25);
-      content: "\25C6 \25C6 \25C6";
+      content: '\25C6 \25C6 \25C6';
       letter-spacing: 0.75rem; // 12px
       height: 0;
     }

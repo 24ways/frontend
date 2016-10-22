@@ -2,12 +2,12 @@
   font-weight: 700;
 
   &::after {
-    content: " \203A";
+    content: ' \203A';
   }
 }
 
 .c-continue--ajax {
   &::after {
-    content: " \2026";
+    content: ' \2026';
   }
 }

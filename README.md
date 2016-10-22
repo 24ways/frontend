@@ -19,19 +19,19 @@ To get the project up and running, and view components in the browser, complete 
 ## Development
 When developing components, you may want assets automatically compiled and the browser to refresh automatically. To do this, run the following task:
 
-* `npm run dev` (`gulp dev` if Gulp is installed globally)
+* `npm run dev`
 
 ## Creating a static build
 To create a static instance of this project, run the following task:
 
-* `npm run build` (`gulp build` if Gulp is installed globally)
+* `npm run build`
 
 This will create a folder called `www`, into which the required files will be created.
 
 ## Deployment
-To make this project publicly accessible, you can deploy a static instance of this project by running the following task:
+To make this project publicly accessible, you can deploy a static instance by running the following task:
 
-* `npm run deploy` (`gulp deploy` if Gulp is installed globally)
+* `npm run publish`
 
 This will publish the contents of `public` to your `gh-pages` branch.
 

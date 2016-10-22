@@ -13,6 +13,7 @@ const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 const sassGlob = require('gulp-sass-glob');
 const sassJson = require('node-sass-json-importer');
+const stylelint = require('gulp-stylelint');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
 const logger = fractal.cli.console;
@@ -89,6 +90,16 @@ function vectors() {
     .pipe(gulp.dest(paths.dest + '/assets/vectors'));
 };
 
+function stylesLint() {
+  return gulp.src(paths.src + '/**/*.scss')
+    .pipe(stylelint({
+      reporters: [{
+        formatter: 'string',
+        console: true
+      }]
+    }));
+}
+
 // Styles
 function styles() {
   return gulp.src(paths.src + '/assets/styles/*.scss')
@@ -135,6 +146,7 @@ function watch(done) {
 const compile = gulp.series(clean, gulp.parallel(icons, images, vectors, scripts, styles));
 
 gulp.task('start', gulp.series(compile, serve));
+gulp.task('lint', gulp.series(stylesLint));
 gulp.task('build', gulp.series(compile, build));
 gulp.task('dev', gulp.series(compile, watch));
 gulp.task('publish', gulp.series(build, deploy));
