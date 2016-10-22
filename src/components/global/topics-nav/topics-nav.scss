@@ -1,24 +1,17 @@
 .c-topics-nav {
-  @include nav();
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  align-items: flex-start;
+  align-content: flex-start;
+  box-shadow: inset 0 1px 0 $color-neutral--lightest;
 
-  @media screen and (max-width: 31.4375em) {
-    border-top: 1px solid $color-neutral--lightest;
-  }
-
-  a {
-    font-size: 0.8125rem; // 13px
-    line-height: 1.2308; // 16px
-    text-align: center;
-    text-transform: uppercase;
-    border: solid $color-neutral--lightest;
-    border-width: 0 1px 1px 0;
-    padding: 1.5385em 25% 1.4615em; // 20px 25% 19px
-    display: block;
+  @media screen and (min-width: 31.5em) {
+    box-shadow: inset -1px 0 0 $color-neutral--lightest;
   }
 
   svg {
     margin: 0 auto 0.5rem;
-    display: block;
 
     @media screen and (max-width: 31.4375em) {
       height: 2rem;
@@ -32,16 +25,27 @@
 }
 
 .c-topics-nav__item {
-  float: left;
-  width: 33.3333%;
+  flex: 1 0 percentage(1/3);
 
   @media screen and (min-width: 50em) {
-    width: 16.6667%;
+    flex-basis: percentage(1/6);
   }
 
   .js-enhanced & {
     @media screen and (min-width: 31.5em) {
-      width: 50%;
+      flex-basis: percentage(1/2);
+      min-width: percentage(1/2);
     }
   }
+}
+
+.c-topics-nav__label {
+  @include ui-link();
+  font-size: 0.8125rem; // 13px
+  line-height: 1.2308; // 16px
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 0 $color-neutral--lightest;
+  padding: 1.25rem 25%; // 20px 25%
+  display: block;
 }

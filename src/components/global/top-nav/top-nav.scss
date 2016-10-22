@@ -1,7 +1,6 @@
 .c-top-nav {
-  @include nav();
-  color: $color-neutral--light;
-  border-top: 1px solid $color-neutral--lightest;
+  @include ui-link();
+  box-shadow: 0 -1px 0 $color-neutral--lightest;
   padding: 0;
   width: 4.5rem; // 72px
   height: 4.5rem; // 72px
@@ -17,16 +16,6 @@
       opacity: 1;
     }
   }
-
-  &:hover {
-    color: $color-neutral;
-    background-color: lighten($color-neutral--lightest, 1%);
-  }
-
-  &:active {
-    color: $color-neutral--dark;
-    background-color: darken($color-neutral--lightest, 1%);
-  }
 }
 
 .c-top-nav__icon {
@@ -35,6 +24,5 @@
 }
 
 .c-top-nav__label {
-  font: 0/0 sans;
-  overflow: hidden;
+  @include hidden();
 }

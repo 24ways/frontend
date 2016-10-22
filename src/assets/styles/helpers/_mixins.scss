@@ -16,32 +16,17 @@
   white-space: nowrap;
 }
 
-@mixin clear {
-  &::before,
-  &::after {
-    content: " ";
-    display: table;
+@mixin ui-link {
+  display: block;
+  color: $color-neutral;
+
+  &:hover {
+    color: $color-brand;
+    background-color: lighten($color-neutral--lightest, 1%);
   }
-  &::after {
-    clear: both;
-  }
-}
 
-@mixin nav {
-  list-style-type: none;
-  margin: 0;
-
-  a {
-    color: $color-neutral;
-
-    &:hover {
-      color: $color-neutral--dark;
-      background-color: lighten($color-neutral--lightest, 1%);
-    }
-
-    &:active {
-      color: $color-neutral--darker;
-      background-color: darken($color-neutral--lightest, 1%);
-    }
+  &:active {
+    color: $color-neutral--darker;
+    background-color: darken($color-neutral--lightest, 1%);
   }
 }

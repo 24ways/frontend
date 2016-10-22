@@ -1,6 +1,5 @@
-.c-field {
-  margin-bottom: 0.75rem; // 12px
-  position: relative;
+.c-field + .c-field {
+  margin-top: 0.75rem; // 12px
 }
 
 .c-field__label {
@@ -36,7 +35,7 @@
   position: relative;
 
   .c-field__label {
-    font: 0/0 sans;
+    @include hidden();
   }
 
   .c-field__input {

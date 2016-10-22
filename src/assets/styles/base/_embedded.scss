@@ -14,6 +14,7 @@ img {
 
 // Hide the overflow in IE.
 svg:not(:root) {
+  display: block;
   overflow: hidden;
   fill: currentColor;
 }

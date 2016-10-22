@@ -1,5 +1,4 @@
 .c-traverse-nav {
-  @include nav();
   display: none;
 
   @media screen and (min-width: 31.5em) {
@@ -12,10 +11,8 @@
 }
 
 .c-traverse-nav__item {
-  text-align: center;
-  width: auto;
   height: 4.5rem;
-  float: none;
+  width: auto;
   display: block;
   position: relative;
 
@@ -47,20 +44,8 @@
       }
 
       &:hover {
-        .c-traverse-nav__icon {
-          color: $color-neutral;
-          background-color: lighten($color-neutral--lightest, 1%);
-        }
-
         &::after {
           left: -18rem;
-        }
-      }
-
-      &:active {
-        .c-traverse-nav__icon {
-          color: $color-neutral--dark;
-          background-color: darken($color-neutral--lightest, 1%);
         }
       }
     }
@@ -74,18 +59,15 @@
 }
 
 .c-traverse-nav__icon {
+  @include ui-link();
   background-color: #fff;
+  display: block;
   padding: 0.75rem;
   box-shadow: inset 0 -1px 0 $color-neutral--lightest;
-  display: block;
   position: relative;
   z-index: $z-index-default;
-
-  svg {
-    display: block;
-  }
 }
 
 .c-traverse-nav__label {
-  font: 0/0 sans;
+  @include hidden();
 }
