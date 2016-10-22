@@ -16,21 +16,21 @@
         var enhanced = false;
       }
 
-      // // Add a script element as a child of the body
-      // function downloadJSAtOnload() {
-      //   var element = document.createElement("script");
-      //   element.src = "//24ways.org/_assets/js/scripts_v37.js";
-      //   document.body.appendChild(element);
-      // }
-      //
-      // // Check for browser support of event handling capability
-      // if (window.addEventListener) {
-      //   window.addEventListener("load", downloadJSAtOnload, false);
-      // } else if (window.attachEvent) {
-      //   window.attachEvent("onload", downloadJSAtOnload);
-      // } else {
-      //   window.onload = downloadJSAtOnload;
-      // }
+      // Add a script element as a child of the body
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "{{ '/assets/scripts/app.js' | path }}";
+        document.body.appendChild(element);
+      }
+
+      // Check for browser support of event handling capability
+      if (window.addEventListener) {
+        window.addEventListener("load", downloadJSAtOnload, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onload", downloadJSAtOnload);
+      } else {
+        window.onload = downloadJSAtOnload;
+      }
     </script>
 
     <link rel="stylesheet" href="{{ '/assets/styles/app.css' | path }}"/>
@@ -56,65 +56,4 @@
   <body class="{{ _target.context.theme if _target.context.theme else "year-2015" }}">
     {{ yield }}
   </body>
-
-  <script src="/assets/scripts/vendor/madrobby/zepto/zepto.js"></script>
-  <script>jQuery = Zepto;</script>
-  <script src="/assets/scripts/vendor/adactio/progresponsive/progresponsive.js"></script>
-  <script src="/assets/scripts/vendor/filamentgroup/ajaxinclude/ajaxinclude.js"></script>
-  <script>
-    // AJAX include comments
-    $("a[data-interaction]").addClass("c-continue-ajax");
-    $("a[data-interaction]").bind( "click", function(e) {
-      e.preventDefault();
-      $("#comments").addClass("c-section-loading");
-      $(this).removeAttr("data-interaction").ajaxInclude();
-    });
-
-    // Corner animation
-    var cornerOver = function(){
-      this.className = this.className.replace(' js-mouseout', '');
-    };
-    var cornerOut = function(){
-      this.className += ' js-mouseout';
-    };
-    var corners = document.querySelectorAll('.c-summary');
-    for (var i = corners.length - 1; i >= 0; i--) {
-      corners[i].addEventListener('js-mouseover', cornerOver, false);
-      corners[i].addEventListener('js-mouseout', cornerOut, false);
-    };
-
-    // Show back to top link when we've scrolled down the page
-    if (window.innerWidth > 504) {
-      $('.c-navigation').append('<a class="c-top-nav" href="#top">Return to the top of this page</a>');
-      $(function () {
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > 400) {
-            $('.c-top-nav').animate({ opacity: 1 }, 500, 'ease-in')
-          } else {
-            $('.c-top-nav').animate({ opacity: 0 }, 500, 'ease-out')
-          }
-        });
-
-        // http://austinpray.com/blog/zepto-js-smooth-vertical-scrolling/
-        function smoothScroll(el, to, duration) {
-          if (duration < 0) {
-            return;
-          }
-          var difference = to - $(window).scrollTop();
-          var perTick = difference / duration * 10;
-          this.scrollToTimerCache = setTimeout(function() {
-            if (!isNaN(parseInt(perTick, 10))) {
-              window.scrollTo(0, $(window).scrollTop() + perTick);
-              smoothScroll(el, to, duration - 10);
-            }
-          }.bind(this), 10);
-        }
-
-        $('.c-top-nav').on('click', function(e) {
-          e.preventDefault();
-          smoothScroll($(window), $($(e.currentTarget).attr('href')).offset().top, 500);
-        });
-      });
-    }
-  </script>
 </html>

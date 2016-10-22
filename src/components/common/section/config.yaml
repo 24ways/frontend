@@ -36,7 +36,7 @@ variants:
     id: comments
     title: "Comments"
     content: |
-      <a class="c-continue" href="/YYYY/article-slug/comments" data-replace data-interaction data-target="#comments">View 11 readers’ comments</a>
+      <a class="c-continue" href="/components/preview/article-template--comments" data-replace data-interaction data-target="#comments">View 11 readers’ comments</a>
 - name: related
   context:
     id: related

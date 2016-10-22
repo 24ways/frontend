@@ -3,6 +3,7 @@
 const pkg = require('./package.json');
 const fractal = require('./fractal.js');
 const autoprefixer = require('autoprefixer');
+const concat = require('gulp-concat');
 const del = require('del');
 const fs = require('fs');
 const gulp = require('gulp');
@@ -13,6 +14,7 @@ const sass = require('gulp-sass');
 const sassGlob = require('gulp-sass-glob');
 const sassJson = require('node-sass-json-importer');
 const sourcemaps = require('gulp-sourcemaps');
+const uglify = require('gulp-uglify');
 const logger = fractal.cli.console;
 
 const paths = {
@@ -108,7 +110,14 @@ function styles() {
 
 // Scripts
 function scripts() {
-  return gulp.src(paths.src + '/assets/scripts/**/*.js')
+  return gulp.src([
+      paths.src + '/assets/scripts/vendor/cferdinandi/**/*.js',
+      paths.src + '/components/**/*.js'
+    ])
+    .pipe(sourcemaps.init())
+    .pipe(concat('app.js'))
+    .pipe(uglify())
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.dest + '/assets/scripts'));
 };
 

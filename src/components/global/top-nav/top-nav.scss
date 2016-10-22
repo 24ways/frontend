@@ -10,10 +10,12 @@
   bottom: 9rem; // 144px
   right: 0;
   z-index: $z-index-overlay;
-  display: none;
+  transition: opacity 0.5s ease-in;
 
-  @media screen and (min-width: 31.5em) and (min-height: 26.9375em) {
-    display: block;
+  &.is-visible {
+    @media screen and (min-width: 31.5em) and (min-height: 26.9375em) {
+      opacity: 1;
+    }
   }
 
   &:hover {

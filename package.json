@@ -30,6 +30,7 @@
     "autoprefixer": "latest",
     "del": "latest",
     "gulp": "gulpjs/gulp#4.0",
+    "gulp-concat": "latest",
     "gulp-gh-pages": "latest",
     "gulp-imagemin": "latest",
     "gulp-postcss": "latest",
