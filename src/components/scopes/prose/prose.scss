@@ -5,6 +5,11 @@
 
   .caption {
     @include caption;
+
+    strong,
+    dt {
+      color: #333;
+    }
   }
 
   .lede {

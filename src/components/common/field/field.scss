@@ -1,12 +1,15 @@
-.c-field + .c-field {
-  margin-top: 0.75rem; // 12px
+.c-field {
+  position: relative;
+
+  + .c-field {
+    margin-top: 0.75rem; // 12px
+  }
 }
 
 .c-field__label {
   display: block;
   font-weight: 700;
-  line-height: 1;
-  padding: 1em 0.5em;
+  padding: 1em 0.75em;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -32,8 +35,6 @@
 }
 
 .c-field--search {
-  position: relative;
-
   .c-field__label {
     @include hidden();
   }
