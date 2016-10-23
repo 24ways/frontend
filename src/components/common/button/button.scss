@@ -1,20 +1,18 @@
 .c-button {
-  color: #fff;
+  @include label();
+  color: white;
   text-align: center;
-  text-transform: uppercase;
   background-color: $color-link;
-  border: 0 none;
-  border-radius: 0;
   padding: 1em 1.5em;
   display: inline-block;
 
   &:hover {
-    color: #fff;
+    color: white;
     background-color: $color-link--hover;
   }
 
   &:active {
-    color: #fff;
+    color: white;
     background-color: $color-link--active;
   }
 

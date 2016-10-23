@@ -53,7 +53,7 @@
     <title>{{ _target.context.title }} &#9670; 24 ways</title>
   </head>
 
-  <body class="{{ _target.context.theme if _target.context.theme else "year-2015" }}">
+  <body class="t-{{ _target.context.theme if _target.context.theme else "year-2015" }}">
     {{ yield }}
   </body>
 </html>

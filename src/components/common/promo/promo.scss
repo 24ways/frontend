@@ -1,20 +1,18 @@
 .c-promo {
-  margin: 0.75rem 0;
   display: block;
+  margin-bottom: 0.75rem;
 }
 
 .c-promo__image {
   height: auto;
   max-width: 100%;
-  display: inline-block;
 }
 
 .c-promo__message {
-  color: #444;
-  margin: 0.25rem 0;
+  color: $color-text;
+  margin-bottom: 0.5rem;
 }
 
 .c-promo__url {
   @include caption();
-  margin: 0.25rem 0;
 }

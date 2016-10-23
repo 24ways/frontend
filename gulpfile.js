@@ -10,6 +10,7 @@ const gulp = require('gulp');
 const ghPages = require('gulp-gh-pages');
 const imagemin = require('gulp-imagemin');
 const postcss = require('gulp-postcss');
+const postcssAssets = require('postcss-assets');
 const sass = require('gulp-sass');
 const sassGlob = require('gulp-sass-glob');
 const sassJson = require('node-sass-json-importer');
@@ -90,7 +91,8 @@ function vectors() {
     .pipe(gulp.dest(paths.dest + '/assets/vectors'));
 };
 
-function stylesLint() {
+// Linting
+function lintstyles() {
   return gulp.src(paths.src + '/**/*.scss')
     .pipe(stylelint({
       reporters: [{
@@ -98,7 +100,7 @@ function stylesLint() {
         console: true
       }]
     }));
-}
+};
 
 // Styles
 function styles() {
@@ -111,6 +113,9 @@ function styles() {
       importer: sassJson
     }).on('error', sass.logError))
     .pipe(postcss([
+      postcssAssets({
+        loadPaths: [paths.src + '/assets/vectors']
+      }),
       autoprefixer({
         browsers: ['> 2%']
       })
@@ -146,7 +151,7 @@ function watch(done) {
 const compile = gulp.series(clean, gulp.parallel(icons, images, vectors, scripts, styles));
 
 gulp.task('start', gulp.series(compile, serve));
-gulp.task('lint', gulp.series(stylesLint));
+gulp.task('lint', gulp.series(lintstyles));
 gulp.task('build', gulp.series(compile, build));
 gulp.task('dev', gulp.series(compile, watch));
 gulp.task('publish', gulp.series(build, deploy));

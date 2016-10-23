@@ -5,11 +5,9 @@
 // =========================================================
 
 @mixin heading {
-  font-family: $font-family-serif;
-  font-size: 2rem; // 32px
-  font-weight: 400;
-  line-height: 1.125; // 36px
+  font: 400 2rem/1.125 $font-family-serif; // 32px/36px
   letter-spacing: -0.0625rem; // -1px
+  margin-bottom: 0.25em;
 
   @media screen and (min-width: 31.5em) {
     font-size: 2.5rem; // 40px
@@ -23,30 +21,21 @@
 }
 
 @mixin title {
-  font-family: $font-family-serif;
-  font-size: 1.25em; // 20px
-  font-weight: 400;
-  line-height: 1.2; // 24px
+  font: 400 1.25em/1.2 $font-family-serif; // 20px/24px
 }
 
 @mixin lede {
-  font-family: $font-family-serif;
-  font-weight: 400;
-  font-size: 1.125em; // 18px
-  line-height: 1.3334; // 24px
+  font: 400 1.125em/1.3334 $font-family-serif; // 18px/24px
   letter-spacing: -0.0625rem; // -1px
-  margin: 0.75em 0; // 12px 0
 
   @media screen and (min-width: 40em) {
     font-size: 1.25rem; // 20px
     line-height: 1.4; // 28px
-    margin: 0.7em 0; // 14px 0
   }
 
   @media screen and (min-width: 60em) {
     font-size: 1.5rem; // 24px
     line-height: 1.3334; // 32px
-    margin: 0.6667em 0; // 16px 0
   }
 }
 
@@ -56,13 +45,16 @@
 }
 
 @mixin caption {
-  font-size: 0.75rem; // 12px
-  font-weight: 400;
-  line-height: 1.3334; // 16px
-  letter-spacing: 0;
+  font: 400 0.75rem/1.3334 $font-family-sans; // 12px/16px
 
   @media screen and (min-width: 40em) {
     font-size: 0.8125rem; // 13px
     line-height: 1.2308; // 16px
   }
+}
+
+@mixin label {
+  font: 400 1rem/1 $font-family-sans; // 16px/16px
+  letter-spacing: 0.0625rem; // 1px
+  text-transform: uppercase;
 }

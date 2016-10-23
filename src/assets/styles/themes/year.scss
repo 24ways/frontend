@@ -1,5 +1,5 @@
 @each $name, $color in $color-years {
-  .#{$name} {
+  .t-#{$name} {
     .c-preface {
       background-color: darken($color, 25%);
     }

@@ -1,32 +1,22 @@
 .c-section {
-  margin: 2em 0 0;
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2em 0;
 
   @media screen and (min-width: 50em) {
-    padding-left: 1rem;
-  }
-
-  &:target {
-    .c-section__header,
-    .c-section__main {
-      border-color: rgba(0, 0, 0, 0.33);
-    }
+    flex-direction: row;
   }
 }
 
 .c-section__header {
-  padding: 1.25em 1em; // 20px 16px
-  width: 100%;
+  padding: 1em; // 16px
 
   @media screen and (min-width: 50em) {
+    flex: 1 0 20%;
+    padding-right: 0;
+    box-shadow: 0 -1px 0 $color-neutral--alpha-2;
     text-align: right;
-    padding: 1.5em 0 1.5em 1em; // 24px 0 24px 16px
-    border-top: 1px solid $color-neutral--alpha-1;
-    width: 20%;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 
   @media print {
@@ -35,28 +25,23 @@
 }
 
 .c-section__title {
-  font-size: 1em;
-  line-height: 1;
-  text-transform: uppercase;
-  letter-spacing: 0.0625em;
-  margin: 0;
-  display: block;
+  @include label();
 
   @media print {
-    border-top: 2px solid #000;
+    border-top: 2px solid black;
     padding: 1em 0; // 16px 0
   }
 }
 
 .c-section__main {
-  border-top: 1px solid $color-neutral--alpha-1;
-  padding: 0.5em 1em;
+  box-shadow: 0 -1px 0 $color-neutral--alpha-2;
+  padding: 0.75em 1em;
 
   @media screen and (min-width: 50em) {
-    margin-left: 25%;
+    flex: 1 0 75%;
+    margin-left: 5%;
     padding-right: 5%;
     padding-left: 0;
-    width: 75%;
   }
 
   @media screen and (min-width: 60em) {
@@ -68,41 +53,33 @@
   }
 
   @media print {
-    border: none;
+    border: 0;
     padding-top: 0;
   }
 }
 
 // Section - Sponsor
-.article .c-section--sponsor {
+.c-article .c-section--sponsor {
   @media screen and (min-width: 50em) {
-    pointer-events: none;
+    flex-direction: column;
     padding: 0;
     position: absolute;
-    top: 55.5rem;
+    top: 56rem;
     left: 0;
-    width: 100%;
-
-    .c-section__header {
-      padding-top: 0.4375rem; // 7px
-      position: static;
-    }
+    width: 20%;
 
     .c-section__title {
       @include caption();
     }
 
     .c-section__main {
-      margin: 0;
-      border-top: 0 none;
-      padding: 0 0 0 1rem;
-      width: 20%;
+      box-shadow: none;
+      padding-right: 0;
     }
 
     .c-promo {
       @include caption();
       text-align: right;
-      pointer-events: auto;
     }
   }
 }
@@ -110,18 +87,15 @@
 // Section - Topic
 .c-section--topic {
   .c-section__main {
-    min-height: 6em;
-    padding-left: 5.5rem;
-    position: relative;
+    display: flex;
+    flex-direction: row;
   }
 
   svg {
+    flex-shrink: 0;
     width: 4em;
     height: 4em;
-    margin: 0.25rem;
-    position: absolute;
-    left: 0.5em;
-    top: 1em;
+    margin: 0.5rem 1rem 0 0;
   }
 }
 
@@ -129,30 +103,5 @@
 .c-section--related {
   .c-section__main {
     padding-right: 0;
-  }
-}
-
-// Section - with loading graphic
-@keyframes loading {
-  0% {
-    border-top-color: $color-brand;
-  }
-
-  25% {
-    border-right-color: $color-brand;
-  }
-
-  50% {
-    border-bottom-color: $color-brand;
-  }
-
-  75% {
-    border-left-color: $color-brand;
-  }
-}
-
-.c-section--loading {
-  .c-activity {
-    margin: 0.75rem auto;
   }
 }

@@ -10,7 +10,7 @@ variants:
       mods: [topic]
       icon: topic-business
       content: |
-        Where there's muck, there are clients, deliverables and contracts. Occasionally, there’s brass. Here are articles on developing and improving relationships with clients; writing contracts and presenting your work; and encouraging success and avoiding failure.
+        Where there's muck, there are clients, deliverables and contracts. Occasionally, there's brass. Here are articles on developing and improving relationships with clients; writing contracts and presenting your work; and encouraging success and avoiding failure.
     - id: code
       title: "[Code](/topic/code/)"
       mods: [topic]
@@ -99,6 +99,7 @@ variants:
       title: "A"
       component: grid--authors
       config:
+        mods: [authors]
         component: author
         items:
         - author: John Allsopp
@@ -108,6 +109,7 @@ variants:
       title: "B"
       component: grid--authors
       config:
+        mods: [authors]
         component: author
         items:
         - author: Ashley Baxter
@@ -127,6 +129,7 @@ variants:
       title: "C"
       component: grid--authors
       config:
+        mods: [authors]
         component: author
         items:
         - author: Dan Cederholm

@@ -8,14 +8,8 @@ small {
   font-size: 100%;
 }
 
-// Set consistent quote types
-:lang(en-gb) > q {
-  quotes: '\2018' '\2019' '\201c' '\201d';
-}
-
-// Remove the bottom border in Firefox 39-.
 abbr[title] {
-  border-bottom: 1px dotted $color-neutral--light;
+  text-decoration: underline dotted;
 
   &:hover {
     cursor: help;

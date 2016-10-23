@@ -7,15 +7,13 @@
       </a>
     </h1>
     <p class="c-comment__meta">
-      <a rel="bookmark" href="#{{ id }}" title="Permalink to this comment"><time class="dt-published" datetime="{{ datetime }}">{{ datetime | date('D MMMM YYYY') }}</time></a>
+      <a class="c-comment__permalink" rel="bookmark" href="#{{ id }}" title="Permalink to this comment"><time class="dt-published" datetime="{{ datetime }}">{{ datetime | date('D MMMM YYYY') }}</time></a>
     </p>
   </header>
   <div class="c-comment__main  e-content">
     {{ content | markdown }}
   </div>
   <footer class="c-comment__footer">
-    <p class="c-comment__vote">
-      This comment was <a href="/vote/up/{{ id }}/">helpful</a> / <a href="/vote/down/{{ id }}/">unhelpful</a>
-    </p>
+    <p>This comment was <a href="/vote/up/{{ id }}/">helpful</a> / <a href="/vote/down/{{ id }}/">unhelpful</a></p>
   </footer>
 </article>

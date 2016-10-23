@@ -24,7 +24,7 @@ html {
 
   * {
     background-color: transparent !important;
-    color: #000 !important;
+    color: black !important;
     text-shadow: none !important;
     box-shadow: none !important;
   }
@@ -36,7 +36,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5; // 24px
-  background-color: #fff;
+  background-color: white;
   margin: 0;
   height: 100%;
 
@@ -87,5 +87,5 @@ hr {
   height: 0; // 1
   overflow: visible; // 2
   border: 0;
-  font: 0/0 normal;
+  font: 0/0 sans;
 }

@@ -43,6 +43,7 @@
     "markdown-it-abbr": "latest",
     "markdown-it-prism": "latest",
     "node-sass-json-importer": "latest",
-    "nunjucks-date": "latest"
+    "nunjucks-date": "latest",
+    "postcss-assets": "latest"
   }
 }

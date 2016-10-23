@@ -34,7 +34,7 @@
 
   body.js-menu-active & {
     @media screen and (max-width: 31.4375em) {
-      background-color: #fff;
+      background-color: white;
       transition: background-color 0.1s ease-out;
 
       a {
@@ -59,12 +59,8 @@
     font-size: 1.5em;
   }
 
-  @media screen and (min-width: 50em) {
-    margin-left: 1rem;
-  }
-
   a {
-    color: #fff;
+    color: white;
   }
 
   span {

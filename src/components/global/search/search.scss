@@ -37,13 +37,9 @@
   }
 
   .c-field__button {
-    font: 0/0 sans;
-    background: transparent;
     position: absolute;
-    border: 0;
     top: 0;
     left: 0;
-    overflow: hidden;
 
     @media screen and (min-width: 31.5em) {
       width: 4rem; // 64px

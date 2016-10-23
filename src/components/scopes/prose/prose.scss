@@ -27,7 +27,7 @@
   code,
   samp {
     color: $color-neutral--darker;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(white, 0.75);
   }
 
   pre {
@@ -306,16 +306,16 @@
 
   th {
     line-height: 1.25;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(black, 0.05);
   }
 
   // Represents key press within user input sequence
   kbd > kbd {
     font-size: 0.875em; // 14px
     line-height: 1.1429; // 16px
-    background-color: #fff;
+    background-color: white;
     margin: 0 0.125rem;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(black, 0.15);
     border-radius: 0.25rem; // 4px
     padding: 0.125rem 0.5rem; // 4px 8px
     box-shadow: 0 2px 0 $color-neutral--alpha-1;
@@ -324,7 +324,7 @@
   // Represents menu selection within user input sequence
   kbd > samp {
     font-family: inherit;
-    background-color: #fff;
+    background-color: white;
     margin: -0.375rem -0.625rem; // -6px -10px
     border-radius: 0;
     padding: 0.375rem 0.625rem; // 6px 10px

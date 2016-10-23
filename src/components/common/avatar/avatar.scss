@@ -1,14 +1,14 @@
 .c-avatar {
-  line-height: 1;
+  display: block;
   border: 1px solid $color-neutral--alpha-1;
 
   @media screen, print {
-    display: block;
     overflow: hidden;
     transform: rotate(45deg);
     transform-origin: 50% 50%;
 
     img {
+      display: block;
       margin: -25%;
       width: 150%;
       height: auto;

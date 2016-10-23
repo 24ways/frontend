@@ -31,7 +31,6 @@
     right: 0;
     bottom: 0;
     left: 0;
-    outline: 1px solid red;
   }
 }
 
@@ -43,7 +42,7 @@
   }
 
   @media print {
-    border-top: 1px solid #000;
+    border-top: 1px solid black;
     padding-top: 0.5rem;
   }
 }
@@ -66,6 +65,8 @@
 .c-summary__main {
   @include prose();
   margin-bottom: 1.25rem;
+  position: relative;
+  z-index: $z-index-default;
 
   a {
     font-weight: 700;
@@ -89,9 +90,6 @@
 }
 
 .c-summary__author {
-  @media print {
-    display: none;
-  }
   margin: 0;
   position: absolute;
   top: 0;
@@ -104,7 +102,7 @@
     top: 0;
     right: 0;
     border: solid 2.25em;
-    border-color: transparent transparent #fff #fff;
+    border-color: transparent transparent white white;
   }
 
   &::after {
@@ -115,8 +113,12 @@
     right: 0;
     height: 4.5em;
     width: 4.5em;
-    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgwIiBoZWlnaHQ9IjcyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik03IDBoNzN2NzNsLTczLTczeiIgZmlsbD0iI0Y2RjZGNiIvPjxwYXRoIGQ9Ik04NyAwbDY1LjggNy4yIDcuMiA2NS44LTczLTczeiIgZmlsbD0iI0U5RTlFOSIvPjxwYXRoIGQ9Ik0xNjcgMGw1Ny44OCAxNC40IDE1LjEyIDU4LjYtNzMtNzN6IiBmaWxsPSIjRTBFMEUwIi8+PHBhdGggZD0iTTI0NyAwbDUwLjY4IDIxLjYgMjIuMzIgNTEuNC03My03M3oiIGZpbGw9IiNENkQ2RDYiLz48cGF0aCBkPSJNMzI3IDBsNDQuMiAyOC44IDI4LjggNDQuMi03My03M3oiIGZpbGw9IiNjY2MiLz48cGF0aCBkPSJNNDg4LTFsMjguOCA0NC4yIDQ0LjIgMjguOC03My03M3oiIGZpbGw9IiM5MDAiLz48cGF0aCBkPSJNNTY4LTFsMjEuNiA1MS40IDUxLjQgMjEuNi03My03M3oiIGZpbGw9IiNBNTAwMEIiLz48cGF0aCBkPSJNNjQ4LTFsMTQuNCA1OC42IDU4LjYgMTQuNC03My03M3oiIGZpbGw9IiNCMzAwMTkiLz48cGF0aCBkPSJNNzI4LTFsNy4yIDY1LjggNjUuOCA3LjItNzMtNzN6IiBmaWxsPSIjQkYwMDI2Ii8+PHBhdGggZD0iTTgwOC0xdjczaDczbC03My03M3oiIGZpbGw9IiNjMDMiLz48L3N2Zz4=') -0.5em 0 no-repeat;
-    background-size: 55em 4.5em;
+    background: inline('corner.svg') -0.5em 0 no-repeat;
+    background-size: size('corner.svg');
+  }
+
+  @media print {
+    display: none;
   }
 
   a {
@@ -131,25 +133,6 @@
 
   span {
     @include hidden();
-  }
-}
-
-.c-summary:hover {
-  .c-summary__author {
-    &::after {
-      animation: corner-forward 0.15s steps(10);
-      animation-fill-mode: forwards;
-      z-index: ($z-index-default + 1);
-    }
-  }
-}
-
-&.js-mouseout {
-  .c-summary__author {
-    &::before {
-      animation: corner-reverse 0.15s steps(10);
-      z-index: $z-index-default;
-    }
   }
 }
 
@@ -174,6 +157,25 @@
   to {
     background-position: -0.5em;
     z-index: $z-index-default;
+  }
+}
+
+.c-summary:hover {
+  .c-summary__author {
+    &::after {
+      animation: corner-forward 0.15s steps(10);
+      animation-fill-mode: forwards;
+      z-index: ($z-index-default + 1);
+    }
+  }
+}
+
+&.js-mouseout {
+  .c-summary__author {
+    &::before {
+      animation: corner-reverse 0.15s steps(10);
+      z-index: $z-index-default;
+    }
   }
 }
 

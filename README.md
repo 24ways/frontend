@@ -61,7 +61,6 @@ Sometimes it’s helpful to know what all these different files are for…
 │
 ├─ .editorconfig     # Code style definitions
 ├─ .gitignore        # List of files and folders not tracked by Git
-├─ .htmllintrc       # Linting preferences for HTML
 ├─ .jshintrc         # Linting preferences for JavaScript
 ├─ .stylelintrc      # Linting preferences for CSS
 ├─ LICENSE           # License information for this project

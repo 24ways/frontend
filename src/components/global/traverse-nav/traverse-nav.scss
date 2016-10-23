@@ -27,7 +27,7 @@
   .js-enhanced & {
     @media screen and (min-width: 31.5em) {
       &::after {
-        color: #fff;
+        color: white;
         font: 0.875rem/1.2857 $font-family-sans; // 14px/18px
         text-align: left;
         white-space: pre-wrap;
@@ -60,7 +60,7 @@
 
 .c-traverse-nav__icon {
   @include ui-link();
-  background-color: #fff;
+  background-color: white;
   display: block;
   padding: 0.75rem;
   box-shadow: inset 0 -1px 0 $color-neutral--lightest;
