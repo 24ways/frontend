@@ -1,6 +1,7 @@
 {
   "palettes": {
     "primary": {
+      "light": "#f04",
       "base": "#c03"
     },
     "secondary": {

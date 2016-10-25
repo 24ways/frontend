@@ -41,19 +41,17 @@
   }
 
   .c-avatar {
-    @media screen and (max-width: 49.9375em), print {
-      margin-right: 0.75rem;
-      width: 1.75rem;
-      height: 1.75rem;
-      float: left;
-    }
+    width: 2.5rem;
+    margin-top: -0.5rem;
+    margin-right: 0.5rem;
+    float: left;
 
     @media screen and (min-width: 50em) {
-      width: 20%;
-      max-width: 16rem;
+      width: 27.5%;
+      margin: 0;
       position: absolute;
-      top: -4rem;
-      left: 0;
+      top: -47%;
+      left: -5%;
     }
   }
 }

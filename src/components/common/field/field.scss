@@ -1,4 +1,5 @@
 .c-field {
+  line-height: 1.25;
   position: relative;
 
   + .c-field {
@@ -9,12 +10,12 @@
 .c-field__label {
   display: block;
   font-weight: 700;
-  padding: 1em 0.75em;
+  padding: 0.875rem 0.75rem;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  width: 5em;
+  width: 5rem;
 }
 
 .c-field__input {
@@ -22,21 +23,19 @@
   box-shadow: inset 1px 1px 0 rgba($color-neutral, 0.15);
   border: 0;
   border-radius: 0;
-  padding: 1em 0.5em 1em 6em;
+  padding: 0.875rem 0.5rem 0.875rem 6rem;
 
   &:focus {
     outline: 0 none;
     box-shadow: inset 0 0 0 2px rgba($color-neutral, 0.25);
   }
-
-  &[type=text] {
-    height: 3rem;
-  }
 }
 
 .c-field--search {
-  .c-field__label {
-    @include hidden();
+  .c-field__label svg {
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 
   .c-field__input {

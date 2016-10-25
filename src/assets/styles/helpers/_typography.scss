@@ -7,7 +7,6 @@
 @mixin heading {
   font: 400 2rem/1.125 $font-family-serif; // 32px/36px
   letter-spacing: -0.0625rem; // -1px
-  margin-bottom: 0.25em;
 
   @media screen and (min-width: 31.5em) {
     font-size: 2.5rem; // 40px
@@ -54,7 +53,7 @@
 }
 
 @mixin label {
-  font: 400 1rem/1 $font-family-sans; // 16px/16px
+  font: 400 1rem/1.25 $font-family-sans; // 16px/20px
   letter-spacing: 0.0625rem; // 1px
   text-transform: uppercase;
 }

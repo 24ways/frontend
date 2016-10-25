@@ -1,35 +1,51 @@
 .s-prose {
+  > * {
+    margin-bottom: 0.75em;
+  }
+
   .caps {
     letter-spacing: 0.0625rem; // 1px
   }
 
   .caption {
     @include caption;
+    opacity: 0.9;
 
     strong,
     dt {
-      color: #333;
+      opacity: 1;
     }
   }
 
   .lede {
-    @include lede();
-    color: $color-neutral--darkest;
-  }
-
-  // TODO: appears on more than one type of scope construct
-  .photo-credit {
-    @include caption();
-    font-family: $font-family-sans;
+    @include lede;
   }
 
   pre,
   code,
   samp {
+    outline: 0.125em solid rgba(black, 0.075);
+    margin-right: 0.25em;
+    margin-left: 0.25em;
+    background-color: rgba(black, 0.075);
     color: $color-neutral--darker;
-    background-color: rgba(white, 0.75);
   }
 
+  pre {
+    outline-width: 0.25em;
+    margin-right: 0;
+    margin-left: 0;
+
+    code {
+      outline: 0;
+      margin: 0;
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+}
+
+.s-prose--article {
   pre {
     font-size: 0.875em; // 14px
     line-height: 1.4286; // 20px
@@ -45,16 +61,6 @@
       // Base font size now 20px within article body
       line-height: 1.4; // 28px
     }
-
-    code {
-      background-color: transparent;
-      padding: 0;
-    }
-  }
-
-  code,
-  samp {
-    padding: 0.125rem 0.25rem;
   }
 
   blockquote {
@@ -160,7 +166,7 @@
   }
 
   figure,
-  p.image {
+  p.image { // ! Legacy
     margin: 1.5em -1em; // 24px -16px
 
     @media screen and (min-width: 50em) {
@@ -178,10 +184,8 @@
   }
 
   figcaption,
-  p.image span.caption {
-    color: #666; // $color-caption
-    font-size: 0.875rem; // 14px
-    line-height: 1.1429; // 16px
+  p.image span.caption { // ! Legacy
+    @include caption;
     border-bottom: 1px solid rgba($color-text, 0.2);
     padding: 0.5714em 0; // 8px 0
     margin: 0 1rem;
@@ -290,10 +294,9 @@
   }
 
   caption {
+    @include caption;
     color: $color-neutral;
     caption-side: bottom;
-    font-size: 0.875rem; // 14px
-    line-height: 1.1429; // 16px
     text-align: left;
     margin: 1rem 0; // 16px 0
   }

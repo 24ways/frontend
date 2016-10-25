@@ -15,15 +15,14 @@ context:
 
     Now, I could potentially just use a query string when I point to my JS and CSS files ( e.g. /js/myscript.js?20131201 ) …but that can cause issues with proxy servers.
 
-    Instead what I what I do is point to files like this: /js/myscript.20131201.js
+    Instead what I what I do is point to files like this: `/js/myscript.20131201.js`
 
-    Then I need to tell the server to look for the **actual** file in /js/myscript.js
+    Then I need to tell the server to look for the **actual** file in `/js/myscript.js`
 
     Here's the rewrite rule I'm using:
 
     ```
     RewriteCond %{REQUEST_FILENAME} !-f
-
     RewriteRule ^(.).(d).(js|css)$ $1.$3 [L]
     ```
 

@@ -12,8 +12,9 @@
 
 .c-preface__title {
   @include heading();
-  color: lighten($color-brand, 10%);
+  color: $color-brand--light;
   position: relative;
+  margin-bottom: 0.75rem;
 
   svg {
     display: inline-block;
@@ -30,23 +31,21 @@
 }
 
 .c-preface__main {
-  @include lede();
   position: relative;
   color: rgba(white, 0.75);
 
-  .c-avatar {
-    width: 25%;
+  > p:first-of-type {
+    @include lede;
+  }
 
-    @media screen and (max-width: 49.9375em), print {
-      float: right;
-      margin: 0.5rem -0.5rem 1.5rem 2rem;
-    }
+  .c-avatar {
+    width: 50%;
+    float: right;
+    margin: -7.5% -7.5% 0.75rem 0.75rem;
 
     @media screen and (min-width: 50em) {
-      margin-top: -10%;
-      position: absolute;
-      top: 0;
-      left: -33%;
+      float: left;
+      margin: -7.5% 0.75rem 0.75rem -33%;
     }
   }
 

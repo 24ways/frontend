@@ -32,5 +32,5 @@ a {
 
 .Header {
   background-color: darken(map-get($color-years, year-2016), 30%);
-  color: #ff0040;
+  color: $color-brand--light;
 }
