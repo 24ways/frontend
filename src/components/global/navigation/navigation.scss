@@ -30,7 +30,7 @@
     }
   }
 
-  .js-menu-active & {
+  [data-menu=open] & {
     @media screen and (max-width: 31.4375em) {
       box-shadow: 0 8px 8px 0 $color-neutral--alpha-2;
       max-height: 20rem; // 320px

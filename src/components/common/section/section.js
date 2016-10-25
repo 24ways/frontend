@@ -6,9 +6,7 @@
 (function() {
   'use strict';
 
-  if (!document.querySelector || !window.addEventListener || !document.documentElement.classList) {
-    return;
-  }
+  if (enhanced === false) return;
 
   var $ = document.querySelector.bind(document);
   var $$ = document.querySelectorAll.bind(document);

@@ -1,3 +1,11 @@
-<svg width="48" height="48" viewBox="0 0 240 240">
-  <path d="M180 75V65H60v10h120zm0 25V90H60v10h120zm0 25v-10H60v10h120zm0 25v-10H60v10h120zm0 25v-10H60v10h120z"/>
+<svg width="48" height="48" viewBox="0 0 240 240" role="img" aria-labelledby="c-menu__icon-label">
+  <title id="c-menu__icon-label">Jump to menu</title>
+  <g role="presentation">
+    <rect class="c-menu__icon-line" width="120" height="10" x="60" y="65"/>
+    <rect class="c-menu__icon-line" width="120" height="10" x="60" y="90"/>
+    <rect class="c-menu__icon-line" width="120" height="10" x="60" y="115"/>
+    <rect class="c-menu__icon-line" width="120" height="10" x="60" y="115"/>
+    <rect class="c-menu__icon-line" width="120" height="10" x="60" y="140"/>
+    <rect class="c-menu__icon-line" width="120" height="10" x="60" y="165"/>
+  </g>
 </svg>

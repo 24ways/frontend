@@ -1,17 +1,20 @@
-(function(win, doc) {
+(function() {
+  'use strict';
+
   if (enhanced === false) return;
 
-  var toggleClassName = function(element, toggleClass) {
-    var reg = new RegExp('(\\s|^)' + toggleClass + '(\\s|$)');
-    if (!element.className.match(reg)) {
-      element.className += ' ' + toggleClass;
-    } else {
-      element.className = element.className.replace(reg, '');
-    }
+  var $ = document.querySelector.bind(document);
+  var $$ = document.querySelectorAll.bind(document);
+  var menuToggle = $('a[href="#menu"]');
+
+  var toggleMenu = function (elem, on, off) {
+    elem.setAttribute('data-menu', elem.getAttribute('data-menu') === on ? off : on);
   };
 
-  doc.querySelector('a[href="#menu"]').addEventListener('click', function(ev) {
-    ev.preventDefault();
-    toggleClassName(doc.body, 'js-menu-active');
-  });
-}(this, this.document));
+  if (menuToggle) {
+    menuToggle.addEventListener('click', function(e) {
+      toggleMenu(document.body, 'closed', 'open');
+      e.preventDefault();
+    });
+  }
+}());

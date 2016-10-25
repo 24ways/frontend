@@ -30,10 +30,6 @@
   color: $color-neutral--darkest;
   margin: 1rem 0 0.5rem;
 
-  @media screen and (min-width: 50em) {
-    padding-left: 1rem;
-  }
-
   a {
     color: $color-neutral--darkest;
   }
@@ -42,10 +38,6 @@
 .c-article__byline {
   @media screen and (max-width: 49.9375em) {
     margin-top: 1rem;
-  }
-
-  @media screen and (min-width: 50em) {
-    padding-left: 1rem;
   }
 
   .c-avatar {
@@ -67,7 +59,7 @@
 }
 
 .c-article__main {
-  padding: 0 1em 2em;
+  padding: 0 1em 2em 0;
 
   @media screen and (min-width: 40em) {
     font-size: 112.5%;
@@ -90,7 +82,10 @@
 }
 
 .c-article__footer {
+  padding: 0 1em;
+
   @media screen and (min-width: 50em) {
+    padding: 0;
     width: 20%;
     float: left;
   }

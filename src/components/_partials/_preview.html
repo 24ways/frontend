@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-gb" dir="ltr">
+<html lang="en-gb" dir="ltr" class="no-js">
   <head>
     <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
     <link rel="dns-prefetch" href="//themes.googleusercontent.com"/>
@@ -7,29 +7,21 @@
     <link rel="dns-prefetch" href="//media.24ways.org"/>
 
     <script>
-      // Flag support for JS
-      document.documentElement.className += ' js';
-      if (document.querySelector && window.addEventListener) {
-        document.documentElement.className += ' js-enhanced';
-        var enhanced = true;
-      } else {
-        var enhanced = false;
-      }
+      var docEl = document.documentElement;
+      docEl.className = docEl.className.replace('no-js', 'has-js');
 
-      // Add a script element as a child of the body
       function downloadJSAtOnload() {
         var element = document.createElement("script");
         element.src = "{{ '/assets/scripts/app.js' | path }}";
         document.body.appendChild(element);
       }
 
-      // Check for browser support of event handling capability
-      if (window.addEventListener) {
+      if (document.querySelector && docEl.classList && window.addEventListener) {
+        docEl.className += ' js-enhanced';
+        var enhanced = true;
         window.addEventListener("load", downloadJSAtOnload, false);
-      } else if (window.attachEvent) {
-        window.attachEvent("onload", downloadJSAtOnload);
       } else {
-        window.onload = downloadJSAtOnload;
+        var enhanced = false;
       }
     </script>
 
@@ -53,7 +45,7 @@
     <title>{{ _target.context.title }} &#9670; 24 ways</title>
   </head>
 
-  <body class="t-{{ _target.context.theme if _target.context.theme else "year-2015" }}">
+  <body class="t-{{ _target.context.theme if _target.context.theme else "year-2015" }}" data-menu="closed">
     {{ yield }}
   </body>
 </html>
