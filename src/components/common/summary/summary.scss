@@ -2,6 +2,8 @@
   background-color: white;
   padding: 1em;
   position: relative;
+  display: flex;
+  flex-direction: column;
   flex: 1;
 
   @media print {
@@ -36,7 +38,7 @@
 
 .c-summary__header {
   min-height: 3rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 
   @media print {
     border-top: 1px solid black;
@@ -60,10 +62,17 @@
 }
 
 .c-summary__main {
+  @include summary();
+  margin-bottom: 0.75rem;
+
   a {
     font-weight: 700;
     color: inherit;
   }
+}
+
+.c-summary__footer {
+  margin-top: auto;
 }
 
 .c-summary__meta {
@@ -170,15 +179,8 @@
     padding-left: 2rem;
   }
 
-  // .c-summary__meta {
-  //   position: static;
-  // }
-
   .dt-published {
-    font-family: $font-family-serif;
-    font-size: 1.25rem; // 20px
-    font-weight: 400;
-    line-height: 1.2; // 24px
+    @include title();
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -191,12 +193,4 @@
       @include hidden();
     }
   }
-
-  // .c-summary__comments {
-  //   @media screen {
-  //     position: absolute;
-  //     bottom: 1rem;
-  //     left: 1rem;
-  //   }
-  // }
 }

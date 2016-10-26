@@ -39,9 +39,9 @@
   }
 }
 
-@mixin prose {
+@mixin summary {
   font-size: 0.875em; // 14px
-  line-height: 1.4286; // 20px
+  line-height: (20/14); // 20px
 }
 
 @mixin caption {
@@ -59,7 +59,7 @@
 }
 
 @mixin label {
-  font: 400 1rem/1.25 $font-family-sans; // 16px/20px
+  font: 400 1rem/1.5 $font-family-sans; // 16px/20px
   letter-spacing: 0.0625rem; // 1px
   text-transform: uppercase;
 }

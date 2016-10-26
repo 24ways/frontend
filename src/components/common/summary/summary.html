@@ -8,9 +8,7 @@
     </p>
   </header>
   <div class="c-summary__main">
-    <div class="s-prose  p-summary">
-      {{ content | markdown }}
-    </div>
+    <p class="c-summary__content  p-summary">{{ content | markdownInline }}</p>
     <a class="c-summary__link" href="{{ href }}">Impress your friends with &#8216;{{ title }}&#8217;</a>
   </div>
   <footer class="c-summary__footer">
