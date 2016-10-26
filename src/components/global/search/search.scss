@@ -11,14 +11,7 @@
   }
 
   .c-field__label {
-    @media screen and (min-width: 31.5em) {
-      svg {
-        line-height: 1.5;
-        text-align: center;
-        width: 4rem; // 64px
-        height: 4.5rem; // 72px
-      }
-    }
+    @include hidden;
   }
 
   .c-field__input {
@@ -27,7 +20,7 @@
     width: 100%;
 
     @media screen and (min-width: 31.5em) {
-      padding-left: 4rem; // 64px
+      padding-left: 3.5rem; // 56px
       height: 4.5rem; // 72px
     }
 
@@ -42,7 +35,6 @@
     left: 0;
 
     @media screen and (min-width: 31.5em) {
-      width: 4rem; // 64px
       height: 4.5rem; // 72px
     }
   }

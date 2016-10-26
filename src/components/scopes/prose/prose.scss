@@ -1,5 +1,9 @@
 .s-prose {
+  font-variant: common-ligatures oldstyle-nums;
+  hyphens: auto;
+
   > * {
+    // hanging-punctuation: first;
     margin-bottom: 0.75em;
   }
 
@@ -24,10 +28,10 @@
   pre,
   code,
   samp {
-    outline: 0.125em solid rgba(black, 0.075);
+    outline: 0.125em solid rgba(black, 0.05);
     margin-right: 0.25em;
     margin-left: 0.25em;
-    background-color: rgba(black, 0.075);
+    background-color: rgba(black, 0.05);
     color: $color-neutral--darker;
   }
 
@@ -179,6 +183,7 @@
     }
 
     img {
+      display: block;
       max-width: 100%;
     }
   }
@@ -187,7 +192,7 @@
   p.image span.caption { // ! Legacy
     @include caption;
     border-bottom: 1px solid rgba($color-text, 0.2);
-    padding: 0.5714em 0; // 8px 0
+    padding: 0.75rem 0; // 8px 0
     margin: 0 1rem;
     display: block;
 

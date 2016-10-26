@@ -1,10 +1,10 @@
 <ul class="c-topics-nav">
-{% for topic in topics %}
+{%- for topic in topics -%}
   <li class="c-topics-nav__item">
     <a class="c-topics-nav__label" href="{{ topic.url }}">
       {% include "topic-" + topic.title | lower + ".svg" %}
       {{ topic.title }}
     </a>
   </li>
-{% endfor %}
+{%- endfor -%}
 </ul>

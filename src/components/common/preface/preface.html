@@ -7,11 +7,13 @@
     {{ title }}
   </h1>
   {%- if content -%}
-  <div class="c-preface__main s-prose  p-note">
-    {%- if avatar -%}
-      {% render "@avatar", { img: avatar.img } %}
-    {%- endif -%}
-    {{ content | markdown }}
+  <div class="c-preface__main  p-note">
+    <div class="s-prose">
+      {%- if avatar -%}
+        {% render "@avatar", { img: avatar.img } %}
+      {%- endif -%}
+      {{ content | markdown }}
+    </div>
   </div>
   {%- endif -%}
 </header>

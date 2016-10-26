@@ -14,6 +14,7 @@
 // Color assignments
 $color-brand: palette(primary);
 $color-brand--light: palette(primary, light);
+$color-brand--dark: palette(primary, dark);
 
 $color-neutral: palette(neutral);
 $color-neutral--lightest: lighten($color-neutral, 44%);

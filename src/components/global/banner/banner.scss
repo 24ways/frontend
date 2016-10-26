@@ -1,6 +1,6 @@
 .c-banner {
   text-transform: uppercase;
-  background-color: darken($color-brand, 20%);
+  background-color: $color-brand--dark;
   padding: 0.875em 1em; // 14px 16px
   height: 3rem; // 48px
 
@@ -64,7 +64,7 @@
   }
 
   span {
-    color: lighten($color-brand, 10%);
+    color: $color-brand--light;
     font-size: 0.6667em;
     text-transform: lowercase;
   }

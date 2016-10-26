@@ -34,7 +34,7 @@
   position: relative;
   color: rgba(white, 0.75);
 
-  > p:first-of-type {
+  .s-prose p:first-of-type {
     @include lede;
   }
 

@@ -1,16 +1,16 @@
 {% if traverse %}
 <div class="c-traverse-nav">
-  {% if traverse.prev %}
+  {%- if traverse.prev -%}
   <a class="c-traverse-nav__item" rel="prev" href="{{ traverse.prev.url }}" data-sequence-title="{{ traverse.prev.title }}">
     <span class="c-traverse-nav__icon">{% include "prev.svg" %}</span>
     <span class="c-traverse-nav__label">Previous {{ traverse.type }}</span>
   </a>
-  {% endif %}
-  {% if traverse.next %}
+  {%- endif -%}
+  {%- if traverse.next -%}
   <a class="c-traverse-nav__item" rel="next" href="{{ traverse.next.url }}" data-sequence-title="{{ traverse.next.title }}">
     <span class="c-traverse-nav__icon">{% include "next.svg" %}</span>
     <span class="c-traverse-nav__label">Next {{ traverse.type }}</span>
   </a>
-  {% endif %}
+  {%- endif -%}
 </div>
 {% endif %}

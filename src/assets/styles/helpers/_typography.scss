@@ -21,6 +21,7 @@
 
 @mixin title {
   font: 400 1.25em/1.2 $font-family-serif; // 20px/24px
+  letter-spacing: -0.03125rem; // -0.5px
 }
 
 @mixin lede {
@@ -44,11 +45,16 @@
 }
 
 @mixin caption {
-  font: 400 0.75rem/1.3334 $font-family-sans; // 12px/16px
+  font: 400 0.75rem/#{(16/12)} $font-family-sans; // 12px/16px
 
   @media screen and (min-width: 40em) {
     font-size: 0.8125rem; // 13px
-    line-height: 1.2308; // 16px
+    line-height: (16/13); // 16px
+  }
+
+  @media screen and (min-width: 50em) {
+    font-size: 0.875rem; // 14px
+    line-height: (16/14); // 16px
   }
 }
 

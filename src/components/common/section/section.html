@@ -6,10 +6,12 @@
     {%- if component -%}
       {% render "@" + component, config %}
     {%- else -%}
+    <div class="s-prose">
       {%- if icon -%}
         {% include icon + ".svg" %}
       {%- endif -%}
       {{ content | markdown }}
+    </div>
     {%- endif -%}
   </div>
 </section>
