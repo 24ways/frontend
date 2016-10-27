@@ -25,21 +25,21 @@
       }
     </script>
 
-    <link rel="stylesheet" href="{{ '/assets/styles/app.css' | path }}"/>
-    <link rel="alternate" type="application/rss+xml" href="{{ site_feed }}"/>
-    <link rel="icon" type="image/x-icon" href="{{ '/assets/icons/favicon.ico' | path }}"/>
-    <link rel="apple-touch-icon-precomposed" href="{{ '/assets/icons/apple-touch-icon.png' | path }}"/>
+    <link rel="shortcut icon" href="{{ '/assets/icons/icon.ico' | path }}" type="image/ico"/>
+    <link rel="apple-touch-icon" href="{{ '/assets/icons/icon.png' | path }}" type="image/png"/>
+    <link rel="mask-icon" href="{{ '/assets/icons/icon.svg' | path }}" color="{{ site.theme_color }}"/>
     <link rel="author" href="/humans.txt"/>
+    <link rel="manifest" href="/manifest.json"/>
+    <link rel="alternate" href="{{ site.feed }}" type="application/rss+xml"/>
+    <link rel="stylesheet" href="{{ '/assets/styles/app.css' | path }}"/>
 
     <meta charset="utf-8"/>
     <meta name="robots" content="index, follow"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="application-name" content="{{ site_title }}"/>
-    <meta name="apple-mobile-web-app-title" content="{{ site_title }}"/>
-    <meta name="twitter:site" content="@{{ site_handle }}"/>
-    <meta name="twitter:title" content="{{ site_title }}"/>
-    <meta name="twitter:description" content="{{ site_description }}"/>
-    <meta name="twitter:creator" content="@{{ site_handle }}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="twitter:site" content="@{{ site.handle }}"/>
+    <meta name="twitter:title" content="{{ site.title }}"/>
+    <meta name="twitter:description" content="{{ site.description }}"/>
+    <meta name="twitter:creator" content="@{{ site.handle }}"/>
     <meta name="twitter:card" content="summary"/>
 
     <title>{{ _target.context.title }} &#9670; 24 ways</title>

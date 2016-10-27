@@ -1,40 +1,40 @@
 /* TEAM */
-    Production and server-side development: Drew McLellan
-    URL: http://allinthehead.com
-    Twitter: @drewm
+  Production and server-side development: Drew McLellan
+  URL: http://allinthehead.com
+  Twitter: @drewm
 
-    Production: Brian Suda
-    URL: http://suda.co.uk
-    Twitter: @briansuda
+  Production: Brian Suda
+  URL: http://suda.co.uk
+  Twitter: @briansuda
 
-    Production: Anna Debenham
-    URL: http://maban.co.uk
-    Twitter: @anna_debenham
-    
-    Editing and production: Owen Gregory
-    URL: http://fullcreammilk.co.uk
-    Twitter: @fullcreammilk
+  Production: Anna Debenham
+  URL: http://maban.co.uk
+  Twitter: @anna_debenham
 
-    Design and front-end development: Paul Robert Lloyd
-    URL: http://paulrobertlloyd.com
-    Twitter: @paulrobertlloyd
+  Editing and production: Owen Gregory
+  URL: http://fullcreammilk.co.uk
+  Twitter: @fullcreammilk
+
+  Design and front-end development: Paul Robert Lloyd
+  URL: https://paulrobertlloyd.com
+  Twitter: @paulrobertlloyd
 
 
 /* THANKS */
-    Made possible only with the help and dedication of our authors.
-    URL: http://24ways.org/authors
+  Made possible only with the help and dedication of our authors.
+  URL: https://24ways.org/authors
 
-    Animation assistance: Josh Emerson
-    URL: http://joshemerson.co.uk
-    Twitter: @joshje
+  Animation assistance: Josh Emerson
+  URL: https://joshemerson.co.uk
+  Twitter: @joshje
 
-    JavaScript assistance: Scott Jehl
-    URL: http://scottjehl.com
-    Twitter: @scottjehl
+  JavaScript assistance: Scott Jehl
+  URL: http://scottjehl.com
+  Twitter: @scottjehl
 
 
 /* SITE */
-    Language: English
-    Doctype: HTML5
-    CMS: Perch (http://grabaperch.com/)
-    Software: PHP, TextMate, Sketch
+  Language: English
+  Doctype: HTML5
+  CMS: Perch Runway (https://grabaperch.com/products/runway)
+  Software: PHP, TextMate, Sketch

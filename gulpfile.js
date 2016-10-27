@@ -69,6 +69,12 @@ function deploy() {
   done();
 };
 
+// Meta
+function meta() {
+  return gulp.src(paths.src + '/*.{txt,json}')
+    .pipe(gulp.dest(paths.dest));
+};
+
 // Icons
 function icons() {
   return gulp.src(paths.src + '/assets/icons/**/*')
@@ -148,7 +154,7 @@ function watch(done) {
 };
 
 // Task sets
-const compile = gulp.series(clean, gulp.parallel(icons, images, vectors, scripts, styles));
+const compile = gulp.series(clean, gulp.parallel(meta, icons, images, vectors, scripts, styles));
 
 gulp.task('start', gulp.series(compile, serve));
 gulp.task('lint', gulp.series(lintstyles));

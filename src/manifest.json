@@ -1,0 +1,14 @@
+{
+  "lang": "en-gb",
+  "name": "24 ways",
+  "icons": [{
+    "src": "/assets/icons/icon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "theme_color": "#302",
+  "background_color": "#f04",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}
