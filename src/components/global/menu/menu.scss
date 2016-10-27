@@ -45,20 +45,20 @@
   &:nth-of-type(5),
   &:nth-of-type(6) {
     opacity: 1;
-    transition: transform 0.25s cubic-bezier(0.8, 0, 0.4, 1.8) 0.25s, opacity 0.05s linear 0.15s;
+    transition: transform 0.2s cubic-bezier(0.8, 0, 0.4, 1.8) 0.2s, opacity 0.05s linear 0.1s;
 
     [data-menu=open] & {
       opacity: 0;
-      transition: transform 0.25s ease-out, opacity 0.05s linear 0.15s;
+      transition: transform 0.2s ease-out, opacity 0.05s linear 0.1s;
     }
   }
 
   &:nth-of-type(3),
   &:nth-of-type(4) {
-    transition: transform 0.25s ease-out;
+    transition: transform 0.2s ease-out;
 
     [data-menu=open] & {
-      transition: transform 0.25s cubic-bezier(0.8, 0, 0.4, 1.8) 0.25s;
+      transition: transform 0.2s cubic-bezier(0.8, 0, 0.4, 1.8) 0.2s;
     }
   }
 
