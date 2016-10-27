@@ -39,18 +39,6 @@ body {
   background-color: white;
   margin: 0;
   height: 100%;
-
-  @media screen and (max-width: 31.4375em) {
-    margin-top: 3em; // 48px
-  }
-
-  @media screen and (min-width: 31.5em) {
-    margin-right: 4.5rem; // 72px
-  }
-
-  @media print {
-    margin-right: 0;
-  }
 }
 
 // Add the correct display in IE 9-.

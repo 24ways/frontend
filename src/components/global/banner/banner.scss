@@ -14,12 +14,13 @@
   }
 
   @media screen and (min-width: 31.5em) {
+    margin-right: 4.5rem; // 72px
     padding: 1.5rem 1rem;
     height: 4.5rem; // 72px
   }
 
   @media screen and (min-width: 50em) {
-    padding-left: 25%;
+    padding-left: calc(25% - 1rem);
   }
 
   .js-enhanced & {

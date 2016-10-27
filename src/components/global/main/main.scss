@@ -1,9 +1,17 @@
 .c-main {
   background-color: $color-neutral--lightest;
+
+  @media screen and (max-width: 31.4375em) {
+    margin-top: 3em; // 48px
+  }
 }
 
 .c-main,
 .c-contentinfo {
+  @media screen and (min-width: 31.5em) {
+    margin-right: 4.5rem; // 72px
+  }
+
   .js-enhanced & {
     filter: brightness(1);
     transition: filter 0.2s ease-in;
