@@ -12,18 +12,18 @@
 @import 'layers.json';
 @import 'spacing.json';
 
-// Color assignments
-$color-brand: palette(primary);
-$color-brand--light: palette(primary, light);
-$color-brand--dark: palette(primary, dark);
+// Animation durations
+$duration-banner: 0.1s;
+$duration-navigation: 0.2s;
 
+// Color assignments
 $color-neutral: palette(neutral);
-$color-neutral--lightest: lighten($color-neutral, 44%);
-$color-neutral--lighter: lighten($color-neutral, 24%);
-$color-neutral--light: lighten($color-neutral, 8%);
-$color-neutral--dark: darken($color-neutral, 8%);
-$color-neutral--darker: darken($color-neutral, 24%);
-$color-neutral--darkest: darken($color-neutral, 44%);
+$color-neutral--lightest: palette(neutral, lightest);
+$color-neutral--lighter: palette(neutral, lighter);
+$color-neutral--light: palette(neutral, light);
+$color-neutral--dark: palette(neutral, dark);
+$color-neutral--darker: palette(neutral, darker);
+$color-neutral--darkest: palette(neutral, darkest);
 
 $color-neutral--alpha-1: rgba($color-neutral, 0.1);
 $color-neutral--alpha-2: rgba($color-neutral, 0.2);

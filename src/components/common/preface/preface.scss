@@ -1,6 +1,6 @@
 .c-preface {
   padding: 4.5rem 1rem 1rem;
-  background-color: darken($color-brand, 5%);
+  background-color: palette(primary, dark);
   background-image: inline('diamond.svg');
   background-repeat: repeat;
   overflow: hidden;
@@ -12,7 +12,7 @@
 
 .c-preface__title {
   @include heading();
-  color: $color-brand--light;
+  color: palette(primary, light);
   position: relative;
   margin-bottom: 0.5rem;
 

@@ -1,46 +1,71 @@
 .c-navigation {
+  z-index: $z-index-modal;
   background-color: white;
-  right: 0;
-  z-index: $z-index-default;
-  position: relative;
+  transition-duration: $duration-navigation;
+  transition-timing-function: ease-out;
+
+  [data-menu=open] & {
+    transition-delay: $duration-banner;
+  }
+
+  @media screen and (max-width: 31.4375em) {
+    position: fixed;
+    top: 3rem; // 48px
+    width: 100%;
+    overflow: hidden;
+    transition-property: max-height;
+
+    [data-menu=closed] & {
+      max-height: 0;
+    }
+
+    [data-menu=open] & {
+      box-shadow: 0 8px 8px 0 $color-neutral--alpha-2;
+      max-height: 32rem; // 512px
+    }
+  }
+
+  @media screen and (min-width: 31.5em) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 4.5rem 4.5rem 0 0; // 72px 72px 0 0
+    transition-property: width;
+
+    [data-menu=closed] & {
+      width: 4.5em; // 72px
+    }
+
+    [data-menu=open] & {
+      box-shadow: 0 0 8px 0 $color-neutral--alpha-2;
+      width: 22.5em; // 360px
+    }
+  }
 
   @media print {
     display: none;
   }
+}
 
-  .js-enhanced & {
-    @media screen and (max-width: 31.4375em) {
-      overflow: hidden;
-      position: fixed;
-      top: 3rem; // 48px
-      width: 100%;
-      max-height: 0;
-      transition: max-height 0.2s ease-out;
-    }
+// Backdrop
+[data-menu]::after {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: $z-index-backdrop;
+  transition: opacity $duration-navigation ease-in;
+  background-color: rgba(palette(neutral, dark), 0.25);
+  backdrop-filter: blur(1px);
+  pointer-events: none;
+}
 
-    @media screen and (min-width: 31.5em) {
-      margin: 0;
-      padding: 4.5rem 4.5rem 0 0; // 72px 72px 0 0
-      width: 4.5em; // 72px
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      transition: width 0.2s ease-out;
-    }
-  }
-
-  [data-menu=open] & {
-    @media screen and (max-width: 31.4375em) {
-      box-shadow: 0 8px 8px 0 $color-neutral--alpha-2;
-      max-height: 32rem; // 512px
-      transition: max-height 0.2s ease-out;
-    }
-
-    @media screen and (min-width: 31.5em) {
-      box-shadow: 0 0 8px 0 $color-neutral--alpha-2;
-      width: 22.5em; // 360px
-      transition: width 0.2s ease-out;
-    }
-  }
+[data-menu=open]::after {
+  opacity: 1;
+  pointer-events: fill;
 }

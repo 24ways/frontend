@@ -1,14 +1,24 @@
 .c-banner {
   padding: spacing(inset);
-  background-color: $color-brand--dark;
+  background-color: palette(primary, dark);
+  transition-duration: $duration-banner;
+  transition-timing-function: ease-out;
+
+  [data-menu=closed] & {
+    transition-delay: $duration-navigation;
+  }
 
   @media screen and (max-width: 31.4375em) {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    z-index: $z-index-default;
-    transition: background-color 0.1s ease-out;
+    z-index: ($z-index-modal + 1);
+    transition-property: background-color;
+
+    body[data-menu=open] & {
+      background-color: white;
+    }
   }
 
   @media screen and (min-width: 31.5em) {
@@ -19,35 +29,9 @@
   @media screen and (min-width: 50em) {
     padding-left: calc(25% - 1rem);
   }
-
-  .js-enhanced & {
-    @media screen and (min-width: 31.5em) {
-      filter: brightness(1);
-
-      a {
-        transition: color 0.1s ease-out;
-      }
-    }
-  }
-
-  body[data-menu=open] & {
-    @media screen and (max-width: 31.4375em) {
-      background-color: white;
-      transition: background-color 0.1s ease-out;
-
-      a {
-        color: $color-neutral;
-        transition: color 0.1s ease-out;
-      }
-    }
-
-    @media screen and (min-width: 31.5em) {
-      filter: brightness(0.75);
-    }
-  }
 }
 
-.c-banner__logo {
+.c-banner__title {
   font-size: 1.25em; // 20px
   line-height: (16/20);
 
@@ -55,15 +39,32 @@
     font-size: 1.5em; // 24px
     line-height: 1;
   }
+}
 
-  a {
+.c-banner__home {
+  color: white;
+  text-transform: uppercase;
+
+  &:hover {
     color: white;
-    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 31.4375em) {
+    transition-property: color $duration-banner ease-out;
+
+    [data-menu=open] & {
+      color: palette(neutral);
+    }
+
+    [data-menu=closed] & {
+      transition-delay: $duration-navigation;
+    }
   }
 
   span {
-    color: $color-brand--light;
+    color: palette(primary, light);
     font-size: 0.6667em;
+    white-space: nowrap;
     text-transform: lowercase;
   }
 }

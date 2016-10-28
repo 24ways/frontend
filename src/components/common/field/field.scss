@@ -1,5 +1,5 @@
 .c-field {
-  line-height: 1.25;
+  line-height: 1.5;
   position: relative;
 
   &:not(:last-of-type) {
@@ -14,7 +14,7 @@
 .c-field__label {
   display: block;
   font-weight: 700;
-  padding: spacing(inset);
+  padding: spacing(inset, l-squished);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -27,7 +27,7 @@
   box-shadow: inset 1px 1px 0 rgba($color-neutral, 0.15);
   border: 0;
   border-radius: 0;
-  padding: spacing(inset);
+  padding: spacing(inset, l-squished);
   padding-left: 6rem;
 
   &:focus {

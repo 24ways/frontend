@@ -5,7 +5,7 @@
     </legend>
     <div class="c-section__main">
       <div class="s-prose">
-        <p>Be friendly / use <a href="http://www.textism.com/tools/textile/">Textile</a></p>
+        <p id="commentHTMLNote">Be friendly / use <a href="http://www.textism.com/tools/textile/">Textile</a></p>
       </div>
       <p class="c-field">
         <label class="c-field__label" for="commentName">Name</label>
@@ -21,7 +21,7 @@
       </p>
       <p class="c-field">
         <label class="c-field__label" for="commentHTML">Message</label>
-        <textarea class="c-field__input" id="commentHTML" name="commentHTML" cols="25" rows="12" required="required"></textarea>
+        <textarea class="c-field__input" id="commentHTML" name="commentHTML" cols="25" rows="12" required="required" aria-describedby="commentHTMLNote"></textarea>
       </p>
       <p class="c-field">
         <input type="hidden" name="parentID" id="parentID" value="289"/>

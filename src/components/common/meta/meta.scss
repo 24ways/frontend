@@ -23,7 +23,7 @@
     }
   }
 
-  @media screen, print and (max-width: 49.9375em) {
+  @media print, screen and (max-width: 49.9375em) {
     &:not(:last-child)::after {
       content: '•';
       margin: 0 0.5rem;

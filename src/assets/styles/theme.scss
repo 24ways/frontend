@@ -31,6 +31,6 @@ a {
 }
 
 .Header {
-  background-color: darken(map-get($color-years, year-2016), 30%);
-  color: $color-brand--light;
+  background-color: palette(primary, dark);
+  color: palette(primary, light);
 }

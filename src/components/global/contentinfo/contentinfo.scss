@@ -5,6 +5,10 @@
   justify-content: space-between;
   padding: spacing(inset, s);
 
+  @media screen and (min-width: 31.5em) {
+    margin-right: 4.5rem; // 72px
+  }
+
   @media print {
     a {
       display: none;

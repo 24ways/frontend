@@ -2,10 +2,10 @@
   background-color: white;
   padding-left: 2.5rem;
   position: relative;
-  margin-bottom: spacing(stack);
+  margin: spacing(stack);
 
   @media screen {
-    box-shadow: 1px 1px 0 rgba($color-neutral, 0.15);
+    box-shadow: 1px 1px 0 $color-neutral--alpha-2;
   }
 
   @media screen and (min-width: 40em) {
@@ -14,7 +14,7 @@
 
   &.c-comment--unhelpful {
     background-color: transparent;
-    box-shadow: 0 0 0 1px rgba($color-neutral, 0.15);
+    box-shadow: 0 0 0 1px $color-neutral--alpha-2;
   }
 
   .c-avatar {
@@ -52,10 +52,14 @@
   }
 
   a.c-comment__permalink {
-    color: $color-neutral;
+    color: palette(neutral);
 
     &:hover {
-      color: $color-neutral--dark;
+      color: palette(primary);
+    }
+
+    &:active {
+      color: palette(primary, light);
     }
   }
 }
@@ -66,7 +70,7 @@
 
 .c-comment__footer {
   @include caption();
-  border-top: 1px solid $color-neutral--lightest;
+  border-top: 1px solid $color-neutral--alpha-1;
   padding: spacing(inset, s);
   text-align: right;
 }

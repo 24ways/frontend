@@ -23,6 +23,7 @@
 .c-site-nav__label {
   @include ui-link;
   @include ui-text;
+  display: block;
   text-align: center;
   padding: spacing(inset);
 

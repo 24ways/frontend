@@ -1,18 +1,18 @@
 @keyframes loading {
   0% {
-    border-top-color: $color-brand;
+    border-top-color: palette(primary);
   }
 
   25% {
-    border-right-color: $color-brand;
+    border-right-color: palette(primary);
   }
 
   50% {
-    border-bottom-color: $color-brand;
+    border-bottom-color: palette(primary);
   }
 
   75% {
-    border-left-color: $color-brand;
+    border-left-color: palette(primary);
   }
 }
 

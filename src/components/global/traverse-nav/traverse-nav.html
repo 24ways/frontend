@@ -2,14 +2,12 @@
 <div class="c-traverse-nav">
   {%- if traverse.prev -%}
   <a class="c-traverse-nav__item" rel="prev" href="{{ traverse.prev.url }}" data-sequence-title="{{ traverse.prev.title }}">
-    <span class="c-traverse-nav__icon">{% include "prev.svg" %}</span>
-    <span class="c-traverse-nav__label">Previous {{ traverse.type }}</span>
+    {% include "prev.svg" %}
   </a>
   {%- endif -%}
   {%- if traverse.next -%}
   <a class="c-traverse-nav__item" rel="next" href="{{ traverse.next.url }}" data-sequence-title="{{ traverse.next.title }}">
-    <span class="c-traverse-nav__icon">{% include "next.svg" %}</span>
-    <span class="c-traverse-nav__label">Next {{ traverse.type }}</span>
+    {% include "next.svg" %}
   </a>
   {%- endif -%}
 </div>

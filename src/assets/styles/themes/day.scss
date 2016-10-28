@@ -1,14 +1,17 @@
-@each $name, $color in $color-days {
+@each $name, $color-day in $color-days {
+  $color-day--dark: scale-color($color-day, $lightness: -40%);
+  $color-day--light: scale-color($color-day, $lightness: 92%);
+
   .t-#{$name} {
-    background-color: lighten($color, 48%);
+    background-color: $color-day--light;
 
     a {
-      color: $color;
-      border-color: rgba($color, 0.2);
+      color: $color-day;
+      border-color: rgba($color-day, 0.2);
 
       &:hover {
-        color: darken($color, 10%);
-        border-color: rgba(darken($color, 10%), 0.33);
+        color: $color-day--dark;
+        border-color: rgba($color-day--dark, 0.33);
       }
     }
   }

@@ -1,24 +1,27 @@
-@each $name, $color in $color-years {
+@each $name, $color-year in $color-years {
+  $color-year--dark: scale-color($color-year, $lightness: -56%);
+  $color-year--darker: scale-color($color-year, $lightness: -72%);
+
   .t-#{$name} {
     .c-preface {
-      background-color: darken($color, 25%);
+      background-color: $color-year--dark;
     }
 
     .c-banner {
-      background-color: darken($color, 30%);
+      background-color: $color-year--darker;
     }
 
     .c-traverse-nav__item::after {
-      background-color: rgba(darken($color, 30%), 0.75);
+      background-color: rgba($color-year--darker, 0.8);
     }
 
     .s-prose--article {
       h2 {
-        color: darken($color, 20%);
+        color: $color-year--dark;
       }
 
       .lede {
-        color: darken($color, 30%);
+        color: $color-year--darker;
       }
     }
   }

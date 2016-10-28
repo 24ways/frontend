@@ -1,42 +1,37 @@
 .c-menu {
+  display: block;
   position: fixed;
-  top: 0;
-  right: 0;
-  z-index: $z-index-overlay;
-  color: $color-neutral--light;
+  z-index: ($z-index-modal + 1);
 
   @media screen and (max-width: 31.4375em) {
+    top: 0.25rem;
+    right: 0.25rem;
     color: white;
 
-    &:hover {
+    &:hover,
+    &:active {
       color: white;
     }
+
+    [data-menu=open] & {
+      color: $color-neutral;
+    }
+  }
+
+  @media screen and (min-width: 31.5em) {
+    @include ui-link();
+    top: 0;
+    right: 0;
+    box-shadow: inset 0 -1px 0 $color-neutral--lightest;
+    padding: spacing(inset);
   }
 
   @media print {
     display: none;
   }
-
-  .js-enhanced & {
-    position: fixed;
-  }
 }
 
-.c-menu__icon {
-  @media screen and (min-width: 31.5em) {
-    @include ui-link();
-    box-shadow: inset 0 -1px 0 $color-neutral--lightest;
-    padding: 0.75rem; // 12px
-  }
-
-  [data-menu=open] & {
-    @media screen and (max-width: 31.4375em) {
-      color: $color-neutral;
-    }
-  }
-}
-
-.c-menu__icon-line {
+.c-menu__line {
   transform-origin: 50% 50%;
 
   // Transitions
@@ -88,8 +83,4 @@
       transform: translateY(-500%);
     }
   }
-}
-
-.c-menu__label {
-  @include hidden();
 }

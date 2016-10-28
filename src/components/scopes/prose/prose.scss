@@ -216,7 +216,7 @@
   }
 
   h2 {
-    color: darken($color-brand, 20%);
+    color: palette(primary, dark);
     font-size: 1.125em; // 18px
     line-height: 1.1111; // 20px
     font-weight: 700;

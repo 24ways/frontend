@@ -6,7 +6,7 @@
       left: 0;
       right: 4.5rem; // 72px
       overflow: hidden;
-      transition: width 0.2s ease-out;
+      transition: width $duration-navigation ease-out;
     }
   }
 
@@ -20,7 +20,6 @@
     width: 100%;
 
     @media screen and (min-width: 31.5em) {
-      padding-left: 3.5rem; // 56px
       height: 4.5rem; // 72px
     }
 

@@ -1,3 +1,4 @@
-<svg width="48" height="48" viewBox="0 0 240 240">
-  <path d="M170 120l-85 85-7-7 78-78-78-78 7-7"/>
+<svg class="c-traverse-nav__icon" width="40" height="40" viewBox="0 0 200 200" role="img" aria-labelledby="c-traverse-nav--next__label">
+  <title id="c-traverse-nav--next__label">Next {{ traverse.type }}</title>
+  <path d="M150 100l-85 85-7-7 78-78-78-78 7-7"/>
 </svg>
