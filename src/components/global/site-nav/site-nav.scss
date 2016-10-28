@@ -21,14 +21,13 @@
 }
 
 .c-site-nav__label {
-  @include ui-link();
-  font-size: 0.8125em; // 13px
-  line-height: 1.2308; // 16px
+  @include ui-link;
+  @include ui-text;
   text-align: center;
-  padding: 1rem 0.5rem; // 16px 8px
+  padding: spacing(inset);
 
   @media screen and (min-width: 31.5em) {
+    padding: spacing(inset, s);
     text-align: left;
-    padding: 0.625rem 0.5rem; // 10px 8px
   }
 }

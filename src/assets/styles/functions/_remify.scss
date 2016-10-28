@@ -1,0 +1,39 @@
+$pixelBase : 16;
+
+@function parse_int($n) {
+  @return $n / ($n * 0 + 1);
+}
+
+@function remify($values) {
+  $list: ();
+
+  @each $value in $values {
+    // If a 0 or auto just add it to the list
+    @if $value == 0 or type-of($value) != 'number' {
+      $list: append($list, $value);
+    }
+
+    // Else split the unit and value
+    @else {
+      $unit: unit($value);
+      $val: parse_int($value);
+
+      // Convert px to rem
+      @if ($unit == 'px') {
+        $list: append($list, ($val / $pixelBase) + rem);
+      }
+
+      // Leave rems alone
+      @else if($unit == 'rem') {
+        $list: append($list, $value);
+      }
+
+      // Return a warning for unknown units
+      @else {
+        @warn 'There is no unit conversion for #{$unit}';
+      }
+    }
+  }
+
+  @return $list();
+}

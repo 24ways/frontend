@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 2em 0;
 
   @media screen and (min-width: 50em) {
     flex-direction: row;
@@ -10,7 +9,7 @@
 }
 
 .c-section__header {
-  padding: 1em; // 16px
+  padding: spacing(inset);
 
   @media screen and (min-width: 50em) {
     flex: 1 0 20%;
@@ -20,22 +19,19 @@
   }
 
   @media print {
-    padding: 0 1em; // 0 16px
+    border-top: 2px solid black;
+    padding-bottom: 0;
   }
 }
 
 .c-section__title {
   @include label();
-
-  @media print {
-    border-top: 2px solid black;
-    padding: 1em 0; // 16px 0
-  }
 }
 
 .c-section__main {
   box-shadow: 0 -1px 0 $color-neutral--alpha-2;
-  padding: 1em;
+  margin: spacing(stack, l);
+  padding: spacing(inset);
 
   @media screen and (min-width: 50em) {
     flex: 1 0 75%;
@@ -50,11 +46,6 @@
 
   @media screen and (min-width: 80em) {
     padding-right: 25%;
-  }
-
-  @media print {
-    border: 0;
-    padding-top: 0;
   }
 }
 

@@ -2,7 +2,7 @@
   background-color: white;
   padding-left: 2.5rem;
   position: relative;
-  margin-bottom: 0.75rem;
+  margin-bottom: spacing(stack);
 
   @media screen {
     box-shadow: 1px 1px 0 rgba($color-neutral, 0.15);
@@ -30,7 +30,7 @@
 }
 
 .c-comment__header {
-  padding: 0.5rem 0.75rem 0.5rem 0;
+  padding: spacing(inset, s);
 
   @media print {
     border-top: 1px solid black;
@@ -61,12 +61,12 @@
 }
 
 .c-comment__main {
-  padding: 0.5rem 0.75rem 0.5rem 0;
+  padding: spacing(inset, s);
 }
 
 .c-comment__footer {
   @include caption();
   border-top: 1px solid $color-neutral--lightest;
-  padding: 0.5rem 0.75rem 0.5rem 0;
+  padding: spacing(inset, s);
   text-align: right;
 }

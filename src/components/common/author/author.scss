@@ -8,8 +8,7 @@
   @include caption();
   color: white;
   background-color: rgba($color-neutral--darkest, 0.75);
-  margin: 0;
-  padding: 0.5rem;
+  padding: spacing(inset, s);
   position: absolute;
   right: 0;
   bottom: 0;

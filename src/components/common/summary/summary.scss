@@ -1,6 +1,6 @@
 .c-summary {
   background-color: white;
-  padding: 1em;
+  padding: spacing(inset);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -38,7 +38,7 @@
 
 .c-summary__header {
   min-height: 3rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: spacing(stack);
 
   @media print {
     border-top: 1px solid black;
@@ -63,7 +63,7 @@
 
 .c-summary__main {
   @include summary();
-  margin-bottom: 0.75rem;
+  margin: spacing(stack);
 
   a {
     font-weight: 700;
@@ -72,7 +72,9 @@
 }
 
 .c-summary__footer {
-  margin-top: auto;
+  @media screen {
+    margin-top: auto;
+  }
 }
 
 .c-summary__meta {

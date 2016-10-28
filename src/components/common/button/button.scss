@@ -3,7 +3,7 @@
   color: white;
   text-align: center;
   background-color: $color-link;
-  padding: 0.875rem 1.5em;
+  padding: spacing(inset); // SPACE: SQUISHED INSET
   display: inline-block;
 
   &:hover {

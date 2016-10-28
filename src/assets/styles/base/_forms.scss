@@ -96,10 +96,6 @@ fieldset {
   body:not(:-moz-handler-blocked) & {
     display: table-cell; // 2
   }
-
-  @media print {
-    display: none;
-  }
 }
 
 // 1. Correct the text wrapping in Edge and IE.

@@ -1,9 +1,9 @@
 .c-contentinfo {
-  @include caption();
+  @include ui-text;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0.75rem 1rem; // 8px 16px
+  padding: spacing(inset, s);
 
   @media print {
     a {

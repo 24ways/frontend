@@ -1,16 +1,20 @@
 .c-field {
-  line-height: 1.5;
+  line-height: 1.25;
   position: relative;
 
-  + .c-field {
-    margin-top: 0.75rem; // 12px
+  &:not(:last-of-type) {
+    margin: spacing(stack);
+  }
+
+  @media print {
+    display: none;
   }
 }
 
 .c-field__label {
   display: block;
   font-weight: 700;
-  padding: 0.875rem 0.75rem;
+  padding: spacing(inset);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -23,7 +27,8 @@
   box-shadow: inset 1px 1px 0 rgba($color-neutral, 0.15);
   border: 0;
   border-radius: 0;
-  padding: 0.875rem 0.5rem 0.875rem 6rem;
+  padding: spacing(inset);
+  padding-left: 6rem;
 
   &:focus {
     outline: 0 none;
