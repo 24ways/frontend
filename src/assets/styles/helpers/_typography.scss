@@ -4,67 +4,123 @@
 //
 // =========================================================
 
-@mixin heading {
-  font: 400 2rem/1.125 $font-family-serif; // 32px/36px
-  letter-spacing: -0.0625rem; // -1px
+@mixin fluid($property, $min-vw, $max-vw, $min-value, $max-value) {
+  #{$property}: $min-value;
 
-  @media screen and (min-width: 31.5em) {
-    font-size: 2.5rem; // 40px
-    line-height: 1.1; // 44px
+  @media screen and (min-width: $min-vw) {
+    #{$property}: calc(#{$min-value} + #{parse-int($max-value - $min-value)} * (100vw - #{$min-vw}) / #{parse-int($max-vw - $min-vw)});
   }
 
-  @media screen and (min-width: 50em) {
-    font-size: 3rem; // 48px
-    line-height: 1.1667; // 56px
+  @media screen and (min-width: $max-vw) {
+    #{$property}: $max-value;
   }
 }
 
-@mixin title {
-  font: 400 1.25rem/1.2 $font-family-serif; // 20px/24px
-  letter-spacing: -0.03125rem; // -0.5px
-}
+@mixin typeset($type, $level: 1, $font-weight: null) {
+  // Title
+  // Typically used on titles of containers and modules
+  @if $type == 'title' {
+    font-family: $font-family-sans;
+    font-weight: if($font-weight, $font-weight, 700);
+    font-variant: common-ligatures lining-nums;
+    letter-spacing: -0.03125em;
+    line-height: 0.95;
 
-@mixin lede {
-  font: 400 1.125rem/1.3334 $font-family-serif; // 18px/24px
-  letter-spacing: -0.0625rem; // -1px
+    @if $level == 1 {
+      font-size: 1.25rem;
+    }
 
-  @media screen and (min-width: 40em) {
-    font-size: 1.25rem; // 20px
-    line-height: 1.4; // 28px
+    @if $level == fluid {
+      @include fluid(font-size, 30rem, 60rem, 1.5rem, 4rem);
+    }
   }
 
-  @media screen and (min-width: 60em) {
-    font-size: 1.5rem; // 24px
-    line-height: 1.3334; // 32px
+  // Heading
+  // Typically used for headings within areas of prose content
+  @if $type == 'heading' {
+    font-family: $font-family-sans;
+    font-variant: common-ligatures lining-nums;
+    line-height: 1.25;
+    letter-spacing: -0.025em;
+
+    @if $level == 1 {
+      font-size: 1em;
+    }
+
+    @if $level == 2 {
+      font-size: 1.25em;
+    }
+
+    @if $level == 3 {
+      font-size: 1.5em;
+    }
   }
-}
 
-@mixin summary {
-  font-size: 0.875rem; // 14px
-  line-height: (20/14); // 20px
-}
-
-@mixin caption {
-  font: 400 0.75rem/#{(16/12)} $font-family-sans; // 12px/16px
-
-  @media screen and (min-width: 40em) {
-    font-size: 0.8125rem; // 13px
-    line-height: (16/13); // 16px
+  // Lede
+  // Typically used for introductory text
+  @if $type == 'lede' {
+    @include fluid('font-size', 30rem, 60rem, 1.125rem, 1.5rem);
+    font-family: $font-family-sans;
+    font-weight: if($font-weight, $font-weight, 400);
+    font-variant: common-ligatures oldstyle-nums;
+    line-height: 1.25;
+    letter-spacing: -0.025em;
   }
 
-  @media screen and (min-width: 50em) {
-    font-size: 0.875rem; // 14px
-    line-height: (16/14); // 16px
+  // Caption
+  // Typically used for supporting text
+  @if $type == 'caption' {
+    @include fluid('font-size', 30rem, 60rem, 0.875rem, 1rem);
+    font-family: $font-family-sans;
+    font-weight: if($font-weight, $font-weight, 400);
+    font-variant: common-ligatures lining-nums;
+    line-height: 1.25;
   }
-}
 
-@mixin label {
-  font: 400 1rem/1.5 $font-family-sans; // 16px/20px
-  letter-spacing: 0.0625rem; // 1px
-  text-transform: uppercase;
-}
+  // Prose
+  // Typically used for running text
+  @if $type == 'prose' {
+    font-family: $font-family-serif;
+    font-weight: if($font-weight, $font-weight, 400);
+    font-variant: common-ligatures oldstyle-nums;
+    line-height: 1.5;
+    letter-spacing: -0.0125em;
+    hyphens: auto;
+    hanging-punctuation: first;
 
-@mixin ui-text {
-  font-size: 0.8125em; // 13px
-  line-height: (16/13);
+    @if $level == 1 {
+      font-size: 0.875rem;
+    }
+
+    @if $level == 2 {
+      font-size: 1rem;
+    }
+
+    @if $level == fluid {
+      @include fluid('font-size', 30rem, 60rem, 0.875rem, 1.25rem);
+    }
+
+    strong,
+    dt {
+      font-family: $font-family-sans;
+      opacity: 0.8;
+    }
+  }
+
+  // Label sizes and styles
+  // Typically used on UI labels and controls
+  @if $type == 'label' {
+    font-family: $font-family-sans;
+    font-weight: if($font-weight, $font-weight, 400);
+
+    @if $level == 1 {
+      font-size: 0.8125rem;
+      line-height: (16/13);
+    }
+
+    @if $level == 2 {
+      font-size: 1rem;
+      line-height: (20/16);
+    }
+  }
 }

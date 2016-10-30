@@ -1,6 +1,6 @@
 .c-promo {
   display: block;
-  margin-bottom: 0.75rem;
+  margin-bottom: $space-small;
 }
 
 .c-promo__image {
@@ -9,10 +9,10 @@
 }
 
 .c-promo__message {
+  margin-bottom: $space-small;
   color: $color-text;
-  margin-bottom: 0.5rem;
 }
 
 .c-promo__url {
-  @include caption();
+  @include typeset(label, 1);
 }

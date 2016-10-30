@@ -1,6 +1,6 @@
 context:
   content: |
-    <p class="lede">Video is a bigger part of the web experience than ever before. With native browser support for HTML5 video elements freeing us from the tyranny of plugins, and the availability of faster internet connections to the workplace, home and mobile networks, it's now pretty straightforward to publish video in a way that can be consumed in all sorts of ways on all sorts of different web devices.</p>
+    <p class="lede">Video is a bigger part of the web experience than ever before. With native browser support for HTML5 video elements freeing us from the tyranny of plugins, and the availability of faster internet connections to the workplace, home and mobile networks, it’s now pretty straightforward to publish video in a way that can be consumed in all sorts of ways on all sorts of different web devices.</p>
 
     I recently worked on a project where the client had shot some dedicated video shorts to publish on their site. They also had some five-second motion graphics produced to top and tail the videos with context and branding. This pretty common requirement is a great idea on the web, where a user might land at your video having followed a link and be viewing a page without much context.
 
@@ -16,9 +16,10 @@ context:
       <figcaption>Index cards represent each feature the rental property software would launch with.</figcaption>
     </figure>
 
-    ## Adding bumpers to a video
+    ## Heading 2
     The simplest way to add bumpers to a video would be to edit them on to the start and end of the video file itself. Cooking the bumpers into the video file is easy, but should you ever want to update them it can become a real headache. If the branding needs updating, for example, you'd need to re-edit and re-encode all your videos. Not a fun task.
 
+    ### Heading 3
     What if the bumpers could be added dynamically? That would enable you to use the same bumper for multiple videos (decreasing download time for users who might watch more than one) and to update the bumpers whenever you wanted. You could change them seasonally, update them for special promotions, run different advertising slots, perform multivariate testing, or even target different bumpers to different users.
 
     > The responsive projects I've worked on have had a lot of success combining design and development into one hybrid phase, bringing the two teams into one highly collaborative group.
@@ -29,9 +30,10 @@ context:
 
     The trade-off, of course, is that if you dynamically add your bumpers, there's a chance that a user in a given circumstance might not see the bumper. For example, if the main video feature was uploaded to YouTube, you'd have no way to control the playback. As always, you need to weigh up the pros and cons and make your choice.
 
-    ## HTML5 bumpers
+    #### Heading 4
     If you wanted to dynamically add bumpers to your HTML5 video, how would you go about it? That was the question I found myself needing to answer for this particular client project.
 
+    ##### Heading 5
     My initial thought was to treat it just like an image slideshow. If I were building a slideshow that moved between images, I'd use CSS absolute positioning with `z-index` to stack the images up on top of each other in a pile, with the first image on top. To transition to the second image, I'd use JavaScript to fade the top image out, revealing the second image beneath it.
 
     <figure>
@@ -40,7 +42,6 @@ context:
 
     Now that video is just a native object in the <span class="caps">DOM</span>, just like an image, why not do the same? Stack the videos up with the opening bumper on top, listen for the video's `onended` event, and fade it out to reveal the main feature behind. Good idea, right?
 
-    ### Wrong
     Remember that this is the web. It's never going to be that easy. The problem here is that many non-desktop devices use native, dedicated video players. Think about watching a video on a mobile phone -- when you play the video, the phone often goes full-screen in its native player, leaving the web page behind. There's no opportunity to fade or switch `z-index`, as the video isn't being viewed in the page. Your page is left powerless. Powerless!
 
     <figure>
@@ -51,7 +52,6 @@ context:
 
     ***
 
-    ### Right
     Those of us with particularly long memories might recall a time before CSS, when we'd have to use JavaScript to perform image rollovers. As CSS background images weren't a practical reality, we would use lots of `<img>` elements, and perform a rollover by modifying the `src` attribute of the image.
 
     Turns out, this old trick of modifying the source can help us out with video, too. In most cases, modifying the `src` attribute of a `<video>` element, or perhaps more likely the `src` attribute of a `source` element, will swap from one video to another.

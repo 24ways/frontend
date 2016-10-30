@@ -4,10 +4,10 @@
   align-items: flex-start;
   align-content: flex-start;
   height: 100%;
-  box-shadow: inset 0 1px 0 $color-neutral--lightest;
+  box-shadow: inset 0 1px 0 $navigation-color--offset;
 
   @media screen and (min-width: 31.5em) {
-    box-shadow: inset -1px 0 0 $color-neutral--lightest;
+    box-shadow: 0 -1px 0 $navigation-color--offset;
   }
 
   .js-enhanced & {
@@ -18,33 +18,34 @@
 .c-topics-nav__item {
   flex: 1 0 percentage(1/3);
 
-  @media screen and (min-width: 50em) {
-    flex-basis: percentage(1/6);
-  }
-
-  .js-enhanced & {
-    @media screen and (min-width: 31.5em) {
+  @media screen and (min-width: 31.5em) {
+    [data-menu] & {
       flex-basis: percentage(1/2);
       min-width: percentage(1/2);
     }
   }
-}
 
-.c-topics-nav__icon {
-  margin: 0 auto 0.5rem;
+  @media screen and (min-width: 50em) {
+    flex-basis: percentage(1/6);
+  }
 
-  @media screen and (max-width: 31.4375em) {
-    height: 2rem; // 32px
-    width: 2rem; // 32px
+  svg {
+    height: $size-medium;
+    width: $size-medium;
+    margin: 0 auto $space-xsmall;
+
+    @media screen and (min-width: 31.5em) {
+      height: $size-large;
+      width: $size-large;
+    }
   }
 }
 
 .c-topics-nav__label {
-  @include ui-link;
-  @include ui-text;
+  @include ui-link($background: true);
+  @include typeset(label, 2);
   display: block;
-  box-shadow: 1px 1px 0 $color-neutral--lightest;
-  padding: spacing(inset);
+  padding: $space-medium;
+  box-shadow: inset -1px -1px 0 $navigation-color--offset;
   text-align: center;
-  text-transform: uppercase;
 }

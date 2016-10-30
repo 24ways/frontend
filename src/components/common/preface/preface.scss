@@ -1,9 +1,9 @@
 .c-preface {
-  padding: 4.5rem 1rem 1rem;
+  overflow: hidden;
+  padding: $space-xxlarge $space-large $space-medium;
   background-color: palette(primary, dark);
   background-image: inline('diamond.svg');
   background-repeat: repeat;
-  overflow: hidden;
 
   @media screen and (min-width: 50em) {
     padding-left: 25%;
@@ -11,22 +11,17 @@
 }
 
 .c-preface__title {
-  @include heading();
-  color: palette(primary, light);
+  @include typeset(title, fluid);
+  display: flex;
+  align-items: flex-start;
   position: relative;
-  margin-bottom: 0.5rem;
+  margin-bottom: $space-small;
+  color: palette(primary, light);
 
   svg {
-    display: inline-block;
-    margin-right: 0.25em;
-
-    @media screen and (min-width: 50em) {
-      height: 6rem;
-      width: 6rem;
-      position: absolute;
-      left: -2.5em;
-      top: 0;
-    }
+    width: 1em;
+    height: 1em;
+    margin-right: $space-small;
   }
 }
 
@@ -35,23 +30,25 @@
   color: rgba(white, 0.75);
 
   .s-prose p:first-of-type {
-    @include lede;
+    @include typeset(lede);
   }
 
   .c-avatar {
     width: 50%;
     float: right;
-    margin: -7.5% -7.5% 0.75rem 0.75rem;
+    margin-top: -7.5%;
+    margin-right: -7.5%;
 
     @media screen and (min-width: 50em) {
       float: left;
-      margin: -7.5% 0.75rem 0.75rem -33%;
+      margin-left: -33%;
+      margin-right: $space-medium;
     }
   }
 
   a {
-    color: white;
     border-bottom: 1px solid rgba(white, 0.25);
+    color: white;
 
     &:hover {
       border-bottom-color: rgba(white, 0.75);

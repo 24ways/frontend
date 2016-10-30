@@ -1,9 +1,5 @@
 $pixelBase : 16;
 
-@function parse_int($n) {
-  @return $n / ($n * 0 + 1);
-}
-
 @function remify($values) {
   $list: ();
 
@@ -16,7 +12,7 @@ $pixelBase : 16;
     // Else split the unit and value
     @else {
       $unit: unit($value);
-      $val: parse_int($value);
+      $val: parse-int($value);
 
       // Convert px to rem
       @if ($unit == 'px') {

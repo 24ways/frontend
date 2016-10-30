@@ -1,7 +1,7 @@
 pre[class*=language-] {
   text-align: left;
   direction: ltr;
-  padding: spacing(inset);
+  padding: $space-medium;
 
   code {
     background-color: transparent;

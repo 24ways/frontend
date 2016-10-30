@@ -1,4 +1,7 @@
 {
-  "size-1": 48,
-  "size-2": 72
+  "size-xsmall": "0.25rem",
+  "size-small": "0.75rem",
+  "size-medium": "1.5rem",
+  "size-large": "3rem",
+  "size-xlarge": "4.5rem"
 }

@@ -1,11 +1,11 @@
 .c-main {
-  background-color: palette(neutral, lightest);
+  background-color: $navigation-color--offset;
 
   @media screen and (max-width: 31.4375em) {
-    margin-top: 3em; // 48px
+    margin-top: $banner-height--small;
   }
 
   @media screen and (min-width: 31.5em) {
-    margin-right: 4.5rem; // 72px
+    margin-right: $navigation-width--large;
   }
 }

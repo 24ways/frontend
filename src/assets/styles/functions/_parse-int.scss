@@ -1,0 +1,10 @@
+// ========================================================
+//
+// Parse Integer
+// https://github.com/sass/sass/issues/533
+//
+// ========================================================
+
+@function parse-int($value) {
+  @return $value / ($value * 0 + 1);
+}

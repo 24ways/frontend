@@ -1,12 +1,12 @@
 .c-top-nav {
-  @include ui-link();
+  @include ui-link($background: true);
   display: block;
   position: fixed;
-  bottom: 9rem; // 144px
+  bottom: 8rem;
   right: 0;
   z-index: ($z-index-modal + 1);
-  box-shadow: 0 -1px 0 $color-neutral--lightest;
-  padding: spacing(inset);
+  padding: $space-medium;
+  box-shadow: 0 -1px 0 $navigation-color--offset;
   opacity: 0;
   transition: opacity 0.5s ease-in;
 

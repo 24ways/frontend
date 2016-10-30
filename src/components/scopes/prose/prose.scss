@@ -1,28 +1,29 @@
 .s-prose {
-  font-variant: common-ligatures oldstyle-nums;
-  hyphens: auto;
-
-  > * {
-    // hanging-punctuation: first;
-    margin-bottom: 0.75em;
-  }
+  @include typeset(prose, 2);
 
   .caps {
-    letter-spacing: 0.0625rem; // 1px
+    font-variant: lining-nums small-caps;
+    letter-spacing: 0.0625em;
   }
 
   .caption {
-    @include caption;
+    @include typeset(caption);
     opacity: 0.9;
-
-    strong,
-    dt {
-      opacity: 1;
-    }
   }
 
   .lede {
-    @include lede;
+    @include typeset(lede);
+    position: relative;
+    top: ($space-xsmall * -1);
+  }
+
+  > * {
+    margin-bottom: 0.75em;
+  }
+
+  strong,
+  dt {
+    color: initial;
   }
 
   ol,
@@ -73,12 +74,12 @@
   }
 
   li {
-    margin-bottom: 0.25em; // 4px
+    margin-bottom: 0.25em;
   }
 
   li li,
   dd {
-    margin-left: 2rem;
+    margin-left: 2em;
   }
 
   li > *,
@@ -89,10 +90,10 @@
   pre,
   code,
   samp {
-    outline: 0.125em solid rgba(black, 0.05);
+    outline: 0.125em solid $color-neutral--alpha-1;
     margin-right: 0.25em;
     margin-left: 0.25em;
-    background-color: rgba(black, 0.05);
+    background-color: $color-neutral--alpha-1;
     color: $color-neutral--darker;
   }
 
@@ -111,60 +112,35 @@
 }
 
 .s-prose--article {
+  @include typeset(prose, fluid);
+
   pre {
-    font-size: 0.875em; // 14px
-    line-height: 1.4286; // 20px
-    margin: 1em -0.5em;
-    padding: 0 0.5em;
-
-    @media screen and (min-width: 40em) {
-      // Base font size now 18px within article body
-      line-height: 1.3334; // 24px
-    }
-
-    @media screen and (min-width: 40em) {
-      // Base font size now 20px within article body
-      line-height: 1.4; // 28px
-    }
+    font-size: 0.875em;
+    line-height: 1.5;
+    margin: 1em -0.25em;
+    padding: 0 0.25em;
   }
 
   blockquote {
-    border-left: 0.25rem solid rgba($color-text, 0.15);
-    margin: 1.5em 0 1.5em -1rem; // 24px 0 24px -16px
-    padding-left: 0.75rem; // 12px
+    border-left: 0.25rem solid $color-neutral--alpha-2;
+    margin-bottom: 1.5em;
+    padding-left: 1em;
 
     p {
-      font-family: 'Merriweather', serif;
-      font-weight: 400;
-      font-size: 1.125em; // 18px
-      line-height: 1.5556; // 28px
-      letter-spacing: -0.0625rem; // -1px
-      margin: 0.75rem 0; // 12px 0
-
-      @media screen and (min-width: 40em) {
-        font-size: 1.25rem; // 20px
-        line-height: 1.6; // 32px
-      }
-
-      @media screen and (min-width: 60em) {
-        font-size: 1.3125rem; // 21px
-        line-height: 1.5238; // 32px
-      }
+      font-size: 1.25em;
+      line-height: 1.25;
+      margin-bottom: 0.75em;
     }
 
     footer,
     cite {
-      font-size: 1rem;
-      font-family: 'Lato', sans-serif;
-      font-weight: 400;
-      line-height: 1;
-      letter-spacing: normal;
+      @include typeset(caption);
     }
   }
 
   figure,
   p.image { // ! Legacy
-    margin: 1.5em -1em; // 24px -16px
+    margin: $space-large ($space-large * -1);
 
     @media screen and (min-width: 50em) {
       margin-left: 0;
@@ -172,7 +148,7 @@
     }
 
     @media screen and (min-width: 60em) {
-      margin-right: -25.8334%;
+      margin-right: -25%;
     }
 
     img {
@@ -183,11 +159,12 @@
 
   figcaption,
   p.image span.caption { // ! Legacy
-    @include caption;
-    border-bottom: 1px solid rgba($color-text, 0.2);
-    padding: 0.75rem 0; // 8px 0
-    margin: 0 1rem;
+    @include typeset(caption);
     display: block;
+    border-bottom: 1px solid rgba($color-text, 0.2);
+    margin-right: $space-large;
+    margin-left: $space-large;
+    padding: $space-medium 0;
 
     @media screen and (min-width: 50em) {
       margin: 0;
@@ -207,76 +184,44 @@
     }
   }
 
-  h1 {
-    font-size: 2rem; // 32px
-    font-weight: 400;
-    line-height: 1.125; // 36px
-    letter-spacing: -0.0625rem;
-    margin: 1.5em 0 0.5em; // 24px 0 8px
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 2em 0 0.25em;
   }
 
   h2 {
-    color: palette(primary, dark);
-    font-size: 1.125em; // 18px
-    line-height: 1.1111; // 20px
+    @include typeset(heading, 3);
     font-weight: 700;
-    letter-spacing: 0.05rem; // 1px
-    text-transform: uppercase;
-    margin: 1.7778em 0 0; // 32px 0 0
-
-    @media screen and (min-width: 40em) {
-      // Base font size now 20px within article body
-      font-size: 1.2em; // 24px
-      line-height: 1.2; // 28px
-      margin: 2em 0 0; // 48px 0 0
-    }
   }
 
   h3 {
-    color: darken($color-text, 25%);
-    font-size: 1em; // 16px
-    font-weight: 700;
-    line-height: 1.25; // 20px
-    margin: 2em 0 0; // 32px 0 0
-
-    @media screen and (min-width: 40em) {
-      // Base font size now 20px within article body
-      font-size: 1em; // 20px
-      line-height: 1.2; // 24px
-      margin: 1.6em 0 0; // 32px 0 0
-    }
+    @include typeset(heading, 2);
+    color: palette(primary, dark);
   }
 
   h4 {
-    font-size: 1em; // 16px
-    font-weight: 400;
-    line-height: 1.25; // 20px
-    margin: 2rem 0 0.5em; // 32px 0 8px
-    opacity: 0.9;
+    @include typeset(heading, 1);
+    color: rgba(palette(primary, dark), 0.9);
+    font-weight: 700;
   }
 
   h5 {
-    font-size: 1rem; // 16px
-    line-height: 1; // 16px
-    margin: 1.5rem 0 0.5em; // 24px 0 8px
-  }
-
-  h6 {
-    font-size: 0.875rem; // 14px
-    line-height: 1.1429; // 16px
+    @include typeset(heading, 1);
+    letter-spacing: 0.025em;
     text-transform: uppercase;
-    letter-spacing: 0.125rem; // 2px
-    margin: 1.5rem 0 0.5em; // 24px 0 8px
+    opacity: 0.9;
   }
 
   hr {
     text-align: center;
-    margin: 2em 0; // 32px 0
+    margin: 2em 0 4em;
 
     &::after {
       color: rgba($color-text, 0.25);
       content: '\25C6 \25C6 \25C6';
-      letter-spacing: 0.75rem; // 12px
+      letter-spacing: $space-medium;
       height: 0;
     }
   }
@@ -292,7 +237,7 @@
   }
 
   caption {
-    @include caption;
+    @include typeset(caption);
     color: $color-neutral;
     caption-side: bottom;
     text-align: left;

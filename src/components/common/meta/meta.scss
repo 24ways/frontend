@@ -1,12 +1,13 @@
 .c-meta {
+  @include typeset(label, 1);
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: 1em;
+  margin-bottom: $space-medium;
   border-top: 1px solid $color-neutral--alpha-2;
-  border-bottom: 1px solid $color-neutral--alpha-2;
-  padding: 0.75rem 0;
+  padding: $space-small 0 $space-large;
 
   @media screen and (min-width: 50em) {
+    @include typeset(label, 2);
     flex-flow: column nowrap;
     border: 0;
     padding: 0;
@@ -14,7 +15,6 @@
 }
 
 .c-meta__item {
-  @include caption();
   flex: 0 0 auto;
 
   @media screen and (max-width: 24.9375em) {
@@ -26,15 +26,15 @@
   @media print, screen and (max-width: 49.9375em) {
     &:not(:last-child)::after {
       content: '•';
-      margin: 0 0.5rem;
+      margin: 0 $space-small;
       opacity: 0.5;
     }
   }
 
   @media screen and (min-width: 50em) {
-    text-align: right;
-    box-shadow: 0 -1px 0 $color-neutral--alpha-1;
-    padding: 0.75rem 0 1.5rem;
     display: block;
+    border-top: 1px solid $color-neutral--alpha-2;
+    padding: $space-small 0 $space-large;
+    text-align: right;
   }
 }

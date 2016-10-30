@@ -18,10 +18,8 @@ Breakpoint tokens for use within `@media` queries.
 
 Variable  | Value
 ----------|------------
-{% for key, object in breakpoints -%}
-{% for key, value in object -%}
+{% for key, value in breakpoints -%}
 `${{ key }}` | {{ value }}
-{% endfor -%}
 {% endfor -%}
 
 ## Font families
@@ -39,5 +37,23 @@ Layering tokens to set the `z-index` layer value for elements.
 Variable  | Value
 ----------|------------
 {% for key, value in layers -%}
+`${{ key }}` | {{ value }}
+{% endfor -%}
+
+## Sizes
+Sizing tokens for describing the dimensions of elements.
+
+Variable  | Value
+----------|------------
+{% for key, value in sizes -%}
+`${{ key }}` | {{ value }}
+{% endfor -%}
+
+## Spacing
+Spacing tokens for describing the distance between elements.
+
+Variable  | Value
+----------|------------
+{% for key, value in spaces -%}
 `${{ key }}` | {{ value }}
 {% endfor -%}

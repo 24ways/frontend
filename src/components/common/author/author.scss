@@ -1,18 +1,18 @@
 .c-author {
   display: block;
-  position: relative;
   flex: 1;
+  position: relative;
 }
 
 .c-author__meta {
-  @include caption();
-  color: white;
-  background-color: rgba($color-neutral--darkest, 0.75);
-  padding: spacing(inset, s);
+  @include typeset(label, 1);
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
+  padding: $space-small;
+  background-color: rgba($color-neutral--darkest, 0.75);
+  color: white;
 
   @media print {
     color: white !important;
@@ -21,7 +21,7 @@
 }
 
 .c-author__image {
+  display: block;
   height: auto;
   width: 100%;
-  display: block;
 }

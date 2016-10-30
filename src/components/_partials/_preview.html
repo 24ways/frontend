@@ -14,6 +14,7 @@
         var element = document.createElement("script");
         element.src = "{{ '/assets/scripts/app.js' | path }}";
         document.body.appendChild(element);
+        document.body.dataset.menu = 'closed';
       }
 
       if (document.querySelector && docEl.classList && window.addEventListener) {
@@ -45,7 +46,7 @@
     <title>{{ _target.context.title }} &#9670; 24 ways</title>
   </head>
 
-  <body class="t-{{ _target.context.theme if _target.context.theme else "year-2015" }}" data-menu="closed">
+  <body class="t-{{ _target.context.theme if _target.context.theme else "year-2015" }}">
     {{ yield }}
   </body>
 </html>

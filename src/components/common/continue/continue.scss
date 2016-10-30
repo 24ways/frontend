@@ -1,5 +1,5 @@
 .c-continue {
-  font-weight: 700;
+  @include typeset(label, 2, 700);
 
   &::after {
     content: ' \203A';

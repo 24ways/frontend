@@ -1,16 +1,18 @@
 .c-contentinfo {
-  @include ui-text;
+  @include typeset(label, 1);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: spacing(inset, s);
+  padding: $space-small $space-medium;
 
   @media screen and (min-width: 31.5em) {
-    margin-right: 4.5rem; // 72px
+    margin-right: $navigation-width--large;
   }
 
-  @media print {
-    a {
+  a {
+    @include ui-link;
+
+    @media print {
       display: none;
     }
   }
@@ -18,5 +20,5 @@
 
 .c-contentinfo__copyright,
 .c-contentinfo__social a:not(:last-child) {
-  margin-right: 1em;
+  margin-right: $space-medium;
 }

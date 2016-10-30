@@ -1,12 +1,24 @@
 .c-grid {
   display: flex;
   flex-wrap: wrap;
+  padding-right: $space-xsmall;
+  padding-bottom: $space-xsmall;
+
+  .c-section__main & {
+    margin-top: ($space-medium * -1);
+    margin-left: ($space-large * -1);
+
+    @media screen and (min-width: 50em) {
+      margin-left: ($space-xsmall * -1);
+    }
+  }
 }
 
 .c-grid__item {
   display: flex;
-  padding: 0.125em;
   flex-shrink: 0;
+  margin-top: $space-xsmall;
+  margin-left: $space-xsmall;
 
   .c-grid--ways & {
     flex-basis: 16em;

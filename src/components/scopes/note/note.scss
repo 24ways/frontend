@@ -1,20 +1,13 @@
 .s-note {
   line-height: 1.25;
-  margin-bottom: 1.5rem;
-  border: solid rgba(black, 0.33);
+  margin-bottom: $space-large;
+  border: solid $color-neutral--alpha-2;
   border-width: 1px 0;
-  padding: 0.25rem 0;
+  padding: $space-medium 0;
 
-  @media screen and (max-width: 50em) {
-    &:first-of-type {
-      border-top: 0 none;
-      padding-bottom: 0.25rem;
-    }
-  }
-
-  p {
+  p:not(:last-child) {
+    margin: $space-medium;
     color: lighten($color-text, 10%);
     font-size: 1rem;
-    padding: 0.75rem 0;
   }
 }

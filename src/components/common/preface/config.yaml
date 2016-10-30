@@ -5,10 +5,10 @@ context:
 variants:
 - name: topic
   context:
-    title: 2013
+    title: Business
     titleIcon: topic-business
     content: |
-      <cite>24 ways</cite> is the advent calendar for web geeks. Each day throughout December we publish a daily dose of web design and development goodness to bring you all a little Christmas cheer. [Learn more](/pages/about/)
+      Where there's muck, there are clients, deliverables and contracts. Occasionally, there's brass. Here are articles on developing and improving relationships with clients; writing contracts and presenting your work; and encouraging success and avoiding failure.
 - name: author
   context:
     title: Rachel Andrew

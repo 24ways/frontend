@@ -9,7 +9,7 @@
 }
 
 .c-section__header {
-  padding: spacing(inset);
+  padding: $space-medium $space-large;
 
   @media screen and (min-width: 50em) {
     flex: 1 0 20%;
@@ -25,13 +25,14 @@
 }
 
 .c-section__title {
-  @include label();
+  @include typeset(label, 2);
+  text-transform: uppercase;
 }
 
 .c-section__main {
+  margin-bottom: $space-large;
+  padding: $space-medium $space-large;
   box-shadow: 0 -1px 0 $color-neutral--alpha-2;
-  margin: spacing(stack, l);
-  padding: spacing(inset);
 
   @media screen and (min-width: 50em) {
     flex: 1 0 75%;
@@ -53,23 +54,23 @@
 .c-article .c-section--sponsor {
   @media screen and (min-width: 50em) {
     flex-direction: column;
-    padding: 0;
     position: absolute;
     top: 56rem;
     left: 0;
     width: 20%;
+    padding: 0;
 
     .c-section__title {
-      @include caption();
+      @include typeset(label, 2);
     }
 
     .c-section__main {
-      box-shadow: none;
       padding-right: 0;
+      box-shadow: none;
     }
 
     .c-promo {
-      @include caption();
+      @include typeset(caption);
       text-align: right;
     }
   }
@@ -84,9 +85,9 @@
 
   svg {
     flex-shrink: 0;
-    width: 4em;
-    height: 4em;
-    margin: 0.5rem 1rem 0 0;
+    width: $size-xlarge;
+    height: $size-xlarge;
+    margin: $space-small $space-large 0 0;
   }
 }
 

@@ -1,9 +1,9 @@
 .c-field {
-  line-height: 1.5;
+  @include typeset(label, 2);
   position: relative;
 
   &:not(:last-of-type) {
-    margin: spacing(stack);
+    margin: $space-medium;
   }
 
   @media print {
@@ -13,44 +13,44 @@
 
 .c-field__label {
   display: block;
-  font-weight: 700;
-  padding: spacing(inset, l-squished);
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  width: 5rem;
+  width: $size-xlarge;
+  padding: $space-medium $space-large;
+  font-weight: 700;
 }
 
 .c-field__input {
   width: 100%;
-  box-shadow: inset 1px 1px 0 rgba($color-neutral, 0.15);
   border: 0;
   border-radius: 0;
-  padding: spacing(inset, l-squished);
-  padding-left: 6rem;
+  padding: $space-medium $space-large;
+  padding-left: ($size-xlarge + $space-medium);
+  box-shadow: inset 1px 1px 0 $color-neutral--alpha-2;
 
   &:focus {
     outline: 0 none;
-    box-shadow: inset 0 0 0 2px rgba($color-neutral, 0.25);
+    box-shadow: inset 0 0 0 2px $color-neutral--alpha-5;
   }
 }
 
 .c-field--search {
-  .c-field__label svg {
+  .c-field__icon {
     position: absolute;
     left: 0;
     top: 0;
   }
 
   .c-field__input {
-    padding-left: 3rem;
+    padding-left: $size-large;
   }
 
   .c-button {
-    box-shadow: none;
     position: absolute;
     top: 0;
     right: 0;
+    box-shadow: none;
   }
 }

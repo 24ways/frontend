@@ -4,9 +4,9 @@
       position: absolute;
       top: 0;
       left: 0;
-      right: 4.5rem; // 72px
+      right: $navigation-width--large;
       overflow: hidden;
-      transition: width $duration-navigation ease-out;
+      transition: width $navigation-duration ease-out;
     }
   }
 
@@ -15,16 +15,15 @@
   }
 
   .c-field__input {
-    background-color: $color-neutral--lightest;
-    box-shadow: none;
     width: 100%;
+    background-color: $navigation-color--offset;
 
-    @media screen and (min-width: 31.5em) {
-      height: 4.5rem; // 72px
+    &:not(:focus) {
+      box-shadow: none;
     }
 
-    &:focus {
-      box-shadow: inset 0 0 0 2px rgba($color-neutral--lighter, 0.5);
+    @media screen and (min-width: 31.5em) {
+      height: $banner-height--large;
     }
   }
 
@@ -34,7 +33,8 @@
     left: 0;
 
     @media screen and (min-width: 31.5em) {
-      height: 4.5rem; // 72px
+      top: $size-small;
+      height: $banner-height--large;
     }
   }
 }

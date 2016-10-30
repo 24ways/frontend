@@ -1,11 +1,11 @@
 .c-banner {
-  padding: spacing(inset);
+  padding: $space-medium $space-large;
   background-color: palette(primary, dark);
-  transition-duration: $duration-banner;
+  transition-duration: $banner-duration;
   transition-timing-function: ease-out;
 
   [data-menu=closed] & {
-    transition-delay: $duration-navigation;
+    transition-delay: $navigation-duration;
   }
 
   @media screen and (max-width: 31.4375em) {
@@ -22,8 +22,8 @@
   }
 
   @media screen and (min-width: 31.5em) {
-    margin-right: 4.5rem; // 72px
-    padding: spacing(inset, l);
+    margin-right: $navigation-width--large;
+    padding: $space-large;
   }
 
   @media screen and (min-width: 50em) {
@@ -32,39 +32,39 @@
 }
 
 .c-banner__title {
-  font-size: 1.25em; // 20px
+  font-size: 1.25em;
   line-height: (16/20);
 
   @media screen and (min-width: 31.5em) {
-    font-size: 1.5em; // 24px
-    line-height: 1;
+    font-size: 1.5em;
+    line-height: (24/24);
   }
 }
 
 .c-banner__home {
-  color: white;
   text-transform: uppercase;
+  color: white;
 
   &:hover {
     color: white;
   }
 
   @media screen and (max-width: 31.4375em) {
-    transition-property: color $duration-banner ease-out;
+    transition-property: color $banner-duration ease-out;
 
     [data-menu=open] & {
-      color: palette(neutral);
+      color: $navigation-color--text;
     }
 
     [data-menu=closed] & {
-      transition-delay: $duration-navigation;
+      transition-delay: $navigation-duration;
     }
   }
 
   span {
-    color: palette(primary, light);
     font-size: 0.6667em;
-    white-space: nowrap;
     text-transform: lowercase;
+    white-space: nowrap;
+    color: palette(primary, light);
   }
 }

@@ -1,15 +1,16 @@
-.c-comment {
-  background-color: white;
-  padding-left: 2.5rem;
-  position: relative;
-  margin: spacing(stack);
+$_comment-avatar--small: $size-large;
+$_comment-avatar--large: $size-xlarge;
 
-  @media screen {
-    box-shadow: 1px 1px 0 $color-neutral--alpha-2;
-  }
+.c-comment {
+  position: relative;
+  margin-bottom: $space-large;
+  padding: $space-large;
+  padding-left: $_comment-avatar--small;
+  background-color: white;
+  box-shadow: 1px 1px 0 $color-neutral--alpha-2;
 
   @media screen and (min-width: 40em) {
-    padding-left: 5.5rem;
+    padding-left: $_comment-avatar--large;
   }
 
   &.c-comment--unhelpful {
@@ -19,58 +20,46 @@
 
   .c-avatar {
     position: absolute;
-    top: -0.5rem;
-    left: -0.5rem;
-    width: 2.5rem;
+    top: $space-small;
+    left: ($space-xsmall * -1);
+    width: $size-large;
 
     @media screen and (min-width: 40em) {
-      width: 5.5rem;
+      width: $size-xlarge;
     }
   }
 }
 
 .c-comment__header {
-  padding: spacing(inset, s);
+  margin-bottom: $space-large;
 
   @media print {
     border-top: 1px solid black;
-    padding-top: 0.5rem;
+    padding-top: $space-small;
   }
 }
 
 .c-comment__title {
-  @include title();
+  @include typeset(title, 1);
 }
 
 .c-comment__meta {
-  @include caption();
+  @include typeset(label, 1);
 
   @media screen and (min-width: 30em) {
     position: absolute;
-    top: 1.3125rem;
-    right: 1rem;
+    top: 1.75rem;
+    right: $space-large;
   }
 
   a.c-comment__permalink {
-    color: palette(neutral);
-
-    &:hover {
-      color: palette(primary);
-    }
-
-    &:active {
-      color: palette(primary, light);
-    }
+    @include ui-link;
   }
 }
 
-.c-comment__main {
-  padding: spacing(inset, s);
-}
-
 .c-comment__footer {
-  @include caption();
+  @include typeset(label, 1);
   border-top: 1px solid $color-neutral--alpha-1;
-  padding: spacing(inset, s);
+  padding-top: $space-medium;
   text-align: right;
 }

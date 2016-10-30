@@ -18,9 +18,9 @@
 
 .c-activity {
   display: block;
-  height: 2rem;
-  width: 2rem;
-  margin: 0.75rem auto; // SPACE: STACK
+  height: $size-medium;
+  width: $size-medium;
+  margin: $space-medium auto;
   border: $border-width-thicker double $color-neutral--alpha-2;
   animation: 2s loading infinite;
   transform: rotate(45deg);

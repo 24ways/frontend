@@ -10,11 +10,20 @@
 @import 'colors.json';
 @import 'fonts.json';
 @import 'layers.json';
-@import 'spacing.json';
+@import 'sizes.json';
+@import 'spaces.json';
 
-// Animation durations
-$duration-banner: 0.1s;
-$duration-navigation: 0.2s;
+// Banner
+$banner-height--small: $size-large;
+$banner-height--large: $size-xlarge;
+$banner-duration: 0.1s;
+
+// Navigation
+$navigation-width--large: $size-xlarge;
+$navigation-duration: 0.2s;
+$navigation-color: white;
+$navigation-color--offset: palette(neutral, lightest);
+$navigation-color--text: palette(neutral);
 
 // Color assignments
 $color-neutral: palette(neutral);
@@ -32,6 +41,10 @@ $color-neutral--alpha-5: rgba($color-neutral, 0.5);
 $color-link: palette(secondary);
 $color-link--hover: palette(secondary, dark);
 $color-link--active: palette(secondary, light);
+
+$color-ui-link: palette(primary);
+$color-ui-link--hover: palette(primary, dark);
+$color-ui-link--active: palette(primary, light);
 
 $color-text: $color-neutral--darker;
 
