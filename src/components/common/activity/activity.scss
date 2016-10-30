@@ -21,7 +21,7 @@
   height: $size-medium;
   width: $size-medium;
   margin: $space-medium auto;
-  border: $border-width-thicker double $color-neutral--alpha-2;
+  border: $border-width-thicker double $prose-color--rule;
   animation: 2s loading infinite;
   transform: rotate(45deg);
 }

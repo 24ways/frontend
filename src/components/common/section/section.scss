@@ -14,7 +14,7 @@
   @media screen and (min-width: 50em) {
     flex: 1 0 20%;
     padding-right: 0;
-    box-shadow: 0 -1px 0 $color-neutral--alpha-2;
+    box-shadow: 0 -1px 0 $prose-color--rule;
     text-align: right;
   }
 
@@ -32,7 +32,7 @@
 .c-section__main {
   margin-bottom: $space-large;
   padding: $space-medium $space-large;
-  box-shadow: 0 -1px 0 $color-neutral--alpha-2;
+  box-shadow: 0 -1px 0 $prose-color--rule;
 
   @media screen and (min-width: 50em) {
     flex: 1 0 75%;

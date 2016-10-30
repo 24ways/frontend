@@ -24,6 +24,13 @@ $navigation-duration: 0.2s;
 $navigation-color: white;
 $navigation-color--offset: palette(neutral, lightest);
 $navigation-color--text: palette(neutral);
+$navigation-color--shadow: rgba(palette(neutral), 0.25);
+$navigation-color--backdrop: rgba(palette(neutral, dark), 0.25);
+
+// Prose
+$prose-color--background: rgba(palette(neutral), 0.15);
+$prose-color--rule: rgba(palette(neutral), 0.25);
+$prose-color--shadow: rgba(palette(neutral), 0.25);
 
 // Color assignments
 $color-neutral: palette(neutral);
@@ -34,10 +41,6 @@ $color-neutral--dark: palette(neutral, dark);
 $color-neutral--darker: palette(neutral, darker);
 $color-neutral--darkest: palette(neutral, darkest);
 
-$color-neutral--alpha-1: rgba($color-neutral, 0.1);
-$color-neutral--alpha-2: rgba($color-neutral, 0.2);
-$color-neutral--alpha-5: rgba($color-neutral, 0.5);
-
 $color-link: palette(secondary);
 $color-link--hover: palette(secondary, dark);
 $color-link--active: palette(secondary, light);
@@ -45,6 +48,8 @@ $color-link--active: palette(secondary, light);
 $color-ui-link: palette(primary);
 $color-ui-link--hover: palette(primary, dark);
 $color-ui-link--active: palette(primary, light);
+
+$color-focus: palette(secondary, light);
 
 $color-text: $color-neutral--darker;
 

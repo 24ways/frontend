@@ -3,7 +3,7 @@
   position: relative;
 
   &:not(:last-of-type) {
-    margin: $space-medium;
+    margin-bottom: $space-medium;
   }
 
   @media print {
@@ -18,7 +18,7 @@
   bottom: 0;
   left: 0;
   width: $size-xlarge;
-  padding: $space-medium $space-large;
+  padding: $space-medium;
   font-weight: 700;
 }
 
@@ -26,13 +26,13 @@
   width: 100%;
   border: 0;
   border-radius: 0;
-  padding: $space-medium $space-large;
+  padding: $space-medium;
   padding-left: ($size-xlarge + $space-medium);
-  box-shadow: inset 1px 1px 0 $color-neutral--alpha-2;
+  box-shadow: inset 1px 1px 0 $prose-color--rule;
 
   &:focus {
     outline: 0 none;
-    box-shadow: inset 0 0 0 2px $color-neutral--alpha-5;
+    box-shadow: inset 0 0 0 2px $color-focus;
   }
 }
 

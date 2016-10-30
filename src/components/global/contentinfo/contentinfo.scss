@@ -18,6 +18,12 @@
   }
 }
 
+.c-contentinfo__copyright {
+  @media screen and (max-width: 31.4375em) {
+    margin-bottom: $space-xsmall;
+  }
+}
+
 .c-contentinfo__copyright,
 .c-contentinfo__social a:not(:last-child) {
   margin-right: $space-medium;

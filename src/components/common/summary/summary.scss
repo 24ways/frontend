@@ -7,7 +7,7 @@ $_summary__author-size: $size-xlarge;
   position: relative;
   padding: ($space-large - $space-xsmall);
   background-color: white;
-  box-shadow: 1px 1px 0 rgba($color-neutral, 0.15);
+  box-shadow: 1px 1px 0 $prose-color--shadow;
 
   @media print {
     padding-bottom: 0;

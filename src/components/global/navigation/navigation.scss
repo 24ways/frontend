@@ -26,7 +26,7 @@
 
     [data-menu=open] & {
       max-height: 32rem;
-      box-shadow: 0 8px 8px 0 $color-neutral--alpha-2;
+      box-shadow: 0 8px 8px 0 $navigation-color--shadow;
     }
   }
 
@@ -49,7 +49,7 @@
 
     [data-menu=open] & {
       width: 22.5em;
-      box-shadow: 0 0 8px 0 $color-neutral--alpha-2;
+      box-shadow: 0 0 8px 0 $navigation-color--shadow;
     }
   }
 
@@ -70,7 +70,7 @@
   opacity: 0;
   z-index: $z-index-backdrop;
   transition: opacity $navigation-duration ease-in;
-  background-color: rgba(palette(neutral, dark), 0.25);
+  background-color: $navigation-color--backdrop;
   backdrop-filter: blur(1px);
   pointer-events: none;
 }

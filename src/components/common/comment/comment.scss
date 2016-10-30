@@ -7,7 +7,7 @@ $_comment-avatar--large: $size-xlarge;
   padding: $space-large;
   padding-left: $_comment-avatar--small;
   background-color: white;
-  box-shadow: 1px 1px 0 $color-neutral--alpha-2;
+  box-shadow: 1px 1px 0 $prose-color--shadow;
 
   @media screen and (min-width: 40em) {
     padding-left: $_comment-avatar--large;
@@ -15,13 +15,13 @@ $_comment-avatar--large: $size-xlarge;
 
   &.c-comment--unhelpful {
     background-color: transparent;
-    box-shadow: 0 0 0 1px $color-neutral--alpha-2;
+    box-shadow: 0 0 0 1px $prose-color--shadow;
   }
 
   .c-avatar {
     position: absolute;
-    top: $space-small;
-    left: ($space-xsmall * -1);
+    top: 0;
+    left: ($space-large * -1);
     width: $size-large;
 
     @media screen and (min-width: 40em) {
@@ -57,9 +57,13 @@ $_comment-avatar--large: $size-xlarge;
   }
 }
 
+.c-comment__main {
+  margin-bottom: $space-large;
+}
+
 .c-comment__footer {
   @include typeset(label, 1);
-  border-top: 1px solid $color-neutral--alpha-1;
+  border-top: 1px solid $prose-color--shadow;
   padding-top: $space-medium;
   text-align: right;
 }

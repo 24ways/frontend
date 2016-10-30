@@ -50,7 +50,7 @@
 
     &::before {
       content: '';
-      background-color: $color-neutral--alpha-5;
+      background-color: $color-text;
       width: 0.4375em;
       height: 0.4375em;
       position: absolute;
@@ -90,11 +90,10 @@
   pre,
   code,
   samp {
-    outline: 0.125em solid $color-neutral--alpha-1;
+    outline: 0.125em solid $prose-color--background;
     margin-right: 0.25em;
     margin-left: 0.25em;
-    background-color: $color-neutral--alpha-1;
-    color: $color-neutral--darker;
+    background-color: $prose-color--background;
   }
 
   pre {
@@ -122,7 +121,7 @@
   }
 
   blockquote {
-    border-left: 0.25rem solid $color-neutral--alpha-2;
+    border-left: 0.25rem solid $prose-color--rule;
     margin-bottom: 1.5em;
     padding-left: 1em;
 
@@ -161,7 +160,7 @@
   p.image span.caption { // ! Legacy
     @include typeset(caption);
     display: block;
-    border-bottom: 1px solid rgba($color-text, 0.2);
+    border-bottom: 1px solid $prose-color--rule;
     margin-right: $space-large;
     margin-left: $space-large;
     padding: $space-medium 0;
@@ -172,7 +171,7 @@
   }
 
   a {
-    border-bottom: 1px solid $color-neutral--alpha-1;
+    border-bottom: 1px solid $prose-color--rule;
 
     @media print {
       border-bottom: 1px dotted #999;
@@ -246,13 +245,13 @@
 
   td,
   th {
-    border-bottom: 1px solid $color-neutral--alpha-1;
-    padding: 0.25rem 2rem 0.25rem 0.5rem; // 4px 32px 4px 4px
+    border-bottom: 1px solid $prose-color--rule;
+    padding: 0.25em 2em 0.25em 0.5em; // 4px 32px 4px 4px
   }
 
   th {
     line-height: 1.25;
-    background-color: rgba(black, 0.05);
+    background-color: $prose-color--background;
   }
 
   // Represents key press within user input sequence
@@ -264,7 +263,7 @@
     border: 1px solid rgba(black, 0.15);
     border-radius: 0.25rem; // 4px
     padding: 0.125rem 0.5rem; // 4px 8px
-    box-shadow: 0 2px 0 $color-neutral--alpha-1;
+    box-shadow: 0 2px 0 red;
   }
 
   // Represents menu selection within user input sequence

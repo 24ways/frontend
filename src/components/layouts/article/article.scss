@@ -16,7 +16,7 @@
     padding-right: 5%;
     padding-bottom: $space-xxlarge;
     padding-left: 25%;
-    box-shadow: 0 -1px 0 0 $color-neutral--alpha-2;
+    box-shadow: 0 -1px 0 0 $prose-color--rule;
   }
 
   @media screen and (min-width: 60em) {
@@ -28,7 +28,6 @@
   @include typeset(title, fluid);
   position: relative;
   margin-bottom: $space-small;
-  color: palette(neutral, darker);
   z-index: $z-index-overlay;
 
   a {

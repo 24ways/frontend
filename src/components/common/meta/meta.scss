@@ -3,7 +3,7 @@
   display: flex;
   flex-flow: row wrap;
   margin-bottom: $space-medium;
-  border-top: 1px solid $color-neutral--alpha-2;
+  border-top: 1px solid $prose-color--rule;
   padding: $space-small 0 $space-large;
 
   @media screen and (min-width: 50em) {
@@ -33,7 +33,7 @@
 
   @media screen and (min-width: 50em) {
     display: block;
-    border-top: 1px solid $color-neutral--alpha-2;
+    border-top: 1px solid $prose-color--rule;
     padding: $space-small 0 $space-large;
     text-align: right;
   }
