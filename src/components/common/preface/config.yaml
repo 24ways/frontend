@@ -13,9 +13,8 @@ variants:
   context:
     title: Rachel Andrew
     avatar:
-      img:
-        src: https://cloud.24ways.org/authors/rachelandrew280.jpg
-        size: 280
+      src: https://cloud.24ways.org/authors/rachelandrew280.jpg
+      size: 280
     content: |
       <span class="fn n">Rachel Andrew</span> is a Director of edgeofmyseat.com, a UK web development consultancy and creators of the small content management system, [Perch](http://grabaperch.com/). She is the author of a number of [books](http://rachelandrew.co.uk/books), and is a regular columnist for [A List Apart](http://alistapart.com/author/rachelandrew).
 

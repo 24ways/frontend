@@ -3,9 +3,8 @@ context:
   href: /year/article-slug/
   author: Drew McLellan
   avatar:
-    img:
-      size: 160
-      src: https://cloud.24ways.org/authors/drewmclellan280.jpg
+    size: 160
+    src: https://cloud.24ways.org/authors/drewmclellan280.jpg
   section: article
   theme: year-2013
   traverse:
