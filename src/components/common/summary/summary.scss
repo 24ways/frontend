@@ -168,14 +168,14 @@ $_summary__author-size: $size-xlarge;
 
 .c-summary--countdown {
   .c-summary__header {
-    padding-left: ($size-medium + $space-xsmall);
+    padding-left: ($space-large + $space-xsmall);
   }
 
   .dt-published {
     @include typeset(title, 1, initial);
     position: absolute;
-    top: $space-large;
-    left: $space-large;
+    top: ($space-medium + $space-xsmall);
+    left: ($space-medium + $space-xsmall);
 
     @media print {
       top: 1.75rem;

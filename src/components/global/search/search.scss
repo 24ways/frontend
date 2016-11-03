@@ -1,5 +1,5 @@
 .c-search {
-  .js-enhanced & {
+  [data-menu] & {
     @media screen and (min-width: 31.5em) {
       position: absolute;
       top: 0;

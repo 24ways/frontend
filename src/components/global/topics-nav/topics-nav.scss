@@ -10,7 +10,7 @@
     box-shadow: 0 -1px 0 $navigation-color--offset;
   }
 
-  .js-enhanced & {
+  [data-menu] & {
     overflow: hidden;
   }
 }

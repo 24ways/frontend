@@ -1,9 +1,6 @@
-default: ways
 variants:
-- name: ways
+- name: default
   context:
-    mods: [ways]
-    component: summary
     items:
     - "@summary"
     - "@summary"
@@ -16,10 +13,22 @@ variants:
     - "@summary"
     - "@summary"
     - "@summary"
+- name: countdown
+  context:
+    items:
+    - "@summary--countdown"
+    - "@summary--countdown"
+    - "@summary--countdown"
+    - "@summary--countdown"
+    - "@summary--countdown"
+    - "@summary--countdown"
+    - "@summary--countdown"
+    - "@summary--countdown"
+    - "@summary--countdown"
+    - "@summary--countdown"
+    - "@summary--countdown"
 - name: authors
   context:
-    mods: [authors]
-    component: author
     items:
     - author: Drew McLellan
     - author: Brian Suda

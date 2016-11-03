@@ -20,7 +20,9 @@
         <p>Comments are ordered by helpfulness, as indicated by you. Help us pick out the gems and discourage asshattery by voting on notable comments.</p>
         <p>Got something to add? You can leave a comment below.</p>
       </div>
-      {% render "@comments" %}
+      {%- for comment in comments -%}
+        {% render "@comment", comment %}
+      {%- endfor -%}
     </div>
   </section>
 

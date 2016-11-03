@@ -1,16 +1,15 @@
-<!-- TODO: Review use of microformats for author preface -->
-<header class="c-preface  h-card">
-  <h1 class="c-preface__title  p-name">
+<header class="c-preface{{ "  h-card" if microformats }}">
+  <h1 class="c-preface__title{{ "  p-name" if microformats }}">
     {%- if titleIcon -%}
       {% include titleIcon + ".svg" %}
     {%- endif -%}
     {{ title }}
   </h1>
   {%- if content -%}
-  <div class="c-preface__main  p-note">
+  <div class="c-preface__main{{ "  p-note" if microformats }}">
     <div class="s-prose">
       {%- if avatar -%}
-        {% render "@avatar", { img: avatar.img } %}
+        {% render "@avatar", avatar %}
       {%- endif -%}
       {{ content | markdown }}
     </div>
