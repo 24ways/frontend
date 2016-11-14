@@ -2,7 +2,9 @@
 {% block main %}
 <section class="index">
   {% include "@preface" %}
-  {% render "@grid--ways" %}
-  {% render "@button--more" %}
+  {% render "@grid", config %}
+  {% if results %}
+    {% render "@button--more" %}
+  {% endif %}
 </section>
 {% endblock %}

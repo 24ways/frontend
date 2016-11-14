@@ -5,12 +5,16 @@ variants:
     title: "2015"
     content: |
       <cite>24 ways</cite> is the advent calendar for web geeks. Each day throughout December we publish a daily dose of web design and development goodness to bring you all a little Christmas cheer. [Learn more](/about)
+    config:
+      items: ["@summary--countdown","@summary--countdown","@summary--countdown","@summary--countdown","@summary--countdown","@summary--countdown","@summary--countdown"]
 - name: topic
   context:
     title: "Business"
     titleIcon: topic-business
     content: |
       Where there's muck, there are clients, deliverables and contracts. Occasionally, there's brass. Here are articles on developing and improving relationships with clients; writing contracts and presenting your work; and encouraging success and avoiding failure.
+    results: true
+    items: ["@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary", "@summary","@summary","@summary","@summary","@summary","@summary","@summary", "@summary","@summary","@summary"]
     section: topics
     traverse:
       type: topic
@@ -58,3 +62,5 @@ variants:
 - name: search-results
   context:
     title: "Search results for ‘design systems’"
+    results: true
+    items: ["@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary", "@summary","@summary","@summary","@summary","@summary","@summary","@summary", "@summary","@summary","@summary"]
