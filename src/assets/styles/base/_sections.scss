@@ -31,14 +31,14 @@ html {
 }
 
 body {
-  color: $color-text;
-  font-family: $font-family-sans;
+  @include font-family('sans');
+  margin: 0;
+  height: 100%;
+  background-color: white;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5; // 24px
-  background-color: white;
-  margin: 0;
-  height: 100%;
+  color: $color-text;
 }
 
 // Add the correct display in IE 9-.

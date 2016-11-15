@@ -22,7 +22,8 @@ const logger = fractal.cli.console;
 const paths = {
   build: __dirname + '/www',
   dest: __dirname + '/tmp',
-  src: __dirname + '/src'
+  src: __dirname + '/src',
+  modules: __dirname + '/node_modules'
 };
 
 // Build static site (Fractal)
@@ -133,8 +134,12 @@ function styles() {
 // Scripts
 function scripts() {
   return gulp.src([
-      paths.src + '/assets/scripts/vendor/cferdinandi/**/*.js',
-      paths.src + '/components/**/*.js'
+      paths.modules + '/smooth-scroll/dist/js/smooth-scroll.js',
+      paths.modules + '/fontfaceobserver/fontfaceobserver.js',
+      //paths.modules + '/zepto/dist/zepto.js',
+      //paths.modules + '/fg-ajax-include/dist/ajaxInclude.js',
+      paths.src + '/components/**/*.js',
+      paths.src + '/assets/scripts/app.js'
     ])
     .pipe(sourcemaps.init())
     .pipe(concat('app.js'))

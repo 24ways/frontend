@@ -4,6 +4,24 @@
 //
 // =========================================================
 
+@mixin font-family($family) {
+  @if $family == 'sans' {
+    font-family: sans-serif;
+
+    .fonts-loaded & {
+      font-family: $font-family-sans;
+    }
+  }
+
+  @if $family == 'serif' {
+    font-family: serif;
+
+    .fonts-loaded & {
+      font-family: $font-family-serif;
+    }
+  }
+}
+
 @mixin fluid($property, $min-vw, $max-vw, $min-value, $max-value) {
   #{$property}: $min-value;
 
@@ -20,7 +38,7 @@
   // Title
   // Typically used on titles of containers and modules
   @if $type == 'title' {
-    font-family: $font-family-sans;
+    @include font-family('sans');
     font-weight: if($font-weight, $font-weight, 700);
     font-variant: common-ligatures lining-nums;
     letter-spacing: -0.03125em;
@@ -38,7 +56,7 @@
   // Heading
   // Typically used for headings within areas of prose content
   @if $type == 'heading' {
-    font-family: $font-family-sans;
+    @include font-family('sans');
     font-variant: common-ligatures lining-nums;
     line-height: 1.25;
     letter-spacing: -0.025em;
@@ -60,7 +78,7 @@
   // Typically used for introductory text
   @if $type == 'lede' {
     @include fluid('font-size', 30rem, 60rem, 1.125rem, 1.5rem);
-    font-family: $font-family-sans;
+    @include font-family('sans');
     font-weight: if($font-weight, $font-weight, 400);
     font-variant: common-ligatures oldstyle-nums;
     line-height: 1.25;
@@ -71,7 +89,7 @@
   // Typically used for supporting text
   @if $type == 'caption' {
     @include fluid('font-size', 30rem, 60rem, 0.875rem, 1rem);
-    font-family: $font-family-sans;
+    @include font-family('sans');
     font-weight: if($font-weight, $font-weight, 400);
     font-variant: common-ligatures lining-nums;
     line-height: 1.25;
@@ -80,7 +98,7 @@
   // Prose
   // Typically used for running text
   @if $type == 'prose' {
-    font-family: $font-family-serif;
+    @include font-family('serif');
     font-weight: if($font-weight, $font-weight, 400);
     font-variant: common-ligatures oldstyle-nums;
     line-height: 1.5;
@@ -110,7 +128,7 @@
   // Label sizes and styles
   // Typically used on UI labels and controls
   @if $type == 'label' {
-    font-family: $font-family-sans;
+    @include font-family('sans');
     font-weight: if($font-weight, $font-weight, 400);
 
     @if $level == 1 {

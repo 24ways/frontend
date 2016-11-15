@@ -29,6 +29,8 @@
     "@frctl/nunjucks": "latest",
     "autoprefixer": "latest",
     "del": "latest",
+    "fg-ajax-include": "^1.0.0",
+    "fontfaceobserver": "^2.0.5",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-concat": "latest",
     "gulp-gh-pages": "latest",
@@ -36,14 +38,16 @@
     "gulp-postcss": "latest",
     "gulp-sass": "latest",
     "gulp-sass-glob": "latest",
-    "gulp-stylelint": "latest",
     "gulp-sourcemaps": "latest",
+    "gulp-stylelint": "latest",
     "gulp-uglify": "latest",
     "markdown-it": "latest",
     "markdown-it-abbr": "latest",
     "markdown-it-prism": "latest",
     "node-sass-json-importer": "latest",
     "nunjucks-date": "latest",
-    "postcss-assets": "latest"
+    "postcss-assets": "latest",
+    "smooth-scroll": "github:cferdinandi/smooth-scroll",
+    "zepto": "^1.2.0"
   }
 }
