@@ -49,7 +49,10 @@ variants:
       My initial thought was to treat it just like an image slideshow. If I were building a slideshow that moved between images, I'd use CSS absolute positioning with `z-index` to stack the images up on top of each other in a pile, with the first image on top. To transition to the second image, I'd use JavaScript to fade the top image out, revealing the second image beneath it.
 
       <figure>
-        <img src="http://media.24ways.org/2012/mclellan/stack.png" alt="Video layers stacked up" />
+        <div class="s-embed s-embed--widescreen">
+          <iframe src="http://www.youtube.com/embed/QILiHiTD3uc" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <figcaption>Example of responsive video embed.</figcaption>
       </figure>
 
       Now that video is just a native object in the <span class="caps">DOM</span>, just like an image, why not do the same? Stack the videos up with the opening bumper on top, listen for the video's `onended` event, and fade it out to reveal the main feature behind. Good idea, right?

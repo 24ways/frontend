@@ -1,0 +1,8 @@
+collated: true
+context:
+  src: https://www.youtube-nocookie.com/embed/yyPFT3Ajkzc
+variants:
+- name: widesreen
+  context:
+    mods: [widescreen]
+    src: https://www.youtube-nocookie.com/embed/rGkQDrUcX18
