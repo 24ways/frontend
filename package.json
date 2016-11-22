@@ -32,6 +32,7 @@
     "fg-ajax-include": "^1.0.0",
     "fontfaceobserver": "^2.0.5",
     "gulp": "gulpjs/gulp#4.0",
+    "gulp-a11y": "latest",
     "gulp-concat": "latest",
     "gulp-gh-pages": "latest",
     "gulp-imagemin": "latest",

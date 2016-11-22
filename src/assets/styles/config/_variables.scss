@@ -23,7 +23,7 @@ $navigation-width--large: $size-xlarge;
 $navigation-duration: 0.2s;
 $navigation-color: white;
 $navigation-color--offset: palette(neutral, lightest);
-$navigation-color--text: palette(neutral);
+$navigation-color--text: palette(neutral, dark);
 $navigation-color--shadow: rgba(palette(neutral), 0.25);
 $navigation-color--backdrop: rgba(palette(neutral, dark), 0.25);
 

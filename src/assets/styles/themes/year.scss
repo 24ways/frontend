@@ -1,6 +1,6 @@
 @each $name, $color-year in $color-years {
   $color-year--dark: scale-color($color-year, $lightness: -56%);
-  $color-year--darker: scale-color($color-year, $lightness: -72%);
+  $color-year--darker: scale-color($color-year, $lightness: -80%);
 
   .t-#{$name} {
     .c-preface {

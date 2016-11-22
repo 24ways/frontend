@@ -7,6 +7,7 @@ const concat = require('gulp-concat');
 const del = require('del');
 const fs = require('fs');
 const gulp = require('gulp');
+const a11y = require('gulp-a11y');
 const ghPages = require('gulp-gh-pages');
 const imagemin = require('gulp-imagemin');
 const postcss = require('gulp-postcss');
@@ -147,6 +148,13 @@ function scripts() {
     .pipe(gulp.dest(paths.dest + '/assets/scripts'));
 };
 
+// Accessibility audit
+function audit() {
+  return gulp.src(paths.build + '/components/preview/**/*.html')
+    .pipe(a11y())
+    .pipe(a11y.reporter());
+};
+
 // Watch
 function watch(done) {
   serve();
@@ -164,4 +172,5 @@ gulp.task('start', gulp.series(compile, serve));
 gulp.task('lint', gulp.series(lintstyles));
 gulp.task('build', gulp.series(compile, build));
 gulp.task('dev', gulp.series(compile, watch));
+gulp.task('test', gulp.series(build, audit));
 gulp.task('publish', gulp.series(build, deploy));

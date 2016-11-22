@@ -8,17 +8,18 @@ pre[class*=language-] {
   }
 }
 
+.token.cdata,
+.token.comment,
+.token.doctype,
 .token.namespace,
-.token.punctuation,
-.token.operator {
+.token.operator,
+.token.prolog,
+.token.punctuation {
   color: $color-neutral--dark;
 }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #998;
+.token.comment {
+  opacity: 0.9;
   font-style: italic;
 }
 
