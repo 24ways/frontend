@@ -31,6 +31,10 @@ variants:
       ## Heading 2
       The simplest way to add bumpers to a video would be to edit them on to the start and end of the video file itself. Cooking the bumpers into the video file is easy, but should you ever want to update them it can become a real headache. If the branding needs updating, for example, you'd need to re-edit and re-encode all your videos. Not a fun task.
 
+      Save the document by pressing <kbd><kbd>Ctrl</kbd> + <kbd>S</kbd></kbd>
+
+      There are many, many options for recording your screen, including QuickTime Player on Mac OS X (<kbd><kbd><samp>File</samp></kbd> → <kbd><samp>New Screen Recording</samp></kbd></kbd>), <a href="http://www.gifgrabber.com/">GifGrabber</a>, or <a href="http://giffingtool.com">Giffing Tool</a> on Windows.
+
       ### Heading 3
       What if the bumpers could be added dynamically? That would enable you to use the same bumper for multiple videos (decreasing download time for users who might watch more than one) and to update the bumpers whenever you wanted. You could change them seasonally, update them for special promotions, run different advertising slots, perform multivariate testing, or even target different bumpers to different users.
 

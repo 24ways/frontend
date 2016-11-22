@@ -88,8 +88,7 @@
   }
 
   pre,
-  code,
-  samp {
+  code {
     outline: 0.125em solid $prose-color--background;
     margin-right: 0.25em;
     margin-left: 0.25em;
@@ -256,14 +255,13 @@
 
   // Represents key press within user input sequence
   kbd > kbd {
-    font-size: 0.875em; // 14px
-    line-height: 1.1429; // 16px
+    font-size: 90%;
     background-color: white;
     margin: 0 0.125rem;
-    border: 1px solid rgba(black, 0.15);
-    border-radius: 0.25rem; // 4px
-    padding: 0.125rem 0.5rem; // 4px 8px
-    box-shadow: 0 2px 0 red;
+    border: 1px solid $prose-color--shadow;
+    border-radius: $border-radius-default;
+    padding: 0.25rem 0.5rem; // 4px 8px
+    box-shadow: 0 1px 0 $prose-color--shadow;
   }
 
   // Represents menu selection within user input sequence
