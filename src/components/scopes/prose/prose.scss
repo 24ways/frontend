@@ -89,10 +89,10 @@
 
   pre,
   code {
-    outline: 0.125em solid $prose-color--background;
+    outline: 0.125em solid rgba(white, 0.75);
     margin-right: 0.25em;
     margin-left: 0.25em;
-    background-color: $prose-color--background;
+    background-color: rgba(white, 0.75);
   }
 
   pre {
@@ -115,7 +115,7 @@
   pre {
     font-size: 0.875em;
     line-height: 1.5;
-    margin: 1em -0.25em;
+    margin: 1em -0.25em 2em;
     padding: 0 0.25em;
   }
 
