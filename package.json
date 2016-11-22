@@ -47,7 +47,6 @@
     "node-sass-json-importer": "latest",
     "nunjucks-date": "latest",
     "postcss-assets": "latest",
-    "smooth-scroll": "github:cferdinandi/smooth-scroll",
     "zepto": "^1.2.0"
   }
 }

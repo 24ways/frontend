@@ -134,7 +134,6 @@ function styles() {
 // Scripts
 function scripts() {
   return gulp.src([
-      paths.modules + '/smooth-scroll/dist/js/smooth-scroll.js',
       paths.modules + '/fontfaceobserver/fontfaceobserver.js',
       //paths.modules + '/zepto/dist/zepto.js',
       //paths.modules + '/fg-ajax-include/dist/ajaxInclude.js',
