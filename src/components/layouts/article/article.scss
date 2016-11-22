@@ -1,5 +1,6 @@
 .c-article {
   position: relative;
+  overflow-x: hidden;
 
   @media screen and (min-width: 50em) {
     padding-top: 9rem;
