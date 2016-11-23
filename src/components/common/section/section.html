@@ -5,13 +5,19 @@
   <div class="c-section__main">
     {%- if component -%}
       {% render "@" + component, config %}
-    {%- else -%}
+    {%- endif -%}
     {%- if icon -%}
       {% include icon + ".svg" %}
     {%- endif -%}
+    {%- if content -%}
     <div class="s-prose">
       {{ content | markdown }}
     </div>
+    {%- endif -%}
+    {%- if comments -%}
+      {%- for comment in comments -%}
+        {% render "@comment", comment %}
+      {%- endfor -%}
     {%- endif -%}
   </div>
 </section>

@@ -34,9 +34,14 @@ variants:
 - name: comments
   context:
     id: comments
-    title: "Comments"
+    title: "2 Comments"
     content: |
-      <a class="c-continue" href="/components/preview/article-template--comments" data-replace data-interaction data-target="#comments">View 11 readers’ comments</a>
+      Comments are ordered by helpfulness, as indicated by you. Help us pick out the gems and discourage asshattery by voting on notable comments.
+
+      <a class="c-continue" href="#comment-form">Got something to add? Leave a comment below</a>
+    comments:
+    - "@comment"
+    - "@comment--unhelpful"
 - name: related
   context:
     id: related
@@ -53,9 +58,3 @@ variants:
     id: a
     title: "A"
     component: grid--authors
-- name: loading
-  context:
-    id: loading
-    title: "Loading"
-    mods: [loading]
-    component: activity

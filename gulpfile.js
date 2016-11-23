@@ -136,8 +136,6 @@ function styles() {
 function scripts() {
   return gulp.src([
       paths.modules + '/fontfaceobserver/fontfaceobserver.js',
-      //paths.modules + '/zepto/dist/zepto.js',
-      //paths.modules + '/fg-ajax-include/dist/ajaxInclude.js',
       paths.src + '/components/**/*.js',
       paths.src + '/assets/scripts/app.js'
     ])

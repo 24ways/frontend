@@ -24,9 +24,6 @@ context:
       items:
       - "@summary"
       - "@summary"
-variants:
-- name: comments
-  context:
-    comments:
-    - "@comment"
-    - "@comment--unhelpful"
+  comments:
+  - "@comment"
+  - "@comment--unhelpful"

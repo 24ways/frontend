@@ -29,8 +29,7 @@
     "@frctl/nunjucks": "latest",
     "autoprefixer": "latest",
     "del": "latest",
-    "fg-ajax-include": "^1.0.0",
-    "fontfaceobserver": "^2.0.5",
+    "fontfaceobserver": "latest",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-a11y": "latest",
     "gulp-concat": "latest",
@@ -47,7 +46,6 @@
     "markdown-it-prism": "latest",
     "node-sass-json-importer": "latest",
     "nunjucks-date": "latest",
-    "postcss-assets": "latest",
-    "zepto": "^1.2.0"
+    "postcss-assets": "latest"
   }
 }
