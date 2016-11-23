@@ -14,7 +14,7 @@
         var element = document.createElement("script");
         element.src = "{{ '/assets/scripts/app.js' | path }}";
         document.body.appendChild(element);
-        document.body.dataset.menu = 'closed';
+        document.body.dataset.menuExpanded = 'false';
       }
 
       if (document.querySelector && docEl.classList && window.addEventListener) {

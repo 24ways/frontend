@@ -1,11 +1,8 @@
-<svg class="c-menu__icon" width="40" height="40" viewBox="0 0 200 200" role="img" aria-labelledby="c-menu__label">
-  <title id="c-menu__label">Jump to menu</title>
-  <g role="presentation">
-    <rect class="c-menu__line" width="120" height="10" x="40" y="45"/>
-    <rect class="c-menu__line" width="120" height="10" x="40" y="70"/>
-    <rect class="c-menu__line" width="120" height="10" x="40" y="95"/>
-    <rect class="c-menu__line" width="120" height="10" x="40" y="95"/>
-    <rect class="c-menu__line" width="120" height="10" x="40" y="120"/>
-    <rect class="c-menu__line" width="120" height="10" x="40" y="145"/>
-  </g>
+<svg class="c-menu__icon" width="20" height="20" viewBox="0 0 200 200" role="img">
+  <rect class="c-menu__line" width="120" height="10" x="40" y="45"/>
+  <rect class="c-menu__line" width="120" height="10" x="40" y="70"/>
+  <rect class="c-menu__line" width="120" height="10" x="40" y="95"/>
+  <rect class="c-menu__line" width="120" height="10" x="40" y="95"/>
+  <rect class="c-menu__line" width="120" height="10" x="40" y="120"/>
+  <rect class="c-menu__line" width="120" height="10" x="40" y="145"/>
 </svg>

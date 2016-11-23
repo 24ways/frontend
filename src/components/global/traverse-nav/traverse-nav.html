@@ -3,10 +3,12 @@
   {%- if traverse.prev -%}
   <a class="c-traverse-nav__item" rel="prev" href="{{ traverse.prev.url }}" data-sequence-title="{{ traverse.prev.title }}">
     {% include "prev.svg" %}
+    <span class="u-hidden">Previous {{ traverse.type }}</span>
   </a>
   {%- endif -%}
   {%- if traverse.next -%}
   <a class="c-traverse-nav__item" rel="next" href="{{ traverse.next.url }}" data-sequence-title="{{ traverse.next.title }}">
+    <span class="u-hidden">Next {{ traverse.type }}</span>
     {% include "next.svg" %}
   </a>
   {%- endif -%}

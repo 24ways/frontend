@@ -1,7 +1,11 @@
-<nav class="c-navigation" id="menu">
+<nav class="c-navigation" id="navigation">
   <h1 class="u-hidden">Browse 24 ways</h1>
   {%- render "@traverse-nav" -%}
-  {%- render "@topics-nav" -%}
-  {%- render "@search" -%}
+
+  <div class="c-navigation__drawer" id="navigation__drawer">
+    {%- render "@topics-nav" -%}
+    {%- render "@search" -%}
+  </div>
+
   {%- render "@site-nav" -%}
 </nav>

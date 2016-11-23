@@ -4,7 +4,7 @@
   transition-duration: $banner-duration;
   transition-timing-function: ease-out;
 
-  [data-menu=closed] & {
+  [data-menu-expanded=false] & {
     transition-delay: $navigation-duration;
   }
 
@@ -16,7 +16,7 @@
     z-index: ($z-index-modal + 1);
     transition-property: background-color;
 
-    body[data-menu=open] & {
+    body[data-menu-expanded=true] & {
       background-color: white;
     }
   }
@@ -52,11 +52,11 @@
   @media screen and (max-width: 31.4375em) {
     transition-property: color $banner-duration ease-out;
 
-    [data-menu=open] & {
+    [data-menu-expanded=true] & {
       color: $navigation-color--text;
     }
 
-    [data-menu=closed] & {
+    [data-menu-expanded=false] & {
       transition-delay: $navigation-duration;
     }
   }

@@ -54,7 +54,7 @@ variants:
 
       <figure>
         <div class="s-embed s-embed--widescreen">
-          <!--iframe src="http://www.youtube.com/embed/QILiHiTD3uc" frameborder="0" allowfullscreen></iframe-->
+          <iframe src="http://www.youtube.com/embed/QILiHiTD3uc" frameborder="0" allowfullscreen></iframe>
         </div>
         <figcaption>Example of responsive video embed.</figcaption>
       </figure>

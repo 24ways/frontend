@@ -11,6 +11,24 @@
   }
 }
 
+.c-field__icon {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.c-field__input {
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  padding: $space-medium;
+  box-shadow: inset 1px 1px 0 $prose-color--rule;
+
+  &:focus {
+    outline: 0 none;
+    box-shadow: inset 0 0 0 2px $color-focus;
+  }
+}
+
 .c-field__label {
   display: block;
   position: absolute;
@@ -20,37 +38,20 @@
   width: $size-xlarge;
   padding: $space-medium;
   font-weight: 700;
-}
 
-.c-field__input {
-  width: 100%;
-  border: 0;
-  border-radius: 0;
-  padding: $space-medium;
-  padding-left: ($size-xlarge + $space-medium);
-  box-shadow: inset 1px 1px 0 $prose-color--rule;
-
-  &:focus {
-    outline: 0 none;
-    box-shadow: inset 0 0 0 2px $color-focus;
+  + .c-field__input {
+    padding-left: ($size-xlarge + $space-medium);
   }
 }
 
-.c-field--search {
-  .c-field__icon {
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
+.c-field__label--icon {
+  padding: $space-small;
 
-  .c-field__input {
+  + .c-field__input {
     padding-left: $size-large;
   }
+}
 
-  .c-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    box-shadow: none;
-  }
+.c-field--combined {
+  display: flex;
 }

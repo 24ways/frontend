@@ -2,6 +2,7 @@
 {%- for topic in topics -%}
   <li class="c-topics-nav__item">
     <a class="c-topics-nav__label" href="{{ topic.url }}">
+      {% set size = "20" %}
       {% include "topic-" + topic.title | lower + ".svg" %}
       {{ topic.title }}
     </a>

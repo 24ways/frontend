@@ -2,29 +2,29 @@
   z-index: $z-index-modal;
   background-color: $navigation-color;
 
-  [data-menu] & {
+  [data-menu-expanded] & {
     position: fixed;
     transition-duration: $navigation-duration;
     transition-timing-function: ease-out;
   }
 
-  [data-menu=open] & {
+  [data-menu-expanded=true] & {
     transition-delay: $banner-duration;
   }
 
   @media screen and (max-width: 31.4375em) {
-    [data-menu] & {
+    [data-menu-expanded] & {
       overflow: hidden;
       top: $banner-height--small;
       width: 100%;
       transition-property: max-height;
     }
 
-    [data-menu=closed] & {
+    [data-menu-expanded=false] & {
       max-height: 0;
     }
 
-    [data-menu=open] & {
+    [data-menu-expanded=true] & {
       max-height: 32rem;
       box-shadow: 0 8px 8px 0 $navigation-color--shadow;
     }
@@ -35,7 +35,7 @@
       margin-right: $navigation-width--large;
     }
 
-    [data-menu] & {
+    [data-menu-expanded] & {
       top: 0;
       right: 0;
       bottom: 0;
@@ -43,11 +43,11 @@
       transition-property: width;
     }
 
-    [data-menu=closed] & {
+    [data-menu-expanded=false] & {
       width: $navigation-width--large;
     }
 
-    [data-menu=open] & {
+    [data-menu-expanded=true] & {
       width: 22.5em;
       box-shadow: 0 0 8px 0 $navigation-color--shadow;
     }
@@ -58,8 +58,15 @@
   }
 }
 
+.c-navigation__drawer {
+  @media screen and (min-width: 31.5em) {
+    height: 100%;
+    box-shadow: inset -1px 0 0 $navigation-color--offset;
+  }
+}
+
 // Backdrop
-[data-menu]::after {
+[data-menu-expanded]::after {
   content: '';
   display: block;
   position: fixed;
@@ -75,7 +82,7 @@
   pointer-events: none;
 }
 
-[data-menu=open]::after {
+[data-menu-expanded=true]::after {
   opacity: 1;
   pointer-events: fill;
 }

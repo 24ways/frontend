@@ -16,11 +16,19 @@
       display: none;
     }
   }
+
+  > * {
+    @media screen and (max-width: 31.4375em) {
+      line-height: 2;
+    }
+  }
 }
 
 .c-contentinfo__copyright {
+  order: -1;
+
   @media screen and (max-width: 31.4375em) {
-    margin-bottom: $space-xsmall;
+    order: 0;
   }
 }
 

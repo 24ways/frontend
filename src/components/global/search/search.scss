@@ -1,5 +1,5 @@
 .c-search {
-  [data-menu] & {
+  [data-menu-expanded] & {
     @media screen and (min-width: 31.5em) {
       position: absolute;
       top: 0;
@@ -10,13 +10,10 @@
     }
   }
 
-  .c-field__label {
-    @include hidden;
-  }
-
   .c-field__input {
     width: 100%;
     background-color: $navigation-color--offset;
+    padding-left: 3rem;
 
     &:not(:focus) {
       box-shadow: none;
@@ -31,10 +28,10 @@
     position: absolute;
     top: 0;
     left: 0;
+    padding: $space-xsmall;
 
     @media screen and (min-width: 31.5em) {
-      top: $size-small;
-      height: $banner-height--large;
+      padding: $space-medium $space-xsmall;
     }
   }
 }

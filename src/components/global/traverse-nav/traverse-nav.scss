@@ -64,9 +64,14 @@ $_traverse-nav__label-width: 18rem; // 288px
     }
   }
 
-  [data-menu=open] & {
+  [data-menu-expanded=true] & {
     &::after {
       display: none;
     }
   }
+}
+
+.c-traverse-nav__icon {
+  height: 2.5rem;
+  width: 2.5rem;
 }

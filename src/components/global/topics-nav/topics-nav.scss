@@ -10,7 +10,7 @@
     box-shadow: 0 -1px 0 $navigation-color--offset;
   }
 
-  [data-menu] & {
+  [data-menu-expanded] & {
     overflow: hidden;
   }
 }
@@ -19,7 +19,7 @@
   flex: 1 0 percentage(1/3);
 
   @media screen and (min-width: 31.5em) {
-    [data-menu] & {
+    [data-menu-expanded] & {
       flex-basis: percentage(1/2);
       min-width: percentage(1/2);
     }
@@ -45,7 +45,7 @@
   @include ui-link($background: true);
   @include typeset(label, 2);
   display: block;
-  padding: $space-medium;
+  padding: $space-large $space-medium;
   box-shadow: inset -1px -1px 0 $navigation-color--offset;
   text-align: center;
 }

@@ -30,4 +30,3 @@ variants:
     comments:
     - "@comment"
     - "@comment--unhelpful"
-    - "@comment"

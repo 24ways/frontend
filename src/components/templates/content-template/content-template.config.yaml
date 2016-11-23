@@ -28,7 +28,8 @@ variants:
         * Content managed with [Perch Runway](http://grabaperch.com/?ref=24w01).
         * Hosted by [Memset Dedicated Servers](http://www.memset.com/dedicated-servers/).
         * Standing on the shoulders of Varnish, Nginx, Apache, PHP, MySQL, Amazon S3 and CloudFront.
-        * Type set in [Lato](http://www.latofonts.com/lato-free-fonts/) (by Łukasz Dziedzic) and [Merriweather](http://ebensorkin.wordpress.com/) (by Eben Sorkin) and served via [Google Fonts](https://fonts.google.com/).
+        * Type set in [Source Sans Pro](http://adobe-fonts.github.io/source-sans-pro/), [Source Serif Pro](http://adobe-fonts.github.io/source-serif-pro/) and [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/) by Adobe.
+        * Fonts served via [Google Fonts](https://fonts.google.com/).
         * [Minicons](http://www.webalys.com/minicons/) by Vincent Le Miogn.
         * [prism.js](https://github.com/leaverou/prism/) by Lea Verou.
         * [AjaxInclude](https://github.com/filamentgroup/Ajax-Include-Pattern/) by Filament Group.

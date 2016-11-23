@@ -1,4 +1,3 @@
-<svg class="c-traverse-nav__icon" width="40" height="40" viewBox="0 0 200 200" role="img" aria-labelledby="c-traverse-nav--prev__label">
-  <title id="c-traverse-nav--prev__label">Previous {{ traverse.type }}</title>
+<svg class="c-traverse-nav__icon" width="20" height="20" viewBox="0 0 200 200" role="img">
   <path d="M50 100l85 85 7-7-78-78 78-78-7-7"/>
 </svg>
