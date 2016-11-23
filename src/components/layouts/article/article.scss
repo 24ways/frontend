@@ -1,10 +1,24 @@
 .c-article {
   position: relative;
   overflow-x: hidden;
+  background-color: $color-day--light;
+  background-color: var(--color-day--light, $color-day--light);
 
   @media screen and (min-width: 50em) {
     padding-top: 9rem;
     padding-bottom: $space-large;
+  }
+
+  a {
+    color: $color-day--dark;
+    color: var(--color-day--dark, $color-day--dark);
+    //border-color: rgba($color-day--dark, 0.2); TODO: Sass & custom props
+
+    &:hover {
+      color: $color-day;
+      color: var(--color-day, $color-day);
+      //border-color: rgba($color-day, 0.33); TODO: Sass & custom props
+    }
   }
 }
 
@@ -30,10 +44,6 @@
   position: relative;
   margin-bottom: $space-small;
   z-index: $z-index-overlay;
-
-  a {
-    color: $color-neutral--darkest;
-  }
 }
 
 .c-article__byline {

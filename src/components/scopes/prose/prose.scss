@@ -201,14 +201,18 @@
     color: var(--color-year, $color-year--dark);
   }
 
+  h3,
+  h4 {
+    color: $color-day--dark;
+    color: var(--color-day--dark, $color-day--dark);
+  }
+
   h3 {
     @include typeset(heading, 2);
-    color: palette(primary, dark);
   }
 
   h4 {
     @include typeset(heading, 1);
-    color: rgba(palette(primary, dark), 0.9);
     font-weight: 700;
   }
 
