@@ -32,7 +32,6 @@ variants:
         * Fonts served via [Google Fonts](https://fonts.google.com/).
         * [Minicons](http://www.webalys.com/minicons/) by Vincent Le Miogn.
         * [prism.js](https://github.com/leaverou/prism/) by Lea Verou.
-        * [AjaxInclude](https://github.com/filamentgroup/Ajax-Include-Pattern/) by Filament Group.
 - name: "404"
   context:
     title: "404"

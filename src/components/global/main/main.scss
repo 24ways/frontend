@@ -1,4 +1,6 @@
 .c-main {
+  background-color: $navigation-color--offset;
+
   @media screen and (max-width: 31.4375em) {
     margin-top: $banner-height--small;
   }

@@ -34,7 +34,7 @@ body {
   @include font-family('sans');
   margin: 0;
   height: 100%;
-  background-color: $navigation-color--offset;
+  background-color: white;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5; // 24px
