@@ -5,7 +5,7 @@ $_summary__author-size: $size-xlarge;
   flex-direction: column;
   flex: 1;
   position: relative;
-  padding: ($space-large - $space-xsmall);
+  padding: $space-medium ($space-large - $space-xsmall);
   background-color: white;
   box-shadow: 1px 1px 0 $prose-color--shadow;
 
@@ -45,7 +45,7 @@ $_summary__author-size: $size-xlarge;
 
 .c-summary__title {
   @include typeset(title, 1);
-  padding-right: $_summary__author-size;
+  padding-right: ($_summary__author-size - $space-medium);
 }
 
 .c-summary__main {
