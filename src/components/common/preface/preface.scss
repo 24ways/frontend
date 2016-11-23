@@ -2,7 +2,8 @@
   overflow: hidden;
   min-height: 9rem;
   padding: $space-xlarge $space-large $space-medium;
-  background-color: palette(primary, dark);
+  background-color: $color-year;
+  background-color: var(--color-year, $color-year);
   background-image: inline('diamond.svg');
   background-repeat: repeat;
 

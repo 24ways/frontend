@@ -53,24 +53,9 @@ $color-focus: palette(secondary, light);
 
 $color-text: $color-neutral--darker;
 
-$color-years: (
-  year-2005: adjust-hue(palette(primary), -000),
-  year-2006: adjust-hue(palette(primary), -004),
-  year-2007: adjust-hue(palette(primary), -008),
-  year-2008: adjust-hue(palette(primary), -012),
-  year-2009: adjust-hue(palette(primary), -016),
-  year-2010: adjust-hue(palette(primary), -020),
-  year-2011: adjust-hue(palette(primary), -024),
-  year-2012: adjust-hue(palette(primary), -028),
-  year-2013: adjust-hue(palette(primary), -032),
-  year-2014: adjust-hue(palette(primary), -036),
-  year-2015: adjust-hue(palette(primary), -040),
-  year-2016: adjust-hue(palette(primary), -044),
-  year-2017: adjust-hue(palette(primary), -048),
-  year-2018: adjust-hue(palette(primary), -052),
-  year-2019: adjust-hue(palette(primary), -056),
-  year-2020: adjust-hue(palette(primary), -060)
-);
+// Fallback year colour
+$color-year: hsl(348, 100%, 16%);
+$color-year--dark: hsl(348, 100%, 8%);
 
 $color-days: (
   day-24: adjust-hue(palette(secondary, light), 000),

@@ -1,6 +1,7 @@
 .c-banner {
   padding: $space-medium $space-large;
-  background-color: palette(primary, dark);
+  background-color: $color-year--dark;
+  background-color: var(--color-year--dark, $color-year--dark);
   transition-duration: $banner-duration;
   transition-timing-function: ease-out;
 

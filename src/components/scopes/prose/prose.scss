@@ -112,6 +112,11 @@
 .s-prose--article {
   @include typeset(prose, fluid);
 
+  .lede {
+    color: $color-year--dark;
+    color: var(--color-year--dark, $color-year--dark);
+  }
+
   pre {
     font-size: 0.875em;
     line-height: 1.5;
@@ -192,6 +197,8 @@
   h2 {
     @include typeset(heading, 3);
     font-weight: 700;
+    color: $color-year--dark;
+    color: var(--color-year, $color-year--dark);
   }
 
   h3 {

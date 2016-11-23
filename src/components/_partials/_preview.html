@@ -34,6 +34,13 @@
     <link rel="alternate" href="{{ site.feed }}" type="application/rss+xml"/>
     <link rel="stylesheet" href="{{ '/assets/styles/app.css' | path }}"/>
 
+    <style>
+      :root {
+        --color-year: hsl({{ theme.year[11] }}, 100%, 16%);
+        --color-year--dark: hsl({{ theme.year[11] }}, 100%, 8%);
+      }
+    </style>
+
     <meta charset="utf-8"/>
     <meta name="robots" content="index, follow"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -46,7 +53,7 @@
     <title>{{ _target.context.title }} &#9670; 24 ways</title>
   </head>
 
-  <body class="t-{{ _target.context.theme if _target.context.theme else "year-2015" }}">
+  <body>
     {{ yield }}
   </body>
 </html>

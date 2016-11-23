@@ -50,7 +50,8 @@ $_traverse-nav__label-width: 18rem; // 288px
       z-index: ($z-index-underlay - 1);
       width: $_traverse-nav__label-width;
       overflow: hidden;
-      background-color: rgba(palette(primary, dark), 0.8);
+      background-color: rgba($color-year--dark, 0.8);
+      //background-color: rgba(var(--color-year--dark, $color-year--dark), 0.8);
       padding: $space-xsmall $space-small;
       white-space: pre-wrap;
       color: white;
