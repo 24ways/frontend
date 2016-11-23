@@ -10,14 +10,14 @@
     padding: 0.75em 0 0.5em;
     font-weight: bolder;
     line-height: 1.2;
-    color: $color-text;
+    color: --color-text;
   }
 
   var {
     display: block;
     font: 0.75em/1em 'Hack', 'Consolas', 'Monaco', monospace;
     font-style: normal;
-    color: $color-text;
+    color: --color-text;
   }
 }
 
@@ -51,8 +51,8 @@
     padding-bottom: 0.5rem;
     overflow: hidden;
     white-space: nowrap;
-    color: $color-text;
-    border-bottom: 1px solid rgba($color-text, 0.2);
+    color: --color-text;
+    border-bottom: 1px solid color(var(--color-text) a(20%));
 
     &::before {
       content: 'Aa';
@@ -98,5 +98,5 @@
   height: 3rem;
   width: 3rem;
   margin-right: 0.5em;
-  color: $color-text;
+  color: --color-text;
 }

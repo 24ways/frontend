@@ -1,0 +1,57 @@
+/* =====================================================
+   Text-level semantics
+   w3c.github.io/html/textlevel-semantics.html
+   ===================================================== */
+
+/* Add the correct font size in all browsers */
+small {
+  font-size: 100%;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+
+  &:hover {
+    cursor: help;
+  }
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+samp {
+  font-family: map(fonts, family-monospace); /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+kbd {
+  font-family: map(fonts, family-system);
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting line height in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25rem;
+}
+
+sup {
+  top: -0.5rem;
+}
+
+/**
+ * Address styling not present in IE 8/9
+ */
+mark {
+  background: #ffc;
+}

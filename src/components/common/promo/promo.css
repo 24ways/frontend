@@ -1,0 +1,18 @@
+.c-promo {
+  display: block;
+  margin-bottom: map(spaces, small);
+}
+
+.c-promo__image {
+  height: auto;
+  max-width: 100%;
+}
+
+.c-promo__message {
+  margin-bottom: map(spaces, small);
+  color: var(--color-text);
+}
+
+.c-promo__url {
+  @include typeset(label, 1);
+}

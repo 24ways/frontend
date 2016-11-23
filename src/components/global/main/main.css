@@ -1,0 +1,11 @@
+.c-main {
+  background-color: var(--navigation-color--offset);
+
+  @media screen and (max-width: 31.4375em) {
+    margin-top: var(--banner-height--small);
+  }
+
+  @media screen and (min-width: 31.5em) {
+    margin-right: var(--navigation-width--large);
+  }
+}

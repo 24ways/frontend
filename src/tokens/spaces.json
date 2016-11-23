@@ -1,8 +1,8 @@
 {
-  "space-xsmall": "0.25rem",
-  "space-small": "0.5rem",
-  "space-medium": "1rem",
-  "space-large": "1.5rem",
-  "space-xlarge": "3rem",
-  "space-xxlarge": "4.5rem"
+  "xsmall": "0.25rem",
+  "small": "0.5rem",
+  "medium": "1rem",
+  "large": "1.5rem",
+  "xlarge": "3rem",
+  "xxlarge": "4.5rem"
 }

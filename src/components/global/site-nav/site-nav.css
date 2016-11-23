@@ -1,0 +1,28 @@
+.c-site-nav {
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (min-width: 31.5em) {
+    flex-direction: column;
+    margin-top: auto;
+  }
+}
+
+.c-site-nav__item {
+  flex: 1;
+}
+
+.c-site-nav__label {
+  @apply --ui-link;
+  @include typeset(label, 1);
+  display: block;
+  box-shadow: 1px 0 0 var(--navigation-color--offset);
+  padding: map(spaces, medium);
+  text-align: center;
+
+  @media screen and (min-width: 31.5em) {
+    box-shadow: 0 -1px 0 var(--navigation-color--offset);
+    padding: map(spaces, small);
+    text-align: left;
+  }
+}

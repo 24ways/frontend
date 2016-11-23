@@ -1,0 +1,27 @@
+.c-button {
+  @include typeset(label, 2);
+  display: inline-block;
+  padding: map(spaces, medium) map(spaces, large);
+  background-color: var(--color-ui-link);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+
+  &:hover {
+    background-color: var(--color-ui-link--hover);
+    color: white;
+  }
+
+  &:active {
+    background-color: var(--color-ui-link--active);
+    color: white;
+  }
+
+  @media print {
+    display: none;
+  }
+}
+
+.c-button--more {
+  width: 100%;
+}

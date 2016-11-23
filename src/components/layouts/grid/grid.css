@@ -1,0 +1,41 @@
+.c-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: map(spaces, xsmall);
+  padding-bottom: map(spaces, xsmall);
+
+  .c-section__main & {
+    margin-top: calc(map(spaces, medium) * -1);
+    margin-left: calc(map(spaces, large) * -1);
+
+    @media screen and (min-width: 50em) {
+      margin-left: calc(map(spaces, xsmall) * -1);
+    }
+  }
+}
+
+.c-grid__item {
+  display: flex;
+  flex-basis: 16em;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-top: map(spaces, xsmall);
+  margin-left: map(spaces, xsmall);
+
+  .c-grid--authors & {
+    flex-basis: 50%;
+    flex-grow: 0;
+
+    @media screen and (min-width: 31.5em) {
+      flex-basis: 33.3334%;
+    }
+
+    @media screen and (min-width: 50em) {
+      flex-basis: 25%;
+    }
+
+    @media screen and (min-width: 60em) {
+      flex-basis: 20%;
+    }
+  }
+}

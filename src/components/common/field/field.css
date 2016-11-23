@@ -1,0 +1,57 @@
+.c-field {
+  @include typeset(label, 2);
+  position: relative;
+
+  &:not(:last-of-type) {
+    margin-bottom: map(spaces, medium);
+  }
+
+  @media print {
+    display: none;
+  }
+}
+
+.c-field__icon {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.c-field__input {
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  padding: map(spaces, medium);
+  box-shadow: inset 1px 1px 0 var(--prose-color--rule);
+
+  &:focus {
+    outline: 0 none;
+    box-shadow: inset 0 0 0 2px var(--color-focus);
+  }
+}
+
+.c-field__label {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: map(sizes, xlarge);
+  padding: map(spaces, medium);
+  font-weight: 700;
+
+  + .c-field__input {
+    padding-left: calc(map(sizes, xlarge) + map(spaces, medium));
+  }
+}
+
+.c-field__label--icon {
+  padding: map(spaces, small);
+
+  + .c-field__input {
+    padding-left: map(sizes, large);
+  }
+}
+
+.c-field--combined {
+  display: flex;
+}

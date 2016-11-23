@@ -2,7 +2,6 @@
 
 const pkg = require('./package.json');
 const fractal = require('./fractal.js');
-const autoprefixer = require('autoprefixer');
 const concat = require('gulp-concat');
 const del = require('del');
 const fs = require('fs');
@@ -11,10 +10,6 @@ const a11y = require('gulp-a11y');
 const ghPages = require('gulp-gh-pages');
 const imagemin = require('gulp-imagemin');
 const postcss = require('gulp-postcss');
-const postcssAssets = require('postcss-assets');
-const sass = require('gulp-sass');
-const sassGlob = require('gulp-sass-glob');
-const sassJson = require('node-sass-json-importer');
 const stylelint = require('gulp-stylelint');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
@@ -111,23 +106,61 @@ function lintstyles() {
 };
 
 // Styles
+// function styles() {
+//   return gulp.src(paths.src + '/assets/styles/*.scss')
+//     .pipe(sourcemaps.init())
+//     .pipe(sassGlob())
+//     .pipe(sass({
+//       outputStyle: 'expanded',
+//       includePaths: [paths.src + '/tokens/'],
+//       importer: sassJson
+//     }).on('error', sass.logError))
+//     .pipe(postcss([
+//       postcssAssets({
+//         loadPaths: [paths.src + '/assets/vectors']
+//       }),
+//       autoprefixer({
+//         browsers: ['> 2%']
+//       })
+//     ]))
+//     .pipe(sourcemaps.write('./'))
+//     .pipe(gulp.dest(paths.dest + '/assets/styles'));
+// };
+
+// Styles (Post CSS)
 function styles() {
-  return gulp.src(paths.src + '/assets/styles/*.scss')
+  const assets = require('postcss-assets');
+  const cssnext = require('postcss-cssnext');
+  const importer = require('postcss-easy-import');
+  const mapper = require('postcss-map');
+  const processors = [
+    importer({
+      glob: true
+    }),
+    mapper({
+      maps: [
+        paths.src + '/tokens/borders.json',
+        paths.src + '/tokens/breakpoints.json',
+        paths.src + '/tokens/colors.json',
+        paths.src + '/tokens/fonts.json',
+        paths.src + '/tokens/layers.json',
+        paths.src + '/tokens/sizes.json',
+        paths.src + '/tokens/spaces.json',
+      ]
+    }),
+    assets({
+      loadPaths: [paths.src + '/assets/vectors']
+    }),
+    cssnext({
+      browsers: ['> 2%']
+    }),
+    require('postcss-nested'),
+    require('cssnano')
+  ];
+
+  return gulp.src(paths.src + '/assets/styles/*.css')
     .pipe(sourcemaps.init())
-    .pipe(sassGlob())
-    .pipe(sass({
-      outputStyle: 'expanded',
-      includePaths: [paths.src + '/tokens/'],
-      importer: sassJson
-    }).on('error', sass.logError))
-    .pipe(postcss([
-      postcssAssets({
-        loadPaths: [paths.src + '/assets/vectors']
-      }),
-      autoprefixer({
-        browsers: ['> 2%']
-      })
-    ]))
+    .pipe(postcss(processors))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.dest + '/assets/styles'));
 };
@@ -160,7 +193,7 @@ function watch(done) {
   gulp.watch(paths.src + '/assets/images', images);
   gulp.watch(paths.src + '/assets/vectors', images);
   gulp.watch(paths.src + '/**/*.js', scripts);
-  gulp.watch(paths.src + '/**/*.scss', styles);
+  gulp.watch(paths.src + '/**/*.css', styles);
 };
 
 // Task sets

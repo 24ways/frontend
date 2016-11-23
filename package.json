@@ -27,7 +27,7 @@
     "@frctl/fractal": "latest",
     "@frctl/mandelbrot": "latest",
     "@frctl/nunjucks": "latest",
-    "autoprefixer": "latest",
+    "cssnano": "latest",
     "del": "latest",
     "fontfaceobserver": "latest",
     "gulp": "gulpjs/gulp#4.0",
@@ -36,16 +36,18 @@
     "gulp-gh-pages": "latest",
     "gulp-imagemin": "latest",
     "gulp-postcss": "latest",
-    "gulp-sass": "latest",
-    "gulp-sass-glob": "latest",
     "gulp-sourcemaps": "latest",
     "gulp-stylelint": "latest",
     "gulp-uglify": "latest",
     "markdown-it": "latest",
     "markdown-it-abbr": "latest",
     "markdown-it-prism": "latest",
-    "node-sass-json-importer": "latest",
     "nunjucks-date": "latest",
-    "postcss-assets": "latest"
+    "postcss-assets": "latest",
+    "postcss-cssnext": "latest",
+    "postcss-easy-import": "latest",
+    "postcss-nested": "latest",
+    "postcss-map": "latest",
+    "postcss-mixins": "latest"
   }
 }

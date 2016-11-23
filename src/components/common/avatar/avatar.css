@@ -1,0 +1,8 @@
+.c-avatar {
+  display: inline-block;
+  height: auto;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  shape-outside: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)  content-box;
+  shape-margin: map(spaces, medium);
+  margin: map(spaces, medium);
+}

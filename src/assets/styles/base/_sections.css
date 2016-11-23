@@ -1,0 +1,84 @@
+/* =====================================================
+   Sections
+   w3c.github.io/html/sections.html
+   ===================================================== */
+
+/**
+ * 1. Prevent adjustment of font size on orientation change.
+ */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  text-size-adjust: 100%; /* 1 */
+  position: relative;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@media print {
+  @page {
+    margin: 2cm;
+  }
+
+  * {
+    background: none !important;
+    color: black !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+}
+
+body {
+  @include font-family('sans');
+  margin: 0;
+  height: 100%;
+  background-color: white;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  font-size: inherit;
+  font-weight: inherit;
+
+  @media print {
+    page-break-after: avoid;
+  }
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border: 0;
+}

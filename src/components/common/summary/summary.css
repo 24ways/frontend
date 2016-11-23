@@ -1,0 +1,189 @@
+:root {
+  --summary__author-size: map(sizes, xlarge);
+}
+
+.c-summary {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  padding: map(spaces, medium) calc(map(spaces, large) - map(spaces, xsmall));
+  background-color: white;
+  box-shadow: 1px 1px 0 var(--prose-color--shadow);
+
+  @media print {
+    padding-bottom: 0;
+    height: auto !important;
+    min-height: 12em;
+    page-break-inside: avoid;
+  }
+
+  a {
+    position: relative;
+    z-index: calc(map(layers, default) + 1);
+  }
+
+  a.c-summary__link {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: map(layers, default);
+    white-space: nowrap;
+    text-indent: 200%;
+  }
+}
+
+.c-summary__header {
+  margin-bottom: map(spaces, large);
+
+  @media print {
+    border-top: 1px solid black;
+    padding-top: map(spaces, medium);
+  }
+}
+
+.c-summary__title {
+  @include typeset(title, 1);
+  padding-right: calc(var(--summary__author-size) - map(spaces, medium));
+}
+
+.c-summary__main {
+  @include typeset(prose, 1);
+  margin-bottom: map(spaces, medium);
+
+  a {
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: inherit;
+  }
+}
+
+.c-summary__footer {
+  @media screen {
+    margin-top: auto;
+  }
+}
+
+.c-summary__meta {
+  @include typeset(label, 1);
+  color: var(--color-neutral--dark);
+
+  .dt-published {
+    margin-right: map(spaces, medium);
+  }
+}
+
+.c-summary__author {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: map(layers, default);
+    border: solid calc(var(--summary__author-size) / 2);
+    border-color: transparent transparent white white;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: var(--summary__author-size);
+    width: var(--summary__author-size);
+    background: inline('corner.svg') -0.5em 0 no-repeat;
+    background-size: size('corner.svg');
+  }
+
+  @media print {
+    display: none;
+  }
+
+  a {
+    position: static;
+  }
+
+  img {
+    display: block;
+    height: var(--summary__author-size);
+    width: var(--summary__author-size);
+  }
+
+  span {
+    @apply --hidden;
+  }
+}
+
+@keyframes corner-forward {
+  from {
+    z-index: map(layers, default);
+    background-position: -0.5em;
+  }
+
+  to {
+    z-index: (map(layers, default) + 1);
+    background-position: -50.5em;
+  }
+}
+
+@keyframes corner-reverse {
+  from {
+    z-index: calc(map(layers, default) + 1);
+    background-position: -50.5em;
+  }
+
+  to {
+    z-index: map(layers, default);
+    background-position: -0.5em;
+  }
+}
+
+.c-summary:hover {
+  .c-summary__author {
+    &::after {
+      z-index: calc(map(layers, default) + 1);
+      animation: corner-forward 0.15s steps(10);
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+&.js-mouseout {
+  .c-summary__author {
+    &::before {
+      z-index: map(layers, default);
+      animation: corner-reverse 0.15s steps(10);
+    }
+  }
+}
+
+.c-summary--countdown {
+  .c-summary__header {
+    padding-left: calc(map(spaces, large) + map(spaces, xsmall));
+  }
+
+  .dt-published {
+    @include typeset(title, 1, initial);
+    position: absolute;
+    top: calc(map(spaces, medium) + map(spaces, xsmall));
+    left: calc(map(spaces, medium) + map(spaces, xsmall));
+
+    @media print {
+      top: 1.75rem;
+    }
+
+    span {
+      @apply --hidden;
+    }
+  }
+}
