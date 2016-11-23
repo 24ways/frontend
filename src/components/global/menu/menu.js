@@ -1,10 +1,7 @@
 (function() {
   'use strict';
 
-  if (enhanced === false) return;
-
   var $ = document.querySelector.bind(document);
-  var $$ = document.querySelectorAll.bind(document);
   var menuToggleEl = $('[href="#navigation"]');
   var navigationDrawerID = 'navigation__drawer';
   var navigationDrawerEl = $('#navigation__drawer');

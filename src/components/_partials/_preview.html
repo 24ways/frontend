@@ -7,8 +7,7 @@
     <link rel="dns-prefetch" href="//media.24ways.org"/>
 
     <script>
-      var docEl = document.documentElement;
-      docEl.className = docEl.className.replace('no-js', 'has-js');
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
 
       function downloadJSAtOnload() {
         var element = document.createElement("script");
@@ -17,13 +16,7 @@
         document.body.dataset.menuExpanded = 'false';
       }
 
-      if (document.querySelector && docEl.classList && window.addEventListener) {
-        docEl.className += ' js-enhanced';
-        var enhanced = true;
-        window.addEventListener("load", downloadJSAtOnload, false);
-      } else {
-        var enhanced = false;
-      }
+      window.addEventListener("load", downloadJSAtOnload, false);
     </script>
 
     <link rel="shortcut icon" href="{{ '/assets/icons/icon.ico' | path }}" type="image/ico"/>

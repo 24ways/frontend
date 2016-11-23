@@ -2,6 +2,7 @@
   display: block;
   position: fixed;
   z-index: ($z-index-modal + 1);
+  background-color: $navigation-color;
 
   @media screen and (max-width: 31.4375em) {
     top: $size-xsmall;

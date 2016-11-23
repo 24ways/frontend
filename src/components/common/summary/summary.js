@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  if (!document.querySelector || !window.addEventListener || !document.documentElement.classList) {
+  if (!document.documentElement.classList) {
     return;
   }
 
