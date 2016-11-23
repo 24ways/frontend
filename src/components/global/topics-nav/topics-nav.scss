@@ -3,15 +3,10 @@
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: flex-start;
-  height: 100%;
   box-shadow: inset 0 1px 0 $navigation-color--offset;
 
   @media screen and (min-width: 31.5em) {
     box-shadow: 0 -1px 0 $navigation-color--offset;
-  }
-
-  [data-menu-expanded] & {
-    overflow: hidden;
   }
 }
 
@@ -46,6 +41,6 @@
   @include typeset(label, 2);
   display: block;
   padding: $space-large $space-medium;
-  box-shadow: inset -1px -1px 0 $navigation-color--offset;
+  box-shadow: 1px 1px 0 $navigation-color--offset;
   text-align: center;
 }

@@ -1,15 +1,4 @@
 .c-search {
-  [data-menu-expanded] & {
-    @media screen and (min-width: 31.5em) {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: $navigation-width--large;
-      overflow: hidden;
-      transition: width $navigation-duration ease-out;
-    }
-  }
-
   .c-field__input {
     width: 100%;
     background-color: $navigation-color--offset;

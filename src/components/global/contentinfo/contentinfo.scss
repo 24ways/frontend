@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  box-shadow: 0 -1px 0 $prose-color--rule;
   padding: $space-small $space-medium;
 
   @media screen and (min-width: 31.5em) {
