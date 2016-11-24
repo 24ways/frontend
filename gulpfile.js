@@ -106,14 +106,10 @@ function lintstyles() {
 
 // Styles
 function styles() {
-  const autoprefixer = require('autoprefixer');
   const assets = require('postcss-assets');
   const importer = require('postcss-easy-import');
   const mapper = require('postcss-map');
   const processors = [
-    autoprefixer({
-      browsers: ['> 2%']
-    }),
     importer({
       glob: true
     }),
@@ -137,6 +133,7 @@ function styles() {
     require('postcss-color-function'),
     require('postcss-nested'),
     require('postcss-responsive-type'),
+    require('autoprefixer'),
     require('cssnano')
   ];
 
