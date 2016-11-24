@@ -1,7 +1,7 @@
 .s-note {
   @apply --typeset-caption;
   margin-bottom: map(spaces, large);
-  border: solid var(--prose-color--rule);
+  border: solid $prose-color--rule;
   border-width: 1px 0;
   padding: map(spaces, medium) 0;
 

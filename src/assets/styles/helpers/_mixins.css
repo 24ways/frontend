@@ -16,16 +16,16 @@
   }
 
   --ui-link: {
-    color: var(--navigation-color--text);
+    color: $navigation-color--text;
 
     &:hover {
-      color: var(--color-ui-link--hover);
-      background-color: lighten(--color-neutral--lightest, 1%);
+      color: $color-ui-link--hover;
+      background-color: map(colors, neutral, lightest);
     }
 
     &:active {
-      color: var(--color-ui-link--active);
-      background-color: darken(--color-neutral--lightest, 1%);
+      color: $color-ui-link--active;
+      background-color: map(colors, neutral, light);
     }
   }
 }

@@ -21,11 +21,11 @@
   border: 0;
   border-radius: 0;
   padding: map(spaces, medium);
-  box-shadow: inset 1px 1px 0 var(--prose-color--rule);
+  box-shadow: inset 1px 1px 0 $prose-color--rule;
 
   &:focus {
     outline: 0 none;
-    box-shadow: inset 0 0 0 2px var(--color-focus);
+    box-shadow: inset 0 0 0 2px $color-focus;
   }
 }
 

@@ -16,12 +16,12 @@
   @apply --ui-link;
   @apply --typeset-label;
   display: block;
-  box-shadow: 1px 0 0 var(--navigation-color--offset);
+  box-shadow: 1px 0 0 $navigation-color--offset;
   padding: map(spaces, medium);
   text-align: center;
 
   @media (--from-medium-screen) {
-    box-shadow: 0 -1px 0 var(--navigation-color--offset);
+    box-shadow: 0 -1px 0 $navigation-color--offset;
     padding: map(spaces, small);
     text-align: left;
   }

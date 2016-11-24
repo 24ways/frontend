@@ -11,7 +11,7 @@
   bottom: 0;
   left: 0;
   padding: map(spaces, small);
-  background-color: color(var(--color-neutral--darkest) a(75%));
+  background-color: color(map(colors, neutral, darkest) a(75%));
   color: white;
 
   @media print {

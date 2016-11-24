@@ -9,7 +9,7 @@ small {
 }
 
 abbr[title] {
-  text-decoration: underline dotted;
+  text-decoration: underline dotted rgba(0, 0, 0, 0.33);
 
   &:hover {
     cursor: help;

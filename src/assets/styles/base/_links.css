@@ -9,8 +9,8 @@
 a {
   background-color: transparent; /* 1 */
   text-decoration: none;
-  text-decoration-color: color(var(--color-link) a(33%));
-  color: var(--color-link);
+  text-decoration-color: color($color-link a(33%));
+  color: $color-link;
   transition: all 0.2s ease;
 }
 
@@ -19,14 +19,14 @@ a {
  */
 a:active,
 a:hover {
-  color: var(--color-link--hover);
-  text-decoration-color: color(var(--color-link--hover) a(33%));
+  color: $color-link--hover;
+  text-decoration-color: color($color-link--hover a(33%));
   outline: 0; /* 1 */
 }
 
 a:active {
-  color: var(--color-link--active);
-  text-decoration-color: color(var(--color-link--active) a(33%));
+  color: $color-link--active;
+  text-decoration-color: color($color-link--active a(33%));
 }
 
 @media print {

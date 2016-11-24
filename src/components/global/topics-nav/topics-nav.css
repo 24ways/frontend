@@ -3,10 +3,10 @@
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: flex-start;
-  box-shadow: inset 0 1px 0 var(--navigation-color--offset);
+  box-shadow: inset 0 1px 0 $navigation-color--offset;
 
   @media (--from-medium-screen) {
-    box-shadow: 0 -1px 0 var(--navigation-color--offset);
+    box-shadow: 0 -1px 0 $navigation-color--offset;
   }
 }
 
@@ -41,6 +41,6 @@
   @apply --typeset-ui;
   display: block;
   padding: map(spaces, large) map(spaces, medium);
-  box-shadow: 1px 1px 0 var(--navigation-color--offset);
+  box-shadow: 1px 1px 0 $navigation-color--offset;
   text-align: center;
 }

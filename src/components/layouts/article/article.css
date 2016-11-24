@@ -1,7 +1,8 @@
 .c-article {
   position: relative;
   overflow-x: hidden;
-  background-color: var(--color-day--light);
+  background-color: $color-day--light;
+  background-color: var(--color-day--light, $color-day--light);
 
   @media (--from-large-screen) {
     padding-top: 9rem;
@@ -9,12 +10,12 @@
   }
 
   a {
-    color: var(--color-day--dark);
-    border-color: color(var(--color-day--dark) a(20%));
+    color: $color-day--dark;
+    color: var(--color-day--dark, $color-day--dark);
 
     &:hover {
-      color: var(--color-day);
-      border-color: color(var(--color-day) a(33%));
+      color: $color-day;
+      color: var(--color-day, $color-day);
     }
   }
 }
@@ -28,7 +29,7 @@
     padding-right: 5%;
     padding-bottom: map(spaces, xxlarge);
     padding-left: 25%;
-    box-shadow: 0 -1px 0 0 var(--prose-color--rule);
+    box-shadow: 0 -1px 0 0 $prose-color--rule;
   }
 
   @media (--from-xlarge-screen) {

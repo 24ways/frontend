@@ -10,7 +10,7 @@
 
 .c-promo__message {
   margin-bottom: map(spaces, small);
-  color: var(--color-text);
+  color: $color-text;
 }
 
 .c-promo__url {

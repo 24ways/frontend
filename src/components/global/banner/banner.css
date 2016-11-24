@@ -1,11 +1,12 @@
 .c-banner {
   padding: map(spaces, medium) map(spaces, large);
-  background-color: var(--color-year--dark);
-  transition-duration: var(--banner-duration);
+  background-color: $color-year--dark;
+  background-color: var(--color-year--dark, $color-year--dark);
+  transition-duration: $banner-duration;
   transition-timing-function: ease-out;
 
   [data-menu-expanded=false] & {
-    transition-delay: var(--navigation-duration);
+    transition-delay: $navigation-duration;
   }
 
   @media (--upto-medium-screen) {
@@ -22,7 +23,7 @@
   }
 
   @media (--from-medium-screen) {
-    margin-right: var(--navigation-width--large);
+    margin-right: $navigation-width--large;
     padding: map(spaces, large);
   }
 
@@ -50,14 +51,14 @@
   }
 
   @media (--upto-medium-screen) {
-    transition-property: color var(--banner-duration) ease-out;
+    transition-property: color $banner-duration ease-out;
 
     [data-menu-expanded=true] & {
-      color: var(--navigation-color--text);
+      color: $navigation-color--text;
     }
 
     [data-menu-expanded=false] & {
-      transition-delay: var(--navigation-duration);
+      transition-delay: $navigation-duration;
     }
   }
 

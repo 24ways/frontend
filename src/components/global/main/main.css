@@ -1,11 +1,11 @@
 .c-main {
-  background-color: var(--navigation-color--offset);
+  background-color: $navigation-color--offset;
 
   @media (--upto-medium-screen) {
-    margin-top: var(--banner-height--small);
+    margin-top: $banner-height--small;
   }
 
   @media (--from-medium-screen) {
-    margin-right: var(--navigation-width--large);
+    margin-right: $navigation-width--large;
   }
 }

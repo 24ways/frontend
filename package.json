@@ -53,6 +53,7 @@
     "postcss-map": "latest",
     "postcss-media-minmax": "latest",
     "postcss-nested": "latest",
-    "postcss-responsive-type": "latest"
+    "postcss-responsive-type": "latest",
+    "postcss-simple-vars": "latest"
   }
 }

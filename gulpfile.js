@@ -127,10 +127,10 @@ function styles() {
     assets({
       loadPaths: [paths.src + '/assets/vectors']
     }),
+    require('postcss-simple-vars'),
     require('postcss-apply'),
     require('postcss-calc'),
     require('postcss-custom-media'),
-    require('postcss-custom-properties'),
     require('postcss-color-function'),
     require('postcss-media-minmax'),
     require('postcss-nested'),

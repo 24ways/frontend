@@ -14,7 +14,7 @@
     }
 
     [data-menu-expanded=true] & {
-      color: var(--navigation-color--text);
+      color: $navigation-color--text;
     }
   }
 
@@ -23,7 +23,7 @@
     top: 0;
     right: 0;
     padding: map(spaces, medium);
-    box-shadow: inset 0 -1px 0 var(--navigation-color--offset);
+    box-shadow: inset 0 -1px 0 $navigation-color--offset;
   }
 
   @media print {

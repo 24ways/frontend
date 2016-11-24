@@ -1,6 +1,4 @@
-:root {
-  --summary__author-size: map(sizes, xlarge);
-}
+$summary__author-size: map(sizes, xlarge);
 
 .c-summary {
   display: flex;
@@ -9,7 +7,7 @@
   position: relative;
   padding: map(spaces, medium) calc(map(spaces, large) - map(spaces, xsmall));
   background-color: white;
-  box-shadow: 1px 1px 0 var(--prose-color--shadow);
+  box-shadow: 1px 1px 0 $prose-color--shadow;
 
   @media print {
     padding-bottom: 0;
@@ -47,7 +45,7 @@
 
 .c-summary__title {
   @apply --typeset-summary-title;
-  padding-right: calc(var(--summary__author-size) - map(spaces, medium));
+  padding-right: calc($summary__author-size - map(spaces, medium));
 }
 
 .c-summary__main {
@@ -70,7 +68,7 @@
 
 .c-summary__meta {
   @apply --typeset-label;
-  color: var(--color-neutral--dark);
+  color: map(colors, neutral, dark);
 
   .dt-published {
     margin-right: map(spaces, medium);
@@ -90,7 +88,7 @@
     top: 0;
     right: 0;
     z-index: map(layers, default);
-    border: solid calc(var(--summary__author-size) / 2);
+    border: solid calc($summary__author-size / 2);
     border-color: transparent transparent white white;
   }
 
@@ -100,8 +98,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: var(--summary__author-size);
-    width: var(--summary__author-size);
+    height: $summary__author-size;
+    width: $summary__author-size;
     background: inline('corner.svg') -0.5em 0 no-repeat;
     background-size: size('corner.svg');
   }
@@ -116,8 +114,8 @@
 
   img {
     display: block;
-    height: var(--summary__author-size);
-    width: var(--summary__author-size);
+    height: $summary__author-size;
+    width: $summary__author-size;
   }
 
   span {

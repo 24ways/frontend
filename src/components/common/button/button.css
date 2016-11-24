@@ -2,18 +2,18 @@
   @apply --typeset-ui;
   display: inline-block;
   padding: map(spaces, medium) map(spaces, large);
-  background-color: var(--color-ui-link);
+  background-color: $color-ui-link;
   text-align: center;
   text-transform: uppercase;
   color: white;
 
   &:hover {
-    background-color: var(--color-ui-link--hover);
+    background-color: $color-ui-link--hover;
     color: white;
   }
 
   &:active {
-    background-color: var(--color-ui-link--active);
+    background-color: $color-ui-link--active;
     color: white;
   }
 

@@ -7,14 +7,14 @@
 
 /* Theme overrides */
 a {
-  color: var(--color-link);
+  color: $color-link;
 
   &:hover {
-    color: var(--color-link--hover);
+    color: $color-link--hover;
   }
 
   &:active {
-    color: var(--color-link--active);
+    color: $color-link--active;
   }
 }
 

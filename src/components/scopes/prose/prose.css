@@ -51,7 +51,7 @@
 
     &::before {
       content: '';
-      background-color: var(--color-text);
+      background-color: $color-text;
       width: 0.4375em;
       height: 0.4375em;
       position: absolute;
@@ -111,12 +111,8 @@
 .s-prose--article {
   @apply --typescale-prose;
 
-  .lede {
-    color: var(--color-year--dark);
-  }
-
   blockquote {
-    border-left: 0.25rem solid var(--prose-color--rule);
+    border-left: 0.25rem solid $prose-color--rule;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     padding-left: 1em;
@@ -156,7 +152,7 @@
   p.image span.caption { /* ! Legacy */
     @apply --typeset-caption;
     display: block;
-    border-bottom: 1px solid var(--prose-color--rule);
+    border-bottom: 1px solid $prose-color--rule;
     margin-right: map(spaces, large);
     margin-left: map(spaces, large);
     padding: map(spaces, medium) 0;
@@ -167,7 +163,12 @@
   }
 
   a {
-    border-bottom: 1px solid var(--prose-color--rule);
+    text-decoration: underline;
+    text-decoration-color: var(--color-day--dark-alpha, $color-day--dark-alpha);
+
+    &:hover {
+      text-decoration-color: var(--color-day, $color-day);
+    }
 
     @media print {
       border-bottom: 1px dotted #999;
@@ -190,12 +191,14 @@
   h2 {
     font-size: 1.5em;
     font-weight: 700;
-    color: var(--color-year--dark);
   }
 
+  h2,
   h3,
-  h4 {
-    color: var(--color-day--dark);
+  h4,
+  .lede {
+    color: $color-day--dark;
+    color: var(--color-day--dark, $color-day--dark);
   }
 
   h3 {
@@ -203,13 +206,13 @@
   }
 
   h4 {
-    font-size: 1em;
+    font-size: 1.125em;
     font-weight: 700;
   }
 
   h5 {
-    font-size: 1em;
-    letter-spacing: 0.025em;
+    font-size: 0.875em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     opacity: 0.9;
   }
@@ -219,10 +222,11 @@
     margin: 2em 0 4em;
 
     &::after {
-      color: color(var(--color-text) a(25%));
       content: '\25C6 \25C6 \25C6';
-      letter-spacing: map(spaces, medium);
       height: 0;
+      font-family: sans;
+      letter-spacing: map(spaces, medium);
+      color: color($color-text a(25%));
     }
   }
 
@@ -238,7 +242,7 @@
 
   caption {
     @apply --typeset-caption;
-    color: var(--color-neutral);
+    color: map(colors, neutral, base);
     caption-side: bottom;
     text-align: left;
     margin: 1rem 0;
@@ -246,13 +250,13 @@
 
   td,
   th {
-    border-bottom: 1px solid var(--prose-color--rule);
+    border-bottom: 1px solid $prose-color--rule;
     padding: 0.25em 2em 0.25em 0.5em; /* 4px 32px 4px 4px */
   }
 
   th {
     line-height: 1.25;
-    background-color: var(--prose-color--background);
+    background-color: $prose-color--background;
   }
 
   /* Represents key press within user input sequence. */
@@ -260,10 +264,10 @@
     font-size: 90%;
     background-color: white;
     margin: 0 0.125rem;
-    border: 1px solid var(--prose-color--shadow);
+    border: 1px solid $prose-color--shadow;
     border-radius: map(borders, radius-default);
     padding: 0.25rem 0.5rem; /* 4px 8px */
-    box-shadow: 0 1px 0 var(--prose-color--shadow);
+    box-shadow: 0 1px 0 $prose-color--shadow;
   }
 
   /* Represents menu selection within user input sequence. */

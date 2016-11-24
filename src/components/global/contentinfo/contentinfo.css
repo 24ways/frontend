@@ -6,7 +6,7 @@
   padding: map(spaces, small) map(spaces, medium);
 
   @media (--from-medium-screen) {
-    margin-right: var(--navigation-width--large);
+    margin-right: $navigation-width--large;
   }
 
   a {

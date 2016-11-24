@@ -3,7 +3,7 @@
   display: flex;
   flex-flow: row wrap;
   margin-bottom: map(spaces, medium);
-  border-top: 1px solid var(--prose-color--rule);
+  border-top: 1px solid $prose-color--rule;
   padding: map(spaces, small) 0 map(spaces, large);
 
   @media (--from-large-screen) {
@@ -32,7 +32,7 @@
 
   @media (--from-large-screen) {
     display: block;
-    border-top: 1px solid var(--prose-color--rule);
+    border-top: 1px solid $prose-color--rule;
     padding: map(spaces, small) 0 map(spaces, large);
     text-align: right;
   }

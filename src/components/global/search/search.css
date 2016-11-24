@@ -1,7 +1,7 @@
 .c-search {
   .c-field__input {
     width: 100%;
-    background-color: var(--navigation-color--offset);
+    background-color: $navigation-color--offset;
     padding-left: 3rem;
 
     &:not(:focus) {
@@ -9,7 +9,7 @@
     }
 
     @media (--from-medium-screen) {
-      height: var(--banner-height--large);
+      height: $banner-height--large;
     }
   }
 
