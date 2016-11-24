@@ -13,20 +13,6 @@ variants:
     - "@summary"
     - "@summary"
     - "@summary"
-- name: countdown
-  context:
-    items:
-    - "@summary--countdown"
-    - "@summary--countdown"
-    - "@summary--countdown"
-    - "@summary--countdown"
-    - "@summary--countdown"
-    - "@summary--countdown"
-    - "@summary--countdown"
-    - "@summary--countdown"
-    - "@summary--countdown"
-    - "@summary--countdown"
-    - "@summary--countdown"
 - name: authors
   context:
     items:

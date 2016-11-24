@@ -50,12 +50,11 @@ const nunjucks = require('@frctl/nunjucks')({
 });
 
 // Project config
-fractal.set('project.title', '24 ways component library');
+fractal.set('project.title', 'Bits of 24 ways');
 
 // Components config
 fractal.components.engine(nunjucks);
 fractal.components.set('default.preview', '@preview');
-fractal.components.set('default.status', 'prototype');
 fractal.components.set('ext', '.html');
 fractal.components.set('path', paths.src + '/components');
 

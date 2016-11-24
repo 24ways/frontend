@@ -1,7 +1,5 @@
 # 24 ways front-end component library
 
-> **Note:** This project is in the early stages of (re-)development
-
 ## Requirements
 This project is built upon [Fractal](https://github.com/frctl/fractal), a tool that enables the rapid development of components, templates and pages. Fractal uses a number of ES6 features, so this project requires [Node.js](https://nodejs.org/) v4.0+ to be installed locally. A global install of Gulp is also recommended.
 
@@ -41,31 +39,37 @@ Sometimes it’s helpful to know what all these different files are for…
 ```
 /
 ├─ src/
-│  ├─ assets/        # Static…
+│  ├─ assets/        # Assets
 │  │  ├─ icons/      # Favicon and home screen icons
 │  │  ├─ images/     # Raster images (used in component examples)
 │  │  ├─ scripts/    # JavaScript files
 │  │  ├─ styles/     # CSS files
 │  │  └─ vectors/    # SVG images, icons and logos
 |  |
-│  ├─ components/    # Components…
-│  │  ├─ layouts/    # (`.l-*`) that govern macro layout
-│  │  ├─ scopes/     # (`.s-*`) that style undecorated markup
-│  │  ├─ utilities/  # (`.u-*`) that have a single purpose/role
-│  │  └─ …           # (`.c-*`) that define specific areas of UI
+│  ├─ components/    # Components
+│  │  ├─ _partials/  # …that render component previews
+│  │  ├─ common/     # …that may appear anywhere
+│  │  ├─ global/     # …that appear on every page
+│  │  ├─ layouts/    # …that govern macro layout
+│  │  ├─ scopes/     # …that style undecorated markup
+│  │  ├─ templates/  # …that combine components to render page types
+│  │  └─ utilities/  # …that have a single purpose/role
 |  |
-│  └─ docs/          # Project documentation
-│
+│  ├─ docs/          # Documentation
+│  │  ├─ _partials/  # Partials for rendering documentation
+│  │  └─ …           # Documentation files
+│  │
+│  └─ tokens/        # Design tokens
+|
 ├─ tmp/              # Files required for dynamic builds (ignored by Git)
 ├─ www/              # Public build (ignored by Git)
 │
 ├─ .editorconfig     # Code style definitions
 ├─ .gitignore        # List of files and folders not tracked by Git
-├─ .jshintrc         # Linting preferences for JavaScript
 ├─ .stylelintrc      # Linting preferences for CSS
-├─ LICENSE           # License information for this project
 ├─ fractal.js        # Configuration for Fractal
 ├─ gulpfile.js       # Configuration for Gulp tasks
+├─ LICENSE           # License information for this project
 ├─ package.json      # Project manifest
 └─ README.md         # This file
 ```

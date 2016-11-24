@@ -1,0 +1,30 @@
+<article class="c-article  h-entry">
+  <header class="c-article__header">
+    <h1 class="c-article__title  p-name">{{ title }}</h1>
+    <p class="c-article__byline  p-author h-card">
+      <a class="u-url" href="#author">
+        {% render "@avatar" %}
+        <span class="p-name">{{ author }}</span>
+      </a>
+    </p>
+  </header>
+
+  <footer class="c-article__footer">
+    {% render "@meta" %}
+  </footer>
+
+  <div class="c-article__main e-content">
+    {% render "@note" %}
+    {% render "@prose--article" %}
+  </div>
+
+  {% render "@section--author" %}
+  {% render "@section--sponsor" %}
+  {% if related %}
+    {% render "@section--related" %}
+  {% endif %}
+  {% if comments %}
+    {% render "@section--comments" %}
+    {% render "@comment-form" %}
+  {% endif %}
+</article>

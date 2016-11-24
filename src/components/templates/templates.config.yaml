@@ -3,6 +3,7 @@ context:
     title: 24 ways
     handle: 24ways
     description: 24 ways is the advent calendar for web geeks. Each day throughout December we publish a daily dose of web design and development goodness to bring you all a little Christmas cheer.
+    url: https://24ways.org
     feed: https://feeds.feedburner.com/24ways
     theme_color: "#f04"
   theme:

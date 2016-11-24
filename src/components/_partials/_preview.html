@@ -1,24 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-gb" dir="ltr" class="no-js">
+<html lang="en-gb" dir="ltr" prefix="og: http://ogp.me/ns#" class="no-js">
   <head>
     <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
     <link rel="dns-prefetch" href="//themes.googleusercontent.com"/>
     <link rel="dns-prefetch" href="//cloud.24ways.org"/>
     <link rel="dns-prefetch" href="//media.24ways.org"/>
-
-    <script>
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
-
-      function downloadJSAtOnload() {
-        var element = document.createElement("script");
-        element.src = "{{ '/assets/scripts/app.js' | path }}";
-        document.body.appendChild(element);
-        document.body.dataset.menuExpanded = 'false';
-      }
-
-      window.addEventListener("load", downloadJSAtOnload, false);
-    </script>
-
     <link rel="shortcut icon" href="{{ '/assets/icons/icon.ico' | path }}" type="image/ico"/>
     <link rel="apple-touch-icon" href="{{ '/assets/icons/icon.png' | path }}" type="image/png"/>
     <link rel="mask-icon" href="{{ '/assets/icons/icon.svg' | path }}" color="{{ site.theme_color }}"/>
@@ -26,6 +12,37 @@
     <link rel="manifest" href="/manifest.json"/>
     <link rel="alternate" href="{{ site.feed }}" type="application/rss+xml"/>
     <link rel="stylesheet" href="{{ '/assets/styles/app.css' | path }}"/>
+
+    <meta charset="utf-8"/>
+    <meta name="referrer" content="origin"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    {%- if _target.context.title -%}
+      <meta property="og:title" content="{{ _target.context.title }}"/>
+    {%- else -%}
+      <meta property="og:title" content="{{ site.title }}"/>
+    {%- endif -%}
+    {%- if _target.context.description -%}
+      <meta property="og:description" content="{{ _target.context.description }}"/>
+    {%- else -%}
+      <meta property="og:description" content="{{ site.description }}"/>
+    {%- endif -%}
+    {%- if _target.context.url -%}
+      <meta property="og:url" content="{{ _target.context.url }}"/>
+    {%- else -%}
+      <meta property="og:url" content="{{ site.url }}"/>
+    {%- endif -%}
+    {%- if _target.context.avatar -%}
+      <meta property="og:image" content="{{ _target.context.avatar.src }}"/>
+    {%- else -%}
+      <meta property="og:image" content="{{ '/assets/icons/icon.png' | path }}"/>
+    {%- endif -%}
+    {%- if _target.context.handle -%}
+      <meta name="twitter:creator" content="@{{ _target.context.handle }}"/>
+    {%- endif -%}
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@{{ site.handle }}"/>
 
     <style>
       :root {
@@ -39,14 +56,18 @@
       }
     </style>
 
-    <meta charset="utf-8"/>
-    <meta name="robots" content="index, follow"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="twitter:site" content="@{{ site.handle }}"/>
-    <meta name="twitter:title" content="{{ site.title }}"/>
-    <meta name="twitter:description" content="{{ site.description }}"/>
-    <meta name="twitter:creator" content="@{{ site.handle }}"/>
-    <meta name="twitter:card" content="summary"/>
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "{{ '/assets/scripts/app.js' | path }}";
+        document.body.appendChild(element);
+        document.body.dataset.menuExpanded = 'false';
+      }
+
+      window.addEventListener("load", downloadJSAtOnload, false);
+    </script>
 
     <title>{{ _target.context.title }} &#9670; 24 ways</title>
   </head>

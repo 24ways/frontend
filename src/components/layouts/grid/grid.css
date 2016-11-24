@@ -1,4 +1,4 @@
-.c-grid {
+.l-grid {
   display: flex;
   flex-wrap: wrap;
   padding-right: map(spaces, xsmall);
@@ -14,7 +14,7 @@
   }
 }
 
-.c-grid__item {
+.l-grid__item {
   display: flex;
   flex-basis: 16em;
   flex-grow: 1;
@@ -22,7 +22,7 @@
   margin-top: map(spaces, xsmall);
   margin-left: map(spaces, xsmall);
 
-  .c-grid--authors & {
+  .l-grid--authors & {
     flex-basis: 50%;
     flex-grow: 0;
 
