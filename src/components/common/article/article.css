@@ -45,6 +45,8 @@
 }
 
 .c-article__byline {
+  @apply --typescale-prose;
+
   .c-avatar {
     position: absolute;
     margin: 0;
