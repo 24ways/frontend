@@ -8,7 +8,7 @@
     margin-top: calc(map(spaces, medium) * -1);
     margin-left: calc(map(spaces, large) * -1);
 
-    @media screen and (min-width: 50em) {
+    @media (--from-large-screen) {
       margin-left: calc(map(spaces, xsmall) * -1);
     }
   }
@@ -26,15 +26,15 @@
     flex-basis: 50%;
     flex-grow: 0;
 
-    @media screen and (min-width: 31.5em) {
+    @media (--from-medium-screen) {
       flex-basis: 33.3334%;
     }
 
-    @media screen and (min-width: 50em) {
+    @media (--from-large-screen) {
       flex-basis: 25%;
     }
 
-    @media screen and (min-width: 60em) {
+    @media (--from-xlarge-screen) {
       flex-basis: 20%;
     }
   }

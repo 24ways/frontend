@@ -11,7 +11,7 @@
   background-color: white;
   box-shadow: 1px 1px 0 var(--prose-color--shadow);
 
-  @media screen and (min-width: 40em) {
+  @media (--from-medium-screen) {
     padding-left: var(--comment-avatar--large);
   }
 
@@ -26,7 +26,7 @@
     left: calc(map(spaces, large) * -1);
     width: map(sizes, large);
 
-    @media screen and (min-width: 40em) {
+    @media (--from-medium-screen) {
       width: map(sizes, xlarge);
     }
   }
@@ -48,7 +48,7 @@
 .c-comment__meta {
   @apply --typeset-label;
 
-  @media screen and (min-width: 30em) {
+  @media --from-small-screen {
     position: absolute;
     top: 1.75rem;
     right: map(spaces, large);

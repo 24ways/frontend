@@ -47,9 +47,11 @@
     "postcss-assets": "latest",
     "postcss-calc": "latest",
     "postcss-color-function": "latest",
+    "postcss-custom-media": "latest",
     "postcss-custom-properties": "latest",
     "postcss-easy-import": "latest",
     "postcss-map": "latest",
+    "postcss-media-minmax": "latest",
     "postcss-nested": "latest",
     "postcss-responsive-type": "latest"
   }

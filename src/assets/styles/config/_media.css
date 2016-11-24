@@ -1,0 +1,19 @@
+/* =====================================================
+   Media
+   ===================================================== */
+
+/* Small */
+@custom-media --upto-small-screen screen and (width <= map(breakpoints, small));
+@custom-media --from-small-screen screen and (width >= map(breakpoints, small));
+
+/* Medium */
+@custom-media --upto-medium-screen screen and (width <= map(breakpoints, medium));
+@custom-media --from-medium-screen screen and (width >= map(breakpoints, medium));
+
+/* Large */
+@custom-media --upto-large-screen screen and (width <= map(breakpoints, large));
+@custom-media --from-large-screen screen and (width >= map(breakpoints, large));
+
+/* Other */
+@custom-media --from-xlarge-screen screen and (width >= map(breakpoints, xlarge));
+@custom-media --from-max-screen screen and (width >= map(breakpoints, max));

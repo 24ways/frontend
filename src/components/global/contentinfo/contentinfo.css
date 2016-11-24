@@ -5,7 +5,7 @@
   justify-content: space-between;
   padding: map(spaces, small) map(spaces, medium);
 
-  @media screen and (min-width: 31.5em) {
+  @media (--from-medium-screen) {
     margin-right: var(--navigation-width--large);
   }
 
@@ -18,7 +18,7 @@
   }
 
   > * {
-    @media screen and (max-width: 31.4375em) {
+    @media (--upto-medium-screen) {
       line-height: 2;
     }
   }
@@ -27,7 +27,7 @@
 .c-contentinfo__copyright {
   order: -1;
 
-  @media screen and (max-width: 31.4375em) {
+  @media (--upto-medium-screen) {
     order: 0;
   }
 }

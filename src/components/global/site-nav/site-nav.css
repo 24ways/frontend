@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
 
-  @media screen and (min-width: 31.5em) {
+  @media (--from-medium-screen) {
     flex-direction: column;
     margin-top: auto;
   }
@@ -20,7 +20,7 @@
   padding: map(spaces, medium);
   text-align: center;
 
-  @media screen and (min-width: 31.5em) {
+  @media (--from-medium-screen) {
     box-shadow: 0 -1px 0 var(--navigation-color--offset);
     padding: map(spaces, small);
     text-align: left;

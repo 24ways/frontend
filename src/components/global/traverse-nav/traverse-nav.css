@@ -5,7 +5,7 @@
 .c-traverse-nav {
   display: none;
 
-  @media screen and (min-width: 31.5em) {
+  @media (--from-medium-screen) {
     display: initial;
     position: fixed;
     right: 0;
@@ -31,7 +31,7 @@
     content: 'Next: \A' attr(data-sequence-title);
   }
 
-  @media screen and (min-width: 31.5em) {
+  @media (--from-medium-screen) {
     &::before,
     &::after {
       position: absolute;

@@ -12,7 +12,7 @@
     transition-delay: var(--banner-duration);
   }
 
-  @media screen and (max-width: 31.4375em) {
+  @media (--upto-medium-screen) {
     [data-menu-expanded] & {
       overflow: hidden;
       top: var(--banner-height--small);
@@ -30,7 +30,7 @@
     }
   }
 
-  @media screen and (min-width: 31.5em) {
+  @media (--from-medium-screen) {
     .no-js & {
       margin-right: var(--navigation-width--large);
     }
@@ -66,7 +66,7 @@
     overflow: hidden;
   }
 
-  @media screen and (min-width: 31.5em) {
+  @media (--from-medium-screen) {
     height: 100%;
     box-shadow: inset -1px 0 0 var(--navigation-color--offset);
   }

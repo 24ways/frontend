@@ -3,7 +3,7 @@
   overflow-x: hidden;
   background-color: var(--color-day--light);
 
-  @media screen and (min-width: 50em) {
+  @media (--from-large-screen) {
     padding-top: 9rem;
     padding-bottom: map(spaces, large);
   }
@@ -23,7 +23,7 @@
   padding: map(spaces, medium) map(spaces, large) map(spaces, large);
   position: relative;
 
-  @media screen and (min-width: 50em) {
+  @media (--from-large-screen) {
     min-height: 16rem;
     padding-right: 5%;
     padding-bottom: map(spaces, xxlarge);
@@ -31,7 +31,7 @@
     box-shadow: 0 -1px 0 0 var(--prose-color--rule);
   }
 
-  @media screen and (min-width: 60em) {
+  @media (--from-xlarge-screen) {
     padding-right: 15%;
   }
 }
@@ -48,7 +48,7 @@
     position: absolute;
     margin: 0;
 
-    @media screen and (max-width: 49.9375em) {
+    @media (--upto-large-screen) {
       width: 50%;
       top: -25%;
       right: -12.5%;
@@ -58,10 +58,14 @@
       mix-blend-mode: multiply;
     }
 
-    @media screen and (min-width: 50em) {
+    @media (--from-large-screen) {
       width: 27.5%;
       top: -40%;
       left: -5%;
+    }
+
+    @media print {
+      display: none;
     }
   }
 }
@@ -69,18 +73,18 @@
 .c-article__main {
   padding: 0 map(spaces, large) map(spaces, large);
 
-  @media screen and (min-width: 50em) {
+  @media (--from-large-screen) {
     width: 75%;
     margin-left: 25%;
     padding-left: 0;
     padding-right: 5%;
   }
 
-  @media screen and (min-width: 60em) {
+  @media (--from-xlarge-screen) {
     padding-right: 15%;
   }
 
-  @media screen and (width: 80em) {
+  @media (--from-max-screen) {
     padding-right: 25%;
   }
 }
@@ -88,7 +92,7 @@
 .c-article__footer {
   padding: 0 map(spaces, large);
 
-  @media screen and (min-width: 50em) {
+  @media (--from-large-screen) {
     float: left;
     width: 20%;
     padding: 0;

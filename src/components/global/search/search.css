@@ -8,7 +8,7 @@
       box-shadow: none;
     }
 
-    @media screen and (min-width: 31.5em) {
+    @media (--from-medium-screen) {
       height: var(--banner-height--large);
     }
   }
@@ -19,7 +19,7 @@
     left: 0;
     padding: map(spaces, xsmall);
 
-    @media screen and (min-width: 31.5em) {
+    @media (--from-medium-screen) {
       padding: map(spaces, medium) map(spaces, xsmall);
     }
   }

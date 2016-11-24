@@ -5,7 +5,7 @@
   align-content: flex-start;
   box-shadow: inset 0 1px 0 var(--navigation-color--offset);
 
-  @media screen and (min-width: 31.5em) {
+  @media (--from-medium-screen) {
     box-shadow: 0 -1px 0 var(--navigation-color--offset);
   }
 }
@@ -13,14 +13,14 @@
 .c-topics-nav__item {
   flex: 1 0 33.3334%;
 
-  @media screen and (min-width: 31.5em) {
+  @media (--from-medium-screen) {
     [data-menu-expanded] & {
       flex-basis: 50%;
       min-width: 50%;
     }
   }
 
-  @media screen and (min-width: 50em) {
+  @media (--from-large-screen) {
     flex-basis: 16.6667%;
   }
 
@@ -29,7 +29,7 @@
     width: map(sizes, medium);
     margin: 0 auto map(spaces, xsmall);
 
-    @media screen and (min-width: 31.5em) {
+    @media (--from-medium-screen) {
       height: map(sizes, large);
       width: map(sizes, large);
     }

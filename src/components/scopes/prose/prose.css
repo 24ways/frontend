@@ -31,7 +31,7 @@
   ul {
     list-style-position: inside;
 
-    @media screen and (min-width: 50em) {
+    @media (--from-large-screen) {
       list-style-position: outside;
     }
   }
@@ -45,7 +45,7 @@
     position: relative;
     padding-left: 1em;
 
-    @media screen and (min-width: 50em) {
+    @media (--from-large-screen) {
       padding-left: 0;
     }
 
@@ -60,7 +60,7 @@
       transform: rotate(45deg);
       transform-origin: 50% 50%;
 
-      @media screen and (min-width: 50em) {
+      @media (--from-large-screen) {
         left: -1.125em;
       }
     }
@@ -137,12 +137,12 @@
   p.image { /* ! Legacy */
     margin: map(spaces, large) (map(spaces, large) * -1);
 
-    @media screen and (min-width: 50em) {
+    @media (--from-large-screen) {
       margin-left: 0;
       margin-right: -7.6667%;
     }
 
-    @media screen and (min-width: 60em) {
+    @media (--from-xlarge-screen) {
       margin-right: -25%;
     }
 
@@ -161,7 +161,7 @@
     margin-left: map(spaces, large);
     padding: map(spaces, medium) 0;
 
-    @media screen and (min-width: 50em) {
+    @media (--from-large-screen) {
       margin: 0;
     }
   }

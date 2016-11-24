@@ -6,7 +6,7 @@
   background-image: inline('diamond.svg');
   background-repeat: repeat;
 
-  @media screen and (min-width: 50em) {
+  @media (--from-large-screen) {
     padding-left: 25%;
   }
 }
@@ -40,7 +40,7 @@
     margin-top: -7.5%;
     margin-right: -7.5%;
 
-    @media screen and (min-width: 50em) {
+    @media (--from-large-screen) {
       float: left;
       margin-left: -33%;
       margin-right: map(spaces, medium);

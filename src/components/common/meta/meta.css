@@ -6,7 +6,7 @@
   border-top: 1px solid var(--prose-color--rule);
   padding: map(spaces, small) 0 map(spaces, large);
 
-  @media screen and (min-width: 50em) {
+  @media (--from-large-screen) {
     flex-flow: column nowrap;
     border: 0;
     padding: 0;
@@ -22,7 +22,7 @@
     }
   }
 
-  @media print, screen and (max-width: 49.9375em) {
+  @media (--upto-large-screen) {
     &:not(:last-child)::after {
       content: '•';
       margin: 0 map(spaces, small);
@@ -30,10 +30,17 @@
     }
   }
 
-  @media screen and (min-width: 50em) {
+  @media (--from-large-screen) {
     display: block;
     border-top: 1px solid var(--prose-color--rule);
     padding: map(spaces, small) 0 map(spaces, large);
     text-align: right;
+  }
+
+  @media print {
+    &:not(:last-child)::after {
+      content: '•';
+      margin: 0 map(spaces, small);
+    }
   }
 }

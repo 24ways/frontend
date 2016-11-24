@@ -3,7 +3,7 @@
   position: fixed;
   z-index: calc(map(layers, modal) + 1);
 
-  @media screen and (max-width: 31.4375em) {
+  @media (--upto-medium-screen) {
     top: map(sizes, xsmall);
     right: map(sizes, xsmall);
     color: white;
@@ -18,7 +18,7 @@
     }
   }
 
-  @media screen and (min-width: 31.5em) {
+  @media (--from-medium-screen) {
     @apply --ui-link;
     top: 0;
     right: 0;
