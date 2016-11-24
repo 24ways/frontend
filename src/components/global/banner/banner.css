@@ -1,7 +1,7 @@
 .c-banner {
   padding: map(spaces, medium) map(spaces, large);
   background-color: var(--color-year--dark);
-  transition-duration: --banner-duration;
+  transition-duration: var(--banner-duration);
   transition-timing-function: ease-out;
 
   [data-menu-expanded=false] & {
@@ -13,7 +13,7 @@
     top: 0;
     right: 0;
     left: 0;
-    z-index: (map(layers, modal) + 1);
+    z-index: calc(map(layers, modal) + 1);
     transition-property: background-color;
 
     body[data-menu-expanded=true] & {
@@ -33,11 +33,11 @@
 
 .c-banner__title {
   font-size: 1.25em;
-  line-height: (16/20);
+  line-height: calc(16 / 20);
 
   @media screen and (min-width: 31.5em) {
     font-size: 1.5em;
-    line-height: (24/24);
+    line-height: calc(24 / 24);
   }
 }
 

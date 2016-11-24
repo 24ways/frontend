@@ -1,5 +1,5 @@
 .c-meta {
-  @include typeset(label, 1);
+  @apply --typeset-caption;
   display: flex;
   flex-flow: row wrap;
   margin-bottom: map(spaces, medium);
@@ -7,7 +7,6 @@
   padding: map(spaces, small) 0 map(spaces, large);
 
   @media screen and (min-width: 50em) {
-    @include typeset(label, 2);
     flex-flow: column nowrap;
     border: 0;
     padding: 0;

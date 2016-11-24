@@ -1,20 +1,19 @@
 .s-prose {
-  @include typeset(prose, 2);
+  @apply --typeset-prose;
 
   .caps {
     font-variant: lining-nums small-caps;
-    letter-spacing: 0.0625em;
   }
 
   .caption {
-    @include typeset(caption);
+    @apply --typeset-caption;
     opacity: 0.9;
   }
 
   .lede {
-    @include typeset(lede);
+    @apply --typeset-lede;
     position: relative;
-    top: (map(spaces, xsmall) * -1);
+    top: calc(map(spaces, xsmall) * -1);
   }
 
   > * {
@@ -23,7 +22,9 @@
 
   strong,
   dt {
+    font-family: map(fonts, family-sans);
     color: initial;
+    opacity: 0.8;
   }
 
   ol,
@@ -89,19 +90,17 @@
 
   pre,
   code {
-    outline: 0.125em solid color(white a(50%));
-    margin-right: 0.25em;
-    margin-left: 0.25em;
+    margin: -0.125em 0.125em;
+    padding: 0.0625em 0.125em;
     background-color: color(white a(50%));
+    font-variant: lining-nums tabular-nums;
   }
 
   pre {
-    outline-width: 0.25em;
-    margin-right: 0;
-    margin-left: 0;
+    margin: 1em -0.5em;
+    padding: 0.25em 0.5em;
 
     code {
-      outline: 0;
       margin: 0;
       background-color: transparent;
       padding: 0;
@@ -110,33 +109,27 @@
 }
 
 .s-prose--article {
-  @include typeset(prose, fluid);
+  @apply --typescale-prose;
 
   .lede {
     color: var(--color-year--dark);
   }
 
-  pre {
-    font-size: 0.875em;
-    line-height: 1.5;
-    margin: 1em -0.25em 2em;
-    padding: 0 0.25em;
-  }
-
   blockquote {
     border-left: 0.25rem solid var(--prose-color--rule);
+    margin-top: 1.5em;
     margin-bottom: 1.5em;
     padding-left: 1em;
 
     p {
-      font-size: 1.25em;
+      font-size: 1.125em;
       line-height: 1.25;
       margin-bottom: 0.75em;
     }
 
     footer,
     cite {
-      @include typeset(caption);
+      @apply --typeset-caption;
     }
   }
 
@@ -161,7 +154,7 @@
 
   figcaption,
   p.image span.caption { /* ! Legacy */
-    @include typeset(caption);
+    @apply --typeset-caption;
     display: block;
     border-bottom: 1px solid var(--prose-color--rule);
     margin-right: map(spaces, large);
@@ -190,11 +183,12 @@
   h3,
   h4,
   h5 {
+    @apply --typeset-heading;
     margin: 2em 0 0.25em;
   }
 
   h2 {
-    @include typeset(heading, 3);
+    font-size: 1.5em;
     font-weight: 700;
     color: var(--color-year--dark);
   }
@@ -205,16 +199,16 @@
   }
 
   h3 {
-    @include typeset(heading, 2);
+    font-size: 1.25em;
   }
 
   h4 {
-    @include typeset(heading, 1);
+    font-size: 1em;
     font-weight: 700;
   }
 
   h5 {
-    @include typeset(heading, 1);
+    font-size: 1em;
     letter-spacing: 0.025em;
     text-transform: uppercase;
     opacity: 0.9;
@@ -243,7 +237,7 @@
   }
 
   caption {
-    @include typeset(caption);
+    @apply --typeset-caption;
     color: var(--color-neutral);
     caption-side: bottom;
     text-align: left;

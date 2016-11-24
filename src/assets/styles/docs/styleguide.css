@@ -1,4 +1,4 @@
-// Sample container
+/* Sample container */
 .sample {
   margin: 0 -0.25em;
   display: flex;
@@ -10,18 +10,18 @@
     padding: 0.75em 0 0.5em;
     font-weight: bolder;
     line-height: 1.2;
-    color: --color-text;
+    color: var(--color-text);
   }
 
   var {
     display: block;
     font: 0.75em/1em 'Hack', 'Consolas', 'Monaco', monospace;
     font-style: normal;
-    color: --color-text;
+    color: var(--color-text);
   }
 }
 
-// Styleguide: Colour
+/* Styleguide: Colour */
 .color {
   flex: 1 1 4em;
   margin: 0 0.25em 1em;
@@ -31,6 +31,7 @@
     display: block;
     width: 100%;
     height: 5em;
+    border-radius: map(borders, radius-default);
     background-color: currentColor;
   }
 }
@@ -40,19 +41,20 @@
   margin-right: 1em;
 }
 
-// Styleguide: Typography
+/* Styleguide: Typography */
 .font {
   width: 100%;
   margin: 0 0.25em 2em;
 
   span {
     display: block;
-    margin-bottom: 0.25rem;
-    padding-bottom: 0.5rem;
     overflow: hidden;
     white-space: nowrap;
-    color: --color-text;
-    border-bottom: 1px solid color(var(--color-text) a(20%));
+    margin-bottom: 0.25rem;
+    padding: 0.5rem;
+    border-radius: map(borders, radius-default);
+    background-color: color(var(--color-text) a(10%));
+    color: var(--color-text);
 
     &::before {
       content: 'Aa';
@@ -62,41 +64,17 @@
     }
 
     &::after {
+      content: '24 ways is the advent calendar for web geeks';
       font-size: 1.75rem;
       line-height: 1;
-      content: '24 ways is the advent calendar for web geeks';
     }
   }
 }
 
-.typeset-title {
-  //@include typeset(title, 1);
-}
-
-.typeset-heading {
-  //@include typeset(heading, 1);
-}
-
-.typeset-lede {
-  //@include typeset(lede, 1);
-}
-
-.typeset-caption {
-  //@include typeset(caption, 1);
-}
-
-.typeset-label {
-  //@include typeset(label, 1);
-}
-
-.typeset-prose {
-  //@include typeset(prose, 1);
-}
-
-// Styleguide: Iconography
+/* Styleguide: Iconography */
 .icons svg {
   height: 3rem;
   width: 3rem;
   margin-right: 0.5em;
-  color: --color-text;
+  color: var(--color-text);
 }

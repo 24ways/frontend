@@ -46,13 +46,14 @@
 }
 
 .c-summary__title {
-  @include typeset(title, 1);
+  @apply --typeset-summary-title;
   padding-right: calc(var(--summary__author-size) - map(spaces, medium));
 }
 
 .c-summary__main {
-  @include typeset(prose, 1);
+  @apply --typeset-prose;
   margin-bottom: map(spaces, medium);
+  font-size: 0.875rem;
 
   a {
     letter-spacing: 0.025em;
@@ -68,7 +69,7 @@
 }
 
 .c-summary__meta {
-  @include typeset(label, 1);
+  @apply --typeset-label;
   color: var(--color-neutral--dark);
 
   .dt-published {
@@ -131,7 +132,7 @@
   }
 
   to {
-    z-index: (map(layers, default) + 1);
+    z-index: calc(map(layers, default) + 1);
     background-position: -50.5em;
   }
 }
@@ -173,9 +174,10 @@
   }
 
   .dt-published {
-    @include typeset(title, 1, initial);
+    @apply --typeset-summary-title;
+    font-weight: 400;
     position: absolute;
-    top: calc(map(spaces, medium) + map(spaces, xsmall));
+    top: map(spaces, medium);
     left: calc(map(spaces, medium) + map(spaces, xsmall));
 
     @media print {

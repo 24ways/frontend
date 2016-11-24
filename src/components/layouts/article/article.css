@@ -37,7 +37,7 @@
 }
 
 .c-article__title {
-  @include typeset(title, fluid);
+  @apply --typeset-title;
   position: relative;
   margin-bottom: map(spaces, small);
   z-index: map(layers, overlay);

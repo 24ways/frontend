@@ -1,5 +1,5 @@
 .c-button {
-  @include typeset(label, 2);
+  @apply --typeset-ui;
   display: inline-block;
   padding: map(spaces, medium) map(spaces, large);
   background-color: var(--color-ui-link);

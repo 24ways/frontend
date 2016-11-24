@@ -5,7 +5,7 @@
 }
 
 .c-author__meta {
-  @include typeset(label, 1);
+  @apply --typeset-label;
   position: absolute;
   right: 0;
   bottom: 0;

@@ -1,0 +1,28 @@
+/* =====================================================
+   Fractal UI styles
+   ===================================================== */
+
+@import 'config/**/*.css';
+@import 'docs/**/*.css';
+
+/* Theme overrides */
+a {
+  color: var(--color-link);
+
+  &:hover {
+    color: var(--color-link--hover);
+  }
+
+  &:active {
+    color: var(--color-link--active);
+  }
+}
+
+.Pen-previewLink svg {
+  fill: currentColor;
+}
+
+.Header {
+  background-color: map(colors, primary, dark);
+  color: map(colors, primary, light);
+}

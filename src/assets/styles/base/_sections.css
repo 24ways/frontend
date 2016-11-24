@@ -33,14 +33,18 @@ html {
 }
 
 body {
-  @include font-family('sans');
   margin: 0;
   height: 100%;
   background-color: white;
+  font-family: sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
   color: var(--color-text);
+
+  .fonts-loaded & {
+    font-family: map(fonts, family-sans);
+  }
 }
 
 /**

@@ -12,7 +12,7 @@
 }
 
 .c-preface__title {
-  @include typeset(title, fluid);
+  @apply --typeset-title;
   display: flex;
   align-items: flex-start;
   position: relative;
@@ -31,7 +31,7 @@
   color: color(white a(75%));
 
   .s-prose p:first-of-type {
-    @include typeset(lede);
+    @apply --typeset-lede;
   }
 
   .c-avatar {

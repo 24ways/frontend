@@ -1,5 +1,5 @@
 .c-contentinfo {
-  @include typeset(label, 1);
+  @apply --typeset-label;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

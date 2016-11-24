@@ -14,5 +14,5 @@
 }
 
 .c-promo__url {
-  @include typeset(label, 1);
+  @apply --typeset-label;
 }

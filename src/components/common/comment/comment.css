@@ -42,11 +42,11 @@
 }
 
 .c-comment__title {
-  @include typeset(title, 1);
+  @apply --typeset-summary-title;
 }
 
 .c-comment__meta {
-  @include typeset(label, 1);
+  @apply --typeset-label;
 
   @media screen and (min-width: 30em) {
     position: absolute;
@@ -72,7 +72,7 @@
 }
 
 .c-comment__footer {
-  @include typeset(label, 1);
+  @apply --typeset-label;
   border-top: 1px solid var(--prose-color--shadow);
   padding-top: map(spaces, medium);
   text-align: right;

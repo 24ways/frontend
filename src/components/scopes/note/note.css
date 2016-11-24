@@ -1,5 +1,5 @@
 .s-note {
-  line-height: 1.25;
+  @apply --typeset-caption;
   margin-bottom: map(spaces, large);
   border: solid var(--prose-color--rule);
   border-width: 1px 0;

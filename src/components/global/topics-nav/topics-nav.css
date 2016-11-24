@@ -38,7 +38,7 @@
 
 .c-topics-nav__label {
   @apply --ui-link;
-  @include typeset(label, 2);
+  @apply --typeset-ui;
   display: block;
   padding: map(spaces, large) map(spaces, medium);
   box-shadow: 1px 1px 0 var(--navigation-color--offset);

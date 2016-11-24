@@ -27,11 +27,11 @@
     "@frctl/fractal": "latest",
     "@frctl/mandelbrot": "latest",
     "@frctl/nunjucks": "latest",
+    "autoprefixer": "latest",
     "cssnano": "latest",
     "del": "latest",
     "fontfaceobserver": "latest",
     "gulp": "gulpjs/gulp#4.0",
-    "gulp-a11y": "latest",
     "gulp-concat": "latest",
     "gulp-gh-pages": "latest",
     "gulp-imagemin": "latest",
@@ -43,11 +43,14 @@
     "markdown-it-abbr": "latest",
     "markdown-it-prism": "latest",
     "nunjucks-date": "latest",
+    "postcss-apply": "latest",
     "postcss-assets": "latest",
-    "postcss-cssnext": "latest",
+    "postcss-calc": "latest",
+    "postcss-color-function": "latest",
+    "postcss-custom-properties": "latest",
     "postcss-easy-import": "latest",
-    "postcss-nested": "latest",
     "postcss-map": "latest",
-    "postcss-mixins": "latest"
+    "postcss-nested": "latest",
+    "postcss-responsive-type": "latest"
   }
 }

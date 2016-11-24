@@ -2,7 +2,6 @@
   display: block;
   position: fixed;
   z-index: calc(map(layers, modal) + 1);
-  background-color: var(--navigation-color);
 
   @media screen and (max-width: 31.4375em) {
     top: map(sizes, xsmall);
@@ -12,6 +11,10 @@
     &:hover,
     &:active {
       color: white;
+    }
+
+    [data-menu-expanded=true] & {
+      color: var(--navigation-color--text);
     }
   }
 

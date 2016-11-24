@@ -25,7 +25,7 @@
 }
 
 .c-section__title {
-  @include typeset(label, 2);
+  @apply --typeset-ui;
   text-transform: uppercase;
 }
 
@@ -61,7 +61,7 @@
     padding: 0;
 
     .c-section__title {
-      @include typeset(label, 2);
+      @apply --typeset-ui;
     }
 
     .c-section__main {
@@ -70,7 +70,7 @@
     }
 
     .c-promo {
-      @include typeset(caption);
+      @apply --typeset-caption;
       text-align: right;
     }
   }

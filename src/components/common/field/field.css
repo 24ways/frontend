@@ -1,5 +1,5 @@
 .c-field {
-  @include typeset(label, 2);
+  @apply --typeset-ui;
   position: relative;
 
   &:not(:last-of-type) {

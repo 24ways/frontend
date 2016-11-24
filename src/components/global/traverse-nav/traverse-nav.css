@@ -10,7 +10,7 @@
     position: fixed;
     right: 0;
     top: var(--banner-height--large);
-    z-index: (map(layers, modal) + 1);
+    z-index: calc(map(layers, modal) + 1);
     width: var(--navigation-width--large);
   }
 }
@@ -48,7 +48,7 @@
     }
 
     &::after {
-      @include typeset(label, 1);
+      @apply --typeset-label;
       z-index: calc(map(layers, underlay) - 1);
       width: var(--traverse-nav__label-width);
       overflow: hidden;

@@ -14,7 +14,7 @@
 
 .c-site-nav__label {
   @apply --ui-link;
-  @include typeset(label, 1);
+  @apply --typeset-label;
   display: block;
   box-shadow: 1px 0 0 var(--navigation-color--offset);
   padding: map(spaces, medium);
