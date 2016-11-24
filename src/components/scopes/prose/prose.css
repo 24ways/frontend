@@ -135,7 +135,7 @@
 
   figure,
   p.image { /* ! Legacy */
-    margin: map(spaces, large) (map(spaces, large) * -1);
+    margin: map(spaces, large) calc(map(spaces, large) * -1);
 
     @media (--from-large-screen) {
       margin-left: 0;
