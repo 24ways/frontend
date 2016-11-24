@@ -5,7 +5,7 @@ label: "Design tokens"
 [Design tokens](https://medium.com/eightshapes-llc/25dd82d58421) are named entities that store visual design information. These are used in place of hard-coded values (such as hex values for color or pixels for spacing) in order to maintain a scalable, consistent system for UI development.
 
 ## Borders
-Width and radii tokens to style element borders.
+Width and radii tokens are used to style element borders.
 
 Variable  | Value
 ----------|------------
@@ -14,7 +14,7 @@ Variable  | Value
 {% endfor -%}
 
 ## Breakpoints
-Breakpoint tokens for use within `@media` queries.
+Breakpoint tokens are used within `@media` queries.
 
 Variable  | Value
 ----------|------------
@@ -23,7 +23,7 @@ Variable  | Value
 {% endfor -%}
 
 ## Font families
-Font family tokens for typographic styling.
+Font family tokens are used for typographic styling.
 
 Variable  | Value
 ----------|------------
@@ -32,7 +32,7 @@ Variable  | Value
 {% endfor -%}
 
 ## Layers
-Layering tokens to set the `z-index` layer value for elements.
+Layering tokens set the `z-index` layer value for elements.
 
 Variable  | Value
 ----------|------------
@@ -41,7 +41,7 @@ Variable  | Value
 {% endfor -%}
 
 ## Sizes
-Sizing tokens for describing the dimensions of elements.
+Sizing tokens describe the dimensions of elements.
 
 Variable  | Value
 ----------|------------
@@ -50,7 +50,7 @@ Variable  | Value
 {% endfor -%}
 
 ## Spacing
-Spacing tokens for describing the distance between elements.
+Spacing tokens describe the distance between elements.
 
 Variable  | Value
 ----------|------------

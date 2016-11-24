@@ -10,8 +10,6 @@
   }
 
   a {
-    @apply --ui-link;
-
     @media print {
       display: none;
     }

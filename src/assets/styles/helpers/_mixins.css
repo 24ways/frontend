@@ -15,17 +15,17 @@
     white-space: nowrap;
   }
 
-  --ui-link: {
+  --navigation-link: {
     color: $navigation-color--text;
 
     &:hover {
       color: $color-ui-link--hover;
-      background-color: map(colors, neutral, lightest);
+      background-color: color(map(colors, neutral, lightest) a(60%));
     }
 
     &:active {
       color: $color-ui-link--active;
-      background-color: map(colors, neutral, light);
+      background-color: color(map(colors, neutral, lightest) a(80%));
     }
   }
 }

@@ -14,7 +14,7 @@ $traverse-nav__label-width: 18rem; /* 288px */
 }
 
 .c-traverse-nav__item {
-  @apply --ui-link;
+  @apply --navigation-link;
   display: block;
   position: relative;
   width: auto;

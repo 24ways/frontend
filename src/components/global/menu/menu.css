@@ -19,7 +19,7 @@
   }
 
   @media (--from-medium-screen) {
-    @apply --ui-link;
+    @apply --navigation-link;
     top: 0;
     right: 0;
     padding: map(spaces, medium);

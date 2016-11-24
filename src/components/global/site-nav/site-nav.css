@@ -13,7 +13,7 @@
 }
 
 .c-site-nav__label {
-  @apply --ui-link;
+  @apply --navigation-link;
   @apply --typeset-label;
   display: block;
   box-shadow: 1px 0 0 $navigation-color--offset;

@@ -37,7 +37,7 @@
 }
 
 .c-topics-nav__label {
-  @apply --ui-link;
+  @apply --navigation-link;
   @apply --typeset-ui;
   display: block;
   padding: map(spaces, large) map(spaces, medium);
