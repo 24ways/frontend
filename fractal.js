@@ -55,6 +55,7 @@ fractal.set('project.title', 'Bits of 24 ways');
 // Components config
 fractal.components.engine(nunjucks);
 fractal.components.set('default.preview', '@preview');
+fractal.components.set('default.status', null);
 fractal.components.set('ext', '.html');
 fractal.components.set('path', paths.src + '/components');
 
