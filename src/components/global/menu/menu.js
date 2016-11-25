@@ -6,7 +6,7 @@
   var navigationDrawerID = 'navigation__drawer';
   var navigationDrawerEl = $('#navigation__drawer');
 
-  var toggleMenu = function(state) {
+  var toggleMenu = function (state) {
     menuToggleEl.setAttribute('aria-expanded', state);
     document.body.setAttribute('data-menu-expanded', state);
     navigationDrawerEl.setAttribute('aria-hidden', !state);
@@ -22,7 +22,7 @@
     navigationDrawerEl.setAttribute('aria-hidden', true);
 
     // Toggle menu expanded/collapsed
-    menuToggleEl.addEventListener('click', function(e) {
+    menuToggleEl.addEventListener('click', function (e) {
       var state = menuToggleEl.getAttribute('aria-expanded') === 'false' ? true : false;
 
       toggleMenu(state);
@@ -31,7 +31,7 @@
     });
 
     // Close menu if escape key is pressed
-    window.addEventListener('keyup', function(e) {
+    window.addEventListener('keyup', function (e) {
       if (e.keyCode == 27) {
         toggleMenu(false);
       }

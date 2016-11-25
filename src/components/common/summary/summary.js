@@ -7,11 +7,11 @@
 
   var $$ = document.querySelectorAll.bind(document);
 
-  var cornerOver = function(){
+  var cornerOver = function () {
     this.className = this.className.replace(' js-mouseout', '');
   };
 
-  var cornerOut = function(){
+  var cornerOut = function () {
     this.className += ' js-mouseout';
   };
 

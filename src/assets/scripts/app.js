@@ -1,11 +1,44 @@
-// Load webfonts
 (function (win, doc) {
   'use strict';
 
-  // if (doc.documentElement.className.indexOf('fonts-loaded') > -1) {
-  //   return;
-  // }
+  // Check if `fonts-loaded` cookie has been set
+  if (doc.documentElement.className.indexOf('fonts-loaded') > -1) {
+    return;
+  }
 
+  /*! Cookie function: get, set, or forget a cookie.
+   * [c]2014 @scottjehl, Filament Group, Inc.
+   * Licensed MIT
+   */
+  var cookie = function (name, value, days) {
+    // If value is undefined, get the cookie value
+    if (value === undefined) {
+      var cookiestring = "; " + doc.cookie;
+      var cookies = cookiestring.split("; " + name + "=");
+      if (cookies.length === 2) {
+        return cookies.pop().split( ";" ).shift();
+      }
+      return null;
+    }
+    else {
+      // if value is a false boolean, we'll treat that as a delete
+      if (value === false) {
+        days = -1;
+      }
+      var expires = "";
+      if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + ( days * 24 * 60 * 60 * 1000 ));
+        expires = "; expires=" + date.toGMTString();
+      }
+      doc.cookie = name + "=" + value + expires + "; path=/";
+    }
+  };
+
+  win.cookie = cookie;
+
+  // Load webfonts
+  // Requires FontFaceObserver (included during build)
   var serifRegular = new FontFaceObserver('Source Sans Pro', {
     weight: 'normal',
     style: 'normal'
@@ -31,9 +64,16 @@
     style: 'normal'
   });
 
-  Promise.all([serifRegular.load(), serifBold.load(), serifRegular.load(), serifItalic.load(), monospace.load()]).then(function () {
+  Promise.all([
+    serifRegular.load(),
+    serifBold.load(),
+    serifRegular.load(),
+    serifItalic.load(),
+    monospace.load()
+  ]).then(function () {
     doc.documentElement.className += ' fonts-loaded';
-    //win.enhance.cookie('fonts-loaded', !0, 7);
+    // Set `fonts-loaded` cookie
+    cookie('fonts-loaded', !0, 7);
   });
 
 }(this, this.document));

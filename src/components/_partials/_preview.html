@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="en-gb" dir="ltr" prefix="og: http://ogp.me/ns#" class="no-js">
+<!--
+    PHP: Check if fonts-loaded cookie has been set.
+    If so, add the `fonts-loaded` class to the `html` element.
+-->
+<html lang="en-gb" dir="ltr" prefix="og: http://ogp.me/ns#" class="no-js fonts-loaded">
   <head>
     <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
     <link rel="dns-prefetch" href="//themes.googleusercontent.com"/>
@@ -44,6 +48,9 @@
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@{{ site.handle }}"/>
 
+    <!--
+      PHP: Get correct hue value for year and day from array.
+    -->
     <style>
       :root {
         --color-year: hsl({{ theme.year[11] }}, 100%, 16%);
