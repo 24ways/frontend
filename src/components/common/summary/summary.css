@@ -179,7 +179,7 @@ $summary__author-size: map(sizes, xlarge);
     left: calc(map(spaces, medium) + map(spaces, xsmall));
 
     @media print {
-      top: 1.75rem;
+      top: 2rem;
     }
 
     span {

@@ -54,11 +54,6 @@
     style: 'normal'
   });
 
-  var serifItalic = new FontFaceObserver('Source Serif Pro', {
-    weight: 'normal',
-    style: 'italic'
-  });
-
   var monospace = new FontFaceObserver('Source Code Pro', {
     weight: 'normal',
     style: 'normal'
@@ -68,7 +63,6 @@
     serifRegular.load(),
     serifBold.load(),
     serifRegular.load(),
-    serifItalic.load(),
     monospace.load()
   ]).then(function () {
     doc.documentElement.className += ' fonts-loaded';

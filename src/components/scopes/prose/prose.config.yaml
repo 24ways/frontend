@@ -61,11 +61,23 @@ variants:
 
       Now that video is just a native object in the <span class="caps">DOM</span>, just like an image, why not do the same? Stack the videos up with the opening bumper on top, listen for the video's `onended` event, and fade it out to reveal the main feature behind. Good idea, right?
 
+      | The Very Best Eggnog           | Serves 12       | Serves 24 |
+      |--------------------------------|-----------------|-----------|
+      | Milk                           | 1 quart         | 2 quart   |
+      | Cinnamon Sticks                | 1               | 2         |
+      | Vanilla Bean, Split            | 1               | 2         |
+      | Cloves                         | 5               | 10        |
+      | Mace                           | 10              | 20        |
+      | Egg Yolks                      | 12              | 24        |
+      | Cups Sugar                     | 1 &frac12; cups | 3 cups    |
+      | Dark Rum                       | 1 &frac12; cups | 3 cups    |
+      | Brandy                         | 1 &frac12; cups | 3 cups    |
+      | Vanilla                        | 1 tbsp          | 2 tbsp    |
+      | Light Cream                    | 1 quart         | 2 quart   |
+
       Remember that this is the web. It's never going to be that easy. The problem here is that many non-desktop devices use native, dedicated video players. Think about watching a video on a mobile phone -- when you play the video, the phone often goes full-screen in its native player, leaving the web page behind. There's no opportunity to fade or switch `z-index`, as the video isn't being viewed in the page. Your page is left powerless. Powerless!
 
-      <figure>
-        <img src="http://media.24ways.org/2012/mclellan/media-player.jpg" alt="iOS full-screen media player" />
-      </figure>
+      <img src="http://media.24ways.org/2012/mclellan/media-player.jpg" alt="iOS full-screen media player" />
 
       So what can we do? What can we control?
 

@@ -2,7 +2,7 @@
    Application styles
    ===================================================== */
 
-@import url('http://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,700|Source+Serif+Pro:400,400italic');
+@import url('http://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,700|Source+Serif+Pro:400');
 @import 'config/**/*.css';
 @import 'helpers/**/*.css';
 @import 'base/**/*.css';

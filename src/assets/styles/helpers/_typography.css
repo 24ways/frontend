@@ -11,6 +11,10 @@
     font-variant: common-ligatures lining-nums;
     letter-spacing: -0.03125em;
     line-height: 0.95;
+
+    @media print {
+      font-size: 3rem;
+    }
   }
 
   --typeset-summary-title: {
@@ -39,6 +43,10 @@
   --typescale-prose: {
     font-size: responsive 0.9375rem 1.25rem;
     font-range: 30rem 60rem;
+
+    @media print {
+      font-size: 0.9375rem;
+    }
   }
 
   /* Heading: Typically used for headings within areas of prose content */
@@ -63,6 +71,10 @@
     line-height: 1.25;
     letter-spacing: -0.025em;
 
+    @media print {
+      font-size: 1.125rem;
+    }
+
     .fonts-loaded & {
       font-family: map(fonts, family-sans);
     }
@@ -76,6 +88,10 @@
     font-weight: 400;
     font-variant: common-ligatures lining-nums;
     line-height: 1.25;
+
+    @media print {
+      font-size: 0.875rem;
+    }
 
     .fonts-loaded & {
       font-family: map(fonts, family-sans);
