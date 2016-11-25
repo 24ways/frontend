@@ -5,6 +5,19 @@
 -->
 <html lang="en-gb" dir="ltr" prefix="og: http://ogp.me/ns#" class="no-js fonts-loaded">
   <head>
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "{{ '/assets/scripts/app.js' | path }}";
+        document.body.appendChild(element);
+        document.body.dataset.menuExpanded = 'false';
+      }
+
+      window.addEventListener("load", downloadJSAtOnload, false);
+    </script>
+
     <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
     <link rel="dns-prefetch" href="//themes.googleusercontent.com"/>
     <link rel="dns-prefetch" href="//cloud.24ways.org"/>
@@ -62,19 +75,6 @@
         --color-day--dark-alpha: hsla({{ theme.day[18]}}, 100%, 24%, 0.33);
       }
     </style>
-
-    <script>
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
-
-      function downloadJSAtOnload() {
-        var element = document.createElement("script");
-        element.src = "{{ '/assets/scripts/app.js' | path }}";
-        document.body.appendChild(element);
-        document.body.dataset.menuExpanded = 'false';
-      }
-
-      window.addEventListener("load", downloadJSAtOnload, false);
-    </script>
 
     <title>{{ _target.context.title }} &#9670; 24 ways</title>
   </head>
