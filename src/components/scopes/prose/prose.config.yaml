@@ -245,6 +245,15 @@ variants:
       ## The end credits
       One really important principle here is that of **progressive enhancement**. If the browser doesn't support JavaScript, the user won't see your bumper, but they will get the main video. If the browser supports JavaScript but doesn't allow you to modify the `src` (as was the case with older versions of iOS), the user won't see your bumper, but they will get the main video.
 
+      At Twitter, *every commit* gets a code review. We do a lot of reviewing, so small efficiency and effectiveness improvements make a big difference. Over time we've learnt a few things:
+
+      * Don't review for *more than hour*[^1]
+      * Keep reviews *smaller than ~400 lines*[^2]
+
+      [^1]: Dunsmore et al. 2000. Object-Oriented Inspection in the Face of Delocalisation. Beverly, MA: SmartBear Software.
+
+      [^2]: Cohen, Jason. 2006. Best Kept Secrets of Peer Code Review. *Proceedings of the 22nd ICSE 2000*: 467-476.
+
       If a search engine or social media bot grabs your page and looks for content, they won't see your bumper, but they will get the main video -- which is absolutely what you want.
 
       This means that if the bumper is absolutely crucial, you may still need to cook it into the video. However, for many applications, running it dynamically can work quite well.

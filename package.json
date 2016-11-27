@@ -41,6 +41,7 @@
     "gulp-uglify": "latest",
     "markdown-it": "latest",
     "markdown-it-abbr": "latest",
+    "markdown-it-footnote": "latest",
     "markdown-it-prism": "latest",
     "nunjucks-date": "latest",
     "postcss-apply": "latest",

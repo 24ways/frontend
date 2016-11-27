@@ -113,6 +113,14 @@
 .s-prose--article {
   @apply --typescale-prose;
 
+  .footnotes {
+    @apply --typeset-caption;
+
+    li {
+      margin-bottom: map(spaces, small);
+    }
+  }
+
   blockquote,
   pre,
   figure,

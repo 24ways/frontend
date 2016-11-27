@@ -18,12 +18,13 @@ const mandelbrot = require('@frctl/mandelbrot')({
 });
 
 const md_abbr = require('markdown-it-abbr');
+const md_footnote = require('markdown-it-footnote');
 const md_prism = require('markdown-it-prism');
 const md = require('markdown-it')({
   html: true,
   xhtmlOut: true,
   typographer: true
-}).use(md_abbr).use(md_prism, {
+}).use(md_abbr).use(md_footnote).use(md_prism, {
   plugins: [
     'highlight-keywords',
     'show-language'
