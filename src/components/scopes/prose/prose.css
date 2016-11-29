@@ -120,6 +120,11 @@
     li {
       margin-bottom: map(spaces, small);
     }
+
+    a:last-of-type {
+      /* Chrome doesn’t seem to use fallback glyph in font stack */
+      font-family: sans-serif;
+    }
   }
 
   blockquote,
@@ -158,6 +163,10 @@
     color: var(--color-day--dark, $color-day--dark);
   }
 
+  h2 + h3 {
+    margin-top: 0;
+  }
+
   h3 {
     font-size: 1.25em;
   }
@@ -192,10 +201,20 @@
     border-left: 0.25rem solid $prose-color--rule;
     padding-left: map(spaces, medium);
 
-    p {
+    > p,
+    > ul,
+    > ol {
       font-size: 1.125em;
       line-height: 1.25;
       margin-bottom: 0.75em;
+    }
+
+    li {
+      list-style-position: inside;
+    }
+
+    ul li {
+      list-style-type: circle;
     }
 
     footer,

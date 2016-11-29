@@ -35,15 +35,23 @@ variants:
 
       There are many, many options for recording your screen, including QuickTime Player on Mac OS X (<kbd><kbd><samp>File</samp></kbd> → <kbd><samp>New Screen Recording</samp></kbd></kbd>), <a href="http://www.gifgrabber.com/">GifGrabber</a>, or <a href="http://giffingtool.com">Giffing Tool</a> on Windows.
 
-      ### Heading 3
+      ## Heading 2…
+      ### …followed by a heading 3
       What if the bumpers could be added dynamically? That would enable you to use the same bumper for multiple videos (decreasing download time for users who might watch more than one) and to update the bumpers whenever you wanted. You could change them seasonally, update them for special promotions, run different advertising slots, perform multivariate testing, or even target different bumpers to different users.
 
       > The responsive projects I've worked on have had a lot of success combining design and development into one hybrid phase, bringing the two teams into one highly collaborative group.
       >
+      > * A list inside a blockquote
+      > * Is a very fine thing
+      >
       > A lot of success combining design and development into one hybrid phase, bringing the two teams into one highly collaborative group.
+      >
+      > 1. How about an ordered list
+      > 2. Inside a blockquote, too?
       >
       > <cite>[Mark Otto](http://markdotto.com/2011/09/20/good-design-is-constant-contact/)</cite>
 
+      ### Heading 3
       The trade-off, of course, is that if you dynamically add your bumpers, there's a chance that a user in a given circumstance might not see the bumper. For example, if the main video feature was uploaded to YouTube, you'd have no way to control the playback. As always, you need to weigh up the pros and cons and make your choice.
 
       #### Heading 4
