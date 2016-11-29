@@ -35,6 +35,7 @@ $summary__author-size: map(sizes, xlarge);
 }
 
 .c-summary__header {
+  min-height: 2em;
   margin-bottom: map(spaces, large);
 
   @media print {
