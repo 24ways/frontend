@@ -152,6 +152,13 @@ variants:
 
       As we need to loop through the videos this time to add the event listener, I've moved the `.load()` call into that loop. It's a bit more efficient to call it only once after modifying all the video's sources.
 
+      * **Raspberry Pi** any of the following models :
+        * Zero (will need straight male header pins soldered2 and Micro USB OTG adaptor),
+          * A+, B+, 2 or 3
+      * **Micro SD card** at least 4Gb Class 10 speed3
+      * **Micro USB power supply** at least 2A
+      * **USB Wifi dongle** (unless you have a Pi 3 - that has wifi built in).
+
       ```html
       <script>
         var videos, sources, i, l, orig;

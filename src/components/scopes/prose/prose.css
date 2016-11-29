@@ -64,6 +64,13 @@
   ul li {
     list-style: none outside;
     position: relative;
+
+    li {
+      list-style-type: circle;
+    }
+  }
+
+  > ul > li {
     padding-left: 1em;
 
     @media (--from-large-screen) {
@@ -72,9 +79,9 @@
 
     &::before {
       content: '';
-      background-color: $color-text;
-      width: 0.4375em;
-      height: 0.4375em;
+      background-color: color($color-text a(0.75));
+      width: 0.5rem;
+      height: 0.5rem;
       position: absolute;
       left: 0;
       top: 0.5em;
@@ -84,10 +91,6 @@
       @media (--from-large-screen) {
         left: -1.125em;
       }
-    }
-
-    li {
-      list-style-type: circle;
     }
   }
 
@@ -101,7 +104,7 @@
 
   li li,
   dd {
-    margin-left: 2em;
+    margin-left: 1.25em;
   }
 
   li > *,
