@@ -156,19 +156,19 @@
     font-weight: 700;
   }
 
-  h3,
-  h4,
-  .lede {
-    color: $color-day--dark;
-    color: var(--color-day--dark, $color-day--dark);
-  }
-
   h2 + h3 {
     margin-top: 0;
   }
 
+  h2,
+  h3 {
+    color: $color-day--dark;
+    color: var(--color-day--dark, $color-day--dark);
+  }
+
   h3 {
     font-size: 1.25em;
+    opacity: 0.9;
   }
 
   h4 {
