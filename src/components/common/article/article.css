@@ -64,7 +64,8 @@
     @media (--from-large-screen) {
       width: 27.5%;
       top: -40%;
-      left: -5%;
+      right: 80%;
+      max-width: 24rem;
     }
 
     @media print {
