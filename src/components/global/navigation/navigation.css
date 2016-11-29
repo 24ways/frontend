@@ -81,15 +81,16 @@
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: 0;
   z-index: map(layers, backdrop);
   transition: opacity $navigation-duration ease-in;
   background-color: $navigation-color--backdrop;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(0);
+  opacity: 0;
   pointer-events: none;
 }
 
 [data-menu-expanded=true]::after {
+  backdrop-filter: blur(2px);
   opacity: 1;
   pointer-events: fill;
 }
