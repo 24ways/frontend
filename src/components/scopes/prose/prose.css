@@ -24,8 +24,6 @@
   strong,
   dt {
     font-family: map(fonts, family-sans);
-    color: initial;
-    opacity: 0.8;
   }
 
   pre,
