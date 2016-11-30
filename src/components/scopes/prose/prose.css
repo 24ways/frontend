@@ -296,11 +296,6 @@
     }
   }
 
-  > * > a:only-child {
-    font-family: map(fonts, family-sans);
-    font-weight: bolder;
-  }
-
   /* Tables */
   table {
     @apply --typeset-ui;
