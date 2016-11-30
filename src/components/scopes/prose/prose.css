@@ -131,7 +131,6 @@
     margin-top: 0;
   }
 
-  blockquote,
   pre,
   figure,
   table {
@@ -199,6 +198,7 @@
   blockquote {
     border-left: 0.25rem solid $prose-color--rule;
     padding-left: map(spaces, medium);
+    margin-bottom: map(spaces, large);
 
     > p,
     > ul,
