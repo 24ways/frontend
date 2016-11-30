@@ -144,11 +144,14 @@
     margin-bottom: map(spaces, small);
   }
 
-  * + h2,
+  * + h2 {
+    margin-top: map(spaces, xlarge);
+  }
+
   * + h3,
   * + h4,
   * + h5 {
-    margin-top: map(spaces, xlarge);
+    margin-top: map(spaces, large);
   }
 
   h2 {
