@@ -77,10 +77,11 @@ $summary__author-size: map(sizes, xlarge);
 }
 
 .c-summary__author {
-  margin: 0;
   position: absolute;
   top: 0;
   right: 0;
+  overflow: hidden;
+  margin: 0;
 
   &::before {
     content: '';
@@ -117,6 +118,7 @@ $summary__author-size: map(sizes, xlarge);
     display: block;
     height: $summary__author-size;
     width: $summary__author-size;
+    transition: transform $author-duration ease-out;
   }
 
   span {
@@ -150,6 +152,11 @@ $summary__author-size: map(sizes, xlarge);
 
 .c-summary:hover {
   .c-summary__author {
+    img {
+      transform: scale(1.2);
+      transform-origin: bottom left;
+    }
+
     &::after {
       z-index: calc(map(layers, default) + 1);
       animation: corner-forward 0.15s steps(10);

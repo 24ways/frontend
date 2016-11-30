@@ -2,6 +2,7 @@
   display: block;
   flex: 1;
   position: relative;
+  overflow: hidden;
 }
 
 .c-author__meta {
@@ -24,4 +25,9 @@
   display: block;
   height: auto;
   width: 100%;
+  transition: transform $author-duration ease-out;
+}
+
+.c-author:hover .c-author__image {
+  transform: scale(1.1);
 }
