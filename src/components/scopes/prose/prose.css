@@ -127,6 +127,10 @@
     }
   }
 
+  > *:first-child {
+    margin-top: 0;
+  }
+
   blockquote,
   pre,
   figure,
@@ -141,20 +145,12 @@
   h4,
   h5 {
     @apply --typeset-heading;
+    margin-top: map(spaces, large);
     margin-bottom: map(spaces, small);
   }
 
-  * + h2 {
-    margin-top: map(spaces, xlarge);
-  }
-
-  * + h3,
-  * + h4,
-  * + h5 {
-    margin-top: map(spaces, large);
-  }
-
   h2 {
+    margin-top: map(spaces, xlarge);
     font-size: 1.5em;
     font-weight: 700;
   }
