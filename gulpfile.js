@@ -150,6 +150,7 @@ function styles() {
 function scripts() {
   return gulp.src([
       paths.modules + '/fontfaceobserver/fontfaceobserver.js',
+      paths.modules + '/prismjs/prism.js',
       paths.src + '/components/**/*.js',
       paths.src + '/assets/scripts/app.js'
     ])

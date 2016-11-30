@@ -42,7 +42,6 @@
     "markdown-it": "latest",
     "markdown-it-abbr": "latest",
     "markdown-it-footnote": "latest",
-    "markdown-it-prism": "latest",
     "nunjucks-date": "latest",
     "postcss-apply": "latest",
     "postcss-assets": "latest",
@@ -55,6 +54,7 @@
     "postcss-media-minmax": "latest",
     "postcss-nested": "latest",
     "postcss-responsive-type": "latest",
-    "postcss-simple-vars": "latest"
+    "postcss-simple-vars": "latest",
+    "prismjs": "latest"
   }
 }
