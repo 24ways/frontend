@@ -3,34 +3,32 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: map(spaces, small) map(spaces, medium);
+  padding: map(spaces, small) map(spaces, large);
 
   @media (--from-medium-screen) {
     margin-right: $navigation-width--large;
   }
 
+  @media (--from-large-screen) {
+    padding-left: map(spaces, medium);
+    padding-right: map(spaces, medium);
+  }
+
   a {
+    white-space: nowrap;
+
     @media print {
       display: none;
     }
   }
 
   > * {
-    @media (--upto-medium-screen) {
+    @media (--upto-large-screen) {
       line-height: 2;
     }
   }
 }
 
-.c-contentinfo__copyright {
-  order: -1;
-
-  @media (--upto-medium-screen) {
-    order: 0;
-  }
-}
-
-.c-contentinfo__copyright,
-.c-contentinfo__social a:not(:last-child) {
+.c-contentinfo__social a {
   margin-right: map(spaces, medium);
 }
