@@ -37,6 +37,8 @@
 
   .c-avatar {
     width: 50%;
+    max-height: 24rem;
+    max-width: 24rem;
     float: right;
     margin-top: -7.5%;
     margin-right: -7.5%;
