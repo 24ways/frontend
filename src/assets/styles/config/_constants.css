@@ -17,7 +17,7 @@ $navigation-color--shadow: color(map(colors, neutral, base) a(25%));
 $navigation-color--backdrop: color(map(colors, neutral, darker) a(33%));
 
 /* Author images */
-$author-duration: 0.25s;
+$author-duration: 0.5s;
 
 /* Text */
 $color-text: map(colors, neutral, darker);
