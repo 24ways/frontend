@@ -2,8 +2,11 @@
   padding: map(spaces, medium) map(spaces, large);
   background-color: $color-year--dark;
   background-color: var(--color-year--dark, $color-year--dark);
-  transition-duration: $banner-duration;
-  transition-timing-function: ease-out;
+
+  [data-menu-expanded] & {
+    transition-duration: $banner-duration;
+    transition-timing-function: ease-out;
+  }
 
   [data-menu-expanded=false] & {
     transition-delay: $navigation-duration;
@@ -15,7 +18,10 @@
     right: 0;
     left: 0;
     z-index: calc(map(layers, modal) + 1);
-    transition-property: background-color;
+
+    body[data-menu-expanded] & {
+      transition-property: background-color;
+    }
 
     body[data-menu-expanded=true] & {
       background-color: white;
@@ -51,7 +57,9 @@
   }
 
   @media (--upto-medium-screen) {
-    transition-property: color $banner-duration ease-out;
+    [data-menu-expanded] & {
+      transition-property: color $banner-duration ease-out;
+    }
 
     [data-menu-expanded=true] & {
       color: $navigation-color--text;
