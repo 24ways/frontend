@@ -90,10 +90,3 @@
     margin: map(spaces, small) map(spaces, large) 0 0;
   }
 }
-
-/* Section - Related */
-.c-section--related {
-  .c-section__main {
-    padding-right: 0;
-  }
-}

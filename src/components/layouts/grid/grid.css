@@ -5,11 +5,11 @@
   padding-bottom: map(spaces, xsmall);
 
   .c-section__main & {
-    margin-top: calc(map(spaces, medium) * -1);
-    margin-left: calc(map(spaces, large) * -1);
+    margin: calc(map(spaces, medium) * -1) calc(map(spaces, large) * -1);
 
     @media (--from-large-screen) {
       margin-left: calc(map(spaces, xsmall) * -1);
+      margin-right: calc(map(spaces, xsmall) * -1);
     }
   }
 }
@@ -23,19 +23,19 @@
   margin-left: map(spaces, xsmall);
 
   .l-grid--authors & {
-    flex-basis: 50%;
+    flex-basis: calc(50% - map(spaces, xsmall));
     flex-grow: 0;
 
     @media (--from-medium-screen) {
-      flex-basis: 33.3334%;
+      flex-basis: calc(33.3334% - map(spaces, xsmall));
     }
 
     @media (--from-large-screen) {
-      flex-basis: 25%;
+      flex-basis: calc(25% - map(spaces, xsmall));
     }
 
     @media (--from-xlarge-screen) {
-      flex-basis: 20%;
+      flex-basis: calc(20% - map(spaces, xsmall));
     }
   }
 }

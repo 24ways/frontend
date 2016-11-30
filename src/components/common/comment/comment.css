@@ -13,6 +13,11 @@ $comment-avatar--large: map(sizes, xlarge);
     padding-left: $comment-avatar--large;
   }
 
+  @media (--upto-large-screen) {
+    margin-left: calc(calc(map(spaces, large) - map(spaces, xsmall)) * -1);
+    margin-right: calc(calc(map(spaces, large) - map(spaces, xsmall)) * -1);
+  }
+
   &.c-comment--unhelpful {
     background-color: transparent;
     box-shadow: 0 0 0 1px $prose-color--shadow;
