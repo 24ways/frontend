@@ -217,8 +217,8 @@
       list-style-type: circle;
     }
 
-    footer,
-    cite {
+    > footer,
+    > cite {
       @apply --typeset-caption;
     }
   }
