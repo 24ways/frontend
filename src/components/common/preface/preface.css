@@ -2,7 +2,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding: map(spaces, medium) map(spaces, large);
+  padding: map(spaces, medium) map(spaces, large) map(spaces, large);
   background-color: $color-year;
   background-color: var(--color-year, $color-year);
   background-image: inline('diamond.svg');
@@ -40,6 +40,10 @@
 
   .s-prose p:first-of-type {
     @apply --typeset-lede;
+  }
+
+  .s-prose p:last-of-type {
+    margin-bottom: 0;
   }
 
   .c-avatar {
