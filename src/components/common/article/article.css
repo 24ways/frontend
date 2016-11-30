@@ -52,9 +52,9 @@
     margin: 0;
 
     @media (--upto-large-screen) {
-      width: 50%;
       top: -25%;
       right: -12.5%;
+      width: 50%;
       opacity: 0.1;
       z-index: map(layers, default);
       filter: saturate(0) contrast(2);
@@ -62,10 +62,10 @@
     }
 
     @media (--from-large-screen) {
-      width: 27.5%;
       top: -40%;
       right: 80%;
-      max-width: 24rem;
+      width: 27.5%;
+      margin-right: calc(map(spaces, medium) * -1);
     }
 
     @media print {
