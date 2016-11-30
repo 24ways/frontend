@@ -1,7 +1,7 @@
 {
   "name": "24ways-frontend",
   "version": "2016.0.0",
-  "description": "Front-end deliverables for 24 ways.",
+  "description": "Bits, the front-end component library for 24 ways",
   "keywords": [
     "styleguide",
     "patterns",

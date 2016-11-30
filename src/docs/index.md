@@ -1,6 +1,6 @@
 ---
 hidden: true
-title: The front-end component library for 24 ways
+title: Bits, the front-end component library for 24 ways
 ---
 You are viewing the front-end component library for 24 ways.
 

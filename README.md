@@ -1,7 +1,7 @@
-# 24 ways front-end component library
+# Bits, the front-end component library for 24 ways
 
 ## Requirements
-This project is built upon [Fractal](https://github.com/frctl/fractal), a tool that enables the rapid development of components, templates and pages. Fractal uses a number of ES6 features, so this project requires [Node.js](https://nodejs.org/) v4.0+ to be installed locally. A global install of Gulp is also recommended.
+Bits is built upon [Fractal](https://github.com/frctl/fractal), a tool that enables the rapid development of components, templates and pages. Fractal uses a number of ES6 features, so this project requires [Node.js](https://nodejs.org/) v4.0+ to be installed locally. A global install of Gulp is also recommended.
 
 ## Installation
 To get the project up and running, and view components in the browser, complete the following steps:
