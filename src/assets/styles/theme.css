@@ -26,3 +26,15 @@ a {
   background-color: map(colors, primary, dark);
   color: map(colors, primary, light);
 }
+
+.Prose {
+  tr td:first-child {
+    min-width: 12em;
+    padding-right: 1em;
+    white-space: nowrap;
+  }
+
+  tr td:last-child {
+    width: 100%;
+  }
+}
