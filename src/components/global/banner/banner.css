@@ -58,7 +58,7 @@
 
   @media (--upto-medium-screen) {
     [data-menu-expanded] & {
-      transition-property: color $banner-duration ease-out;
+      transition: color $banner-duration ease-out;
     }
 
     [data-menu-expanded=true] & {
