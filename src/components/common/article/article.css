@@ -56,7 +56,6 @@
       right: -12.5%;
       width: 50%;
       opacity: 0.1;
-      z-index: map(layers, default);
       filter: saturate(0) contrast(2);
       mix-blend-mode: multiply;
     }
@@ -94,6 +93,8 @@
 }
 
 .c-article__footer {
+  position: relative;
+  z-index: map(layers, default);
   padding: 0 map(spaces, large);
 
   @media (--from-large-screen) {
