@@ -1,10 +1,11 @@
 .c-avatar {
   display: inline-block;
   height: auto;
-  max-height: 24rem;
-  max-width: 24rem;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  shape-outside: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)  content-box;
-  shape-margin: map(spaces, medium);
+  max-height: 21rem;
+  max-width: 21rem;
   margin: map(spaces, medium);
+  clip-path: url('/assets/vectors/clip.svg#avatar');
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%) content-box;
+  shape-margin: map(spaces, medium);
 }

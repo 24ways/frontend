@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+  <defs>
+    <clipPath id="avatar" clipPathUnits="objectBoundingBox">
+      <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5"/>
+    </clipPath>
+  </defs>
+</svg>
