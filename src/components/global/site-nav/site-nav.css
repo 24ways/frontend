@@ -22,7 +22,6 @@
 
   @media (--from-medium-screen) {
     box-shadow: 0 -1px 0 $navigation-color--offset;
-    padding: map(spaces, small);
     text-align: left;
   }
 }

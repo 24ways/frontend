@@ -3,7 +3,7 @@
   background-color: $color-year--dark;
   background-color: var(--color-year--dark, $color-year--dark);
 
-  [data-menu-expanded] & {
+  .has-js & {
     transition-duration: $banner-duration;
     transition-timing-function: ease-out;
   }
@@ -19,11 +19,11 @@
     left: 0;
     z-index: calc(map(layers, modal) + 1);
 
-    body[data-menu-expanded] & {
+    .has-js & {
       transition-property: background-color;
     }
 
-    body[data-menu-expanded=true] & {
+    [data-menu-expanded=true] & {
       background-color: white;
     }
   }
@@ -57,7 +57,7 @@
   }
 
   @media (--upto-medium-screen) {
-    [data-menu-expanded] & {
+    .has-js & {
       transition: color $banner-duration ease-out;
     }
 

@@ -14,7 +14,7 @@
   flex: 1 0 33.3334%;
 
   @media (--from-medium-screen) {
-    [data-menu-expanded] & {
+    .has-js & {
       flex-basis: 50%;
       min-width: 50%;
     }
