@@ -13,7 +13,7 @@
   }
 
   @media (--from-large-screen) {
-    padding-top: 10%;
+    padding-top: map(spaces, xxlarge);
     padding-left: 25%;
   }
 }
