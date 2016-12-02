@@ -188,7 +188,7 @@
     &::after {
       content: '\25C6 \25C6 \25C6';
       height: 0;
-      font-family: sans;
+      font-family: sans-serif;
       letter-spacing: map(spaces, medium);
       color: color($color-text a(25%));
     }
