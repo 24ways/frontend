@@ -45,7 +45,7 @@ variants:
       src: https://cloud.24ways.org/authors/rachelandrew280.jpg
       size: 280
     content: |
-      <span class="fn n">Rachel Andrew</span> is a Director of edgeofmyseat.com, a UK web development consultancy and creators of the small content management system, [Perch](http://grabaperch.com/). She is the author of a number of [books](http://rachelandrew.co.uk/books), and is a regular columnist for [A List Apart](http://alistapart.com/author/rachelandrew).
+      <span class="fn n">Rachel Andrew</span> is a Director of edgeofmyseat.com, a UK web development consultancy and creators of the small content management system, [Perch](https://grabaperch.com/). She is the author of a number of [books](https://rachelandrew.co.uk/books), and is a regular columnist for [A List Apart](http://alistapart.com/author/rachelandrew).
 
       She curates a popular [email newsletter on CSS Layout](http://csslayout.news/), and will be launching a [CSS Layout online workshop](https://thecssworkshop.com/) in early 2016.
 

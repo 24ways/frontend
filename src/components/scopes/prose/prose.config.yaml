@@ -24,33 +24,33 @@ variants:
       Known as _bumpers_, these short introduction clips help brand a video and make it look a lot more professional.
 
       <figure>
-        <img src="http://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
+        <img src="https://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
         <figcaption>Index cards represent each feature the rental property software would launch with.</figcaption>
       </figure>
 
       <figure>
         <div class="s-gallery">
-          <img src="http://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
-          <img src="http://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
+          <img src="https://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
+          <img src="https://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
         </div>
         <figcaption>Index cards represent each feature the rental property software would launch with.</figcaption>
       </figure>
 
       <figure>
         <div class="s-gallery">
-          <img src="http://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
-          <img src="http://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
-          <img src="http://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
+          <img src="https://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
+          <img src="https://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
+          <img src="https://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
         </div>
         <figcaption>Index cards represent each feature the rental property software would launch with.</figcaption>
       </figure>
 
       <figure>
         <div class="s-gallery">
-          <img src="http://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
-          <img src="http://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
-          <img src="http://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
-          <img src="http://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
+          <img src="https://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
+          <img src="https://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
+          <img src="https://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
+          <img src="https://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
         </div>
         <figcaption>Index cards represent each feature the rental property software would launch with.</figcaption>
       </figure>
@@ -89,7 +89,7 @@ variants:
 
       <figure>
         <div class="s-embed s-embed--widescreen">
-          <iframe src="http://www.youtube.com/embed/QILiHiTD3uc" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/QILiHiTD3uc" frameborder="0" allowfullscreen></iframe>
         </div>
         <figcaption>Example of responsive video embed.</figcaption>
       </figure>
@@ -112,7 +112,7 @@ variants:
 
       Remember that this is the web. It's never going to be that easy. The problem here is that many non-desktop devices use native, dedicated video players. Think about watching a video on a mobile phone -- when you play the video, the phone often goes full-screen in its native player, leaving the web page behind. There's no opportunity to fade or switch `z-index`, as the video isn't being viewed in the page. Your page is left powerless. Powerless!
 
-      <img src="http://media.24ways.org/2012/mclellan/media-player.jpg" alt="iOS full-screen media player" />
+      <img src="https://media.24ways.org/2012/mclellan/media-player.jpg" alt="iOS full-screen media player" />
 
       So what can we do? What can we control?
 
@@ -142,7 +142,7 @@ variants:
       </script>
       ```
 
-      [View the example](http://media.24ways.org/2012/mclellan/examples/1.html) in a browser with WebM support. You'll see that the video is swapped out for the opening bumper. Great!
+      [View the example](https://media.24ways.org/2012/mclellan/examples/1.html) in a browser with WebM support. You'll see that the video is swapped out for the opening bumper. Great!
 
       ## Beefing it up
       Of course, we can't just publish video in one format. In practical use, you need a `<video>` element with multiple `<source>` elements containing your different source formats.
@@ -174,7 +174,7 @@ variants:
 
       The difference this time is that when changing the `src` of a `<source>` we need to call the `.load()` method on the video to get it to acknowledge the change.
 
-      [See the code in action](http://media.24ways.org/2012/mclellan/examples/2.html), this time in a wider range of browsers.
+      [See the code in action](https://media.24ways.org/2012/mclellan/examples/2.html), this time in a wider range of browsers.
 
       ## But, my video!
       * Store the original `src` in a `data-` attribute so we can access it later
@@ -225,7 +225,7 @@ variants:
       </script>
       ```
 
-      Again, [view the example](http://media.24ways.org/2012/mclellan/examples/3.html) to see the bumper play, followed by our spectacular main feature. (That's my cat, Widget. His interests include sleeping and internet marketing.)
+      Again, [view the example](https://media.24ways.org/2012/mclellan/examples/3.html) to see the bumper play, followed by our spectacular main feature. (That's my cat, Widget. His interests include sleeping and internet marketing.)
 
       ## Tidying things up
       The final thing to do is add our closing bumper after the main video has played. This involves the following changes:
@@ -280,7 +280,7 @@ variants:
       </script>
       ```
 
-      Yo ho ho, that's a lot of JavaScript. [See it in action](http://media.24ways.org/2012/mclellan/examples/4.html) -- you should get a bumper, the cat video, and an end bumper.
+      Yo ho ho, that's a lot of JavaScript. [See it in action](https://media.24ways.org/2012/mclellan/examples/4.html) -- you should get a bumper, the cat video, and an end bumper.
 
       Of course, this code works fine for demonstrating the principle, but it's very procedural. Nothing wrong with that, but to do something similar in production, you'd probably want to make the code more modular to ease maintainability. Besides, you may want to use a framework, rather than basic JavaScript.
 

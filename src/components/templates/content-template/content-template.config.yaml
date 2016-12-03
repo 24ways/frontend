@@ -16,17 +16,17 @@ variants:
     - id: credits
       title: Credits
       content: |
-        * 24 ways is brought to you by Perch and is built on [Perch Runway](http://grabaperch.com/?ref=24w01)
+        * 24 ways is brought to you by Perch and is built on [Perch Runway](https://grabaperch.com/?ref=24w01)
         * Produced by [Drew McLellan](http://allinthehead.com/), [Brian Suda](http://suda.co.uk/), [Anna Debenham](http://maban.co.uk/) and [Owen Gregory](http://fullcreammilk.co.uk/).
         * Designed by [Paul Robert Lloyd](https://paulrobertlloyd.com/).
         * Possible only with the help and dedication of [our authors](/authors/).
     - id: colophon
       title: Colophon
       content: |
-        * Content managed with [Perch Runway](http://grabaperch.com/?ref=24w01).
-        * Hosted by [Memset Dedicated Servers](http://www.memset.com/dedicated-servers/).
+        * Content managed with [Perch Runway](https://grabaperch.com/?ref=24w01).
+        * Hosted by [Memset Dedicated Servers](https://www.memset.com/dedicated-servers/).
         * Standing on the shoulders of Varnish, Nginx, Apache, PHP, MySQL, Amazon S3 and CloudFront.
-        * Type set in [Source Sans Pro](http://adobe-fonts.github.io/source-sans-pro/), [Source Serif Pro](http://adobe-fonts.github.io/source-serif-pro/) and [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/) by Adobe.
+        * Type set in [Source Sans Pro](https://adobe-fonts.github.io/source-sans-pro/), [Source Serif Pro](https://adobe-fonts.github.io/source-serif-pro/) and [Source Code Pro](https://adobe-fonts.github.io/source-code-pro/) by Adobe.
         * Fonts served via [Google Fonts](https://fonts.google.com/).
         * [Minicons](http://www.webalys.com/minicons/) by Vincent Le Miogn.
         * [prism.js](https://github.com/leaverou/prism/) by Lea Verou.
