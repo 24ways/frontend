@@ -32,6 +32,7 @@
     padding: 0.0625em 0.125em;
     background-color: color(white a(50%));
     font-variant: lining-nums tabular-nums;
+    hanging-punctuation: none;
   }
 
   /* Grouping content */
@@ -136,7 +137,7 @@
   figure,
   table {
     margin-top: map(spaces, large);
-    margin-bottom: map(spaces, xlarge);
+    margin-bottom: map(spaces, large);
   }
 
   /* Sections */
@@ -213,7 +214,7 @@
     }
 
     > footer,
-    > cite {
+    > cite { /* ! Legacy */
       @apply --typeset-caption;
     }
   }
@@ -232,7 +233,8 @@
       margin-right: -25%;
     }
 
-    img {
+    img,
+    video {
       display: block;
       max-width: 100%;
     }
@@ -314,6 +316,7 @@
   th {
     border-bottom: 1px solid $prose-color--rule;
     padding: map(spaces, small) map(spaces, large) map(spaces, small) map(spaces, small);
+    hyphens: none;
   }
 
   th {
