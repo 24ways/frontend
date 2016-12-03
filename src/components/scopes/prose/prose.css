@@ -27,12 +27,17 @@
   }
 
   pre,
+  code,
+  samp {
+    font-variant: lining-nums tabular-nums;
+    hanging-punctuation: none;
+  }
+
+  pre,
   code {
     margin: -0.125em 0.125em;
     padding: 0.0625em 0.125em;
     background-color: color(white a(50%));
-    font-variant: lining-nums tabular-nums;
-    hanging-punctuation: none;
   }
 
   /* Grouping content */
@@ -268,6 +273,7 @@
   /* Menu selection within user input sequence. */
   kbd > samp {
     font-family: inherit;
+    font-size: 1em;
     background-color: white;
     margin: -0.375rem -0.625rem; /* -6px -10px */
     border-radius: 0;
