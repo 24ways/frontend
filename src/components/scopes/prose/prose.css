@@ -60,8 +60,7 @@
   }
 
   ul li {
-    list-style: none outside;
-    position: relative;
+    list-style-type: square;
 
     li {
       list-style-type: circle;
@@ -69,7 +68,9 @@
   }
 
   > ul > li {
+    position: relative;
     padding-left: 1em;
+    list-style: none outside;
 
     @media (--from-large-screen) {
       padding-left: 0;
@@ -102,7 +103,7 @@
 
   li li,
   dd {
-    margin-left: 1.25em;
+    margin-left: 1.5em;
   }
 
   li > *,
@@ -171,7 +172,6 @@
 
   h4 {
     font-size: 1.125em;
-    font-weight: 700;
   }
 
   h5 {
@@ -210,10 +210,6 @@
 
     li {
       list-style-position: inside;
-    }
-
-    ul li {
-      list-style-type: circle;
     }
 
     > footer,

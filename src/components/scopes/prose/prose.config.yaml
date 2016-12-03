@@ -108,7 +108,7 @@ variants:
       | Dark Rum                       | 1 &frac12; cups | 3 cups    |
       | Brandy                         | 1 &frac12; cups | 3 cups    |
       | Vanilla                        | 1 tbsp          | 2 tbsp    |
-      | Light Cream                    | 1 quart         | 2 quart   |
+      | <ul><li>Light Cream</li><li>Double Cream</li></ul> | 1 quart         | 2 quart   |
 
       Remember that this is the web. It's never going to be that easy. The problem here is that many non-desktop devices use native, dedicated video players. Think about watching a video on a mobile phone -- when you play the video, the phone often goes full-screen in its native player, leaving the web page behind. There's no opportunity to fade or switch `z-index`, as the video isn't being viewed in the page. Your page is left powerless. Powerless!
 
