@@ -96,7 +96,7 @@ variants:
 
       Now that video is just a native object in the <span class="caps">DOM</span>, just like an image, why not do the same? Stack the videos up with the opening bumper on top, listen for the video's `onended` event, and fade it out to reveal the main feature behind. Good idea, right?
 
-      | The Very Best Eggnog           | Serves 12       | Serves 24 |
+      | The Very Best `Eggnog`         | Serves 12       | Serves 24 |
       |--------------------------------|-----------------|-----------|
       | Milk                           | 1 quart         | 2 quart   |
       | Cinnamon Sticks                | 1               | 2         |

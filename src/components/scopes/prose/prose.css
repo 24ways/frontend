@@ -323,5 +323,9 @@
   th {
     line-height: 1.25;
     background-color: $prose-color--background;
+
+    code {
+      background: none;
+    }
   }
 }
