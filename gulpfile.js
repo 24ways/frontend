@@ -93,15 +93,19 @@ function vectors() {
     .pipe(gulp.dest(paths.dest + '/assets/vectors'));
 };
 
-// Linting
-function lintstyles() {
-  return gulp.src(paths.src + '/**/*.scss')
-    .pipe(stylelint({
-      reporters: [{
-        formatter: 'string',
-        console: true
-      }]
-    }));
+// Scripts
+function scripts() {
+  return gulp.src([
+      paths.modules + '/fontfaceobserver/fontfaceobserver.js',
+      paths.modules + '/prismjs/prism.js',
+      paths.src + '/components/**/*.js',
+      paths.src + '/assets/scripts/app.js'
+    ])
+    .pipe(sourcemaps.init())
+    .pipe(concat('app.js'))
+    .pipe(uglify())
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest(paths.dest + '/assets/scripts'));
 };
 
 // Styles
@@ -146,19 +150,15 @@ function styles() {
     .pipe(gulp.dest(paths.dest + '/assets/styles'));
 };
 
-// Scripts
-function scripts() {
-  return gulp.src([
-      paths.modules + '/fontfaceobserver/fontfaceobserver.js',
-      paths.modules + '/prismjs/prism.js',
-      paths.src + '/components/**/*.js',
-      paths.src + '/assets/scripts/app.js'
-    ])
-    .pipe(sourcemaps.init())
-    .pipe(concat('app.js'))
-    .pipe(uglify())
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest(paths.dest + '/assets/scripts'));
+// Style linting
+function lintstyles() {
+  return gulp.src(paths.src + '/**/*.scss')
+    .pipe(stylelint({
+      reporters: [{
+        formatter: 'string',
+        console: true
+      }]
+    }));
 };
 
 // Watch
