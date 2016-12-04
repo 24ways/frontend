@@ -117,6 +117,13 @@
   dd > * {
     margin-top: 0;
   }
+
+  /* Embedded content */
+  img,
+  video {
+    display: block;
+    max-width: 100%;
+  }
 }
 
 .s-prose--article {
@@ -237,12 +244,6 @@
 
     @media (--from-xlarge-screen) {
       margin-right: -25%;
-    }
-
-    img,
-    video {
-      display: block;
-      max-width: 100%;
     }
   }
 
