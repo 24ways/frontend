@@ -15,6 +15,6 @@ You are viewing the front-end component library for 24 ways. It is powered by [F
 
 ### Source code
 
-The [source code is available on GitHub](https://github.com/24ways/front-end). See the [README](https://github.com/24ways/frontend/blob/master/README.md) for installation instructions.
+The [source code is available on GitHub](https://github.com/24ways/frontend). See the [README](https://github.com/24ways/frontend/blob/master/README.md) for installation instructions.
 
 <iframe src="https://ghbtns.com/github-btn.html?user=24ways&repo=frontend&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
