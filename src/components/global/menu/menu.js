@@ -3,27 +3,32 @@
 
   var $ = document.querySelector.bind(document);
   var menuToggleEl = $('[href="#navigation"]');
+  var menuButton = document.createElement("button");
   var navigationDrawerID = 'navigation__drawer';
   var navigationDrawerEl = $('#navigation__drawer');
 
+  // Replace menu link with a `button`
+  menuButton.classList = menuToggleEl.classList;
+  menuButton.innerHTML = menuToggleEl.innerHTML;
+  document.body.replaceChild(menuButton, menuToggleEl)
+
   var toggleMenu = function (state) {
-    menuToggleEl.setAttribute('aria-expanded', state);
+    menuButton.setAttribute('aria-expanded', state);
     document.body.setAttribute('data-menu-expanded', state);
     navigationDrawerEl.setAttribute('aria-hidden', !state);
   };
 
   if (menuToggleEl) {
-    // Setup menu button
-    menuToggleEl.setAttribute('role', 'button');
-    menuToggleEl.setAttribute('aria-controls', navigationDrawerID);
-    menuToggleEl.setAttribute('aria-expanded', false);
+    // Setup menu button ARIA attributes
+    menuButton.setAttribute('aria-controls', navigationDrawerID);
+    menuButton.setAttribute('aria-expanded', false);
 
     // Setup navigation drawer
     navigationDrawerEl.setAttribute('aria-hidden', true);
 
     // Toggle menu expanded/collapsed
-    menuToggleEl.addEventListener('click', function (e) {
-      var state = menuToggleEl.getAttribute('aria-expanded') === 'false' ? true : false;
+    menuButton.addEventListener('click', function (e) {
+      var state = menuButton.getAttribute('aria-expanded') === 'false' ? true : false;
 
       toggleMenu(state);
 
