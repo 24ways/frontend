@@ -15,23 +15,6 @@ $summary__author-size: map(sizes, xlarge);
     min-height: 12em;
     page-break-inside: avoid;
   }
-
-  a {
-    position: relative;
-    z-index: calc(map(layers, default) + 1);
-  }
-
-  a.c-summary__link {
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: map(layers, default);
-    white-space: nowrap;
-    text-indent: 200%;
-  }
 }
 
 .c-summary__header {
@@ -47,6 +30,19 @@ $summary__author-size: map(sizes, xlarge);
 .c-summary__title {
   @apply --typeset-summary-title;
   padding-right: calc($summary__author-size - map(spaces, medium));
+
+  a::before {
+    content: '';
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: map(layers, default);
+    white-space: nowrap;
+    text-indent: 200%;
+  }
 }
 
 .c-summary__main {
@@ -55,6 +51,8 @@ $summary__author-size: map(sizes, xlarge);
   font-size: 0.875rem;
 
   a {
+    position: relative;
+    z-index: calc(map(layers, default) + 1);
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: inherit;
@@ -64,6 +62,11 @@ $summary__author-size: map(sizes, xlarge);
 .c-summary__footer {
   @media screen {
     margin-top: auto;
+  }
+
+  a {
+    position: relative;
+    z-index: calc(map(layers, default) + 1);
   }
 }
 
