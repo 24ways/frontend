@@ -117,13 +117,6 @@
   dd > * {
     margin-top: 0;
   }
-
-  /* Embedded content */
-  img,
-  video {
-    display: block;
-    max-width: 100%;
-  }
 }
 
 .s-prose--article {
@@ -259,6 +252,13 @@
     @media (--from-large-screen) {
       margin: 0;
     }
+  }
+
+  /* Embedded content */
+  img,
+  video {
+    display: block;
+    max-width: 100%;
   }
 
   /* Key press within user input sequence. */
