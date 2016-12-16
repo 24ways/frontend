@@ -13,12 +13,17 @@
 }
 
 .c-site-nav__label {
+  @apply --focusable;
   @apply --navigation-link;
   @apply --typeset-label;
   display: block;
   box-shadow: 1px 0 0 $navigation-color--offset;
   padding: map(spaces, medium);
   text-align: center;
+
+  &:focus {
+    position: relative; /* Fix border overlap on focus */
+  }
 
   @media (--from-medium-screen) {
     box-shadow: 0 -1px 0 $navigation-color--offset;

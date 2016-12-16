@@ -1,47 +1,45 @@
-'use strict';
+const paths = {
+  build: `${__dirname}/www`,
+  src: `${__dirname}/src`,
+  static: `${__dirname}/tmp`,
+};
 
 const fractal = require('@frctl/fractal').create();
-
-const paths = {
-  build: __dirname + '/www',
-  src: __dirname + '/src',
-  static: __dirname + '/tmp'
-};
 
 const mandelbrot = require('@frctl/mandelbrot')({
   favicon: '/assets/icons/icon.ico',
   lang: 'en-gb',
   styles: ['default', '/assets/styles/theme.css'],
   static: {
-    mount: 'fractal'
-  }
+    mount: 'fractal',
+  },
 });
 
-const md_abbr = require('markdown-it-abbr');
-const md_footnote = require('markdown-it-footnote');
+const mdAbbr = require('markdown-it-abbr');
+const mdFootnote = require('markdown-it-footnote');
 const md = require('markdown-it')({
   html: true,
   xhtmlOut: true,
-  typographer: true
-}).use(md_abbr).use(md_footnote);
-
+  typographer: true,
+}).use(mdAbbr).use(mdFootnote);
+const nunjucksDate = require('nunjucks-date');
 const nunjucks = require('@frctl/nunjucks')({
   filters: {
-    date: require('nunjucks-date'),
-    markdown: function(str) {
+    date: nunjucksDate,
+    markdown(str) {
       return md.render(str);
     },
-    markdownInline: function(str) {
+    markdownInline(str) {
       return md.renderInline(str);
     },
-    slugify: function(str) {
+    slugify(str) {
       return str.toLowerCase().replace(/[^\w]+/g, '');
     },
-    stringify: function () {
-      return JSON.stringify(this, null, "\t");
-    }
+    stringify() {
+      return JSON.stringify(this, null, '\t');
+    },
   },
-  paths: [paths.static + '/assets/vectors']
+  paths: [`${paths.static}/assets/vectors`],
 });
 
 // Project config
@@ -52,12 +50,12 @@ fractal.components.engine(nunjucks);
 fractal.components.set('default.preview', '@preview');
 fractal.components.set('default.status', null);
 fractal.components.set('ext', '.html');
-fractal.components.set('path', paths.src + '/components');
+fractal.components.set('path', `${paths.src}/components`);
 
 // Docs config
 fractal.docs.engine(nunjucks);
 fractal.docs.set('ext', '.md');
-fractal.docs.set('path', paths.src + '/docs');
+fractal.docs.set('path', `${paths.src}/docs`);
 
 // Web UI config
 fractal.web.theme(mandelbrot);

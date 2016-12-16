@@ -1,0 +1,8 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "no-param-reassign": "off",
+    "func-names": "off",
+    "import/newline-after-import": "off"
+  }
+}

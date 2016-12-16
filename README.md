@@ -66,6 +66,7 @@ Sometimes it’s helpful to know what all these different files are for…
 │
 ├─ .editorconfig     # Code style definitions
 ├─ .gitignore        # List of files and folders not tracked by Git
+├─ .eslintrc         # Linting preferences for JavasScript
 ├─ .stylelintrc      # Linting preferences for CSS
 ├─ fractal.js        # Configuration for Fractal
 ├─ gulpfile.js       # Configuration for Gulp tasks

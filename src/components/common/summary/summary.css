@@ -43,6 +43,14 @@ $summary__author-size: map(sizes, xlarge);
     white-space: nowrap;
     text-indent: 200%;
   }
+
+  a:focus {
+    outline: none;
+
+    &::before {
+      outline: 2px solid $color-focus;
+    }
+  }
 }
 
 .c-summary__main {

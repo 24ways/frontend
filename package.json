@@ -28,16 +28,17 @@
     "@frctl/mandelbrot": "latest",
     "@frctl/nunjucks": "latest",
     "autoprefixer": "latest",
+    "babel-preset-es2015": "latest",
     "cssnano": "latest",
     "del": "latest",
     "fontfaceobserver": "latest",
     "gulp": "gulpjs/gulp#4.0",
+    "gulp-babel": "latest",
     "gulp-concat": "latest",
     "gulp-gh-pages": "latest",
     "gulp-imagemin": "latest",
     "gulp-postcss": "latest",
     "gulp-sourcemaps": "latest",
-    "gulp-stylelint": "latest",
     "gulp-uglify": "latest",
     "markdown-it": "latest",
     "markdown-it-abbr": "latest",
@@ -56,5 +57,14 @@
     "postcss-responsive-type": "latest",
     "postcss-simple-vars": "latest",
     "prismjs": "latest"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "stylelint": "^7.6.0"
   }
 }

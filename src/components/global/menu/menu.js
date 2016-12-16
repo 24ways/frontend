@@ -1,21 +1,68 @@
-(function() {
-  'use strict';
+'use strict';
 
-  var $ = document.querySelector.bind(document);
-  var menuToggleEl = $('[href="#navigation"]');
-  var menuButton = document.createElement("button");
-  var navigationDrawerID = 'navigation__drawer';
-  var navigationDrawerEl = $('#navigation__drawer');
+(function (root, factory) {
+  if (typeof module === 'object' && module.exports) {
+    module.exports = factory(require('../../src/assets/scripts/utils/selection').$);
+    module.exports = factory(require('../../src/assets/scripts/utils/focusing').$);
+  } else {
+    root.menu = factory(root.selection.$, root.focusing);
+  }
+}(this, function ($, focusing) {
+  const doc = this.document;
+  const menuToggleEl = $('[href="#navigation"]');
+  const menuButton = doc.createElement('button');
+  const navigationDrawerEl = $('#navigation__drawer');
+  const navigationDrawerID = navigationDrawerEl.id;
+  const focusRegion = navigationDrawerEl;
+
+  var previousFocusedElement;
+
+  function handleKeypress(e) {
+    focusing.bindKeypress(true, function () {
+      handleRemoveFocus();
+    }, focusRegion, e);
+  }
+
+  function handleMaintainFocus(e) {
+    focusing.maintainFocus(true, focusRegion, e);
+  }
+
+  function handleSetFocus(e) {
+    previousFocusedElement = focusing.safeActiveElement();
+    focusing.setInitialFocus(focusRegion);
+    doc.addEventListener('keydown', handleKeypress);
+    doc.body.addEventListener('focus', handleMaintainFocus, true);
+  }
+
+  function handleRemoveFocus(e) {
+    doc.removeEventListener('keydown', handleKeypress);
+    doc.body.removeEventListener('focus', handleMaintainFocus, true);
+    focusing.removeFocus(focusRegion);
+    previousFocusedElement && previousFocusedElement.focus();
+  }
 
   // Replace menu link with a `button`
   menuButton.classList = menuToggleEl.classList;
   menuButton.innerHTML = menuToggleEl.innerHTML;
-  document.body.replaceChild(menuButton, menuToggleEl)
+  doc.body.replaceChild(menuButton, menuToggleEl);
 
-  var toggleMenu = function (state) {
+  // Correct role for navigation drawer
+  navigationDrawerEl.setAttribute('role', 'dialog');
+  navigationDrawerEl.setAttribute('aria-labelledby', 'navigation__title');
+  navigationDrawerEl.hidden = true;
+
+  const toggleMenu = function (state) {
     menuButton.setAttribute('aria-expanded', state);
-    document.body.setAttribute('data-menu-expanded', state);
+    doc.body.setAttribute('data-menu-expanded', state);
     navigationDrawerEl.setAttribute('aria-hidden', !state);
+
+    if (state === 'true') {
+      handleSetFocus();
+      navigationDrawerEl.hidden = false;
+    } else {
+      handleRemoveFocus();
+      navigationDrawerEl.hidden = true;
+    }
   };
 
   if (menuToggleEl) {
@@ -27,8 +74,8 @@
     navigationDrawerEl.setAttribute('aria-hidden', true);
 
     // Toggle menu expanded/collapsed
-    menuButton.addEventListener('click', function (e) {
-      var state = menuButton.getAttribute('aria-expanded') === 'false' ? true : false;
+    menuButton.addEventListener('click', (e) => {
+      const state = menuButton.getAttribute('aria-expanded') === 'false' ? 'true' : 'false';
 
       toggleMenu(state);
 
@@ -36,10 +83,11 @@
     });
 
     // Close menu if escape key is pressed
-    window.addEventListener('keyup', function (e) {
-      if (e.keyCode == 27) {
+    this.addEventListener('keyup', (e) => {
+      if (e.keyCode === 27) {
         toggleMenu(false);
+        handleRemoveFocus();
       }
     });
   }
-}());
+}));

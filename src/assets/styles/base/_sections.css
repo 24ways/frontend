@@ -19,6 +19,10 @@ html {
   box-sizing: inherit;
 }
 
+*:focus {
+  outline: 2px solid $color-focus;
+}
+
 @media print {
   @page {
     margin: 2cm;

@@ -1,4 +1,5 @@
 .c-menu {
+  @apply --focusable;
   display: block;
   position: fixed;
   z-index: calc(map(layers, modal) + 1);

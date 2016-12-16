@@ -37,6 +37,7 @@
 }
 
 .c-topics-nav__label {
+  @apply --focusable;
   @apply --navigation-link;
   @apply --typeset-ui;
   display: block;
