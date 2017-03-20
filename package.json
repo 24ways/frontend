@@ -21,7 +21,9 @@
     "start": "node_modules/.bin/gulp start",
     "build": "node_modules/.bin/gulp build",
     "dev": "node_modules/.bin/gulp dev",
-    "publish": "node_modules/.bin/gulp publish"
+    "publish": "node_modules/.bin/gulp publish",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@frctl/fractal": "latest",
@@ -56,7 +58,8 @@
     "postcss-nested": "latest",
     "postcss-responsive-type": "latest",
     "postcss-simple-vars": "latest",
-    "prismjs": "latest"
+    "prismjs": "latest",
+    "snyk": "^1.25.2"
   },
   "devDependencies": {
     "eslint": "^3.12.2",
@@ -66,5 +69,6 @@
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.8.0",
     "stylelint": "^7.6.0"
-  }
+  },
+  "snyk": true
 }
