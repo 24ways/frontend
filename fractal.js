@@ -1,7 +1,7 @@
 const paths = {
   build: `${__dirname}/www`,
   src: `${__dirname}/src`,
-  static: `${__dirname}/tmp`,
+  static: `${__dirname}/tmp`
 };
 
 const fractal = require('@frctl/fractal').create();
@@ -11,8 +11,8 @@ const mandelbrot = require('@frctl/mandelbrot')({
   lang: 'en-gb',
   styles: ['default', '/assets/styles/theme.css'],
   static: {
-    mount: 'fractal',
-  },
+    mount: 'fractal'
+  }
 });
 
 const mdAbbr = require('markdown-it-abbr');
@@ -20,7 +20,7 @@ const mdFootnote = require('markdown-it-footnote');
 const md = require('markdown-it')({
   html: true,
   xhtmlOut: true,
-  typographer: true,
+  typographer: true
 }).use(mdAbbr).use(mdFootnote);
 const nunjucksDate = require('nunjucks-date');
 const nunjucks = require('@frctl/nunjucks')({
@@ -37,9 +37,9 @@ const nunjucks = require('@frctl/nunjucks')({
     },
     stringify() {
       return JSON.stringify(this, null, '\t');
-    },
+    }
   },
-  paths: [`${paths.static}/assets/vectors`],
+  paths: [`${paths.static}/assets/vectors`]
 });
 
 // Project config

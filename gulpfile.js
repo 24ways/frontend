@@ -1,15 +1,10 @@
 // --------------------------------------------------------
 // Dependencies
 // --------------------------------------------------------
-const pkg = require('./package.json');
-
-// Fractal
-const fractal = require('./fractal.js');
-const logger = fractal.cli.console;
 
 // Utils
-const del = require('del');
 const fs = require('fs');
+const del = require('del');
 const gulp = require('gulp');
 
 // JavaScript
@@ -38,6 +33,11 @@ const ghPages = require('gulp-gh-pages');
 const imagemin = require('gulp-imagemin');
 const sourcemaps = require('gulp-sourcemaps');
 
+// Fractal
+const pkg = require('./package.json');
+const fractal = require('./fractal.js');
+
+const logger = fractal.cli.console;
 
 // --------------------------------------------------------
 // Configuration
@@ -48,13 +48,13 @@ const paths = {
   build: `${__dirname}/www`,
   dest: `${__dirname}/tmp`,
   src: `${__dirname}/src`,
-  modules: `${__dirname}/node_modules`,
+  modules: `${__dirname}/node_modules`
 };
 
 // PostCSS plugins
 const processors = [
   importer({
-    glob: true,
+    glob: true
   }),
   mapper({
     maps: [
@@ -64,11 +64,11 @@ const processors = [
       `${paths.src}/tokens/fonts.json`,
       `${paths.src}/tokens/layers.json`,
       `${paths.src}/tokens/sizes.json`,
-      `${paths.src}/tokens/spaces.json`,
-    ],
+      `${paths.src}/tokens/spaces.json`
+    ]
   }),
   assets({
-    loadPaths: [`${paths.src}/assets/vectors`],
+    loadPaths: [`${paths.src}/assets/vectors`]
   }),
   simpleVars,
   apply,
@@ -79,7 +79,7 @@ const processors = [
   nested,
   responsiveType,
   autoprefixer,
-  nano,
+  nano
 ];
 
 // JavaScript files
@@ -89,9 +89,8 @@ const modules = [
   `${paths.src}/assets/scripts/utils/selection.js`,
   `${paths.src}/assets/scripts/utils/focusing.js`,
   `${paths.src}/assets/scripts/app.js`,
-  `${paths.src}/components/**/*.js`,
+  `${paths.src}/components/**/*.js`
 ];
-
 
 // --------------------------------------------------------
 // Tasks
@@ -112,7 +111,7 @@ function build() {
 // Serve dynamic site
 function serve() {
   const server = fractal.web.server({
-    sync: true,
+    sync: true
   });
 
   server.on('error', err => logger.error(err.message));
@@ -136,7 +135,7 @@ function deploy() {
   // Push contents of build folder to `gh-pages` branch
   return gulp.src(`${paths.build}/**/*`)
     .pipe(ghPages({
-      force: true,
+      force: true
     }));
 }
 
@@ -157,7 +156,7 @@ function icons() {
 function images() {
   return gulp.src(`${paths.src}/assets/images/**/*`)
     .pipe(imagemin({
-      progressive: true,
+      progressive: true
     }))
     .pipe(gulp.dest(`${paths.dest}/assets/images`));
 }
@@ -173,7 +172,9 @@ function scripts() {
   return gulp.src(modules)
     .pipe(sourcemaps.init())
     .pipe(babel({
-      presets: [['es2015', { modules: false }]],
+      presets: [['es2015', {
+        modules: false
+      }]]
     }))
     .pipe(concat('app.js'))
     .pipe(uglify())

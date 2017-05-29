@@ -21,7 +21,12 @@
     "start": "node_modules/.bin/gulp start",
     "build": "node_modules/.bin/gulp build",
     "dev": "node_modules/.bin/gulp dev",
-    "publish": "node_modules/.bin/gulp publish"
+    "publish": "node_modules/.bin/gulp publish",
+    "test": "xo"
+  },
+  "xo": {
+    "space": true,
+    "envs": "browser"
   },
   "dependencies": {
     "@frctl/fractal": "latest",
@@ -59,12 +64,7 @@
     "prismjs": "latest"
   },
   "devDependencies": {
-    "eslint": "^3.12.2",
-    "eslint-config-airbnb": "^13.0.0",
-    "eslint-config-airbnb-base": "^11.0.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^2.2.3",
-    "eslint-plugin-react": "^6.8.0",
-    "stylelint": "^7.6.0"
+    "stylelint": "^7.6.0",
+    "xo": "^0.18.2"
   }
 }

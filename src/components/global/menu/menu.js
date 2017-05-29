@@ -15,10 +15,10 @@
   const navigationDrawerID = navigationDrawerEl.id;
   const focusRegion = navigationDrawerEl;
 
-  var previousFocusedElement;
+  let previousFocusedElement;
 
   function handleKeypress(e) {
-    focusing.bindKeypress(true, function () {
+    focusing.bindKeypress(true, () => {
       handleRemoveFocus();
     }, focusRegion, e);
   }
@@ -27,18 +27,18 @@
     focusing.maintainFocus(true, focusRegion, e);
   }
 
-  function handleSetFocus(e) {
+  function handleSetFocus() {
     previousFocusedElement = focusing.safeActiveElement();
     focusing.setInitialFocus(focusRegion);
     doc.addEventListener('keydown', handleKeypress);
     doc.body.addEventListener('focus', handleMaintainFocus, true);
   }
 
-  function handleRemoveFocus(e) {
+  function handleRemoveFocus() {
     doc.removeEventListener('keydown', handleKeypress);
     doc.body.removeEventListener('focus', handleMaintainFocus, true);
     focusing.removeFocus(focusRegion);
-    previousFocusedElement && previousFocusedElement.focus();
+    previousFocusedElement.focus();
   }
 
   // Replace menu link with a `button`
@@ -74,16 +74,14 @@
     navigationDrawerEl.setAttribute('aria-hidden', true);
 
     // Toggle menu expanded/collapsed
-    menuButton.addEventListener('click', (e) => {
+    menuButton.addEventListener('click', e => {
       const state = menuButton.getAttribute('aria-expanded') === 'false' ? 'true' : 'false';
-
       toggleMenu(state);
-
       e.preventDefault();
     });
 
     // Close menu if escape key is pressed
-    this.addEventListener('keyup', (e) => {
+    this.addEventListener('keyup', e => {
       if (e.keyCode === 27) {
         toggleMenu(false);
         handleRemoveFocus();

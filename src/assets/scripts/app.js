@@ -19,19 +19,19 @@
         return cookies.pop().split(';').shift();
       }
       return null;
-    } else {
-      // if value is a false boolean, we'll treat that as a delete
-      if (value === false) {
-        days = -1;
-      }
-      let expires = '';
-      if (days) {
-        const date = new Date();
-        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-        expires = `; expires=${date.toGMTString()}`;
-      }
-      doc.cookie = `${name}=${value}${expires}; path=/`;
     }
+
+    // If value is a false boolean, we'll treat that as a delete
+    if (value === false) {
+      days = -1;
+    }
+    let expires = '';
+    if (days) {
+      const date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = `; expires=${date.toGMTString()}`;
+    }
+    doc.cookie = `${name}=${value}${expires}; path=/`;
   };
 
   win.cookie = cookie;
@@ -40,31 +40,31 @@
   // Requires FontFaceObserver (included during build)
   const sansRegular = new FontFaceObserver('Source Sans Pro', {
     weight: 'normal',
-    style: 'normal',
+    style: 'normal'
   });
 
   const sansBold = new FontFaceObserver('Source Sans Pro', {
     weight: '700',
-    style: 'normal',
+    style: 'normal'
   });
 
   const serifRegular = new FontFaceObserver('Source Serif Pro', {
     weight: 'normal',
-    style: 'normal',
+    style: 'normal'
   });
 
   const monospace = new FontFaceObserver('Source Code Pro', {
     weight: 'normal',
-    style: 'normal',
+    style: 'normal'
   });
 
   Promise.all([
     sansRegular.load(),
     sansBold.load(),
     serifRegular.load(),
-    monospace.load(),
-  ]).then(function () {
+    monospace.load()
+  ]).then(() => {
     doc.documentElement.className += ' fonts-loaded';
     cookie('fonts-loaded', !0, 7);
   });
-}(window, window.document));
+})(window, window.document);
