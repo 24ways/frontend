@@ -22,7 +22,7 @@ const focusableElements = [
   } else {
     root.focusing = factory(root.selection.$$);
   }
-}(this, $$ => {
+})(this, $$ => {
   function getFocusableChildren(node) {
     return $$(focusableElements.join(','), node).filter(child => {
       return Boolean(child.offsetWidth || child.offsetHeight || child.getClientRects().length);
@@ -110,4 +110,4 @@ const focusableElements = [
     removeFocus,
     maintainFocus
   };
-}));
+});

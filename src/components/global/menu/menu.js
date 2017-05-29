@@ -7,7 +7,7 @@
   } else {
     root.menu = factory(root.selection.$, root.focusing);
   }
-}(this, function ($, focusing) {
+})(this, function ($, focusing) {
   const doc = this.document;
   const menuToggleEl = $('[href="#navigation"]');
   const menuButton = doc.createElement('button');
@@ -88,4 +88,4 @@
       }
     });
   }
-}));
+});

@@ -6,7 +6,7 @@
   } else {
     root.selection = factory();
   }
-}(this, () => {
+})(this, () => {
   function $$(selector, context) {
     return Array.prototype.slice.call((context || document).querySelectorAll(selector));
   }
@@ -19,4 +19,4 @@
     $$,
     $
   };
-}));
+});
