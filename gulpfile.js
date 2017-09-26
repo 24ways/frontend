@@ -111,7 +111,10 @@ function build() {
 // Serve dynamic site
 function serve() {
   const server = fractal.web.server({
-    sync: true
+    sync: true,
+    syncOptions: {
+      https: true
+    }
   });
 
   server.on('error', err => logger.error(err.message));
