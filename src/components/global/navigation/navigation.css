@@ -1,6 +1,5 @@
 .c-navigation {
   z-index: map(layers, modal);
-  overflow: hidden;
   background-color: $navigation-color;
 
   .has-js & {
