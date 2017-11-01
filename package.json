@@ -22,7 +22,9 @@
     "build": "node_modules/.bin/gulp build",
     "dev": "node_modules/.bin/gulp dev",
     "publish": "node_modules/.bin/gulp publish",
-    "test": "xo"
+    "test": "xo",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "xo": {
     "space": true,
@@ -62,10 +64,12 @@
     "postcss-nested": "^2.1.0",
     "postcss-responsive-type": "^1.0.0",
     "postcss-simple-vars": "^4.1.0",
-    "prismjs": "^1.8.0"
+    "prismjs": "^1.8.0",
+    "snyk": "^1.47.0"
   },
   "devDependencies": {
     "stylelint": "^8.0.0",
     "xo": "^0.18.2"
-  }
+  },
+  "snyk": true
 }

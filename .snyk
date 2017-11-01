@@ -1,0 +1,18 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.8.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:marked:20170907':
+    - '@frctl/fractal > marked':
+        patched: '2017-11-01T08:41:50.085Z'
+    - '@frctl/nunjucks > @frctl/fractal > marked':
+        patched: '2017-11-01T08:41:50.085Z'
+    - '@frctl/fractal > @frctl/handlebars > @frctl/fractal > marked':
+        patched: '2017-11-01T08:41:50.085Z'
+    - '@frctl/nunjucks > @frctl/fractal > @frctl/handlebars > @frctl/fractal > marked':
+        patched: '2017-11-01T08:41:50.085Z'
+    - '@frctl/fractal > @frctl/mandelbrot > @frctl/fractal > @frctl/handlebars > @frctl/fractal > marked':
+        patched: '2017-11-01T08:41:50.085Z'
+    - '@frctl/nunjucks > @frctl/fractal > @frctl/mandelbrot > @frctl/fractal > @frctl/handlebars > @frctl/fractal > marked':
+        patched: '2017-11-01T08:41:50.085Z'
