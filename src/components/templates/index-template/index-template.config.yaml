@@ -131,7 +131,7 @@ variants:
     sections:
     - id: a
       title: "A"
-      component: grid--authors
+      component: listing--authors
       config:
         mods: [authors]
         component: author
@@ -141,7 +141,7 @@ variants:
         - author: Paul Annett
     - id: b
       title: "B"
-      component: grid--authors
+      component: listing--authors
       config:
         mods: [authors]
         component: author
@@ -161,7 +161,7 @@ variants:
         - author: Heather Burns
     - id: c
       title: "C"
-      component: grid--authors
+      component: listing--authors
       config:
         mods: [authors]
         component: author

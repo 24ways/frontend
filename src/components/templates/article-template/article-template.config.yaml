@@ -17,15 +17,7 @@ context:
     next:
       url: /2015/solve-the-hard-problems/
       title: "Solve the Hard Problems"
-  related:
-    id: related
-    title: "Related articles"
-    mods: [related]
-    component: grid
-    config:
-      items:
-      - "@summary"
-      - "@summary"
+  related: true
   comments:
   - "@comment"
   - "@comment--unhelpful"

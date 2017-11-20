@@ -26,14 +26,9 @@
 
   @media (--from-large-screen) {
     min-height: 16rem;
-    padding-right: 5%;
     padding-bottom: map(spaces, xxlarge);
     padding-left: 25%;
     box-shadow: 0 -1px 0 0 $prose-color--rule;
-  }
-
-  @media (--from-xlarge-screen) {
-    padding-right: 15%;
   }
 }
 
@@ -78,18 +73,8 @@
   padding: 0 map(spaces, large) map(spaces, large);
 
   @media (--from-large-screen) {
-    width: 75%;
     margin-left: 25%;
     padding-left: 0;
-    padding-right: 5%;
-  }
-
-  @media (--from-xlarge-screen) {
-    padding-right: 15%;
-  }
-
-  @media (--from-max-screen) {
-    padding-right: 25%;
   }
 }
 

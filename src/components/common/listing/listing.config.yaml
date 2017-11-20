@@ -1,0 +1,28 @@
+variants:
+- name: default
+  context:
+    mods: [summaries]
+    component: summary
+    items:
+    - "@summary"
+    - "@summary"
+    - "@summary"
+    - "@summary"
+- name: inset
+  context:
+    mods: [summaries, inset]
+    component: summary
+    items:
+    - "@summary"
+    - "@summary"
+    - "@summary"
+    - "@summary"
+- name: authors
+  context:
+    mods: [authors]
+    component: author
+    items:
+    - "@author"
+    - "@author"
+    - "@author"
+    - "@author"

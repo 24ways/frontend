@@ -47,14 +47,9 @@ variants:
     id: related
     title: "Related articles"
     mods: [related]
-    component: grid
-    config:
-      items:
-      - "@summary"
-      - "@summary"
-      - "@summary"
+    component: listing
 - name: authors
   context:
     id: a
     title: "A"
-    component: grid--authors
+    component: listing--authors

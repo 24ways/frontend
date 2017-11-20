@@ -7,7 +7,7 @@ context:
   datetime: "2010-12-15T00:00:00-00:00"
   comments: 6
   content: |
-    [Rachel Andrew](https://rachelandrew.co.uk/) unwraps the new paradigms of web layout, comparing their features and showing how they can free us from grid-based, `div`-infested frameworks. Beautifully wrapped boxes look lovely under the Christmas tree, but we need to think and break out of them.
+    *Rachel Andrew* unwraps the new paradigms of web layout, comparing their features and showing how they can free us from grid-based, `div`-infested frameworks. Beautifully wrapped boxes look lovely under the Christmas tree, but we need to think and break out of them.
 variants:
 - name: countdown
   context:
@@ -19,4 +19,4 @@ variants:
     datetime: "2010-12-15T00:00:00-00:00"
     comments: 11
     content: |
-      [Dan Mall](http://danielmall.com/) breathes life into web standards-based animation. By striving for more than just mechanical movement, we can create more believable animated effects to enhance our users' experience.
+      *Dan Mall* breathes life into web standards-based animation. By striving for more than just mechanical movement, we can create more believable animated effects to enhance our users' experience.

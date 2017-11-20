@@ -1,0 +1,42 @@
+.c-listing {
+  display: flex;
+  flex-wrap: wrap;
+
+  @supports (display: grid) {
+    display: grid;
+    grid-gap: map(spaces, xsmall);
+  }
+
+  > * {
+    flex: 1;
+    margin: 0 map(spaces, xsmall) map(spaces, xsmall) 0;
+
+    @supports (display: grid) {
+      margin: 0;
+    }
+  }
+}
+
+.c-listing--authors {
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+
+  > * {
+    flex: 8rem 0 0;
+  }
+}
+
+.c-listing--summaries {
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+
+  > * {
+    flex: 16em 1 0;
+  }
+}
+
+.c-listing--inset {
+  padding: map(spaces, xsmall) 0 0 map(spaces, xsmall);
+
+  @supports (display: grid) {
+    padding: map(spaces, xsmall);
+  }
+}

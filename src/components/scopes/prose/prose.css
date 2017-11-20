@@ -16,9 +16,11 @@
 
     position: relative;
     top: calc(map(spaces, xsmall) * -1);
+    max-width: 62.5ch;
   }
 
   > * {
+    max-width: 75ch;
     margin-bottom: 0.75em;
   }
 
@@ -232,14 +234,11 @@
   p.image { /* ! Legacy */
     margin-left: calc(map(spaces, large) * -1);
     margin-right: calc(map(spaces, large) * -1);
+    max-width: none;
 
     @media (--from-large-screen) {
       margin-left: 0;
-      margin-right: -7.6667%;
-    }
-
-    @media (--from-xlarge-screen) {
-      margin-right: -25%;
+      margin-right: 0;
     }
   }
 

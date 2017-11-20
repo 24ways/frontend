@@ -6,6 +6,8 @@ variants:
     content: |
       <cite>24 ways</cite> is the advent calendar for web geeks. Each day throughout December we publish a daily dose of web design and development goodness to bring you all a little Christmas cheer. [Learn more](/about)
     config:
+      mods: [summaries, inset]
+      component: summary
       reversed: true
       items: ["@summary--countdown","@summary--countdown","@summary--countdown","@summary--countdown","@summary--countdown","@summary--countdown","@summary--countdown"]
 - name: topic
@@ -37,6 +39,11 @@ variants:
       next:
         url: /2014/
         title: "2014"
+    config:
+      mods: [summaries, inset]
+      component: summary
+      items:
+        ["@summary--countdown","@summary--countdown","@summary--countdown","@summary--countdown","@summary--countdown"]
 - name: author
   context:
     title: "Rachel Andrew"
@@ -64,4 +71,7 @@ variants:
   context:
     title: "Search results for ‘design systems’"
     results: true
-    items: ["@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary", "@summary","@summary","@summary","@summary","@summary","@summary","@summary", "@summary","@summary","@summary"]
+    config:
+      mods: [summaries, inset]
+      component: summary
+      items: ["@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary", "@summary","@summary"]

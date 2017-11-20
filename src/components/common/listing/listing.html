@@ -1,0 +1,7 @@
+<ol class="c-listing{% for mod in mods %} c-listing--{{ mod }}{% endfor %}"{{ " reversed" if reversed }}>
+{%- for item in items -%}
+  <li>
+    {%- render "@" + component, item -%}
+  </li>
+{%- endfor -%}
+</ol>
