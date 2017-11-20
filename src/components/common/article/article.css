@@ -39,6 +39,7 @@
 
 .c-article__title {
   @apply --typeset-title;
+
   position: relative;
   margin-bottom: map(spaces, small);
   z-index: map(layers, overlay);

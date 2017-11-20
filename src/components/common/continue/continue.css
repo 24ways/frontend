@@ -1,5 +1,6 @@
 .c-continue {
   @apply --typeset-ui;
+
   font-weight: 700;
 
   &::after {

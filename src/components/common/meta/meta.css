@@ -1,5 +1,6 @@
 .c-meta {
   @apply --typeset-caption;
+
   display: flex;
   flex-flow: row wrap;
   margin-bottom: map(spaces, medium);

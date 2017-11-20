@@ -29,6 +29,7 @@ $summary__author-size: map(sizes, xlarge);
 
 .c-summary__title {
   @apply --typeset-summary-title;
+
   padding-right: calc($summary__author-size - map(spaces, medium));
 
   a::before {
@@ -55,6 +56,7 @@ $summary__author-size: map(sizes, xlarge);
 
 .c-summary__main {
   @apply --typeset-prose;
+
   margin-bottom: map(spaces, medium);
   font-size: 0.875rem;
 
@@ -80,6 +82,7 @@ $summary__author-size: map(sizes, xlarge);
 
 .c-summary__meta {
   @apply --typeset-label;
+
   color: map(colors, neutral, dark);
 
   .dt-published {
@@ -192,6 +195,7 @@ $summary__author-size: map(sizes, xlarge);
 
   .dt-published {
     @apply --typeset-summary-title;
+
     font-weight: 400;
     position: absolute;
     top: map(spaces, medium);

@@ -1,5 +1,6 @@
 .c-button {
   @apply --typeset-ui;
+
   display: inline-block;
   padding: map(spaces, medium) map(spaces, large);
   background-color: $color-ui-link;

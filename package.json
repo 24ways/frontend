@@ -22,7 +22,15 @@
     "build": "node_modules/.bin/gulp build",
     "dev": "node_modules/.bin/gulp dev",
     "publish": "node_modules/.bin/gulp publish",
-    "test": "xo"
+    "test": "xo || stylelint src/**/*.css"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "property-no-unknown": [ true, {
+        "ignoreProperties": ["font-range"]
+      }]
+    }
   },
   "xo": {
     "space": true,
@@ -70,6 +78,7 @@
   },
   "devDependencies": {
     "stylelint": "^8.2.0",
+    "stylelint-config-standard": "^17.0.0",
     "xo": "^0.18.0"
   }
 }

@@ -64,7 +64,7 @@
   /* Lede: Typically used for introductory text */
   --typeset-lede: {
     font-size: responsive 1.125rem 1.5rem;
-    font-range: 30rem 60rem;
+    font-range: 30rem 60rem; /* stylelint-disable property-no-unknown */
     font-family: sans-serif;
     font-weight: 400;
     font-variant: common-ligatures oldstyle-nums;

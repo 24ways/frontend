@@ -16,9 +16,7 @@
 
 .l-grid__item {
   display: flex;
-  flex-basis: 16em;
-  flex-grow: 1;
-  flex-shrink: 0;
+  flex: 16em 1 0;
   margin-top: map(spaces, xsmall);
   margin-left: map(spaces, xsmall);
 

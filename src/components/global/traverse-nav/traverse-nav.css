@@ -16,6 +16,7 @@ $traverse-nav__label-width: 18rem; /* 288px */
 .c-traverse-nav__item {
   @apply --focusable;
   @apply --navigation-link;
+
   display: block;
   position: relative;
   width: auto;
@@ -48,6 +49,7 @@ $traverse-nav__label-width: 18rem; /* 288px */
 
     &::after {
       @apply --typeset-label;
+
       z-index: calc(map(layers, underlay) - 1);
       width: $traverse-nav__label-width;
       overflow: hidden;

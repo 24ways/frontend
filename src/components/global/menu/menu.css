@@ -1,5 +1,6 @@
 .c-menu {
   @apply --focusable;
+
   display: block;
   position: fixed;
   z-index: calc(map(layers, modal) + 1);
@@ -21,6 +22,7 @@
 
   @media (--from-medium-screen) {
     @apply --navigation-link;
+
     top: 0;
     right: 0;
     padding: map(spaces, medium);

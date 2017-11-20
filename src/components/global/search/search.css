@@ -15,6 +15,7 @@
 
   .c-field__button {
     @apply --focusable;
+
     position: absolute;
     top: 0;
     left: 0;

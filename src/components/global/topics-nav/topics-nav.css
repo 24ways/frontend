@@ -40,6 +40,7 @@
   @apply --focusable;
   @apply --navigation-link;
   @apply --typeset-ui;
+
   display: block;
   padding: map(spaces, large) map(spaces, medium);
   box-shadow: 1px 1px 0 $navigation-color--offset;

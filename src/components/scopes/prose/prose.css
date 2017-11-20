@@ -7,11 +7,13 @@
 
   .caption {
     @apply --typeset-caption;
+
     opacity: 0.9;
   }
 
   .lede {
     @apply --typeset-lede;
+
     position: relative;
     top: calc(map(spaces, xsmall) * -1);
   }
@@ -152,6 +154,7 @@
   h4,
   h5 {
     @apply --typeset-heading;
+
     margin-top: map(spaces, large);
     margin-bottom: map(spaces, small);
   }
@@ -243,6 +246,7 @@
   figcaption,
   p.image span.caption { /* ! Legacy */
     @apply --typeset-caption;
+
     display: block;
     border-bottom: 1px solid $prose-color--rule;
     margin-right: map(spaces, large);
@@ -314,6 +318,7 @@
 
   caption {
     @apply --typeset-caption;
+
     color: map(colors, neutral, base);
     caption-side: bottom;
     text-align: left;

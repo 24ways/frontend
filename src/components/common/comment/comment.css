@@ -64,6 +64,7 @@ $comment-avatar--large: map(sizes, xlarge);
 
 .c-comment__footer {
   @apply --typeset-label;
+
   border-top: 1px solid $prose-color--shadow;
   padding-top: map(spaces, medium);
   text-align: right;
