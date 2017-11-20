@@ -24,6 +24,9 @@
     "publish": "node_modules/.bin/gulp publish",
     "test": "xo || stylelint src/**/*.css"
   },
+  "browserslist": [
+    ">2%"
+  ],
   "stylelint": {
     "extends": "stylelint-config-standard",
     "rules": {
