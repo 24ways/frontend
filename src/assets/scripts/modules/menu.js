@@ -1,17 +1,9 @@
-'use strict';
+import * as focusing from './focusing';
 
-(function (root, factory) {
-  if (typeof module === 'object' && module.exports) {
-    module.exports = factory(require('../../src/assets/scripts/utils/selection').$);
-    module.exports = factory(require('../../src/assets/scripts/utils/focusing').$);
-  } else {
-    root.menu = factory(root.selection.$, root.focusing);
-  }
-})(this, function ($, focusing) {
-  const doc = this.document;
-  const menuToggleEl = $('[href="#navigation"]');
-  const menuButton = doc.createElement('button');
-  const navigationDrawerEl = $('#navigation__drawer');
+export default function () {
+  const menuToggleEl = document.querySelector('[href="#navigation"]');
+  const menuButton = document.createElement('button');
+  const navigationDrawerEl = document.querySelector('#navigation__drawer');
   const navigationDrawerID = navigationDrawerEl.id;
   const focusRegion = navigationDrawerEl;
 
@@ -30,21 +22,28 @@
   function handleSetFocus() {
     previousFocusedElement = focusing.safeActiveElement();
     focusing.setInitialFocus(focusRegion);
-    doc.addEventListener('keydown', handleKeypress);
-    doc.body.addEventListener('focus', handleMaintainFocus, true);
+    document.addEventListener('keydown', handleKeypress);
+    document.body.addEventListener('focus', handleMaintainFocus, true);
   }
 
   function handleRemoveFocus() {
-    doc.removeEventListener('keydown', handleKeypress);
-    doc.body.removeEventListener('focus', handleMaintainFocus, true);
+    document.removeEventListener('keydown', handleKeypress);
+    document.body.removeEventListener('focus', handleMaintainFocus, true);
     focusing.removeFocus(focusRegion);
     previousFocusedElement.focus();
   }
 
+  // Add backdrop
+  const backdropEl = document.createElement('div');
+
+  document.body.appendChild(backdropEl);
+  backdropEl.className = 'c-backdrop';
+  backdropEl.setAttribute('tabindex', -1);
+
   // Replace menu link with a `button`
   menuButton.classList = menuToggleEl.classList;
   menuButton.innerHTML = menuToggleEl.innerHTML;
-  doc.body.replaceChild(menuButton, menuToggleEl);
+  document.body.replaceChild(menuButton, menuToggleEl);
 
   // Correct role for navigation drawer
   navigationDrawerEl.setAttribute('role', 'dialog');
@@ -53,7 +52,7 @@
 
   const toggleMenu = function (state) {
     menuButton.setAttribute('aria-expanded', state);
-    doc.body.setAttribute('data-menu-expanded', state);
+    document.body.setAttribute('data-menu-expanded', state);
     navigationDrawerEl.setAttribute('aria-hidden', !state);
 
     if (state === 'true') {
@@ -81,11 +80,18 @@
     });
 
     // Close menu if escape key is pressed
-    this.addEventListener('keyup', e => {
+    window.addEventListener('keyup', e => {
       if (e.keyCode === 27) {
         toggleMenu(false);
         handleRemoveFocus();
       }
     });
+
+    // Close menu if backdrop (area outside menu) is clicked
+    backdropEl.addEventListener('click', e => {
+      const state = menuButton.getAttribute('aria-expanded') === 'false' ? 'true' : 'false';
+      toggleMenu(state);
+      e.preventDefault();
+    });
   }
-});
+}

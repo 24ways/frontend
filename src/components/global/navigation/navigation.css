@@ -72,26 +72,3 @@
     box-shadow: inset -1px 0 0 $navigation-color--offset;
   }
 }
-
-/* Backdrop */
-[data-menu-expanded]::after {
-  content: '';
-  display: block;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: map(layers, backdrop);
-  transition: opacity $navigation-duration ease-in;
-  background-color: $navigation-color--backdrop;
-  backdrop-filter: blur(0);
-  opacity: 0;
-  pointer-events: none;
-}
-
-[data-menu-expanded=true]::after {
-  backdrop-filter: blur(2px);
-  opacity: 1;
-  pointer-events: fill;
-}

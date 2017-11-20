@@ -14,7 +14,9 @@ $navigation-color: white;
 $navigation-color--offset: map(colors, neutral, lightest);
 $navigation-color--text: map(colors, neutral, dark);
 $navigation-color--shadow: color(map(colors, neutral, base) a(25%));
-$navigation-color--backdrop: color(map(colors, neutral, darker) a(33%));
+
+/* Backdrop */
+$backdrop-color: color(map(colors, neutral, darker) a(33%));
 
 /* Author images */
 $author-duration: 0.5s;

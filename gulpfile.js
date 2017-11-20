@@ -6,11 +6,7 @@
 const fs = require('fs');
 const del = require('del');
 const gulp = require('gulp');
-
-// JavaScript
-const babel = require('gulp-babel');
-const concat = require('gulp-concat');
-const uglify = require('gulp-uglify');
+const util = require('gulp-util');
 
 // CSS
 const postcss = require('gulp-postcss');
@@ -32,6 +28,9 @@ const simpleVars = require('postcss-simple-vars');
 const ghPages = require('gulp-gh-pages');
 const imagemin = require('gulp-imagemin');
 const sourcemaps = require('gulp-sourcemaps');
+
+// JavaScript
+const rollup = require('./etc/gulp/rollup');
 
 // Fractal
 const pkg = require('./package.json');
@@ -80,16 +79,6 @@ const processors = [
   responsiveType,
   autoprefixer,
   nano
-];
-
-// JavaScript files
-const modules = [
-  `${paths.modules}/fontfaceobserver/fontfaceobserver.js`,
-  `${paths.modules}/prismjs/prism.js`,
-  `${paths.src}/assets/scripts/utils/selection.js`,
-  `${paths.src}/assets/scripts/utils/focusing.js`,
-  `${paths.src}/assets/scripts/app.js`,
-  `${paths.src}/components/**/*.js`
 ];
 
 // --------------------------------------------------------
@@ -171,18 +160,14 @@ function vectors() {
 }
 
 // Scripts
-function scripts() {
-  return gulp.src(modules)
-    .pipe(sourcemaps.init())
-    .pipe(babel({
-      presets: [['env', {
-        modules: false
-      }]]
-    }))
-    .pipe(concat('app.js'))
-    .pipe(uglify())
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest(`${paths.dest}/assets/scripts`));
+function scripts(callback) {
+  const modules = [{
+    input: `${paths.src}/assets/scripts/app.js`,
+    file: `${paths.dest}/assets/scripts/app.js`,
+    name: 'app'
+  }];
+
+  rollup(modules, util, callback);
 }
 
 // Styles
