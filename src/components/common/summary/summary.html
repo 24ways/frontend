@@ -4,7 +4,8 @@
       <a class="u-url" rel="bookmark" href="{{ href }}">{{ title }}</a>
     </h1>
     <p class="c-summary__author  p-author h-card">
-      <a class="u-url" href="/authors/{{ author | slugify }}/" tabindex="-1"><img class="u-photo" src="https://cloud.24ways.org/authors/{{ author | slugify }}160.jpg" width="72" height="72" alt=""/><span class="p-name">{{ author }}</span></a>
+      <img class="u-photo" src="https://cloud.24ways.org/authors/{{ author | slugify }}160.jpg" width="72" height="72" alt=""/>
+      <span class="u-hidden">by <a class="u-url p-name" href="/authors/{{ author | slugify }}/">{{ author }}</a></span>
     </p>
   </header>
   <div class="c-summary__main">
@@ -13,7 +14,7 @@
   <footer class="c-summary__footer">
     <p class="c-summary__meta">
       <time class="dt-published" datetime="{{ datetime }}">
-        {{ datetime | date('D') }} <span>{{ datetime | date('MMM YYYY') }}</span>
+        {{ datetime | date('D') }} <span class="u-hidden">{{ datetime | date('MMMM YYYY') }}</span>
       </time>
     </p>
   </footer>

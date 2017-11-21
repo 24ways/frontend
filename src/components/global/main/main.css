@@ -1,11 +1,13 @@
 .c-main {
   background-color: $navigation-color--offset;
 
-  @media (--upto-medium-screen) {
-    margin-top: $banner-height--small;
-  }
+  .has-js & {
+    @media (--upto-medium-screen) {
+      margin-top: $banner-height--small;
+    }
 
-  @media (--from-medium-screen) {
-    margin-right: $navigation-width--large;
+    @media (--from-medium-screen) {
+      margin-right: $navigation-width--large;
+    }
   }
 }

@@ -1,15 +1,22 @@
 .c-site-nav {
-  display: flex;
-  flex-direction: row;
-
   @media (--from-medium-screen) {
-    flex-direction: column;
     margin-top: auto;
   }
 }
 
+.c-site-nav__items {
+  display: flex;
+  flex-direction: row;
+
+  .has-js & {
+    @media (--from-medium-screen) {
+      flex-direction: column;
+    }
+  }
+}
+
 .c-site-nav__item {
-  flex: 1;
+  flex: 1 0 33.3334%;
 }
 
 .c-site-nav__label {

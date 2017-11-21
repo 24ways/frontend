@@ -1,11 +1,9 @@
 import FontFaceObserver from 'fontfaceobserver';
 
 export default function () {
-  const docEl = document.documentElement;
-
   // Setup
-  const storageId = 'fonts-loaded';
   const classLoaded = 'fonts-loaded';
+  const storageId = 'fonts-loaded';
   const fonts = [
     (new FontFaceObserver('Source Sans Pro', {
       weight: 'normal',
@@ -27,7 +25,7 @@ export default function () {
 
   // Events
   function eventFontsLoaded() {
-    docEl.classList.add(classLoaded);
+    document.documentElement.classList.add(classLoaded);
     sessionStorage[storageId] = true;
   }
 
@@ -36,7 +34,7 @@ export default function () {
     Promise.all(fonts)
       .then(eventFontsLoaded)
       .catch(err => {
-        console.log(err);
+        console.error(err);
       });
   }
 

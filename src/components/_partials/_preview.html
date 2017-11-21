@@ -5,19 +5,6 @@
 -->
 <html lang="en-gb" dir="ltr" prefix="og: http://ogp.me/ns#" class="no-js fonts-loaded">
   <head>
-    <script>
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
-
-      function downloadJSAtOnload() {
-        var element = document.createElement("script");
-        element.src = "{{ '/assets/scripts/app.js' | path }}";
-        document.body.appendChild(element);
-        document.body.dataset.menuExpanded = 'false';
-      }
-
-      window.addEventListener("load", downloadJSAtOnload, false);
-    </script>
-
     <link rel="dns-prefetch" href="https://fonts.gstatic.com"/>
     <link rel="dns-prefetch" href="https://cloud.24ways.org"/>
     <link rel="dns-prefetch" href="https://media.24ways.org"/>
@@ -30,6 +17,8 @@
     <link rel="manifest" href="/manifest.json"/>
     <link rel="alternate" href="{{ site.feed }}" type="application/rss+xml"/>
     <link rel="author" href="/humans.txt"/>
+
+    <script src="{{ '/assets/scripts/app.js' | path }}" async defer></script>
 
     <meta charset="utf-8"/>
     <meta name="referrer" content="origin"/>

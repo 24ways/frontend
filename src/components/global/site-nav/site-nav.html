@@ -1,11 +1,13 @@
-<ul class="c-site-nav">
-  <li class="c-site-nav__item{{ ' is-active' if section == 'archives' }}">
-    <a class="c-site-nav__label" href="/archives/">Archives</a>
-  </li>
-  <li class="c-site-nav__item{{ ' is-active' if section == 'authors' }}">
-    <a class="c-site-nav__label" href="/authors/">Authors</a>
-  </li>
-  <li class="c-site-nav__item{{ ' is-active' if section == 'about' }}">
-    <a class="c-site-nav__label" href="/about/">About <span class="u-hidden">24 ways</span></a>
-  </li>
-</ul>
+<nav class="c-site-nav" aria-label="Site navigation">
+  <ul class="c-site-nav__items">
+    <li class="c-site-nav__item{{ ' is-active' if section == 'archives' }}">
+      <a class="c-site-nav__label" href="/archives/">Archives</a>
+    </li>
+    <li class="c-site-nav__item{{ ' is-active' if section == 'authors' }}">
+      <a class="c-site-nav__label" href="/authors/">Authors</a>
+    </li>
+    <li class="c-site-nav__item{{ ' is-active' if section == 'about' }}">
+      <a class="c-site-nav__label" href="/about/" aria-label="About this website">About</a>
+    </li>
+  </ul>
+</nav>

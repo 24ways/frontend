@@ -2,6 +2,10 @@
    Media
    ===================================================== */
 
+/* Xtra-small */
+@custom-media --upto-xsmall-screen screen and (width < map(breakpoints, xsmall));
+@custom-media --from-xsmall-screen screen and (width >= map(breakpoints, xsmall));
+
 /* Small */
 @custom-media --upto-small-screen screen and (width < map(breakpoints, small));
 @custom-media --from-small-screen screen and (width >= map(breakpoints, small));

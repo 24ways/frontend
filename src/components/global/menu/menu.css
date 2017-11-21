@@ -1,30 +1,69 @@
 .c-menu {
+  .has-js & {
+    position: fixed;
+    z-index: map(layers, modal);
+
+    /* Create ‘fake’ banner/sidebar, so drawer can slide from underneath it */
+    &::before {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: calc(map(layers, modal) + 1);
+      display: block;
+      content: '';
+
+      @media (--upto-medium-screen) {
+        left: 0;
+        background-color: $color-year--dark;
+        background-color: var(--color-year--dark, $color-year--dark);
+        height: $banner-height--small;
+        width: 100%;
+      }
+
+      @media (--from-medium-screen) {
+        background-color: white;
+        box-shadow: inset 1px 0 $navigation-color--offset;
+        height: 100%;
+        width: $navigation-width--large;
+      }
+    }
+  }
+
+  &.no-transition * {
+    transition: none !important;
+  }
+
+  @media print {
+    display: none;
+  }
+}
+
+.c-menu__button {
   @apply --focusable;
 
   display: block;
   position: fixed;
+  top: 0;
+  right: 0;
   z-index: calc(map(layers, modal) + 1);
 
+  .no-js & {
+    @apply --hidden;
+  }
+
   @media (--upto-medium-screen) {
-    top: map(sizes, xsmall);
-    right: map(sizes, xsmall);
+    padding: map(sizes, xsmall);
     color: white;
 
     &:hover,
     &:active {
       color: white;
     }
-
-    [data-menu-expanded=true] & {
-      color: $navigation-color--text;
-    }
   }
 
   @media (--from-medium-screen) {
     @apply --navigation-link;
 
-    top: 0;
-    right: 0;
     padding: map(spaces, medium);
     box-shadow: inset 0 -1px 0 $navigation-color--offset;
   }
@@ -34,61 +73,96 @@
   }
 }
 
+.c-menu__drawer {
+  display: flex;
+  flex-direction: column;
+  background-color: $navigation-color;
+
+  [data-menu-expanded] & {
+    box-shadow: 0 8px 8px 0 $navigation-color--shadow;
+    transition: all $navigation-duration ease-in-out;
+
+    @media (--upto-medium-screen) {
+      width: 100vw;
+    }
+
+    @media (--from-medium-screen) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 18rem;
+    }
+  }
+
+  .c-menu__button[aria-expanded=false] ~ & {
+    @media (--upto-medium-screen) {
+      transform: translateY(-100%);
+    }
+
+    @media (--from-medium-screen) {
+      transform: translateX(100%);
+    }
+  }
+
+  .c-menu__button[aria-expanded=true] ~ & {
+    @media (--upto-medium-screen) {
+      transform: translateY(0);
+    }
+
+    @media (--from-medium-screen) {
+      transform: translateX(calc($navigation-width--large * -1));
+    }
+  }
+}
+
 .c-menu__icon {
   height: 2.5rem;
   width: 2.5rem;
 }
 
 .c-menu__line {
+  $lines-animation-duration: 0.2s;
+  $cross-animation-duration: 0.1s;
+
   transform-origin: 50% 50%;
 
-  /* Transitions */
+  /* Transitions: ☰ */
   &:nth-of-type(1),
   &:nth-of-type(2),
   &:nth-of-type(5),
   &:nth-of-type(6) {
-    opacity: 1;
-    transition: transform 0.2s cubic-bezier(0.8, 0, 0.4, 1.8) 0.2s, opacity 0.05s linear 0.1s;
+    transform: translateY(0);
+    transition:
+      transform $lines-animation-duration cubic-bezier(0.8, 0, 0.4, 1.8) $cross-animation-duration,
+      opacity $lines-animation-duration cubic-bezier(1, 0, 1, 0);
 
-    [data-menu-expanded=true] & {
+    [aria-expanded=true] & {
       opacity: 0;
-      transition: transform 0.2s ease-out, opacity 0.05s linear 0.1s;
+      transition:
+        transform $lines-animation-duration ease-out,
+        opacity $lines-animation-duration cubic-bezier(1, 0, 1, 0);
     }
   }
 
+  /* Transitions: × */
   &:nth-of-type(3),
   &:nth-of-type(4) {
-    transition: transform 0.2s ease-out;
+    transform: rotate(0) scaleX(1);
+    transition: transform $cross-animation-duration ease-out;
 
-    [data-menu-expanded=true] & {
-      transition: transform 0.2s cubic-bezier(0.8, 0, 0.4, 1.8) 0.2s;
+    [aria-expanded=true] & {
+      transition: transform $cross-animation-duration cubic-bezier(0.8, 0, 0.4, 1.8) $lines-animation-duration;
     }
   }
 
   /* Transforms */
-  [data-menu-expanded=true] & {
-    &:nth-of-type(1) {
-      transform: translateY(500%);
-    }
-
-    &:nth-of-type(2) {
-      transform: translateY(250%);
-    }
-
-    &:nth-of-type(3) {
-      transform: rotate(45deg) scaleX(1.3334);
-    }
-
-    &:nth-of-type(4) {
-      transform: rotate(-45deg) scaleX(1.3334);
-    }
-
-    &:nth-of-type(5) {
-      transform: translateY(-250%);
-    }
-
-    &:nth-of-type(6) {
-      transform: translateY(-500%);
-    }
+  [aria-expanded=true] & {
+    &:nth-of-type(1) { transform: translateY(25%); }
+    &:nth-of-type(2) { transform: translateY(12.5%); }
+    &:nth-of-type(3) { transform: rotate(45deg) scaleX(1.3334); }
+    &:nth-of-type(4) { transform: rotate(-45deg) scaleX(1.3334); }
+    &:nth-of-type(5) { transform: translateY(-12.5%); }
+    &:nth-of-type(6) { transform: translateY(-25%); }
   }
 }

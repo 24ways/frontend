@@ -1,50 +1,32 @@
 .c-banner {
-  padding: map(spaces, medium) map(spaces, large);
   background-color: $color-year--dark;
   background-color: var(--color-year--dark, $color-year--dark);
-
-  .has-js & {
-    transition-duration: $banner-duration;
-    transition-timing-function: ease-out;
-  }
-
-  [data-menu-expanded=false] & {
-    transition-delay: $navigation-duration;
-  }
-
-  @media (--upto-medium-screen) {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: calc(map(layers, modal) + 1);
-
-    .has-js & {
-      transition-property: background-color;
-    }
-
-    [data-menu-expanded=true] & {
-      background-color: white;
-    }
-  }
-
-  @media (--from-medium-screen) {
-    margin-right: $navigation-width--large;
-    padding: map(spaces, large);
-  }
-
-  @media (--from-large-screen) {
-    padding-left: calc(25% - 1rem);
-  }
 }
 
 .c-banner__title {
+  padding: map(spaces, medium) map(spaces, large);
   font-size: 1.25em;
   line-height: calc(16 / 20);
 
+  .has-js & {
+    @media (--upto-medium-screen) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: calc(map(layers, modal) + 1);
+      margin-right: map(sizes, large);
+    }
+  }
+
   @media (--from-medium-screen) {
+    padding: map(spaces, large);
     font-size: 1.5em;
     line-height: calc(24 / 24);
+  }
+
+  @media (--from-large-screen) {
+    padding-left: 25%;
   }
 }
 
@@ -56,24 +38,44 @@
     color: white;
   }
 
-  @media (--upto-medium-screen) {
-    .has-js & {
-      transition: color $banner-duration ease-out;
-    }
-
-    [data-menu-expanded=true] & {
-      color: $navigation-color--text;
-    }
-
-    [data-menu-expanded=false] & {
-      transition-delay: $navigation-duration;
-    }
-  }
-
   span {
     font-size: 0.6667em;
     text-transform: lowercase;
     white-space: nowrap;
     color: map(colors, primary, light);
+
+    @media (--upto-xsmall-screen) {
+      @apply --hidden;
+    }
+  }
+}
+
+.c-banner__skip {
+  @apply --typeset-ui;
+
+  position: fixed;
+  top: 0;
+  left: map(spaces, medium);
+  z-index: map(layers, overlay);
+  display: block;
+  background-color: $navigation-color;
+  box-shadow: 0 8px 8px 0 $navigation-color--shadow;
+  padding: map(spaces, xlarge) map(spaces, small) map(spaces, xsmall);
+  color: $navigation-color--text;
+  transform: translateY(0);
+
+  &:hover {
+    color: $color-ui-link--hover;
+  }
+
+  &:active {
+    color: $color-ui-link--active;
+  }
+
+  &:not(:focus) {
+    @apply --hidden;
+
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-out;
   }
 }

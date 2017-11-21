@@ -1,4 +1,4 @@
-.c-topics-nav {
+.c-topics-nav__items {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -13,8 +13,8 @@
 .c-topics-nav__item {
   flex: 1 0 33.3334%;
 
-  @media (--from-medium-screen) {
-    .has-js & {
+  .has-js & {
+    @media (--from-medium-screen) {
       flex-basis: 50%;
       min-width: 50%;
     }

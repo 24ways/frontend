@@ -5,18 +5,17 @@
 /* Banner */
 $banner-height--small: map(sizes, large);
 $banner-height--large: map(sizes, xlarge);
-$banner-duration: 0.1s;
 
 /* Navigation */
 $navigation-width--large: map(sizes, xlarge);
-$navigation-duration: 0.2s;
+$navigation-duration: 0.4s;
 $navigation-color: white;
 $navigation-color--offset: map(colors, neutral, lightest);
 $navigation-color--text: map(colors, neutral, dark);
-$navigation-color--shadow: color(map(colors, neutral, base) a(25%));
+$navigation-color--shadow: color(map(colors, neutral, darker) a(25%));
 
 /* Backdrop */
-$backdrop-color: color(map(colors, neutral, darker) a(33%));
+$backdrop-color: color(map(colors, neutral, darkest) a(33%));
 
 /* Author images */
 $author-duration: 0.5s;

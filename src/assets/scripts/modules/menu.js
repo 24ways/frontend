@@ -1,12 +1,30 @@
 import * as focusing from './focusing';
 
 export default function () {
-  const menuToggleEl = document.querySelector('[href="#navigation"]');
-  const menuButton = document.createElement('button');
-  const navigationDrawerEl = document.querySelector('#navigation__drawer');
-  const navigationDrawerID = navigationDrawerEl.id;
-  const focusRegion = navigationDrawerEl;
+  // Set timeout so that transitions don't run on page load
+  const menuEl = document.querySelector('.c-menu');
+  setTimeout(() => {
+    menuEl.classList.remove('no-transition');
+  }, 10);
 
+  // Set up menu button
+  // Mark drawer as being closed
+  const buttonEl = document.querySelector('.c-menu__button');
+  buttonEl.setAttribute('aria-expanded', false);
+
+  // Set up menu drawer
+  const drawerEl = document.querySelector('.c-menu__drawer');
+  drawerEl.hidden = true;
+  drawerEl.setAttribute('role', 'dialog');
+
+  // Set up backdrop
+  const backdropEl = document.createElement('div');
+  document.body.appendChild(backdropEl);
+  backdropEl.className = 'c-backdrop';
+  backdropEl.setAttribute('tabindex', -1);
+
+  // Focusing
+  const focusRegion = drawerEl;
   let previousFocusedElement;
 
   function handleKeypress(e) {
@@ -33,49 +51,33 @@ export default function () {
     previousFocusedElement.focus();
   }
 
-  // Add backdrop
-  const backdropEl = document.createElement('div');
-
-  document.body.appendChild(backdropEl);
-  backdropEl.className = 'c-backdrop';
-  backdropEl.setAttribute('tabindex', -1);
-
-  // Replace menu link with a `button`
-  menuButton.classList = menuToggleEl.classList;
-  menuButton.innerHTML = menuToggleEl.innerHTML;
-  document.body.replaceChild(menuButton, menuToggleEl);
-
-  // Correct role for navigation drawer
-  navigationDrawerEl.setAttribute('role', 'dialog');
-  navigationDrawerEl.setAttribute('aria-labelledby', 'navigation__title');
-  navigationDrawerEl.hidden = true;
-
-  const toggleMenu = function (state) {
-    menuButton.setAttribute('aria-expanded', state);
-    document.body.setAttribute('data-menu-expanded', state);
-    navigationDrawerEl.setAttribute('aria-hidden', !state);
-
+  function toggleMenu(state) {
+    // Toggle state on elements to be hidden/shown…
     if (state === 'true') {
+      drawerEl.setAttribute('aria-hidden', false);
+      drawerEl.hidden = false;
       handleSetFocus();
-      navigationDrawerEl.hidden = false;
     } else {
+      setTimeout(() => {
+        drawerEl.setAttribute('aria-hidden', false);
+        drawerEl.hidden = true;
+      }, 450);
       handleRemoveFocus();
-      navigationDrawerEl.hidden = true;
     }
-  };
 
-  if (menuToggleEl) {
-    // Setup menu button ARIA attributes
-    menuButton.setAttribute('aria-controls', navigationDrawerID);
-    menuButton.setAttribute('aria-expanded', false);
+    // …and only then update the attribute for `aria-expanded`
+    buttonEl.setAttribute('aria-expanded', state);
 
-    // Setup navigation drawer
-    navigationDrawerEl.setAttribute('aria-hidden', true);
+    // …and update global value so other elements can query state
+    document.body.setAttribute('data-menu-expanded', state);
+  }
 
-    // Toggle menu expanded/collapsed
-    menuButton.addEventListener('click', e => {
-      const state = menuButton.getAttribute('aria-expanded') === 'false' ? 'true' : 'false';
+  if (buttonEl) {
+    // Toggle drawer on clicking button
+    buttonEl.addEventListener('click', e => {
+      const state = buttonEl.getAttribute('aria-expanded') === 'false' ? 'true' : 'false';
       toggleMenu(state);
+
       e.preventDefault();
     });
 
@@ -89,7 +91,7 @@ export default function () {
 
     // Close menu if backdrop (area outside menu) is clicked
     backdropEl.addEventListener('click', e => {
-      const state = menuButton.getAttribute('aria-expanded') === 'false' ? 'true' : 'false';
+      const state = buttonEl.getAttribute('aria-expanded') === 'false' ? 'true' : 'false';
       toggleMenu(state);
       e.preventDefault();
     });

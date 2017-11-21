@@ -1,16 +1,14 @@
 {% if traverse %}
-<div class="c-traverse-nav">
+<nav class="c-traverse-nav" aria-label="{{ traverse.type | capitalize }} navigation">
   {%- if traverse.prev -%}
-  <a class="c-traverse-nav__item" rel="prev" href="{{ traverse.prev.url }}" data-sequence-title="{{ traverse.prev.title }}">
+  <a class="c-traverse-nav__item" rel="prev" href="{{ traverse.prev.url }}" aria-label="Previous: {{ traverse.prev.title }}">
     {% include "prev.svg" %}
-    <span class="u-hidden">Previous {{ traverse.type }}</span>
   </a>
   {%- endif -%}
   {%- if traverse.next -%}
-  <a class="c-traverse-nav__item" rel="next" href="{{ traverse.next.url }}" data-sequence-title="{{ traverse.next.title }}">
-    <span class="u-hidden">Next {{ traverse.type }}</span>
+  <a class="c-traverse-nav__item" rel="next" href="{{ traverse.next.url }}" aria-label="Next: {{ traverse.next.title }}">
     {% include "next.svg" %}
   </a>
   {%- endif -%}
-</div>
+</nav>
 {% endif %}

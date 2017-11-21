@@ -30,9 +30,14 @@
   "stylelint": {
     "extends": "stylelint-config-standard",
     "rules": {
-      "property-no-unknown": [ true, {
-        "ignoreProperties": ["font-range"]
-      }]
+      "property-no-unknown": [
+        true,
+        {
+          "ignoreProperties": [
+            "font-range"
+          ]
+        }
+      ]
     }
   },
   "xo": {

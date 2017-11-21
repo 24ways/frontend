@@ -1,11 +1,12 @@
-<ul class="c-topics-nav">
-{%- for topic in topics -%}
-  <li class="c-topics-nav__item">
-    <a class="c-topics-nav__label" href="{{ topic.url }}">
-      {% set size = "20" %}
-      {% include "topic-" + topic.title | lower + ".svg" %}
-      {{ topic.title }}
-    </a>
-  </li>
-{%- endfor -%}
-</ul>
+<nav class="c-topics-nav" aria-label="Topic navigation">
+  <ul class="c-topics-nav__items">
+  {%- for topic in topics -%}
+    <li class="c-topics-nav__item">
+      <a class="c-topics-nav__label" href="{{ topic.url }}">
+        {% include "topic-" + topic.title | lower + ".svg" %}
+        {{ topic.title }}
+      </a>
+    </li>
+  {%- endfor -%}
+  </ul>
+</nav>

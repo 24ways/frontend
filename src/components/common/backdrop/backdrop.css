@@ -7,12 +7,10 @@
   z-index: map(layers, backdrop);
   transition: opacity $navigation-duration ease-in;
   background-color: $backdrop-color;
-  backdrop-filter: blur(0);
   opacity: 0;
   pointer-events: none;
 
   [data-menu-expanded=true] & {
-    backdrop-filter: blur(2px);
     opacity: 1;
     pointer-events: fill;
   }

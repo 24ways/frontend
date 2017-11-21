@@ -18,7 +18,6 @@ $summary__author-size: map(sizes, xlarge);
 }
 
 .c-summary__header {
-  /*min-height: 2em;*/
   margin-bottom: map(spaces, medium);
 
   @media print {
@@ -95,6 +94,7 @@ $summary__author-size: map(sizes, xlarge);
   right: 0;
   overflow: hidden;
   margin: 0;
+  pointer-events: none;
 
   &::before {
     content: '';
@@ -123,19 +123,11 @@ $summary__author-size: map(sizes, xlarge);
     display: none;
   }
 
-  a {
-    position: static;
-  }
-
   img {
     display: block;
     height: $summary__author-size;
     width: $summary__author-size;
     transition: transform $author-duration ease-out;
-  }
-
-  span {
-    @apply --hidden;
   }
 }
 
@@ -194,10 +186,6 @@ $summary__author-size: map(sizes, xlarge);
 
     @media print {
       top: 2rem;
-    }
-
-    span {
-      @apply --hidden;
     }
   }
 }

@@ -1,4 +1,10 @@
-<a class="c-menu" href="#navigation">
-  {% include "menu.svg" %}
-  <span class="u-hidden">Jump to menu</span>
-</a>
+<div class="c-menu no-transition">
+  <button class="c-menu__button" id="menu__button" aria-controls="menu__drawer" aria-expanded="true" aria-label="Navigation menu">
+    {% include "menu.svg" %}
+  </button>
+  <div class="c-menu__drawer" id="menu__drawer" role="region" aria-labelledby="menu__button">
+    {%- render "@search" -%}
+    {%- render "@topics-nav" -%}
+    {%- render "@site-nav" -%}
+  </div>
+</div>
