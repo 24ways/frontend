@@ -54,6 +54,7 @@
     margin-right: -7.5%;
 
     @media (--from-large-screen) {
+      width: auto;
       float: left;
       margin-left: -33%;
       margin-right: map(spaces, medium);
