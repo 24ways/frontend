@@ -1,6 +1,7 @@
 {
   "lang": "en-gb",
   "name": "24 ways",
+  "short_name": "24 ways",
   "icons": [{
     "src": "/assets/icons/icon.png",
     "sizes": "512x512",
