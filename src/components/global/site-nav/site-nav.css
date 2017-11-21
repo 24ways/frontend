@@ -19,11 +19,15 @@
 
   display: block;
   box-shadow: 1px 0 0 $navigation-color--offset;
-  padding: map(spaces, medium);
+  padding: map(spaces, small);
   text-align: center;
 
   &:focus {
     position: relative; /* Fix border overlap on focus */
+  }
+
+  @media (--from-shallow-screen) {
+    padding: map(spaces, medium);
   }
 
   @media (--from-medium-screen) {

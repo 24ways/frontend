@@ -29,6 +29,10 @@
     width: map(sizes, medium);
     margin: 0 auto map(spaces, xsmall);
 
+    @media (--upto-deep-screen) {
+      display: none;
+    }
+
     @media (--from-medium-screen) {
       height: map(sizes, large);
       width: map(sizes, large);
@@ -42,7 +46,11 @@
   @apply --typeset-ui;
 
   display: block;
-  padding: map(spaces, large) map(spaces, medium);
+  padding: map(spaces, small);
   box-shadow: 1px 1px 0 $navigation-color--offset;
   text-align: center;
+
+  @media (--from-shallow-screen) {
+    padding: map(spaces, large) map(spaces, medium);
+  }
 }
