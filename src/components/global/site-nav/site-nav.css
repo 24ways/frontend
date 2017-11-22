@@ -29,6 +29,10 @@
   padding: map(spaces, small);
   text-align: center;
 
+  .no-js & {
+    box-shadow: 1px 0 0 $navigation-color--offset;
+  }
+
   &:focus {
     position: relative; /* Fix border overlap on focus */
   }
