@@ -7,5 +7,5 @@ const docEl = document.documentElement;
 docEl.classList.replace('no-js', 'has-js');
 
 // Run
-loadWebfonts();
 menu();
+loadWebfonts();
