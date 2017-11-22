@@ -74,4 +74,4 @@ variants:
     config:
       mods: [summaries, inset]
       component: summary
-      items: ["@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary", "@summary","@summary"]
+      items: ["@summary--short","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary","@summary", "@summary","@summary"]

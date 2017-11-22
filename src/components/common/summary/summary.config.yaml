@@ -20,3 +20,14 @@ variants:
     comments: 11
     content: |
       *Dan Mall* breathes life into web standards-based animation. By striving for more than just mechanical movement, we can create more believable animated effects to enhance our users' experience.
+- name: short
+  context:
+    mods: [countdown]
+    theme: day-15
+    href: /2010/real-animation-using-javascript-css3-and-html5-video/
+    title: "Real Animation"
+    author: Dan Mall
+    datetime: "2010-12-15T00:00:00-00:00"
+    comments: 11
+    content: |
+      [Dan Mall](#) breathes life into web standards-based animation.

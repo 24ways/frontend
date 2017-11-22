@@ -18,6 +18,7 @@ $summary__author-size: map(sizes, xlarge);
 }
 
 .c-summary__header {
+  min-height: map(sizes, large);
   margin-bottom: map(spaces, medium);
 
   @media print {
@@ -60,10 +61,12 @@ $summary__author-size: map(sizes, xlarge);
   margin-bottom: map(spaces, medium);
   font-size: 0.875rem;
 
+  a,
   em {
     text-transform: uppercase;
     font-style: normal;
     letter-spacing: 0.025em;
+    color: inherit;
   }
 }
 
@@ -183,6 +186,10 @@ $summary__author-size: map(sizes, xlarge);
     top: map(spaces, medium);
     left: calc(map(spaces, medium) + map(spaces, xsmall));
     z-index: 0;
+
+    span {
+      @apply --hidden;
+    }
 
     @media print {
       top: 2rem;
