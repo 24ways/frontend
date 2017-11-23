@@ -1,5 +1,29 @@
 $summary__author-size: map(sizes, xlarge);
 
+@keyframes corner-forward {
+  from {
+    z-index: map(layers, default);
+    background-position: -0.5em;
+  }
+
+  to {
+    z-index: calc(map(layers, default) + 1);
+    background-position: -50.5em;
+  }
+}
+
+@keyframes corner-reverse {
+  from {
+    z-index: calc(map(layers, default) + 1);
+    background-position: -50.5em;
+  }
+
+  to {
+    z-index: map(layers, default);
+    background-position: -0.5em;
+  }
+}
+
 .c-summary {
   display: flex;
   flex-direction: column;
@@ -74,11 +98,6 @@ $summary__author-size: map(sizes, xlarge);
   @media screen {
     margin-top: auto;
   }
-
-  a {
-    position: relative;
-    z-index: calc(map(layers, default) + 1);
-  }
 }
 
 .c-summary__meta {
@@ -95,9 +114,28 @@ $summary__author-size: map(sizes, xlarge);
   position: absolute;
   top: 0;
   right: 0;
-  overflow: hidden;
   margin: 0;
   pointer-events: none;
+
+  @media print {
+    display: none;
+  }
+
+  img {
+    display: block;
+    height: $summary__author-size;
+    width: $summary__author-size;
+    transition: transform $author-duration ease-out;
+  }
+
+  span {
+    @apply --hidden;
+  }
+}
+
+.c-summary__author-url {
+  display: block;
+  overflow: hidden;
 
   &::before {
     content: '';
@@ -122,44 +160,8 @@ $summary__author-size: map(sizes, xlarge);
     background-size: size('corner.svg');
   }
 
-  @media print {
-    display: none;
-  }
-
-  img {
-    display: block;
-    height: $summary__author-size;
-    width: $summary__author-size;
-    transition: transform $author-duration ease-out;
-  }
-}
-
-@keyframes corner-forward {
-  from {
-    z-index: map(layers, default);
-    background-position: -0.5em;
-  }
-
-  to {
-    z-index: calc(map(layers, default) + 1);
-    background-position: -50.5em;
-  }
-}
-
-@keyframes corner-reverse {
-  from {
-    z-index: calc(map(layers, default) + 1);
-    background-position: -50.5em;
-  }
-
-  to {
-    z-index: map(layers, default);
-    background-position: -0.5em;
-  }
-}
-
-.c-summary:hover {
-  .c-summary__author {
+  .c-summary:hover &,
+  &:focus {
     img {
       transform: scale(1.2);
       transform-origin: bottom left;
@@ -170,6 +172,10 @@ $summary__author-size: map(sizes, xlarge);
       animation: corner-forward 0.15s steps(10);
       animation-fill-mode: forwards;
     }
+  }
+
+  &:focus {
+    box-shadow: 0 0 2px 0 $color-focus;
   }
 }
 
