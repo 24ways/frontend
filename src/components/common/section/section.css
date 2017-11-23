@@ -38,16 +38,7 @@
   @media (--from-large-screen) {
     flex: 1 0 75%;
     margin-left: 5%;
-    /*padding-right: 5%;*/
     padding-left: 0;
-  }
-
-  @media (--from-xlarge-screen) {
-    /*padding-right: 15%;*/
-  }
-
-  @media (--from-max-screen) {
-    /*padding-right: 25%;*/
   }
 }
 
