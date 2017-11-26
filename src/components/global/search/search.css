@@ -1,7 +1,5 @@
 .c-search {
   .c-field__input {
-    @apply --typeset-label;
-
     width: 100%;
     background-color: $navigation-color--offset;
     padding-left: map(spaces, xlarge);
