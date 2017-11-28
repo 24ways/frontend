@@ -25,7 +25,6 @@
   @apply --typeset-label;
 
   display: block;
-  border: 1px solid transparent; /* Windows high contrast mode */
   box-shadow: 1px 0 0 $navigation-color--offset;
   padding: map(spaces, small);
   text-align: center;
@@ -36,6 +35,10 @@
 
   &:focus {
     position: relative; /* Fix border overlap on focus */
+  }
+
+  @media (-ms-high-contrast:active) {
+    border: 1px solid;
   }
 
   @media (--from-shallow-screen) {

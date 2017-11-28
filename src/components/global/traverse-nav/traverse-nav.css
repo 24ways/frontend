@@ -27,9 +27,12 @@ $traverse-nav__label-width: 18rem; /* 288px */
   display: block;
   position: relative;
   width: auto;
-  border: 1px solid transparent; /* Windows high contrast mode */
   box-shadow: inset 0 -1px 0 $navigation-color--offset;
   padding: map(spaces, medium);
+
+  @media (-ms-high-contrast:active) {
+    border: 1px solid;
+  }
 
   .no-js & {
     display: flex;

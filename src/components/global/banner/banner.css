@@ -1,7 +1,10 @@
 .c-banner {
-  border-bottom: 1px solid transparent; /* Windows high contrast mode */
   background-color: $color-year--dark;
   background-color: var(--color-year--dark, $color-year--dark);
+
+  @media (-ms-high-contrast:active) {
+    border-bottom: 1px solid;
+  }
 }
 
 .c-banner__title {

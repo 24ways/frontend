@@ -4,8 +4,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border-top: 1px solid transparent; /* Windows high contrast mode */
   padding: map(spaces, small) map(spaces, large);
+
+  @media (-ms-high-contrast:active) {
+    border-top: 1px solid;
+  }
 
   @media (--from-medium-screen) {
     margin-right: $navigation-width--large;

@@ -46,10 +46,13 @@
   @apply --typeset-ui;
 
   display: block;
-  border: 1px solid transparent; /* Windows high contrast mode */
   box-shadow: 1px 1px 0 $navigation-color--offset;
   padding: map(spaces, small);
   text-align: center;
+
+  @media (-ms-high-contrast:active) {
+    border: 1px solid;
+  }
 
   @media (--from-shallow-screen) {
     padding: map(spaces, large) map(spaces, medium);
