@@ -1,5 +1,5 @@
 {% if traverse %}
-<nav class="c-traverse-nav" aria-label="{{ traverse.type | capitalize }} navigation">
+<nav class="c-traverse-nav" aria-label="{{ traverse.type | capitalize }}">
   {%- if traverse.prev -%}
   <a class="c-traverse-nav__item" rel="prev" href="{{ traverse.prev.url }}" aria-label="Previous: {{ traverse.prev.title }}">
     {% include "prev.svg" %}
