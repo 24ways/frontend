@@ -87,9 +87,9 @@ $summary__author-size: map(sizes, xlarge);
 
   a,
   em {
-    text-transform: uppercase;
+    font-family: map(fonts, family-sans);
     font-style: normal;
-    letter-spacing: 0.025em;
+    font-weight: 700;
     color: inherit;
   }
 }
