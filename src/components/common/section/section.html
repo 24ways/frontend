@@ -1,6 +1,6 @@
 <section class="c-section{% for mod in mods %} c-section--{{ mod }}{% endfor %}" id="{{ id }}">
   <header class="c-section__header">
-    <h1 class="c-section__title">{{ title | markdownInline }}</h1>
+    <h2 class="c-section__title">{{ title | markdownInline }}</h2>
   </header>
   <div class="c-section__main">
     {%- if component -%}

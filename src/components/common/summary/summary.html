@@ -1,8 +1,8 @@
 <article class="c-summary{% for mod in mods %} c-summary--{{ mod }}{% endfor %} h-entry {{ theme if theme }}">
   <header class="c-summary__header">
-    <h1 class="c-summary__title  p-name">
+    <h3 class="c-summary__title  p-name">
       <a class="u-url" rel="bookmark" href="{{ href }}">{{ title }}</a>
-    </h1>
+    </h3>
     <p class="c-summary__author  p-author h-card">
       <a class="c-summary__author-url  u-url" href="/authors/{{ author | slugify }}/">
         <img class="u-photo" src="https://cloud.24ways.org/authors/{{ author | slugify }}160.jpg" width="72" height="72" alt=""/>
