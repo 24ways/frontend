@@ -78,7 +78,7 @@
     "postcss-responsive-type": "^1.0.0",
     "postcss-simple-vars": "^4.1.0",
     "prismjs": "^1.8.0",
-    "rollup": "^0.51.0",
+    "rollup": "^0.52.0",
     "rollup-plugin-babel": "^3.0.0",
     "rollup-plugin-closure-compiler-js": "^1.0.0",
     "rollup-plugin-commonjs": "^8.2.6",
@@ -86,8 +86,8 @@
     "wicg-inert": "^1.1.0"
   },
   "devDependencies": {
-    "stylelint": "^8.2.0",
-    "stylelint-config-standard": "^17.0.0",
+    "stylelint": "^8.3.1",
+    "stylelint-config-standard": "^18.0.0",
     "xo": "^0.18.0"
   }
 }
