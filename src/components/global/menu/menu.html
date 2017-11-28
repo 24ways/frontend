@@ -1,8 +1,8 @@
 <div class="c-menu no-transition">
-  <button class="c-menu__button" id="menu__button" aria-controls="menu__drawer" aria-expanded="true" aria-label="Navigation menu">
+  <button class="c-menu__button" id="menu__button" aria-controls="menu__drawer" aria-expanded="true" aria-label="Menu">
     {% include "menu.svg" %}
   </button>
-  <div class="c-menu__drawer" id="menu__drawer" role="region" aria-labelledby="menu__button">
+  <div class="c-menu__drawer" id="menu__drawer" role="region" aria-label="Menu">
     {%- render "@search" -%}
     {%- render "@topics-nav" -%}
     {%- render "@site-nav" -%}
