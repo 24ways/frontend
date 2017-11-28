@@ -165,6 +165,10 @@ function scripts(callback) {
     input: `${paths.src}/assets/scripts/app.js`,
     file: `${paths.dest}/assets/scripts/app.js`,
     name: 'app'
+  }, {
+    input: `${paths.src}/assets/scripts/prism.js`,
+    file: `${paths.dest}/assets/scripts/prism.js`,
+    name: 'prism'
   }];
 
   rollup(modules, util, callback);

@@ -20,6 +20,9 @@
     <link rel="author" href="/humans.txt"/>
 
     <script src="{{ '/assets/scripts/app.js' | path }}" defer></script>
+    {%- if _target.context.prism -%}
+    <script src="{{ '/assets/scripts/prism.js' | path }}" defer></script>
+    {%- endif -%}
 
     <meta name="referrer" content="origin"/>
     <meta name="robots" content="index, follow"/>
