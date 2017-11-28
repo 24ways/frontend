@@ -1,4 +1,4 @@
-<svg class="c-menu__icon" width="20" height="20" viewBox="0 0 200 200" aria-hidden="true">
+<svg class="c-menu__icon" width="20" height="20" viewBox="0 0 200 200" focusable="false" aria-hidden="true">
   <rect class="c-menu__line" width="120" height="10" x="40" y="45"/>
   <rect class="c-menu__line" width="120" height="10" x="40" y="70"/>
   <rect class="c-menu__line" width="120" height="10" x="40" y="95"/>
