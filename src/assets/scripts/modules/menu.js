@@ -1,4 +1,5 @@
 import * as focusing from './focusing';
+import inert from 'wicg-inert';
 
 export default function () {
   // Set timeout so that transitions don't run on page load
@@ -51,19 +52,30 @@ export default function () {
     previousFocusedElement.focus();
   }
 
+  // Inertia
+  function handleInert(state) {
+    Array.from(document.body.children).forEach(child => {
+      if (child !== menuEl) {
+        child.inert = state;
+      }
+    });
+  }
+
   function toggleMenu(state) {
-    // Toggle state on elements to be hidden/shown…
-    if (state === 'true') {
+    if (state === 'true') { // Open menu
       drawerEl.setAttribute('aria-hidden', false);
       drawerEl.hidden = false;
       handleSetFocus();
-    } else {
+    } else { // Close menu
       setTimeout(() => {
         drawerEl.setAttribute('aria-hidden', false);
         drawerEl.hidden = true;
       }, 450);
       handleRemoveFocus();
     }
+
+    // Toggle inert state of elements outside menu
+    handleInert(state);
 
     // …and only then update the attribute for `aria-expanded`
     buttonEl.setAttribute('aria-expanded', state);
