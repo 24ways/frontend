@@ -82,7 +82,6 @@ $summary__author-size: map(sizes, xlarge);
   @apply --typeset-prose;
 
   max-width: 75ch;
-  margin-bottom: map(spaces, medium);
   font-size: 0.875rem;
 
   a,
@@ -97,6 +96,7 @@ $summary__author-size: map(sizes, xlarge);
 .c-summary__footer {
   @media screen {
     margin-top: auto;
+    padding-top: map(spaces, medium);
   }
 }
 
@@ -185,6 +185,10 @@ $summary__author-size: map(sizes, xlarge);
     padding-left: calc(map(spaces, large) + map(spaces, xsmall));
   }
 
+  .c-summary__footer {
+    padding-top: 0;
+  }
+
   .dt-published {
     @apply --typeset-summary-title;
 
@@ -202,4 +206,13 @@ $summary__author-size: map(sizes, xlarge);
       top: 2rem;
     }
   }
+}
+
+.c-summary--taken {
+  .c-summary__title {
+    opacity: 0.66;
+    text-decoration: line-through;
+  }
+
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 4px, color(map(colors, neutral, lightest) a(75%)) 4px, color(map(colors, neutral, lightest) a(75%)) 8px);
 }

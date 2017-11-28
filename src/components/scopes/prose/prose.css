@@ -16,7 +16,7 @@
 
     position: relative;
     top: calc(map(spaces, xsmall) * -1);
-    max-width: 62.5ch;
+    max-width: 50ch;
   }
 
   > * {
@@ -125,6 +125,10 @@
 
 .s-prose--article {
   @apply --typescale-prose;
+
+  .lede {
+    max-width: 62.5ch;
+  }
 
   .footnotes {
     @apply --typeset-caption;

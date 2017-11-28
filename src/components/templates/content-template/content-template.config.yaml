@@ -45,3 +45,29 @@ variants:
     - id: search
       title: Search 24 ways
       component: search-form
+- name: sponsorship
+  context:
+    title: "Sponsoring 24 ways"
+    section: sponsorship
+    sections:
+    - id: sponsorship
+      title: Sponsorship
+      content: |
+        <p class="lede">For thirteen years, 24 ways has been a fixture of the web design and development calendar, providing fresh and interesting artiles thoughout the month of December.</p>
+
+        All our authors and the production team give up their time and skills for free as a gift to the industry. We do have out-of-pocket expenses, however, which provides an opportunity for like-minded companies to partner with us and bring this valuable resource to our readers.
+
+        Each article carries just a single, non-animated 150px@2x graphic ad with brief accompanying text. Rather than running for just one day, this ad runs for the lifetime of the article it accompanies. That’s potentially years of advertising for just one flat payment. We’ll also include the ad in our RSS feed and post to our social media accounts.
+
+        Available days are listed below. If you’d like to discuss sponsoring one or more articles, please [drop us a line](#) to discuss.
+    - id: slots
+      title: Available slots
+      component: listing
+      config:
+        mods: [summaries]
+        component: summary
+        items:
+        - "@summary--sponsored"
+        - "@summary--sponsored-taken"
+        - "@summary--sponsored"
+        - "@summary--sponsored"

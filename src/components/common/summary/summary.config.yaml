@@ -31,3 +31,21 @@ variants:
     comments: 11
     content: |
       *Dan Mall* breathes life into web standards-based animation.
+- name: sponsored
+  context:
+    mods: [sponsored]
+    href: mailto:sponsorship@24ways.org?subject=Sponsoring 24 ways on Friday, 1 December
+    title: "Friday, 1 December"
+    author: false
+    datetime: false
+    content: |
+      Sponsor this day for $250 <abbr title="US Dollars">USD</abbr>.
+- name: sponsored-taken
+  context:
+    mods: [sponsored, taken]
+    href: false
+    title: "Saturday, 2 December"
+    author: false
+    datetime: false
+    content: |
+      Too late, this slot has been taken!
