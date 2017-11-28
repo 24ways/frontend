@@ -46,8 +46,9 @@
   @apply --typeset-ui;
 
   display: block;
-  padding: map(spaces, small);
+  border: 1px solid transparent; /* Windows high contrast mode */
   box-shadow: 1px 1px 0 $navigation-color--offset;
+  padding: map(spaces, small);
   text-align: center;
 
   @media (--from-shallow-screen) {

@@ -25,6 +25,7 @@
   @apply --typeset-label;
 
   display: block;
+  border: 1px solid transparent; /* Windows high contrast mode */
   box-shadow: 1px 0 0 $navigation-color--offset;
   padding: map(spaces, small);
   text-align: center;

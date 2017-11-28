@@ -46,6 +46,7 @@
   top: 0;
   right: 0;
   z-index: calc(map(layers, modal) + 1);
+  border: 1px solid transparent; /* Windows high contrast mode */
 
   .no-js & {
     @apply --hidden;

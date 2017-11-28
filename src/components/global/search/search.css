@@ -1,8 +1,10 @@
 .c-search {
   .c-field__input {
     width: 100%;
-    background-color: $navigation-color--offset;
+    border: 1px solid transparent; /* Windows high contrast mode */
+    box-shadow: inset 0 -1px 0 $navigation-color--offset;
     padding-left: map(spaces, xlarge);
+    background-color: $navigation-color--offset;
 
     &:not(:focus) {
       box-shadow: none;
