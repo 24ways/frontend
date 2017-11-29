@@ -15,14 +15,18 @@ export default function () {
 
   // Set up menu drawer
   const drawerEl = document.querySelector('.c-menu__drawer');
-  drawerEl.hidden = true;
   drawerEl.setAttribute('role', 'dialog');
+  drawerEl.setAttribute('aria-hidden', 'true');
+  drawerEl.hidden = true;
 
   // Set up backdrop
   const backdropEl = document.createElement('div');
   document.body.appendChild(backdropEl);
   backdropEl.className = 'c-backdrop';
   backdropEl.setAttribute('tabindex', -1);
+
+  // Set up body state
+  document.body.setAttribute('data-menu-expanded', false);
 
   // Focusing
   const focusRegion = drawerEl;
@@ -70,6 +74,7 @@ export default function () {
       handleInert(true);
     } else { // Close menu
       setTimeout(() => {
+        // Leave time for animation to complete before changing state
         drawerEl.setAttribute('aria-hidden', true);
         drawerEl.hidden = true;
       }, 450);
@@ -85,6 +90,11 @@ export default function () {
   }
 
   if (buttonEl) {
+    // Remove script and applied style that hides drawer during load
+    const drawerElStyle = drawerEl.getAttributeNode('style');
+    drawerEl.removeAttributeNode(drawerElStyle);
+    document.querySelector('.c-menu__onload').remove();
+
     // Toggle drawer on clicking button
     buttonEl.addEventListener('click', e => {
       const state = buttonEl.getAttribute('aria-expanded') === 'false' ? 'true' : 'false';
