@@ -57,6 +57,7 @@ export default function () {
     Array.from(document.body.children).forEach(child => {
       if (child !== menuEl) {
         child.inert = state;
+        console.log(state);
       }
     });
   }
@@ -66,16 +67,15 @@ export default function () {
       drawerEl.setAttribute('aria-hidden', false);
       drawerEl.hidden = false;
       handleSetFocus();
+      handleInert(true);
     } else { // Close menu
       setTimeout(() => {
         drawerEl.setAttribute('aria-hidden', false);
         drawerEl.hidden = true;
       }, 450);
       handleRemoveFocus();
+      handleInert(false);
     }
-
-    // Toggle inert state of elements outside menu
-    handleInert(state);
 
     // …and only then update the attribute for `aria-expanded`
     buttonEl.setAttribute('aria-expanded', state);
