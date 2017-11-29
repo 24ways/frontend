@@ -70,7 +70,7 @@ export default function () {
       handleInert(true);
     } else { // Close menu
       setTimeout(() => {
-        drawerEl.setAttribute('aria-hidden', false);
+        drawerEl.setAttribute('aria-hidden', true);
         drawerEl.hidden = true;
       }, 450);
       handleRemoveFocus();
