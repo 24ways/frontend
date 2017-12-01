@@ -4,7 +4,7 @@
   "short_name": "24 ways",
   "icons": [{
     "src": "/assets/icons/icon.png",
-    "sizes": "512x512",
+    "sizes": "180x180",
     "type": "image/png"
   }],
   "theme_color": "#302",
