@@ -122,6 +122,11 @@ variants:
 
       Those of us with particularly long memories might recall a time before CSS, when we'd have to use JavaScript to perform image rollovers. As CSS background images weren't a practical reality, we would use lots of `<img>` elements, and perform a rollover by modifying the `src` attribute of the image.
 
+      <figure class="pull-right">
+        <img src="https://media.24ways.org/2013/baxter/indexcards.jpg" alt="Index cards">
+        <figcaption>Index cards represent each feature the rental property software would launch with.</figcaption>
+      </figure>
+
       Turns out, this old trick of modifying the source can help us out with video, too. In most cases, modifying the `src` attribute of a `<video>` element, or perhaps more likely the `src` attribute of a `source` element, will swap from one video to another.
 
       ## Swappin' it

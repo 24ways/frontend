@@ -1,6 +1,8 @@
 .s-prose {
   @apply --typeset-prose;
 
+  max-width: 75ch;
+
   .caps {
     font-variant: lining-nums small-caps;
   }
@@ -16,11 +18,9 @@
 
     position: relative;
     top: calc(map(spaces, xsmall) * -1);
-    max-width: 50ch;
   }
 
   > * {
-    max-width: 75ch;
     margin-bottom: 0.75em;
   }
 
@@ -66,16 +66,8 @@
     }
   }
 
-  ol li {
-    list-style-type: decimal;
-  }
-
-  ul li {
-    list-style-type: square;
-
-    li {
-      list-style-type: circle;
-    }
+  li {
+    margin-bottom: 0.25em;
   }
 
   > ul > li {
@@ -104,30 +96,38 @@
     }
   }
 
-  dt {
-    font-weight: 700;
-  }
-
-  li {
-    margin-bottom: 0.25em;
-  }
-
   li li,
   dd {
     margin-left: 1.5em;
   }
 
-  li > *,
-  dd > * {
-    margin-top: 0;
+  ol li {
+    list-style-type: decimal;
+  }
+
+  ul li {
+    list-style-type: square;
+
+    li {
+      list-style-type: circle;
+    }
+  }
+
+  dt {
+    font-weight: 700;
   }
 }
 
 .s-prose--article {
   @apply --typescale-prose;
 
-  .lede {
-    max-width: 62.5ch;
+  .pull-right {
+    @media (--from-large-screen) {
+      width: 40%;
+      float: right;
+      margin-top: 0;
+      margin-left: map(spaces, large);
+    }
   }
 
   .footnotes {
@@ -171,10 +171,6 @@
     font-weight: 700;
   }
 
-  h2 + h3 {
-    margin-top: 0;
-  }
-
   h2,
   h3 {
     color: $color-day--dark;
@@ -184,6 +180,10 @@
   h3 {
     font-size: 1.25em;
     opacity: 0.9;
+  }
+
+  h2 + h3 {
+    margin-top: 0;
   }
 
   h4 {
