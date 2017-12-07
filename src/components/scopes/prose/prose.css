@@ -54,7 +54,7 @@
   }
 
   > ul > li {
-    list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 2'%3E%3Cpolygon fill='%233F3F46' fill-opacity='.75' points='0 1 1 0 2 1 1 2'/%3E%3C/svg%3E ");
+    list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='0.75em' height='0.75em' viewBox='0 0 2 2'%3E%3Cpolygon fill='%233F3F46' fill-opacity='.75' points='0 1 1 0 2 1 1 2'/%3E%3C/svg%3E ");
   }
 
   ul li {
