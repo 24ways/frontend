@@ -1,16 +1,11 @@
 $traverse-nav__label-width: 18rem; /* 288px */
 
 .c-traverse-nav {
-  @media (--upto-medium-screen) {
-    @apply --hidden;
-  }
-
-  .no-js & {
-    display: flex;
-  }
+  display: flex;
 
   .has-js & {
     @media (--from-medium-screen) {
+      display: block;
       position: fixed;
       right: 0;
       top: $banner-height--large;
@@ -24,7 +19,9 @@ $traverse-nav__label-width: 18rem; /* 288px */
   @apply --focusable;
   @apply --navigation-link;
 
-  display: block;
+  display: flex;
+  flex: 50% 0 1;
+  justify-content: center;
   position: relative;
   width: auto;
   box-shadow: inset 0 -1px 0 $navigation-color--offset;
@@ -33,36 +30,30 @@ $traverse-nav__label-width: 18rem; /* 288px */
   @media (-ms-high-contrast: active) {
     border: 1px solid;
   }
+}
 
-  .no-js & {
-    display: flex;
-    flex: 50% 0 1;
-    justify-content: center;
+.c-traverse-nav__item[rel] {
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
-  .has-js & {
-    &[rel]::after {
-      content: attr(aria-label);
-    }
+  /* 'Arrow' that covers ear in its closed state */
+  &::before {
+    z-index: map(layers, underlay);
+    background-color: $navigation-color;
+    box-shadow: inset 1px 0 $navigation-color--offset;
+    content: '';
+  }
 
-    @media (--from-medium-screen) {
-      &::before,
-      &::after {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      }
-
-      &::before {
-        content: '';
-        z-index: map(layers, underlay);
-        background-color: $navigation-color;
-        box-shadow: inset 1px 0 $navigation-color--offset;
-      }
-
-      &::after {
+  /* 'Ear' that appears on hover */
+  &::after {
+    .has-js & {
+      @media (--from-medium-screen) {
         @apply --typeset-label;
 
         z-index: calc(map(layers, underlay) - 1);
@@ -75,19 +66,18 @@ $traverse-nav__label-width: 18rem; /* 288px */
         white-space: pre-wrap;
         color: white;
         transition: all 0.3s ease-out;
+        content: attr(aria-label);
       }
+    }
 
-      &:hover {
-        &::after {
-          left: calc($traverse-nav__label-width * -1);
-        }
-      }
+    [data-menu-expanded=true] & {
+      display: none;
     }
   }
 
-  [data-menu-expanded=true] & {
+  &:hover {
     &::after {
-      display: none;
+      left: calc($traverse-nav__label-width * -1);
     }
   }
 }
