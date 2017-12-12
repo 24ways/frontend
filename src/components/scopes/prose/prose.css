@@ -193,6 +193,10 @@
       margin-left: 0;
       margin-right: 0;
     }
+
+    @media (--from-max-screen) {
+      margin-right: -20%;
+    }
   }
 
   figcaption,
