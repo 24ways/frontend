@@ -29,16 +29,12 @@
   padding: map(spaces, small);
   text-align: center;
 
-  .no-js & {
-    box-shadow: 1px 0 0 $navigation-color--offset;
-  }
-
   &:focus {
     position: relative; /* Fix border overlap on focus */
   }
 
-  @media (-ms-high-contrast: active) {
-    border: 1px solid;
+  .no-js & {
+    box-shadow: 1px 0 0 $navigation-color--offset;
   }
 
   @media (--from-shallow-screen) {
@@ -48,5 +44,9 @@
   @media (--from-medium-screen) {
     box-shadow: 0 -1px 0 $navigation-color--offset;
     text-align: left;
+  }
+
+  @media (-ms-high-contrast: active) {
+    border: 1px solid;
   }
 }

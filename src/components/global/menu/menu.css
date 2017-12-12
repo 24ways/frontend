@@ -51,10 +51,6 @@
     display: none;
   }
 
-  @media (-ms-high-contrast: active) {
-    border: 1px solid;
-  }
-
   @media (--upto-medium-screen) {
     padding: map(sizes, xsmall);
     color: white;
@@ -70,6 +66,10 @@
 
     padding: map(spaces, medium);
     box-shadow: inset 0 -1px 0 $navigation-color--offset;
+  }
+
+  @media (-ms-high-contrast: active) {
+    border: 1px solid;
   }
 
   @media print {

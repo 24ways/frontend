@@ -50,11 +50,11 @@
   padding: map(spaces, small);
   text-align: center;
 
-  @media (-ms-high-contrast: active) {
-    border: 1px solid;
-  }
-
   @media (--from-shallow-screen) {
     padding: map(spaces, large) map(spaces, medium);
+  }
+
+  @media (-ms-high-contrast: active) {
+    border: 1px solid;
   }
 }

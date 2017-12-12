@@ -42,7 +42,7 @@ $traverse-nav__label-width: 18rem; /* 288px */
     right: 0;
   }
 
-  /* 'Arrow' that covers ear in its closed state */
+  /* Box: covers ear */
   &::before {
     z-index: map(layers, underlay);
     background-color: $navigation-color;
@@ -50,7 +50,7 @@ $traverse-nav__label-width: 18rem; /* 288px */
     content: '';
   }
 
-  /* 'Ear' that appears on hover */
+  /* Ear: slides from under box on hover */
   &::after {
     .has-js & {
       @media (--from-medium-screen) {

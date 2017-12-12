@@ -12,13 +12,13 @@
     }
   }
 
-  @media (-ms-high-contrast: active) {
-    border-top: 1px solid;
-  }
-
   @media (--from-large-screen) {
     padding-left: map(spaces, medium);
     padding-right: map(spaces, medium);
+  }
+
+  @media (-ms-high-contrast: active) {
+    border-top: 1px solid;
   }
 
   a {
