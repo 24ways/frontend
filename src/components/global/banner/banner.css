@@ -8,7 +8,7 @@
     }
   }
 
-  @media (-ms-high-contrast:active) {
+  @media (-ms-high-contrast: active) {
     border-bottom: 1px solid;
   }
 }

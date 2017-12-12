@@ -12,7 +12,7 @@
     }
   }
 
-  @media (-ms-high-contrast:active) {
+  @media (-ms-high-contrast: active) {
     border-top: 1px solid;
   }
 

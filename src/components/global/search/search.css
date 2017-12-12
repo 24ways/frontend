@@ -5,7 +5,7 @@
     padding-left: map(spaces, xlarge);
     background-color: $navigation-color--offset;
 
-    @media (-ms-high-contrast:active) {
+    @media (-ms-high-contrast: active) {
       border: 1px solid;
     }
 
