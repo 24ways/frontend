@@ -48,7 +48,7 @@
   z-index: calc(map(layers, modal) + 1);
 
   .no-js & {
-    @apply --hidden;
+    display: none;
   }
 
   @media (-ms-high-contrast:active) {

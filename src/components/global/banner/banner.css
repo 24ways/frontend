@@ -2,8 +2,10 @@
   background-color: $color-year--dark;
   background-color: var(--color-year--dark, $color-year--dark);
 
-  @media (--from-medium-screen) {
-    margin-right: $navigation-width--large;
+  .has-js & {
+    @media (--from-medium-screen) {
+      margin-right: $navigation-width--large;
+    }
   }
 
   @media (-ms-high-contrast:active) {

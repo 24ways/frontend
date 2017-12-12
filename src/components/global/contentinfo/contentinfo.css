@@ -6,12 +6,14 @@
   justify-content: space-between;
   padding: map(spaces, small) map(spaces, large);
 
-  @media (-ms-high-contrast:active) {
-    border-top: 1px solid;
+  .has-js & {
+    @media (--from-medium-screen) {
+      margin-right: $navigation-width--large;
+    }
   }
 
-  @media (--from-medium-screen) {
-    margin-right: $navigation-width--large;
+  @media (-ms-high-contrast:active) {
+    border-top: 1px solid;
   }
 
   @media (--from-large-screen) {
