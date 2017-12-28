@@ -130,6 +130,10 @@ $summary__author-size: map(sizes, xlarge);
     height: $summary__author-size;
     width: $summary__author-size;
     transition: transform $author-duration ease-out;
+
+    @media (prefers-reduced-motion) {
+      transition: none;
+    }
   }
 
   span {
