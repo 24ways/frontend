@@ -19,6 +19,10 @@
     <link rel="alternate" href="{{ site.feed }}" type="application/rss+xml"/>
     <link rel="author" href="/humans.txt"/>
 
+    <script>
+        var docEl = document.documentElement;
+        docEl.className = docEl.className.replace('no-js', 'has-js');
+    </script>
     <script src="{{ '/assets/scripts/app.js' | path }}" defer></script>
     {%- if _target.context.prism -%}
     <script src="{{ '/assets/scripts/prism.js' | path }}" defer></script>
