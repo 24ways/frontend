@@ -91,8 +91,7 @@ export default function () {
 
   if (buttonEl) {
     // Remove script and applied style that hides drawer during load
-    const drawerElStyle = drawerEl.getAttributeNode('style');
-    drawerEl.removeAttributeNode(drawerElStyle);
+    drawerEl.style.display = '';
     document.querySelector('.c-menu__onload').remove();
 
     // Toggle drawer on clicking button
