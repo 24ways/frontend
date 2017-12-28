@@ -4,7 +4,7 @@ import menu from './modules/menu';
 
 // Flag JS as being supported
 const docEl = document.documentElement;
-docEl.classList.replace('no-js', 'has-js');
+docEl.className = docEl.className.replace('no-js', 'has-js');
 
 // Run
 menu();
