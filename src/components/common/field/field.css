@@ -19,10 +19,9 @@
 
 .c-field__input {
   width: 100%;
-  border: 0;
+  border: 1px solid $prose-color--rule;
   border-radius: 0;
   padding: map(spaces, medium);
-  box-shadow: inset 1px 1px 0 $prose-color--rule;
 }
 
 .c-field__label {

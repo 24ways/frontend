@@ -14,7 +14,7 @@
   @media (--from-large-screen) {
     flex: 1 0 20%;
     padding-right: 0;
-    box-shadow: 0 -1px 0 $prose-color--rule;
+    border-top: 1px solid $prose-color--rule;
     text-align: right;
   }
 
@@ -33,7 +33,7 @@
 .c-section__main {
   margin-bottom: map(spaces, large);
   padding: map(spaces, medium) map(spaces, large);
-  box-shadow: 0 -1px 0 $prose-color--rule;
+  border-top: 1px solid $prose-color--rule;
 
   @media (--from-large-screen) {
     flex: 1 0 75%;
@@ -58,7 +58,7 @@
 
     .c-section__main {
       padding-right: 0;
-      box-shadow: none;
+      border-top: 0;
     }
 
     .c-promo {

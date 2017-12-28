@@ -33,6 +33,10 @@ $summary__author-size: map(sizes, xlarge);
   background-color: white;
   box-shadow: 1px 1px 0 $prose-color--shadow;
 
+  @media (-ms-high-contrast: active) {
+    border: 1px solid;
+  }
+
   @media print {
     padding-bottom: 0;
     height: auto !important;

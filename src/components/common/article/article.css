@@ -26,9 +26,10 @@
 
   @media (--from-large-screen) {
     min-height: 16rem;
+    margin-top: -1px;
     padding-bottom: map(spaces, xxlarge);
     padding-left: 25%;
-    box-shadow: 0 -1px 0 0 $prose-color--rule;
+    border-top: 1px solid $prose-color--rule;
   }
 }
 
