@@ -7,17 +7,13 @@
 
 /* Colour swatch */
 .color {
-  position: relative;
   flex: 1 1 4em;
   margin: 0 0.25em 1.5em;
 
-  &::before {
-    content: '';
-    display: block;
+  svg {
     width: 100%;
     height: 5em;
     border-radius: map(borders, radius-default);
-    background-color: currentColor;
   }
 
   code {
@@ -25,15 +21,10 @@
     color: $color-text;
   }
 
-  span {
-    position: absolute;
-    top: 0.5rem;
-    left: 0.5rem;
-    display: block;
+  text {
     font: 0.75em/1em 'Hack', 'Consolas', 'Monaco', monospace;
     font-style: normal;
     text-shadow: 0 0 2px $color-text;
-    color: white;
   }
 }
 
