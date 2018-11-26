@@ -1,0 +1,9 @@
+title: Open Graph sharing image
+label: OG Image
+order: 1
+context:
+  quote: "There's no prize for solving problems you don't have yet, and heading further into the desert in search of water is a survival  tactic, not an aspiration."
+  author: Drew McLellan
+  avatar:
+    size: 220
+    src: https://cloud.24ways.org/authors/drewmclellan280.jpg

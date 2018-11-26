@@ -1,0 +1,44 @@
+.c-og-image {
+  width: 600px;
+  height: 315px;
+  overflow: hidden;
+  padding: 2rem;
+  background-color: $color-year;
+  background-color: var(--color-year, $color-year);
+  background-image: inline('diamond.svg');
+  background-repeat: repeat;
+}
+
+.c-og-image__quote {
+  @apply --typeset-prose;
+
+  margin-bottom: map(spaces, small);
+  font-family: map(fonts, family-serif);
+  font-size: 2rem;
+  line-height: 1.15;
+  text-indent: -0.45em;
+  color: white;
+}
+
+@supports (hanging-punctuation: first) {
+  .c-og-image__quote {
+    text-indent: 0;
+  }
+}
+
+.c-og-image__quote--small {
+  font-size: 1.75rem;
+}
+
+.c-og-image__cite {
+  @apply --typeset-caption;
+
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: map(colors, primary, light);
+}
+
+.c-og-image .c-avatar {
+  float: right;
+  margin: -2.5rem -3.5rem 0 0;
+}
