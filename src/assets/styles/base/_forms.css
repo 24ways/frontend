@@ -60,6 +60,8 @@ button,
 
 /**
  * Remove the inner border and padding in Firefox.
+ *
+ * 1. Restore the focus styles unset by the previous rule.
  */
 button::-moz-focus-inner,
 [type=button]::-moz-focus-inner,
@@ -67,16 +69,7 @@ button::-moz-focus-inner,
 [type=submit]::-moz-focus-inner {
   border: 0;
   padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
-  outline: 1px dotted ButtonText;
+  outline: 1px dotted ButtonText; /* 1 */
 }
 
 /**
