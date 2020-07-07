@@ -11,7 +11,7 @@
     </p>
   </header>
   <div class="c-comment__main s-prose  e-content">
-    {{ content | markdown }}
+    {{ content | markdown | safe }}
   </div>
   <footer class="c-comment__footer">
     <p>This comment was <a href="/vote/up/{{ id }}/">helpful</a> / <a href="/vote/down/{{ id }}/">unhelpful</a></p>

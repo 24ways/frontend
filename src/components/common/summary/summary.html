@@ -17,7 +17,7 @@
     {%- endif -%}
   </header>
   <div class="c-summary__main">
-    <p class="p-summary">{{ content | markdownInline }}</p>
+    <p class="p-summary">{{ content | markdownInline | safe }}</p>
   </div>
   {%- if datetime -%}
   <footer class="c-summary__footer">
