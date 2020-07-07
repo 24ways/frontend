@@ -1,9 +1,0 @@
-context:
-  traverse:
-    type: article
-    prev:
-      url: /2015/how-tabs-should-work/
-      title: "How Tabs Should Work"
-    next:
-      url: /2015/solve-the-hard-problems/
-      title: "Solve the Hard Problems"

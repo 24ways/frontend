@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../assets/icons/icon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../fractal/css/default.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/styles/theme.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../fractal/css/highlight.css?cachebust=1.4.0" type="text/css">
+
+
+<title>Article | Bits of 24 ways</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+        <div class="Header-navToggleIcon Header-navToggleIcon--open">
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        </div>
+        <div class="Header-navToggleIcon Header-navToggleIcon--closed">
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+
+        </div>
+    </button>
+    <a href="../../.." class="Header-title" data-pjax>Bits of 24 ways</a>
+</div>
+
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+
+    
+    
+
+<div class="Pen" data-behaviour="pen" id="pen-c2746f24edbec73537f3bfaf4633b234">
+
+    
+
+    <div class="Pen-panel Pen-header">
+    <h1 class="Pen-title">
+        <a class="Pen-previewLink" href="../preview/article" title="Component preview">
+            Article
+            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+
+        </a>
+    </h1>
+    
+
+
+</div>
+
+
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-c2746f24edbec73537f3bfaf4633b234">
+    <div class="Preview-wrapper" data-role="resizer">
+        <div class="Preview-resizer">
+            
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/article"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
+        </div>
+        <div class="Preview-handle" data-role="resize-handle"></div>
+        <div class="Preview-overlay"></div>
+    </div>
+</div>
+
+
+    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+
+    <div class="Pen-panel Pen-info" data-role="info">
+    <div class="Browser" data-behaviour="browser" id="browser-c2746f24edbec73537f3bfaf4633b234">
+
+    
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs">
+        
+        
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
+            <a href="#browser-c2746f24edbec73537f3bfaf4633b234-panel-html">HTML</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-c2746f24edbec73537f3bfaf4633b234-panel-view">View</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--context" data-role="tab">
+            <a href="#browser-c2746f24edbec73537f3bfaf4633b234-panel-context">Context</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--resources" data-role="tab">
+            <a href="#browser-c2746f24edbec73537f3bfaf4633b234-panel-assets">Assets</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--info" data-role="tab">
+            <a href="#browser-c2746f24edbec73537f3bfaf4633b234-panel-info">Info</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-c2746f24edbec73537f3bfaf4633b234-panel-notes">Notes</a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+    
+    
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-c2746f24edbec73537f3bfaf4633b234-panel-html">
+    <code class="Code Code--lang-html hljs">
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-article  h-entry"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-article__header"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-article__title  p-name"</span>&gt;</span>Starting Your HTML5 Project on the Right Foot (and Keeping It There)<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-article__byline  p-author h-card"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-url"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#author"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-avatar  u-photo"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cloud.24ways.org/authors/drewmclellan280.jpg"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"280"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"280"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Drew McLellan"</span> /&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"p-name"</span>&gt;</span>Drew McLellan<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-article__footer"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-meta"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-meta__item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dt-published"</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">"2012-12-01T00:00:00-00:00"</span>&gt;</span>1 Dec<span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>ember<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> 2012<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-meta__item"</span>&gt;</span>Published in <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/topics/code/"</span>&gt;</span>Code<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-meta__item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#comments"</span>&gt;</span>8 comments<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-article__main e-content"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"s-note"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>A note from the editors:<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> While brilliant for its time, this article no longer reflects modern best practices.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"s-prose s-prose--article"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"lede"</span>&gt;</span>Video is a bigger part of the web experience than ever before. With native browser support for <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"caps"</span>&gt;</span>HTML5<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> video elements freeing us from the tyranny of plugins, and the availability of faster <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>internet<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> connections to the workplace, home and mobile networks, it’s now pretty straightforward to publish video in a way that can be consumed in all sorts of ways on all sorts of different web devices.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>I recently worked on a project where the client had shot some dedicated video shorts to publish on their site. They also had some <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>five-second<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> motion graphics produced to top and tail the videos with context and branding. This pretty common requirement is a great idea on the web, where a user might land at your video having followed a link and be viewing a page without much context.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>[I]t appears probable that the progenitors of man, either the males or females or both sexes, before acquiring the power of expressing their mutual love in articulate language, endeavoured to charm each other with musical notes and rhythm.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>—Charles <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"caps"</span>&gt;</span>DARWIN<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>, <span class="hljs-tag">&lt;<span class="hljs-name">cite</span>&gt;</span>The Descent of Man, and Selection in Relation to Sex<span class="hljs-tag">&lt;/<span class="hljs-name">cite</span>&gt;</span>, 1871<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Known as <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>bumpers<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>, these short introduction clips help brand a video and make it look a lot more professional.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://media.24ways.org/2013/baxter/indexcards.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Index cards"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>Index cards represent each feature the rental property software would launch with.<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"s-gallery"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://media.24ways.org/2013/baxter/indexcards.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Index cards"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://media.24ways.org/2013/baxter/indexcards.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Index cards"</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>Index cards represent each feature the rental property software would launch with.<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"s-gallery"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://media.24ways.org/2013/baxter/indexcards.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Index cards"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://media.24ways.org/2013/baxter/indexcards.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Index cards"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://media.24ways.org/2013/baxter/indexcards.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Index cards"</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>Index cards represent each feature the rental property software would launch with.<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"s-gallery"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://media.24ways.org/2013/baxter/indexcards.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Index cards"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://media.24ways.org/2013/baxter/indexcards.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Index cards"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://media.24ways.org/2013/baxter/indexcards.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Index cards"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://media.24ways.org/2013/baxter/indexcards.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Index cards"</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>Index cards represent each feature the rental property software would launch with.<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Heading 2<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>The simplest way to add bumpers to a video would be to edit them on to the start and end of the video file itself. Cooking the bumpers into the video file is easy, but should you ever want to update them it can become a real headache. If the branding needs updating, for example, you’d need to re-edit and re-encode all your videos. Not a fun task.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Save the document by pressing <span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span>Ctrl<span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span> + <span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span>S<span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>There are many, many options for recording your screen, including QuickTime Player on Mac OS X (<span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">samp</span>&gt;</span>File<span class="hljs-tag">&lt;/<span class="hljs-name">samp</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span> → <span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">samp</span>&gt;</span>New Screen Recording<span class="hljs-tag">&lt;/<span class="hljs-name">samp</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span>), <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://www.gifgrabber.com/"</span>&gt;</span>GifGrabber<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>, or <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://giffingtool.com"</span>&gt;</span>Giffing Tool<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> on Windows.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Just <span class="hljs-tag">&lt;<span class="hljs-name">samp</span>&gt;</span>sample<span class="hljs-tag">&lt;/<span class="hljs-name">samp</span>&gt;</span> text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Heading 2…<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>…followed by a heading 3<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>What if the bumpers could be added dynamically? That would enable you to use the same bumper for multiple videos (decreasing download time for users who might watch more than one) and to update the bumpers whenever you wanted. You could change them seasonally, update them for special promotions, run different advertising slots, perform multivariate testing, or even target different bumpers to different users.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>View an example<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>The responsive projects I’ve worked on have had a lot of success combining design and development into one hybrid phase, bringing the two teams into one highly collaborative group.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>A list inside a blockquote<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Is a very fine thing<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>A lot of success combining design and development into one hybrid phase, bringing the two teams into one highly collaborative group.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>How about an ordered list<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Inside a blockquote, too?<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Heading 3<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>The trade-off, of course, is that if you dynamically add your bumpers, there’s a chance that a user in a given circumstance might not see the bumper. For example, if the main video feature was uploaded to YouTube, you’d have no way to control the playback. As always, you need to weigh up the pros and cons and make your choice.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Heading 4<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>If you wanted to dynamically add bumpers to your <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Hyper Text Markup Language 5"</span>&gt;</span>HTML5<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span> video, how would you go about it? That was the question I found myself needing to answer for this particular client project.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Heading 5<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>My initial thought was to treat it just like an image slideshow. If I were building a slideshow that moved between images, I’d use <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span> absolute positioning with <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>z-index<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> to stack the images up on top of each other in a pile, with the first image on top. To transition to the second image, I’d use JavaScript to fade the top image out, revealing the second image beneath it.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"s-embed s-embed--widescreen"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.youtube.com/embed/QILiHiTD3uc"</span> <span class="hljs-attr">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>Example of responsive video embed.<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Now that video is just a native object in the <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"caps"</span>&gt;</span>DOM<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>, just like an image, why not do the same? Stack the videos up with the opening bumper on top, listen for the video’s <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>onended<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> event, and fade it out to reveal the main feature behind. Good idea, right?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>The Very Best <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>Eggnog<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Serves 12<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Serves 24<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Milk<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1 quart<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2 quart<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Cinnamon Sticks<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Vanilla Bean, Split<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Cloves<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Mace<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>20<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Egg Yolks<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>12<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>24<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Cups Sugar<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1 ½ cups<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>3 cups<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Dark Rum<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1 ½ cups<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>3 cups<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Brandy<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1 ½ cups<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>3 cups<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Vanilla<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1 tbsp<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2 tbsp<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Light Cream<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Double Cream<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1 quart<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2 quart<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Remember that this is the web. It’s never going to be that easy. The problem here is that many non-desktop devices use native, dedicated video players. Think about watching a video on a mobile phone – when you play the video, the phone often goes full-screen in its native player, leaving the web page behind. There’s no opportunity to fade or switch <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>z-index<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>, as the video isn’t being viewed in the page. Your page is left powerless. Powerless!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://media.24ways.org/2012/mclellan/media-player.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"iOS full-screen media player"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>So what can we do? What can we control?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Those of us with particularly long memories might recall a time before <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span>, when we’d have to use JavaScript to perform image rollovers. As <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span> background images weren’t a practical reality, we would use lots of <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span><span class="hljs-symbol">&amp;lt;</span>img<span class="hljs-symbol">&amp;gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> elements, and perform a rollover by modifying the <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>src<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> attribute of the image.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pull-right"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://media.24ways.org/2013/baxter/indexcards.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Index cards"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>Index cards represent each feature the rental property software would launch with.<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Turns out, this old trick of modifying the source can help us out with video, too. In most cases, modifying the <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>src<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> attribute of a <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span><span class="hljs-symbol">&amp;lt;</span>video<span class="hljs-symbol">&amp;gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> element, or perhaps more likely the <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>src<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> attribute of a <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>source<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> element, will swap from one video to another.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Swappin’ it<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Let’s take a deliberately simple example of a super-basic video tag:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"language-html"</span>&gt;</span><span class="hljs-symbol">&amp;lt;</span>video src=<span class="hljs-symbol">&amp;quot;</span>mycat.webm<span class="hljs-symbol">&amp;quot;</span> controls<span class="hljs-symbol">&amp;gt;</span>no fallback coz i is lame, innit.<span class="hljs-symbol">&amp;lt;</span>/video<span class="hljs-symbol">&amp;gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>We could very simply write a script to find all video tags and give them a new <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>src<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> to show our bumper.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"language-html"</span>&gt;</span><span class="hljs-symbol">&amp;lt;</span>script<span class="hljs-symbol">&amp;gt;</span>
+  var videos, i, l;
+  videos = document.getElementsByTagName('video');
+
+  for(i=0, l=videos.length; i<span class="hljs-symbol">&amp;lt;</span>l; i++) {
+    videos[i].setAttribute('src', 'bumper-in.webm');
+  }
+<span class="hljs-symbol">&amp;lt;</span>/script<span class="hljs-symbol">&amp;gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://media.24ways.org/2012/mclellan/examples/1.html"</span>&gt;</span>View the example<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> in a browser with WebM support. You’ll see that the video is swapped out for the opening bumper. Great!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Beefing it up<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Of course, we can’t just publish video in one format. In practical use, you need a <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span><span class="hljs-symbol">&amp;lt;</span>video<span class="hljs-symbol">&amp;gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> element with multiple <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span><span class="hljs-symbol">&amp;lt;</span>source<span class="hljs-symbol">&amp;gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> elements containing your different source formats.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"language-html"</span>&gt;</span><span class="hljs-symbol">&amp;lt;</span>video controls<span class="hljs-symbol">&amp;gt;</span>
+  <span class="hljs-symbol">&amp;lt;</span>source src=<span class="hljs-symbol">&amp;quot;</span>mycat.mp4<span class="hljs-symbol">&amp;quot;</span> type=<span class="hljs-symbol">&amp;quot;</span>video/mp4<span class="hljs-symbol">&amp;quot;</span> /<span class="hljs-symbol">&amp;gt;</span>
+  <span class="hljs-symbol">&amp;lt;</span>source src=<span class="hljs-symbol">&amp;quot;</span>mycat.webm<span class="hljs-symbol">&amp;quot;</span> type=<span class="hljs-symbol">&amp;quot;</span>video/webm<span class="hljs-symbol">&amp;quot;</span> /<span class="hljs-symbol">&amp;gt;</span>
+  <span class="hljs-symbol">&amp;lt;</span>source src=<span class="hljs-symbol">&amp;quot;</span>mycat.ogv<span class="hljs-symbol">&amp;quot;</span> type=<span class="hljs-symbol">&amp;quot;</span>video/ogg<span class="hljs-symbol">&amp;quot;</span> /<span class="hljs-symbol">&amp;gt;</span>
+<span class="hljs-symbol">&amp;lt;</span>/video<span class="hljs-symbol">&amp;gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This time, our script needs to loop through the sources, not the videos. We’ll use a regular expression replacement to swap out the file name while maintaining the correct file extension.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"language-html"</span>&gt;</span><span class="hljs-symbol">&amp;lt;</span>script<span class="hljs-symbol">&amp;gt;</span>
+  var sources, i, l, orig;
+  sources = document.getElementsByTagName('source');
+
+  for(i=0, l=sources.length; i<span class="hljs-symbol">&amp;lt;</span>l; i++) {
+    orig = sources[i].getAttribute('src');
+    sources[i].setAttribute('src', orig.replace(/(w+).(w+)/, 'bumper-in.$2'));
+
+    // Reload the video
+    sources[i].parentNode.load();
+  }
+<span class="hljs-symbol">&amp;lt;</span>/script<span class="hljs-symbol">&amp;gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>The difference this time is that when changing the <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>src<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> of a <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span><span class="hljs-symbol">&amp;lt;</span>source<span class="hljs-symbol">&amp;gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> we need to call the <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>.load()<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> method on the video to get it to acknowledge the change.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://media.24ways.org/2012/mclellan/examples/2.html"</span>&gt;</span>See the code in action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>, this time in a wider range of browsers.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>But, my video!<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Store the original <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>src<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> in a <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>data-<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> attribute so we can access it later<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Add an event listener so we can detect the end of the bumper playing, and load the original video back in<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>I guess we should get the original video playing again. Keeping the same markup, we need to modify the script to do two things:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Store the original <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>src<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> in a <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>data-<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> attribute so we can access it later<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Add an event listener so we can detect the end of the bumper playing, and load the original video back in<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>As we need to loop through the videos this time to add the event listener, I’ve moved the <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>.load()<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> call into that loop. It’s a bit more efficient to call it only once after modifying all the video’s sources.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Raspberry Pi<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> any of the following models :
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Zero (will need straight male header pins soldered2 and Micro USB OTG adaptor),
+                            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>A+, B+, 2 or 3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Micro SD card<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> at least 4Gb Class 10 speed3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Micro USB power supply<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> at least 2A<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>USB Wifi dongle<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> (unless you have a Pi 3 - that has wifi built in).<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"language-html"</span>&gt;</span><span class="hljs-symbol">&amp;lt;</span>script<span class="hljs-symbol">&amp;gt;</span>
+  var videos, sources, i, l, orig;
+  sources = document.getElementsByTagName('source');
+
+  for(i=0, l=sources.length; i<span class="hljs-symbol">&amp;lt;</span>l; i++) {
+    orig = sources[i].getAttribute('src');
+    sources[i].setAttribute('data-orig', orig);
+    sources[i].setAttribute('src', orig.replace(/(w+).(w+)/, 'bumper-in.$2'));
+  }
+
+  videos = document.getElementsByTagName('video');
+
+  for(i=0, l=videos.length; i<span class="hljs-symbol">&amp;lt;</span>l; i++) {
+    videos[i].load();
+    videos[i].addEventListener('ended', function(){
+      sources = this.getElementsByTagName('source');
+      for(i=0, l=sources.length; i<span class="hljs-symbol">&amp;lt;</span>l; i++) {
+        orig = sources[i].getAttribute('data-orig');
+        if (orig) {
+          sources[i].setAttribute('src', orig);
+        }
+        sources[i].setAttribute('data-orig','');
+      }
+      this.load();
+      this.play();
+    });
+  }
+<span class="hljs-symbol">&amp;lt;</span>/script<span class="hljs-symbol">&amp;gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Again, <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://media.24ways.org/2012/mclellan/examples/3.html"</span>&gt;</span>view the example<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> to see the bumper play, followed by our spectacular main feature. (That’s my cat, Widget. His interests include sleeping and internet marketing.)<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Tidying things up<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>The final thing to do is add our closing bumper after the main video has played. This involves the following changes:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>We need to keep track of whether the <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>src<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> has been changed, so we only play the video if it’s changed. I’ve added the <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>modified<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> variable to track this, and it stops us getting into a situation where the video just loops forever.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Add an <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>else<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> to the event listener, for when the <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>orig<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> is false (so the main feature has been playing) to load in the end bumper. We also check that we’re not already playing the end bumper. Because looping.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"language-html"</span>&gt;</span><span class="hljs-symbol">&amp;lt;</span>script<span class="hljs-symbol">&amp;gt;</span>
+  var videos, sources, i, l, orig, current, modified;
+  sources = document.getElementsByTagName('source');
+
+  for(i=0, l=sources.length; i<span class="hljs-symbol">&amp;lt;</span>l; i++) {
+    orig = sources[i].getAttribute('src');
+    sources[i].setAttribute('data-orig', orig);
+    sources[i].setAttribute('src', orig.replace(/(w+).(w+)/, 'bumper-in.$2'));
+  }
+
+  videos = document.getElementsByTagName('video');
+
+  for(i=0, l=videos.length; i<span class="hljs-symbol">&amp;lt;</span>l; i++) {
+    videos[i].load();
+    modified = false;
+
+    videos[i].addEventListener('ended', function(){
+      sources = this.getElementsByTagName('source');
+
+      for(i=0, l=sources.length; i<span class="hljs-symbol">&amp;lt;</span>l; i++) {
+        orig = sources[i].getAttribute('data-orig');
+        if (orig) {
+          sources[i].setAttribute('src', orig);
+          modified = true;
+        } else {
+          current = sources[i].getAttribute('src');
+          if (current.indexOf('bumper-out')==-1) {
+            sources[i].setAttribute('src', current.replace(/([w]+).(w+)/, 'bumper-out.$2'));
+            modified = true;
+          } else {
+            this.pause();
+            modified = false;
+          }
+        }
+        sources[i].setAttribute('data-orig','');
+      }
+
+      if (modified) {
+        this.load();
+        this.play();
+      }
+    });
+  }
+<span class="hljs-symbol">&amp;lt;</span>/script<span class="hljs-symbol">&amp;gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Yo ho ho, that’s a lot of JavaScript. <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://media.24ways.org/2012/mclellan/examples/4.html"</span>&gt;</span>See it in action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> – you should get a bumper, the cat video, and an end bumper.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Of course, this code works fine for demonstrating the principle, but it’s very procedural. Nothing wrong with that, but to do something similar in production, you’d probably want to make the code more modular to ease maintainability. Besides, you may want to use a framework, rather than basic JavaScript.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>The end credits<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>One really important principle here is that of <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>progressive enhancement<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>. If the browser doesn’t support JavaScript, the user won’t see your bumper, but they will get the main video. If the browser supports JavaScript but doesn’t allow you to modify the <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>src<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> (as was the case with older versions of iOS), the user won’t see your bumper, but they will get the main video.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>At Twitter, <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>every commit<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span> gets a code review. We do a lot of reviewing, so small efficiency and effectiveness improvements make a big difference. Over time we’ve learnt a few things:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Don’t review for <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>more than hour<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">sup</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"footnote-ref"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#fn1"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fnref1"</span>&gt;</span>[1]<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">sup</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Keep reviews <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>smaller than ~400 lines<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">sup</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"footnote-ref"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#fn2"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fnref2"</span>&gt;</span>[2]<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">sup</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>If a search engine or social media bot grabs your page and looks for content, they won’t see your bumper, but they will get the main video – which is absolutely what you want.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This means that if the bumper is absolutely crucial, you may still need to cook it into the video. However, for many applications, running it dynamically can work quite well.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>As always, it comes down to three things:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Measure your audience: know how people access your site<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Test the solution: make sure it works for your audience<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Plan for failure: it’s the web and that’s how things work 'round these parts<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>But most of all <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>play around with it, have fun and build something awesome<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"footnotes-sep"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"footnotes"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"footnotes-list"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fn1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"footnote-item"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Dunsmore et al. 2000. Object-Oriented Inspection in the Face of Delocalisation. Beverly, MA: SmartBear Software. <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#fnref1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"footnote-backref"</span>&gt;</span>↩︎<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fn2"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"footnote-item"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Cohen, Jason. 2006. Best Kept Secrets of Peer Code Review. <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>Proceedings of the 22nd ICSE 2000<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>: 467-476. <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#fnref2"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"footnote-backref"</span>&gt;</span>↩︎<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-section"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"author"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-section__header"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-section__title"</span>&gt;</span>About the author<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-section__main"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"s-prose"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Drew McLellan is lead developer on your favourite content management systems, <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://grabaperch.com/"</span>&gt;</span>Perch and Perch Runway<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>. He is Director and Senior Developer at edgeofmyseat.com in Bristol, England, and is formerly Group Lead at the Web Standards Project. When not publishing 24 ways, Drew keeps a <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://allinthehead.com/"</span>&gt;</span>personal site<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> covering web development issues and themes, <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://flickr.com/drewm/"</span>&gt;</span>takes photos<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>, <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://twitter.com/drewm"</span>&gt;</span>tweets a lot<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> and tries to stay upright on his bicycle.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"caption"</span>&gt;</span>Photo: <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://duncandavidson.com/"</span>&gt;</span>James Duncan Davidson<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-continue"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/authors/drewmclellan/"</span>&gt;</span>More articles by Drew<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-section c-section--sponsor"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sponsor"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-section__header"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-section__title"</span>&gt;</span>Brought to you by<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-section__main"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-promo"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://grabaperch.com/?ref=24w01"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-promo__image"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/assets/images/logo-perch.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Perch - A really little CMS"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"152"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"64"</span> /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-promo__message"</span>&gt;</span>The easiest way to publish <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>fast, flexible HTML5 websites<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> your clients will love.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-promo__url"</span>&gt;</span>grabaperch.com<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span></pre>
+        
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-c2746f24edbec73537f3bfaf4633b234-panel-view">
+    <code class="Code Code--lang-html hljs">
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-article  h-entry"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-article__header"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-article__title  p-name"</span>&gt;</span>{{ title }}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-article__byline  p-author h-card"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-url"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#author"</span>&gt;</span>
+        {% render "<a href="avatar">@avatar</a>" %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"p-name"</span>&gt;</span>{{ author }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-article__footer"</span>&gt;</span>
+    {% render "<a href="meta">@meta</a>" %}
+  <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-article__main e-content"</span>&gt;</span>
+    {% render "<a href="note">@note</a>" %}
+    {% render "<a href="prose--article">@prose--article</a>" %}
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  {% render "<a href="section--author">@section--author</a>" %}
+  {% render "<a href="section--sponsor">@section--sponsor</a>" %}
+  {% if related %}
+    {% render "<a href="section--related">@section--related</a>" %}
+  {% endif %}
+  {% if comments %}
+    {% render "<a href="section--comments">@section--comments</a>" %}
+    {% render "<a href="comment-form">@comment-form</a>" %}
+  {% endif %}
+<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span></pre>
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-c2746f24edbec73537f3bfaf4633b234-panel-context">
+    <code class="Code Code--lang-json hljs">
+        
+            
+            <pre>{
+  <span class="hljs-attr">"site"</span>: {
+    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"24 ways"</span>,
+    <span class="hljs-attr">"handle"</span>: <span class="hljs-string">"24ways"</span>,
+    <span class="hljs-attr">"description"</span>: <span class="hljs-string">"24 ways is the advent calendar for web geeks. Each day throughout December we publish a daily dose of web design and development goodness to bring you all a little Christmas cheer."</span>,
+    <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://24ways.org"</span>,
+    <span class="hljs-attr">"feed"</span>: <span class="hljs-string">"https://feeds.feedburner.com/24ways"</span>,
+    <span class="hljs-attr">"theme_color"</span>: <span class="hljs-string">"#f04"</span>
+  },
+  <span class="hljs-attr">"theme"</span>: {
+    <span class="hljs-attr">"year"</span>: [
+      <span class="hljs-number">348</span>,
+      <span class="hljs-number">344</span>,
+      <span class="hljs-number">340</span>,
+      <span class="hljs-number">336</span>,
+      <span class="hljs-number">332</span>,
+      <span class="hljs-number">328</span>,
+      <span class="hljs-number">324</span>,
+      <span class="hljs-number">320</span>,
+      <span class="hljs-number">316</span>,
+      <span class="hljs-number">312</span>,
+      <span class="hljs-number">308</span>,
+      <span class="hljs-number">304</span>,
+      <span class="hljs-number">300</span>,
+      <span class="hljs-number">296</span>,
+      <span class="hljs-number">292</span>,
+      <span class="hljs-number">288</span>
+    ],
+    <span class="hljs-attr">"day"</span>: [
+      <span class="hljs-number">360</span>,
+      <span class="hljs-number">353</span>,
+      <span class="hljs-number">346</span>,
+      <span class="hljs-number">339</span>,
+      <span class="hljs-number">332</span>,
+      <span class="hljs-number">325</span>,
+      <span class="hljs-number">318</span>,
+      <span class="hljs-number">311</span>,
+      <span class="hljs-number">304</span>,
+      <span class="hljs-number">297</span>,
+      <span class="hljs-number">290</span>,
+      <span class="hljs-number">283</span>,
+      <span class="hljs-number">276</span>,
+      <span class="hljs-number">269</span>,
+      <span class="hljs-number">262</span>,
+      <span class="hljs-number">255</span>,
+      <span class="hljs-number">248</span>,
+      <span class="hljs-number">241</span>,
+      <span class="hljs-number">234</span>,
+      <span class="hljs-number">227</span>,
+      <span class="hljs-number">220</span>,
+      <span class="hljs-number">213</span>,
+      <span class="hljs-number">206</span>,
+      <span class="hljs-number">199</span>
+    ]
+  },
+  <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Starting Your HTML5 Project on the Right Foot (and Keeping It There)"</span>,
+  <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Drew McLellan"</span>
+}</pre>
+            
+        
+    </code>
+</div>
+
+    
+    
+
+
+<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-c2746f24edbec73537f3bfaf4633b234-panel-assets">
+    <div class="FileBrowser">
+
+        <div class="FileBrowser-selectWrapper">
+            <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
+            <select class="FileBrowser-select" id="filebrowser-select">
+                
+                <option value="file-f9a8e373e19cba300582b170d3bddf82">article.css</option>
+                
+            </select>
+        </div>
+
+        
+        <div class="FileBrowser-item is-active" id="file-f9a8e373e19cba300582b170d3bddf82" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-CSS FileBrowser-code hljs">
+                                <pre>.c-article {
+  position: relative;
+  overflow-x: hidden;
+  background-color: $color-day--light;
+  background-color: var(--color-day--light, $color-day--light);
+
+  @media (--from-large-screen) {
+    padding-top: 9rem;
+    padding-bottom: map(spaces, large);
+  }
+
+  a {
+    color: $color-day--dark;
+    color: var(--color-day--dark, $color-day--dark);
+
+    &amp;:hover {
+      color: $color-day;
+      color: var(--color-day, $color-day);
+    }
+  }
+}
+
+.c-article__header {
+  padding: map(spaces, medium) map(spaces, large) map(spaces, large);
+  position: relative;
+
+  @media (--from-large-screen) {
+    min-height: 16rem;
+    margin-top: -1px;
+    padding-bottom: map(spaces, xxlarge);
+    padding-left: 25%;
+    border-top: 1px solid $prose-color--rule;
+  }
+}
+
+.c-article__title {
+  @apply --typeset-title;
+
+  position: relative;
+  margin-bottom: map(spaces, small);
+  z-index: map(layers, overlay);
+}
+
+.c-article__byline {
+  @apply --typescale-prose;
+
+  .c-avatar {
+    position: absolute;
+    margin: 0;
+
+    @media (--upto-large-screen) {
+      top: -25%;
+      right: -12.5%;
+      width: 50%;
+      opacity: 0.1;
+      filter: saturate(0) contrast(2);
+      mix-blend-mode: multiply;
+    }
+
+    @media (--from-large-screen) {
+      top: -40%;
+      right: 80%;
+      width: 27.5%;
+      margin-right: calc(map(spaces, medium) * -1);
+    }
+
+    @media print {
+      display: none;
+    }
+  }
+}
+
+.c-article__main {
+  padding: 0 map(spaces, large) map(spaces, large);
+
+  @media (--from-large-screen) {
+    margin-left: 25%;
+    padding-left: 0;
+  }
+}
+
+.c-article__footer {
+  position: relative;
+  z-index: map(layers, default);
+  padding: 0 map(spaces, large);
+
+  @media (--from-large-screen) {
+    float: left;
+    width: 20%;
+    padding: 0;
+  }
+}
+</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/article/article.css"><span>/components/raw/article/article.css</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src/components/common/article/article.css</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">1.7 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+
+
+    
+    <div class="Browser-panel" data-role="tab-panel" id="browser-c2746f24edbec73537f3bfaf4633b234-panel-info">
+    <ul class="Meta">
+        <li class="Meta-item">
+            <strong class="Meta-key">Handle:</strong>
+            <span class="Meta-value">@article</span>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Preview:</strong>
+            <span class="Meta-value">
+                <ul>
+                    <li><a data-no-pjax href="../preview/article"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                    <li><a data-no-pjax href="../render/article"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                </ul>
+            </span>
+        </li>
+        <li class="Meta-item">
+            <strong class="Meta-key">Filesystem Path:</strong>
+            <span class="Meta-value">src/components/common/article/article.html</span>
+        </li>
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">References <em class="Meta-count">(9)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="avatar">@<span>avatar</span></a>, 
+            
+                <a href="meta">@<span>meta</span></a>, 
+            
+                <a href="note">@<span>note</span></a>, 
+            
+                <a href="prose--article">@<span>prose--article</span></a>, 
+            
+                <a href="section--author">@<span>section--author</span></a>, 
+            
+                <a href="section--sponsor">@<span>section--sponsor</span></a>, 
+            
+                <a href="section--related">@<span>section--related</span></a>, 
+            
+                <a href="section--comments">@<span>section--comments</span></a>, 
+            
+                <a href="comment-form">@<span>comment-form</span></a>
+            
+            </span>
+        </li class="Meta-item">
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(1)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="article-template">@<span>article-template</span></a>
+            
+            </span>
+        </li>
+        
+    </ul>
+</div>
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-c2746f24edbec73537f3bfaf4633b234-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        
+    </div>
+</div>
+
+    
+
+</div>
+
+</div>
+
+
+    
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+    
+        <div class="Navigation-group Navigation-search">
+    <form action="" class="Search" data-behaviour="search">
+        <label class="Search-label" for="search-input">Search</label>
+        <input class="Search-input" id="search-input" type="search" placeholder="Search…" data-role="input">
+        <button type="button" data-behaviour="clear-search" class="Search-clearButton" aria-label="Clear search" hidden>
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        </button>
+    </form>
+</div>
+
+    
+        
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <div class="Tree-header">
+        <h3 class="Tree-title">components</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="og-image" data-pjax>
+                <span>OG Image</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-utilities">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-utilities-items">
+                Utilities
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-utilities-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hidden" data-pjax>
+                <span>Hidden</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-common">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-common-items">
+                Common
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-common-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Article</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="author" data-pjax>
+                <span>Author</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="avatar" data-pjax>
+                <span>Avatar</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="backdrop" data-pjax>
+                <span>Backdrop</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button" data-pjax>
+                <span>Button</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="comment" data-pjax>
+                <span>Comment</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="comment-form" data-pjax>
+                <span>Comment Form</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="continue" data-pjax>
+                <span>Continue</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="field" data-pjax>
+                <span>Field</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-listing">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-listing-items">
+                Listing
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-listing-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="listing--default" data-pjax>
+                <span>Default</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="listing--inset" data-pjax>
+                <span>Inset</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="listing--authors" data-pjax>
+                <span>Authors</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="meta" data-pjax>
+                <span>Meta</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="preface" data-pjax>
+                <span>Preface</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="promo" data-pjax>
+                <span>Promo</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="search-form" data-pjax>
+                <span>Search Form</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="section" data-pjax>
+                <span>Section</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="summary" data-pjax>
+                <span>Summary</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-global">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-global-items">
+                Global
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-global-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="banner" data-pjax>
+                <span>Banner</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="contentinfo" data-pjax>
+                <span>Contentinfo</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="menu" data-pjax>
+                <span>Menu</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="search" data-pjax>
+                <span>Search</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="site-nav" data-pjax>
+                <span>Site Nav</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="topics-nav" data-pjax>
+                <span>Topics Nav</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="traverse-nav" data-pjax>
+                <span>Traverse Nav</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-scopes">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-scopes-items">
+                Scopes
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-scopes-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="embed" data-pjax>
+                <span>Embed</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="gallery" data-pjax>
+                <span>Gallery</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="note" data-pjax>
+                <span>Note</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-prose">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-prose-items">
+                Prose
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-prose-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="prose--default" data-pjax>
+                <span>Default</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="prose--article" data-pjax>
+                <span>Article</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="syntax" data-pjax>
+                <span>Syntax</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-templates">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-templates-items">
+                Templates
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-templates-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="article-template" data-pjax>
+                <span>Article Template</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-content-template">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-content-template-items">
+                Content Template
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-content-template-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="content-template--about" data-pjax>
+                <span>About</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="content-template--404" data-pjax>
+                <span>404</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="content-template--sponsorship" data-pjax>
+                <span>Sponsorship</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-index-template">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-index-template-items">
+                Index Template
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-index-template-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="index-template--topics" data-pjax>
+                <span>Topics</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="index-template--archives" data-pjax>
+                <span>Archives</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="index-template--authors" data-pjax>
+                <span>Authors</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-listing-template">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-listing-template-items">
+                Listing Template
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-listing-template-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="listing-template--home" data-pjax>
+                <span>Home</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="listing-template--topic" data-pjax>
+                <span>Topic</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="listing-template--archive" data-pjax>
+                <span>Archive</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="listing-template--author" data-pjax>
+                <span>Author</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="listing-template--search-results" data-pjax>
+                <span>Search Results</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+    
+        
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <div class="Tree-header">
+        <h3 class="Tree-title">documentation</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/tokens" data-pjax>
+                <span>Design tokens</span>
+                
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+    
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../fractal/js/mandelbrot.js?cachebust=1.4.0"></script>
+
+
+
+</body>
+</html>

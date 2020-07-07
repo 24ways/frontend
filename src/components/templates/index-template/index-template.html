@@ -1,9 +1,0 @@
-{% extends "@page" %}
-{% block main %}
-<section>
-  {% include "@preface" %}
-  {%- for section in sections -%}
-    {% render "@section", section %}
-  {%- endfor -%}
-</section>
-{% endblock %}

@@ -1,0 +1,38 @@
+
+
+<form id="comment-form" method="post">
+  <fieldset>
+    <div class="c-section">
+      <legend class="c-section__header">
+        <span class="c-section__title">Impress us</span>
+      </legend>
+      <div class="c-section__main">
+        <div class="s-prose">
+          <p id="commentHTMLNote">Be friendly / use <a href="http://www.textism.com/tools/textile/">Textile</a></p>
+        </div>
+        <p class="c-field">
+          <label class="c-field__label" for="commentName">Name</label>
+          <input class="c-field__input" id="commentName" name="commentName" type="text" autocorrect="off" required="required"/>
+        </p>
+        <p class="c-field">
+          <label class="c-field__label" for="commentEmail">Email</label>
+          <input class="c-field__input" id="commentEmail" name="commentEmail" type="email" autocorrect="off" required="required"/>
+        </p>
+        <p class="c-field">
+          <label class="c-field__label" for="commentURL">Website</label>
+          <input class="c-field__input" id="commentURL" name="commentURL" type="url" autocorrect="off" placeholder="http://"/>
+        </p>
+        <p class="c-field">
+          <label class="c-field__label" for="commentHTML">Message</label>
+          <textarea class="c-field__input" id="commentHTML" name="commentHTML" cols="25" rows="12" required="required" aria-describedby="commentHTMLNote"></textarea>
+        </p>
+        <p class="c-field">
+          <input type="hidden" name="parentID" id="parentID" value="289"/>
+          <input type="hidden" name="parentTitle" id="parentTitle" value="HTML5 Video Bumpers"/>
+          <input class="c-button" type="submit" name="submitComment" id="submitComment" value="Submit"/>
+        </p>
+      </div>
+    </div>
+  </fieldset>
+</form>
+

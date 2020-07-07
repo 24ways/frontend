@@ -1,0 +1,31 @@
+
+
+
+<pre><code class="language-html">&lt;video src=&quot;mycat.webm&quot; controls&gt;no fallback coz i is lame, innit.&lt;/video&gt;
+</code></pre>
+<pre><code class="language-css">selector {
+  property: value;
+}
+</code></pre>
+<pre><code class="language-js">import express from 'express';
+import http from 'http';
+
+const app = express();
+
+app.use(express.static('public'));
+
+app.set('view engine', 'ejs');
+
+app.get('*', (req, res) =&gt; {
+  res.render('index');
+});
+
+const server = http.createServer(app);
+
+server.listen(3003);
+server.on('listening', () =&gt; {
+  console.log('Listening on 3003');
+});
+</code></pre>
+
+

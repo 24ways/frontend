@@ -1,0 +1,119 @@
+
+
+<!DOCTYPE html>
+<!--
+    PHP: Check if fonts-loaded cookie has been set.
+    If so, add the `fonts-loaded` class to the `html` element.
+-->
+<html lang="en-gb" dir="ltr" prefix="og: http://ogp.me/ns#" class="no-js fonts-loaded">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com"/>
+    <link rel="dns-prefetch" href="https://cloud.24ways.org"/>
+    <link rel="dns-prefetch" href="https://media.24ways.org"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro%7CSource+Sans+Pro:400,700%7CSource+Serif+Pro:400"/>
+    <link rel="stylesheet" href="../../assets/styles/app.css"/>
+    <link rel="shortcut icon" href="../../assets/icons/icon.ico" type="image/ico"/>
+    <link rel="apple-touch-icon" href="../../assets/icons/icon.png" type="image/png"/>
+    <link rel="mask-icon" href="../../assets/icons/icon.svg" color="#f04"/>
+    <link rel="manifest" href="/app.webmanifest"/>
+    <link rel="alternate" href="https://feeds.feedburner.com/24ways" type="application/rss+xml"/>
+    <link rel="author" href="/humans.txt"/>
+
+    <script>
+        var docEl = document.documentElement;
+        docEl.className = docEl.className.replace('no-js', 'has-js');
+    </script>
+    <script src="../../assets/scripts/app.js" defer></script><meta name="referrer" content="origin"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="format-detection" content="telephone=no"><meta property="og:title" content="2 Comments"/><meta property="og:description" content="24 ways is the advent calendar for web geeks. Each day throughout December we publish a daily dose of web design and development goodness to bring you all a little Christmas cheer."/><meta property="og:url" content="https://24ways.org"/><meta property="og:image" content="../../assets/icons/icon.png"/><meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@24ways"/>
+
+    <!--
+      PHP: Get correct hue value for year and day from array.
+    -->
+    <style>
+      :root {
+        --color-year: hsl(300, 100%, 16%);
+        --color-year--dark: hsl(300, 100%, 8%);
+        --color-year--dark-alpha: hsla(300, 100%, 8%, 0.8);
+        --color-day: hsl(283, 80%, 60%);
+        --color-day--light: hsl(283, 60%, 98%);
+        --color-day--dark: hsl(283, 100%, 24%);
+        --color-day--dark-alpha: hsla(283, 100%, 24%, 0.33);
+      }
+    </style>
+
+    <title>2 Comments &#9670; 24 ways</title>
+  </head>
+
+  <body>
+    <section class="c-section" id="comments">
+  <header class="c-section__header">
+    <h2 class="c-section__title">2 Comments</h2>
+  </header>
+  <div class="c-section__main"><div class="s-prose">
+      <p>Comments are ordered by helpfulness, as indicated by you. Help us pick out the gems and discourage asshattery by voting on notable comments.</p>
+<p><a class="c-continue" href="#comment-form">Got something to add? Leave a comment below</a></p>
+
+    </div><article class="c-comment h-entry" id="c0001">
+  <header class="c-comment__header">
+    <h3 class="c-comment__title  p-name h-card">
+      <a class="p-author u-url" href="https://adactio.com/">
+        <img class="c-avatar  u-photo" src="https://www.gravatar.com/avatar/5ad82c5ba0264363974af89deb743c20?s=96" width="64" height="64" alt=""/>
+
+        Jeremy Keith
+      </a>
+    </h3>
+    <p class="c-comment__meta">
+      <a class="c-comment__permalink" rel="bookmark" href="#c0001" title="Permalink to this comment"><time class="dt-published" datetime="2012-12-01T12:24:48-00:00">1 December 2012</time></a>
+    </p>
+  </header>
+  <div class="c-comment__main s-prose  e-content">
+    <p>This is great stuff! I’m terrible at regular expressions—my brain just doesn’t seem to want to remember any of it—but this article contains the clearest description of regular expressions I’ve come across.</p>
+<p>I thought I’d share a useful little rewrite rule that I use for cache-busting JavaScript and CSS files. You know the story: you make a change in your JavaScript or CSS and you want to let the browser know that it should grab the new version instead of using what it’s got in its cache.</p>
+<p>Now, I could potentially just use a query string when I point to my JS and CSS files ( e.g. /js/myscript.js?20131201 ) …but that can cause issues with proxy servers.</p>
+<p>Instead what I what I do is point to files like this: <code>/js/myscript.20131201.js</code></p>
+<p>Then I need to tell the server to look for the <strong>actual</strong> file in <code>/js/myscript.js</code></p>
+<p>Here’s the rewrite rule I’m using:</p>
+<pre><code>RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.).(d).(js|css)$ $1.$3 [L]
+</code></pre>
+<p>It’s basically telling the server that, if the JS or CSS file doesn’t actually exist and it matches the pattern of having two dots before the file extension (with only numbers after the first dot), to look at the bit before the first dot, and look at the bit after the second dot, but to ignore the bit in between (the numbers).</p>
+<p>The server serves up the right file, but browsers fetch the new version because, as far as they’re concerned, this looks like a brand new file that they haven’t got in their cache.</p>
+<p>That was a terrible explanation, wasn’t it? I now have even more appreciation for how clearly and concise this article is.</p>
+
+  </div>
+  <footer class="c-comment__footer">
+    <p>This comment was <a href="/vote/up/c0001/">helpful</a> / <a href="/vote/down/c0001/">unhelpful</a></p>
+  </footer>
+</article>
+<article class="c-comment c-comment--unhelpful h-entry" id="c0002">
+  <header class="c-comment__header">
+    <h3 class="c-comment__title  p-name h-card">
+      <a class="p-author u-url" href="https://paulrobertlloyd.com/">
+        <img class="c-avatar  u-photo" src="https://www.gravatar.com/avatar/15091a37bacfa4bdd011282627eaca2b?s=96" width="64" height="64" alt=""/>
+
+        Paul Robert Lloyd
+      </a>
+    </h3>
+    <p class="c-comment__meta">
+      <a class="c-comment__permalink" rel="bookmark" href="#c0002" title="Permalink to this comment"><time class="dt-published" datetime="2012-12-12T12:24:48-00:00">12 December 2012</time></a>
+    </p>
+  </header>
+  <div class="c-comment__main s-prose  e-content">
+    <p>You fool! Everything you’ve written here is wrong!</p>
+
+  </div>
+  <footer class="c-comment__footer">
+    <p>This comment was <a href="/vote/up/c0002/">helpful</a> / <a href="/vote/down/c0002/">unhelpful</a></p>
+  </footer>
+</article>
+</div>
+</section>
+
+  </body>
+</html>
+

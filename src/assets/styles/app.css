@@ -1,8 +1,0 @@
-/* =====================================================
-   Application styles
-   ===================================================== */
-
-@import 'config/**/*.css';
-@import 'helpers/**/*.css';
-@import 'base/**/*.css';
-@import '../../components/**/*.css';

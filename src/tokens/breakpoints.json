@@ -1,9 +1,0 @@
-{
-  "min": "280px",
-  "xsmall": "360px",
-  "small": "480px",
-  "medium": "504px",
-  "large": "800px",
-  "xlarge": "960px",
-  "max": "1280px"
-}

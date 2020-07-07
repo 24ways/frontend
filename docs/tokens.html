@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../assets/icons/icon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../fractal/css/default.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../assets/styles/theme.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../fractal/css/highlight.css?cachebust=1.4.0" type="text/css">
+
+
+<title>Design tokens | Bits of 24 ways</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+        <div class="Header-navToggleIcon Header-navToggleIcon--open">
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        </div>
+        <div class="Header-navToggleIcon Header-navToggleIcon--closed">
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+
+        </div>
+    </button>
+    <a href="../.." class="Header-title" data-pjax>Bits of 24 ways</a>
+</div>
+
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+<div class="Document">
+
+    <div class="Document-header">
+        
+        <h1 class="Document-title">Design tokens</h1>
+        
+
+
+        
+    </div>
+
+    <div class="Document-content">
+
+    
+
+<div class="Prose">
+
+
+
+    
+    
+    <p><a href="https://medium.com/eightshapes-llc/25dd82d58421">Design tokens</a> are named entities that store visual design information. These are used in place of hard-coded values (such as hex values for color or pixels for spacing) in order to maintain a scalable, consistent system for UI development.</p>
+<h2 id="colour-palettes">Colour Palettes</h2>
+<p><strong>Primary</strong> palette values. Accessed via <code>map(colors, primary, &lt;key&gt;)</code></p>
+<div class="palette">
+<figure class="color">
+    <svg aria-label="#f04">
+      <rect fill="#f04" width="100%" height="100%"/>
+      <text fill="white" x="10" y="10" alignment-baseline="hanging">#f04</text>
+    </svg>
+    <figcaption><code>light</code></figcaption>
+  </figure>
+<figure class="color color--base">
+    <svg aria-label="#c02">
+      <rect fill="#c02" width="100%" height="100%"/>
+      <text fill="white" x="10" y="10" alignment-baseline="hanging">#c02</text>
+    </svg>
+    <figcaption><code>base</code></figcaption>
+  </figure>
+<figure class="color">
+    <svg aria-label="#601">
+      <rect fill="#601" width="100%" height="100%"/>
+      <text fill="white" x="10" y="10" alignment-baseline="hanging">#601</text>
+    </svg>
+    <figcaption><code>dark</code></figcaption>
+  </figure>
+</div>
+
+
+<p><strong>Secondary</strong> palette values. Accessed via <code>map(colors, secondary, &lt;key&gt;)</code></p>
+<div class="palette">
+<figure class="color">
+    <svg aria-label="#3be">
+      <rect fill="#3be" width="100%" height="100%"/>
+      <text fill="white" x="10" y="10" alignment-baseline="hanging">#3be</text>
+    </svg>
+    <figcaption><code>light</code></figcaption>
+  </figure>
+<figure class="color color--base">
+    <svg aria-label="#269">
+      <rect fill="#269" width="100%" height="100%"/>
+      <text fill="white" x="10" y="10" alignment-baseline="hanging">#269</text>
+    </svg>
+    <figcaption><code>base</code></figcaption>
+  </figure>
+<figure class="color">
+    <svg aria-label="#257">
+      <rect fill="#257" width="100%" height="100%"/>
+      <text fill="white" x="10" y="10" alignment-baseline="hanging">#257</text>
+    </svg>
+    <figcaption><code>dark</code></figcaption>
+  </figure>
+</div>
+
+
+<p><strong>Neutral</strong> palette values. Accessed via <code>map(colors, neutral, &lt;key&gt;)</code></p>
+<div class="palette">
+<figure class="color">
+    <svg aria-label="#efeff0">
+      <rect fill="#efeff0" width="100%" height="100%"/>
+      <text fill="white" x="10" y="10" alignment-baseline="hanging">#efeff0</text>
+    </svg>
+    <figcaption><code>lightest</code></figcaption>
+  </figure>
+<figure class="color">
+    <svg aria-label="#b9b9c0">
+      <rect fill="#b9b9c0" width="100%" height="100%"/>
+      <text fill="white" x="10" y="10" alignment-baseline="hanging">#b9b9c0</text>
+    </svg>
+    <figcaption><code>lighter</code></figcaption>
+  </figure>
+<figure class="color">
+    <svg aria-label="#8c8c9c">
+      <rect fill="#8c8c9c" width="100%" height="100%"/>
+      <text fill="white" x="10" y="10" alignment-baseline="hanging">#8c8c9c</text>
+    </svg>
+    <figcaption><code>light</code></figcaption>
+  </figure>
+<figure class="color color--base">
+    <svg aria-label="#778">
+      <rect fill="#778" width="100%" height="100%"/>
+      <text fill="white" x="10" y="10" alignment-baseline="hanging">#778</text>
+    </svg>
+    <figcaption><code>base</code></figcaption>
+  </figure>
+<figure class="color">
+    <svg aria-label="#636373">
+      <rect fill="#636373" width="100%" height="100%"/>
+      <text fill="white" x="10" y="10" alignment-baseline="hanging">#636373</text>
+    </svg>
+    <figcaption><code>dark</code></figcaption>
+  </figure>
+<figure class="color">
+    <svg aria-label="#3f3f46">
+      <rect fill="#3f3f46" width="100%" height="100%"/>
+      <text fill="white" x="10" y="10" alignment-baseline="hanging">#3f3f46</text>
+    </svg>
+    <figcaption><code>darker</code></figcaption>
+  </figure>
+<figure class="color">
+    <svg aria-label="#1f1f20">
+      <rect fill="#1f1f20" width="100%" height="100%"/>
+      <text fill="white" x="10" y="10" alignment-baseline="hanging">#1f1f20</text>
+    </svg>
+    <figcaption><code>darkest</code></figcaption>
+  </figure>
+</div>
+
+
+
+<h2 id="borders">Borders</h2>
+<p>Width and radii tokens are used to style element borders. Accessed via <code>map(borders, &lt;key&gt;)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>width-thin</code></td>
+<td>1px</td>
+</tr>
+<tr>
+<td><code>width-thick</code></td>
+<td>2px</td>
+</tr>
+<tr>
+<td><code>width-thicker</code></td>
+<td>4px</td>
+</tr>
+<tr>
+<td><code>width-thickest</code></td>
+<td>8px</td>
+</tr>
+<tr>
+<td><code>radius-small</code></td>
+<td>0.125rem</td>
+</tr>
+<tr>
+<td><code>radius-default</code></td>
+<td>0.25rem</td>
+</tr>
+<tr>
+<td><code>radius-circle</code></td>
+<td>50%</td>
+</tr>
+<tr>
+<td>## Breakpoints</td>
+<td></td>
+</tr>
+<tr>
+<td>Breakpoint tokens are used within <code>@media</code> queries. Accessed via <code>map(breakpoints, &lt;key&gt;)</code>.</td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>min</code></td>
+<td>280px</td>
+</tr>
+<tr>
+<td><code>xsmall</code></td>
+<td>360px</td>
+</tr>
+<tr>
+<td><code>small</code></td>
+<td>480px</td>
+</tr>
+<tr>
+<td><code>medium</code></td>
+<td>504px</td>
+</tr>
+<tr>
+<td><code>large</code></td>
+<td>800px</td>
+</tr>
+<tr>
+<td><code>xlarge</code></td>
+<td>960px</td>
+</tr>
+<tr>
+<td><code>max</code></td>
+<td>1280px</td>
+</tr>
+<tr>
+<td>## Font families</td>
+<td></td>
+</tr>
+<tr>
+<td>Font family tokens are used for typographic styling. Accessed via <code>map(fonts, &lt;key&gt;)</code>.</td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>family-sans</code></td>
+<td><span style="font: 1.25em/1 &#39;Source Sans Pro&#39;, sans-serif">&#39;Source Sans Pro&#39;, sans-serif</span></td>
+</tr>
+<tr>
+<td><code>family-serif</code></td>
+<td><span style="font: 1.25em/1 &#39;Source Serif Pro&#39;, serif">&#39;Source Serif Pro&#39;, serif</span></td>
+</tr>
+<tr>
+<td><code>family-monospace</code></td>
+<td><span style="font: 1.25em/1 &#39;Source Code Pro&#39;, monospace">&#39;Source Code Pro&#39;, monospace</span></td>
+</tr>
+<tr>
+<td><code>family-system</code></td>
+<td><span style="font: 1.25em/1 -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Oxygen, Ubuntu, Cantarell, &#39;Open Sans&#39;, &#39;Helvetica Neue&#39;, sans-serif">-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Oxygen, Ubuntu, Cantarell, &#39;Open Sans&#39;, &#39;Helvetica Neue&#39;, sans-serif</span></td>
+</tr>
+<tr>
+<td>## Layers</td>
+<td></td>
+</tr>
+<tr>
+<td>Layering tokens set the <code>z-index</code> layer value for elements. Accessed via <code>map(layers, &lt;key&gt;)</code>.</td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>modal</code></td>
+<td>9000</td>
+</tr>
+<tr>
+<td><code>backdrop</code></td>
+<td>8000</td>
+</tr>
+<tr>
+<td><code>overlay</code></td>
+<td>1000</td>
+</tr>
+<tr>
+<td><code>default</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>underlay</code></td>
+<td>-1</td>
+</tr>
+<tr>
+<td>## Sizes</td>
+<td></td>
+</tr>
+<tr>
+<td>Sizing tokens describe the dimensions of elements. Accessed via <code>map(sizes, &lt;key&gt;)</code>.</td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>xsmall</code></td>
+<td>0.25rem</td>
+</tr>
+<tr>
+<td><code>small</code></td>
+<td>0.75rem</td>
+</tr>
+<tr>
+<td><code>medium</code></td>
+<td>1.5rem</td>
+</tr>
+<tr>
+<td><code>large</code></td>
+<td>3rem</td>
+</tr>
+<tr>
+<td><code>xlarge</code></td>
+<td>4.5rem</td>
+</tr>
+<tr>
+<td>## Spacing</td>
+<td></td>
+</tr>
+<tr>
+<td>Spacing tokens describe the distance between elements. Accessed via <code>map(spaces, &lt;key&gt;)</code>.</td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>xsmall</code></td>
+<td>0.25rem</td>
+</tr>
+<tr>
+<td><code>small</code></td>
+<td>0.5rem</td>
+</tr>
+<tr>
+<td><code>medium</code></td>
+<td>1rem</td>
+</tr>
+<tr>
+<td><code>large</code></td>
+<td>1.5rem</td>
+</tr>
+<tr>
+<td><code>xlarge</code></td>
+<td>3rem</td>
+</tr>
+<tr>
+<td><code>xxlarge</code></td>
+<td>4.5rem</td>
+</tr>
+</tbody></table>
+
+    
+
+
+</div>
+
+
+
+    </div>
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+    
+        <div class="Navigation-group Navigation-search">
+    <form action="" class="Search" data-behaviour="search">
+        <label class="Search-label" for="search-input">Search</label>
+        <input class="Search-input" id="search-input" type="search" placeholder="Search…" data-role="input">
+        <button type="button" data-behaviour="clear-search" class="Search-clearButton" aria-label="Clear search" hidden>
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        </button>
+    </form>
+</div>
+
+    
+        
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <div class="Tree-header">
+        <h3 class="Tree-title">components</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/og-image" data-pjax>
+                <span>OG Image</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-utilities">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-utilities-items">
+                Utilities
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-utilities-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/hidden" data-pjax>
+                <span>Hidden</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-common">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-common-items">
+                Common
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-common-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/article" data-pjax>
+                <span>Article</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/author" data-pjax>
+                <span>Author</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/avatar" data-pjax>
+                <span>Avatar</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/backdrop" data-pjax>
+                <span>Backdrop</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/button" data-pjax>
+                <span>Button</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/comment" data-pjax>
+                <span>Comment</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/comment-form" data-pjax>
+                <span>Comment Form</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/continue" data-pjax>
+                <span>Continue</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/field" data-pjax>
+                <span>Field</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-listing">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-listing-items">
+                Listing
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-listing-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/listing--default" data-pjax>
+                <span>Default</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/listing--inset" data-pjax>
+                <span>Inset</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/listing--authors" data-pjax>
+                <span>Authors</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/meta" data-pjax>
+                <span>Meta</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/preface" data-pjax>
+                <span>Preface</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/promo" data-pjax>
+                <span>Promo</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/search-form" data-pjax>
+                <span>Search Form</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/section" data-pjax>
+                <span>Section</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/summary" data-pjax>
+                <span>Summary</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-global">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-global-items">
+                Global
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-global-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/banner" data-pjax>
+                <span>Banner</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/contentinfo" data-pjax>
+                <span>Contentinfo</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/menu" data-pjax>
+                <span>Menu</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/search" data-pjax>
+                <span>Search</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/site-nav" data-pjax>
+                <span>Site Nav</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/topics-nav" data-pjax>
+                <span>Topics Nav</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/traverse-nav" data-pjax>
+                <span>Traverse Nav</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-scopes">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-scopes-items">
+                Scopes
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-scopes-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/embed" data-pjax>
+                <span>Embed</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/gallery" data-pjax>
+                <span>Gallery</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/note" data-pjax>
+                <span>Note</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-prose">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-prose-items">
+                Prose
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-prose-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/prose--default" data-pjax>
+                <span>Default</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/prose--article" data-pjax>
+                <span>Article</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/syntax" data-pjax>
+                <span>Syntax</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-templates">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-templates-items">
+                Templates
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-templates-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/article-template" data-pjax>
+                <span>Article Template</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-content-template">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-content-template-items">
+                Content Template
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-content-template-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/content-template--about" data-pjax>
+                <span>About</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/content-template--404" data-pjax>
+                <span>404</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/content-template--sponsorship" data-pjax>
+                <span>Sponsorship</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-index-template">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-index-template-items">
+                Index Template
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-index-template-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/index-template--topics" data-pjax>
+                <span>Topics</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/index-template--archives" data-pjax>
+                <span>Archives</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/index-template--authors" data-pjax>
+                <span>Authors</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-listing-template">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-listing-template-items">
+                Listing Template
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-listing-template-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/listing-template--home" data-pjax>
+                <span>Home</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/listing-template--topic" data-pjax>
+                <span>Topic</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/listing-template--archive" data-pjax>
+                <span>Archive</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/listing-template--author" data-pjax>
+                <span>Author</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/listing-template--search-results" data-pjax>
+                <span>Search Results</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+    
+        
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <div class="Tree-header">
+        <h3 class="Tree-title">documentation</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Design tokens</span>
+                
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+    
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../fractal/js/mandelbrot.js?cachebust=1.4.0"></script>
+
+
+
+</body>
+</html>

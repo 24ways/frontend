@@ -1,9 +1,0 @@
-<figure class="c-og-image">
-  {% render "@avatar", avatar %}
-  <blockquote class="c-og-image__quote{% if quote.length >= 160 %} c-og-image__quote--small{% endif %}">
-    <p>“{{ quote | markdownInline }}”</p>
-  </blockquote>
-  <figcaption class="c-og-image__cite">
-    — {{ author }}
-  </figcaption>
-</figure>
