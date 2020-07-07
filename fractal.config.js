@@ -1,7 +1,9 @@
+const path = require('path');
+
 const paths = {
-  build: `${__dirname}/www`,
-  src: `${__dirname}/src`,
-  static: `${__dirname}/tmp`
+  build: path.join(__dirname, 'www'),
+  src: path.join(__dirname, 'src'),
+  static: path.join(__dirname, 'tmp')
 };
 
 const fractal = require('@frctl/fractal').create();
@@ -27,14 +29,14 @@ const nunjucksDate = require('nunjucks-date');
 const nunjucks = require('@frctl/nunjucks')({
   filters: {
     date: nunjucksDate,
-    markdown(str) {
-      return md.render(str);
+    markdown(string) {
+      return md.render(string);
     },
-    markdownInline(str) {
-      return md.renderInline(str);
+    markdownInline(string) {
+      return md.renderInline(string);
     },
-    slugify(str) {
-      return str.toLowerCase().replace(/[^\w]+/g, '');
+    slugify(string) {
+      return string.toLowerCase().replace(/\W+/g, '');
     },
     stringify() {
       return JSON.stringify(this, null, '\t');

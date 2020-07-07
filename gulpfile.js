@@ -4,6 +4,7 @@
 
 // Utils
 const fs = require('fs');
+const path = require('path');
 const del = require('del');
 const gulp = require('gulp');
 const util = require('gulp-util');
@@ -44,10 +45,10 @@ const logger = fractal.cli.console;
 
 // Paths
 const paths = {
-  build: `${__dirname}/www`,
-  dest: `${__dirname}/tmp`,
-  src: `${__dirname}/src`,
-  modules: `${__dirname}/node_modules`
+  build: path.join(__dirname, 'www'),
+  dest: path.join(__dirname, 'tmp'),
+  src: path.join(__dirname, 'src'),
+  modules: path.join(__dirname, 'node_modules')
 };
 
 // PostCSS plugins
@@ -90,7 +91,7 @@ function build() {
   const builder = fractal.web.builder();
 
   builder.on('progress', (completed, total) => logger.update(`Exported ${completed} of ${total} items`, 'info'));
-  builder.on('error', err => logger.error(err.message));
+  builder.on('error', error => logger.error(error.message));
 
   return builder.build().then(() => {
     logger.success('Fractal build completed!');
@@ -106,7 +107,7 @@ function serve() {
     }
   });
 
-  server.on('error', err => logger.error(err.message));
+  server.on('error', error => logger.error(error.message));
 
   return server.start().then(() => {
     logger.success(`Fractal server is now running at ${server.url}`);
