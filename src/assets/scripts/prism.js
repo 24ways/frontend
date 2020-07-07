@@ -2,4 +2,4 @@
 import prism from 'prismjs';
 
 // Run
-prism();
+prism; // eslint-disable-line no-unused-expressions

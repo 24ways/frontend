@@ -1,6 +1,6 @@
 import FontFaceObserver from 'fontfaceobserver';
 
-export default function () {
+export function loadWebfonts() {
   // Setup
   const classLoaded = 'fonts-loaded';
   const storageId = 'fonts-loaded';
@@ -33,8 +33,8 @@ export default function () {
   function init() {
     Promise.all(fonts)
       .then(eventFontsLoaded)
-      .catch(err => {
-        console.error(err);
+      .catch(error => {
+        console.error(error);
       });
   }
 

@@ -27,6 +27,6 @@ module.exports = (modules, logger, callback) => {
           callback();
         }
       })
-      .catch(err => logger.log(err));
+      .catch(error => logger.log(error));
   });
 };

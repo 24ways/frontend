@@ -33,7 +33,7 @@ function createFirstFocusableChild(node) {
   newDiv.setAttribute('tabindex', '0');
   newDiv.style.cssText = 'outline:none;';
   const firstChild = node.firstChild;
-  node.insertBefore(newDiv, firstChild);
+  firstChild.before(newDiv);
   return newDiv;
 }
 
@@ -49,6 +49,7 @@ function getCurrentFocusable(node, event) {
       focusableElement = focusableChildren[0];
     }
   }
+
   return focusableElement;
 }
 
@@ -63,7 +64,7 @@ function trapTabKey(node, event) {
 export function safeActiveElement() {
   try {
     return document.activeElement;
-  } catch (err) {}
+  } catch {}
 }
 
 export function bindKeypress(isShown, onExit, node, event) {
