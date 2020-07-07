@@ -9,6 +9,7 @@ const fractal = require('@frctl/fractal').create();
 const mandelbrot = require('@frctl/mandelbrot')({
   favicon: '/assets/icons/icon.ico',
   lang: 'en-gb',
+  nav: ['search', 'components', 'docs'],
   styles: ['default', '/assets/styles/theme.css'],
   static: {
     mount: 'fractal'

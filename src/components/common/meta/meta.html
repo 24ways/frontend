@@ -1,5 +1,5 @@
 <ul class="c-meta">
 {%- for item in items -%}
-  <li class="c-meta__item">{{ item | markdownInline }}</li>
+  <li class="c-meta__item">{{ item | markdownInline | safe }}</li>
 {%- endfor -%}
 </ul>

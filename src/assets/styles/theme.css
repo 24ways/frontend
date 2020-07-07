@@ -24,7 +24,6 @@ a {
 
 .Header {
   background-color: map(colors, primary, dark);
-  color: map(colors, primary, light);
 }
 
 .Prose {

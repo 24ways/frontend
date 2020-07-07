@@ -34,7 +34,7 @@ const rollup = require('./etc/gulp/rollup');
 
 // Fractal
 const pkg = require('./package.json');
-const fractal = require('./fractal.js');
+const fractal = require('./fractal.config.js');
 
 const logger = fractal.cli.console;
 

@@ -11,7 +11,7 @@
       {%- if avatar -%}
         {% render "@avatar", avatar %}
       {%- endif -%}
-      {{ content | markdown }}
+      {{ content | markdown | safe }}
     </div>
   </div>
   {%- endif -%}
